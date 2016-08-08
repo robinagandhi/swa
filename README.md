@@ -3,7 +3,7 @@
 This repository includes things related to the Software Assurance course at UNO
 
 ## Supplies
-* Bringing a laptop to class is highly encouraged for in-class activities. 
+* Bringing a laptop to class is highly encouraged for in-class activities.
 * A notebook and pencil.
 
 ## Class Topics
@@ -30,6 +30,8 @@ This repository includes things related to the Software Assurance course at UNO
 7. Testing for Secure Software
   * Knowledge base: [CAPEC](https://capec.mitre.org/)
   * Testing strategies
+8. Other topics
+  * Guest talks from other faculty or practitioners.
 
 
 ## Team Semester Project
@@ -61,6 +63,16 @@ The project will have the following deliverables:
   * Gaps in security requirements and design of the original project
   * Findings from code review and automated software scanning
   * Contributions to the original project
+
+## How to find open source projects?
+* [Openhub](https://www.openhub.net) by Black Duck Software
+* SWAMP Resources listing for software packages
+
+## What projects to avoid?
+* Inactive projects (no recent contributions, no activity on forum, lack of wiki or documentation)
+* Android Apps
+* Projects with languages that do not have a lot of tool support
+* Project with little or no functional security requirements. As surprising as it may sound, not all software have security needs!
 
 
   ### License  
