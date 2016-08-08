@@ -33,9 +33,7 @@ This repository includes things related to the Software Assurance course at UNO
 8. Other topics
   * Guest talks from other faculty or practitioners.
 
-
 ## Team Semester Project
-
 This class strives to encourage learning by doing and making a real difference to the practice of building software. To turn this spirit into reality, a semester long project will require you to work with a open source software project. A group of three students will select a unique open source software project and contribute security related improvements.
 
 The project will have the following deliverables:
@@ -66,7 +64,7 @@ The project will have the following deliverables:
 
 ## How to find open source projects?
 * [Openhub](https://www.openhub.net) by Black Duck Software
-* SWAMP Resources listing for software packages
+* DHS SWAMP listing for [public software packages](https://www.mir-swamp.org/#packages/public).
 
 ## What projects to avoid?
 * Inactive projects (no recent contributions, no activity on forum, lack of wiki or documentation)
@@ -74,20 +72,19 @@ The project will have the following deliverables:
 * Projects with languages that do not have a lot of tool support
 * Project with little or no functional security requirements. As surprising as it may sound, not all software have security needs!
 
+## License  
+Software Assurance.  
+Copyright (C) 2016  Dr. Robin A. Gandhi
 
-  ### License  
-  Software Assurance.  
-  Copyright (C) 2016  Dr. Robin A. Gandhi
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-  This program is free software: you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation, either version 3 of the License, or
-  (at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
-
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
