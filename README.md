@@ -2,6 +2,10 @@
 
 This repository includes things related to the Software Assurance course at UNO
 
+## Supplies
+* Bringing a laptop to class is highly encouraged for in-class activities. 
+* A notebook and pencil.
+
 ## Class Topics
 
 1. Collaborating when working on Software
