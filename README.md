@@ -2,6 +2,14 @@
 
 This repository includes things related to the Software Assurance course at UNO
 
+### Table of Contents    
+[Supplies](#supplies)  
+[Class Topics](#class-topics)  
+[Semester Project](#team-semester-project)  
+[Project Inspiration](#project-inspiration)  
+[Projects to Avoid](#projects-to-avoid)  
+[License](#license)  
+
 ## Supplies
 * Bringing a laptop to class is highly encouraged for in-class activities.
 * A notebook and pencil.
@@ -62,18 +70,20 @@ The project will have the following deliverables:
   * Findings from code review and automated software scanning
   * Contributions to the original project
 
-## How to find open source projects?
+## Project Inspiration
 * [Openhub](https://www.openhub.net) by Black Duck Software
 * Github [search](https://github.com/search) and [trends](https://github.com/trending).
 * DHS SWAMP listing for [public software packages](https://www.mir-swamp.org/#packages/public).
 * [Code Triage](https://www.codetriage.com)
 * Some blogs to consider. [1](http://blog.teamtreehouse.com/getting-involved-open-source-projects), [2](https://help.github.com/articles/where-can-i-find-open-source-projects-to-work-on/), [3](http://www.firsttimersonly.com)
 
-## What projects to avoid?
-* Inactive projects (no recent contributions, no activity on forum, lack of wiki or documentation)
+## Projects to Avoid
+* In-active projects (no recent contributions, no activity on forums, lack of wiki or documentation)
+* Old vulnerable project versions
 * Android Apps
 * Projects with languages that do not have a lot of tool support
 * Project with little or no functional security requirements. As surprising as it may sound, not all software have security needs!
+* Projects not accepting contributions
 
 ## License  
 Software Assurance.  
