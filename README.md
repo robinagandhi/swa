@@ -64,7 +64,10 @@ The project will have the following deliverables:
 
 ## How to find open source projects?
 * [Openhub](https://www.openhub.net) by Black Duck Software
+* Github [search](https://github.com/search) and [trends](https://github.com/trending).
 * DHS SWAMP listing for [public software packages](https://www.mir-swamp.org/#packages/public).
+* [Code Triage](https://www.codetriage.com)
+* Some blogs to consider. [1](http://blog.teamtreehouse.com/getting-involved-open-source-projects), [2](https://help.github.com/articles/where-can-i-find-open-source-projects-to-work-on/), [3](http://www.firsttimersonly.com)
 
 ## What projects to avoid?
 * Inactive projects (no recent contributions, no activity on forum, lack of wiki or documentation)
