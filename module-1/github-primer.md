@@ -21,18 +21,16 @@
 [Cyber security First Principle Reflections](#cyber-security-first-principle-reflections)  
 [Additional Resources](#additional-resources)
 
-
 ### Step 1
-First things first, create a free account on Github. https://github.com/join
-You will also need to verify your email address after registration in order to use your new github account.
+First things first, create a free account on [Github](https://github.com/join).
+Verify your email address after registration in order to use your new github account.
 
 [Top](#table-of-contents)
 
 ### Step 2
-Complete the following Github tutorial:
-https://guides.github.com/activities/hello-world/
+Complete the following Github tutorial: [Hello-world tutorial](https://guides.github.com/activities/hello-world/)
 
-At the end of the Hello World Step 2, you will have created a **Remote** repository and will have added a `branch`. It is `remote` because all your files are in the Github cloud. As a developer, you might ask, "how do I use this to create code if it is just online?" It is not convenient to write and test code online, especially when many applications require locally install packages to even work. It would be great to use your own **Local** repository. We will do just that in the next step.
+After finising the hello-world tutorial, you will have created a **Remote** repository and will have added a `branch`. It is `remote` because all your files are on Github and not your `local` computer. As a developer, you might ask, "how do I use this to create code if it is just online?" It is not convenient to write and test code online, especially when many applications require locally install packages to even work. It would be great to use your own **Local** repository. We will do just that in the next step.
 
 [Top](#table-of-contents)
 
@@ -44,19 +42,13 @@ To create a **Local** repository there are two basic options.
 [Top](#table-of-contents)
 
 ##### Clone a remote repository
-Let's start by looking at option #1. Git tools do not come pre-installed with all operating systems. To check if they exist on your operating system, open up a command line interface and type `git`. If Git is installed, this command will give you some help options. If the command is not recognized, then it means you need to install git on your OS. The information available at [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) can walk you through it for a variety of OSes.
+Let's start by looking at option #1. Git tools do not come pre-installed with all operating systems. To check if they exist on your operating system, open up a Command Line Interface (CLI). The CLI can be invoked on various OSes as follows: Windows: <kbd>win</kbd>+<kbd>R</kbd> and type `cmd` then hit <kbd>Enter</kbd>; OSX: Open Terminal App; Ubuntu: Open Terminal App. Now type `git`. If Git is installed, this command will give you some help options. If the command is not recognized, then it means you need to install git on your OS. The information available at [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) can walk you through it for a variety of OSes.
 
-For an Ubuntu Desktop OS like the one you created in the `Virtualization` module, the instructions you need to type in a terminal are below. To open a new terminal in the Ubuntu VM you created earlier, press ctrl + alt + t.
-
-```bash
-sudo apt-get update
-sudo apt-get -y install git
-```
-The `-y` option automates the installation by responding YES to any prompts. After the installation succeeds, type `git` to see various command options. To clone a remote repository (what we set out to do), we first need a reference URL to find it. On Github.com, navigate to your hello-world repository and click on the button that says `Clone`. Copy that URL.
+To clone a remote repository (what we set out to do), we first need a reference URL to find it. On Github.com, navigate to your hello-world repository and click on the button that says `Clone`. Copy that URL.
 
 ![clone](../img/primer/clonerepo.png)
 
-Now we are ready to clone this remote repository, and create a local repository. To do this we will use the `git clone <repository URL>` command. In the command below use the URL you copied above by pressing the `Clone` button.
+Now we are ready to clone this remote repository, and create a local repository. To do this we will use the `git clone <repository URL>` command in a CLI. In the command below use the URL you copied above by pressing the `Clone` button.
 
 ```bash
 git clone <replace this with the clone URL that you copied above>
@@ -65,22 +57,19 @@ You will start to see some download messages and upon success, your local reposi
 
 Now switch to the hello-world directory that has all the files from the repository that you just cloned.
 
-```bash
-cd hello-world/
-```
-
-To list the files in this directory, use this command
-
-```bash
-ls
-```
 You should see a README.md and possibly some other files.
 
-##### Initialize a new repository
+##### Initialize a new local repository
 
 > We do not need to use this option currently, so you may move to [Step 4](#step-4)
 
-If you need to create a new repository you would just navigate to the folder (using the `cd` command) containing the files you wish to version control and then use the init command: `git init`. That's it! This is useful if you are creating new files from scratch. Using github, you can also push newly tracked files such as these to a remote repository. The steps are the same as you will see for cloned respositories below.
+If you need to create a new repository you would just navigate to the folder (using the `cd` in a CLI) containing the files you wish to version control and then use the git intialization command.  
+
+```bash
+git init
+```
+
+That's it! This is useful if you are creating a new local repository from scratch. Using github, you can also push newly tracked files such as these to a remote repository. The steps are the same as you will see for cloned respositories below.
 
 [Top](#table-of-contents)
 
@@ -89,18 +78,9 @@ In this step we will make changes to files in our Local repository and then `pus
 
 Git is based on a "de-centralized" model of ownership - which means that there is no central authoritative repository. Every repository, Local or Remote, is fully autonomous and fully functional on its own. So changes made in any repository are tracked in that repository only. Two repositories do not communicate unless there is a explicit request to synchronize changes across them. This will make more sense as we work through a scenario.
 
-Let's open the hello-world folder in the Ubuntu Desktop OS VM and make changes to the `README.md` file in a text editor.  
+Let's open the hello-world folder on your Desktop OS and make changes to the `README.md` file in a text editor.  
 
-1. Navigate to the files
->![readme](../img/primer/clonedrepo.png)
-
-2. Open README.md by double-clicking it
->![readme](../img/primer/openreadme.png)
-
-3. Edit README.md to add a message. Like the one below.
->![readme](../img/primer/editfile.png)
-
-Once you save the edited README.md, check the status of the local repository using the following command. Make sure you navigate to a folder within your repository in the terminal first.
+Once you save the edited README.md, check the status of the local repository using the following command. Make sure you navigate to a folder within your repository in the CLI first.
 
 ```
 git status
@@ -156,14 +136,20 @@ git commit -m "added UNO description"
 You should see something like this:
 >![gitcommit](../img/primer/gitcommit.png)
 
-Use this command to see all your commits:
+Use the `log` command to see all your commits:
 ```bash
 git log
 ```
 This command shows a summary of commits in the repository, stating with the most recent. Observe the hash code, user details and commit message. These attributes provide attribution of all changes in the code repository, promoting code integrity.  
 > Hit the key `q` to exit the log of commit messages.
 
-Issue this command to check your repository status once again:
+
+Use the `show` command to see a specific commit:
+```bash
+git show <<replace with a valid commit # for this repo>
+```
+
+Issue this `status` command to check your repository status once again:
 ```bash
 git status
 ```
@@ -176,10 +162,10 @@ To push our local commits to the remote repository, we need the git `push` comma
 > What is the name of the main branch in our local repository?
 
 To push local commits to the remote repository, use the following command:
-
 ```bash
  git push origin master
 ```
+
 You should see something like this:
 >![gitpush](../img/primer/gitpush.png)
 
@@ -212,7 +198,7 @@ So, I realized that I forgot to add a link to UNO's Cybersecurity programs in th
 3. See changes in your README.md file
 >![githubupdated](../img/primer/githubupdated.png)
 
-Now the remote repository is one commit ahead of the local repository. To bring the _local_ repository up to speed, we use the following command in a terminal.
+Now the remote repository is one commit ahead of the local repository. To bring the _local_ repository up to speed, we use the following command in a  CLI: (*Make sure that you first navigate to the folder with your git repo*)
 
 ```bash
 git pull
@@ -221,23 +207,21 @@ You should see something like this:
 >![gitpull](../img/primer/gitpull.png)
 
 Now if we look at our local README.MD file, it should have the updated link.
-
-1. Locate README.md on your computer
->![readme](../img/primer/openreadme.png)
-
-2. View README.md contents
->![localpullupdate](../img/primer/localpullupdate.png)
-
 At this point you know enough to keep both the local and remote repositories synchronized.    
 
-As long as you always pull before making changes and keep pushing any new changes - you will avoid most merge conflicts that can occur.  
+As long as you always `pull` before making local changes, and `push` any new local changes to the remote repo - you will avoid most merge conflicts that can occur.  
 
-If you are interested in learning more about complex team interaction scenarios - you may want to explore a concept called merge conflicts; for more information see: [https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/).
+If you are interested in learning more about complex team interaction scenarios - you may want to explore the following:
+* [Workflows](https://guides.github.com/introduction/flow/)
+* [Merge conflicts](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/)
+* [Attribution of file changes](https://help.github.com/articles/using-git-blame-to-trace-changes-in-a-file/)
+* [Ignoring files](https://help.github.com/articles/ignoring-files/)
+
 
 [Top](#table-of-contents)
 
 ### Step 6
-Now we will learn about **forking** a repository. This is as easy as pie. But what is a fork and what do you use it for?
+Now we will learn about [**forking** a repository](https://guides.github.com/activities/forking/). This is as easy as pie. But what is a fork and what do you use it for?
 
 Here is what Github [says](https://help.github.com/articles/fork-a-repo/):
 > A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
@@ -246,7 +230,9 @@ Here is what Github [says](https://help.github.com/articles/fork-a-repo/):
 
 > Every public repository can be forked
 
-So head-on over to a hello-world repository developed by one of your peers. You can do this by browsing to the git URL of their hello-world repository in your browser.  
+So if you want to contribute to a project that you do not own, then the first thing to do is **fork it!**
+
+To see this in action, head-on over to a hello-world repository developed by one of your peers. You can do this by browsing to the git URL of their hello-world repository in your browser.  
 
 You should see something like this on your peer's repository:
 >![githubfork](../img/primer/githubfork.png)
@@ -290,12 +276,15 @@ The updated content is now reflected in the peer's repository. It will be someth
 
 Now return the favor to your peer. Help them fork your hello-world repository and make a pull request to you.
 
-And that is one way you can collaborate using Github.
+And that is one way you can collaborate using Github. For more team interactions see the following topics:
+
+* [Issue tracking](https://guides.github.com/features/issues/)
+
 
 [Top](#table-of-contents)
 
 ### Step 8
-To communicate and write on Github, it is useful to learn `Markdown` and its `Github Flavor Variants`. You may explore this simple format here: https://help.github.com/categories/writing-on-github/
+To communicate and write on Github, it is useful to learn `Markdown` and its `Github Flavor Variants`. You may explore this simple format in this guide: https://guides.github.com/features/mastering-markdown/
 
 
 You are now ready to explore the wonderful world of open source on Github. Enjoy and make your own contributions!
@@ -306,7 +295,7 @@ You are now ready to explore the wonderful world of open source on Github. Enjoy
 
 On Github, only the `owner` of a remote repository can push commits to it. All other `Github users` have the limited privilege to make a pull request. The repository owner reviews pull requests and initiates a merge action. The owner may reject pull requests if the do not seen appropriate. A `collaborator` can push commits, but cannot delete a repository or add other collaborators. These constraints show the concept of _least privilege_ with github user roles. Users should have no more privilege than what is required for their job.
 
-Developers often design Github repositories, to be self contained _modules_. These modules are then put in or taken out of a bigger project. During build time these components are composed to create an integrated system. This strategy facilitates __Modularization__. Following this principle allows globally distributed teams to collaborate and locate faulty components.
+Developers often design Github repositories, to be self contained _modules_. These modules are then put in or taken out of a bigger project. During build time these components are composed to create an integrated system. This strategy facilitates _Modularization_. Following this principle allows globally distributed teams to collaborate and locate faulty components.
 
 Finally, Github repositories separate source code from other resources. This separation allows longterm archival and maintenance of a codebase, separate from its dependencies. _Domain Separation_ enables the management of source code versions that target different products and operating environments.
 
@@ -314,10 +303,11 @@ Finally, Github repositories separate source code from other resources. This sep
 
 ## Additional Resources
 
+* [Github Guides](https://guides.github.com/)
 * Creating a local repository first and then adding a remote repository, [Github](https://try.github.io/)
 * [Github cheatsheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 * Collection of [Github tutorials](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
-* Ignore files during a check in to Github. https://help.github.com/articles/ignoring-files/
+
 
 [Top](#table-of-contents)
 

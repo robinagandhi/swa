@@ -72,6 +72,7 @@ The project will have the following deliverables:
   * Contributions to the original project (documentation, design changes, code changes, communications)
 
 ## Project Inspiration
+* [Github guide for contributing to Open Source Projects](https://guides.github.com/activities/contributing-to-open-source/)
 * [Openhub](https://www.openhub.net) by Black Duck Software
 * Github [search](https://github.com/search) and [trends](https://github.com/trending).
 * DHS SWAMP listing for [public software packages](https://www.mir-swamp.org/#packages/public).
