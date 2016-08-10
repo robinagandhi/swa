@@ -104,3 +104,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+## What does GPLv3 mean?
+
+[tl;drLegal summary](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3))

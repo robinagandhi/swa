@@ -7,6 +7,8 @@
 
 * __Least Privilege__: One of the ways to protect information is by limiting what people can see and do with your information and resources.
 
+* __Attribution__: Preserving the integrity of programs and data is a fundamental cybersecurity need. One way to assure integrity is to track every change made to information objects and attribute the changes to a unique authenticated identity.
+
 [Git](https://git-scm.com/) is a popular software development tool used by developers to collaborate and version control code. It is, however, not limited to just code. You can, and many others already do, use it as a collaborative enviroment to develop other written works. The most popular online platform to host public git repositories is a site called [Github](www.github.com). For our lessons here, we will use Github, but do note that there are several other services, such as [BitBucket](https://bitbucket.org/), that also provide git and other version control repository hosting capabilities. The following tutorials focus on how you can use Git and Github for collaboration and version control.
 
 ### Table of Contents    
@@ -304,9 +306,9 @@ Finally, Github repositories separate source code from other resources. This sep
 ## Additional Resources
 
 * [Github Guides](https://guides.github.com/)
-* Creating a local repository first and then adding a remote repository, [Github](https://try.github.io/)
+* [Tutorial](https://try.github.io/) for creating a local repository first and then adding a remote repository
 * [Github cheatsheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
-* Collection of [Github tutorials](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+* [Collection](https://help.github.com/articles/good-resources-for-learning-git-and-github/) of Github tutorials
 * [Adding a new remote repository](https://help.github.com/articles/adding-a-remote/)
 
 
@@ -314,7 +316,7 @@ Finally, Github repositories separate source code from other resources. This sep
 
 ## Special Thanks
 
-* A special thanks to Matt Hale, Aaron Vigal and Cade Wollcot for reviews of this module and thoughtful discussions.
+* A special thanks to Matt Hale, Aaron Vigal and Cade Wollcot for reviews of this module and thoughtful discussions. Large parts of this module were first developed for the NSA/NSF funded [GenCyber Camp at UNO](https://github.com/MLHale/GenCyber-web-content) in 2016.
 
 [Top](#table-of-contents)
 
