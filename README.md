@@ -57,6 +57,7 @@ The project will have the following deliverables:
   * Links to your version control repository that shows your internal collaboration and project related activity.
   * Security requirements for the project captured using mis-use case diagrams. Include links to Lucidchart diagrams with brief descriptions in the document.
   * Threat models for critical dataflows through the software. Include diagrams and a link to download these files.
+  * Links to suggested updates for project documentation for security related configuration and installation.
 
 3. **Code analysis and testing for Secure Software**: 2-3 page report that describes the following:
   * Code review strategy
@@ -68,7 +69,7 @@ The project will have the following deliverables:
   * Project description
   * Gaps in security requirements and design of the original project
   * Findings from code review and automated software scanning
-  * Contributions to the original project
+  * Contributions to the original project (documentation, design changes, code changes, communications)
 
 ## Project Inspiration
 * [Openhub](https://www.openhub.net) by Black Duck Software
