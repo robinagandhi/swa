@@ -21,6 +21,7 @@ This repository includes things related to the Software Assurance course at UNO
   * Open Source Licensing (Guest Talk)
 2. Engineering For Assurance
   * Secure Systems Engineering ([NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf))  
+  * Industry practices. [BSIMM](https://www.bsimm.com/framework/)
 3. Constructing Assurance Cases  
   * [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
   * Diagraming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).

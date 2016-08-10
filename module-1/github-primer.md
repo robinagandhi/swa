@@ -307,6 +307,7 @@ Finally, Github repositories separate source code from other resources. This sep
 * Creating a local repository first and then adding a remote repository, [Github](https://try.github.io/)
 * [Github cheatsheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 * Collection of [Github tutorials](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+* [Adding a new remote repository](https://help.github.com/articles/adding-a-remote/)
 
 
 [Top](#table-of-contents)
