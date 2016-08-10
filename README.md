@@ -49,7 +49,7 @@ The project will have the following deliverables:
 1. **Project Proposal**: 2-3 page report that describes the following:
   * Open source project description (What is it?, Contributors, Activity, Use, Popularity, Languages used, platform, documentation sources, etc.)
   * Functional security requirements for the software
-  * License, procedures for making contributions, and contributor agreements
+  * [License, procedures for making contributions, and contributor agreements](https://guides.github.com/activities/contributing-to-open-source/)
   * Security related history (E.g. known vulnerabilities)
   * Your motivation for selecting this project
 
