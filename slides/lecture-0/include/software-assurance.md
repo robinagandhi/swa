@@ -19,7 +19,7 @@ class: center, middle
 [![Heartbleed](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Heartbleed.svg/2000px-Heartbleed.svg.png)](http://heartbleed.com/)
 ---
 class: center, middle
-[![shellshock](https://blog.digicert.com/wp-content/uploads/2014/09/Shellshock.png)](https://en.wikipedia.org/wiki/Shellshock_(software_bug))
+[![shellshock](https://blog.digicert.com/wp-content/uploads/2014/09/Shellshock.png)](https://en.wikipedia.org/wiki/Shellshock_%28software_bug%29)
 ---
 class: center, middle
 [![ghost](http://www.upstream.be/wp-content/uploads/2015/01/red-gost.jpg)](https://blog.qualys.com/laws-of-vulnerabilities/2015/01/27/the-ghost-vulnerability)
@@ -234,13 +234,13 @@ Methods currently used in software engineering practice
 
 # Security vs. {Safety, Reliability, Quality} Engineering
 
-## Common
+## Common Expectations
 Software works as expected despite the presence of certain internal and external stimuli, influences, and circumstances
 --
 
 ## Different
-The nature of external stimuli, influences, and circumstances
-A intelligent, persistent adversary
+The nature of external stimuli, influences, and circumstances  
+* Security: Intelligent, persistent adversary
 ---
 class: center, middle
 # What does it take?
@@ -273,3 +273,11 @@ class: center, middle
 class: center, middle
 # Are you ready for it?
 .footnote[[Rugged manifesto](https://www.ruggedsoftware.org/)]
+---
+class: center, middle
+## “_This whole economic boom in cybersecurity seems largely to be a consequence of .red[poor engineering]._”  
+.footnote[Carl Landwehr, CACM, February **2015**]
+---
+class: center, middle
+# Discussion?
+![makes-sense](http://img.pandawhale.com/116241-that-dont-make-no-sense-gif-Im-2m0g.gif)

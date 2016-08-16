@@ -71,6 +71,23 @@ Things to note:
 ---
 
 
+---
+
+# Types of Vulnerabilities
+
+The Task Force also described several tiers of vulnerabilities within organizations including
+known vulnerabilities, unknown vulnerabilities, and adversary-created vulnerabilities. The
+important and sobering message conveyed by the Defense Science Board is that the top two tiers
+of vulnerabilities (i.e., the unknown vulnerabilities and adversary-created vulnerabilities) are, for
+the most part, totally invisible to most organizations. These vulnerabilities can be effectively
+addressed by sound systems security engineering techniques, methodologies, processes, and
+practices—in essence, providing the necessary trustworthiness to withstand and survive well-resourced,
+sophisticated cyber-attacks on the systems supporting critical missions and business
+operations.
+
+---
+
+
 
 
 
