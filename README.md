@@ -13,6 +13,7 @@ This repository includes things related to the Software Assurance course at UNO
 ## Supplies
 * Bringing a laptop to class is highly encouraged for in-class activities.
 * A notebook and pencil.
+* [Online Lab Computer](http://view.unomaha.edu)
 
 ## Class Topics
 1. Introduction to [Software Assurance](https://robinagandhi.github.io/swa/slides/lecture-0/software-assurance.html)
@@ -22,7 +23,7 @@ This repository includes things related to the Software Assurance course at UNO
 1. Open Source Software (OSS) Licensing
   * Guest Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 1. Engineering For Assurance
-  * Secure Systems Engineering ([NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf))  
+  * [Secure Systems Engineering]((https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html). Based on ([NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf))  
   * Industry practices. [BSIMM](https://www.bsimm.com/framework/)
 1. Constructing Assurance Cases  
   * [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
