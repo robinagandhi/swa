@@ -32,7 +32,7 @@ Verify your email address after registration in order to use your new github acc
 ### Step 2
 Complete the following Github tutorial: [Hello-world tutorial](https://guides.github.com/activities/hello-world/)
 
-After finising the hello-world tutorial, you will have created a **Remote** repository and will have added a `branch`. It is `remote` because all your files are on Github and not your `local` computer. As a developer, you might ask, "how do I use this to create code if it is just online?" It is not convenient to write and test code online, especially when many applications require locally install packages to even work. It would be great to use your own **Local** repository. We will do just that in the next step.
+After finishing the hello-world tutorial, you will have created a **Remote** repository and will have added a `branch`. It is `remote` because all your files are on Github and not your `local` computer. As a developer, you might ask, "how do I use this to create code if it is just online?" It is not convenient to write and test code online, especially when many applications require locally install packages to even work. It would be great to use your own **Local** repository. We will do just that in the next step.
 
 [Top](#table-of-contents)
 
@@ -65,13 +65,13 @@ You should see a README.md and possibly some other files.
 
 > We do not need to use this option currently, so you may move to [Step 4](#step-4)
 
-If you need to create a new repository you would just navigate to the folder (using the `cd` in a CLI) containing the files you wish to version control and then use the git intialization command.  
+If you need to create a new repository you would just navigate to the folder (using the `cd` in a CLI) containing the files you wish to version control and then use the git initialization command.  
 
 ```bash
 git init
 ```
 
-That's it! This is useful if you are creating a new local repository from scratch. Using github, you can also push newly tracked files such as these to a remote repository. The steps are the same as you will see for cloned respositories below.
+That's it! This is useful if you are creating a new local repository from scratch. Using github, you can also push newly tracked files such as these to a remote repository. The steps are the same as you will see for cloned repositories below.
 
 [Top](#table-of-contents)
 
@@ -80,7 +80,7 @@ In this step we will make changes to files in our Local repository and then `pus
 
 Git is based on a "de-centralized" model of ownership - which means that there is no central authoritative repository. Every repository, Local or Remote, is fully autonomous and fully functional on its own. So changes made in any repository are tracked in that repository only. Two repositories do not communicate unless there is a explicit request to synchronize changes across them. This will make more sense as we work through a scenario.
 
-Let's open the hello-world folder on your Desktop OS and make changes to the `README.md` file in a text editor.  
+Let's open the hello-world folder on your local computer and make changes to the `README.md` file in a text editor.  
 
 Once you save the edited README.md, check the status of the local repository using the following command. Make sure you navigate to a folder within your repository in the CLI first.
 
@@ -148,7 +148,8 @@ This command shows a summary of commits in the repository, stating with the most
 
 Use the `show` command to see a specific commit:
 ```bash
-git show <<replace with a valid commit # for this repo>
+# replace the number with a valid commit # for your repo
+git show 95e9a0d
 ```
 
 Issue this `status` command to check your repository status once again:
@@ -223,7 +224,7 @@ If you are interested in learning more about complex team interaction scenarios 
 [Top](#table-of-contents)
 
 ### Step 6
-Now we will learn about [**forking** a repository](https://guides.github.com/activities/forking/). This is as easy as pie. But what is a fork and what do you use it for?
+Now we will learn about [**forking** a repository](https://guides.github.com/activities/forking/). This is as easy as pie! But what is a fork and what do you use it for?
 
 Here is what Github [says](https://help.github.com/articles/fork-a-repo/):
 > A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
@@ -288,7 +289,6 @@ And that is one way you can collaborate using Github. For more team interactions
 ### Step 8
 To communicate and write on Github, it is useful to learn `Markdown` and its `Github Flavor Variants`. You may explore this simple format in this guide: https://guides.github.com/features/mastering-markdown/
 
-
 You are now ready to explore the wonderful world of open source on Github. Enjoy and make your own contributions!
 
 [Top](#table-of-contents)
@@ -316,7 +316,7 @@ Finally, Github repositories separate source code from other resources. This sep
 
 ## Special Thanks
 
-* A special thanks to Matt Hale, Aaron Vigal and Cade Wollcot for reviews of this module and thoughtful discussions. Large parts of this module were first developed for the NSA/NSF funded [GenCyber Camp at UNO](https://github.com/MLHale/GenCyber-web-content) in 2016.
+* A special thanks to Matt Hale, Aaron Vigal and Cade Wollcot for reviews of this module and thoughtful discussions. Large parts of this module were first developed for the NSA/NSF funded [GenCyber Camp at UNO](https://github.com/MLHale/GenCyber-web-content) in July 2016.
 
 [Top](#table-of-contents)
 
