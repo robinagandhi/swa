@@ -60,19 +60,19 @@ The project will have the following deliverables:
   * Security related history (E.g. known vulnerabilities)
   * Your motivation for selecting this project
 
-2. **Requirements and Design for Secure Software**: 2-3 page report that describes the following:
+1. **Requirements and Design for Secure Software**: 2-3 page report that describes the following:
   * Links to your version control repository that shows your internal collaboration and project related activity.
   * Security requirements for the project captured using mis-use case diagrams. Include links to Lucidchart diagrams with brief descriptions in the document.
   * Threat models for critical dataflows through the software. Include diagrams and a link to download these files.
   * Links to suggested updates for project documentation for security related configuration and installation.
 
-3. **Code analysis and testing for Secure Software**: 2-3 page report that describes the following:
+1. **Code analysis and testing for Secure Software**: 2-3 page report that describes the following:
   * Code review strategy
   * Automated code scanning results summary. Include links to full reports.
   * Summary of key findings
   * Links to pull requests to the original project and any follow-up interactions.
 
-4. **Class Presentation**: 10-minute class presentation that highlights the following:
+1. **Class Presentation**: 10-minute class presentation that highlights the following:
   * Project description
   * Gaps in security requirements and design of the original project
   * Findings from code review and automated software scanning
@@ -93,6 +93,19 @@ The project will have the following deliverables:
 * Projects with languages that do not have a lot of tool support
 * Project with little or no functional security requirements. As surprising as it may sound, not all software have security needs!
 * Projects not accepting contributions
+
+## Project Deadlines
+
+1. Project Proposal &ndash; **September 14th, 2016**
+1. Requirements and Design for Secure Software &ndash; **October 19th, 2016**
+1. Code analysis and testing for Secure Software &ndash; **November 30th, 2016**
+1. Class presentations &ndash; **December 7th, 2016**
+
+All dates are subject to change as the course progresses
+
+## Final Exam
+
+* In-class exam on **December 14th, 6:30pm**
 
 ## License  
 Software Assurance.  
