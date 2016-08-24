@@ -2,13 +2,17 @@
 
 This repository includes things related to the Software Assurance course at UNO
 
-### Table of Contents    
+### Table of Contents  
+[Syllabus](#syllabus)  
 [Supplies](#supplies)  
 [Class Topics](#class-topics)  
 [Semester Project](#team-semester-project)  
 [Project Inspiration](#project-inspiration)  
 [Projects to Avoid](#projects-to-avoid)  
 [License](#license)  
+
+## Syllabus
+[Course syllabus on Github.io](https://robinagandhi.github.io/swa/)
 
 ## Supplies
 * Bringing a laptop to class is highly encouraged for in-class activities.
@@ -47,6 +51,8 @@ This repository includes things related to the Software Assurance course at UNO
   * Testing strategies
 1. Other topics
   * Guest talks from other faculty or practitioners.
+
+\* These topics will get refined and updated as the semester progresses
 
 ## Team Semester Project
 This class strives to encourage learning by doing and making a real difference to the practice of building software. To turn this spirit into reality, a semester long project will require you to work with a open source software project. A group of three students will select a unique open source software project and contribute security related improvements.
@@ -101,7 +107,7 @@ The project will have the following deliverables:
 1. Code analysis and testing for Secure Software &ndash; **November 30th, 2016**
 1. Class presentations &ndash; **December 7th, 2016**
 
-All dates are subject to change as the course progresses
+\* All dates are subject to change as the course progresses
 
 ## Final Exam
 
