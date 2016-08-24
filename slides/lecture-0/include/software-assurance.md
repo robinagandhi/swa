@@ -18,16 +18,22 @@ class: center, middle
 As organizations struggle with the quality/cost of in-house software development, outsourcing does not rid of the responsibilities. In fact, expressing expectations and assessing becomes even more important!
 ---
 class: center, middle
-[![sandworm](https://www.isightpartners.com/wp-content/uploads/2014/10/sand_worm_logotype-e1413241743641.jpg)](https://www.isightpartners.com/2014/10/cve-2014-4114/)
+[![sandworm](https://regmedia.co.uk/2014/10/14/sandworm_vuln_logo.jpg)](http://www.theregister.co.uk/2014/10/14/isight_microsoft_announce_windows_and_windows_server_0day/)
 ???
 As we explore this course topic, it helps to know about recent day software failures. Each one of these send organizations scrambling for testing and applying patches in their environments.
 
 2014 Sandworm used a zero day exploit in all version of Microsoft Windows. The vulnerability exists in PACKAGER.DLL, which is a part of Windows Object Linking and Embedding (OLE) property. By using a crafted PowerPoint document, an .INF file in embedded OLE object can be copied from a remote SMB share folder and installed on the system. Attackers can exploit this logic defect to execute another malware, downloaded via the same means. [Source: http://blog.trendmicro.com/trendlabs-security-intelligence/an-analysis-of-windows-zero-day-vulnerability-cve-2014-4114-aka-sandworm/]
+
+CVE: https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-4114
+CWE: Improper Input Validation (CWE-20)
 ---
 class: center, middle
 [![Heartbleed](http://heartbleed.com/heartbleed.png)](http://heartbleed.com)
 ???
-2014 Heartbleed in the OpenSSL library was really a wake-up call for organizations using poor management practices for software acquisition and inventory. Many organizations started paying attention to open source software risk management after this incident. This bug involved a buffer length check issue that allowed an attacker to read all memory contents including SSL\TLS keys used for encryption. At the time, none of the open source or proprietary static or dynamic analysis tools could discover this vulnerability.
+2014 Heartbleed in the OpenSSL library was really a wake-up call for organizations using poor management practices for software acquisition and inventory. Many organizations started paying attention to open source software risk management after this incident. This bug involved a buffer length check issue that allowed an attacker to read all memory contents including SSL\TLS keys used for encryption. At the time, none of the open source or proprietary static or dynamic analysis tools
+could discover this vulnerability.
+CWE-130: Improper Handling of Length Parameter Inconsistency
+
 ---
 class: center, middle
 [![shellshock](https://blog.digicert.com/wp-content/uploads/2014/09/Shellshock.png)](https://en.wikipedia.org/wiki/Shellshock_%28software_bug%29)
@@ -49,6 +55,8 @@ Challenge faced with fixing the Quadrooter flaws:
 "Qualcomm has a significant position in the development chain, in that a phone maker isn't taking the Android open-source code directly from Google, they're actually taking it from Qualcomm,"
 http://www.zdnet.com/article/quadrooter-security-flaws-affect-over-900-million-android-phones/
 
+https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2503
+
 ---
 class: center, middle
 ## What % is FUD and Marketing?
@@ -61,7 +69,7 @@ class: center, middle
 ---
 
 ## [Top security predictions in 2015](http://www.itproportal.com/2015/01/07/security-trends-2015-predictions-round/#ixzz4H98O0kdp)
-#
+
 .small[
 
 Internet of Things  
@@ -99,9 +107,6 @@ Brian Morgan, CTO, Skyline Technologies
 This is an interesting observation. The security community is too busy dealing with fixing things from outside and dealing with the problem after it already is a serious problem. The predictions are almost about the things that the vendors can solve and can currently address. The latter part is the hard problem.
 
 The software engineering community is too busy inventing solutions to build more and more complex pieces of software faster and cheaper.
----
-class: center, middle
-[![Tradition](images/tradition.png)](http://security.gloriad.org/blog/2007/10/21/traditional-thinking/)
 
 ---
 class: center, middle
@@ -148,6 +153,11 @@ involved; as an obvious example, an assured denial-of-service attack can
 be accomplished with enough nuclear weapons.
 
 The goal in the practice of security is to construct sufficient defenses against the likely threats
+
+---
+class: center, middle
+[![Tradition](images/tradition.png)](http://security.gloriad.org/blog/2007/10/21/traditional-thinking/)
+
 ---
 class: center, middle
 # What is Software Assurance?
