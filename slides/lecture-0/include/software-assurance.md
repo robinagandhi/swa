@@ -252,7 +252,7 @@ Next &mdash; How do we go about it?
 ]
 
 ???
-A new term is introduced here to further clarify __Software Assurance__. This terms is better than saying _secure software_. The term security engineering reflects that intent that software has been developed and tested to operate as intended in its operational environment.
+A new term is introduced here to further clarify __Software Assurance__. This terms is better than saying _secure software_. The term security engineering reflects the intent that software has been developed and tested to operate as intended in its operational environment.
 ---
 class: left, middle
 ## Probably the most serious risk in system software is incomplete design, in the sense that .red[inadvertent loopholes] exist in the protective barriers and have not been .red[foreseen by the designers].
