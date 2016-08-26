@@ -230,7 +230,7 @@ Highlights:
 * Account for known attacks
 * Acknowledge unknown attacks and plan for them.
 * Recover from failures --> This is "resiliency"
-# This is outcome of Software Security Engineering
+# This is an outcome of Software Security Engineering
 ---
 
 # Software Weakness
@@ -239,7 +239,7 @@ Highlights:
 Weakness are any mistakes in implementation, design, or other phases of the software development lifecycle.
 --
 
-## .red[Basis for belief] increases if data-driven evidence available for reducing weaknesses
+## .red[Basis for belief] increases if data-driven evidence is available for reducing weaknesses
 
 ---
 class: center, middle
@@ -252,7 +252,7 @@ Next &mdash; How do we go about it?
 ]
 
 ???
-A new term is introduced here to further clarify __Software Assurance__. This terms is better than saying _secure software_. The term security engineering reflects that intent that software has been developed and tested to operate as intended in its operational environment.
+A new term is introduced here to further clarify __Software Assurance__. This terms is better than saying _secure software_. The term security engineering reflects the intent that software has been developed and tested to operate as intended in its operational environment.
 ---
 class: left, middle
 ## Probably the most serious risk in system software is incomplete design, in the sense that .red[inadvertent loopholes] exist in the protective barriers and have not been .red[foreseen by the designers].
