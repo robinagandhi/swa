@@ -230,7 +230,7 @@ Highlights:
 * Account for known attacks
 * Acknowledge unknown attacks and plan for them.
 * Recover from failures --> This is "resiliency"
-# This is outcome of Software Security Engineering
+# This is an outcome of Software Security Engineering
 ---
 
 # Software Weakness
@@ -239,7 +239,7 @@ Highlights:
 Weakness are any mistakes in implementation, design, or other phases of the software development lifecycle.
 --
 
-## .red[Basis for belief] increases if data-driven evidence available for reducing weaknesses
+## .red[Basis for belief] increases if data-driven evidence is available for reducing weaknesses
 
 ---
 class: center, middle
