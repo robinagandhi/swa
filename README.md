@@ -113,6 +113,40 @@ The project will have the following deliverables:
 
 * In-class exam on **December 14th, 6:30pm**
 
+## How to Clone and Navigate this Repo
+
+Use these instructions if you do not intend to contribute any upstream changes. In a CLI navigate to the directory where you want to clone the repository. Then run the following clone command:
+
+```bash
+# Clone the Repository to the current directory
+# Notice the `.` at the end of the command
+git clone https://www.github.com/robinagandhi/swa .
+```
+Now examine the directory structure. It should have the same directory structure as this repository on Github.com.
+
+The repository has two branches that serve different purposes.
+* `master`: This branch includes files for course planning, project description and any self-paced tutorials.
+* `gh-pages`: This branch includes website files that are hosted on Github.io. The website hosts the course syllabus and markdown based slides for all the class lectures.
+
+To switch between the two branches use the following git commands:
+```bash
+# Switch to the `gh-pages` branch
+git checkout gh-pages
+
+# Switch to the `master` branch
+git checkout master
+```
+
+To keep your local repository updated with upstream changes use the git pull command.
+```bash
+# update the repository
+git pull
+```
+
+## How to Contribute
+TBD
+
+
 ## License  
 Software Assurance.  
 Copyright (C) 2016  Dr. Robin A. Gandhi
