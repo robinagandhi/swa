@@ -148,10 +148,10 @@ git pull
 First fork this repo on Github.com while logged into your account. Then clone the forked repo on your computer.
 
 Now you will need two capabilities: 1) Keep your fork (downstream) synced with this repo (upstream) and 2) Make upstream pull requests for changes made in the forked repo. Both these can be accomplished by following these steps:  
-1. [Fork a Repo](https://help.github.com/articles/fork-a-repo/)
-1. [Syncing a Fork](https://help.github.com/articles/syncing-a-fork/)
-1. Push changes to your remote fork: `git push origin master`
-1. [Create a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)
+1. [Fork a Repo](https://help.github.com/articles/fork-a-repo/)  
+1. [Syncing a Fork](https://help.github.com/articles/syncing-a-fork/)  
+1. Push changes to your remote fork: `git push origin master`  
+1. [Create a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)  
 
 More advanced collaboration features can be found here: https://help.github.com/categories/collaborating-on-projects-using-issues-and-pull-requests/
 
