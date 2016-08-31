@@ -2,11 +2,13 @@ class: center, middle
 # Systems Security Engineering*
 
 .footnote[
-\*Based on Chapter 2 of [NIST 800-160 Public draft 2 Systems Security Engineering Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
+\*Based on Chapter 2 of [NIST SP 800-160 Systems Security Engineering &mdash; Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)  
+which is in turn based on [ISO/IEC/IEEE 15288:2015
+Systems and software engineering](http://www.iso.org/iso/catalogue_detail?csnumber=63711)
 ]
 
 ???
-Another update to this document is going to be released soon in Fall 2016. Keep an eye out for it.
+Another update to NIST SP 800-160 is going to be released soon in Fall 2016. Keep an eye out for it.
 
 ---
 
@@ -292,6 +294,26 @@ Evidence-based demonstration, through reasoning, that the system-of-interest is 
 The framework is independent of system type and engineering or acquisition process model and is not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, each with its own checks and balances
 
 ---
+class: center, middle
+![NIST SP 800-160 Public Draft 2](images/framework.png)  
+???
+
+???
+Figure source: [NIST SP 800-160 Systems Security Engineering &mdash; Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
+
+# Systems Security Engineering Framework
+Establishing problem, solution, and trustworthiness contexts as key components of a systems security engineering framework ensures that the security of a system is based on achieving a sufficiently complete understanding of the problem as defined by a set of stakeholder security objectives, security concerns, protection needs, and security requirements. This understanding is essential in order to develop effective security solutions &mdash; that is, a system that is sufficiently trustworthy and adequately secure to protect stakeholder’s assets in terms of loss and the associated consequences.
+
+# System security analyses
+
+Employ concepts, principles, means, methods, processes, practices, tools, and techniques from the security perspective to provide relevant data and technical interpretations of issues from the security perspective
+
+Support gradation:  
+\* Differentiated to align with the scope and objectives of where they are applied within the systems security engineering framework
+
+\* Performed with a level of fidelity, rigor, and formality to produce data with a level of confidence that matches the assurance required by the stakeholders and engineering team
+
+---
 
 # Problem Context (1/2)
 ## .red[Security objectives]
@@ -366,25 +388,11 @@ Specifies the functional, assurance, and strength characteristics for a protecti
 Assurance cases also provide reasoned, auditable artifacts that support the contention that a claim or set of claims is satisfied, including systematic argumentation and its underlying evidence and explicit assumptions that support the claims [ISO/IEC 15026-2]
 
 ---
-class: center, middle
-![NIST SP 800-160 Public Draft 2](images/framework.png)  
-???
-# Systems Security Engineering Framework
-Establishing problem, solution, and trustworthiness contexts as key components of a systems security engineering framework ensures that the security of a system is based on achieving a sufficiently complete understanding of the problem as defined by a set of stakeholder security objectives, security concerns, protection needs, and security requirements. This understanding is essential in order to develop effective security solutions &mdash; that is, a system that is sufficiently trustworthy and adequately secure to protect stakeholder’s assets in terms of loss and the associated consequences.
-
-# System security analyses
-
-Employ concepts, principles, means, methods, processes, practices, tools, and techniques from the security perspective to provide relevant data and technical interpretations of issues from the security perspective
-
-Support gradation:  
-\* Differentiated to align with the scope and objectives of where they are applied within the systems security engineering framework
-
-\* Performed with a level of fidelity, rigor, and formality to produce data with a level of confidence that matches the assurance required by the stakeholders and engineering team
-
----
 
 class: center, middle
 ![NIST SP 800-160 Public Draft 2](images/framework-course-topics.png)  
+???
+Figure source: [NIST SP 800-160 Systems Security Engineering &mdash; Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
 
 ---
 
@@ -392,6 +400,15 @@ class:center, middle
 # Next Up
 Constructing Assurance Cases using Goal Structuring Notation
 
+TODO: Create a [Lucidchart Account](https://www.lucidchart.com/users/registerLevel?tP=1&t4=A&t10=A)
+
+---
+
+![preview](images/preview.svg)
+???
+Source: This example is based on the presentation of this paper given at ICSE conference: J. B. Goodenough, C. B. Weinstock and A. Z. Klein, "Eliminative induction: A basis for arguing system confidence," 2013 35th International Conference on Software Engineering (ICSE), San Francisco, CA, 2013, pp. 1161-1164.
 ---
 
 ![lifecycle processes](images/systems-engineering-lifecycle-processes.png)
+???
+Figure source: [NIST SP 800-160 Systems Security Engineering &mdash; Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
