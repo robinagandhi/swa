@@ -24,7 +24,7 @@ This repository includes things related to the Software Assurance course at UNO
 1. Collaborating when working on Software
   * Get familiar with version control
     * [Github Primer](./module-1/github-primer.md)
-1. Open Source Software (OSS) Licensing
+1. [Corporate Engagement with Open Source Software (OSS) and Licensing](https://robinagandhi.github.io/swa/slides/matt-g-guest-lecture/corporate-participation-with-oss-communities.pdf)
   * Guest Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 1. Engineering For Assurance
   * [Systems Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html). Based on Chapter 2 from [NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf).
