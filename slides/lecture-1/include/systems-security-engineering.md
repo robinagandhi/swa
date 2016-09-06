@@ -31,9 +31,12 @@ The blog is calling it malware, but it really is just a python script with comma
 # Agenda
 
 1. Need for Security Engineering  
+
 1. Terminology  
+
 1. Security Engineering Perspective  
-1. Security Engineering Framework  
+
+1. Security Engineering Framework
 
 
 ---
@@ -105,7 +108,7 @@ We will refer to "above the waterline" and "below the waterline" problems
 
 ---
 class: center, middle
-# Starting with the Right Abstractions
+# Systems Engineering View
 .top-right[
     ![Abstractions](http://www.espen.com/graphics/math-answer-findx.gif)
 ]
@@ -173,6 +176,10 @@ Systems Engineering View
 
 ---
 
+class: center, middle
+# Security Engineering Perspective
+
+---
 # Security Engineering Perspective
 
 ## .red[Security]
@@ -407,6 +414,10 @@ TODO: Create a [Lucidchart Account](https://www.lucidchart.com/users/registerLev
 ![preview](images/preview.svg)
 ???
 Source: This example is based on the presentation of this paper given at ICSE conference: J. B. Goodenough, C. B. Weinstock and A. Z. Klein, "Eliminative induction: A basis for arguing system confidence," 2013 35th International Conference on Software Engineering (ICSE), San Francisco, CA, 2013, pp. 1161-1164.
+---
+class: center, middle
+# Systems Engineering Lifecycle Processes
+
 ---
 
 ![lifecycle processes](images/systems-engineering-lifecycle-processes.png)
