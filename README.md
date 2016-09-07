@@ -29,7 +29,7 @@ This repository includes things related to the Software Assurance course at UNO
 1. Engineering For Assurance
   * [Systems Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html). Based on Chapter 2 from [NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf).
   * Industry practices. [BSIMM](https://www.bsimm.com/framework/)
-1. Constructing Assurance Cases  
+1. [Assurance Cases ](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case.html) 
   * [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
   * Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
   * Formal diagramming in [Adelard ASCE](http://www.adelard.com/asce/v4.2/download.html)  
