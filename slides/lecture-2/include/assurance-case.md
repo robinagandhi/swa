@@ -351,7 +351,7 @@ class: middle
 
 ## Example
 - .blue[The system] .green[is acceptably] .orange[secure]
-- .blue[The System] .green[has no] .orange[unacceptable consequences to assets from security threats]
+- .blue[The system] .green[has no] .orange[unacceptable consequences to assets from security threats]
 
 ---
 class: middle
@@ -382,12 +382,12 @@ class: middle
 
 ## .red[C18: The System uses a Static Analysis tool]
 .footnote[
-See notes for class exercise
+See notes (hit `p`) for class exercise
 ]
 ???
 # Class exercise:
-Work in your team to rephrase these appropriately.
-When you are done enter your answers [here.](https://docs.google.com/a/unomaha.edu/document/d/1ApR8Mdh4Ks4bB10ame4oXb6hs3AcxriOH0L-mjKOS1I/edit?usp=sharing)
+# Work in your team to rephrase these appropriately.
+When you are done enter your answers in this [Google Doc](https://docs.google.com/a/unomaha.edu/document/d/1ApR8Mdh4Ks4bB10ame4oXb6hs3AcxriOH0L-mjKOS1I/edit?usp=sharing)
 
 ---
 
@@ -428,7 +428,7 @@ class: middle
 class: middle
 # Elaborating the Claim
 
-## Additional information not part of the claim or evidence
+## .green[Additional information] that is excluded from the claim or evidence
 - Context (understanding)
 - Justification (rationale)
 - Assumptions (validity)
@@ -484,7 +484,7 @@ class: middle
 ## Provides direction for an argument
 
 ## Phrased with respect to the argument
-- .green[Argument by appeal to software acquisition practices]
+- .green[Argument by appeal to] software acquisition practices
 
 ## A strategy is elaborated by providing a series of sub-claims
 ---
@@ -497,7 +497,7 @@ class: middle
 class: middle
 # Argument
 
-## Conveys why to believe a claim has been met
+## Conveys why we believe a claim has been met
 - Refine claims into sub claims, until the sub-claim can be directly supported by the actual evidence
 - Bridges the gap between claims and evidence
 
