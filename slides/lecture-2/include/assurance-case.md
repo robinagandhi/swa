@@ -542,16 +542,42 @@ class: middle
 ![Evidence](images/evidence.svg)
 
 ---
+![arrow](images/arrows.svg)
+.topnote[
+What do the arrows mean?
+]
+
+---
 class: center, middle
 # Coming up with a good Argument is .large[Hard!]
+
+---
+
+# Eliminative Induction
+## Support/assurance increases as reasons for doubt are eliminated
+
+--
+
+## Claim: The bulb will glow when switched on
+- Unless switch not connected to light
+- Unless no power
+- Unless dead light bulb  
+![light](images/lightexample.png)
+
+???
+Image and example provided in slides by John B. Goodenough
 
 ---
 # Introducing Doubts*
 
 ## Making doubts explicit
 ### Attack claim (rebutting defeater) — why claim could be false
+--
+
 ### Attack evidence (undermining defeater) — why evidence could be irrelevant
-### Attack inference (undercutting defeater) — premise good; conclusion uncertain
+--
+
+### .green[Attack inference](undercutting defeater) — premise good; conclusion uncertain
 
 .footnote[
 \*See notes for sources [hit: p]
@@ -564,42 +590,13 @@ The content in next few slides is based on:
 3. Explicit permission to use slides provided by John B. Goodenough
 
 ---
+# Assurance Case Logical Structure
+## Notice .green[inference rules]?
+![structure](images/structure.png)
+.footnote[
+[Arguing Security - Creating Security Assurance Cases](https://buildsecurityin.us-cert.gov/daisy/bsi/articles/knowledge/assurance/643-BSI.html)
+]
 
-# Eliminative Induction
-## Support/assurance increases as reasons for doubt are eliminated
-
---
-
-## Claim: The bulb will always turn on
-- Unless switch not connected to light
-- Unless no power
-- Unless dead light bulb  
-![light](images/lightexample.png)
-
-???
-Image and example provided in slides by John B. Goodenough
-
----
-class: middle
-# Measuring Confidence
-
-## Baconinan Probability
-- 0|n (no confidence) — no doubts eliminated
-- 2|3 (partial confidence) — residual doubt
-- n|n (complete confidence) — no doubts remain
-
---
-
-## Use for relative improvements, not comparison
-
-???
-Source: Slides by John B. Goodenough
-Source: Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measuring assurance case confidence using Baconian probabilities. In Proceedings of the 1st International Workshop on Assurance Cases for Software-Intensive Systems (ASSURE '13). IEEE Press, Piscataway, NJ, USA, 7-11.
-
----
-
-# Example Claim
-![claim](images/tweetyclaim.svg)
 ---
 class: middle
 # Inference Rule
@@ -613,6 +610,11 @@ class: middle
 --
 
 .red[An argument is an instantiation of one or more inference rules with a specific premises and conclusions]
+
+---
+
+# Example Claim
+![claim](images/tweetyclaim.svg)
 
 ---
 # Inference Rule
@@ -652,11 +654,40 @@ class: middle
 ![claim](images/undermine-done.svg)
 
 ---
+class: middle
+# Measuring Confidence
+
+## Baconinan Probability
+- 0|n (no confidence) — no doubts eliminated
+- 2|3 (partial confidence) — residual doubt
+- n|n (complete confidence) — no doubts remain
+
+--
+
+## Use for relative improvements, not comparison
+
+???
+Source: Slides by John B. Goodenough
+Source: Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measuring assurance case confidence using Baconian probabilities. In Proceedings of the 1st International Workshop on Assurance Cases for Software-Intensive Systems (ASSURE '13). IEEE Press, Piscataway, NJ, USA, 7-11.
+
+---
+# Few more notations
+## Claim to be further developed
+![developclaim](images/developclaim.svg)
+
+---
+# Few more notations
+## No further argumentation
+![stop](images/stopargument-1.svg)
+![stop](images/stopargument-2.svg)
+
+---
 ![preview](images/preview.svg)
 
 ???
 Source: This example is partially based on the presentation of this paper given at ICSE conference: J. B. Goodenough, C. B. Weinstock and A. Z. Klein, "Eliminative induction: A basis for arguing system confidence," 2013 35th International Conference on Software Engineering (ICSE), San Francisco, CA, 2013, pp. 1161-1164.
 ---
+
 class: center, middle
 # .large[Got Assurance?]
 .bottom-left[
