@@ -29,24 +29,25 @@ This repository includes things related to the Software Assurance course at UNO
 1. Engineering For Assurance
   * [Systems Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html). Based on Chapter 2 from [NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf).
   * Industry practices. [BSIMM](https://www.bsimm.com/framework/)
-1. [Assurance Cases ](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case.html) 
+1. [Assurance Cases ](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case.html) for Software Security Engineering
   * [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
   * Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
   * Formal diagramming in [Adelard ASCE](http://www.adelard.com/asce/v4.2/download.html)  
-1. Requirements for Secure Software
+  * [Assurance Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case-exercise.html)
+1. Requirements for Software Security Engineering
   * Theory of secure requirements. Problem Frames.
   * Lucidchart based Mis-use case diagrams. Use this [template](https://www.lucidchart.com/invitations/accept/59a6e092-49bd-4af3-80be-a1f0862923e5) to start a mis-use case.
-1. Design for Secure Software
+1. Design for Software Security Engineering
   * Threat Modeling. Data flow based threat identification and mitigation techniques. Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
   * Design patterns:
     1. Expressing design principles as patterns
     1. Architectural patterns for security
     1. Object-oriented code patterns for security
-1. Coding for Secure Software
+1. Coding for Software Security Engineering
   * Knowledge base: [Common Weakness Enumeration](http://cwe.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
   * [DHS SWAMP](https://www.mir-swamp.org/)
   * Code review tools and techniques
-1. Testing for Secure Software
+1. Testing for Software Security Engineering
   * Knowledge base: [CAPEC](https://capec.mitre.org/)
   * Testing strategies
 1. Other topics
