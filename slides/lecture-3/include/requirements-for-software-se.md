@@ -81,6 +81,10 @@ class: middle
 class: center, middle
 # [What is Requirements Engineering?](http://www.cs.toronto.edu/~sme/RE01/)
 
+.footnote[
+See notes (hit `p`) for definition
+]
+
 ???
 # Requirements Engineering
 - Requirements Engineering (RE) lies at the heart of software development.
@@ -110,6 +114,7 @@ class: middle
 - .red[Indicative]: asserts a fact (D). Given properties of the environment
 
 ---
+class: middle
 # Solution Expression
 
 ## Specification (S)
@@ -135,6 +140,34 @@ intangible is dashed.
 - Problem frames are described by frame diagrams, which basically consist of rectangles and links between these
 - The task is to construct a machine that influences the behavior of the problem domain it is integrated in
 ---
+# Problem Frames
+
+- The machine solves a problem in a given domain (part of the world)
+- The machine and the given domain interact at an interface of shared phenomena
+(events, states)
+- The requirement adds a constraint to the domain’s intrinsic properties or behavior
+
+![machine](images/problem-frame.svg)
+
+---
+class: middle
+# Problem Frame Example
+
+- A PC user wants to analyze the messages in the   
+mail client’s mailbox.
+- The messages for each correspondent are concatenated  
+in one file. The mailfiles are all in one directory
+- The analysis report has a specified format, with   
+detail lines in order by correspondent name
+- The analysis report will also show statistics on volume, size   
+and frequency of incoming messages, time taken to reply
+
+---
+class: middle
+# Problem Frame Example
+![example](images/example.svg)
+
+---
 # Problem frames
 ## Relationships
 
@@ -147,11 +180,9 @@ phenomena E3
 requirements reference to a domain,
 - A dashed arrow shows that it is  
 a constraining reference.
-
 .top-right[
-![legend](images/problem-frame-legend.png)
+![example](images/example.svg)
 ]
 
----
 
-![legend](images/problem-frame-legend.png)
+---
