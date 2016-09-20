@@ -16,32 +16,31 @@ class: center, middle
 ![dilbert-requirements](http://assets.amuniversal.com/3c9aa7b06d5101301d7a001dd8b71c47)
 
 ---
+class: middle
 # NIST SP 800-160 SSE
-## Stakeholder Needs and Requirements Definition Process
-- Purpose  
-“The purpose of the .red[Stakeholder] .green[Needs and Requirements Definition] process is to define the stakeholder requirements for a system that can provide the capabilities needed by users and other stakeholders in a defined environment.”
+## Stakeholder Needs and Requirements Definition Process\*
+- _The purpose of the .red[Stakeholder] .green[Needs and Requirements Definition] process is to define the stakeholder requirements for a system that can provide the capabilities needed by users and other stakeholders in a defined environment._
 
 .footnote[
-ISO/IEC/IEEE 15288-2015
-]
-
----
-
-# NIST SP 800-160 SSE
-## System Requirements Definition Process
-- Purpose  
-“The purpose of the .red[System] .green[Requirements Definition] process is to transform the stakeholder, user- oriented view of desired capabilities into a technical view of a solution that meets the operational needs of the user.”
-
-.footnote[
-ISO/IEC/IEEE 15288-2015
+\*ISO/IEC/IEEE 15288-2015
 ]
 
 ---
 class: middle
-# User Requirements
+# NIST SP 800-160 SSE
+## System Requirements Definition Process\*
+- _The purpose of the .red[System] .green[Requirements Definition] process is to transform the stakeholder, user- oriented view of desired capabilities into a technical view of a solution that meets the operational needs of the user._
+
+.footnote[
+\*ISO/IEC/IEEE 15288-2015
+]
+
+---
+class: middle
+# Stakeholder Needs and Requirements
 
 ## Litmus test
-- Even if you did not build the system/software the user will still have this need!
+- Even if you did not build the software the stakeholder will still have this need!
 - They are located in the [environment of operation for the system-of-interest\*](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#15)
 
 .footnote[
@@ -52,7 +51,6 @@ class: middle
 # Fitness for Purpose
 ## Software is built for a user purpose
 - It will fail if either:  
-1. Software does not fulfill the purpose
 1. Designer has inadequate understanding of the purpose  
 1. Software is used for a purpose different than originally designed for  
 --
@@ -115,37 +113,42 @@ See notes (hit `p`) for definition
 Source: http://www.cs.toronto.edu/~sme/RE01/
 
 ---
-# If RE is about identifying Purpose then...
+class: middle
+# Stakeholder Requirements
 
---
-
-## Requirements are about .red[relationships] in the application domain
+## These requirements are about .red[relationships] in the application domain
 - They are not about the software system or the shared interface with the software system
 - They are effects in the application domain that the customer wants the machine to guarantee
 
---
+---
+class: middle
+# Stakeholders Requirements
 
-## Distance your analysis from the solution!
+## Expressed in two moods
+- .red[Optative]: expresses a wish (R).   
+Desired condition over the phenomena of the environment
+- .red[Indicative]: asserts a fact (D).   
+Given properties of the environment
 
 ---
 class: middle
-# Requirements Expression
+# System Requirements
 
-## Requirements are expressed in two moods
-- .red[Optative]: expresses a wish (R). Desired condition over the phenomena of the environment.
-- .red[Indicative]: asserts a fact (D). Given properties of the environment
+## Expressed in a single mood
+- .red[Optative]: expresses a wish, Specification (S)  
+Desired condition over the shared phenomena at the interface between the system and the environment
 
 ---
+
 class: middle
-# Solution Expression
-
-## Specification (S)
-- Optative description of a condition over the shared phenomena at the interface between the system and the environment
-
+# Problem Frames
+.footnote[
+Allows focus on problems!
+]
 ---
 # Problem Frames
 ## Frame Diagrams
-- Plain rectangles denote given domains    
+- Plain rectangles denote given domains      
 (that already exist)
 - A rectangle with a single vertical stripe   
 denotes a designed domain
@@ -164,10 +167,12 @@ intangible is dashed.
 ---
 # Problem Frames
 
-- The machine solves a problem in a given domain (part of the world)
-- The machine and the given domain interact at an interface of shared phenomena
-(events, states)
-- The requirement adds a constraint to the domain’s intrinsic properties or behavior
+- The machine solves a problem in a given domain   
+(part of the world)
+- The machine and the given domain interact at an   
+interface of shared phenomena (events, states)
+- The requirement adds a constraint to the   
+domain’s intrinsic properties or behavior
 
 ![machine](images/problem-frame.svg)
 
