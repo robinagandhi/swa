@@ -16,10 +16,31 @@ class: center, middle
 ![dilbert-requirements](http://assets.amuniversal.com/3c9aa7b06d5101301d7a001dd8b71c47)
 
 ---
-class: middle
-# Requirements are about Needs
+# NIST SP 800-160 SSE
+## Stakeholder Needs and Requirements Definition Process
+- Purpose  
+“The purpose of the .red[Stakeholder] .green[Needs and Requirements Definition] process is to define the stakeholder requirements for a system that can provide the capabilities needed by users and other stakeholders in a defined environment.”
 
-## Requirements "Litmus tests"
+.footnote[
+ISO/IEC/IEEE 15288-2015
+]
+
+---
+
+# NIST SP 800-160 SSE
+## System Requirements Definition Process
+- Purpose  
+“The purpose of the .red[System] .green[Requirements Definition] process is to transform the stakeholder, user- oriented view of desired capabilities into a technical view of a solution that meets the operational needs of the user.”
+
+.footnote[
+ISO/IEC/IEEE 15288-2015
+]
+
+---
+class: middle
+# User Requirements
+
+## Litmus test
 - Even if you did not build the system/software the user will still have this need!
 - They are located in the [environment of operation for the system-of-interest\*](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#15)
 
@@ -27,8 +48,9 @@ class: middle
 \* Michael Jackson, [The Meaning of Requirements, 1996](http://mcs.open.ac.uk/mj665/aserqts5.pdf)
 ]
 ---
+
 # Fitness for Purpose
-## Software is built for a purpose
+## Software is built for a user purpose
 - It will fail if either:  
 1. Software does not fulfill the purpose
 1. Designer has inadequate understanding of the purpose  
