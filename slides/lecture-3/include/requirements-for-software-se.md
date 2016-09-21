@@ -479,3 +479,113 @@ class: middle
 ]
 
 ---
+class: middle
+# Scenarios: UML Use Cases
+## Examine concrete scenarios of system use
+- Actors and Use Cases
+- .red[Associate] actors/users to the use cases
+- Relate actors using .red[generalization] and .red[realization]
+- Relate use cases using .red[dependencies]
+- Use cases have verbs or noun-verb pairs in it
+
+---
+class: middle
+# Use Case Diagram
+![usecase](images/usecase-legend.svg)
+---
+class: middle
+# Use Case Diagram
+
+## Relationships
+
+.left-column[
+![association](images/association.svg)
+]
+.right-column[
+![specialization](images/specialization.svg)
+]
+---
+class: middle
+# Use Case Diagram
+
+.left-column[
+![usecase](images/usecase.svg)
+]
+---
+class: middle
+# Mis Use Case Diagram
+
+## Misuser
+An actor that initiates misuse cases, either intentionally or inadvertently.
+
+--
+
+## Misuse Case
+A sequence of actions, including variants, that a system or other entity can perform, interacting with misusers of the entity and causing harm to some stakeholder if the sequence is allowed to complete
+
+Extension to the UML use cases modeling language
+---
+class: middle
+# Misuse Case Diagram
+![misusecase](images/misuse-legend.svg)
+
+---
+class: middle
+# Misuse Case Diagram
+![misusecase](images/misuse-1.svg)
+---
+class: middle
+# Misuse Case Diagram
+![misusecase](images/misuse-2.svg)
+---
+class: middle
+# Misuse Case Diagram
+![misusecase](images/misuse-3.svg)
+---
+class: middle
+# Misuse Case Diagram
+![misusecase](images/misuse-5.svg)
+---
+class: middle
+# Misuse Case
+## Construction Steps
+### Step 1
+Include normal actors and the required use cases regardless of any security considerations
+### Step 2
+Introduce the major mis-actors and misuse cases, i.e., threats that are reasonably likely. Name should give a clear understanding of motivation
+
+---
+class: middle
+# Misuse Case
+## Construction Steps
+### Step 3
+Investigate the potential relations between misuse cases and use cases, especially in terms of potential “includes”-relations. Many threats can realized by a system’s normal functionality. E.g. denial of service, covert channels, sql injection
+### Step 4
+Introduce new use cases with the purpose to detect or prevent misuse cases
+
+---
+class: middle
+# Misuse Case
+## Construction Steps
+### Step 5
+Make a detailed requirements [documentation](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.9.8190&rep=rep1&type=pdf)
+
+---
+
+class: middle
+# Requirements and Risk
+
+---
+class: middle
+# Risk
+![risk](images/risk.png)
+???
+This is the language of risk. Goals, Scenarios and viewpoints are the language of requirements. However our understanding always lacks an explicit traceability from the security requirements to the risk components. By building abuse and misuse models we make this relationship explicit.
+
+---
+class: middle
+# The Design Activity
+![risk](images/requirements-risk.png)
+
+???
+A model that helps to understanding security requirements in terms of related risk components is absolutely necessary. It can establish the necessity and sufficiency of security requirements in the given context.
