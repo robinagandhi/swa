@@ -47,15 +47,15 @@ class: middle
 \* Michael Jackson, [The Meaning of Requirements, 1996](http://mcs.open.ac.uk/mj665/aserqts5.pdf)
 ]
 ---
-
+class: middle
 # Fitness for Purpose
-## Software is built for a user purpose
+## Software is built for a purpose
 - It will fail if either:  
 1. Designer has inadequate understanding of the purpose  
 1. Software is used for a purpose different than originally designed for  
---
 
-- Inadequate understanding of the purpose leads to poor quality software
+## Inadequate understanding of the purpose leads to poor quality software
+
 ???
 # When will a designer have inadequate understanding of the purpose?
 
@@ -69,7 +69,7 @@ class: middle
 
 class: middle
 # .red[User stories] - Agile, XP, SCRUM
-## .green[Why] and .blue[how] would .orange[someone] use it?
+## .blue[How] and .green[why] and would .orange[someone] use software?
 - Scenarios
 - They are about user needs
 - [Informal](https://www.agilealliance.org/glossary/three-cs/), [Card, Conversation and Confirmation](http://ronjeffries.com/xprog/articles/expcardconversationconfirmation/)
@@ -84,14 +84,14 @@ class: middle
 ---
 class: middle
 # .red[Use cases] -  OOP, UML
-## .green[Why] and .blue[how] would .orange[someone] use it?
+## .green[Why] and .blue[how] would .orange[someone] use software?
 - Goal-driven Scenarios
 - They describe system behavior to fulfill user needs
 - Several [templates](http://alistair.cockburn.us/Basic+use+case+template) available for [use cases](http://alistair.cockburn.us/Structuring+use+cases+with+goals)  
-  .red[Purpose] = requirements  
-  Contents = consistent prose  
-  Plurality = multiple scenarios per use case  
-  Structure = semi-formal  
+  .red[Purpose] = build requirements  
+  Contents = have consistent prose  
+  Plurality = include multiple scenarios per use case  
+  Structure = be semi-formal  
 
 .top-right[
 ![case](http://www.it2051229.com/data_solutions/sysanaldesign/figure1.png)
@@ -125,9 +125,9 @@ class: middle
 # Stakeholders Requirements
 
 ## Expressed in two moods
-- .red[Optative]: expresses a wish (R).   
+- .red[Optative]: expresses a wish (R)   
 Desired condition over the phenomena of the environment
-- .red[Indicative]: asserts a fact (D).   
+- .red[Indicative]: expresses things existing in the problem world (D)   
 Given properties of the environment
 
 ---
@@ -143,22 +143,20 @@ Desired condition over the shared phenomena at the interface between the system 
 class: middle
 # Problem Frames
 .footnote[
-Allows focus on problems!
+Allows focus on `problems` to be solved.
 ]
 ---
+class: middle
 # Problem Frames
 ## Frame Diagrams
-- Plain rectangles denote given domains      
-(that already exist)
-- A rectangle with a single vertical stripe   
-denotes a designed domain
-- A rectangle with a double vertical stripe   
-denotes the machine to be developed
+.left-column[
+- Plain rectangles denote given domains (things that already exist)
+- A rectangle with a single vertical stripe denotes a designed domain
+- A rectangle with a double vertical stripe denotes the machine to be developed
 - Requirements are denoted with a dashed oval
-- Everything tangible is solid,  
-intangible is dashed.
-.top-right[
-![legend](images/problem-frame-legend.png)
+]
+.right-column[
+![legend](images/legend.svg)
 ]
 
 ???
@@ -166,16 +164,26 @@ intangible is dashed.
 - The task is to construct a machine that influences the behavior of the problem domain it is integrated in
 ---
 # Problem Frames
+## Frame Diagrams
+.left-column[
+- The connecting lines represent interfaces that consist of shared phenomena   
+- A dashed line represents a requirements reference to a domain
+- A dashed arrow shows that it is a constraining reference  
+- Everything tangible is solid,intangible is dashed.
+]
+.right-column[
+![legend](images/legend.svg)
+]
 
-- The machine solves a problem in a given domain   
-(part of the world)
-- The machine and the given domain interact at an   
-interface of shared phenomena (events, states)
-- The requirement adds a constraint to the   
-domain’s intrinsic properties or behavior
+---
+class: middle
+# Problem Frames
 
-![machine](images/problem-frame.svg)
+- The machine solves a problem in the application domain (part of the world)
+- The machine and the application domain interact at an interface of shared phenomena (events, states)
+- The requirement adds a constraint to the application domain’s intrinsic properties or behavior
 
+![legend](images/problem-frame.svg)
 ---
 class: middle
 # Problem Frame Example
@@ -189,27 +197,285 @@ detail lines in order by correspondent name
 - The analysis report will also show statistics on volume, size   
 and frequency of incoming messages, time taken to reply
 
+.footnote[
+Source: Problem Frames, Addison Wesley, 2001
+]
+
 ---
 class: middle
-# Problem Frame Example
+# Context Diagram
 ![example](images/example.svg)
+
+.footnote[
+Recap: Requirements are about .red[relationships] in the application domain
+]
 
 ---
 # Problem frames
 ## Relationships
-
-- The connecting lines represent interfaces   
-that consist of shared phenomena.   
-- The annotation .red[D!{E3}] means   
-Domain D initiates the observable  
-phenomena E3
-- A dashed line represents a   
-requirements reference to a domain,
-- A dashed arrow shows that it is  
-a constraining reference.
-.top-right[
+.left-column[
+- Annotation .red[D!{E3}] means Domain D initiates the observable phenomena E3
+- Example:   
+```  
+a: MF! {MsgDir, File, Char}
+```
+Domain `MF` initiates observable phenomena `MsgDir, File, Char` on interface `a`
+]
+.right-column[
 ![example](images/example.svg)
 ]
+---
+class: middle
+# Frame Components
+.left-column[
+- .red[R: Requirements]  
+What the customer wants to be true in terms of (c, d)
+- .red[D: Domain Properties]   
+What we know to be true in the domain
+- .red[S: Specification]  
+How we want the machine to behave at interface (a, b)  
+]
 
+.right-column[
+![example](images/example.svg)
+]
+---
+class: middle
+# Correctness argument
+## S &#x2192; D, R  
+- The argument should adequately make _requirements_, _specifications_ and _domain descriptions_ fit together
+
+---
+# Correctness argument
+## Creating (R) is not enough !!
+- Creating descriptions of the environment (D) and specification (S) helps our comprehension and provides basis for validating the requirements
+
+--
+
+## Under or over constrained behavior
+- Unless D or S is Insufficient \*
+- Unless D or S is Malicious \*
+- Unless D or S is Incorrect \*
+
+.footnote[
+\* Eliminative Induction
+]
+---
+class: middle
+# Fitness for Purpose: S &#x2192; D, R
+
+## Under constrained behavior
+- (S, D) lacks constrains to fulfill (R)
+
+--
+
+## Over constrained behavior
+(S, D) includes constraints such that (R) CANNOT be fulfilled
+
+---
+class: middle
+# Problem Frames
+![annotated](images/example-annotated.png)
+
+---
+
+class: middle
+# How to systematically reason about these issues?
+- Solution: Abuse frames
+
+.footnote[
+Technical Report No: 2003/10, [Analysing Security Threats and Vulnerabilities Using Abuse Frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), L.Lin, B.A.Nuseibeh, D.C.Ince, M.Jackson, J.D.Moffett, October 2003
+]
+
+---
+class: middle
+# Abuse Frame
+![af](images/abuse-frame.png)
+
+## Abuse argument
+- The malicious machine specification (MS), satisfies the vulnerability conditions (v(D)), to achieve the anti-requirement (AR). MS &#x2192; v(D), AR
+
+---
+# Abuse Frame
+
+## Malicious Machine (M/M)
+- Can be assigned to an existing domain, or a domain that is introduced into the problem world in order to reflect that an attacker can utilize the existing domains or other tools (e.g., a virus) that are not originally in the problem world D.
+
+## Vulnerability v(D)
+- Conditions in the problem world that combined with the Malicious Machine specification, will satisfy the anti-requirements
+- An instance of the problem world that gives rise to an opportunity for attacks
+
+---
+class: middle
+# Abuse Frame (mailfile example)
+![abuse](images/example-af.png)
+## .center[MS &#x2192; v(D), AR]
+
+---
+class: middle
+# Abuse Frame (mailfile example)
+![abuse](images/example-af-2.png)
+## .center[MS &#x2192; v(D), AR]
+
+---
+
+class: middle
+# Security Problem Frame
+![spf](images/security-problem-frame.png)
+
+## Correctness argument
+- For an attacker (A), the specification of the Security Machine (SM) satisfies the security requirement (SR)  
+SM &#x2192; A, SR
+
+---
+class: middle
+# Security Frame (mailfile example)
+![sfmailfile](images/example-sf.png)
+
+---
+class: middle
+# Comparison
+.left-column[
+## Abuse Frame
+
+![abuse](images/example-af-2.png)
+]
+.right-column[
+## Security Frame
+
+![sfmailfile](images/example-sf.png)
+]
+
+---
+class: middle
+# Iterative Process
+## Another Abuse Frame
+![abuse](images/example-af-3.png)
+---
+class: middle
+# Iterative Process
+## Counter with another Security Frame
+![secure](images/example-sf-2.png)
+
+---
+# The Design Problem
+
+## What security functions/capabilities exist in the software, i.e. Specification (S), such that given (D), (R) is satisfiable?  
+- Security functions (Security Functional Requirements)  
+- No exploitable weaknesses (Assurance Requirements)  
+
+## S &#x2192; D, R; even when D includes a malicious adversary (A) trying to implement (AR)
+
+---
+class: middle
+# Functional Security Requirements
+
+## Security related functions in the specification (S)   
+E.g. Encryption module, access control
+## Security related constraints in the problem world (D)  
+E.g. Controlled physical access, access logs, cleared user base, authorization db
+
+---
+class: middle
+# Assurance Security Requirements  
+
+## Weaknesses avoided in security functions of the specification (S)     
+E.g. Injection, memory issues, weak crypto algorithms or implementation  
+E.g. Encryption module minimizes exploitable buffer overflow weaknesses to an acceptable level  
+## Weaknesses avoided in in the problem world (D)  
+E.g. password sticky notes, guessable passwords, ad-hoc authorizations
+
+---
+# More Examples
+.left-column[
+## Functional
+- Access control
+- Identification
+- Authentication
+- Authorization
+- Cryptographic APIs
+- Sandboxing
+- Configuration mgmt.
+- Patch and Vuln mgmt.
+- Physical Access Control
+]
+.right-column[
+## Assurance
+- Input validation
+- Exception handling
+- TOUTOC
+- Resistance to Common attack patterns
+- Weak Crypto avoided
+- Resistance to Memory issues
+- Social Engineering thwarted
+]
+
+---
+class: middle
+# Reflection
+
+## What did we just do?
+- Using problem frames we built a bridge from stakeholder requirements to system requirements by identifying the necessary causal chains in the problem world.
+- Using abuse and security frames we identify the causal chains and security capabilities necessary to satisfy the security requirements
+
+.top-right[
+![bridge](http://nagasaki-jp.com/img/oshima_bridge1.jpg)
+]
+
+---
+class: middle
+# Abstractions for Security Requirements Elicitation
+.top-right[
+![business-analyst](https://s-media-cache-ak0.pinimg.com/564x/a6/c1/62/a6c162f649bd64050235f624b0972dce.jpg)
+]
+---
+class: middle
+# Security Requirement Sources
+## Security Policies
+- Stakeholder Security Needs
+- Auditing Needs
+- [Certification Needs](http://static1.1.sqspcdn.com/static/f/702523/26767149/1451886707923/201601-Gandhi.pdf?token=l4NhzGQJsXEqUX7CIOwzoK5au%2BM%3D)
+- Survivability and Maintainability Needs
+
+## Risk assessment
+- Data, Software, Human or Organization, and Physical assets
+
+## Assurance Needs
+## Deception Needs
+---
+class: middle
+# Three primary elicitation techniques
+
+## Goal-driven approach
+- Attacker goal is to violate security expectations
+- [Anti-goals](https://www.info.ucl.ac.be/~avl/files/avl-Icse04-AntiGoals.pdf), [Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html), [N-SoftGoals](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.103.2997&rep=rep1&type=pdf)
+
+--
+
+## Scenario-driven approach
+- Negative scenarios (desired future experience, story grounded in real world, thread through a model)
+- [Misuse cases](http://understandingrequirements.com/resources/MisuseCasesHostileIntent.pdf), [Abuse frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), [Keywords/checklists](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx)
+
+--
+
+## Viewpoint-oriented approach
+- [Cross-cutting views](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1048526), [conflicts](http://www.panda.sys.t.u-tokyo.ac.jp/kushiro/ReferencePaper/Requirements%20engineering/00487319.pdf)
+- Attacker views, security properties, tradeoffs
+
+---
+class: middle
+# .red[Use cases] -  OOP, UML
+## .green[Why] and .blue[how] would .orange[someone] use software?
+- Goal-driven Scenarios
+- They describe system behavior to fulfill user needs
+- Several [templates](http://alistair.cockburn.us/Basic+use+case+template) available for [use cases](http://alistair.cockburn.us/Structuring+use+cases+with+goals)  
+  .red[Purpose] = build requirements  
+  Contents = have consistent prose  
+  Plurality = include multiple scenarios per use case  
+  Structure = be semi-formal  
+
+.top-right[
+![case](http://www.it2051229.com/data_solutions/sysanaldesign/figure1.png)
+]
 
 ---
