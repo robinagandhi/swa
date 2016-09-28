@@ -95,7 +95,7 @@ class: center, middle
 - [Find Sec Bugs](https://github.com/find-sec-bugs/find-sec-bugs)
 ---
 
-# Team ???
+# Team Tree Three
 
 ## Members
 - Sai Harika Rachamadugu
