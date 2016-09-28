@@ -35,7 +35,7 @@ This repository includes things related to the Software Assurance course at UNO
   * Formal diagramming in [Adelard ASCE](http://www.adelard.com/asce/v4.2/download.html)  
   * [Assurance Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case-exercise.html)
 1. [Requirements for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html)
-  * Lucidchart based Mis-use case diagrams. Use this [template](https://www.lucidchart.com/invitations/accept/59a6e092-49bd-4af3-80be-a1f0862923e5) to start a mis-use case.
+  * [Misuse Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html#68)
 1. Design for Software Security Engineering
   * Threat Modeling. Data flow based threat identification and mitigation techniques. Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
   * Design patterns:
