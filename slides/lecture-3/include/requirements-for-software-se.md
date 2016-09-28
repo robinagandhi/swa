@@ -608,3 +608,70 @@ class: middle
 
 ???
 A model that helps to understanding security requirements in terms of related risk components is absolutely necessary. It can establish the necessity and sufficiency of security requirements in the given context.
+
+---
+
+class: middle, center
+# Questions?
+![questions](https://media.giphy.com/media/ccRdPf8zWkivm/giphy.gif)
+
+---
+
+class: center, middle
+# Misuse Case Exercise
+
+---
+class: middle
+
+### _Skip this step if you already have a Lucidchart account._
+
+# Step 1
+## Create a personal [education account](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) on [Lucidchart](https://www.lucidchart.com/)
+
+---
+
+class: middle
+# Step 2
+## Recall the assurance case assignment
+- You picked a claim related to your project and built an assurance case. You also did an in-class activity to identify 10-20 other claims related to your project.
+- You prioritized the claims and selected 5 claims that you would like to further investigate.
+
+---
+class: middle
+# Step 3
+## Elaborate the top 5 claims using Misuse cases
+## Click on this [template](https://www.lucidchart.com/invitations/accept/59a6e092-49bd-4af3-80be-a1f0862923e5) to start a new misuse case
+Misuse cases will allow you to systematically identify critical properties of interest related to the claims.
+
+---
+class: middle
+# Step 4
+## Submit links to your misuse cases cases developed in Lucidchart
+- Submission of the links on blackboard
+- One submission per team
+- Clearly indicate which claims are elaborated by which misuse case
+
+---
+# Grading criteria
+
+## Use of proper notations
+- Misuse case notation
+
+## Argument Quality
+- Misuse cases help elaborate critical properties of interest related to the top 5 claims
+- Proper wording of the top 5 claims
+
+## Due Date
+.red[Wednesday, October 5th, 2016]
+
+---
+# Generating shareable links on Lucidchart
+
+![sharing](images/sharing.png)
+
+---
+class: middle
+# Resources
+1.	These slides!
+1.	Reading on Mis-use case
+1.	The [Common Attack Pattern Enumeration and Classification (CAPEC)](http://capec.mitre.org/data/graphs/1000.html) as a reference for common attacks
