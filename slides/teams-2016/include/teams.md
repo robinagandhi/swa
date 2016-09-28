@@ -22,7 +22,7 @@ class: center, middle
 - Rucha Mayekar
 
 ## Project Focus
-- [YouTube-dl](https://github.com/rg3/youtube-dl)
+- [ownCloud](https://github.com/owncloud/core)
 
 ---
 
@@ -68,7 +68,7 @@ class: center, middle
 - Pooja Yalala
 
 ## Project Focus
-- [Apache Commons Email v1.4](https://commons.apache.org/proper/commons-email/userguide.html)
+- [Monero (Cryptocurrency)](https://github.com/monero-project/monero)
 
 ---
 # Team Random
@@ -76,7 +76,8 @@ class: center, middle
 ## Members
 - Shravani Saggam  
 - Sanghamithra Vasireddy  
-- Anirban Das  
+- Anirban Das
+- James Nyiok
 
 ## Project Focus
 - [Symfony](https://github.com/symfony/symfony)

@@ -11,15 +11,15 @@ class: center, middle
 ]
 
 ---
-# Dilbert must surely know...
+# Alice must surely know...
 
 ![dilbert-requirements](http://assets.amuniversal.com/3c9aa7b06d5101301d7a001dd8b71c47)
 
 ---
 class: middle
-# NIST SP 800-160 SSE
+# [NIST SP 800-160 SSE](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_final-draft.pdf)
 ## Stakeholder Needs and Requirements Definition Process\*
-- _The purpose of the .red[Stakeholder] .green[Needs and Requirements Definition] process is to define the stakeholder requirements for a system that can provide the capabilities needed by users and other stakeholders in a defined environment._
+- _The purpose of the Stakeholder Needs and Requirements Definition process is to .red[define the stakeholder requirements] for a system that can provide the capabilities needed by users and other stakeholders in a defined environment._
 
 .footnote[
 \*ISO/IEC/IEEE 15288-2015
@@ -27,9 +27,9 @@ class: middle
 
 ---
 class: middle
-# NIST SP 800-160 SSE
+# [NIST SP 800-160 SSE](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_final-draft.pdf)
 ## System Requirements Definition Process\*
-- _The purpose of the .red[System] .green[Requirements Definition] process is to transform the stakeholder, user- oriented view of desired capabilities into a technical view of a solution that meets the operational needs of the user._
+- _The purpose of the System Requirements Definition process is to .red[transform the stakeholder, user- oriented view of desired capabilities into a technical view of a solution] that meets the operational needs of the user._
 
 .footnote[
 \*ISO/IEC/IEEE 15288-2015
@@ -60,6 +60,7 @@ class: middle
 # When will a designer have inadequate understanding of the purpose?
 
 1. Software is too complex, designer does not know for sure if software will fulfill it purpose
+1. Designer does not have the knowledge or experience
 1. Customer does not clearly know the purpose or express it
 1. Purpose becomes apparent later.
 1. Deliberate attempt to make the software not fulfill its purpose
@@ -96,7 +97,6 @@ class: middle
 .top-right[
 ![case](http://www.it2051229.com/data_solutions/sysanaldesign/figure1.png)
 ]
-
 ---
 class: center, middle
 # [What is Requirements Engineering?](http://www.cs.toronto.edu/~sme/RE01/)
@@ -252,7 +252,7 @@ class: middle
 
 --
 
-## Under or over constrained behavior
+## R is fulfilled
 - Unless D or S is Insufficient \*
 - Unless D or S is Malicious \*
 - Unless D or S is Incorrect \*
@@ -265,12 +265,14 @@ class: middle
 # Fitness for Purpose: S &#x2192; D, R
 
 ## Under constrained behavior
-- (S, D) lacks constrains to fulfill (R)
+- (S, D) lacks constraints to fulfill (R)  
+E.g.: Buffer overflows, Unauthorized physical/network access
 
 --
 
 ## Over constrained behavior
-(S, D) includes constraints such that (R) CANNOT be fulfilled
+- (S, D) includes constraints such that (R) CANNOT be fulfilled  
+E.g: 8 char password only, No access allowed
 
 ---
 class: middle
@@ -287,6 +289,7 @@ class: middle
 Technical Report No: 2003/10, [Analysing Security Threats and Vulnerabilities Using Abuse Frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), L.Lin, B.A.Nuseibeh, D.C.Ince, M.Jackson, J.D.Moffett, October 2003
 ]
 
+
 ---
 class: middle
 # Abuse Frame
@@ -294,6 +297,21 @@ class: middle
 
 ## Abuse argument
 - The malicious machine specification (MS), satisfies the vulnerability conditions (v(D)), to achieve the anti-requirement (AR). MS &#x2192; v(D), AR
+
+
+???
+# Example 1:
+## M/M: Wireshark
+## AS: Network messages
+## AT: Rouge ISP
+## AR: Targeted Advertising
+
+# Example 2:
+## M/M: FBI Website with SQL injection vulnerability  
+## AS: Identity Database
+## AT: Lulzsec
+## AR: Threaten FBI Agents through identity theft
+
 
 ---
 # Abuse Frame
@@ -307,13 +325,13 @@ class: middle
 
 ---
 class: middle
-# Abuse Frame (mailfile example)
+# Abuse Frame 1 (mailfile example)
 ![abuse](images/example-af.png)
 ## .center[MS &#x2192; v(D), AR]
 
 ---
 class: middle
-# Abuse Frame (mailfile example)
+# Abuse Frame 2 (mailfile example)
 ![abuse](images/example-af-2.png)
 ## .center[MS &#x2192; v(D), AR]
 
@@ -364,7 +382,8 @@ class: middle
 - Security functions (Security Functional Requirements)  
 - No exploitable weaknesses (Assurance Requirements)  
 
-## S &#x2192; D, R; even when D includes a malicious adversary (A) trying to implement (AR)
+## S &#x2192; D, R   
+S is resilient to attacks, when D includes an Attacker (A) trying to implement (AR)
 
 ---
 class: middle
@@ -381,9 +400,9 @@ class: middle
 
 ## Weaknesses avoided in security functions of the specification (S)     
 E.g. Injection, memory issues, weak crypto algorithms or implementation  
-E.g. Encryption module minimizes exploitable buffer overflow weaknesses to an acceptable level  
+E.g. _For openSSL_: Encryption module minimizes exploitable buffer overflow weaknesses to an acceptable level  
 ## Weaknesses avoided in in the problem world (D)  
-E.g. password sticky notes, guessable passwords, ad-hoc authorizations
+E.g. password sticky notes, guessable passwords, ad-hoc authorizations, poor clearance processes
 
 ---
 # More Examples
@@ -416,7 +435,7 @@ class: middle
 
 ## What did we just do?
 - Using problem frames we built a bridge from stakeholder requirements to system requirements by identifying the necessary causal chains in the problem world.
-- Using abuse and security frames we identify the causal chains and security capabilities necessary to satisfy the security requirements
+- Using abuse and security frames we identify the causal chains and .green[security capabilities and assurances necessary in software] to satisfy the .blue[security requirements of the stakeholder.]
 
 .top-right[
 ![bridge](http://nagasaki-jp.com/img/oshima_bridge1.jpg)
