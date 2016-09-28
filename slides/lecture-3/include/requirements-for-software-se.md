@@ -463,21 +463,21 @@ class: middle
 ## Deception Needs
 ---
 class: middle
-# Three primary elicitation techniques
+# Primary elicitation techniques
 
-## Goal-driven approach
+## 1. Goal-driven approach
 - Attacker goal is to violate security expectations
 - [Anti-goals](https://www.info.ucl.ac.be/~avl/files/avl-Icse04-AntiGoals.pdf), [Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html), [N-SoftGoals](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.103.2997&rep=rep1&type=pdf)
 
 --
 
-## Scenario-driven approach
+## 2. Scenario-driven approach
 - Negative scenarios (desired future experience, story grounded in real world, thread through a model)
 - [Misuse cases](http://understandingrequirements.com/resources/MisuseCasesHostileIntent.pdf), [Abuse frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), [Keywords/checklists](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx)
 
 --
 
-## Viewpoint-oriented approach
+## 3. Viewpoint-oriented approach
 - [Cross-cutting views](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1048526), [conflicts](http://www.panda.sys.t.u-tokyo.ac.jp/kushiro/ReferencePaper/Requirements%20engineering/00487319.pdf)
 - Attacker views, security properties, tradeoffs
 
@@ -641,7 +641,8 @@ class: middle
 # Step 3
 ## Elaborate the top 5 claims using Misuse cases
 ## Click on this [template](https://www.lucidchart.com/invitations/accept/59a6e092-49bd-4af3-80be-a1f0862923e5) to start a new misuse case
-Misuse cases will allow you to systematically identify critical properties of interest related to the claims.
+- Misuse cases will allow you to systematically identify critical properties of interest related to the claims    
+- Misuse cases focus attention to places where an external entity interacts with the system
 
 ---
 class: middle
