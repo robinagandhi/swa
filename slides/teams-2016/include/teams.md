@@ -68,7 +68,7 @@ class: center, middle
 - Pooja Yalala
 
 ## Project Focus
-- [Monero (Cryptocurrency)](https://github.com/monero-project/monero)
+- [Bitcoin (Cryptocurrency)](https://github.com/bitcoin/bitcoin)
 
 ---
 # Team Random
@@ -92,7 +92,7 @@ class: center, middle
 - Abhinav Ram Kodanda  
 
 ## Project Focus
-- [Find Sec Bugs](https://github.com/find-sec-bugs/find-sec-bugs)
+- [Rosario SIS](https://github.com/francoisjacquet/rosariosis)
 ---
 
 # Team Tree Three
