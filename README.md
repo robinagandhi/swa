@@ -113,7 +113,7 @@ The project will have the following deliverables:
 ## Project Deadlines
 
 1. Project Proposal &ndash; **September 14th, 2016**
-1. Requirements and Design for Secure Software &ndash; **October 19th, 2016**
+1. Requirements and Design for Secure Software &ndash; ~~October 19th, 2016~~ **November 9th, 2016**
 1. Code analysis and testing for Secure Software &ndash; **November 30th, 2016**
 1. Class presentations &ndash; **December 7th, 2016**
 
