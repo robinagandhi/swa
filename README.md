@@ -28,16 +28,23 @@ This repository includes things related to the Software Assurance course at UNO
   * Guest Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 1. Engineering For Assurance
   * [Systems Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html). Based on Chapter 2 from [NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf).
-  * Industry practices. [BSIMM](https://www.bsimm.com/framework/)
 1. [Assurance Cases ](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case.html) for Software Security Engineering
   * [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
   * Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
   * Formal diagramming in [Adelard ASCE](http://www.adelard.com/asce/v4.2/download.html)  
   * [Assurance Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case-exercise.html)
 1. [Requirements for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html)
-  * [Misuse Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html#68)
+  * Problem Frames (Abuse and Security Frames)  
+  * The Meaning of Requirements for Software Security Engineering  
+  * [Misuse cases](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1159030)  
+  * Using Misuse cases to Elaborate Assurance Cases: [Misuse Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html#68)
+  * Translating compliance constraints to requirements ([NIST 800-160 public draft 2, Appendix J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf))
+1. Maturity Models for Software Security Engineering
+  * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
 1. Design for Software Security Engineering
-  * Threat Modeling. Data flow based threat identification and mitigation techniques. Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
+  * Design Principles for Security (NIST 800-160 Appendix F)
+  * Threat Modeling. Data flow based threat identification and mitigation techniques.  
+  Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
   * Design patterns:
     1. Expressing design principles as patterns
     1. Architectural patterns for security
