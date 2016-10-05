@@ -663,7 +663,8 @@ class: middle
 - Proper wording of the top 5 claims
 
 ## Due Date
-.red[Wednesday, October 5th, 2016]
+.red[~~Wednesday, October 5th, 2016~~]  
+Update: Wednesday, October 7th, 2016
 
 ---
 # Generating shareable links on Lucidchart
