@@ -9,7 +9,7 @@
 
 * __Attribution__: Preserving the integrity of programs and data is a fundamental cybersecurity need. One way to assure integrity is to track every change made to information objects and attribute the changes to a unique authenticated identity.
 
-[Git](https://git-scm.com/) is a popular software development tool used by developers to collaborate and version control code. It is, however, not limited to just code. You can, and many others already do, use it as a collaborative enviroment to develop other written works. The most popular online platform to host public git repositories is a site called [Github](www.github.com). For our lessons here, we will use Github, but do note that there are several other services, such as [BitBucket](https://bitbucket.org/), that also provide git and other version control repository hosting capabilities. The following tutorials focus on how you can use Git and Github for collaboration and version control.
+[Git](https://git-scm.com/) is a popular software development tool used by developers to collaborate and version control code. It is, however, not limited to just code. You can, and many others already do, use it as a collaborative enviroment to develop other written works. The most popular online platform to host public (and a paid version for private) git repositories is a site called [Github](www.github.com). For our lessons here, we will use Github, but do note that there are several other services, such as [BitBucket](https://bitbucket.org/), that also provide git and other version control repository hosting capabilities. The following tutorials focus on how you can use Git and Github for collaboration and version control.
 
 ### Table of Contents    
 [Step 1: Create Account](#step-1)  
@@ -93,7 +93,7 @@ You should see something like this:
 
 A few things to notice here about these status messages:  
 1. `On branch master`: You are on the master branch in your local repository.  
-2. `Your branch is up-to-date with 'origin/master'`: Your local repository master branch is in sync with your remote repository master brach on Github. The default name for the remote repository is **origin**.  
+2. `Your branch is up-to-date with 'origin/master'`: Your local repository master branch is in sync with your remote repository master brach on Github. The default name for the upstream remote repository is **origin**. This is automatically setup when you cloned your remote `hello-world` repository.  
 3. `Changes not staged for commit:`: git follows a two step process to save changes to a repository. First the user indicates which modified/deleted/new files need to be _staged_ for a save in the repository. Second these staged files are _committed_ to the repository. We will look at commands to do both of these shortly.  
 4. `modified:   README.md`: git knows that the README.md file has been modified  
 
@@ -101,7 +101,7 @@ Now we stage our changes for a commit using this command:
 ```bash
 git add --all
 ```
-The above command adds any edited files in a staging area, a temporary holding place before a commit. We can check the status of the repository again using the following command:
+The above command stages any edited, new or deleted files in a staging area, a temporary holding place (called index) before a commit. We can check the status of the repository again using the following command:
 
 ```bash
 git status
@@ -112,7 +112,7 @@ You should see something like this:
 
 This time the modified files are staged for a commit and appear in green.
 
-Now before we **commit** these files into our repository, the git author details need to be set. This is for accountability of commits. Using the commands below, save your information to the git configuration files and set them for all of your local repositories. Make sure to use the same name and email you used to register with Github.
+Now before we **commit** these files into our local repository, the git author details need to be set. This is for accountability of commits. Using the commands below, save your information to the git configuration files and set them for all of your local repositories. Make sure to use the same name and email you used to register with Github.
 
 ```bash
 git config --global user.name "replace this with your name"
@@ -130,7 +130,7 @@ You should see something like this:
 
 You only have to set the config parameters once. Now that they are set, git will keep reusing them when making commits or merging your changes with other repositories.
 
-Now let's commit the changes that we staged before. Here we use the `commit` option with `-m` to provide a short commit message. This helps us remember various checkpoints in our editing process. These messages are very helpful to rollback changes to an appropriate commit.
+Now let's commit the changes that we staged before. Here we use the `commit` option with `-m` to provide a short commit message. This helps us remember various checkpoints in our editing process. These messages are very helpful in case we want to rollback to an earlier commit.
 
 ```bash
 git commit -m "added UNO description"
@@ -143,12 +143,13 @@ Use the `log` command to see all your commits:
 git log
 ```
 This command shows a summary of commits in the repository, stating with the most recent. Observe the hash code, user details and commit message. These attributes provide attribution of all changes in the code repository, promoting code integrity.  
-> Hit the key `q` to exit the log of commit messages.
+> Hit the key <kbd>q</kbd> to exit the log of commit messages.
 
 
 Use the `show` command to see a specific commit:
 ```bash
-# replace the number with a valid commit # for your repo
+# Replace the number below with a valid commit # for your repo.
+# Find these numbers using the log command.
 git show 95e9a0d
 ```
 
@@ -158,10 +159,10 @@ git status
 ```
 It should report **no** uncommitted changes. But it indicates that `Your branch is ahead of 'origin/master' by 1 commit`. Which means that our local repository master branch has more recent commits than the remote repository master branch.
 
-To push our local commits to the remote repository, we need the git `push` command. With this command we need to indicate the name of the remote repository followed by the name of the local repository branch that has updates to be pushed. Do you remember the name of our remote repository and the main branch?
+To `push` our local commits to the remote repository, we need the git `push` command. With this command we need to indicate the name of the remote repository followed by the name of the local repository branch that has updates to be pushed. Do you remember the name of our remote repository and the main branch?
 
 > #### Questions
-> What is the default name of the remote repository?  
+> What is the default name of the remote upstream repository?  
 > What is the name of the main branch in our local repository?
 
 To push local commits to the remote repository, use the following command:
@@ -183,7 +184,7 @@ If you visit your remote repository on Github.com your changes will be reflected
 
 ![updateremote](../img/primer/remoteupdate.png)
 
-As mentioned before in the introduction, git version control is very efficient for text files. It does not store entire files for old versions but only the differences. So it is prudent to make frequent commits and then push these changes to the remote repository - so that you have as many checkpoints as possible should you need to roll back.
+As mentioned before in the introduction, git version control is very efficient for text files. It does not store entire files for old versions but only the differences. So it is prudent to make frequent commits and then push these changes to the remote repository - so that you have as many checkpoints as possible should you need to rollback.
 
 [Top](#table-of-contents)
 
@@ -310,6 +311,7 @@ Finally, Github repositories separate source code from other resources. This sep
 * [Github cheatsheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 * [Collection](https://help.github.com/articles/good-resources-for-learning-git-and-github/) of Github tutorials
 * [Adding a new remote repository](https://help.github.com/articles/adding-a-remote/)
+* [Git Tutorial](http://people.cs.und.edu/~tdesell/lectures/using_git.pdf) by [Travis Desell](http://people.cs.und.edu/~tdesell/)  
 
 
 [Top](#table-of-contents)
