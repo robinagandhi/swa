@@ -44,7 +44,7 @@ This repository includes things related to the Software Assurance course at UNO
 1. Midterm Exam on Wednesday, October 19
 1. Design for Software Security Engineering
   * Design Principles for Security (NIST 800-160 Appendix F)
-  * Threat Modeling. Data flow based threat identification and mitigation techniques.  
+  * [Threat Modeling](https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html). Data flow based threat identification and mitigation techniques.  
   Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
   * Design patterns:
     1. Expressing design principles as patterns
