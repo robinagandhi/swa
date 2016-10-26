@@ -18,6 +18,13 @@ class: middle
 ## Start with a Data-flow perspective
 - Most attacks come through .red[data]
 - Control flow is less relevant during the design stage
+- A structured, concrete artifact to discuss design changes
+
+--
+
+## Practical Applications
+_"Applying a structured approach to threat scenarios during design helps a team more effectively and less expensively identify security vulnerabilities, determine risks from those threats, and establish appropriate mitigations"_   
+[Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx)
 
 ---
 
@@ -203,33 +210,250 @@ class: middle
 ## Step 4
 ### Iterate over processes and data stores
 - Break them down if more detail needed to explain .red[_security impact of the design_]
-- Break them down if an object crosses a trust boundary
+- Break them down if an object crosses a trust boundary. For example, a remote procedural call (RPC)
 - Break them down if you use words like “sometimes” and “also” in your story
 
 ---
 class: middle
 # DFD Construction
-## Step 5
-### Check the diagram for sanity
+## Step 5: Check the diagram for sanity
 ### Data stores
 - Two data stores should not be connected with data flows directly. They are static entities.
 - External interactors should not directly interact with data stores. Their data representation formats are different.
+- Data stores should have an input flow
 - Try to locate data sinks, whenever possible
+
+### Data Flows
+- Attached to at least one process
 
 
 ---
 # DFD Construction
-## Step 5
-### Check the diagram for sanity
+## Step 5: Check the diagram for sanity
 ### External Interactors
 - Avoid data flows between External Interactors. They cannot be observed by the system.
 - Data always comes from External Interactors.
 
 ### Processes
 - Avoid direct dataflows between two separate processes. Use intermediate data stores such as message queues or domain sockets.
+---
+# DFD Construction
+## Step 6
+### Simplify
+- Consolidate data flows that always flow together
+- All processes need appropriate "inputs" to generate "outputs". No outputs without inputs!
+- Avoid partitioning processes based on control logic
+- DFDs do not typically show time dependencies. If processes can communicate directly they are assumed to be synchronous!
+---
+class: middle
+# DFD Modeling Summary
+- DFDs help us show the flow of data from sources to sinks with transformations and stores along the way. We also depict the trust boundaries intersecting these data flows.
+- Hierarchical structuring allows us to conduct and present system overview at different levels of abstraction
 
 ---
 class: middle
-# Threat Elicitation
+# Threat Identification
+The structured nature of DFDs allows potential threats to be automatically generated. We will use the Microsoft STRIDE model to generate such threats.
 
 ---
+
+class: middle
+# STRIDE Threats
+
+.left-column[
+## Threat
+- .red[S]poofing
+- .red[T]ampering
+- .red[R]epudiation
+- .red[I]nformation Disclosure
+- .red[D]enial of Service
+- .red[E]levation of Privilege
+]
+
+--
+
+.right-column[
+## Control
+- Authentication
+- Integrity
+- Nonrepudiation
+- Confidentiality
+- Availability
+- Authorization
+]
+---
+
+class: middle
+# STRIDE Threats
+
+## Spoofing
+A process or entity is something other than the claimed identity
+
+## Tampering
+Act of altering bits
+
+## Repudiation
+An adversary denying that something happened
+
+---
+class: middle
+# STRIDE Threats
+
+## Information Disclosure
+Information can be read by an unauthorized party
+
+## Denial of Service
+Process or data store not able to process incoming requests
+
+## Elevation of Privilege
+A user can increase capability or privilege by taking advantage of an implementation bug
+---
+
+
+# STRIDE with DFDs (Per Element)
+
+### External Interactor
+- SR
+
+### Process
+- STRIDE
+
+### Data Store
+- TID, R (logs only)
+
+### Data Flow
+- TID
+
+---
+class: middle
+# Practice
+![OWASP](https://www.owasp.org/images/0/00/Data_flow1.jpg)
+---
+class: middle
+# Practice (2)
+![OWASP](https://www.owasp.org/images/1/16/Data_flow2.jpg)
+---
+class: middle
+# Observations and Reflections
+
+--
+## Expensive (Time)
+Too many threats to analyze! (even for small diagrams)
+
+## Redundancy
+- Redundant threats when analyzed individually
+
+## How can we make this more efficient?
+---
+class: middle
+# STRIDE with DFDs (Per .red[Interaction])
+## Focus on Interactions
+- Interaction:   
+A source and target element connected by a data flow
+---
+class: middle
+# STRIDE with DFDs (Per .red[Interaction])
+## Efficiencies and Savings
+- For each interactions apply STRIDE
+- For each STRIDE threat identify the attacker controlled element and the attacked element
+- For data flows inside a .red[single] process,   
+don’t worry about T, I, or D
+- Prioritize analysis for interactions that cross trust boundaries
+???
+## Significant reduction in number of threats to be analyzed
+---
+class: middle
+# Trust boundaries
+## Trusted/high code reading from untrusted/low
+- Validate everything for specific and defined uses
+
+## High code writing to low
+- Make sure your errors don’t give away too much!
+---
+class: middle
+# Avoid Distractions
+## Applications can't do much here:
+- The computer is infected with malware
+- Someone removed the hard drive and tampers
+- Admin is attacking user
+- A user is attacking himself
+
+## Applications can’t address any of these   
+(unless you’re the OS)
+
+---
+class: middle
+# Practice
+![example](images/dfd.png)
+
+### How many interactions? How many are high priority?
+---
+class: middle
+# Observations and Reflections
+
+--
+
+## Automation
+- Much of this analysis can be automated using simple rules based on the diagram structure
+- Tool support
+
+## Traceability
+- Would be nice to link all analysis along with the diagram
+- A bit more than a PPT, Visio or Lucidchart!
+
+---
+class: middle
+# [Microsoft TMT 2016](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
+![toolsupport](images/toolsupport.png)
+---
+class: middle
+# Threat Mitigation
+## Why bother if you:
+- Create a great model, Identify lots of threats, Stop!
+---
+class: middle
+# Threat Mitigations
+## Four ways to address each threat
+1. Redesign to eliminate
+1. Apply standard mitigations  
+What have similar software packages done and how has that worked out for them?
+1. Invent new mitigations (.red[risky!])
+1. Accept vulnerability in design  
+Risk acceptable, but must be verified and approved
+
+---
+# Standard Mitigations
+
+
+---
+# How to ignore threats?
+## No requirement
+- There are no requirements that the &lt;&lt;element&gt;&gt; protect against &lt;&lt;STRIDE&gt;&gt; threat
+
+## Irrelevant
+- This threat does not exist, so we don't care about &lt;&lt;STRIDE&gt;&gt; threat to the &lt;&lt;element&gt;&gt;
+
+## Not applicable
+- &lt;&lt;STRIDE&gt;&gt; threat does not apply to this &lt;&lt;element&gt;&gt;
+---
+class: middle
+# Validate the Threat Model
+
+1. Do the threats consider misuse cases?
+1. Does the diagram match final code?
+1. Are threats enumerated? At minimum:
+STRIDE per element that touches a trust boundary
+1. Has Test / QA reviewed the model?
+Testers often finds issues with threat model or details
+1. Is each threat mitigated?
+1. Are mitigations done right?  (Assurance case?)
+---
+
+# Playsound API
+
+"_The PlaySound API takes as input a string which represents either a WAV filename or an alias.  If the input is an alias, the PlaySound API retrieves data from the registry under HKCU to convert the alias into a filename.  Once the filename is determined, the PlaySound API opens the WAV file specified and reads the two relevant pieces from the file: the WAVEFORMATEX that defines the type of data in the file and the actual audio data.  It then hands that data to the audio rendering APIs._"
+
+## Build a Threat Model based on this description
+
+???
+http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
