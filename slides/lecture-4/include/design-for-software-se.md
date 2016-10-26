@@ -12,6 +12,10 @@ class: center, middle
 ]
 
 ---
+![recap](https://robinagandhi.github.io/swa/slides/lecture-1/images/framework-course-topics.png)
+???
+# Quick recap
+---
 class: middle
 # Security Analysis during Design
 
@@ -422,8 +426,63 @@ What have similar software packages done and how has that worked out for them?
 Risk acceptable, but must be verified and approved
 
 ---
+class: middle
 # Standard Mitigations
 
+## Spoofing
+### Require authentication
+- Data source
+- Code integrity
+
+### Validation of input read from the data source
+- Normalization before neutralization
+- Avoid recursion bombs
+
+---
+class: middle
+# Standard Mitigations
+
+## Tampering
+
+### Integrity Checking
+- Digital signatures and message authentication codes
+- ACLs for data at rest
+
+### Validation of input read from the data source
+- Normalization before neutralization
+- Avoid recursion bombs
+
+---
+class: middle
+# Standard Mitigations
+
+## Repudiation
+- One-way log and audit generation mechanism
+- Strong authentication for logging
+
+## Information Disclosure
+- ACLs
+- Encryption with good key management and protocols
+---
+class: middle
+# Standard Mitigations
+
+## Denial or service
+- ACLs to protect the contents of files from being removed or modified
+- Firewall rules to protect against some network based attacks
+- Use disk and processor quotas to prevent excess disk or CPU consumption
+
+---
+class: middle
+# Standard Mitigations
+
+## Elevation of Privilege
+- Input validation
+- Input validation
+- Input validation
+- ACLs, Roles, Groups
+- Privilege dropping
+- Least privilege
 
 ---
 # How to ignore threats?
@@ -448,7 +507,7 @@ Testers often finds issues with threat model or details
 1. Is each threat mitigated?
 1. Are mitigations done right?  (Assurance case?)
 ---
-
+class: middle
 # Playsound API
 
 "_The PlaySound API takes as input a string which represents either a WAV filename or an alias.  If the input is an alias, the PlaySound API retrieves data from the registry under HKCU to convert the alias into a filename.  Once the filename is determined, the PlaySound API opens the WAV file specified and reads the two relevant pieces from the file: the WAVEFORMATEX that defines the type of data in the file and the actual audio data.  It then hands that data to the audio rendering APIs._"
@@ -457,3 +516,84 @@ Testers often finds issues with threat model or details
 
 ???
 http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
+
+---
+# Making this Fun
+
+## Elevation of Privilege Card Game
+- Ease developers into doing threat modeling
+- [Card Game Introduction](https://www.microsoft.com/en-us/sdl/adopt/eop.aspx)
+- [How to play](http://social.technet.microsoft.com/wiki/contents/articles/285.elevation-of-privilege-the-game.aspx)
+
+![EOP](https://c.s-microsoft.com/en-us/CMSImages/EoP_game_screen_shot.jpg?version=4a082487-9fb4-7dd9-ed9f-e79c888c2df4)
+---
+class: middle
+# More about threat modeling
+
+## Blogs
+- Microsoft Tutorial on [TMT 2014](http://blogs.microsoft.com/cybertrust/2014/04/15/introducing-microsoft-threat-modeling-tool-2014/  )
+- Bruce Schneier on [threat modeling](http://www.schneier.com/blog/archives/2007/10/threat_modeling.html)
+
+## Practice Diagrams
+- Microsoft [Readings](https://msdn.microsoft.com/en-us/library/aa562036.aspx)
+
+---
+# Sources
+
+- This presentation is borrows a lot from Microsoft training materials on threat modeling
+- Many sources for Data flow diagrams
+---
+
+class: center, middle
+# Threat Modeling Exercise
+
+---
+class: middle
+
+# Step 1
+## Download and install TMT 2016
+## You may also directly access it on view.unomaha.edu
+
+---
+
+class: middle
+# Step 2
+## Recall the misuse case assignment
+- You developed 5 different mis use cases.
+
+---
+class: middle
+# Step 3
+## Elaborate the Misuse cases using Threat models
+- Select a use case from your previous assignment such that you can extract a DFD that supports the use case.
+- Perform analysis on your code base to align the diagram with reality
+- Draw a Level 1 diagram in the Microsoft threat modeling tool
+- Identify appropriate trust boundaries on the diagram
+- Validate the diagram for any obvious structural deficiencies
+
+---
+class: middle
+# Step 4
+## Analyze the Level 1 diagram to identify the applicable STRIDE threats
+- Examine each threat identified
+- Document mitigation strategies for the identified threats
+- Pay special attention for elements that interact across threat boundaries
+- Generate a full report using TMT 2016
+
+---
+# Grading criteria
+
+### Use of proper notations
+- DFD notation
+
+### Threat Model Quality
+- Threat model focuses on critical components of interest
+- Proper wording of the model elements
+- Clean, coherent and valid DFD diagram
+
+### Threat Mitigation Quality
+- Quality of analysis to mitigate threats
+---
+class: middle
+# Due Date
+Wednesday November 9th, 2016
