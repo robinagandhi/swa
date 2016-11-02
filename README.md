@@ -41,7 +41,7 @@ This repository includes things related to the Software Assurance course at UNO
   * Translating compliance constraints to requirements ([NIST 800-160 public draft 2, Appendix J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf))
 1. Maturity Models for Software Security Engineering
   * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
-1. Midterm Exam on Wednesday, October 19
+1. Midterm Exam on Wednesday, October 19. [Performance](./img/misc/fall2016midtermperformance.pdf)
 1. Design for Software Security Engineering
   * Design Principles for Security (NIST 800-160 Appendix F)
   * [Threat Modeling](https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html). Data flow based threat identification and mitigation techniques.  
