@@ -77,16 +77,16 @@ class: middle
 
 ---
 # CWE Types
-### Weakness Class: [CWE-20](https://cwe.mitre.org/data/definitions/20.html)
+### Weakness Class: e.g. [CWE-20](https://cwe.mitre.org/data/definitions/20.html)
 - Abstract, independent of any specific language or technology
 
-### Weakness Base: [CWE-79](https://cwe.mitre.org/data/definitions/79.html)
+### Weakness Base: e.g. [CWE-79](https://cwe.mitre.org/data/definitions/79.html)
 - Abstract, sufficient details to infer specific methods for detection and prevention
 
-### Weakness Variant: [CWE-85](https://cwe.mitre.org/data/definitions/85.html)
+### Weakness Variant: e.g. [CWE-85](https://cwe.mitre.org/data/definitions/85.html)
 - Detailed, limited to a specific language or technology.
 
-### Weakness Category: [CWE-990](https://cwe.mitre.org/data/definitions/990.html)
+### Weakness Category: e.g. [CWE-990](https://cwe.mitre.org/data/definitions/990.html)
 - A set of other entries that share a common characteristic
 
 ---
@@ -120,8 +120,7 @@ class: middle
 
 class: middle
 # CWE Prioritization
-
-## Technical Impacts of Software Weaknesses:
+## Negative Technical Impacts of Weaknesses
 - Read data  
 - Modify data  
 - Denial-of-Service: unreliable execution  
@@ -134,5 +133,28 @@ class: middle
 ## Top CWE lists
 - [CWE/SANS Top 25](https://cwe.mitre.org/top25/index.html)
 - Scoring mechanisms: [CWSS](https://cwe.mitre.org/cwss/index.html), [CWRAF](https://cwe.mitre.org/cwraf/index.html)
+
+???
+The technical impacts help focus on the set of weaknesses that contribute to the negative technical impact of relevance in a given context. This helps to filter and prioritize a set of weaknesses.
+
+---
+
+class: middle
+
+# Attack Patterns
+
+---
+
+class: middle
+# Common Attack Pattern Enumeration and Classification
+
+## Enumerates .red[attack patterns] used in exploits 
+Total of 504 attack patterns in version 2.8
+
+## Examples:  
+[CAPEC-63](https://capec.mitre.org/data/definitions/63.html), [CAPEC-245](https://capec.mitre.org/data/definitions/245.html)  
+
+## Views:   
+[CAPEC 1000](https://capec.mitre.org/data/definitions/1000.html), [CAPEC-3000](https://capec.mitre.org/data/definitions/3000.html)
 
 ---
