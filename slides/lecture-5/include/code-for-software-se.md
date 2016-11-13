@@ -148,7 +148,7 @@ class: middle
 class: middle
 # Common Attack Pattern Enumeration and Classification
 
-## Enumerates .red[attack patterns] used in exploits 
+## Enumerates .red[attack patterns] used in exploits
 Total of 504 attack patterns in version 2.8
 
 ## Examples:  
@@ -156,5 +156,29 @@ Total of 504 attack patterns in version 2.8
 
 ## Views:   
 [CAPEC 1000](https://capec.mitre.org/data/definitions/1000.html), [CAPEC-3000](https://capec.mitre.org/data/definitions/3000.html)
+
+---
+class: middle
+
+# Vulnerabilities
+
+---
+
+class: middle
+# Common Vulnerabilities and Exposures (CVE)
+
+## One name for a vulnerability
+- A hashtag to track all discussions and reports related to a vulnerability in different databases
+
+## [National Vulnerability Database](http://nvd.nist.gov)
+- Maintains a dictionary of CVEs
+- CVEs use Common Platform Enumeration (CPE) to identify affected products and packages
+- TOTAL CVEs: 75000+, ~15-20 added every day
+
+---
+
+# Visual Recap
+
+![relationships](images/CVE-CWE-CAPEC.png)
 
 ---
