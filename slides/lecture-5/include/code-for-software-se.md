@@ -320,7 +320,8 @@ class: middle
 .green[Heap-based] .orange[buffer overflow] in proxy_util.c for mod_proxy in Apache 1.3.25 to 1.3.31 .red[allows remote attackers to cause a denial of service (process crash) and possibly execute arbitrary code] via a .blue[negative Content-Length HTTP header field], which .red[causes a large amount of data to be copied.]  
 
 ---
-<iframe src="http://ftp.tudelft.nl/apache/httpd/patches/apply_to_1.3.31/CAN-2004-0492.patch" width="100%" height="100%" frameBorder="0"></iframe>
+
+![source](images/sourcechanges.png)
 
 ---
 #### **Buffer Overflow Semantic Template CVE-2004-0492**
