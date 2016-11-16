@@ -46,16 +46,15 @@ This repository includes things related to the Software Assurance course at UNO
   * Design Principles for Security (NIST 800-160 Appendix F)
   * [Threat Modeling](https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html). Data flow based threat identification and mitigation techniques.  
   Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
-  * Design patterns:
+  * Design patterns (See Blackboard for Slides):
     1. Expressing design principles as patterns
     1. Architectural patterns for security
     1. Object-oriented code patterns for security
-1. Coding for Software Security Engineering
-  * Knowledge base: [Common Weakness Enumeration](http://cwe.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
+1. [Coding for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-5/code-for-software-se.html)
+  * Knowledge base: [Common Weakness Enumeration](http://cwe.mitre.org/), [CAPEC](https://capec.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
   * [DHS SWAMP](https://www.mir-swamp.org/)
   * Code review tools and techniques
 1. Testing for Software Security Engineering
-  * Knowledge base: [CAPEC](https://capec.mitre.org/)
   * Testing strategies
 1. Other topics
   * Guest talks from other faculty or practitioners.
