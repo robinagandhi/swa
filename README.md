@@ -55,7 +55,7 @@ This repository includes things related to the Software Assurance course at UNO
   * [DHS SWAMP](https://www.mir-swamp.org/)
   * Code review tools and techniques
 1. Testing for Software Security Engineering
-  * Testing strategies
+  * Guest Talk by [Matt Hale](http://faculty.ist.unomaha.edu/mhale/) Testing processes, Test Driven Development, and Faculty Research topic overview [(slides)](./guest-lectures/test-driven-development-and-research-guestlecture.pdf)
 1. Other topics
   * Guest talks from other faculty or practitioners.
 
