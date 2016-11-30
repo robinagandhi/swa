@@ -56,6 +56,7 @@ This repository includes things related to the Software Assurance course at UNO
   * Code review tools and techniques
 1. Testing for Software Security Engineering
   * Guest Talk by [Matt Hale](http://faculty.ist.unomaha.edu/mhale/) Testing processes, Test Driven Development, and Faculty Research topic overview [(slides)](./guest-lectures/test-driven-development-and-research-guestlecture.pdf)
+  * QUnit Slides from [Ben Alman](https://github.com/cowboy) available [here](http://benalman.com/talks/unit-testing-qunit.html) 
 1. Other topics
   * Guest talks from other faculty or practitioners.
 
