@@ -122,7 +122,7 @@ The project will have the following deliverables:
 
 ## Final Exam
 
-* In-class exam on **December 14th, 6:30pm**
+* In-class exam on **December 14th, 5:30pm**
 
 ## How to Clone and Navigate this Repo
 
