@@ -12,7 +12,7 @@ This list includes successful pull requests, issues and other interactions with 
 - Issue: https://github.com/torchbox/wagtail/issues/3189 
 
 ### Team Team 1
-- Members: Paul Baldwin, Sira Bagayogo, Vaibhav Ingle,Olanrewaju Ogunmola
+- Members: Paul Baldwin, Sira Bagayogo, Vaibhav Ingle, Olanrewaju Ogunmola
 - Project: [Time Sketch](https://github.com/google/timesketch)
 - Issue: https://github.com/google/timesketch/issues/254
 
