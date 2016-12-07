@@ -2,7 +2,7 @@
 
 This repository includes things related to the Software Assurance course at UNO
 
-### Table of Contents  
+## Table of Contents  
 [Syllabus](#syllabus)  
 [Supplies](#supplies)  
 [Class Topics](#class-topics)  
