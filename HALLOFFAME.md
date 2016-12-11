@@ -16,3 +16,8 @@ This list includes successful pull requests, issues and other interactions with 
 - Project: [Time Sketch](https://github.com/google/timesketch)
 - Issue: https://github.com/google/timesketch/issues/254
 
+### Team NASA
+- Members: Naresh Sriparasara, Abhinay Bijjala, Shyam Vinjamuri, Abhinav Ram
+- Project: [RosarioSIS](https://github.com/francoisjacquet/rosariosis)
+- Issue: https://github.com/francoisjacquet/rosariosis/issues/173
+
