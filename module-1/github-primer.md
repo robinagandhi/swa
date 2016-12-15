@@ -39,7 +39,7 @@ After finishing the hello-world tutorial, you will have created a **Remote** rep
 ### Step 3
 To create a **Local** repository there are two basic options.
 1. Clone a remote repository on your computer, or
-2. Initialize a new git repository from scratch on your computer.
+2. Initialize a new git repository from scratch on you
 
 [Top](#table-of-contents)
 
