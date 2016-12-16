@@ -2,13 +2,16 @@
 
 This repository includes things related to the Software Assurance course at UNO
 
-### Table of Contents  
+## Table of Contents  
 [Syllabus](#syllabus)  
 [Supplies](#supplies)  
 [Class Topics](#class-topics)  
 [Semester Project](#team-semester-project)  
+[Project Hall of Fame](#project-hall-of-fame)  
 [Project Inspiration](#project-inspiration)  
 [Projects to Avoid](#projects-to-avoid)  
+[Project Deadlines](#project-deadlines)  
+[Final Exam](#final-exam)  
 [License](#license)  
 
 ## Syllabus
@@ -94,6 +97,10 @@ The project will have the following deliverables:
   * Gaps in security requirements and design of the original project
   * Findings from code review and automated software scanning
   * Contributions to the original project (documentation, design changes, code changes, communications)
+
+
+## Project Hall of Fame
+* [List of successful contributions to OSS projects from student teams](https://github.com/robinagandhi/swa/blob/master/HALLOFFAME.md)  
 
 ## Project Inspiration
 * [Github guide for contributing to Open Source Projects](https://guides.github.com/activities/contributing-to-open-source/)
