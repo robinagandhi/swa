@@ -1,6 +1,9 @@
 # Software Assurance
 
-This repository includes things related to the Software Assurance course at UNO
+This repository includes things related to the Software Assurance course at UNO.
+The course topics lie in the upper right quadrant of the figure below.
+
+![quadrants](http://www.cyberdefensereview.org/wp-content/uploads/2015/11/casl.png)
 
 ## Table of Contents  
 [Syllabus](#syllabus)  
@@ -23,44 +26,45 @@ This repository includes things related to the Software Assurance course at UNO
 * [Online Lab Computer](http://view.unomaha.edu)
 
 ## Class Topics
+
 1. Introduction to [Software Assurance](https://robinagandhi.github.io/swa/slides/lecture-0/software-assurance.html)
-1. Collaborating when working on Software
-  * Get familiar with version control
+2. Collaborating when working on Software  
+  - Get familiar with version control  
     * [Github Primer](./module-1/github-primer.md)
-1. [Corporate Engagement with Open Source Software (OSS) and Licensing](https://robinagandhi.github.io/swa/slides/matt-g-guest-lecture/corporate-participation-with-oss-communities.pdf)
+3. [Corporate Engagement with Open Source Software (OSS) and Licensing](https://robinagandhi.github.io/swa/slides/matt-g-guest-lecture/corporate-participation-with-oss-communities.pdf)
   * Guest Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
-1. Engineering For Assurance
+4. Engineering For Assurance
   * [Systems Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html). Based on Chapter 2 from [NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf).
-1. [Assurance Cases ](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case.html) for Software Security Engineering
+5. [Assurance Cases ](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case.html) for Software Security Engineering
   * [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
   * Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
   * Formal diagramming in [Adelard ASCE](http://www.adelard.com/asce/v4.2/download.html)  
   * [Assurance Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case-exercise.html)
-1. [Requirements for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html)
+6. [Requirements for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html)
   * Problem Frames (Abuse and Security Frames)  
   * The Meaning of Requirements for Software Security Engineering  
   * [Misuse cases](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1159030)  
   * Using Misuse cases to Elaborate Assurance Cases: [Misuse Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html#68)
   * Translating compliance constraints to requirements ([NIST 800-160 public draft 2, Appendix J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf))
-1. Maturity Models for Software Security Engineering
+7. Maturity Models for Software Security Engineering
   * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
-1. Midterm Exam on Wednesday, October 19. [Performance](./img/misc/fall2016midtermperformance.pdf)
-1. Design for Software Security Engineering
+8. Midterm Exam on Wednesday, October 19. [Performance](./img/misc/fall2016midtermperformance.pdf)
+9. Design for Software Security Engineering
   * Design Principles for Security (NIST 800-160 Appendix F)
   * [Threat Modeling](https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html). Data flow based threat identification and mitigation techniques.  
-  Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
+  * Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
   * Design patterns (See Blackboard for Slides):
     1. Expressing design principles as patterns
     1. Architectural patterns for security
     1. Object-oriented code patterns for security
-1. [Coding for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-5/code-for-software-se.html)
+10. [Coding for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-5/code-for-software-se.html)
   * Knowledge base: [Common Weakness Enumeration](http://cwe.mitre.org/), [CAPEC](https://capec.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
   * [DHS SWAMP](https://www.mir-swamp.org/)
   * Code review tools and techniques
-1. Testing for Software Security Engineering
+11. Testing for Software Security Engineering
   * Guest Talk by [Matt Hale](http://faculty.ist.unomaha.edu/mhale/) Testing processes, Test Driven Development, and Faculty Research topic overview [(slides)](./guest-lectures/test-driven-development-and-research-guestlecture.pdf)
   * QUnit Slides from [Ben Alman](https://github.com/cowboy) available [here](http://benalman.com/talks/unit-testing-qunit.html) 
-1. Other topics
+12. Other topics
   * Guest talks from other faculty or practitioners.
 
 \* These topics will get refined and updated as the semester progresses
@@ -80,19 +84,19 @@ The project will have the following deliverables:
   * Security related history (E.g. known vulnerabilities)
   * Your motivation for selecting this project
 
-1. **Requirements and Design for Secure Software**: 2-3 page report that describes the following:
+2. **Requirements and Design for Secure Software**: 2-3 page report that describes the following:
   * Links to your version control repository that shows your internal collaboration and project related activity.
   * Security requirements for the project captured using mis-use case diagrams. Include links to Lucidchart diagrams with brief descriptions in the document.
   * Threat models for critical dataflows through the software. Include diagrams and a link to download these files.
   * Links to suggested updates for project documentation for security related configuration and installation.
 
-1. **Code analysis and testing for Secure Software**: 2-3 page report that describes the following:
+3. **Code analysis and testing for Secure Software**: 2-3 page report that describes the following:
   * Code review strategy
   * Automated code scanning results summary. Include links to full reports.
   * Summary of key findings
   * Links to pull requests to the original project and any follow-up interactions.
 
-1. **Class Presentation**: 10-minute class presentation that highlights the following:
+4. **Class Presentation**: 10-minute class presentation that highlights the following:
   * Project description
   * Gaps in security requirements and design of the original project
   * Findings from code review and automated software scanning
