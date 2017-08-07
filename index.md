@@ -54,5 +54,5 @@ Due to the current and advanced nature of this class, it is under constant revis
 Put your name, date and class identification and page number on all your assignments and any correspondence with me. All email sent to me regarding the class must have the class descriptor and your name in the subject field e.g. (IASC/CSCI 8420 - TOPIC). We will be using blackboard for the course.
 
 ### Contact Information
-See Blackboard.
+See Canvas.
 
