@@ -15,7 +15,7 @@ This repository includes things related to the Software Assurance course at UNO.
 [License](#license)  
 
 ## Syllabus
-Syllabus
+[Syllabus](https://robinagandhi.github.io/swa)
 
 ## Supplies
 * Bringing a laptop to class is highly encouraged for in-class activities.
@@ -68,7 +68,7 @@ Syllabus
 [Team projects](https://robinagandhi.github.io/swa/slides/teams-2016/teams.html)
 
 ## Teams Project for Fall 2017
-Team projects: ??
+Team projects: **TBD**
 
 ## Team Semester Project
 This class strives to encourage learning by doing and making a real difference to the practice of building software. To turn this spirit into reality, a semester long project will require you to work with a open source software project. A group of three students will select a unique open source software project and contribute security related improvements.
@@ -142,9 +142,9 @@ Use these instructions if you do not intend to contribute any upstream changes. 
 # Notice the `.` at the end of the command
 git clone https://www.github.com/robinagandhi/swa .
 ```
-Now examine the directory structure. It should have the same directory structure as this repository on Github.com.
+Now examine the ```swa``` directory structure. It should have the same directory structure as this repository on Github.com.
 
-The repository has two branches that serve different purposes.
+The master branch includes the following content:
 * `master`: This branch includes files for course planning, project description, course syllabus, markdown based slides and any self-paced tutorials for class lectures.
 
 To keep your local repository updated with upstream changes use the git pull command.
