@@ -1,9 +1,6 @@
 # Software Assurance
 
 This repository includes things related to the Software Assurance course at UNO.
-The course topics lie in the upper right quadrant of the figure below.
-
-![quadrants](http://www.cyberdefensereview.org/wp-content/uploads/2015/11/casl.png)
 
 ## Table of Contents  
 [Syllabus](#syllabus)  
@@ -18,52 +15,50 @@ The course topics lie in the upper right quadrant of the figure below.
 [License](#license)  
 
 ## Syllabus
-[Course syllabus on Github.io](https://robinagandhi.github.io/swa/)
+Syllabus
 
 ## Supplies
 * Bringing a laptop to class is highly encouraged for in-class activities.
 * A notebook and pencil.
 * [Online Lab Computer](http://view.unomaha.edu)
 
-## Class Topics
+## Class Topics*
 
-1. Introduction to [Software Assurance](https://robinagandhi.github.io/swa/slides/lecture-0/software-assurance.html)
-2. Collaborating when working on Software  
-  - Get familiar with version control  
-    * [Github Primer](./module-1/github-primer.md)
-3. [Corporate Engagement with Open Source Software (OSS) and Licensing](https://robinagandhi.github.io/swa/slides/matt-g-guest-lecture/corporate-participation-with-oss-communities.pdf)
+1. Introduction to Software Assurance
+2. Collaborating when working on Software
+  - Get familiar with version control. [Github Primer](./module-1/github-primer.md)
+3. Corporate Engagement with Open Source Software (OSS) and Licensing
   * Guest Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 4. Engineering For Assurance
-  * [Systems Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html). Based on Chapter 2 from [NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf).
-5. [Assurance Cases ](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case.html) for Software Security Engineering
+  * Systems Security Engineering. Based on Chapter 2 from [NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf).
+5. Assurance Cases for Software Security Engineering
   * [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
   * Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
   * Formal diagramming in [Adelard ASCE](http://www.adelard.com/asce/v4.2/download.html)  
-  * [Assurance Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case-exercise.html)
-6. [Requirements for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html)
+  * Assurance Case Exercise (Team Deliverable)
+6. Requirements for Software Security Engineering
   * Problem Frames (Abuse and Security Frames)  
   * The Meaning of Requirements for Software Security Engineering  
   * [Misuse cases](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1159030)  
-  * Using Misuse cases to Elaborate Assurance Cases: [Misuse Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html#68)
+  * Using Misuse cases to Elaborate Assurance Cases: Misuse Case Exercise (Team Deliverable)
   * Translating compliance constraints to requirements ([NIST 800-160 public draft 2, Appendix J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf))
 7. Maturity Models for Software Security Engineering
   * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
-8. Midterm Exam on Wednesday, October 19. [Performance](./img/misc/fall2016midtermperformance.pdf)
+8. Midterm Exam. Sometime in October.
 9. Design for Software Security Engineering
   * Design Principles for Security (NIST 800-160 Appendix F)
-  * [Threat Modeling](https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html). Data flow based threat identification and mitigation techniques.  
+  * Threat Modeling. Data flow based threat identification and mitigation techniques.  
   * Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
   * Design patterns (See Blackboard for Slides):
     1. Expressing design principles as patterns
-    1. Architectural patterns for security
-    1. Object-oriented code patterns for security
-10. [Coding for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-5/code-for-software-se.html)
+    2. Architectural patterns for security
+    3. Object-oriented code patterns for security
+10. Coding for Software Security Engineering
   * Knowledge base: [Common Weakness Enumeration](http://cwe.mitre.org/), [CAPEC](https://capec.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
   * [DHS SWAMP](https://www.mir-swamp.org/)
   * Code review tools and techniques
 11. Testing for Software Security Engineering
-  * Guest Talk by [Matt Hale](http://faculty.ist.unomaha.edu/mhale/) Testing processes, Test Driven Development, and Faculty Research topic overview [(slides)](./guest-lectures/test-driven-development-and-research-guestlecture.pdf)
-  * QUnit Slides from [Ben Alman](https://github.com/cowboy) available [here](http://benalman.com/talks/unit-testing-qunit.html) 
+  * Guest Talk by [Matt Hale](http://faculty.ist.unomaha.edu/mhale/)  
 12. Other topics
   * Guest talks from other faculty or practitioners.
 
@@ -71,6 +66,9 @@ The course topics lie in the upper right quadrant of the figure below.
 
 ## Teams Project for Fall 2016
 [Team projects](https://robinagandhi.github.io/swa/slides/teams-2016/teams.html)
+
+## Teams Project for Fall 2017
+Team projects: ??
 
 ## Team Semester Project
 This class strives to encourage learning by doing and making a real difference to the practice of building software. To turn this spirit into reality, a semester long project will require you to work with a open source software project. A group of three students will select a unique open source software project and contribute security related improvements.
@@ -122,18 +120,18 @@ The project will have the following deliverables:
 * Project with little or no functional security requirements. As surprising as it may sound, not all software have security needs!
 * Projects not accepting contributions
 
-## Project Deadlines
+## Project Deadlines*
 
-1. Project Proposal &ndash; **September 14th, 2016**
-1. Requirements and Design for Secure Software &ndash; ~~October 19th, 2016~~ **November 9th, 2016**
-1. Code analysis and testing for Secure Software &ndash; **November 30th, 2016**
-1. Class presentations &ndash; **December 7th, 2016**
+1. Project Proposal &ndash; **September 13, 2017**
+1. Requirements and Design for Secure Software &ndash; **TBD**
+1. Code analysis and testing for Secure Software &ndash; **TBD**
+1. Class presentations &ndash; **December 6, 2017**
 
 \* All dates are subject to change as the course progresses
 
 ## Final Exam
 
-* In-class exam on **December 14th, 5:30pm**
+* In-class exam on **Wednesday, December 13, 2017, 5:30pm**
 
 ## How to Clone and Navigate this Repo
 
@@ -147,17 +145,7 @@ git clone https://www.github.com/robinagandhi/swa .
 Now examine the directory structure. It should have the same directory structure as this repository on Github.com.
 
 The repository has two branches that serve different purposes.
-* `master`: This branch includes files for course planning, project description and any self-paced tutorials.
-* `gh-pages`: This branch includes website files that are hosted on Github.io. The website hosts the course syllabus and markdown based slides for all the class lectures.
-
-To switch between the two branches use the following git commands:
-```bash
-# Switch to the `gh-pages` branch
-git checkout gh-pages
-
-# Switch to the `master` branch
-git checkout master
-```
+* `master`: This branch includes files for course planning, project description, course syllabus, markdown based slides and any self-paced tutorials for class lectures.
 
 To keep your local repository updated with upstream changes use the git pull command.
 ```bash
@@ -201,4 +189,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## What does GPLv3 mean?
 
-[tl;drLegal summary](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
+[tl;dr Legal summary](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
