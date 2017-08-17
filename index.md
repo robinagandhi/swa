@@ -18,7 +18,7 @@ _None_. Most readings and supplemental materials will be provided in class. All 
 * System Assurance: beyond Detecting Vulnerabilities, Mansourov, Nikolai, and Djenana Campara. Elsevier/Morgan Kaufmann, 2011 (Standards based definition and assessment of software weaknesses, creating an assurance argument)
 
 ### Additional References
-* [Secure Programming for Linux and Unix HOWTO](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html), David Wheeler,  
+* [Secure Programming for Linux and Unix HOWTO](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html), David Wheeler  
 * Browser Security Handbook [Part 1](https://code.google.com/p/browsersec/wiki/Part1) and [Part 2](https://code.google.com/p/browsersec/wiki/Part2)
 * [Software Assurance in Education, Training and Certification, Pocketguide](http://faculty.ist.unomaha.edu/rgandhi/swa/SwAPGWET/Home.html), Ed. Robin Gandhi 
 (A comprehensive list of references and book on software assurance and certification options can be found in this book)
