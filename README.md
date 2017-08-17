@@ -1,198 +1,66 @@
 ---
 layout: default
-title: 8420 Modules
-description: CYBR 8420 Software Assurance Modules
+title: 8420 Syllabus
+description: CYBR 8420 Software Assurance Syllabus
 ---
 
-# Software Assurance
+# Syllabus
+## Course Description
+* Assurance is a reasoned, audit-able argument created to support claimed beliefs about a certain entity
+* This course is an intersection of knowledge areas necessary to perform engineering activities relevant for promoting assurance in claims for `Sofware Security Engineering`.
+* This course takes on a software development lifecycle perspective for the prevention of flaws.
 
-This repository includes things related to the Software Assurance course at UNO.
+## Class Meeting Time and Location
+**Wednesdays 5:30 to 8:10 p.m. in PKI 153**
 
-## Table of Contents  
-[Syllabus](#syllabus)  
-[Supplies](#supplies)  
-[Class Topics](#class-topics)  
-[Semester Project](#team-semester-project)  
-[Project Hall of Fame](#project-hall-of-fame)  
-[Project Inspiration](#project-inspiration)  
-[Projects to Avoid](#projects-to-avoid)  
-[Project Deadlines](#project-deadlines)  
-[Final Exam](#final-exam)  
-[License](#license)  
+## Instruction
+* The course will be conducted through *discussions* and *trying things out*.
+* There will be many in-class exercises in small groups.
+* Familiarity with reading materials will be assessed using in-class quizzes. Students must complete assignments and independent projects as directed.
 
-## Syllabus
-[Syllabus](https://robinagandhi.github.io/swa)
+## Resource Material
+### Textbooks
+_None_. Most readings and supplemental materials will be provided in class. All lecture slides will be made available on Github.
 
-## Supplies
-* Bringing a laptop to class is highly encouraged for in-class activities.
-* A notebook and pencil.
-* [Online Lab Computer](http://view.unomaha.edu)
+### Other reading materials
+* Secure Coding: Principles and Practice, M.G. Graff & K.R. van Wyk (This is a good book that every software developer must read)
+* Building Secure Software, J. Viega & G. McGraw (We will refer to some chapters of this book for security enhancing implementation practices)
+* System Assurance: beyond Detecting Vulnerabilities, Mansourov, Nikolai, and Djenana Campara. Elsevier/Morgan Kaufmann, 2011 (Standards based definition and assessment of software weaknesses, creating an assurance argument)
 
-## Class Topics*
+## Additional References
+* [Secure Programming for Linux and Unix HOWTO](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html), David Wheeler  
+* Browser Security Handbook [Part 1](https://code.google.com/p/browsersec/wiki/Part1) and [Part 2](https://code.google.com/p/browsersec/wiki/Part2)
+* [Software Assurance in Education, Training and Certification, Pocketguide](http://faculty.ist.unomaha.edu/rgandhi/swa/SwAPGWET/Home.html), Ed. Robin Gandhi
+(A comprehensive list of references and book on software assurance and certification options can be found in this book)
+* List of books related to [Software Security Engineering](http://resources.sei.cmu.edu/library/asset-view.cfm?assetid=465870)
 
-1. Introduction to Software Assurance
-2. Collaborating when working on Software
-  - Get familiar with version control. [Github Primer](./module-1/github-primer.md)
-3. Corporate Engagement with Open Source Software (OSS) and Licensing
-  * Guest Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
-4. Engineering For Assurance
-  * Systems Security Engineering. Based on Chapter 2 from [NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf).
-5. Assurance Cases for Software Security Engineering
-  * [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
-  * Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
-  * Formal diagramming in [Adelard ASCE](http://www.adelard.com/asce/v4.2/download.html)  
-  * Assurance Case Exercise (Team Deliverable)
-6. Requirements for Software Security Engineering
-  * Problem Frames (Abuse and Security Frames)  
-  * The Meaning of Requirements for Software Security Engineering  
-  * [Misuse cases](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1159030)  
-  * Using Misuse cases to Elaborate Assurance Cases: Misuse Case Exercise (Team Deliverable)
-  * Translating compliance constraints to requirements ([NIST 800-160 public draft 2, Appendix J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf))
-7. Maturity Models for Software Security Engineering
-  * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
-8. Midterm Exam. Sometime in October.
-9. Design for Software Security Engineering
-  * Design Principles for Security (NIST 800-160 Appendix F)
-  * Threat Modeling. Data flow based threat identification and mitigation techniques.  
-  * Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
-  * Design patterns (See Blackboard for Slides):
-    1. Expressing design principles as patterns
-    2. Architectural patterns for security
-    3. Object-oriented code patterns for security
-10. Coding for Software Security Engineering
-  * Knowledge base: [Common Weakness Enumeration](http://cwe.mitre.org/), [CAPEC](https://capec.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
-  * [DHS SWAMP](https://www.mir-swamp.org/)
-  * Code review tools and techniques
-11. Testing for Software Security Engineering
-  * Guest Talk by [Matt Hale](http://faculty.ist.unomaha.edu/mhale/)  
-12. Other topics
-  * Guest talks from other faculty or practitioners.
+## Attendance
+Attendance is highly encouraged as there is no textbook material readily available for this course. If you cannot attend class, then it is your duty to follow up with any given instruction, class assignment deadlines and lecture notes.
 
-\* These topics will get refined and updated as the semester progresses
+## Policy on Plagiarism
+Any exam or assignment material submitted which looks identical in any fashion to another student's work or external sources will be considered plagiarism. The grade of which will be adjusted to the minimum possible (Zero) for the assignment for all parties involved. Any further offenses will result in an “F” for the course, accompanied by academic dishonesty actions taken by the College Dean. Note carefully the University policy on [academic integrity](http://goo.gl/NVWUBy) and [code of conduct](https://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/code-of-conduct.php).  
+Make yourself familiar with writing techniques such that you can cite external sources without plagiarizing. Here are a few links to writing resources: [1](http://owl.english.purdue.edu/owl/resource/563/01/), [2](https://owl.english.purdue.edu/owl/resource/589/01/)
 
-## Teams Project for Fall 2016
-[Team projects](https://robinagandhi.github.io/swa/slides/teams-2016/teams.html)
+## Exams
+There will be a mid term exam, and a final exam. The exams will consist of essay-type questions with only a few multiple choices type questions. These in-class exams will allow full access to technology and are intended to help focus on the important parts in the course material, reinforce learning, and provide timely feedback. The exam questions will typically have multiple parts, be sure you answer all the parts.
 
-## Teams Project for Fall 2017
-Team projects: **TBD**
+## In-class Exercises
+In-class exercises will be conducted in stages that correspond to the software development lifecycle. The objective of assignments is to gain hands-on experience in various techniques and tools for software assurance and apply them to build secure software. Details about the assignments will follow as we go further into the semester. Special software programs/tools will be provided to you for some of the assignments. The instructions to turn in the assignment will be provided along with each the assignments.
 
-## Team Semester Project
-This class strives to encourage learning by doing and making a real difference to the practice of building software. To turn this spirit into reality, a semester long project will require you to work with a open source software project. A group of three students will select a unique open source software project and contribute security related improvements.
+## Grading
+20% In-class quizzes, open discussion and class participation  
+20% Mid-term  
+20% Final exam (Comprehensive)  
+20% Assignments (Many in-class)  
+20% Semester Project and Presentation (Team-based)
 
-The project will have the following deliverables:
+## Course Meeting Schedule
+In this semester there are scheduled ~16 available class periods on Wednesdays for 160 minutes each. Accounting for in-class exams, project presentations, snow days, instructor travel to conferences and the like we will actually have something closer to 10-11 class periods for instruction.
 
-1. **Project Proposal**: 2-3 page report that describes the following:
-  * Open source project description (What is it?, Contributors, Activity, Use, Popularity, Languages used, platform, documentation sources, etc.)
-  * Functional security requirements for the software
-  * [License, procedures for making contributions, and contributor agreements](https://guides.github.com/activities/contributing-to-open-source/)
-  * Security related history (E.g. known vulnerabilities)
-  * Your motivation for selecting this project
+Due to the current and advanced nature of this class, it is under constant revision! So you can expect some experimentation and shuffling of the course topics as we progress through the semester. Constructive feedback on the content is highly encouraged.
 
-2. **Requirements and Design for Secure Software**: 2-3 page report that describes the following:
-  * Links to your version control repository that shows your internal collaboration and project related activity.
-  * Security requirements for the project captured using mis-use case diagrams. Include links to Lucidchart diagrams with brief descriptions in the document.
-  * Threat models for critical dataflows through the software. Include diagrams and a link to download these files.
-  * Links to suggested updates for project documentation for security related configuration and installation.
+## Book Keeping
+Put your name, date and class identification and page number on all your assignments and any correspondence with me. All email sent to me regarding the class must have the class descriptor and your name in the subject field e.g. (CYBR/CSCI 8420 - TOPIC). We will be using Canvas and Github for the course.
 
-3. **Code analysis and testing for Secure Software**: 2-3 page report that describes the following:
-  * Code review strategy
-  * Automated code scanning results summary. Include links to full reports.
-  * Summary of key findings
-  * Links to pull requests to the original project and any follow-up interactions.
-
-4. **Class Presentation**: 10-minute class presentation that highlights the following:
-  * Project description
-  * Gaps in security requirements and design of the original project
-  * Findings from code review and automated software scanning
-  * Contributions to the original project (documentation, design changes, code changes, communications)
-
-
-## Project Hall of Fame
-* [List of successful contributions to OSS projects from student teams](https://github.com/robinagandhi/swa/blob/master/HALLOFFAME.md)  
-
-## Project Inspiration
-* [Github guide for contributing to Open Source Projects](https://guides.github.com/activities/contributing-to-open-source/)
-* [Openhub](https://www.openhub.net) by Black Duck Software
-* Github [search](https://github.com/search) and [trends](https://github.com/trending).
-* DHS SWAMP listing for [public software packages](https://www.mir-swamp.org/#packages/public).
-* [Code Triage](https://www.codetriage.com)
-* Some blogs to consider. [1](http://blog.teamtreehouse.com/getting-involved-open-source-projects), [2](https://help.github.com/articles/where-can-i-find-open-source-projects-to-work-on/), [3](http://www.firsttimersonly.com)
-
-## Projects to Avoid
-* In-active projects (no recent contributions, no activity on forums, lack of wiki or documentation)
-* Old vulnerable project versions
-* Android Apps
-* Projects with languages that do not have a lot of tool support
-* Project with little or no functional security requirements. As surprising as it may sound, not all software have security needs!
-* Projects not accepting contributions
-
-## Project Deadlines*
-
-1. Project Proposal &ndash; **September 13, 2017**
-1. Requirements and Design for Secure Software &ndash; **TBD**
-1. Code analysis and testing for Secure Software &ndash; **TBD**
-1. Class presentations &ndash; **December 6, 2017**
-
-\* All dates are subject to change as the course progresses
-
-## Final Exam
-
-* In-class exam on **Wednesday, December 13, 2017, 5:30pm**
-
-## How to Clone and Navigate this Repo
-
-Use these instructions if you do not intend to contribute any upstream changes. In a CLI navigate to the directory where you want to clone the repository. Then run the following clone command:
-
-```bash
-# Clone the Repository to the current directory
-# Notice the `.` at the end of the command
-git clone https://www.github.com/robinagandhi/swa .
-```
-Now examine the ```swa``` directory structure. It should have the same directory structure as this repository on Github.com.
-
-The master branch includes the following content:
-* `master`: This branch includes files for course planning, project description, course syllabus, markdown based slides and any self-paced tutorials for class lectures.
-
-To keep your local repository updated with upstream changes use the git pull command.
-```bash
-# update the repository
-git pull
-```
-
-## How to Contribute?
-
-First fork this repo on Github.com while logged into your account. Then clone the forked repo on your computer.
-
-Now you will need two capabilities: 1) Keep your fork (downstream) synced with this repo (upstream) and 2) Make upstream pull requests for changes made in the forked repo. Both these can be accomplished by following these steps:  
-
-1. [Fork a Repo](https://help.github.com/articles/fork-a-repo/)  
-1. [Syncing a Fork](https://help.github.com/articles/syncing-a-fork/)  
-1. Push changes to your remote fork: `git push origin master`  
-1. [Create a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)  
-
-More advanced collaboration features can be found here: https://help.github.com/categories/collaborating-on-projects-using-issues-and-pull-requests/
-
-Don't have contributor agreements ready just yet. TBD.   
-In general, if you are making it a pull request you agree to abide by this CLA: https://cla.github.com
-
-
-## License  
-Software Assurance.  
-Copyright (C) 2016  Dr. Robin A. Gandhi
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-## What does GPLv3 mean?
-
-[tl;dr Legal summary](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
+## Contact Information
+See Canvas.
