@@ -4,7 +4,8 @@
 * This course is an intersection of knowledge areas necessary to perform engineering activities relevant for promoting assurance in claims for `Sofware Security Engineering`.
 * This course takes on a software development lifecycle perspective for the prevention of flaws.
 
-## Class Meeting Time
+## Class Meeting Time and Location
+**Wednesdays 5:30 to 8:10 p.m. in PKI 153**
 
 ## Instruction
 * The course will be conducted through *discussions* and *trying things out*.
