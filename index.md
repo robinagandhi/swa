@@ -49,7 +49,7 @@ In-class exercises will be conducted in stages that correspond to the software d
 20% Semester Project and Presentation (Team-based)
 
 ## Course Meeting Schedule
-In this semester there are scheduled ~16 available class periods on Wednesdays for 135 minutes each. Accounting for in-class exams, project presentations, snow days, instructor travel to conferences and the like we will actually have something closer to 10-11 class periods for instruction. 
+In this semester there are scheduled ~16 available class periods on Wednesdays for 160 minutes each. Accounting for in-class exams, project presentations, snow days, instructor travel to conferences and the like we will actually have something closer to 10-11 class periods for instruction. 
 
 Due to the current and advanced nature of this class, it is under constant revision! So you can expect some experimentation and shuffling of the course topics as we progress through the semester. Constructive feedback on the content is highly encouraged. 
 
