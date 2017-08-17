@@ -57,10 +57,10 @@ a {
   color: #fff;
   text-align: center;
   background-color: #fff;
-  /* background-image: linear-gradient(120deg, #D71920, #8B0000); } */
-  background-image:url('../img/bridge-logo.jpg');
+  background-image: linear-gradient(120deg, #D71920, #8B0000); }
+  /* background-image:url('../img/bridge-logo.jpg'); */
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
 }
 
 @media screen and (min-width: 64em) {
@@ -94,7 +94,7 @@ a {
 .project-tagline {
   margin-bottom: 2rem;
   font-weight: normal;
-  
+
 }
 
 @media screen and (min-width: 64em) {
