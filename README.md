@@ -1,3 +1,9 @@
+---
+layout: default
+title: 8420 Modules
+description: CYBR 8420 Software Assurance Modules
+---
+
 # Software Assurance
 
 This repository includes things related to the Software Assurance course at UNO.
