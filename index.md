@@ -28,8 +28,8 @@ _None_. Most readings and supplemental materials will be provided in class. All 
 Attendance is highly encouraged as there is no textbook material readily available for this course. If you cannot attend class, then it is your duty to follow up with any given instruction, class assignment deadlines and lecture notes. 
 		
 ### Policy on Plagiarism
-Any exam or assignment material submitted which looks identical in any fashion to another student’s work or external sources will be considered plagiarism. The grade of which will be adjusted to the minimum possible (Zero) for the assignment for all parties involved. Any further offenses will result in an “F” for the course, accompanied by academic dishonesty actions taken by the College Dean. Note carefully the University policy on [academic integrity](http://goo.gl/NVWUBy) and [code of conduct](https://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/code-of-conduct.php).  
-Make yourself familiar with writing techniques such that you can cite external sources without plagiarizing. Here is are a few links to writing resources: [1](http://owl.english.purdue.edu/owl/resource/563/01/), [2](https://owl.english.purdue.edu/owl/resource/589/01/)
+Any exam or assignment material submitted which looks identical in any fashion to another student's work or external sources will be considered plagiarism. The grade of which will be adjusted to the minimum possible (Zero) for the assignment for all parties involved. Any further offenses will result in an “F” for the course, accompanied by academic dishonesty actions taken by the College Dean. Note carefully the University policy on [academic integrity](http://goo.gl/NVWUBy) and [code of conduct](https://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/code-of-conduct.php).  
+Make yourself familiar with writing techniques such that you can cite external sources without plagiarizing. Here are a few links to writing resources: [1](http://owl.english.purdue.edu/owl/resource/563/01/), [2](https://owl.english.purdue.edu/owl/resource/589/01/)
 
 ### Exams
 There will be a mid term exam, and a final exam. The exams will consist of essay-type questions with only a few multiple choices type questions. These in-class exams will allow full access to technology and are intended to help focus on the important parts in the course material, reinforce learning, and provide timely feedback. The exam questions will typically have multiple parts, be sure you answer all the parts.
@@ -38,11 +38,11 @@ There will be a mid term exam, and a final exam. The exams will consist of essay
 In-class exercises will be conducted in stages that correspond to the software development lifecycle. The objective of assignments is to gain hands-on experience in various techniques and tools for software assurance and apply them to build secure software. Details about the assignments will follow as we go further into the semester. Special software programs/tools will be provided to you for some of the assignments. The instructions to turn in the assignment will be provided along with each the assignments. 
 
 ### Grading
-20% Reading summaries/open discussion and class participation  
+20% In-class quizzes, open discussion and class participation  
 20% Mid-term  
 20% Final exam (Comprehensive)  
-20% In-class Exercises  
-20% Semester Project and Presentation  
+20% Assignments (Many in-class)  
+20% Semester Project and Presentation (Team-based)
 
 ### Course Meeting Schedule
 In this semester there are scheduled ~16 available class periods on Wednesdays for 135 minutes each. Accounting for in-class exams, project presentations, snow days, instructor travel to conferences and the like we will actually have something closer to 10-11 class periods for instruction. 
