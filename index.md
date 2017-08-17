@@ -4,8 +4,8 @@
 * This course takes on a software development lifecycle perspective for the prevention of flaws.
 
 ### Instruction
-* The course will be conducted through “discussions” and “trying things out”.
-* There will be many class-exercises in small groups. 
+* The course will be conducted through *discussions* and *trying things out*.
+* There will be many in-class exercises in small groups. 
 * Familiarity with reading materials will be assessed using in-class quizzes. Students must complete assignments and independent projects as directed. 
 
 ### Resource Material
