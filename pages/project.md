@@ -37,7 +37,7 @@ The project will have the following deliverables:
 
 
 ## Project Hall of Fame
-* [List of successful contributions to OSS projects from student teams](https://github.com/robinagandhi/swa/blob/master/HALLOFFAME.md)  
+* [List of successful contributions to OSS projects from student teams](https://robinagandhi.github.io/swa/HALLOFFAME.html)  
 
 ## Project Inspiration
 * [Github guide for contributing to Open Source Projects](https://guides.github.com/activities/contributing-to-open-source/)

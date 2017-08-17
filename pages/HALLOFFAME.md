@@ -1,3 +1,9 @@
+---
+layout: default
+title: 8420 Hall of Fame
+description: CYBR 8420 Hall of Fame
+---
+
 # Hall of Fame
 
 A collection of Github interactions based on the course project.   
@@ -8,8 +14,8 @@ This list includes successful pull requests, issues and other interactions with 
 ### Team NODE
 - Members: Tyler Chrisman, Sean Hoefler, Juan Membreno, David Nelson
 - Project: [Wagtail](https://github.com/torchbox/wagtail)
-- Pull request:https://github.com/torchbox/wagtail/pull/3185 
-- Issue: https://github.com/torchbox/wagtail/issues/3189 
+- Pull request:https://github.com/torchbox/wagtail/pull/3185
+- Issue: https://github.com/torchbox/wagtail/issues/3189
 
 ### Team Team 1
 - Members: Paul Baldwin, Sira Bagayogo, Vaibhav Ingle, Olanrewaju Ogunmola
@@ -20,4 +26,3 @@ This list includes successful pull requests, issues and other interactions with 
 - Members: Naresh Sriparasara, Abhinay Bijjala, Shyam Vinjamuri, Abhinav Ram
 - Project: [RosarioSIS](https://github.com/francoisjacquet/rosariosis)
 - Issue: https://github.com/francoisjacquet/rosariosis/issues/173
-
