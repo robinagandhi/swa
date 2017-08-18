@@ -6,24 +6,24 @@ description: Getting started with Git and Github
 
 # Github Primer
 
-### Cybersecurity First Principles in this lesson
+# Cybersecurity First Principles in this lesson
 
-#### Domain Separation
+## Domain Separation
 Good fences make good neighbors.  
 - It is good to separate source code from build and runtime environments
 - Version control for source code prevents accidental or unauthorized changes
 - Eliminate dead code
 
-#### Modularization
+## Modularization
 The concept of modularity is like building blocks. Each block (or module) can be put in or taken out from a bigger project. Each module has its own separate function that is interchangeable with other modules.
 - Different code repositories can be maintained for project modules
 
-#### Least Privilege
+## Least Privilege
 One of the ways to protect information is by limiting what people can see and do with your information and resources. The principle of least privilege says to allow the minimum number of privileges necessary to accomplish the task.
 - When collaboratively developing code, each collaborator should only have privileges to play their part.   
 - For example, a code reviewer should only have the ability to read and comment on code, but not edit it.
 
-### Introduction: Git and Github
+# Introduction: Git and Github
 * [Git](https://git-scm.com/) is a popular software development tool.
 * Used by developers to collaborate and version control code.   
 * A collaborative environment to develop written works including code!
@@ -33,16 +33,16 @@ One of the ways to protect information is by limiting what people can see and do
 
 The following tutorials focus on how you can use Git and Github for collaboration and version control.
 
-### Lesson goals
+# Lesson goals
 - Create, clone and manage online repositories
 - Create and manage local repositories
 - Synchronize repositories
 - Collaborate using Github
 
-### Materials required
+# Materials required
 - [git](https://git-scm.com/download/) (Windows Version)
 
-### Prerequisite lessons
+# Prerequisite lessons
 - Lots of curiosity
 - [Linux Commands](https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/). These directory operations will be very useful:
 ```bash
@@ -54,7 +54,7 @@ cd .. # Move up a directory
 ls  # list files and directories in current directory
 ```
 
-### Table of Contents    
+# Table of Contents    
 <!-- TOC START min:1 max:3 link:true update:true -->
 - [Github Primer](#github-primer)
     - [Cybersecurity First Principles in this lesson](#cybersecurity-first-principles-in-this-lesson)
@@ -79,13 +79,13 @@ ls  # list files and directories in current directory
 
 <!-- TOC END -->
 
-### Step 1: Create an Account
+# Step 1: Create an Account
 First things first, create a free account on Github. https://github.com/join
 You will also need to verify your email address after registration in order to use your new GitHub account.
 
 [Top](#table-of-contents)
 
-### Step 2: Hello World
+# Step 2: Hello World
 Complete the following Github tutorial:
 https://guides.github.com/activities/hello-world/
 
@@ -95,14 +95,14 @@ Git is a distributed configuration management system. It helps to `avoid` thinki
 
 [Top](#table-of-contents)
 
-### Step 3: Clone a Repository
+# Step 3: Clone a Repository
 To create a `Local` repository there are two basic options.
 1. `Clone` a remote repository on your computer, or
 2. `Initialize` a new git repository from scratch on your computer.
 
 [Top](#table-of-contents)
 
-##### Clone a remote repository
+## Clone a remote repository
 Let's start by looking at option #1 and checking that Git is installed.
 
 - Git tools do not come pre-installed with all operating systems.
@@ -143,7 +143,7 @@ ls
 ```
 You should see a README.md and possibly some other files.
 
-##### Initialize a new repository
+## Initialize a new repository
 
 > We do not need to use this option currently, so you may move to [Step 4](#step-4)
 
@@ -161,7 +161,7 @@ That's it! This is useful if you are **creating new files from scratch**. Using 
 
 [Top](#table-of-contents)
 
-### Step 4: Push Changes
+# Step 4: Push Changes
 In this step, we will make changes to files in our `Local` repository and then `push` changes back to the `remote` repository.
 
 Git is based on a **de-centralized** model of ownership - which means that there is no central authoritative repository. Every repository, Local or Remote, is fully autonomous and fully functional on its own. So changes made in any repository are tracked in that repository only. Two repositories do not communicate unless there is a explicit request to synchronize changes across them. This will make more sense as we work through a scenario.
@@ -273,7 +273,7 @@ As mentioned before in the introduction, git version control is very efficient f
 
 [Top](#table-of-contents)
 
-### Step 5: Pull Remote Changes
+# Step 5: Pull Remote Changes
 What happens if we make some changes to README.md on `Github.com`? Or another collaborator makes changes to it. How do we get these changes back into our local repository? We will learn just that in this step.
 
 So, I realized that I forgot to add a link to UNO's Cybersecurity programs in the README.md file. So I will make these changes and commit those changes on Github.com itself.
@@ -308,7 +308,7 @@ If you are interested in learning more about complex team interaction scenarios 
 
 [Top](#table-of-contents)
 
-### Step 6: Fork Repository
+# Step 6: Fork Repository
 Now we will learn about **forking** a repository. This is as easy as pie. But what is a fork and what do you use it for?
 
 Here is what Github [says](https://help.github.com/articles/fork-a-repo/):
@@ -331,7 +331,7 @@ Forking a repository is a good way to suggest new features to the original repos
 
 [Top](#table-of-contents)
 
-### Step 7: Make a Pull Request
+# Step 7: Make a Pull Request
 In this step, make changes to the fork of your peers' repository on `Github.com` and create a `pull request`.
 
 Let's assume that a `gencyber` (insert your ID here) user forks `robinagandhi/hello-world` repository (this will be your peer's repository).
@@ -366,7 +366,7 @@ And that is one way you can collaborate using `Github`.
 
 [Top](#table-of-contents)
 
-### Step 8: Markdown
+# Step 8: Markdown
 To communicate and write on Github, it is useful to learn `Markdown` and its `Github Flavor Variants`. You may explore this simple format here: https://help.github.com/categories/writing-on-github/
 
 
@@ -374,12 +374,12 @@ You are now ready to explore the wonderful world of open source on Github. Enjoy
 
 [Top](#table-of-contents)
 
-### Fork This Course
+# Fork This Course
 We practice what we preach. Our whole course has been developed on GitHub using markdown. Now that you are a git guru, you may as well fork all of the course content, work with it offline and make contributions!
 
 Go to the top of this page and click fork. Boom, you have our whole course, use responsibly 🤓
 
-### Cybersecurity First Principle Reflections
+# Cybersecurity First Principle Reflections
 
 On Github, only the `owner` of a remote repository can push commits to it. All other `Github users` have the limited privilege to make a pull request. The repository owner reviews pull requests and initiates a merge action. The owner may reject pull requests if they do not seem appropriate. A `collaborator` can push commits, but cannot delete a repository or add other collaborators. These constraints show the concept of __least privilege__ with GitHub user roles. Users should have no more privilege than what is required for their job.
 
@@ -389,10 +389,10 @@ Finally, Github repositories separate source code from other resources. This sep
 
 [Top](#table-of-contents)
 
-## Git, err...Get your engines ready!
+# Git, err...Get your engines ready!
 * [Quiz](https://www.qzzr.com/c/quiz/436223/github-101)
 
-## Additional Resources
+# Additional Resources
 
 * Creating a local repository first and then adding a remote repository, [Github](https://try.github.io/)
 * [Github cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
@@ -401,12 +401,12 @@ Finally, Github repositories separate source code from other resources. This sep
 
 [Top](#table-of-contents)
 
-## Acknowledgements
+# Acknowledgements
 
 * A special thanks to Matt Hale, Aaron Vigal and Cade Wollcot for reviews of this module and thoughtful discussions.
 
 [Top](#table-of-contents)
 
-## License
+# License
 Lesson content: Copyright (C) [Robin Gandhi](http://faculty.ist.unomaha.edu/rgandhi/) 2017.  
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This lesson</span> is licensed by the author under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
