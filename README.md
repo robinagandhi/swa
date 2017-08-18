@@ -1,66 +1,71 @@
----
-layout: default
-title: 8420 Syllabus
-description: CYBR 8420 Software Assurance Syllabus
----
+# CYBR 8420 Software Assurance @ UNO
+This repository includes all contents related to CYBR 8420 Software Assurance course at The University of Nebraska Omaha.
 
-# Syllabus
-## Course Description
-* Assurance is a reasoned, audit-able argument created to support claimed beliefs about a certain entity
-* This course is an intersection of knowledge areas necessary to perform engineering activities relevant for promoting assurance in claims for `Sofware Security Engineering`.
-* This course takes on a software development lifecycle perspective for the prevention of flaws.
+# Course Author
+[Robin A. Gandhi](http://faculty.ist.unomaha.edu/rgandhi/)
 
-## Class Meeting Time and Location
-**Wednesdays 5:30 to 8:10 p.m. in PKI 153**
+# Course access
+This is an course uses Github Pages using Jekyll themes and remark.js for publishing instructional content.  
+The Course Github pages are available here: [https://robinagandhi.github.io/swa](https://robinagandhi.github.io/swa)
 
-## Instruction
-* The course will be conducted through *discussions* and *trying things out*.
-* There will be many in-class exercises in small groups.
-* Familiarity with reading materials will be assessed using in-class quizzes. Students must complete assignments and independent projects as directed.
 
-## Resource Material
-### Textbooks
-_None_. Most readings and supplemental materials will be provided in class. All lecture slides will be made available on Github.
+# How to Clone this Repo
 
-### Other reading materials
-* Secure Coding: Principles and Practice, M.G. Graff & K.R. van Wyk (This is a good book that every software developer must read)
-* Building Secure Software, J. Viega & G. McGraw (We will refer to some chapters of this book for security enhancing implementation practices)
-* System Assurance: beyond Detecting Vulnerabilities, Mansourov, Nikolai, and Djenana Campara. Elsevier/Morgan Kaufmann, 2011 (Standards based definition and assessment of software weaknesses, creating an assurance argument)
+Use these instructions if you do not intend to contribute any upstream changes. In a CLI navigate to the directory where you want to clone the repository. Then run the following clone command:
 
-## Additional References
-* [Secure Programming for Linux and Unix HOWTO](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html), David Wheeler  
-* Browser Security Handbook [Part 1](https://code.google.com/p/browsersec/wiki/Part1) and [Part 2](https://code.google.com/p/browsersec/wiki/Part2)
-* [Software Assurance in Education, Training and Certification, Pocketguide](http://faculty.ist.unomaha.edu/rgandhi/swa/SwAPGWET/Home.html), Ed. Robin Gandhi
-(A comprehensive list of references and book on software assurance and certification options can be found in this book)
-* List of books related to [Software Security Engineering](http://resources.sei.cmu.edu/library/asset-view.cfm?assetid=465870)
+```bash
+# Make a empty directory and switch to it
+mkdir swa
+cd swa
+# Clone the Repository to the current directory
+# Notice the `.` at the end of the command
+git clone https://www.github.com/robinagandhi/swa .
+```
+Now examine the ```swa``` directory structure. It should have the same directory structure as this repository on Github.com.
 
-## Attendance
-Attendance is highly encouraged as there is no textbook material readily available for this course. If you cannot attend class, then it is your duty to follow up with any given instruction, class assignment deadlines and lecture notes.
+The master branch includes the following content:
+* `master`: This branch includes files for course planning, project description, course syllabus, markdown based slides and any self-paced tutorials for class lectures.
 
-## Policy on Plagiarism
-Any exam or assignment material submitted which looks identical in any fashion to another student's work or external sources will be considered plagiarism. The grade of which will be adjusted to the minimum possible (Zero) for the assignment for all parties involved. Any further offenses will result in an “F” for the course, accompanied by academic dishonesty actions taken by the College Dean. Note carefully the University policy on [academic integrity](http://goo.gl/NVWUBy) and [code of conduct](https://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/code-of-conduct.php).  
-Make yourself familiar with writing techniques such that you can cite external sources without plagiarizing. Here are a few links to writing resources: [1](http://owl.english.purdue.edu/owl/resource/563/01/), [2](https://owl.english.purdue.edu/owl/resource/589/01/)
+To keep your local repository updated with upstream changes use the git pull command.
+```bash
+# update the repository
+git pull
+```
 
-## Exams
-There will be a mid term exam, and a final exam. The exams will consist of essay-type questions with only a few multiple choices type questions. These in-class exams will allow full access to technology and are intended to help focus on the important parts in the course material, reinforce learning, and provide timely feedback. The exam questions will typically have multiple parts, be sure you answer all the parts.
+# How to Contribute?
 
-## In-class Exercises
-In-class exercises will be conducted in stages that correspond to the software development lifecycle. The objective of assignments is to gain hands-on experience in various techniques and tools for software assurance and apply them to build secure software. Details about the assignments will follow as we go further into the semester. Special software programs/tools will be provided to you for some of the assignments. The instructions to turn in the assignment will be provided along with each the assignments.
+First fork this repo on Github.com while logged into your account. Then clone the forked repo on your computer.
 
-## Grading
-20% In-class quizzes, open discussion and class participation  
-20% Mid-term  
-20% Final exam (Comprehensive)  
-20% Assignments (Many in-class)  
-20% Semester Project and Presentation (Team-based)
+Now you will need two capabilities: 1) Keep your fork (downstream) synced with this repo (upstream) and 2) Make upstream pull requests for changes made in the forked repo. Both these can be accomplished by following these steps:  
 
-## Course Meeting Schedule
-In this semester there are scheduled ~16 available class periods on Wednesdays for 160 minutes each. Accounting for in-class exams, project presentations, snow days, instructor travel to conferences and the like we will actually have something closer to 10-11 class periods for instruction.
+1. [Fork a Repo](https://help.github.com/articles/fork-a-repo/)  
+1. [Syncing a Fork](https://help.github.com/articles/syncing-a-fork/)  
+1. Push changes to your remote fork: `git push origin master`  
+1. [Create a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)  
 
-Due to the current and advanced nature of this class, it is under constant revision! So you can expect some experimentation and shuffling of the course topics as we progress through the semester. Constructive feedback on the content is highly encouraged.
+More advanced collaboration features can be found here: https://help.github.com/categories/collaborating-on-projects-using-issues-and-pull-requests/
 
-## Book Keeping
-Put your name, date and class identification and page number on all your assignments and any correspondence with me. All email sent to me regarding the class must have the class descriptor and your name in the subject field e.g. (CYBR/CSCI 8420 - TOPIC). We will be using Canvas and Github for the course.
+Don't have contributor agreements ready just yet. TBD.   
+In general, if you are making it a pull request you agree to abide by this CLA: https://cla.github.com
 
-## Contact Information
-See Canvas.
+
+# License  
+Software Assurance.  
+Copyright (C) 2016  Dr. Robin A. Gandhi
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+## What does GPLv3 mean?
+
+[tl;dr Legal summary](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
