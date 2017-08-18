@@ -9,6 +9,7 @@ description: CYBR 8420 Software Assurance Modules
 1. Introduction to Software Assurance
 2. Collaborating when working on Software
   - Get familiar with version control. [Github Primer](https://robinagandhi.github.io/swa/pages/github.html)
+  - Get familiar with containers. [Container Primer](https://robinagandhi.github.io/swa/pages/containers.html)
 3. Corporate Engagement with Open Source Software (OSS) and Licensing
   * Guest Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 4. Engineering For Assurance
