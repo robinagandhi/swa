@@ -11,7 +11,7 @@ description: Getting started with Docker Containers
 - Stackable onto on a ship, train, plane or truck. ⛴️ 🚇 ✈️ 🚚
 - Compatible worldwide.
 
-![containers](https://cdn.pixabay.com/photo/2016/05/02/16/34/container-gantry-crane-1367601_960_720.jpg)
+![containers](./img/containers-real.jpg)
 
 Application `containers` follow a similar philosophy.
 
