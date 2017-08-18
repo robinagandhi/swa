@@ -5,6 +5,7 @@ description: CYBR 8420 Software Assurance Modules
 ---
 
 # Class Topics*
+Content will be linked as we progress through the semester. This allows to me to update/create/re-design content throughout the semester.
 
 1. Introduction to Software Assurance
 2. Collaborating when working on Software
@@ -13,18 +14,18 @@ description: CYBR 8420 Software Assurance Modules
 3. Corporate Engagement with Open Source Software (OSS) and Licensing
   * Guest Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 4. Engineering For Assurance
-  * Systems Security Engineering. Based on Chapter 2 from [NIST SP 800-160 Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf).
+  * Systems Security Engineering. Based on Chapter 2 from [NIST SP 800-160](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf).
 5. Assurance Cases for Software Security Engineering
   * [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
   * Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
-  * Formal diagramming in [Adelard ASCE](http://www.adelard.com/asce/v4.2/download.html)  
+  * Formal diagramming in [Adelard ASCE](https://www.adelard.com/asce/choosing-asce/index.html)  
   * Assurance Case Exercise (Team Deliverable)
 6. Requirements for Software Security Engineering
   * Problem Frames (Abuse and Security Frames)  
   * The Meaning of Requirements for Software Security Engineering  
   * [Misuse cases](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1159030)  
   * Using Misuse cases to Elaborate Assurance Cases: Misuse Case Exercise (Team Deliverable)
-  * [Translating compliance constraints to requirements]([NIST 800-160 public draft 2, Appendix-J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf))
+  * Translating compliance constraints to requirements. [NIST 800-160 public draft 2, Appendix-J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
 7. Maturity Models for Software Security Engineering
   * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
 8. Midterm Exam. Sometime in October.
