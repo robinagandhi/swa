@@ -6,7 +6,7 @@ description: CYBR 8420 Software Assurance Project
 
 # Team Semester Project
 
-This class strives to encourage learning by doing and making a real difference to the practice of building software. To turn this spirit into reality, a semester long project will require you to work with a open source software project. A group of three students will select a unique open source software project and contribute security related improvements.
+This class strives to encourage learning by doing and making a real difference to the practice of building software. To turn this spirit into reality, a semester long project will require you to work with a open source software project. A group of three to four students will select a unique open source software project and contribute security related improvements.
 
 The project will have the following deliverables:
 
