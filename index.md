@@ -7,7 +7,7 @@ description: CYBR 8420 Software Assurance Modules
 # Class Topics*
 Content will be linked as we progress through the semester. This allows to me to update/create/re-design content throughout the semester.
 
-1. Introduction to Software Assurance
+1. Introduction to [Software Assurance](https://robinagandhi.github.io/swa/slides/lecture-0/software-assurance.html)
 2. Collaborating when working on Software
   - Get familiar with version control. [Github Primer](https://robinagandhi.github.io/swa/pages/github.html)
   - Get familiar with containers. [Container Primer](https://robinagandhi.github.io/swa/pages/containers.html)

@@ -36,20 +36,36 @@ CWE-130: Improper Handling of Length Parameter Inconsistency
 
 ---
 class: center, middle
-[![shellshock](https://blog.digicert.com/wp-content/uploads/2014/09/Shellshock.png)](https://en.wikipedia.org/wiki/Shellshock_%28software_bug%29)
+[![shellshock](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Shellshock-bug.png/440px-Shellshock-bug.png)](https://en.wikipedia.org/wiki/Shellshock_%28software_bug%29)
+
+???
+# Shellshock or Bashdoor
+A issue in the bash shell that allowed arbitrary commands to be executed when the commands are concatenated to the end of function definitions stored in the values of environment variables. Within days of the publication of this, intense scrutiny of the underlying design flaws discovered a variety of related vulnerabilities, (CVE-2014-6277, CVE-2014-6278, CVE-2014-7169, CVE-2014-7186, and CVE-2014-7187).
 ---
 class: center, middle
 [![ghost](http://www.upstream.be/wp-content/uploads/2015/01/red-gost.jpg)](https://blog.qualys.com/laws-of-vulnerabilities/2015/01/27/the-ghost-vulnerability)
+???
+The GHOST vulnerability is a serious weakness in the Linux glibc library. It allows attackers to remotely take complete control of the victim system without having any prior knowledge of system credentials. CVE-2015-0235 has been assigned to this issue.
 ---
 class: center, middle
-[![badlock](http://badlock.org/badlock.png)](http://badlock.org/)
+[![badlock](http://img.deusm.com/darkreading/2016/04/1325083/badlock.png)](http://www.darkreading.com/vulnerabilities---threats/badlock-bug-declared-a-bust--but-patch-anyway/d/d-id/1325083)
+???
+## Badlock
+Badlock bug in Windows and Samba revealed that the vulnerability was no blockbuster after all, but rather a widespread--and not critical-- vulnerability that can be abused in man-in-the-middle attacks in file server environments.
+
+An attacker could intercept a user’s credentials and steal or modify files, or wage a denial-of-service attack, but he or she would have to be on the same network as the victim, security experts say.
 ---
 class: center, middle
 # [#gotofail](https://www.imperialviolet.org/2014/02/22/applebug.html)
+???
+# Apple SSL/TLS bug
+Two goto fail lines in a row. The first one is correctly bound to the if statement but the second, despite the indentation, isn't conditional at all. The code will always jump to the end from that second goto, err will contain a successful value because the SHA1 update operation was successful and so the signature verification will never fail.
+
 ---
 class: center, middle
 # [Quadrooter](https://www.defcon.org/html/defcon-24/dc-24-speakers.html#Donenfeld)
 ???
+* 2016
 4 flaws in android discovered by a checkpoint researchers.
 Challenge faced with fixing the Quadrooter flaws:
 "Qualcomm has a significant position in the development chain, in that a phone maker isn't taking the Android open-source code directly from Google, they're actually taking it from Qualcomm,"
@@ -61,40 +77,25 @@ https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2503
 class: center, middle
 ## What % is FUD and Marketing?
 [![issues](http://techrights.org/wp-content/uploads/2015/04/ven2-1024x774.png)](http://techrights.org/2015/07/01/sonatype-marketing/)
----
-## [Top security predictions in 2014](http://www.zdnet.com/article/cybersecurity-in-2014-a-roundup-of-predictions/)
-[![2014 predications](http://zdnet3.cbsistatic.com/hub/i/2014/10/04/aba00dfe-4c0a-11e4-b6a0-d4ae52e95e57/429c9df7a412d8ce2a0b8aceaa4b4276/security-2014-graph-620.jpg)](http://www.zdnet.com/article/cybersecurity-in-2014-a-roundup-of-predictions/)
-???
-# 2014 Predictions
----
 
-## [Top security predictions in 2015](http://www.itproportal.com/2015/01/07/security-trends-2015-predictions-round/#ixzz4H98O0kdp)
-
-.small[
-
-Internet of Things  
-A growth in the cyber crime economy  
-Supply Chain attacks  
-Point of Sale attacks  
-Renewed risk management  
-New tools and solutions emerging  
-Cyber insurance  
-C-level and board influence  
-.green[Major software flaws]  
-Identity-as-a-Service  
-Compliance and regulation  
-Encryption  
-Ransomware  
-Major breaches  
-Malvertising
-]
-???
-# 2015 Predictions
 ---
 ## [Security Concerns in 2016](http://www.csoonline.com/article/3013107/security/forecast-2016-security-takes-center-stage.html)
 ![2016](http://core0.staticworld.net/images/article/2015/11/cw_techforecast2016_03_budget_booms_and_busts-100629394-large.idge.png)
 ???
 # 2016 Predictions
+
+---
+class: middle
+# [Top Security Concerns in 2017](http://www.csoonline.com/article/3199937/security/top-5-infosec-concerns-for-2017.html)
+
+## Based on Searches on CSOonline
+- Network Security
+- Networking
+- Windows OS (ransomware related)
+- OS security
+- Active Directory
+???
+# 2017 Predictions
 ---
 
 class: left, middle
@@ -217,7 +218,7 @@ Application of .green[technologies and processes] to achieve a required level of
 ]
 ---
 # Dr. Gandhi's Version
-## .red[Basis for the belief] that software will operate as expected in its threat environment
+## .red[Basis for the belief] that software will operate as expected in its .red[threat environment]
 .red[Resist] most attacks  
 
 .red[Tolerate] as many as possible of those attacks it cannot resist  
@@ -239,7 +240,7 @@ Highlights:
 Weakness are any mistakes in implementation, design, or other phases of the software development lifecycle.
 --
 
-## .red[Basis for belief] increases if data-driven evidence is available for reducing weaknesses
+## .red[Basis for belief] increases if engineering evidence is available for _reducing_ weaknesses
 
 ---
 class: center, middle
@@ -272,12 +273,12 @@ Are these concerns fresh? think again!
 ---
 class: center
 # Course Goals
-## Internalize
+## .red[Internalize]
 security engineering during the software development lifecycle
-## Assure
-through evidence-based security
-## Experience
-security engineering by engaging in hand-on activities with Open Source Software
+## .green[Assure]
+through evidence-based beliefs
+## .blue[Experience]
+software security engineering by engaging in hand-on activities with Open Source Software
 ???
 ## [Internalize](https://www.google.com/#q=define+internalize)
 security engineering during the software development lifecycle
@@ -290,7 +291,7 @@ Open Source Software
 class: center
 # Course Methods
 ## Process Agnostic
-Analysis applicable in any [lifecycle strategy](https://en.wikipedia.org/wiki/Software_development_process)  
+Analysis applicable in any [lifecycle](https://en.wikipedia.org/wiki/Software_development_process) [.blue[strategy]](https://en.wikipedia.org/wiki/Rational_Unified_Process)  
 ## Lightweight
 Share and [institutionalize](https://www.google.com/search?q=intitutaionalize) knowledge  
 ## Practical
@@ -301,7 +302,7 @@ Methods currently used in [software engineering practice](https://www.bsimm.com/
 Analysis applicable in any [lifecycle strategy](https://en.wikipedia.org/wiki/Software_development_process)  
 _Waterfall, Spiral, UML, Agile, etc._
 ## Lightweight
-Share and [institutionalize](https://www.google.com/search?q=intitutaionalize) knowledge  
+Share and [institutionalize](https://www.google.com/search?q=institutionalize) knowledge  
 _Relevant and logically analyzable documentation_
 ## Practical
 Methods currently used in software engineering practice  
@@ -310,13 +311,13 @@ _e.g., [Microsoft SDL](https://www.microsoft.com/en-us/sdl/), [BSIMM](https://ww
 
 # Security .red[vs.] Safety, Reliability and Quality
 
-## Common Expectations
+## Common
 Software works as expected despite the presence of certain internal and external stimuli, influences, and circumstances
 --
 
 ## Different for Security
-The nature of external stimuli, influences, and circumstances  
-Intelligent, persistent adversary
+* The nature of external stimuli, influences, and circumstances:   
+.red[An Intelligent, persistent adversary]
 ---
 class: center, middle
 # A Winning Strategy
@@ -360,4 +361,9 @@ Carl Landwehr, CACM, February **2015**
 ---
 class: center, middle
 # Discussion?
-![makes-sense](http://img.pandawhale.com/116241-that-dont-make-no-sense-gif-Im-2m0g.gif)
+![that-dont-make-no-sense](https://media.giphy.com/media/DO5JobrylWL7i/giphy.gif)
+
+---
+class: center, middle
+# Next up...
+## Engineering for Assurance

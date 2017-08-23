@@ -7,7 +7,7 @@ description: CYBR 8420 Software Assurance Syllabus
 
 # Course Description
 * Assurance is a reasoned, audit-able argument created to support claimed beliefs about a certain entity
-* This course is an intersection of knowledge areas necessary to perform engineering activities relevant for promoting assurance in claims for `Sofware Security Engineering`.
+* This course is an intersection of knowledge areas necessary to perform engineering activities relevant for promoting assurance in claims for `Software Security Engineering`.
 * This course takes on a software development lifecycle perspective for the prevention of flaws.
 
 # Class Meeting Time and Location Fall 2017
