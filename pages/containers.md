@@ -592,6 +592,8 @@ For more information, investigate the following:
 - [docker-compose.yml](https://docs.docker.com/compose/compose-file/) - Authoring File Reference
 - [Volume](https://docs.docker.com/engine/tutorials/dockervolumes/) - Manage Data in Containers
 - [Container Networking](https://docs.docker.com/engine/tutorials/networkingcontainers/#add-containers-to-a-network) - Connect Containers to a Network
+- [Docker Tutorials](https://github.com/docker/labs)
+- [Docker Online Playground](http://training.play-with-docker.com)
 
 [Top](#table-of-contents)
 
