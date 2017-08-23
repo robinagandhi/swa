@@ -13,6 +13,9 @@ description: CYBR 8420 Software Assurance Syllabus
 # Class Meeting Time and Location Fall 2017
 **Wednesdays 5:30 to 8:10 p.m. in PKI 153**
 
+# Where does it fit in the degree program?
+[MS in Cybersecurity Requirements](https://www.unomaha.edu/college-of-information-science-and-technology/school-of-interdisciplinary-informatics/cybersecurity/ms-cybr-reqs.php)
+
 # Instruction
 * The course will be conducted through *discussions* and *trying things out*.
 * There will be many in-class exercises in small groups.
