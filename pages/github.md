@@ -390,7 +390,7 @@ Finally, Github repositories separate source code from other resources. This sep
 [Top](#table-of-contents)
 
 # Git, err...Get your engines ready!
-* [Quiz](https://www.qzzr.com/c/quiz/436223/github-101)
+* [Quiz](https://unomaha.instructure.com/courses/3042/quizzes/9026)
 
 # Additional Resources
 
