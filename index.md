@@ -51,7 +51,7 @@ Content will be linked as we progress through the semester. This allows to me to
 # Supplies
 * Bringing a laptop to class is highly encouraged for in-class activities.
 * A notebook and pencil.
-* [Online Lab Computer](http://view.unomaha.edu)
+* [Online Lab Computer](http://support.ist.unomaha.edu/view.html)
 
 # Final Exam for Fall 2017
 
