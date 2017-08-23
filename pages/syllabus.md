@@ -11,10 +11,11 @@ description: CYBR 8420 Software Assurance Syllabus
 * This course takes on a software development lifecycle perspective for the prevention of flaws.
 
 # Class Meeting Time and Location Fall 2017
-**Wednesdays 5:30 to 8:10 p.m. in PKI 153**
+* Wednesdays 5:30 to 8:10 p.m. in PKI 153
 
 # Where does it fit in the degree program?
-[MS in Cybersecurity Requirements](https://www.unomaha.edu/college-of-information-science-and-technology/school-of-interdisciplinary-informatics/cybersecurity/ms-cybr-reqs.php)
+* [MS in Cybersecurity Requirements](https://www.unomaha.edu/college-of-information-science-and-technology/school-of-interdisciplinary-informatics/cybersecurity/ms-cybr-reqs.php)  
+* [Graduate CS concentrations](https://www.unomaha.edu/college-of-information-science-and-technology/computer-science/graduate/graduate-concentrations.php)
 
 # Instruction
 * The course will be conducted through *discussions* and *trying things out*.
