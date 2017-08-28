@@ -27,7 +27,7 @@ One of the ways to protect information is by limiting what people can see and do
 * [Git](https://git-scm.com/) is a popular software development tool.
 * Used by developers to collaborate and version control code.   
 * A collaborative environment to develop written works including code!
-* [Github](www.github.com) is popular for online git repository hosting
+* [Github](https://github.com/) is popular for online git repository hosting
   - Free for open source  
   - [BitBucket](https://bitbucket.org/), is another such a service.
 
