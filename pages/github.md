@@ -248,7 +248,7 @@ To push our local commits to the remote repository (Github in this case), we nee
 
 > **Questions**  
 > - What is the default name of the remote repository?  
-> - What is the name of the main branch a repository?
+> - What is the name of the main branch in a repository?
 
 To `push` local commits in the current branch to a remote repository (`origin` in our case) and its remote branch (`master` in our case), use the following command:
 
