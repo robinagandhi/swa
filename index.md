@@ -12,7 +12,7 @@ Content will be linked as we progress through the semester. This allows to me to
 1. Collaborating when working on Software
   - Get familiar with version control. [Github Primer](https://robinagandhi.github.io/swa/pages/github.html)
   - Get familiar with containers. [Container Primer](https://robinagandhi.github.io/swa/pages/containers.html)
-1. Corporate Engagement with Open Source Software (OSS) and Licensing
+1. [Corporate Engagement with Open Source Software (OSS) and Licensing](https://robinagandhi.github.io/swa/slides/lecture-0-1/corporate-participation-with-oss-communities.pdf)
   * Guest Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 1. Engineering For Assurance
   * Systems Security Engineering. Based on Chapter 2 from [NIST SP 800-160](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf).
