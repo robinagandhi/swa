@@ -2,13 +2,14 @@ class: center, middle
 # Systems Security Engineering*
 
 .footnote[
-\*Based on Chapter 2 of [NIST SP 800-160 Systems Security Engineering &mdash; Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)  
-which is in turn based on [ISO/IEC/IEEE 15288:2015
+\*Based on Chapter 2 of [NIST SP 800-160 Systems Security Engineering](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf)  
+which expands on [ISO/IEC/IEEE 15288:2015
 Systems and software engineering](http://www.iso.org/iso/catalogue_detail?csnumber=63711)
 ]
 
 ???
-Another update to NIST SP 800-160 is going to be released soon in Fall 2016. Keep an eye out for it.
+Appendices to NIST SP 800-160 are going to be added soon.
+https://beta.csrc.nist.gov/News/2016/NIST-Special-Publication-800-160,-Systems-Secu-%281%29
 
 ---
 
@@ -16,15 +17,6 @@ class: center, middle
 ![Dilbert](http://assets.amuniversal.com/b7797c402f4901348be4005056a9545d)
 ???
 Systems security engineering is hard. Particularly, when you have a well-resourced and capable adversary.
-
----
-class: center, middle
-# News Flash
-[The Shadow Brokers EPICBANANA and EXTRABACON Exploits](https://blogs.cisco.com/security/shadow-brokers)
-
-???
-
-The blog is calling it malware, but it really is just a python script with command-line parameters. Python is a great language to build test harness for your software application testing or quick exploit development.
 
 ---
 
@@ -43,7 +35,7 @@ The blog is calling it malware, but it really is just a python script with comma
 
 ![Tiers](images/dsb-taxonomy.png)
 .footnote[
-\*[Defense Science Board 2013 Report](http://www.acq.osd.mil/dsb/reports/ResilientMilitarySystems.CyberThreat.pdf)
+\*[Defense Science Board 2013 Report](http://www.acq.osd.mil/dsb/reports/2010s/ResilientMilitarySystemsCyberThreat.pdf)
 ]
 
 ???
@@ -60,10 +52,10 @@ defined as the ability to provide acceptable operations despite disruption: natu
 defined as an attack that is capable of causing sufficient wide scale
 damage for the government potentially to lose control of the country, including loss or damage to significant portions of military and critical infrastructure: power generation, communications, fuel and transportation, emergency services, financial services, etc.
 
-The Task Force developed a threat hierarchy to describe capabilities of potential attackers, organized by level of skills and breadth of available resources (See Figure ES.1).
-* Tiers I and II attackers primarily exploit known vulnerabilities
-* Tiers III and IV attackers are better funded and have a level of expertise and sophistication sufficient to discover new vulnerabilities in systems and to exploit them
-* Tiers V and VI attackers can invest large amounts of money (billions) and time (years) to actually create vulnerabilities in systems, including systems that are otherwise strongly protected.
+The Task Force developed a threat hierarchy to describe capabilities of potential attackers, organized by level of skills and breadth of available resources
+- Tiers I and II attackers primarily exploit known vulnerabilities
+- Tiers III and IV attackers are better funded and have a level of expertise and sophistication sufficient to discover new vulnerabilities in systems and to exploit them
+- Tiers V and VI attackers can invest large amounts of money (billions) and time (years) to actually create vulnerabilities in systems, including systems that are otherwise strongly protected.
 
 Higher-tier competitors will use all capabilities available to them to attack a system but will usually try lower-tier exploits first before exposing their most advanced capabilities. Tier V and VI level capabilities are today limited to just a few countries such as the *United States, China and Russia*.
 
@@ -93,8 +85,8 @@ Higher-tier competitors will use all capabilities available to them to attack a 
 
 ---
 class: center, middle
-# Icebergs*
-![iceberg](http://www.newfoundlandlabrador.com/Content/images/iceberg-safety-iceberg-facts.png)
+
+![iceberg](http://www.titanicuniverse.com/wp-content/uploads/2014/12/iceberg.jpg)
 
 .footnote[
 \*.red[above the waterline] and .red[below the waterline] problems
@@ -235,9 +227,11 @@ For example, developer training in secure coding provides for the construction o
 - Identification
 - Authentication
 - Encryption at rest and in transit
-- Configuration files
+- Configurations
 - Backup
 - Two-phase commit
+- Filters/Wrappers
+- Validators
 - ...
 
 ---
@@ -246,8 +240,8 @@ For example, developer training in secure coding provides for the construction o
 
 ## Passive Protections
 
-- Architecture (partitioning into domains)
-- Design (a process for defining system elements, interfaces and other characteristics)
+- Architecture
+- Design
 - Coding guidelines
 - Code review
 - Developer and user training
@@ -255,6 +249,7 @@ For example, developer training in secure coding provides for the construction o
 - Acquisition policies
 - Red-teaming
 - Project management
+- Runtime environments
 - ...
 
 ---
@@ -407,7 +402,7 @@ class:center, middle
 # Next Up
 Constructing Assurance Cases using Goal Structuring Notation
 
-TODO: Create a [Lucidchart Account](https://www.lucidchart.com/users/registerLevel?tP=1&t4=A&t10=A)
+TODO: Create a [Lucidchart Account](https://www.lucidchart.com)
 
 ---
 
@@ -422,4 +417,4 @@ class: center, middle
 
 ![lifecycle processes](images/systems-engineering-lifecycle-processes.png)
 ???
-Figure source: [NIST SP 800-160 Systems Security Engineering &mdash; Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
+Figure source: [NIST SP 800-160 Systems Security Engineering](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf)  
