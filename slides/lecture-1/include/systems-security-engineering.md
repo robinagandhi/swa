@@ -402,7 +402,7 @@ class:center, middle
 # Next Up
 Constructing Assurance Cases using Goal Structuring Notation
 
-TODO: Create a [Lucidchart Account](https://www.lucidchart.com)
+TODO: Create a [Lucidchart Account](https://www.lucidchart.com) using your `.edu` email
 
 ---
 

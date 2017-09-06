@@ -4,7 +4,8 @@ class: center, middle
 ---
 class: middle
 # Step 1
-## Create a personal on [Lucidchart](https://www.lucidchart.com/) using your `.edu` email
+## Create an account on [Lucidchart](https://www.lucidchart.com/) using your `.edu` email
+- OR Request an upgrade here: https://www.lucidchart.com/pages/usecase/education-request
 
 ---
 class: middle
