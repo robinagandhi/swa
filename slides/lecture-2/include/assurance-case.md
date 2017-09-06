@@ -1,10 +1,13 @@
 class: center, middle
-# Assurance Case
+# Assurance Case*
+.footnote[
+\* See notes for sources
+]
 ???
 This slide deck is based several sources as follows:
 
 1. Goal Structuring Notation
-2. IEEE Standard— Adoption of ISO/IEC 15026-2:2011
+2. [IEEE Standard— Adoption of ISO/IEC 15026-2:2011](https://www.iso.org/standard/52926.html)
 Systems and Software Engineering— Systems and Software Assurance— Part 2: Assurance Case
 3. Research papers on Eliminative Induction use in Assurance Cases
 4. SEI publications on Assurance case use in Safety Cases
@@ -52,7 +55,8 @@ background-image: url(images/black.png)
 
 ???
 We also not sure if there is a cat there to begin with!
-## Source: The cat example is adapted from the example provided in System Assurance: Beyond Detecting Vulnerabilities (The MK/OMG Press) 1st Edition, by Nikolai Mansourov  and Djenana Campara https://amzn.com/0123814146
+## Source:   
+The cat example is adapted from the example provided in System Assurance: Beyond Detecting Vulnerabilities (The MK/OMG Press) 1st Edition, by Nikolai Mansourov  and Djenana Campara https://amzn.com/0123814146
 ---
 class:middle
 # Task at hand
@@ -89,7 +93,7 @@ The room has at least one black cat
 class: middle
 # Basis for the Belief
 
-## .blue[Kitty-Kitty] Search Process*
+## .blue[Kitty-Kitty-Kitty] Search Process*
 1. Search team puts a bowl of milk in the room and says _kitty-kitty-kitty_ three times
 1. Four corners and center of room covered
 1. Stop when a cat is discovered
@@ -99,43 +103,56 @@ class: middle
 ---
 # Structured Argument
 ### .red[Claim]
-The room has at least one black cat
+.red[C1:] The room has at least one black cat
 --
 
-### .red[Sub-Claim]
-Search team followed the “kitty-kitty” search process
---
+### .red[Sub-Claims]
+.red[C1.1:] Kitty-kitty-kitty search process discovers cats in the room
 
-### .red[Inference Rule] (Connects Claim to Sub-claims)
-By following a good search process we can find black cats
 --
 
 ### .red[Evidence]
-Report of cat findings from the search process
----
 
-# Assurance Case
-![claim1-case](images/claim1-case.svg)
+.red[E1.1.1:] Pictures of cats found
 
 ---
 class: middle
 # .red[Claim 2]
 The room has .red[no] black cats
+
+--
+
+### .red[Sub-Claims]
+.red[C1.1:] Kitty-kitty-kitty search process discovers no cats
+
+--
+### .red[Evidence]
+
+.red[E1.1.1:] Empty findings report
+
+
 ---
 class: middle
-# Basis for the Belief
+# Is this argument enough?
+Can you ever be 100% sure for a large and complex room?  
 
-### The search process now needs to be exhaustive!
+
+---
+class: middle
+# .red[Assurance]
+Basis for the belief in a claim
+
 --
 
-### The problem needs decomposition
+## .green[Belief] increases when .red[doubts] are removed!   
+
 --
 
-> To do this we introduce .red[doubts]
+A good argument eliminates identified doubts
 
 ---
 
-class: middle, center
+class: middle
 # [Eliminative Induction](https://www.google.com/search?q=define+eliminative+induction)
 A series of doubts are introduced for some state of affairs,  
 and then progressively eliminated by new evidence
@@ -143,51 +160,51 @@ and then progressively eliminated by new evidence
 ---
 # Eliminative Induction
 
-## Step 1
-Challenge claims by introducing doubts
+## Step 1: Introducing doubts
+Challenge identified claims by introducing doubts
 --
 
-## Step 2
+## Step 2: Eliminate doubts
 For each doubt, identify sub-claims that eliminate the doubt
 --
 
-## Step 3
+## Step 3: Repeat
 Go to Step 1, repeat process for sub-claims
 ---
 class: middle
 # Step 1: Introducing doubts
 
-.green[Kitty-Kitty Search process, finds all cats]
+.red[C1.1:] Kitty-kitty-kitty search process discovers no cats
 --
 
-* .red[Unless] the cats were not hungry  
-* .red[Unless] the milk is not put in enough places
-* .red[Unless] the people are not competent
-* .red[Unless] the baby panthers found are indeed cats
+* .red[R1.1.1] _Unless_ the cats were not hungry  
+* .red[R1.1.2] _Unless_ milk is not put in enough places
+* .red[R1.1.3] _Unless_ the people searching are not competent
+* .red[R1.1.4] _Unless_ the baby panthers found are indeed cats
 
 ---
 class: middle
 # Step 2: Eliminate doubts
 
-.red[Unless] the cats were not hungry  
-* .green[The room was locked for 5 days]  
+.red[R1.1.1] Unless the cats were not hungry   
+* .green[C1.1.1] The room was locked for 5 days  
 
 --
 
-.red[Unless] the milk is not put in enough places  
-* .green[The room is simultaneously searched in 10 equal non-overlapping squares]  
+.red[R1.1.2] Unless milk is not put in enough places  
+* .green[C1.1.2] The room is simultaneously searched in 10 equal non-overlapping squares  
 
 ---
 class: middle
 # Step 3: Repeat
 
-.green[The room was locked for 5 days]  
-* .red[Unless] the room vents allow cats to go in and out  
+.green[C1.1.1] The room was locked for 5 days  
+* .red[R1.1.1.1] Unless the room vents allow cats to go in and out  
 
 --
 
-.green[The room is simultaneously searched in 10 equal non-overlapping squares]  
-* .red[Unless] the cats have an alternate food supply (mice in the room)
+.green[C1.1.2] The room is simultaneously searched in 10 equal non-overlapping squares  
+* .red[R1.1.1.2] Unless the cats have an alternate food supply (mice in the room)
 
 ---
 class: middle
@@ -200,13 +217,13 @@ When the argument is convincing enough to the reader, it should end in the prese
 class: middle
 # Evidence
 
-.red[Unless] the room vents allow cats to go in and out  
-* .green[All room vents have nets installed]
-* .blue[Evidence:] Vent inspection report
+.red[R1.1.1.1] Unless the room vents allow cats to go in and out  
+* .green[C1.1.1.1.1] All room vents have nets installed
+* .blue[E1.1.1.1.1] Vent inspection report
 
 .red[Unless] the cats have an alternate food supply (mice in the room)
-* .green[There are no mice in the room]
-* .blue[Evidence:] Month old exterminator report for rodents
+* .green[C1.1.1.1.2] There are no mice in the room
+* .blue[E1.1.1.1.2] Month old exterminator report for rodents
 
 ---
 
@@ -219,7 +236,7 @@ If many doubts remain, assurance is diminished
 
 --
 
-In any situation, a rigorous argumentation structure assists trust decisions for the presented claims
+A rigorous argumentation structure assists .red[*trust decisions*] for the presented claims
 ---
 
 class: middle
@@ -231,54 +248,50 @@ The room will have no black cats for the next 12 months
 Does it make sense to justify this claim by a single search at a moment in time?
 
 ---
+class: middle
 # Risk: A future adverse event
 
 We can introduce even more doubts!
 * .red[Unless] the cats hibernate when search is conducted  
-* .red[Unless] cat zapper gates are working intermittently
-* .red[Unless] the vents are not being periodically inspected
+* .red[Unless] cat zapper vents are working intermittently
+* .red[Unless] the vents are not being inspected periodically
 * .red[Unless] the exterminator skips visits
 
 --
 
-To eliminate these doubts, continuous efforts are required.
+To eliminate these doubts, .green[continuous] efforts are required.
 
 ---
 # A very catty summary
 
-## Equate Cats to Software Weaknesses
+## Equate Cats to .red[Weaknesses]
 
 ### Claim 1 (Point Solution)  
 * Produces knowledge about what you found  
 
-.bottom-left[
-![catfunny](http://memesvault.com/wp-content/uploads/Funny-Cat-Meme-Work-1.jpg)
+.top-right[
+![catfunny](http://vignette2.wikia.nocookie.net/animal-jam-clans-1/images/6/6b/Funny-Cat-Meme-Work-16.jpg/revision/latest?cb=20160716231247)
 ]
 
----
-# A very catty summary
-
-## Equate Cats to Software Weaknesses
+--
 
 ### Claim 2 (Snapshot)  
 * Produces knowledge about the whole system
 
-.bottom-left[
+.top-right[
 ![catfunny](http://i0.kym-cdn.com/entries/icons/original/000/002/232/bullet_cat.jpg)
 ]
 
----
-# A very catty summary
-
-## Equate Cats to Software Weaknesses
+--
 
 ### Claim 3 (Continuous Assurance)  
 * Produces knowledge about minimizing  
 a future undesirable event
 
-.bottom-left[
+.top-right[
 ![catfunny](http://i0.kym-cdn.com/photos/images/newsfeed/000/115/642/non-stop-nyan-cat.jpg?1303327212)
 ]
+
 ---
 class: center, middle
 # Developing Assurance Cases
@@ -287,7 +300,7 @@ class: center, middle
 # Assurance Case Logical Structure
 ![structure](images/structure.png)
 .footnote[
-[Arguing Security - Creating Security Assurance Cases](https://buildsecurityin.us-cert.gov/daisy/bsi/articles/knowledge/assurance/643-BSI.html)
+[Arguing Security - Creating Security Assurance Cases](https://www.us-cert.gov/bsi/articles/knowledge/assurance-cases/evidence-assurance-laying-foundation-credible-security-case)
 ]
 
 ---
@@ -326,13 +339,13 @@ class: middle
 --
 
 ### Claim should avoid just details about the supporting method/techniques
-- .red[Bad claim:] The software uses AES encryption
+- .red[Bad claim:] The system uses AES encryption
 - Uninteresting
 
 --
 
 ### The claim should be a reasonable goal
-- .green[Good claim:] “The system is acceptably secure”
+- .green[Good claim:] “The system is acceptably secure against communication lines related threats”
 
 ---
 # Claims
@@ -368,9 +381,9 @@ class: middle
 # [Grammatical Guidance](http://www.sei.cmu.edu/dependability/tools/assurancecase/)
 
 ## Bad Examples
-- Describes an entity: ~~.red[XSS results for Blackboard]~~
-- Describes an action: ~~.red[Perform XSS on Blackboard]~~
-- A question: ~~.red[How many XSS weaknesses does Blackboard have?]~~
+- Describes an entity: ~~.red[XSS results for Canvas]~~
+- Describes an action: ~~.red[Perform XSS on Canvas]~~
+- A question: ~~.red[How many XSS weaknesses does Canvas have?]~~
 
 ---
 class: middle
@@ -386,23 +399,23 @@ See notes (hit `p`) for class exercise
 ]
 ???
 # Class exercise:
-# Work in your team to rephrase these appropriately.
-When you are done enter your answers in this [Google Doc](https://docs.google.com/a/unomaha.edu/document/d/1ApR8Mdh4Ks4bB10ame4oXb6hs3AcxriOH0L-mjKOS1I/edit?usp=sharing)
+# Work with your team to rephrase these appropriately.
+When you are done enter your answers in this [Google Doc](https://docs.google.com/a/unomaha.edu/document/d/11Xr8GHBHfWJGLotiLoe-us1EZ4Qjn2msjfxHAKjs64Q/edit?usp=sharing)
 
 ---
 
 class: middle
 # Good Examples
 
-## .blue[Blackboard] .green[has no] .orange[exploitable XSS weaknesses]
+## .blue[Canvas] .green[has no] .orange[exploitable XSS weaknesses]
 
 --
 
-## .blue[All Blackboard XSS weaknesses] .green[have been sufficiently] .orange[mitigated]
+## .green[All] .blue[Canvas XSS weaknesses] .green[have been sufficiently] .orange[mitigated]
 
 --
 
-## .blue[Blackboard] .orange[Attack surface] .green[is minimized]
+## .blue[Canvas] .orange[attack surface] .green[is minimized]
 
 ---
 class: middle
@@ -410,7 +423,7 @@ class: middle
 
 ## OPPD NE has received intelligence.
 - Rouge nation states are targeting their software supply chains.
-- There is a credible threat. OPPD NE bought software for business functions is being targeted for sabotage with malicious code.
+- There is a credible threat. Software bought by OPPD for business functions is being targeted for sabotage with malicious code.
 
 --
 
@@ -497,7 +510,7 @@ class: middle
 class: middle
 # Argument
 
-## Conveys why we believe a claim has been met
+- Conveys why we believe a claim has been met
 - Refine claims into sub claims, until the sub-claim can be directly supported by the actual evidence
 - Bridges the gap between claims and evidence
 
@@ -518,24 +531,28 @@ Develop a sub-claim
 ---
 ## Sub-claim
 ![sub-claim](images/sub-claim.svg)
+
 ---
+class: middle
 # Evidence
 
-## Every branch must be terminated in a reference to a item of evidence
-## Prove/substantiate the claims with something tangible and measure-able
-## Must be a noun phrase only (NO verb phrase)
-## Should not be stated as a claim
+- Every branch must be terminated in evidence
+- Something tangible and measureable
+
+## Grammatical Guidance
+- Must be a .blue[noun phrase] only (NO verb phrase)
+- Should .red[not] be stated as a claim
 
 ---
 class: middle
 # Evidence
 
 ## Examples
-- Test results from penetration tools
-- Warnings from static analysis tool
-- Hardware design review results
-- Parameter validation assurance case
-- Reports for assessing compiler settings with security implications
+- .red[E1:] Test results from penetration tools
+- .red[E2:] Warnings from static analysis tool
+- .red[E3:] Hardware design review results
+- .red[E4:] Parameter validation assurance case
+- .red[E5:] Reports for assessing compiler settings with security implications
 
 ---
 class: middle
@@ -577,10 +594,10 @@ Image and example provided in slides by John B. Goodenough
 ### Attack evidence (undermining defeater) — why evidence could be irrelevant
 --
 
-### .green[Attack inference](undercutting defeater) — premise good; conclusion uncertain
+### .green[Attack inference] (undercutting defeater) — premise good; conclusion uncertain
 
 .footnote[
-\*See notes for sources [hit: p]
+\*See notes for sources [hit: `p`]
 ]
 
 ???
@@ -604,8 +621,10 @@ class: middle
 ## A generalization that in most circumstances is considered to be true
 
 ## Example
-- (Generalization) All birds can fly
 - (premise) If X is a bird then (conclusion) X can fly
+
+--
+- (Generalization) All birds can fly
 
 --
 
