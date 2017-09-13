@@ -14,13 +14,13 @@ Content will be linked as we progress through the semester. This allows to me to
   - Get familiar with containers. [Container Primer](https://robinagandhi.github.io/swa/pages/containers.html)
 1. [Corporate Engagement with Open Source Software (OSS) and Licensing](https://robinagandhi.github.io/swa/slides/lecture-0-1/corporate-participation-with-oss-communities.pdf)
   * Guest Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
-1. Engineering For Assurance
+1. [Engineering For Assurance](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html)
   * Systems Security Engineering. Based on Chapter 2 from [NIST SP 800-160](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf).
-1. Assurance Cases for Software Security Engineering
+1. [Assurance Cases for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case.html)
   * [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
   * Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
   * Formal diagramming in [Adelard ASCE](https://www.adelard.com/asce/choosing-asce/index.html)  
-  * Assurance Case Exercise (Team Deliverable)
+  * [Assurance Case Exercise](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case-exercise.html) (Team Deliverable)
 1. Requirements for Software Security Engineering
   * Problem Frames (Abuse and Security Frames)  
   * The Meaning of Requirements for Software Security Engineering  
