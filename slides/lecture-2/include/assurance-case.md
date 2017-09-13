@@ -161,7 +161,7 @@ and then progressively eliminated by new evidence
 # Eliminative Induction
 
 ## Step 1: Introducing doubts
-Challenge identified claims by introducing doubts
+Challenge the identified claims by introducing doubts
 --
 
 ## Step 2: Eliminate doubts
@@ -196,7 +196,7 @@ class: middle
 
 ---
 class: middle
-# Step 3: Repeat
+# Step 3: Repeat --> Step 1: Identify doubts
 
 .green[C1.1.1] The room was locked for 5 days  
 * .red[R1.1.1.1] Unless the room vents allow cats to go in and out  
@@ -208,10 +208,22 @@ class: middle
 
 ---
 class: middle
+# Step 2: Eliminate doubts
+
+.red[R1.1.1.1] Unless the room vents allow cats to go in and out  
+* .green[C1.1.1.1.1] All room vents have nets installed
+
+--
+
+.red[Unless] the cats have an alternate food supply (mice in the room)
+* .green[C1.1.1.1.2] There are no mice in the room
+
+---
+class: middle
 # Stopping condition?
 
 ## Evidence
-When the argument is convincing enough to the reader, it should end in the presentation of facts that support the claims
+When the argument is convincing enough to the reader, it should end in the presentation of .blue[_facts_] that support the .green[_claims_]
 
 ---
 class: middle
@@ -219,11 +231,11 @@ class: middle
 
 .red[R1.1.1.1] Unless the room vents allow cats to go in and out  
 * .green[C1.1.1.1.1] All room vents have nets installed
-* .blue[E1.1.1.1.1] Vent inspection report
+* .blue[E1.1.1.1.1 Vent inspection report]
 
 .red[Unless] the cats have an alternate food supply (mice in the room)
 * .green[C1.1.1.1.2] There are no mice in the room
-* .blue[E1.1.1.1.2] Month old exterminator report for rodents
+* .blue[E1.1.1.1.2 Month old exterminator report for rodents]
 
 ---
 
@@ -241,7 +253,7 @@ A rigorous argumentation structure assists .red[*trust decisions*] for the prese
 
 class: middle
 # .red[Claim 3]
-The room will have no black cats for the next 12 months
+The room will have .red[no] black cats for the .red[next 12 months]
 
 --
 
@@ -252,10 +264,10 @@ class: middle
 # Risk: A future adverse event
 
 We can introduce even more doubts!
-* .red[Unless] the cats hibernate when search is conducted  
-* .red[Unless] cat zapper vents are working intermittently
-* .red[Unless] the vents are not being inspected periodically
-* .red[Unless] the exterminator skips visits
+* .red[R1.1.5] Unless the cats hibernate when search is conducted  
+* .red[R1.1.6] Unless cat zapper vents are working intermittently
+* .red[R1.1.7] Unless the vents are not being inspected periodically
+* .red[R1.1.8] Unless the exterminator skips visits
 
 --
 
@@ -307,11 +319,11 @@ class: center, middle
 # Assurance Case Contents
 
 ## A Top-level Claim
-The claim is regarding a property of a system or product
+The claim is regarding .red[a critical property] of a system or product
 ## Argumentation
-Arguing through multiple levels of subordinate claims connects the top-level claim to the evidence and assumptions
+Arguing through .red[multiple levels of subordinate claims] connects the top-level claim to the evidence and assumptions
 ## Evidence and Assumptions
-Explicit information that underlies the argumentation
+.red[Explicit information] that underlies the argumentation
 ---
 
 class: middle
@@ -381,9 +393,10 @@ class: middle
 # [Grammatical Guidance](http://www.sei.cmu.edu/dependability/tools/assurancecase/)
 
 ## Bad Examples
-- Describes an entity: ~~.red[XSS results for Canvas]~~
-- Describes an action: ~~.red[Perform XSS on Canvas]~~
+- Just describes an entity: ~~.red[XSS results for Canvas]~~
+- Describes an action on entity: ~~.red[Perform XSS on Canvas]~~
 - A question: ~~.red[How many XSS weaknesses does Canvas have?]~~
+- Fact, no argument needed: .red[~~Canvas uses AES encryption~~]
 
 ---
 class: middle
@@ -575,10 +588,10 @@ class: center, middle
 
 --
 
-## Claim: The bulb will glow when switched on
-- Unless switch not connected to light
-- Unless no power
-- Unless dead light bulb  
+## Claim: .blue[The bulb] .green[will] .orange[glow when switched on]
+- .red[Unless] switch not connected to light
+- .red[Unless] no power
+- .red[Unless] dead light bulb  
 ![light](images/lightexample.png)
 
 ???
