@@ -43,7 +43,7 @@ class: middle
 ## Submit links to your assurance cases developed in Lucidchart
 - Submission of the links on Canvas
 - One submission per team
-- Due Date: September 20, 2017
+- Due Date: September 27, 2017 11:59 P.M.
 
 ---
 # Generating shareable links on Lucidchart

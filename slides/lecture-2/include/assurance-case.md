@@ -720,6 +720,73 @@ Source: Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measur
 Source: This example is partially based on the presentation of this paper given at ICSE conference: J. B. Goodenough, C. B. Weinstock and A. Z. Klein, "Eliminative induction: A basis for arguing system confidence," 2013 35th International Conference on Software Engineering (ICSE), San Francisco, CA, 2013, pp. 1161-1164.
 ---
 
+class: middle
+# Assurance Cases in Practice
+
+## CC Evaluations and Software Assurance
+- Argue how protection profile needs are satisfied by a Security Target
+- Assurance cases are recommended for the highest levels of Evaluation Assurance Levels (EAL)
+
+---
+
+class: middle
+_In pursuit of Trusted Computer System Evaluation Criteria (TCSEC) or CC evaluations or Federal Information Processing Standard (FIPS) 140-1 or 140-2 certifications for their security-enforcing IT products, vendors are required not only to submit assurance claims for those products to the independent evaluation or certification facility but to .red[provide complete assurance cases] that provide a sufficient basis for the facility to verify those assurance claims.*_
+
+.footnote[
+\* [Software Security Assurance State-of-the-Art Report (SOAR)](https://cwe.mitre.org/documents/iatac_swa_soar.pdf), 2007, DoD Information Assurance Technology Analysis Center (IATAC) Data and Analysis Center for Software (DACS)
+]
+---
+class: middle
+# Security Controls
+[NIST SP 800-53 Rev. 5](https://csrc.nist.gov/csrc/media/publications/sp/800-53/rev-5/draft/documents/sp800-53r5-draft.pdf)
+
+### Makes the security and privacy controls outcome-based
+- Focuses on the security and privacy capabilities
+- Controls are now .orange[critical properties] of interest.
+
+???
+(i.e., what needs to be done to protect the system or information and not which entity carries out the action or where it is carried out);
+
+---
+class: middle
+# Security Controls
+[NIST SP 800-53 Rev. 5](https://csrc.nist.gov/csrc/media/publications/sp/800-53/rev-5/draft/documents/sp800-53r5-draft.pdf)
+
+IA-2 IDENTIFICATION AND AUTHENTICATION
+### Current (Rev 4):
+- Control: The information system uniquely identifies and authenticates organizational users.
+
+### Proposed (Rev 5):
+- Control: Uniquely identify and authenticate organizational users.
+
+---
+class: middle
+# Software Security Controls
+First to develop and apply assurance case based method for control refinement
+- Software related controls derived from the NIST SP 800-53 control catalog
+- These software assurance controls are enumerated in [NIST SP 800-160 Appendix-J](https://csrc.nist.gov/csrc/media/publications/sp/800-160/archive/2016-05-04/documents/sp800_160_second-draft.pdf)
+
+#### Gandhi, R., Siy, H., Crosby, K., Mandal, S. (Graduate), (2014). Gauging the Impact of FISMA on Software Security, IEEE Computer, vol. 47 (9)
+#### Gandhi, R. A., Crosby, K., Siy, H., Mandal, S. (2016) Driving Secure Software Initiatives Using FISMA: Issues and Opportunities. CrossTalk, Journal of Defense Software Engineering, Jan/Feb 2016 Issue.
+
+---
+class: middle
+# Other Applications
+
+### Forensics
+- Jones, C. (2014). __Evaluating the use of assurance cases for digital forensics.__ Dissertations & Theses @ University of Nebraska - Omaha; ProQuest https://search.proquest.com/docview/1528534691?accountid=14692
+
+---
+class: middle
+# Other Applications
+
+### Research Study Design
+- Gandhi R.A. and Lee, S.W., “Assurance Case driven Case Study Design in Requirements Engineering Research,” In: 15th International Working Conference on Requirements Engineering: Foundations for Software Quality, REFSQ 2009.
+
+### Interview Protocol Design
+- Gandhi R.A., Germonprez M., Link G., "Open Data Standards for Open Source Software Risk Management Routine: An Examination of SPDX", ACM GROUP 2018 https://github.com/SPDX-CaseStudy/files/blob/master/AssuranceCase.png
+
+---
 class: center, middle
 # .large[Got Assurance?]
 .bottom-left[
