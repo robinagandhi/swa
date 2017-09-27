@@ -17,9 +17,9 @@ class: center, middle
 
 ---
 class: middle
-# [NIST SP 800-160 SSE](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_final-draft.pdf)
-## Stakeholder Needs and Requirements Definition Process\*
-- _The purpose of the Stakeholder Needs and Requirements Definition process is to .red[define the stakeholder requirements] for a system that can provide the capabilities needed by users and other stakeholders in a defined environment._
+# [NIST SP 800-160 SSE](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf)
+## .green[Stakeholder Needs and Requirements] Definition Process\*
+- **Purpose:** _.red[Define the stakeholder security requirements] that include [protection capability](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#20), security characteristics, and security-driven constraints for the systems, so as to securely provide the capabilities needed by users and other stakeholders in a defined environment._
 
 .footnote[
 \*ISO/IEC/IEEE 15288-2015
@@ -27,9 +27,9 @@ class: middle
 
 ---
 class: middle
-# [NIST SP 800-160 SSE](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_final-draft.pdf)
-## System Requirements Definition Process\*
-- _The purpose of the System Requirements Definition process is to .red[transform the stakeholder, user- oriented view of desired capabilities into a technical view of a solution] that meets the operational needs of the user._
+# [NIST SP 800-160 SSE](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf)
+## .green[System Requirements] Definition Process\*
+- **Purpose:** _.red[transform the stakeholder security requirements into the system requirements] that reflect a .red[technical security view] of the system._
 
 .footnote[
 \*ISO/IEC/IEEE 15288-2015
@@ -37,18 +37,22 @@ class: middle
 
 ---
 class: middle
-# Stakeholder Needs and Requirements
+# .red[Stakeholder] Needs and Requirements
 
 ## Litmus test
-- Even if you did not build the software the stakeholder will still have this need!
-- They are located in the [environment of operation for the system-of-interest\*](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#15)
+- Even if you did not build the _software_ the **stakeholder** will still have these needs and requirements!
+- They are located in the [environment of operation for the system-of-interest\*](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#14)
 
 .footnote[
 \* Michael Jackson, [The Meaning of Requirements, 1996](http://mcs.open.ac.uk/mj665/aserqts5.pdf)
 ]
+
+.top-right[
+![litmus-test](http://www.simplescience.info/_/rsrc/1469387124646/chemistry/acids-2/Litm%20test.jpg)
+]
 ---
 class: middle
-# Fitness for Purpose
+# Need 👉🏼 Fitness for Purpose
 ## Software is built for a purpose
 - It will fail if either:  
 1. Designer has inadequate understanding of the purpose  
@@ -59,11 +63,29 @@ class: middle
 ???
 # When will a designer have inadequate understanding of the purpose?
 
-1. Software is too complex, designer does not know for sure if software will fulfill it purpose
-1. Designer does not have the knowledge or experience
-1. Customer does not clearly know the purpose or express it
-1. Purpose becomes apparent later.
-1. Deliberate attempt to make the software not fulfill its purpose
+## Claim: Designer has full understanding of the system purpose
+1. Unless the software is too complex i.e. designer does not know for sure if software will fulfill it purpose
+1. Unless designer does not have the knowledge or experience
+1. Unless the customer does not clearly know the purpose or express it
+1. Unless the purpose becomes apparent later.
+1. Unless there is a deliberate attempt to make the software not fulfill its purpose
+1. ...
+
+---
+class: middle
+# .red[Use cases] -  OOP, UML
+## .blue[Why] and .green[how] and would .orange[someone] use software?
+- Goal-driven Scenarios
+- They describe system behavior to fulfill user needs
+- Several [templates](http://alistair.cockburn.us/Basic+use+case+template) available for [use cases](http://alistair.cockburn.us/Structuring+use+cases+with+goals)  
+  .red[Purpose] = build requirements  
+  Contents = have consistent prose  
+  Plurality = include multiple scenarios per use case  
+  Structure = be semi-formal  
+
+.top-right[
+![case](http://www.it2051229.com/data_solutions/sysanaldesign/figure1.png)
+]
 
 
 ---
@@ -82,21 +104,9 @@ class: middle
 
 ![userstories](http://butlerhouse.net/wp-content/uploads/2014/09/user-story-asteroids.jpg)
 
----
-class: middle
-# .red[Use cases] -  OOP, UML
-## .green[Why] and .blue[how] would .orange[someone] use software?
-- Goal-driven Scenarios
-- They describe system behavior to fulfill user needs
-- Several [templates](http://alistair.cockburn.us/Basic+use+case+template) available for [use cases](http://alistair.cockburn.us/Structuring+use+cases+with+goals)  
-  .red[Purpose] = build requirements  
-  Contents = have consistent prose  
-  Plurality = include multiple scenarios per use case  
-  Structure = be semi-formal  
 
-.top-right[
-![case](http://www.it2051229.com/data_solutions/sysanaldesign/figure1.png)
-]
+???
+Notice the reversed order of Why and How compared to User stories. Use cases are goal-driven for scenario elicitation. On the other hand User stories are scenario driven elicitation technique that link scenarios to goals.
 ---
 class: center, middle
 # [What is Requirements Engineering?](http://www.cs.toronto.edu/~sme/RE01/)
@@ -114,15 +124,16 @@ Source: http://www.cs.toronto.edu/~sme/RE01/
 
 ---
 class: middle
-# Stakeholder Requirements
+# Stakeholder Needs and Requirements
 
-## These requirements are about .red[relationships] in the application domain
-- They are not about the software system or the shared interface with the software system
-- They are effects in the application domain that the customer wants the machine to guarantee
+## These requirements are about .red[relationships] in the environment of operation
+- They are not about the software system
+- They are not about the shared interface at the environment of operation and the software system
+- They are effects in the environment of operation that the customer wants the software system to guarantee
 
 ---
 class: middle
-# Stakeholders Requirements
+# Stakeholder Needs and Requirements
 
 ## Expressed in two moods
 - .red[Optative]: expresses a wish (R)   
@@ -136,24 +147,26 @@ class: middle
 
 ## Expressed in a single mood
 - .red[Optative]: expresses a wish, Specification (S)  
-Desired condition over the shared phenomena at the interface between the system and the environment
+Desired condition over the shared phenomena at the interface between the system and the environment of operation
+
+???
+Based on this definition we are never really describing anything in the system beyond the shared phenomena at the interface of the system and the environment of operation.
 
 ---
 
 class: middle
 # Problem Frames
-.footnote[
 Allows focus on `problems` to be solved.
-]
+
 ---
 class: middle
 # Problem Frames
 ## Frame Diagrams
 .left-column[
-- Plain rectangles denote given domains (things that already exist)
-- A rectangle with a single vertical stripe denotes a designed domain
-- A rectangle with a double vertical stripe denotes the machine to be developed
-- Requirements are denoted with a dashed oval
+#### .green[Rectangle with double vertical stripe]: Machine to be developed  
+#### .green[Rectangle with single vertical stripe]: Designed domain  
+#### .green[Plain rectangles]: Given domains (things that already exist)  
+#### .green[Dashed oval]: Requirements  
 ]
 .right-column[
 ![legend](images/legend.svg)
@@ -166,10 +179,9 @@ class: middle
 # Problem Frames
 ## Frame Diagrams
 .left-column[
-- The connecting lines represent interfaces that consist of shared phenomena   
-- A dashed line represents a requirements reference to a domain
-- A dashed arrow shows that it is a constraining reference  
-- Everything tangible is solid,intangible is dashed.
+#### .red[Solid line]: Interfaces that consist of shared phenomena   
+#### .red[Dashed line]: A requirements reference to a domain
+#### .red[Dashed arrow]: A constraining reference  
 ]
 .right-column[
 ![legend](images/legend.svg)
@@ -211,15 +223,14 @@ Recap: Requirements are about .red[relationships] in the application domain
 ]
 
 ---
-# Problem frames
-## Relationships
+# Relationships
 .left-column[
-- Annotation .red[D!{E3}] means Domain D initiates the observable phenomena E3
-- Example:   
-```  
-a: MF! {MsgDir, File, Char}
-```
-Domain `MF` initiates observable phenomena `MsgDir, File, Char` on interface `a`
+Annotation .code[c:D!{E3}] means Domain .code[D] initiates the observable phenomena .code[E3] on interface .code[c].
+
+Example:   
+.code[a: MF! {MsgDir, File, Char}]  
+
+Domain .code[MF] initiates observable phenomena .code[MsgDir, File, Char] on interface .code[a]
 ]
 .right-column[
 ![example](images/example.svg)
@@ -227,12 +238,15 @@ Domain `MF` initiates observable phenomena `MsgDir, File, Char` on interface `a`
 ---
 class: middle
 # Frame Components
+
 .left-column[
-- .red[R: Requirements]  
+### .red[R: Requirements]  
 What the customer wants to be true in terms of (c, d)
-- .red[D: Domain Properties]   
+
+### .red[D: Domain Properties]   
 What we know to be true in the domain
-- .red[S: Specification]  
+
+### .red[S: Specification]  
 How we want the machine to behave at interface (a, b)  
 ]
 
@@ -243,16 +257,17 @@ How we want the machine to behave at interface (a, b)
 class: middle
 # Correctness argument
 ## S &#x2192; D, R  
-- The argument should adequately make _requirements_, _specifications_ and _domain descriptions_ fit together
+- The argument to make:  
+_(R)equirements_, _(S)pecifications_ and _(D)omain descriptions_ .red[fit] together
 
 ---
 # Correctness argument
 ## Creating (R) is not enough !!
-- Creating descriptions of the environment (D) and specification (S) helps our comprehension and provides basis for validating the requirements
+- Creating descriptions of the environment (D) and specification (S) helps our comprehension and provides basis for .red[validating] the requirements
 
 --
 
-## R is fulfilled
+## Claim: R is fulfilled
 - Unless D or S is Insufficient \*
 - Unless D or S is Malicious \*
 - Unless D or S is Incorrect \*
@@ -326,12 +341,6 @@ class: middle
 ---
 class: middle
 # Abuse Frame 1 (mailfile example)
-![abuse](images/example-af.png)
-## .center[MS &#x2192; v(D), AR]
-
----
-class: middle
-# Abuse Frame 2 (mailfile example)
 ![abuse](images/example-af-2.png)
 ## .center[MS &#x2192; v(D), AR]
 
@@ -376,6 +385,13 @@ class: middle
 ![secure](images/example-sf-2.png)
 
 ---
+
+class: middle
+# Iterative Process
+## Yet another Abuse Frame!
+![abuse](images/example-af.png)
+
+---
 # The Design Problem
 
 ## What security functions/capabilities exist in the software, i.e. Specification (S), such that given (D), (R) is satisfiable?  
@@ -389,9 +405,9 @@ S is resilient to attacks, when D includes an Attacker (A) trying to implement (
 class: middle
 # Functional Security Requirements
 
-## Security related functions in the specification (S)   
+## Security functions in the specification (S)   
 E.g. Encryption module, access control
-## Security related constraints in the problem world (D)  
+## Security constraints on the problem world (D)  
 E.g. Controlled physical access, access logs, cleared user base, authorization db
 
 ---
@@ -401,7 +417,7 @@ class: middle
 ## Weaknesses avoided in security functions of the specification (S)     
 E.g. Injection, memory issues, weak crypto algorithms or implementation  
 E.g. _For openSSL_: Encryption module minimizes exploitable buffer overflow weaknesses to an acceptable level  
-## Weaknesses avoided in in the problem world (D)  
+## Weaknesses avoided in the problem world (D)  
 E.g. password sticky notes, guessable passwords, ad-hoc authorizations, poor clearance processes
 
 ---
@@ -473,7 +489,7 @@ class: middle
 
 ## 2. Scenario-driven approach
 - Negative scenarios (desired future experience, story grounded in real world, thread through a model)
-- [Misuse cases](http://understandingrequirements.com/resources/MisuseCasesHostileIntent.pdf), [Abuse frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), [Keywords/checklists](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx)
+- [Misuse cases](http://www.scenarioplus.org.uk/papers/misuse_cases_ieee_jan_2003.pdf), [Abuse frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), [Keywords/checklists](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx)
 
 --
 
@@ -589,6 +605,9 @@ class: middle
 ### Step 5
 Make a detailed requirements [documentation](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.9.8190&rep=rep1&type=pdf)
 
+???
+We will not do this step to keep the process lightweight. But you know how to do it if required.
+
 ---
 
 class: middle
@@ -626,31 +645,32 @@ class: middle
 ### _Skip this step if you already have a Lucidchart account._
 
 # Step 1
-## Create a personal [education account](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) on [Lucidchart](https://www.lucidchart.com/)
+## Create an account on [Lucidchart](https://www.lucidchart.com/) using your `.edu` email
+- OR Request an upgrade here: https://www.lucidchart.com/pages/usecase/education-request
 
 ---
 
 class: middle
 # Step 2
 ## Recall the assurance case assignment
-- You picked a claim related to your project and built an assurance case. You also did an in-class activity to identify 10-20 other claims related to your project.
-- You prioritized the claims and selected 5 claims that you would like to further investigate.
+- You picked 5 claims related to your project and built assurance cases for each.
 
 ---
 class: middle
 # Step 3
 ## Elaborate the top 5 claims using Misuse cases
+- Contextualize the security function or security weakness addressed in your assurance cases
+- Use misuse cases to elaborated on additional security functions
+
 ## Click on this [template](https://www.lucidchart.com/invitations/accept/59a6e092-49bd-4af3-80be-a1f0862923e5) to start a new misuse case
-- Misuse cases will allow you to systematically identify critical properties of interest related to the claims    
-- Misuse cases focus attention to places where an external entity interacts with the system
 
 ---
 class: middle
 # Step 4
-## Submit links to your misuse cases cases developed in Lucidchart
+## Submit links to your misuse cases developed in Lucidchart
 - Submission of the links on blackboard
 - One submission per team
-- Clearly indicate which claims are elaborated by which misuse case
+- Clearly indicate which claims are elaborated by which misuse cases
 
 ---
 # Grading criteria
@@ -659,12 +679,10 @@ class: middle
 - Misuse case notation
 
 ## Argument Quality
-- Misuse cases help elaborate critical properties of interest related to the top 5 claims
-- Proper wording of the top 5 claims
+- Misuse cases help elaborate additional security functions related to the top 5 claims
 
 ## Due Date
-.red[~~Wednesday, October 5th, 2016~~]  
-Update: Friday, October 7th, 2016
+.red[Wednesday, October 6th, 2017] 
 
 ---
 # Generating shareable links on Lucidchart
