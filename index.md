@@ -21,11 +21,11 @@ Content will be linked as we progress through the semester. This allows to me to
   * Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
   * Formal diagramming in [Adelard ASCE](https://www.adelard.com/asce/choosing-asce/index.html)  
   * [Assurance Case Exercise](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case-exercise.html) (Team Deliverable)
-1. Requirements for Software Security Engineering
+1. [Requirements for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html)
   * Problem Frames (Abuse and Security Frames)  
   * The Meaning of Requirements for Software Security Engineering  
   * [Misuse cases](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1159030)  
-  * Using Misuse cases to Elaborate Assurance Cases: Misuse Case Exercise (Team Deliverable)
+  * Misuse Case Exercise (Team Deliverable)
   * Translating compliance constraints to requirements. [NIST 800-160 public draft 2, Appendix-J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
 1. Maturity Models for Software Security Engineering
   * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
