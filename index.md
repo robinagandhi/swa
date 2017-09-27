@@ -55,6 +55,10 @@ Content will be linked as we progress through the semester. This allows to me to
 * [Online Lab Computer](http://support.ist.unomaha.edu/view.html)
   - Student folders will map automatically at logon, and will appear mapped as a `CYBR8420 username` drive in **My Computer**.
 
+# Mid-term Exam for Fall 2017
+
+  * In-class exam on **Wednesday, October 11, 2017, 5:30pm**
+
 # Final Exam for Fall 2017
 
 * In-class exam on **Wednesday, December 13, 2017, 5:30pm**
