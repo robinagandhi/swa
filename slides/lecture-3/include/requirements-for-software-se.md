@@ -668,7 +668,7 @@ class: middle
 class: middle
 # Step 4
 ## Submit links to your misuse cases developed in Lucidchart
-- Submission of the links on blackboard
+- Submission of the links on Canvas
 - One submission per team
 - Clearly indicate which claims are elaborated by which misuse cases
 
@@ -682,7 +682,7 @@ class: middle
 - Misuse cases help elaborate additional security functions related to the top 5 claims
 
 ## Due Date
-.red[Wednesday, October 6th, 2017] 
+.red[Friday, October 6th, 2017]
 
 ---
 # Generating shareable links on Lucidchart
