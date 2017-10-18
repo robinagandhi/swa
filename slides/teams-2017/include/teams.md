@@ -11,7 +11,7 @@ class: center, middle
 - Sarah Noles
 
 ## Project Focus
--[MISP](http://www.misp-project.org)
+- [MISP](http://www.misp-project.org)
 
 ---
 
@@ -36,7 +36,7 @@ class: center, middle
 - Daniel Lucier
 
 ## Project Focus
--[Keycloak](http://www.keycloak.org/index.html)
+- [Keycloak](http://www.keycloak.org/index.html)
 
 ---
 # Team Ghost Busters
@@ -48,7 +48,7 @@ class: center, middle
 - Gabrielle Wethor  
 
 ## Project Focus
--[Graylog](https://github.com/Graylog2/graylog2-server)
+- [Graylog](https://github.com/Graylog2/graylog2-server)
 
 ---
 # Team Mavericks
@@ -60,7 +60,7 @@ class: center, middle
 - Kasiviswanath Reddy Poreddy  
 
 ## Project Focus
--[Teammates](https://github.com/TEAMMATES/teammates)
+- [Teammates](https://github.com/TEAMMATES/teammates)
 
 ---
 # Team R3tr-0
@@ -72,7 +72,7 @@ class: center, middle
 - Carmel Waka
 
 ## Project Focus
--[pi-hole](https://github.com/pi-hole/pi-hole)
+- [pi-hole](https://github.com/pi-hole/pi-hole)
 
 ---
 # Team Spark
@@ -95,7 +95,7 @@ class: center, middle
 - Larry Singleton  
 
 ## Project Focus
--[Jenkins](https://jenkins.io)
+- [Jenkins](https://jenkins.io)
 ---
 
 # Team ZZteam
