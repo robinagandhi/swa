@@ -21,18 +21,18 @@ The project will have the following deliverables:
   * 5 assurance claims that would require evidence from software security engineering activities
   * Build 5 assurance cases; one for each of the claims
 1. **Requirements for Software Security Engineering**: 2-3 page report that describes the following:
-  * Identify security requirements based on assurance claims
-  * Document security requirements for the project captured using mis-use case diagrams
-  * Include links to Lucidchart diagrams with brief descriptions in the document
-  * Review project documentation for security related configuration and installation
+  * List of final assurance claims
+  * Describe the security requirements for the project captured using mis-use case diagrams. Include links to Lucidchart mis-use cases.
+  * Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
+  * Review OSS project documentation for security related configuration and installation issues. Summarize your observations.
 1. **Designing for Software Security Engineering**: 2-3 page report that describes the following:
-  * Develop threat models for critical data-flows through the software captured in mis-use cases
-  * Include diagrams   
-  * Discuss alignment of threat models with actual software design
+  * Develop threat models for critical data-flows through the software. Functions identified in mis-use cases will provide starting points for examination. Include threat model diagrams.   
+  * Review OSS project actual software design for security related issues. Summarize your observations.
 1. **Code analysis for Software Security Engineering**: 2-3 page report that describes the following:
   * Code review strategy
-  * Automated code scanning results summary. Include links to full reports.
-  * Summary of key findings
+  * Manual code review of critical security functions identified in mis-use cases and threat models.
+  * Automated code scanning (if available). Include links to full reports.
+  * Summary of key findings from manual and/or automated scanning.
   * Links to pull requests to the original project and any follow-up interactions.
 1. **Class Presentation**: 10-minute class presentation that highlights the following:
   * Project description
@@ -64,17 +64,17 @@ The project will have the following deliverables:
 ## Project Deadlines*
 
 1. Project Proposal &ndash; **September 13, 2017**
-1. Assurance Cases Software Security Engineering &ndash; **TBD**
-1. Requirements for Software Security Engineering &ndash; **TBD**
-1. Designing for Software Security Engineering &ndash; **TBD**
-1. Code analysis for Software Security Engineering &ndash; **TBD**
+1. Assurance Cases Software Security Engineering &ndash; **September 27th**
+1. Requirements for Software Security Engineering &ndash; **October 25th**
+1. Designing for Software Security Engineering &ndash; **November 8th**
+1. Code analysis for Software Security Engineering &ndash; **November 22nd**
 1. Class presentations &ndash; **December 6, 2017**
 
 \* All dates are subject to change as the course progresses
 
 ## Teams Project for Fall 2017
-Team projects: **TBD**
+[Teams 2017](https://robinagandhi.github.io/swa/slides/teams-2017/teams.html)
 
 ## Past Teams
 ### Teams Project for Fall 2016
-[Team projects](https://robinagandhi.github.io/swa/slides/teams-2016/teams.html)
+[Teams 2016](https://robinagandhi.github.io/swa/slides/teams-2016/teams.html)

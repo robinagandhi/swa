@@ -31,10 +31,10 @@ Content will be linked as we progress through the semester. This allows to me to
   * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
 1. Midterm Exam. Sometime in October.
 1. Design for Software Security Engineering
-  * Design Principles for Security (NIST 800-160 Appendix F)
+  * Design Principles for Security (NIST 800-160)
   * Threat Modeling. Data flow based threat identification and mitigation techniques.  
   * Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
-  * Design patterns (See Blackboard for Slides):
+  * Design patterns (Slides will be posted on Canvas):
     1. Expressing design principles as patterns
     2. Architectural patterns for security
     3. Object-oriented code patterns for security
