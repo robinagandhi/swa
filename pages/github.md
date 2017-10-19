@@ -194,7 +194,7 @@ Now we `stage` our changes for a commit using this command:
 ```bash
 git add --all
 ```
-The above command `adds` any edited files in a staging area, a temporary holding place before a commit. We can check the status of the repository again using the following command:
+The above command `adds` any edited files (including deleted files) in a staging area, a temporary holding place before a commit. In git version 2.x, it is equivalent to the command `git add .`. We can check the status of the repository again using the following command:
 
 ```bash
 git status
