@@ -20,27 +20,31 @@ class: middle
 # Security Analysis during Design
 
 ## Start with a Data-flow perspective
-- Most attacks come through .red[data]
+- **Most attacks come through .red[data]**
 - Control flow is less relevant during the design stage
-- A structured, concrete artifact to discuss design changes
+- A structured, concrete artifact to _discuss_ design:  
+Conceptualization, Changes or Re-design
 
---
-
+---
+class: middle
 ## Practical Applications
 _"Applying a structured approach to threat scenarios during design helps a team more effectively and less expensively identify security vulnerabilities, determine risks from those threats, and establish appropriate mitigations"_   
 [Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx)
 
 ---
-
+class: middle
 # Data Flow Diagrams (DFD)
 
-## DFDs are visual representations of data flows through components of a software program
-- .green[Data Source] &#8594; .orange[Data Transformations] &#8594; .red[Data Sink]
-- All control flows are abstracted into _processes_
+## DFDs are visual representations of .red[**data flows**] through components of a software program
+- Components of a software program:  
+.green[Data Source] &#8594; .orange[Data Transformations] &#8594; .red[Data Sink]
+- All control flows are abstracted into _processes_  
+that perform data transformations
 
---
+---
 
-## DFD Elements
+class: middle
+# DFD Elements
 1. External interactors
 1. Processes
 1. Data storage
@@ -53,7 +57,7 @@ _"Applying a structured approach to threat scenarios during design helps a team 
 
 .left-column[
 ## External Interactor/Entity
-- .red[_Uncontrollable_] by the codebase of interest but is within the [environment of operation](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#15)
+- .red[_Uncontrollable_] by the codebase of interest but is within the [environment of operation](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#14)
 - Generate data (Source)
 - Receive data (Sink)
 
@@ -67,7 +71,7 @@ People, External systems, External APIs
 ## Representation
 ![example](images/externalentity.svg)
 ## Naming
-Noun phrase that describes the entity
+.red[Noun phrase] that describes the entity
 ]
 
 ???
@@ -82,7 +86,7 @@ Noun phrase that describes the entity
 - Transforms input data into output data
 
 ## Examples     
-- Code, Native code, Executables, Libraries
+- Code, Native code, Executables, Libraries, Process execution scope
 ]
 
 --
@@ -91,8 +95,8 @@ Noun phrase that describes the entity
 ## Representation
 ![example](images/process.svg)
 ## Naming
-- Verb phrase that describes the data transformation
-- Include process number
+- .red[Verb phrase] that describes the data transformation
+- .red[Include process number]
 ]
 
 ---
@@ -103,7 +107,8 @@ Noun phrase that describes the entity
 ## Data Store
 - Place to hold data  
 - Storage for a single process or transfer between processes  
-- Examples:  
+
+## Examples
 Files, Registry keys, Databases, Shared memory, Message Queue
 ]
 
@@ -113,7 +118,7 @@ Files, Registry keys, Databases, Shared memory, Message Queue
 ## Representation
 ![example](images/datastore.svg)
 ## Naming
-- Noun phrase but plural
+- .red[Noun phrase], but plural
 ]
 
 ---
@@ -124,7 +129,8 @@ Files, Registry keys, Databases, Shared memory, Message Queue
 ## Data Flow
 - Flow of data between External Interactors, Processes and Data Stores  
 - Contracts between DFD elements
-- Examples:  
+
+## Examples
 Cookie, Form data, Response page, Credentials, etc.
 ]
 
@@ -134,7 +140,7 @@ Cookie, Form data, Response page, Credentials, etc.
 ## Representation
 ![example](images/dataflow.svg)
 ## Naming
-- Noun phrase that describes the application data being transferred
+- .red[Noun phrase] that describes the application data being transferred
 ]
 
 ---
@@ -143,7 +149,7 @@ Cookie, Form data, Response page, Credentials, etc.
 
 .left-column[
 ## Trust Boundary
-- Intersects data flows
+- Intersects .red[data flows]
 - Component on one side doesn't trust the one on the other side
 
 ## Examples  
@@ -159,6 +165,7 @@ Cookie, Form data, Response page, Credentials, etc.
 ## Naming
 - Describes the boundary placement
 ]
+
 ---
 ## DFD Example
 
@@ -170,7 +177,8 @@ Cookie, Form data, Response page, Credentials, etc.
 ## Levels are hierarchically related
 ### Based on the granularity of the processes
 - .red[**Level 0:**] Single process represents the whole system  
-Very high-level; entire component / product / system
+Very high-level; entire component / product / system.  
+Show how the system interacts with the outside world.
 - .red[**Level 1:**] Major processes and data stores identified   
 High level; single feature / scenario
 - .red[**Level 2:**] Detailed subcomponents of processes  
@@ -185,7 +193,7 @@ class: middle
 ## Step 1
 ### Start with a Level 0 diagram for a use case
 - Single process
-- Identify a few External Interactors
+- Identify all External Interactors
 - Draw data flows to connect them
 ---
 class: middle
@@ -203,9 +211,12 @@ class: middle
 ## Step 3
 ### Add trust boundaries that intersect data flows
 ### Trust boundary placement
-- Threads in a OS process are often inside a trust boundary, because they share the same privileges, rights, identifiers and access    
-- Processes talking across a network always have a trust boundary. They make may create a secure channel, but they’re still distinct entities
-- Encrypting network traffic is an ‘instinctive’ mitigation, but may not address tampering or spoofing
+- Threads are often inside a trust boundary.   
+They share the same privileges, rights, identifiers and access    
+
+
+- Processes talking across a network may create a secure channel, but .red[they’re still distinct entities.]   
+Encrypting network traffic is an ‘instinctive’ mitigation, but may not address tampering or spoofing
 
 
 ---
@@ -214,13 +225,17 @@ class: middle
 ## Step 4
 ### Iterate over processes and data stores
 - Break them down if more detail needed to explain .red[_security impact of the design_]
+
+
 - Break them down if an object crosses a trust boundary. For example, a remote procedural call (RPC)
+
+
 - Break them down if you use words like “sometimes” and “also” in your story
 
 ---
 class: middle
 # DFD Construction
-## Step 5: Check the diagram for sanity
+## Step 5: Check the diagram for sanity (1)
 ### Data stores
 - Two data stores should not be connected with data flows directly. They are static entities.
 - External interactors should not directly interact with data stores. Their data representation formats are different.
@@ -233,7 +248,7 @@ class: middle
 
 ---
 # DFD Construction
-## Step 5: Check the diagram for sanity
+## Step 5: Check the diagram for sanity (2)
 ### External Interactors
 - Avoid data flows between External Interactors. They cannot be observed by the system.
 - Data always comes from External Interactors.
@@ -245,24 +260,35 @@ class: middle
 ## Step 6
 ### Simplify
 - Consolidate data flows that always flow together
-- All processes need appropriate "inputs" to generate "outputs". No outputs without inputs!
-- Avoid partitioning processes based on control logic
-- DFDs do not typically show time dependencies. If processes can communicate directly they are assumed to be synchronous!
+
+
+- All processes need appropriate _inputs_ to generate _outputs_. No outputs without inputs!
+
+
+- Avoid partitioning processes based on control logic.  
+Partition processes that perform multiple functions.
+
+
+- DFDs do not typically show time dependencies.   
+If processes can communicate directly they are assumed to be synchronous!
 ---
 class: middle
 # DFD Modeling Summary
-- DFDs help us show the flow of data from sources to sinks with transformations and stores along the way. We also depict the trust boundaries intersecting these data flows.
-- Hierarchical structuring allows us to conduct and present system overview at different levels of abstraction
+- DFDs depict data flows from sources to sinks with transformations along the way.   
+Trust boundaries intersecting these data flows.
+
+
+- Hierarchical structuring (Levels) allows system analysis at different levels of abstraction
 
 ---
-class: middle
+class: middle, center
 # Threat Identification
-The structured nature of DFDs allows potential threats to be automatically generated. We will use the Microsoft STRIDE model to generate such threats.
+DFDs allows potential threats to be .red[automatically generated]!
 
 ---
 
 class: middle
-# STRIDE Threats
+# Microsoft STRIDE Threats
 
 .left-column[
 ## Threat
@@ -274,60 +300,55 @@ class: middle
 - .red[E]levation of Privilege
 ]
 
---
-
-.right-column[
-## Control
-- Authentication
-- Integrity
-- Nonrepudiation
-- Confidentiality
-- Availability
-- Authorization
-]
 ---
 
 class: middle
-# STRIDE Threats
+# Microsoft STRIDE Threats
 
 ## Spoofing
-A process or entity is something other than the claimed identity
+* A process or entity is something other than the claimed identity
 
 ## Tampering
-Act of altering bits
+* Act of altering bits
 
 ## Repudiation
-An adversary denying that something happened
+* Deny that something happened or an action was taken
 
 ---
 class: middle
-# STRIDE Threats
+# Microsoft STRIDE Threats
 
 ## Information Disclosure
-Information can be read by an unauthorized party
+* Information can be read by an unauthorized party
 
 ## Denial of Service
-Process or data store not able to process incoming requests
+* Process or data store not able to process incoming requests
 
 ## Elevation of Privilege
-A user can increase capability or privilege by taking advantage of an implementation bug
+* A user can increase capability or privilege by taking advantage of an implementation bug
 ---
-
 
 # STRIDE with DFDs (Per Element)
 
-### External Interactor
+Threats that a DFD element can cause to its connected elements or is subject to itself.
+
+.left-column[
+## External Interactor
 - SR
 
-### Process
+## Process
 - STRIDE
+]
 
-### Data Store
+--
+
+.right-column[
+## Data Store
 - TID, R (logs only)
 
-### Data Flow
+## Data Flow
 - TID
-
+]
 ---
 class: middle
 # Practice
@@ -342,10 +363,12 @@ class: middle
 
 --
 ## Expensive (Time)
-Too many threats to analyze! (even for small diagrams)
+- Too many threats to analyze! (even for small diagrams)
 
 ## Redundancy
 - Redundant threats when analyzed individually
+
+--
 
 ## How can we make this more efficient?
 ---
@@ -360,19 +383,19 @@ class: middle
 ## Efficiencies and Savings
 - For each interactions apply STRIDE
 - For each STRIDE threat identify the attacker controlled element and the attacked element
-- For data flows inside a .red[single] process,   
+- For data flows inside a .red[single] process space,   
 don’t worry about T, I, or D
-- Prioritize analysis for interactions that cross trust boundaries
+- Prioritize interactions that cross trust boundaries
 ???
 ## Significant reduction in number of threats to be analyzed
 ---
 class: middle
 # Trust boundaries
 ## Trusted/high code reading from untrusted/low
-- Validate everything for specific and defined uses
+- Look for Tampering threats
 
 ## High code writing to low
-- Make sure your errors don’t give away too much!
+- Errors may result in Information Disclosure
 ---
 class: middle
 # Avoid Distractions
@@ -382,15 +405,26 @@ class: middle
 - Admin is attacking user
 - A user is attacking himself
 
+--
+
 ## Applications can’t address any of these   
 (unless you’re the OS)
 
 ---
 class: middle
 # Practice
+
+![OWASP](https://www.owasp.org/images/1/16/Data_flow2.jpg)
+
+#### How many interactions? How many are high priority?
+
+---
+
+class: middle
+# Practice
 ![example](images/dfd.png)
 
-### How many interactions? How many are high priority?
+#### How many interactions? How many are high priority?
 ---
 class: middle
 # Observations and Reflections
@@ -411,9 +445,10 @@ class: middle
 ![toolsupport](images/toolsupport.png)
 ---
 class: middle
-# Threat Mitigation
-## Why bother if you:
-- Create a great model, Identify lots of threats, Stop!
+# .center[Threat Mitigation]
+
+.footnote[Why bother if you create a great model, identify lots of threats, and .red[stop!]]
+
 ---
 class: middle
 # Threat Mitigations
@@ -426,6 +461,30 @@ What have similar software packages done and how has that worked out for them?
 Risk acceptable, but must be verified and approved
 
 ---
+class: middle
+# STRIDE Controls
+
+.left-column[
+## Threat
+- .red[S]poofing
+- .red[T]ampering
+- .red[R]epudiation
+- .red[I]nformation Disclosure
+- .red[D]enial of Service
+- .red[E]levation of Privilege
+]
+
+.right-column[
+## Control
+- Authentication
+- Integrity
+- Nonrepudiation
+- Confidentiality
+- Availability
+- Authorization
+]
+---
+
 class: middle
 # Standard Mitigations
 
@@ -515,6 +574,8 @@ class: middle
 ## Build a Threat Model based on this description
 
 ???
+
+![solution](images/playsoundthreatmodel.png)  
 http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
 
 ---
@@ -524,8 +585,10 @@ http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-a
 - Ease developers into doing threat modeling
 - [Card Game Introduction](https://www.microsoft.com/en-us/sdl/adopt/eop.aspx)
 - [How to play](http://social.technet.microsoft.com/wiki/contents/articles/285.elevation-of-privilege-the-game.aspx)
+- [Card Images](https://robinagandhi.github.io/swa/slides/lecture-4/images/eopcardcameimages.pdf)
 
 ![EOP](https://c.s-microsoft.com/en-us/CMSImages/EoP_game_screen_shot.jpg?version=4a082487-9fb4-7dd9-ed9f-e79c888c2df4)
+
 ---
 class: middle
 # More about threat modeling
@@ -551,23 +614,23 @@ class: center, middle
 class: middle
 
 # Step 1
-## Download and install TMT 2016
-## You may also directly access it on view.unomaha.edu
+- Download and install [TMT 2016](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
+- You may also directly access it on your machine at view.unomaha.edu
 
 ---
 
 class: middle
 # Step 2
 ## Recall the misuse case assignment
-- You developed 5 different mis use cases.
+- You identified several use cases to include misuse cases.
 
 ---
 class: middle
 # Step 3
 ## Elaborate the Misuse cases using Threat models
-- Select a use case from your previous assignment such that you can extract a DFD that supports the use case.
+- Develop Level 1 DFDs that supports each of your use cases.
 - Perform analysis on your code base to align the diagram with reality
-- Draw a Level 1 diagram in the Microsoft threat modeling tool
+- Draw the DFDs in TMT 2016
 - Identify appropriate trust boundaries on the diagram
 - Validate the diagram for any obvious structural deficiencies
 
@@ -575,10 +638,12 @@ class: middle
 class: middle
 # Step 4
 ## Analyze the Level 1 diagram to identify the applicable STRIDE threats
-- Examine each threat identified
+- Examine each threat automatically identified
 - Document mitigation strategies for the identified threats
 - Pay special attention for elements that interact across threat boundaries
-- Generate a full report using TMT 2016
+- Generate a full HTML report using TMT 2016
+- Host the reports on your project github repo.
+- Review OSS project actual software design for security related issues based on your threat models. Summarize your observations.
 
 ---
 # Grading criteria
@@ -593,7 +658,8 @@ class: middle
 
 ### Threat Mitigation Quality
 - Quality of analysis to mitigate threats
+
 ---
 class: middle
 # Due Date
-Wednesday November 9th, 2016
+Wednesday November 8th, 2017
