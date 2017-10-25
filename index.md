@@ -29,11 +29,10 @@ Content will be linked as we progress through the semester. This allows to me to
   * Translating compliance constraints to requirements. [NIST 800-160 public draft 2, Appendix-J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
 1. Maturity Models for Software Security Engineering
   * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
-1. Midterm Exam. Sometime in October.
+1. Midterm Exam.
 1. Design for Software Security Engineering
-  * Design Principles for Security (NIST 800-160)
-  * Threat Modeling. Data flow based threat identification and mitigation techniques.  
-  * Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
+  * Design Principles for Security (NIST 800-160, See Canvas)
+  * [Threat Modeling](https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html) with Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
   * Design patterns (Slides will be posted on Canvas):
     1. Expressing design principles as patterns
     2. Architectural patterns for security

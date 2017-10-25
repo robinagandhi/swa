@@ -25,8 +25,8 @@ The project will have the following deliverables:
   * Describe the security requirements for the project captured using mis-use case diagrams. Include links to Lucidchart mis-use cases.
   * Review OSS project documentation for alignment of security requirements with advertised features. Summarize your observations
   * Review OSS project documentation for security related configuration and installation issues. Summarize your observations.
-1. **Designing for Software Security Engineering**: 2-3 page report that describes the following:
-  * Develop threat models for critical data-flows through the software. Functions identified in mis-use cases will provide starting points for examination. Include threat model diagrams.   
+1. **Designing for Software Security Engineering**: Brief report that describes the following:
+  * Develop threat models for critical data-flows through the software. Functions identified in mis-use cases will provide starting points for examination. Include threat model diagrams. See class assignment for details.   
   * Review OSS project actual software design for security related issues. Summarize your observations.
 1. **Code analysis for Software Security Engineering**: 2-3 page report that describes the following:
   * Code review strategy
