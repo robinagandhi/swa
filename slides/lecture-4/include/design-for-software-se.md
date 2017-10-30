@@ -45,11 +45,11 @@ that perform data transformations
 
 class: middle
 # DFD Elements
-1. External interactors
+1. External Interactors
 1. Processes
-1. Data storage
-1. Boundaries
-1. Data flows
+1. Data Stores
+1. Trust Boundaries
+1. Data Flows
 
 ---
 
