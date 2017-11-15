@@ -39,12 +39,12 @@ Content will be linked as we progress through the semester. This allows to me to
   * Lecture: [Threat Modeling](https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html) with Diagramming using [Microsoft Threat Modeling Tool.](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
   * Lecture: Architectural patterns for security (See Canvas)
 1. Hands-on: In-class working session on Threat Modeling using Microsoft Threat Modeling Tool.  
-1. Lecture: Coding for Software Security Engineering
+1. Lecture: [Coding for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-5/code-for-software-se.html)
   * Knowledge base: [Common Weakness Enumeration](http://cwe.mitre.org/), [CAPEC](https://capec.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
   * [DHS SWAMP](https://www.mir-swamp.org/)
-  * Lecture: Code review tools and techniques
-1. Hands-on: In-class working session for automated tool analysis.  
-1. Testing for Software Security Engineering
+  * Lecture: Code review tools and techniques (Canvas)
+1. Hands-on: In-class working session for code review and automated tool analysis.  
+1. Testing for Software Security Engineering (Canvas)
 1. Project Presentations
 1. Other topics
   * Guest talks from other faculty or practitioners.

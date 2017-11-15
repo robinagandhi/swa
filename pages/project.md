@@ -32,8 +32,8 @@ The project will have the following deliverables:
   * Code review strategy
   * Manual code review of critical security functions identified in mis-use cases and threat models.
   * Automated code scanning (if available). Include links to full reports.
-  * Summary of key findings from manual and/or automated scanning.
-  * Links to pull requests to the original project and any follow-up interactions.
+  * Summary of key findings from manual and/or automated scanning. This may include: Categorization, Mappings to CWEs, CAPECs, Risk Levels etc.
+  * Links to any pull requests, issues, discussion, etc. from the team to the original project and any follow-up interactions.
 1. **Class Presentation**: 10-minute class presentation that highlights the following:
   * Project description
   * Assurance claims
@@ -67,7 +67,7 @@ The project will have the following deliverables:
 1. Assurance Cases Software Security Engineering &ndash; **September 27th**
 1. Requirements for Software Security Engineering &ndash; **October 25th**
 1. Designing for Software Security Engineering &ndash; **November 8th**
-1. Code analysis for Software Security Engineering &ndash; **November 22nd**
+1. Code analysis for Software Security Engineering &ndash; **November 29th**
 1. Class presentations &ndash; **December 6, 2017**
 
 \* All dates are subject to change as the course progresses

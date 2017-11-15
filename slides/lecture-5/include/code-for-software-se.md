@@ -15,15 +15,19 @@ class: middle
 - Common Vulnerabilities and Exposures
 - Coding Guidelines
 
+???
+An enumeration is a complete, ordered listing of all the items in a collection. The term is commonly used in mathematics and computer science to refer to a listing of all of the elements of a set. [Source Wikipedia]
+
 ---
 
 class: middle
 # Building Abstractions
-## .red[Vulnerabilities]\* in code are language, product or environment specific
-- Dictionary is appropriate
 
 ## .orange[Weaknesses]\* span a range of languages, products and environments
-- Taxonomy is appropriate
+- Enumeration is appropriate
+
+## .red[Vulnerabilities]\* in code are language, product or environment specific
+- Dictionary is appropriate
 
 .footnote[
 \* Relationships between a [vulnerability](https://cwe.mitre.org/documents/glossary/#Vulnerability) and [weakness](https://cwe.mitre.org/documents/glossary/#Weakness)
@@ -32,14 +36,14 @@ class: middle
 ---
 class: middle
 
-# Building Abstractions
-- Examine commonalities and differences in .red[mistakes]
+## Building Abstractions for .orange[Weaknesses]
+Examine commonalities and differences in mistakes
 
 --
 
-## Leads to useful analysis
-- Which class of weaknesses to address first?
-- What are the related weaknesses in an attack vector?
+### Leads to useful analysis
+- Which class of mistakes to address first?
+- What are the related mistakes in an attack vector?
 - What are the known/reusable mitigations?
 
 ---
