@@ -31,9 +31,13 @@ class: middle
 
 ---
 class: middle
-# Building Abstractions
 
-## Commonalities and differences in .red[mistakes]
+# Building Abstractions
+- Examine commonalities and differences in .red[mistakes]
+
+--
+
+## Leads to useful analysis
 - Which class of weaknesses to address first?
 - What are the related weaknesses in an attack vector?
 - What are the known/reusable mitigations?
@@ -43,14 +47,17 @@ class: middle
 class: middle
 # Learning from .red[mistakes]
 
-## The Landwehr Software Flaw Taxonomy (1993)
+## Landwehr Software Flaw Taxonomy (1993)
 - Genesis, Location, Time of introduction
 
+--
 
-## Several recent efforts have followed
-- Seven Pernicious Kingdoms, PLOVER, 19 Deadly Sins, OWASP top ten…
+## More recent efforts...
+- Seven Pernicious Kingdoms, PLOVER, 19 Deadly Sins, OWASP top ten, WASP, etc,.
 
-## The Common Weaknesses Enumeration [(CWE)](http://cwe.mitre.org)
+--
+
+## Common Weaknesses Enumeration [(CWE)](http://cwe.mitre.org)
 - Assimilates and advances categorization efforts
 
 ---
@@ -94,27 +101,28 @@ class: middle
 
 # Finding the best CWE
 
-## Mapping Guidance
+## [Mapping Guidance](https://cwe.mitre.org/documents/cwe_usage/mapping_navigation.html)
 - Map to a Weakness only
 - .red[DO NOT] map to Categories or Views
 - Map at the lowest abstraction level possible
 
 ## Search resources
 - [Full text search](https://cwe.mitre.org/find/index.html)
-- [Full listing](https://cwe.mitre.org/data/lists/2000.html)
-- Navigating views: [CWE-1000](https://cwe.mitre.org/data/graphs/1000.html), [CWE-699](https://cwe.mitre.org/data/graphs/699.html), [CWE-888](https://cwe.mitre.org/data/graphs/888.html)  
-Turn on .blue[_Mapping-Friendly_] option
-- Navigate parent, child, peer relationships
+- [Full listing](https://cwe.mitre.org/data/definitions/2000.html)
+- Navigating views: [CWE-1000](https://cwe.mitre.org/data/definitions/1000.html), [CWE-699](https://cwe.mitre.org/data/definitions/699.html), [CWE-888](https://cwe.mitre.org/data/definitions/888.html)  
+Turn on .blue[_Show Details_] option
+- For a CWE page, turn on .blue[_Mapping-Friendly_] option.  
+Then navigate to parent, child, peer relationships
 
 ---
 
 class: middle
 
 # Exercise
-## Map [CVE-2004-0492](https://access.redhat.com/security/cve/cve-2004-0492) to CWEs
+## Map [CVE-2004-0492](https://nvd.nist.gov/vuln/detail/CVE-2004-0492) to CWEs
 - Description:   
 Heap-based buffer overflow in proxy_util.c for mod_proxy in Apache 1.3.25 to 1.3.31 allows remote attackers to cause a denial of service (process crash) and possibly execute arbitrary code via a negative Content-Length HTTP header field, which causes a large amount of data to be copied.  
-- Build a list of most relevant CWEs. E.g. 79 35 34
+- Build a list of most relevant CWE IDs. Example: .red[79 35 34]
 
 --
 
@@ -146,15 +154,15 @@ class: middle
 
 class: middle
 # CWE Prioritization
-## Negative Technical Impacts of Weaknesses
-- Read data  
-- Modify data  
-- Denial-of-Service: unreliable execution  
-- Denial-of-Service: resource consumption  
-- Execute unauthorized code or commands  
-- Gain privileges / assume identity  
-- Bypass protection mechanism  
-- Hide activities  
+## [Technical Impacts](https://cwe.mitre.org/cwss/cwss_v1.0.1.html#2.3.1) of [Weaknesses](https://cwe.mitre.org/cwraf/ti_scorecard.html)
+1. Read data  
+1. Modify data  
+1. Denial-of-Service: unreliable execution  
+1. Denial-of-Service: resource consumption  
+1. Execute unauthorized code or commands  
+1. Gain privileges / assume identity  
+1. Bypass protection mechanism  
+1. Hide activities  
 
 ## Top CWE lists
 - [CWE/SANS Top 25](https://cwe.mitre.org/top25/index.html)
@@ -175,7 +183,7 @@ class: middle
 # Common Attack Pattern Enumeration and Classification
 
 ## Enumerates .red[attack patterns] used in exploits
-- Total of 504 attack patterns in version 2.8
+- Total of 550+ attack patterns
 - Abstractions:   
 Meta, Standard, Detailed Patterns and Categories
 
@@ -202,10 +210,10 @@ class: middle
 
 ---
 class: middle
-![nvd](https://nvd.nist.gov/NVDLegacy/media/NVDLegacyMedia/images/nvdbannerDHSNIST.jpg)
+
 # [National Vulnerability Database](http://nvd.nist.gov)
 - Maintains a dictionary of CVEs
-- CVEs use Common Platform Enumeration (CPE) to identify affected products and packages. [Search Engine](https://web.nvd.nist.gov/view/vuln/search)
+- CVEs use Common Platform Enumeration (CPE) to identify affected products and packages. [Search Engine](https://nvd.nist.gov/vuln/search)
 - Total CVEs: 80000+, ~15-20 added every day
 
 ---
@@ -221,7 +229,7 @@ class: middle
 class: middle
 # CERT Secure Coding Guidelines
 - Normative requirements (aka. coding standards) for programming languages
-- [C, C++, Java, and Perl, and the Android platform](https://www.securecoding.cert.org)
+- [C, C++, Java, Perl, and the Android platform](https://www.securecoding.cert.org)
 - Software development and software security communities
 - Violation does not mean vulnerability but a weakness
 
@@ -234,16 +242,16 @@ class: middle
 
 ---
 # Rejoicing Project Managers!
-## Johnny, avoid these weaknesses!
+### Johnny, avoid these weaknesses!
 - CWE
 
-## Johnny...these are the ways of the bad guys
+### Johnny...these are the ways of the bad guys
 - CAPEC
 
-## Johnny...learn from your mistakes
+### Johnny...learn from your mistakes
 - CVE
 
-## Johnny...these are ways to develop secure code
+### Johnny...follow secure coding guidelines
 - Secure coding guidelines
 .top-right[
 ![dr.evil](https://upload.wikimedia.org/wikipedia/en/1/16/Drevil_million_dollars.jpg)
@@ -276,7 +284,7 @@ class: middle
 ## ...simple, intuitive guides are need
 ---
 class: middle
-# Key Questions a Weakness
+# Key Questions for a Weakness
 ### What are the .blue[Software flaws] (omission, commission, operational) that lead to the weakness?
 ### What are the defining characteristics of the .orange[Weakness]?
 ### What are the .green[Resources/Location] where the weakness is typically manifest?
@@ -361,6 +369,7 @@ class: middle
 
 ## NIST Bug Framework (BF)
 https://samate.nist.gov/BF/
+https://samate.nist.gov/BF/Enlightenment/ST.html
 
 ## CWE Acknowledgement
 http://cwe.mitre.org/about/process.html#follow_on_opportunities
