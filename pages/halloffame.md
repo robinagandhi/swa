@@ -9,6 +9,15 @@ description: CYBR 8420 Hall of Fame
 A collection of Github interactions based on the course project.   
 This list includes successful pull requests, issues and other interactions with upstream project developers.
 
+## Fall 2017 Teams
+
+### Team JAX
+- Members: Chad Crowe, James Percival, Daniel Ritter, Larry Singleton  
+- Project: [Jenkins](Jenkins.io)
+- [Pull Request](https://github.com/jenkins-infra/jenkins.io/pull/1233)  
+  - [Approved Changes](https://jenkins.io/doc/book/system-administration/security/)
+
+
 ## Fall 2016 Teams
 
 ### Team NODE
