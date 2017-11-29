@@ -13,6 +13,9 @@ class: center, middle
 ## Project Focus
 - [MISP](http://www.misp-project.org)
 
+## Project Repo
+- https://github.com/team-assure/Semester-Project
+
 ---
 
 # Team Cash Cows
@@ -24,6 +27,9 @@ class: center, middle
 
 ## Project Focus
 - [Ember-simple-auth](https://github.com/simplabs/ember-simple-auth)
+
+## Project Repo
+- https://github.com/IsaacShrestha/ember-simple-auth
 
 ---
 
@@ -38,6 +44,9 @@ class: center, middle
 ## Project Focus
 - [Keycloak](http://www.keycloak.org/index.html)
 
+## Project Repo
+- https://github.com/DanielLucier/CYBER8420-SemesterProject
+
 ---
 # Team Ghost Busters
 
@@ -49,6 +58,9 @@ class: center, middle
 
 ## Project Focus
 - [Graylog](https://github.com/Graylog2/graylog2-server)
+
+## Project Repo
+- https://github.com/gewethor/CYBR-8420-GroupProject
 
 ---
 # Team Mavericks
@@ -62,6 +74,9 @@ class: center, middle
 ## Project Focus
 - [Teammates](https://github.com/TEAMMATES/teammates)
 
+## Project Repo
+- https://github.com/nbiswal/teammates
+
 ---
 # Team R3tr-0
 
@@ -74,6 +89,9 @@ class: center, middle
 ## Project Focus
 - [pi-hole](https://github.com/pi-hole/pi-hole)
 
+## Project Repo
+- https://github.com/mgalde/Requirements-for-Software-Security-Engineering
+
 ---
 # Team Spark
 
@@ -84,6 +102,9 @@ class: center, middle
 
 ## Project Focus
 - [Ghost](https://github.com/TryGhost/Ghost)
+
+## Project Repo
+- https://github.com/teamsparkuno/Ghost
 
 ---
 # Team JAX
@@ -96,6 +117,10 @@ class: center, middle
 
 ## Project Focus
 - [Jenkins](https://jenkins.io)
+
+## Project Repo
+- https://github.com/cpluspluscrowe/SoftwareAssurance
+
 ---
 
 # Team ZZteam
@@ -106,3 +131,6 @@ class: center, middle
 
 ## Project Focus
 - [Keeweb](https://github.com/keeweb/keeweb)
+
+## Project Repo
+- https://github.com/zdfowler/cybr8420-project
