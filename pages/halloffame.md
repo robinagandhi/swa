@@ -16,11 +16,12 @@ This list includes successful pull requests, issues and other interactions with 
 - Project: [Jenkins](https://github.com/jenkins-infra/jenkins.io)
 - [Pull Request](https://github.com/jenkins-infra/jenkins.io/pull/1233)  
   - [Approved Changes](https://jenkins.io/doc/book/system-administration/security/)
+
 ### Team Mavericks
--Members: Niluja Biswal, Neeharica Kodali, Durgabhavani Peta, Kasiviswanath Reddy Poreddy
--Project: [TeamMates] (https://github.com/TEAMMATES/teammates)
--[Issue1] (https://github.com/TEAMMATES/teammates/issues/8183)
--[Issue2] (https://github.com/TEAMMATES/teammates/issues/8178) 
+- Members: Niluja Biswal, Neeharica Kodali, Durgabhavani Peta, Kasiviswanath Reddy Poreddy
+- Project: [TeamMates](https://github.com/TEAMMATES/teammates)
+  - [Issue1](https://github.com/TEAMMATES/teammates/issues/8183)
+  - [Issue2](https://github.com/TEAMMATES/teammates/issues/8178)
 
 
 ## Fall 2016 Teams
