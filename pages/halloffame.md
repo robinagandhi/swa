@@ -12,10 +12,13 @@ This list includes successful pull requests, issues and other interactions with 
 ## Fall 2017 Teams
 
 ### Team JAX
-- Members: Chad Crowe, James Percival, Daniel Ritter, Larry Singleton  
-- Project: [Jenkins](https://github.com/jenkins-infra/jenkins.io)
-- [Pull Request](https://github.com/jenkins-infra/jenkins.io/pull/1233)  
-  - [Approved Changes](https://jenkins.io/doc/book/system-administration/security/)
+- Project: [jenkins-infra/jenkins.io](https://github.com/jenkins-infra/jenkins.io)
+    - [Pull Request #1233](https://github.com/jenkins-infra/jenkins.io/pull/1233)  
+    - [Approved Changes](https://jenkins.io/doc/book/system-administration/security/)
+- Project: [jenkinsci/jenkins](https://github.com/jenkinsci/jenkins)
+    - [Pull Request #3161](https://github.com/jenkinsci/jenkins/pull/3161)
+    - [Issue](https://issues.jenkins-ci.org/browse/JENKINS-48227)
+
 
 ### Team Mavericks
 - Members: Niluja Biswal, Neeharica Kodali, Durgabhavani Peta, Kasiviswanath Reddy Poreddy
