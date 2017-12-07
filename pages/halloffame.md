@@ -12,6 +12,7 @@ This list includes successful pull requests, issues and other interactions with 
 ## Fall 2017 Teams
 
 ### Team JAX
+- Members: Chad Crowe, James Percival, Daniel Ritter, [Larry Singleton](https://github.com/larrysingleton)
 - Project: [jenkins-infra/jenkins.io](https://github.com/jenkins-infra/jenkins.io)
     - [Pull Request #1233](https://github.com/jenkins-infra/jenkins.io/pull/1233)  
     - [Approved Changes](https://jenkins.io/doc/book/system-administration/security/)
