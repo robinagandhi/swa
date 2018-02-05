@@ -359,26 +359,26 @@ class: middle
 ![OWASP](https://www.owasp.org/images/1/16/Data_flow2.jpg)
 ---
 class: middle
+exclude: true
 # Observations and Reflections
 
---
 ## Expensive (Time)
 - Too many threats to analyze! (even for small diagrams)
 
 ## Redundancy
 - Redundant threats when analyzed individually
 
---
-
 ## How can we make this more efficient?
 ---
 class: middle
+exclude: true
 # STRIDE with DFDs (Per .red[Interaction])
 ## Focus on Interactions
 - Interaction:   
 A source and target element connected by a data flow
 ---
 class: middle
+exclude: true
 # STRIDE with DFDs (Per .red[Interaction])
 ## Efficiencies and Savings
 - For each interactions apply STRIDE
@@ -390,6 +390,7 @@ don’t worry about T, I, or D
 ## Significant reduction in number of threats to be analyzed
 ---
 class: middle
+exclude: true
 # Trust boundaries
 ## Trusted/high code reading from untrusted/low
 - Look for Tampering threats
@@ -398,6 +399,7 @@ class: middle
 - Errors may result in Information Disclosure
 ---
 class: middle
+exclude: true
 # Avoid Distractions
 ## Applications can't do much here:
 - The computer is infected with malware
@@ -405,13 +407,12 @@ class: middle
 - Admin is attacking user
 - A user is attacking himself
 
---
-
 ## Applications can’t address any of these   
 (unless you’re the OS)
 
 ---
 class: middle
+exclude: true
 # Practice
 
 ![OWASP](https://www.owasp.org/images/1/16/Data_flow2.jpg)
@@ -421,13 +422,14 @@ class: middle
 ---
 
 class: middle
+exclude: true
 # Practice
 ![example](images/dfd.png)
 
 #### How many interactions? How many are high priority?
 ---
 class: middle
-# Observations and Reflections
+# Tool Support
 
 --
 
@@ -621,11 +623,19 @@ class: middle
 
 class: middle
 # Step 2
+## Build a DFD for the Playsound API in TMT 2016
+- Examine the threats identified
+
+???
+class: middle
+exclude: true
+# Step 2
 ## Recall the misuse case assignment
 - You identified several use cases to include misuse cases.
 
 ---
 class: middle
+exclude: true
 # Step 3
 ## Elaborate the Misuse cases using Threat models
 - Develop Level 1 DFDs that supports each of your use cases.
@@ -636,6 +646,7 @@ class: middle
 
 ---
 class: middle
+exclude: true
 # Step 4
 ## Analyze the Level 1 diagram to identify the applicable STRIDE threats
 - Examine each threat automatically identified
@@ -646,6 +657,9 @@ class: middle
 - Review OSS project actual software design for security related issues based on your threat models. Summarize your observations.
 
 ---
+class: middle
+exclude: true
+
 # Grading criteria
 
 ### Use of proper notations
@@ -661,5 +675,6 @@ class: middle
 
 ---
 class: middle
+exclude: true
 # Due Date
 Wednesday November 8th, 2017

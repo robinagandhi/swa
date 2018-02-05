@@ -215,7 +215,7 @@ class: middle
 
 --
 
-.red[Unless] the cats have an alternate food supply (mice in the room)
+.red[R1.1.1.2] Unless the cats have an alternate food supply (mice in the room)
 * .green[C1.1.1.1.2] There are no mice in the room
 
 ---
@@ -236,6 +236,12 @@ class: middle
 .red[Unless] the cats have an alternate food supply (mice in the room)
 * .green[C1.1.1.1.2] There are no mice in the room
 * .blue[E1.1.1.1.2 Month old exterminator report for rodents]
+
+---
+class: middle
+# Argument and Evidence
+* Without argument, evidence is irrelevant.
+* Without evidence the argument is not substantiated.
 
 ---
 
@@ -340,7 +346,7 @@ class: middle
 ![iso](images/iso-standard.png)
 
 ---
-# Claims
+# Claims Matter!
 ### Claims concern critical properties
 
 --
@@ -360,7 +366,7 @@ class: middle
 - .green[Good claim:] “The system is acceptably secure against communication lines related threats”
 
 ---
-# Claims
+# Claims Matter!
 
 ## Claim properties are risk-related
 - High confidence is needed in their realization
@@ -376,7 +382,7 @@ class: middle
 
 ## Example
 - .blue[The system] .green[is acceptably] .orange[secure]
-- .blue[The system] .green[has no] .orange[unacceptable consequences to assets from security threats]
+- .blue[The system] .green[has no unacceptable] .orange[consequences to assets from security threats]
 
 ---
 class: middle
