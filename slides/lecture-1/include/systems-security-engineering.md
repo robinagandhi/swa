@@ -19,7 +19,7 @@ class: center, middle
 Systems security engineering is hard. Particularly, when you have a well-resourced and capable adversary.
 
 ---
-
+exclude: true
 # Agenda
 
 1. Need for Security Engineering  
@@ -99,6 +99,7 @@ If we think of an iceberg, the visible vulnerabilities are above the waterline a
 We will refer to "above the waterline" and "below the waterline" problems
 
 ---
+exclude: true
 class: center, middle
 # Systems Engineering View
 .top-right[
@@ -106,13 +107,11 @@ class: center, middle
 ]
 
 ---
-
+exclude: true
 # Terminology
 
 ## System
 Combination of interacting .red[elements] organized to achieve stated purposes
-
---
 
 ## System Element
 Recursively defined as a .red[system]  
@@ -127,7 +126,7 @@ _Examples: hardware; .red[software]; firmware; data; facilities; materials; huma
 * One observer's system may be another observer’s system element.  
 
 ---
-
+exclude: true
 # Terminology
 
 ## System-of-Interest
@@ -143,7 +142,7 @@ _Examples: code compilers, assemblers, prototypes, test harness, unit tests_
 * The term system-of-interest is used to define the set of system elements, system element interconnections, and the environment that it operates in.
 
 ---
-
+exclude: true
 # Terminology
 
 ## Other Systems
@@ -152,7 +151,7 @@ System that interacts with the .red[system‐of‐interest] in its operational e
 _Examples: a global positioning system space vehicle being an “other system” interacting with a GPS receiver as the “system‐of‐interest.”_
 
 ---
-
+exclude: true
 class: center, middle
 ![NIST SP 800-160 Public Draft 2](images/view.png)  
 Systems Engineering View
@@ -167,16 +166,16 @@ Systems Engineering View
 # Can you think of _enabling systems_ that introduce risk?
 
 ---
-
+exclude: true
 class: center, middle
 # Security Engineering Perspective
 
 ---
+exclude: true
 # Security Engineering Perspective
 
 ## .red[Security]
 Freedom from conditions that can cause _loss of assets_ with _unacceptable consequences_
---
 
 ## .red[Engineering challenge]
 Engineer _protection capabilities_ for:
@@ -193,16 +192,13 @@ These can be adversity in the form of disruptions, hazards, and threats and are 
 Effect (change or non-change), usually associated with an event or condition or with the system and usually allowed, facilitated, caused, prevented, changed, or contributed to by the event, condition, or system.
 
 ---
-
+exclude: true
 # Security Engineering Perspective
 
 ## Goal: _have .red[protection capabilities] built-in..._
---
 
 ### .red[Active Protections]
 * .red[Mechanisms] that exhibit security behavior with functional and performance properties to satisfy security requirements
-
---
 
 ### .red[Passive Protections]
 * Provides the environment for the .red[execution] and .red[construction] of all mechanisms (general purpose and security)
@@ -215,9 +211,8 @@ These mechanisms explicitly satisfy security requirements that address the behav
 # Passive Protections:
 For example, developer training in secure coding provides for the construction of security mechanisms with a higher level of assurance. Similarly, a fully patched and hardened java runtime environment provides a protection capability to the hosted java applications. A visual studio complier with the appropriate compiler flags is also a passive protection.
 
-
 ---
-
+exclude: true
 # Protection Examples
 
 ## Active Protections
@@ -235,7 +230,7 @@ For example, developer training in secure coding provides for the construction o
 - ...
 
 ---
-
+exclude: true
 # Protection Examples
 
 ## Passive Protections
@@ -253,19 +248,16 @@ For example, developer training in secure coding provides for the construction o
 - ...
 
 ---
-
+exclude: true
 # Adequate Security
 
 ## A well-reasoned sum of both active and passive protections
---
 
 ### For all .red[system execution modes]
 e.g., initialization, operation, maintenance, training, shutdown
---
 
 ### For all .red[system states]   
 e.g., secure, nonsecure, normal, degraded, recovery
---
 
 ### For all .red[transitions]
 Between system states and between system execution modes.
@@ -316,11 +308,10 @@ Support gradation:
 \* Performed with a level of fidelity, rigor, and formality to produce data with a level of confidence that matches the assurance required by the stakeholders and engineering team
 
 ---
-
+exclude: true
 # Problem Context (1/2)
 ## .red[Security objectives]
 What it means to be _adequately_ secure for the assets and the consequences of asset loss against which security will be assessed
---
 
 ## .red[Measures of success]
 Strength of protection and level of assurance in the engineered protection capability
@@ -334,6 +325,8 @@ This is where you start to think of your mission/business processes. What assets
 The security objectives have associated measures of success. The two combine to drive the development of security requirements and the development of assurance claims
 
 ---
+
+exclude: true
 # Problem Context (2/2)
 
 ## .red[Life cycle security concepts]
@@ -349,7 +342,7 @@ Distinct contexts for interpretation of security and the associated processes, m
 - Retirement
 
 --
-
+exclude: true
 ## .red[Security requirements]
 Specifies the functional, assurance, and strength characteristics for a protection mechanism
 
@@ -362,7 +355,7 @@ Specifies the functional, assurance, and strength characteristics for a protecti
 - Rigor in the coding standard and its security relevance is a strength characteristic  
 
 ---
-
+exclude: true
 # Solution Context
 
 ### .red[Define security aspects of the solution]:

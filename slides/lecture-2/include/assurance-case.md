@@ -479,6 +479,15 @@ class: middle
 
 ---
 class: middle
+# Justification
+
+## Provides .red[rationale] for the use/selection of a claim or strategy
+
+## Example
+- Intelligence reports of malicious code in nuclear energy software
+
+---
+class: middle
 # Assumption
 
 ## A statement whose validity has to be relied upon in order to make an argument
@@ -488,14 +497,6 @@ class: middle
 ## Example
 - Nuclear energy safety mechanisms do not include software
 
----
-class: middle
-# Justification
-
-## Provides .red[rationale] for the use/selection of a claim or strategy
-
-## Example
-- Intelligence reports of malicious code in nuclear energy software
 
 ---
 class: middle
@@ -561,6 +562,7 @@ class: middle
 ## Grammatical Guidance
 - Must be a .blue[noun phrase] only (NO verb phrase)
 - Should .red[not] be stated as a claim
+- Describes an entity to be used as evidence
 
 ---
 class: middle
@@ -595,9 +597,13 @@ class: center, middle
 --
 
 ## Claim: .blue[The bulb] .green[will] .orange[glow when switched on]
+
+--
 - .red[Unless] switch not connected to light
 - .red[Unless] no power
 - .red[Unless] dead light bulb  
+
+--
 ![light](images/lightexample.png)
 
 ???

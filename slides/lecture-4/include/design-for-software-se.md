@@ -196,6 +196,21 @@ class: middle
 - Identify all External Interactors
 - Draw data flows to connect them
 ---
+
+class: middle
+# Playsound API
+
+"_The PlaySound API takes as input a string which represents either a WAV filename or an alias.  If the input is an alias, the PlaySound API retrieves data from the registry under HKCU to convert the alias into a filename.  Once the filename is determined, the PlaySound API opens the WAV file specified and reads the two relevant pieces from the file: the WAVEFORMATEX that defines the type of data in the file and the actual audio data.  It then hands that data to the audio rendering APIs._"
+
+## Build a Threat Model based on this description
+
+???
+
+![solution](images/playsoundthreatmodel.png)  
+http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
+
+---
+
 class: middle
 # DFD Construction
 ## Step 2
@@ -568,19 +583,7 @@ Testers often finds issues with threat model or details
 1. Is each threat mitigated?
 1. Are mitigations done right?  (Assurance case?)
 ---
-class: middle
-# Playsound API
 
-"_The PlaySound API takes as input a string which represents either a WAV filename or an alias.  If the input is an alias, the PlaySound API retrieves data from the registry under HKCU to convert the alias into a filename.  Once the filename is determined, the PlaySound API opens the WAV file specified and reads the two relevant pieces from the file: the WAVEFORMATEX that defines the type of data in the file and the actual audio data.  It then hands that data to the audio rendering APIs._"
-
-## Build a Threat Model based on this description
-
-???
-
-![solution](images/playsoundthreatmodel.png)  
-http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
-
----
 # Making this Fun
 
 ## Elevation of Privilege Card Game
