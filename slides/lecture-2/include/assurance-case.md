@@ -10,7 +10,7 @@ This slide deck is based several sources as follows:
 2. [IEEE Standard— Adoption of ISO/IEC 15026-2:2011](https://www.iso.org/standard/52926.html)
 Systems and Software Engineering— Systems and Software Assurance— Part 2: Assurance Case
 3. Research papers on Eliminative Induction use in Assurance Cases
-4. SEI publications on Assurance case use in Safety Cases
+4. [SEI publications on Assurance case use in Safety Cases](https://insights.sei.cmu.edu/sei_blog/2013/08/assurance-cases-and-confidence.html)
 
 ---
 class: middle

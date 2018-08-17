@@ -219,7 +219,7 @@ Check your configuration changes by using the following command:
 git config --list
 ```
 
-You only have to set the config parameters once. Now that they are set, git will keep reusing them when making commits or merging your changes with other repositories. To check your global config parameters, `--global` flag can be added to the previous command. With the `--global` command, the configuration can be checked irrespective of a specific respository. 
+You only have to set the config parameters once. Now that they are set, git will keep reusing them when making commits or merging your changes with other repositories. To check your global config parameters, `--global` flag can be added to the previous command. With the `--global` command, the configuration can be checked irrespective of a specific respository.
 
 Now let's commit the changes that we staged before. Here we use the `commit` option with `-m` to provide a short commit message. This helps us remember various checkpoints in our editing process. These messages are very helpful to rollback changes to an appropriate commit.
 
