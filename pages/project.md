@@ -25,26 +25,29 @@ The project will have the following deliverables:
   * Derive security requirements for use cases using misuse case diagrams.
   * Assess alignment of security requirements with advertised features. Review OSS project documentation and codebase to support your observations.
   * Review OSS project documentation for security-related configuration and installation issues. Summarize your observations.
+  * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
 1. **Assurance Cases Software Security Engineering**: A markdown report that includes the following:
   * Using security requirements, identify five assurance claims
   * Prepare a convincing argument in support of the claims. Document this argument using an assurance case for each of the claims.
   * Collect evidence as required by the from the OSS project.
+  * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
 1. **Designing for Software Security Engineering**: A markdown report that describes the following:
   * Develop threat models for critical data-flows through the software. Misuse and assurance cases will provide starting points for examination. Include threat model diagrams. See class assignment for details.   
   * Review OSS project actual software design for security related issues. Summarize your observations.
+  * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
 1. **Code analysis for Software Security Engineering**: A markdown report that describes the following:
   * Code review strategy
   * Manual code review of critical security functions identified in misuse cases, assurance cases and threat models.
   * Automated code scanning (if available). Include links to full reports.
   * Summary of key findings from manual and/or automated scanning. This summary may include categorization, mappings to CWEs, CAPECs, Risk Levels, etc.
   * Links to any pull requests, issues, discussion, etc. from the team to the original project and any follow-up interactions.
+  * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
 1. **Class Presentation**: 10-minute class presentation that highlights the following:
   * Project description
   * Gaps in security requirements and design of the original project
   * Assurance claims
   * Findings from code review and automated software scanning
   * Contributions to the original project (documentation, design changes, code changes, communications)
-
 
 ## Project Hall of Fame
 * [List of successful contributions to OSS projects from student teams](https://robinagandhi.github.io/swa/pages/halloffame.html)  

@@ -74,11 +74,10 @@ In-class exercises will correspond to the stages of the software development lif
 Read all about it [here](https://robinagandhi.github.io/swa/pages/project.html).
 
 # Grading
-20% In-class quizzes, open discussion, and class participation  
 20% Mid-term  
 20% Final exam (Comprehensive)  
-20% Assignments (Many of them in-class)  
-20% Semester Project and Presentation (Team-based)
+20% In-class quizzes, open discussion, and class participation  
+40% Assignments, Semester Project and Presentation (Team-based)  
 
 # Course Meeting Schedule
 In this semester there are scheduled ~16 class periods on Wednesdays for 160 minutes each. Accounting for in-class exams, project presentations, inclement weather days, instructor travel to conferences and the like we will have something closer to 10-11 class periods for instruction.
