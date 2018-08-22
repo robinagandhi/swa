@@ -45,15 +45,15 @@ A issue in the bash shell that allowed arbitrary commands to be executed when th
 class: center, middle
 [![ghost](http://www.upstream.be/wp-content/uploads/2015/01/red-gost.jpg)](https://blog.qualys.com/laws-of-vulnerabilities/2015/01/27/the-ghost-vulnerability)
 ???
-The GHOST vulnerability is a serious weakness in the Linux glibc library. It allows attackers to remotely take complete control of the victim system without having any prior knowledge of system credentials. CVE-2015-0235 has been assigned to this issue.
+The GHOST vulnerability is a serious weakness in the Linux glibc library. It allows attackers to remotely take complete control of the victim system without having any prior knowledge of system credentials. CVE-2015-0235 has been assigned to this issue. The flaw existed in a DNS client-side resolver in glibc, and was exploitable through the use of a particular function called getaddrinfo(). It allowed attackers to use DNS servers or domains in their control to essentially takeover systems and applications running the flawed software. All major Linux distributions and the glibc project have issued patches for the problem.
+
 ---
 class: center, middle
-[![badlock](http://img.deusm.com/darkreading/2016/04/1325083/badlock.png)](http://www.darkreading.com/vulnerabilities---threats/badlock-bug-declared-a-bust--but-patch-anyway/d/d-id/1325083)
+# [Marshalling Pickles](https://frohoff.github.io/appseccali-marshalling-pickles/)
 ???
-## Badlock
-Badlock bug in Windows and Samba revealed that the vulnerability was no blockbuster after all, but rather a widespread--and not critical-- vulnerability that can be abused in man-in-the-middle attacks in file server environments.
+# Java Deserialization Bug
+Object serialization technologies allow programs to easily convert in-memory objects to and from various binary and textual data formats for storage or transfer – but with great power comes great responsibility, because deserializing objects from untrusted data can ruin your day. We will look at historical and modern vulnerabilities across different languages and serialization technologies, including Python, Ruby, and Java, and show how to exploit these issues to achieve code execution. We will also cover some strategies to protect applications from these types of attacks.
 
-An attacker could intercept a user’s credentials and steal or modify files, or wage a denial-of-service attack, but he or she would have to be on the same network as the victim, security experts say.
 ---
 class: center, middle
 # [#gotofail](https://www.imperialviolet.org/2014/02/22/applebug.html)
@@ -63,15 +63,17 @@ Two goto fail lines in a row. The first one is correctly bound to the if stateme
 
 ---
 class: center, middle
-# [Quadrooter](https://www.defcon.org/html/defcon-24/dc-24-speakers.html#Donenfeld)
-???
-* 2016
-4 flaws in android discovered by a checkpoint researchers.
-Challenge faced with fixing the Quadrooter flaws:
-"Qualcomm has a significant position in the development chain, in that a phone maker isn't taking the Android open-source code directly from Google, they're actually taking it from Qualcomm,"
-http://www.zdnet.com/article/quadrooter-security-flaws-affect-over-900-million-android-phones/
+.left-column[
+![meltdown](https://meltdownattack.com/images/meltdown.min.svg)
+]
+.right-column[
+![specter](https://meltdownattack.com/images/spectre.min.svg)
+]
 
-https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2503
+???
+* 2017
+Meltdown and Spectre exploit critical vulnerabilities in modern processors. These hardware vulnerabilities allow programs to steal data which is currently processed on the computer. While programs are typically not permitted to read data from other programs, a malicious program can exploit Meltdown and Spectre to get hold of secrets stored in the memory of other running programs. This might include your passwords stored in a password manager or browser, your personal photos, emails, instant messages and even business-critical documents.
+https://meltdownattack.com
 
 ---
 class: center, middle
@@ -79,8 +81,14 @@ class: center, middle
 [![issues](http://techrights.org/wp-content/uploads/2015/04/ven2-1024x774.png)](http://techrights.org/2015/07/01/sonatype-marketing/)
 
 ---
-## [Security Concerns in 2016](http://www.csoonline.com/article/3013107/security/forecast-2016-security-takes-center-stage.html)
+.left-column[
+## [2016](http://www.csoonline.com/article/3013107/security/forecast-2016-security-takes-center-stage.html)
 ![2016](http://core0.staticworld.net/images/article/2015/11/cw_techforecast2016_03_budget_booms_and_busts-100629394-large.idge.png)
+]
+.right-column[
+## 2018
+![2018](https://zdnet1.cbsistatic.com/hub/i/2017/09/27/c65515b4-a564-44a0-9ee6-158df503f167/c138729965d13c1fd6b89d3e216911b9/itbudgetsinfographic09272017.jpg)
+]
 ???
 # 2016 Predictions
 
@@ -95,7 +103,7 @@ class: middle
 - OS security
 - Active Directory
 ???
-# 2017 Predictions
+# 2017 Predictions. What are CSO's most worried about, perhaps it is reflected in their search patterns.
 ---
 
 class: left, middle
@@ -163,11 +171,15 @@ class: center, middle
 class: center, middle
 # What is Software Assurance?
 ---
-# NASA Definition
+# [NASA Definition](https://sma.nasa.gov/sma-disciplines/software-assurance)
 ## The planned and systematic set of activities that ensures that .red[software processes and products] conform to requirements, standards, and procedures.
 .red[Processes]: include all of the activities involved in designing, developing, enhancing, and maintaining software    
 
-.red[Products]: include the software, associated data, its documentation, and all supporting and reporting paperwork  
+.red[Products]: include the software, associated data, its documentation, and all supporting and reporting paperwork
+
+.top-right[
+![umbrella](https://sma.nasa.gov/images/default-source/discipline-pages/Software_Assurance/software-assurance-umbrella.png)
+]  
 ???
 * The theme is organizational in nature and emphasizes a well thought-out set of activities to achieve compliance with organizational best practices, requirements standards and procedures.
 * Process (a complete cradle to grave  approach for the software lifecycle)
@@ -207,7 +219,7 @@ DHS definition is a medely of all prior definitions with a focus on engineering,
 ## Secure software cannot be intentionally .red[subverted or forced to fail]
 The software that remains .red[correct] and predictable in spite of intentional efforts to compromise .red[dependability]
 ???
-Leave it to academics to use big words!
+Leave it to academics to use big words! It tells you what the outcome is, but you have no idea what to do to get there.
 ---
 # Software Engineering Institute
 
@@ -226,12 +238,14 @@ Application of .green[technologies and processes] to achieve a required level of
 .red[Contain] the damage and recover to a normal level of operation as soon as possible  
 ???
 Highlights:
-* The focus of the definition is on Assurance: Providing the _Basis for the Belief_
+* The focus of the definition is on Assurance: Providing the _Basis for the Belief_ in situations when it is impossible to examine all circumstances related to the threat environment
 * Software behavior is tied to it threat environment (avoid making general statements about secure software)
 * Account for known attacks
 * Acknowledge unknown attacks and plan for them.
 * Recover from failures --> This is "resiliency"
 # This is an outcome of Software Security Engineering
+
+* Question: So when are attacks successful?
 ---
 
 # Software Weakness
@@ -256,7 +270,7 @@ Next &mdash; How do we go about it?
 A new term is introduced here to further clarify __Software Assurance__. This terms is better than saying _secure software_. The term security engineering reflects the intent that software has been developed and tested to operate as intended in its operational environment.
 ---
 class: left, middle
-## Probably the most serious risk in system software is incomplete design, in the sense that .red[inadvertent loopholes] exist in the protective barriers and have not been .red[foreseen by the designers].
+## Probably the most serious risk in .red[system software] is incomplete design, in the sense that .red[inadvertent loopholes] exist in the protective barriers and have not been .red[foreseen by the designers].
 .footnote[
 The Ware Report, __1969__
 ]
@@ -321,6 +335,8 @@ Software works as expected despite the presence of certain internal and external
 ---
 class: center, middle
 # A Winning Strategy
+???
+So where do the various security related activities fit? Slides provided by Ron Ross, current head of the NIST FISMA program.
 
 ---
 class: center, middle
@@ -362,8 +378,3 @@ Carl Landwehr, CACM, February **2015**
 class: center, middle
 # Discussion?
 ![that-dont-make-no-sense](https://media.giphy.com/media/DO5JobrylWL7i/giphy.gif)
-
----
-class: center, middle
-# Next up...
-## Engineering for Assurance
