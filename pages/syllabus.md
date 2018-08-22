@@ -40,11 +40,23 @@ Instead of a single textbook, I have identified a series of books available from
 
 * [Software Security: Building Security In, By Gary McGraw](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0321356705)
 
+* [High Assurance Design: Architecting Secure and Reliable Enterprise Applications, By Clifford J. Berg](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0321375777)
+
+* [Secure Programming with Static Analysis, By Brian Chess and Jacob West](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/9780321424778)
+
 * [Secure Coding in C and C++, By Robert C. Seacord](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/9780132981989)
+
+* [Design Patterns: Elements of Reusable Object-Oriented Software, By Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0201633612)
 
 * [Learning Python Design Patterns, By Gennadiy Zlobin ](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/book/programming/python/9781783283378)(Noteworthy patterns in this book: Facade, Singleton, MVC, Observer, Command, Factory)
 
+* [Exploiting Software: How to Break Code, By Greg Hoglund, Gary McGraw](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0201786958)
+
 * [The Browser Hacker's Handbook, By Wade Alcorn; Christian Frichot; Michele Orru](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/book/networking/security/9781118662090)
+
+## Other Reference Books
+
+* Problem Frames: Analyzing and Structuring Software Development Problems, By Michael Jackson, Addison-Wesley
 
 I will post Lecture slides, readings, and supplemental materials in Canvas. Much of the course content will be maintained on Github.
 
