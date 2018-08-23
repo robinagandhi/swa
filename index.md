@@ -25,6 +25,7 @@ Content will be linked as we progress through the semester. This allows to me to
   * Talk by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 1. **Assurance Cases for Software Security Engineering**
   * Reading: [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
+  * Reference: [OMG Structured Assurance Case Metamodel](https://www.omg.org/spec/SACM/About-SACM)
   * Diagramming: Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
   * Reference: Formal diagramming in [Adelard ASCE](https://www.adelard.com/asce/choosing-asce/index.html)  
   * Assignment: Assurance Case Exercise

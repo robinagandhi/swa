@@ -63,7 +63,7 @@ I will post Lecture slides, readings, and supplemental materials in Canvas. Much
 # Additional References
 
 * [Secure Programming for Linux and Unix HOWTO](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html), David Wheeler  
-* [Software Assurance in Education, Training and Certification, Pocketguide](http://faculty.ist.unomaha.edu/rgandhi/swa/SwAPGWET/Home.html), Ed. Robin Gandhi
+* [Software Assurance in Education, Training and Certification, Pocketguide](https://robinagandhi.github.io/swa/resources/pocketguide.pdf), Ed. Robin Gandhi
 (This handout provides a comprehensive list of references and book on software assurance and certification options)
 * [SEI Book Series on Software Assurance](http://resources.sei.cmu.edu/library/asset-view.cfm?assetid=465870)
 
