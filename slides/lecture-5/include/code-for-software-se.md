@@ -81,6 +81,11 @@ class: middle
 ## Prioritization
 - .red[Ranking] of software weaknesses related to design and code
 
+???
+
+The way CWEs are authored based on Christey, Steven M. <coley@mitre.org>:
+_Typically, we try to write CWE descriptions that describe <behaviors> that operate on <resources> in ways that violate desired <properties> that, under the right circumstances, can be exploited by <attackers> to cross a security boundary._
+
 ---
 
 class: middle
