@@ -2,14 +2,13 @@ class: center, middle
 # Systems Security Engineering*
 
 .footnote[
-\*Based on Chapter 2 of [NIST SP 800-160 Systems Security Engineering](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf)  
+\*Based on Chapter 2 of [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)  
 which expands on [ISO/IEC/IEEE 15288:2015
 Systems and software engineering](http://www.iso.org/iso/catalogue_detail?csnumber=63711)
 ]
 
 ???
-Appendices to NIST SP 800-160 are going to be added soon.
-https://beta.csrc.nist.gov/News/2016/NIST-Special-Publication-800-160,-Systems-Secu-%281%29
+[Appendices to NIST SP 800-160](https://csrc.nist.gov/Projects/Systems-Security-Engineering-Project/publications)
 
 ---
 
@@ -99,7 +98,6 @@ If we think of an iceberg, the visible vulnerabilities are above the waterline a
 We will refer to "above the waterline" and "below the waterline" problems
 
 ---
-exclude: true
 class: center, middle
 # Systems Engineering View
 .top-right[
@@ -107,7 +105,6 @@ class: center, middle
 ]
 
 ---
-exclude: true
 # Terminology
 
 ## System
@@ -126,7 +123,6 @@ _Examples: hardware; .red[software]; firmware; data; facilities; materials; huma
 * One observer's system may be another observer’s system element.  
 
 ---
-exclude: true
 # Terminology
 
 ## System-of-Interest
@@ -142,7 +138,6 @@ _Examples: code compilers, assemblers, prototypes, test harness, unit tests_
 * The term system-of-interest is used to define the set of system elements, system element interconnections, and the environment that it operates in.
 
 ---
-exclude: true
 # Terminology
 
 ## Other Systems
@@ -151,7 +146,6 @@ System that interacts with the .red[system‐of‐interest] in its operational e
 _Examples: a global positioning system space vehicle being an “other system” interacting with a GPS receiver as the “system‐of‐interest.”_
 
 ---
-exclude: true
 class: center, middle
 ![NIST SP 800-160 Public Draft 2](images/view.png)  
 Systems Engineering View
@@ -166,12 +160,10 @@ Systems Engineering View
 # Can you think of _enabling systems_ that introduce risk?
 
 ---
-exclude: true
 class: center, middle
 # Security Engineering Perspective
 
 ---
-exclude: true
 # Security Engineering Perspective
 
 ## .red[Security]
@@ -192,7 +184,6 @@ These can be adversity in the form of disruptions, hazards, and threats and are 
 Effect (change or non-change), usually associated with an event or condition or with the system and usually allowed, facilitated, caused, prevented, changed, or contributed to by the event, condition, or system.
 
 ---
-exclude: true
 # Security Engineering Perspective
 
 ## Goal: _have .red[protection capabilities] built-in..._
@@ -212,7 +203,6 @@ These mechanisms explicitly satisfy security requirements that address the behav
 For example, developer training in secure coding provides for the construction of security mechanisms with a higher level of assurance. Similarly, a fully patched and hardened java runtime environment provides a protection capability to the hosted java applications. A visual studio complier with the appropriate compiler flags is also a passive protection.
 
 ---
-exclude: true
 # Protection Examples
 
 ## Active Protections
@@ -230,7 +220,6 @@ exclude: true
 - ...
 
 ---
-exclude: true
 # Protection Examples
 
 ## Passive Protections
@@ -248,7 +237,6 @@ exclude: true
 - ...
 
 ---
-exclude: true
 # Adequate Security
 
 ## A well-reasoned sum of both active and passive protections
@@ -289,11 +277,11 @@ The framework is independent of system type and engineering or acquisition proce
 
 ---
 class: center, middle
-![NIST SP 800-160 Public Draft 2](images/framework.png)  
+![NIST SP 800-160 Chapter 2](images/framework.png)  
 ???
 
 ???
-Figure source: [NIST SP 800-160 Systems Security Engineering &mdash; Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
+Figure source: [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
 
 # Systems Security Engineering Framework
 Establishing problem, solution, and trustworthiness contexts as key components of a systems security engineering framework ensures that the security of a system is based on achieving a sufficiently complete understanding of the problem as defined by a set of stakeholder security objectives, security concerns, protection needs, and security requirements. This understanding is essential in order to develop effective security solutions &mdash; that is, a system that is sufficiently trustworthy and adequately secure to protect stakeholder’s assets in terms of loss and the associated consequences.
@@ -325,8 +313,7 @@ This is where you start to think of your mission/business processes. What assets
 The security objectives have associated measures of success. The two combine to drive the development of security requirements and the development of assurance claims
 
 ---
-
-exclude: true
+exclude:true
 # Problem Context (2/2)
 
 ## .red[Life cycle security concepts]
@@ -342,7 +329,7 @@ Distinct contexts for interpretation of security and the associated processes, m
 - Retirement
 
 --
-exclude: true
+exclude:true
 ## .red[Security requirements]
 Specifies the functional, assurance, and strength characteristics for a protection mechanism
 
@@ -355,7 +342,7 @@ Specifies the functional, assurance, and strength characteristics for a protecti
 - Rigor in the coding standard and its security relevance is a strength characteristic  
 
 ---
-exclude: true
+exclude:true
 # Solution Context
 
 ### .red[Define security aspects of the solution]:
@@ -370,7 +357,7 @@ exclude: true
 - Analysis, demonstration, inspection, and test
 
 ---
-
+exclude:true
 # Trustworthiness Context
 
 ### .red[Developing and maintaining the assurance case]
@@ -385,29 +372,11 @@ Assurance cases also provide reasoned, auditable artifacts that support the cont
 ---
 
 class: center, middle
-![NIST SP 800-160 Public Draft 2](images/framework-course-topics.png)  
+![NIST SP 800-160](images/framework-course-topics.png)  
 ???
-Figure source: [NIST SP 800-160 Systems Security Engineering &mdash; Public Draft 2](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
+Figure source: [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
 
 ---
-
-class:center, middle
-# Next Up
-Constructing Assurance Cases using Goal Structuring Notation
-
-TODO: Create a [Lucidchart Account](https://www.lucidchart.com/pages/usecase/education) using your `.edu` email
-
----
-
-![preview](images/preview.svg)
-???
-Source: This example is based on the presentation of this paper given at ICSE conference: J. B. Goodenough, C. B. Weinstock and A. Z. Klein, "Eliminative induction: A basis for arguing system confidence," 2013 35th International Conference on Software Engineering (ICSE), San Francisco, CA, 2013, pp. 1161-1164.
----
-class: center, middle
-# Systems Engineering Lifecycle Processes
-
----
-
 ![lifecycle processes](images/systems-engineering-lifecycle-processes.png)
 ???
-Figure source: [NIST SP 800-160 Systems Security Engineering](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf)  
+Figure source: [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)

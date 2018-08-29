@@ -52,7 +52,7 @@ class: center, middle
 # [Marshalling Pickles](https://frohoff.github.io/appseccali-marshalling-pickles/)
 ???
 # Java Deserialization Bug
-Object serialization technologies allow programs to easily convert in-memory objects to and from various binary and textual data formats for storage or transfer – but with great power comes great responsibility, because deserializing objects from untrusted data can ruin your day. We will look at historical and modern vulnerabilities across different languages and serialization technologies, including Python, Ruby, and Java, and show how to exploit these issues to achieve code execution. We will also cover some strategies to protect applications from these types of attacks.
+Object serialization technologies allow programs to easily convert in-memory objects to and from various binary and textual data formats for storage or transfer – but with great power comes great responsibility, because deserializing objects from untrusted data can ruin your day.
 
 ---
 class: center, middle
@@ -235,9 +235,10 @@ Application of .green[technologies and processes] to achieve a required level of
 
 .red[Tolerate] as many as possible of those attacks it cannot resist  
 
-.red[Contain] the damage and recover to a normal level of operation as soon as possible  
+.red[Contain] the damage and recover to a normal level of operation as soon as possible for attacks that cannot be tolerated  
 ???
 Highlights:
+* This claim is complex enough that we cannot possibly examine every circumstance related to it.
 * The focus of the definition is on Assurance: Providing the _Basis for the Belief_ in situations when it is impossible to examine all circumstances related to the threat environment
 * Software behavior is tied to it threat environment (avoid making general statements about secure software)
 * Account for known attacks
@@ -248,7 +249,7 @@ Highlights:
 * Question: So when are attacks successful?
 ---
 
-# Software Weakness
+# [Software Weakness](https://cwe.mitre.org/documents/glossary/index.html#Weakness)
 
 ## A type of .red[mistake] in software that, in proper conditions, could contribute to the introduction of vulnerabilities within that software.
 Weakness are any mistakes in implementation, design, or other phases of the software development lifecycle.
@@ -267,7 +268,7 @@ Next &mdash; How do we go about it?
 ]
 
 ???
-A new term is introduced here to further clarify __Software Assurance__. This terms is better than saying _secure software_. The term security engineering reflects the intent that software has been developed and tested to operate as intended in its operational environment.
+A new term is introduced here to further clarify __Software Assurance__. This term is better than saying _secure software_. The term security engineering reflects the intent that software has been developed and tested to operate as intended in its operational environment.
 ---
 class: left, middle
 ## Probably the most serious risk in .red[system software] is incomplete design, in the sense that .red[inadvertent loopholes] exist in the protective barriers and have not been .red[foreseen by the designers].
