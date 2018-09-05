@@ -30,29 +30,29 @@ description: CYBR 8420 Software Assurance Syllabus
 
 Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to log in with you NU-ID and password (you may have to set or reset it) to access these books.
 
-* [Secure Coding Principles and Practice, By Mark G. Graff; Kenneth R. van Wyk](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0596002424)
+* [Secure Coding Principles and Practice, By Mark G. Graff; Kenneth R. van Wyk](https://www.safaribooksonline.com/library/view/secure-coding-principles/0596002424)
 
-* [System Assurance: beyond Detecting Vulnerabilities, By Mansourov, Nikolai, and Djenana Campara](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/book/software-engineering-and-development/enterprise/9780123814142) (Standards-based definition and assessment of software weaknesses, creating an assurance argument)
+* [System Assurance: beyond Detecting Vulnerabilities, By Mansourov, Nikolai, and Djenana Campara](https://www.safaribooksonline.com/library/view/system-assurance/9780123814142) (Standards-based definition and assessment of software weaknesses, creating an assurance argument)
 
-* [Software Security Engineering, By Julia H. Allen; Sean Barnum; Robert J. Ellison; Gary McGraw; Nancy R. Mead](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/book/networking/security/9780321559685)
+* [Software Security Engineering, By Julia H. Allen; Sean Barnum; Robert J. Ellison; Gary McGraw; Nancy R. Mead](https://www.safaribooksonline.com/library/view/software-security-engineering/9780321559685)
 
-* [Enterprise Software Security, By Kenneth R. van Wyk; Mark G. Graff; Dan S. Peters; Diana L. Burley](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/book/networking/security/9780321604378)
+* [Enterprise Software Security, By Kenneth R. van Wyk; Mark G. Graff; Dan S. Peters; Diana L. Burley](https://www.safaribooksonline.com/library/view/enterprise-software-security/9780321604378)
 
-* [Software Security: Building Security In, By Gary McGraw](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0321356705)
+* [Software Security: Building Security In, By Gary McGraw](https://www.safaribooksonline.com/library/view/software-security-building/0321356705)
 
-* [High Assurance Design: Architecting Secure and Reliable Enterprise Applications, By Clifford J. Berg](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0321375777)
+* [High Assurance Design: Architecting Secure and Reliable Enterprise Applications, By Clifford J. Berg](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0321375777) [Old App e-book]
 
-* [Secure Programming with Static Analysis, By Brian Chess and Jacob West](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/9780321424778)
+* [Secure Programming with Static Analysis, By Brian Chess and Jacob West](https://www.safaribooksonline.com/library/view/secure-programming-with/9780321424778)
 
-* [Secure Coding in C and C++, By Robert C. Seacord](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/9780132981989)
+* [Secure Coding in C and C++, By Robert C. Seacord](https://www.safaribooksonline.com/library/view/secure-coding-in/9780132981989)
 
-* [Design Patterns: Elements of Reusable Object-Oriented Software, By Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0201633612)
+* [Design Patterns: Elements of Reusable Object-Oriented Software, By Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides](https://www.safaribooksonline.com/library/view/design-patterns-elements/0201633612)
 
-* [Learning Python Design Patterns, By Gennadiy Zlobin ](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/book/programming/python/9781783283378)(Noteworthy patterns in this book: Facade, Singleton, MVC, Observer, Command, Factory)
+* [Learning Python Design Patterns, By Gennadiy Zlobin ](https://www.safaribooksonline.com/library/view/learning-python-design/9781783283378)(Noteworthy patterns in this book: Facade, Singleton, MVC, Observer, Command, Factory)
 
-* [Exploiting Software: How to Break Code, By Greg Hoglund, Gary McGraw](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0201786958)
+* [Exploiting Software: How to Break Code, By Greg Hoglund, Gary McGraw](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0201786958) [Old e-book App]
 
-* [The Browser Hacker's Handbook, By Wade Alcorn; Christian Frichot; Michele Orru](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/book/networking/security/9781118662090)
+* [The Browser Hacker's Handbook, By Wade Alcorn; Christian Frichot; Michele Orru](https://www.safaribooksonline.com/library/view/the-browser-hackers/9781118662090)
 
 ## Other Reference Books
 
