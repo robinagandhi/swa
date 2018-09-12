@@ -17,19 +17,22 @@ class: center, middle
 
 ---
 class: middle
-# [NIST SP 800-160 SSE](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf)
+# [NIST SP 800-160 SSE](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
 ## .green[Stakeholder Needs and Requirements] Definition Process\*
-- **Purpose:** _.red[Define the stakeholder security requirements] that include [protection capability](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#20), security characteristics, and security-driven constraints for the systems, so as to securely provide the capabilities needed by users and other stakeholders in a defined environment._
+- **Purpose (Security Perspective):** _.red[Define the stakeholder security requirements] that include [protection capability](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#15), security characteristics, and security-driven constraints for the systems, so as to securely provide the capabilities needed by users and other stakeholders in a defined environment._
 
 .footnote[
 \*ISO/IEC/IEEE 15288-2015
 ]
 
+???
+The purpose is from a security perspective.
+
 ---
 class: middle
-# [NIST SP 800-160 SSE](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160.pdf)
+# [NIST SP 800-160 SSE](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
 ## .green[System Requirements] Definition Process\*
-- **Purpose:** _.red[transform the stakeholder security requirements into the system requirements] that reflect a .red[technical security view] of the system._
+- **Purpose (Security Perspective):** _.red[transform the stakeholder security requirements into the system requirements] that reflect a .red[technical security view] of the system._
 
 .footnote[
 \*ISO/IEC/IEEE 15288-2015
@@ -37,11 +40,11 @@ class: middle
 
 ---
 class: middle
-# .red[Stakeholder] Needs and Requirements
+# .red[Stakeholder Needs and Requirements] vs .blue[System Requirements]
 
 ## Litmus test
 - Even if you did not build the _software_ the **stakeholder** will still have these needs and requirements!
-- They are located in the [environment of operation for the system-of-interest\*](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#14)
+- They are located in the [environment of operation for the system-of-interest\*](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#12)
 
 .footnote[
 \* Michael Jackson, [The Meaning of Requirements, 1996](http://mcs.open.ac.uk/mj665/aserqts5.pdf)
@@ -77,7 +80,7 @@ class: middle
 ## .blue[Why] and .green[how] and would .orange[someone] use software?
 - Goal-driven Scenarios
 - They describe system behavior to fulfill user needs
-- Several [templates](http://alistair.cockburn.us/Basic+use+case+template) available for [use cases](http://alistair.cockburn.us/Structuring+use+cases+with+goals)  
+- Several [templates](http://www.cs.otago.ac.nz/coursework/cosc461/uctempla.htm) available for [use cases](http://www.cs.otago.ac.nz/coursework/cosc461/usecases.htm)  
   .red[Purpose] = build requirements  
   Contents = have consistent prose  
   Plurality = include multiple scenarios per use case  
@@ -102,7 +105,7 @@ class: middle
 
 ---
 
-![userstories](http://butlerhouse.net/wp-content/uploads/2014/09/user-story-asteroids.jpg)
+![userstories](http://1.bp.blogspot.com/_k29Vs3aHPNs/TVE4LXuamFI/AAAAAAAACSY/cpnxwiQx310/s1600/user+story+asteroids.jpg)
 
 
 ???
@@ -139,7 +142,7 @@ class: middle
 - .red[Optative]: expresses a wish (R)   
 Desired condition over the phenomena of the environment
 - .red[Indicative]: expresses things existing in the problem world (D)   
-Given properties of the environment
+Given properties of the environment of operation
 
 ---
 class: middle
@@ -191,9 +194,9 @@ class: middle
 class: middle
 # Problem Frames
 
-- The machine solves a problem in the application domain (part of the world)
-- The machine and the application domain interact at an interface of shared phenomena (events, states)
-- The requirement adds a constraint to the application domain’s intrinsic properties or behavior
+- The machine solves a problem in the environment of operation
+- The machine and the environment of operation interact at an interface of shared phenomena (events, states)
+- The requirement adds a constraint to the intrinsic properties or behavior of the environment of operation
 
 ![legend](images/problem-frame.svg)
 ---
@@ -219,7 +222,7 @@ class: middle
 ![example](images/example.svg)
 
 .footnote[
-Recap: Requirements are about .red[relationships] in the application domain
+Recap: Requirements are about .red[relationships] in the environment of operation
 ]
 
 ---
@@ -458,240 +461,6 @@ class: middle
 ]
 
 ---
-class: middle
-# Abstractions for Security Requirements Elicitation
-.top-right[
-![business-analyst](https://s-media-cache-ak0.pinimg.com/564x/a6/c1/62/a6c162f649bd64050235f624b0972dce.jpg)
-]
----
-class: middle
-# Security Requirement Sources
-## Security Policies
-- Stakeholder Security Needs
-- Auditing Needs
-- [Certification Needs](http://static1.1.sqspcdn.com/static/f/702523/26767149/1451886707923/201601-Gandhi.pdf?token=l4NhzGQJsXEqUX7CIOwzoK5au%2BM%3D)
-- Survivability and Maintainability Needs
-
-## Risk assessment
-- Data, Software, Human or Organization, and Physical assets
-
-## Assurance Needs
-## Deception Needs
----
-class: middle
-# Primary elicitation techniques
-
-## 1. Goal-driven approach
-- Attacker goal is to violate security expectations
-- [Anti-goals](https://www.info.ucl.ac.be/~avl/files/avl-Icse04-AntiGoals.pdf), [Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html), [N-SoftGoals](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.103.2997&rep=rep1&type=pdf)
-
---
-
-## 2. Scenario-driven approach
-- Negative scenarios (desired future experience, story grounded in real world, thread through a model)
-- [Misuse cases](http://www.scenarioplus.org.uk/papers/misuse_cases_ieee_jan_2003.pdf), [Abuse frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), [Keywords/checklists](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx)
-
---
-
-## 3. Viewpoint-oriented approach
-- [Cross-cutting views](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1048526), [conflicts](http://www.panda.sys.t.u-tokyo.ac.jp/kushiro/ReferencePaper/Requirements%20engineering/00487319.pdf)
-- Attacker views, security properties, tradeoffs
-
----
-class: middle
-# .red[Use cases] -  OOP, UML
-## .green[Why] and .blue[how] would .orange[someone] use software?
-- Goal-driven Scenarios
-- They describe system behavior to fulfill user needs
-- Several [templates](http://alistair.cockburn.us/Basic+use+case+template) available for [use cases](http://alistair.cockburn.us/Structuring+use+cases+with+goals)  
-  .red[Purpose] = build requirements  
-  Contents = have consistent prose  
-  Plurality = include multiple scenarios per use case  
-  Structure = be semi-formal  
-
-.top-right[
-![case](http://www.it2051229.com/data_solutions/sysanaldesign/figure1.png)
-]
-
----
-class: middle
-# Scenarios: UML Use Cases
-## Examine concrete scenarios of system use
-- Actors and Use Cases
-- .red[Associate] actors/users to the use cases
-- Relate actors using .red[generalization] and .red[realization]
-- Relate use cases using .red[dependencies]
-- Use cases have verbs or noun-verb pairs in it
-
----
-class: middle
-# Use Case Diagram
-![usecase](images/usecase-legend.svg)
----
-class: middle
-# Use Case Diagram
-
-## Relationships
-
-.left-column[
-![association](images/association.svg)
-]
-.right-column[
-![specialization](images/specialization.svg)
-]
----
-class: middle
-# Use Case Diagram
-
-.left-column[
-![usecase](images/usecase.svg)
-]
----
-class: middle
-# Mis Use Case Diagram
-
-## Misuser
-An actor that initiates misuse cases, either intentionally or inadvertently.
-
---
-
-## Misuse Case
-A sequence of actions, including variants, that a system or other entity can perform, interacting with misusers of the entity and causing harm to some stakeholder if the sequence is allowed to complete
-
-Extension to the UML use cases modeling language
----
-class: middle
-# Misuse Case Diagram
-![misusecase](images/misuse-legend.svg)
-
----
-class: middle
-# Misuse Case Diagram
-![misusecase](images/misuse-1.svg)
----
-class: middle
-# Misuse Case Diagram
-![misusecase](images/misuse-2.svg)
----
-class: middle
-# Misuse Case Diagram
-![misusecase](images/misuse-3.svg)
----
-class: middle
-# Misuse Case Diagram
-![misusecase](images/misuse-5.svg)
----
-class: middle
-# Misuse Case
-## Construction Steps
-### Step 1
-Include normal actors and the required use cases regardless of any security considerations
-### Step 2
-Introduce the major mis-actors and misuse cases, i.e., threats that are reasonably likely. Name should give a clear understanding of motivation
-
----
-class: middle
-# Misuse Case
-## Construction Steps
-### Step 3
-Investigate the potential relations between misuse cases and use cases, especially in terms of potential “includes”-relations. Many threats can realized by a system’s normal functionality. E.g. denial of service, covert channels, sql injection
-### Step 4
-Introduce new use cases with the purpose to detect or prevent misuse cases
-
----
-class: middle
-# Misuse Case
-## Construction Steps
-### Step 5
-Make a detailed requirements [documentation](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.9.8190&rep=rep1&type=pdf)
-
-???
-We will not do this step to keep the process lightweight. But you know how to do it if required.
-
----
-
-class: middle
-# Requirements and Risk
-
----
-class: middle
-# Risk
-![risk](images/risk.png)
-???
-This is the language of risk. Goals, Scenarios and viewpoints are the language of requirements. However our understanding always lacks an explicit traceability from the security requirements to the risk components. By building abuse and misuse models we make this relationship explicit.
-
----
-class: middle
-# The Design Activity
-![risk](images/requirements-risk.png)
-
-???
-A model that helps to understanding security requirements in terms of related risk components is absolutely necessary. It can establish the necessity and sufficiency of security requirements in the given context.
-
----
-
 class: middle, center
 # Questions?
 ![questions](https://media.giphy.com/media/ccRdPf8zWkivm/giphy.gif)
-
----
-
-class: center, middle
-# Misuse Case Exercise
-
----
-class: middle
-
-### _Skip this step if you already have a Lucidchart account._
-
-# Step 1
-## Create an account on [Lucidchart](https://www.lucidchart.com/) using your `.edu` email
-- OR Request an upgrade here: https://www.lucidchart.com/pages/usecase/education-request
-
----
-
-class: middle
-# Step 2
-## Recall the assurance case assignment
-- You picked 5 claims related to your project and built assurance cases for each.
-
----
-class: middle
-# Step 3
-## Elaborate the top 5 claims using Misuse cases
-- Contextualize the security function or security weakness addressed in your assurance cases
-- Use misuse cases to elaborated on additional security functions
-
-## Click on this [template](https://www.lucidchart.com/invitations/accept/59a6e092-49bd-4af3-80be-a1f0862923e5) to start a new misuse case
-
----
-class: middle
-# Step 4
-## Submit links to your misuse cases developed in Lucidchart
-- Submission of the links on Canvas
-- One submission per team
-- Clearly indicate which claims are elaborated by which misuse cases
-
----
-# Grading criteria
-
-## Use of proper notations
-- Misuse case notation
-
-## Argument Quality
-- Misuse cases help elaborate additional security functions related to the top 5 claims
-
-## Due Date
-.red[Friday, October 6th, 2017]
-
----
-# Generating shareable links on Lucidchart
-
-![sharing](images/sharing.png)
-
----
-class: middle
-# Resources
-1.	These slides!
-1.	Reading on Mis-use case
-1.	The [Common Attack Pattern Enumeration and Classification (CAPEC)](http://capec.mitre.org/data/graphs/1000.html) as a reference for common attacks
