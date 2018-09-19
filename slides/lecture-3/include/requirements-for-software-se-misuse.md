@@ -62,7 +62,7 @@ class: middle
 # Scenarios: UML Use Cases
 ## Examine concrete scenarios of system use
 - Actors and Use Cases
-- .red[Associate] actors/users to the use cases
+- [Associate](https://www.uml-diagrams.org/use-case-actor-association.html) actors/users to the use cases
 - Relate actors using .red[generalization] and .red[realization]
 - Relate use cases using .red[dependencies]
 - Use cases have verbs or noun-verb pairs in it
@@ -76,7 +76,8 @@ class: middle
 class: middle
 # Use Case Diagram
 
-## Relationships
+#  
+
 
 .left-column[
 ![association](images/association.svg)
@@ -216,20 +217,28 @@ class: middle
 ## Reflection
 - Assess alignment of security requirements with advertised features.
 - Review OSS project documentation and codebase to support your observations.
+
+---
+class: middle
+# Step 5
+## OSS Project Documentation Review
 - Review OSS project documentation for security-related configuration and installation issues. Summarize your observations.
+
+## Assignment Planning Activity
 - Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
 
 ---
-# Grading criteria
+# Misuse case grading criteria
 
 ## Use of proper notations
-- Misuse case notation
+- Misuse case notation (as discussed in class)
 
-## Argument Quality
-- Misuse cases help elaborate additional security functions related to the top 5 claims
+## Reasoning Quality
+- Misuse cases reflect reasoning that help derive security requirements
 
 ## Due Date
 .red[Wednesday, September 26th, 2018]
+- Submit a link to a markdown report on Canvas
 
 ---
 # Generating shareable links on Lucidchart
