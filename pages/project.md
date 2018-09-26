@@ -72,7 +72,7 @@ The project will have the following deliverables:
 
 1. Project Proposal &ndash; **September 12, 2018**
 1. Requirements for Software Security Engineering &ndash; **September 26th, 2018.**
-1. Assurance Cases Software Security Engineering &ndash; **October 3rd, 2018.**
+1. Assurance Cases Software Security Engineering &ndash; **October 10th, 2018.**
 1. Designing for Software Security Engineering &ndash; **November 7th, 2018.**
 1. Code analysis for Software Security Engineering &ndash; **November 21, 2018.**
 1. Class presentations &ndash; **December 9, 2018.**
@@ -80,7 +80,7 @@ The project will have the following deliverables:
 \* All dates are subject to change as the course progresses
 
 ## Teams Project for Fall 2018
-- TBD
+[Teams 2018](https://robinagandhi.github.io/swa/slides/teams-2018/teams.html)
 
 ## Teams Project for Fall 2017
 [Teams 2017](https://robinagandhi.github.io/swa/slides/teams-2017/teams.html)
