@@ -11,6 +11,7 @@ This slide deck is based several sources as follows:
 Systems and Software Engineering— Systems and Software Assurance— Part 2: Assurance Case
 3. Research papers on Eliminative Induction use in Assurance Cases
 4. [SEI publications on Assurance case use in Safety Cases](https://insights.sei.cmu.edu/sei_blog/2013/08/assurance-cases-and-confidence.html)
+5. [System Assurance: beyond Detecting Vulnerabilities, By Mansourov, Nikolai, and Djenana Campara](https://www.safaribooksonline.com/library/view/system-assurance/9780123814142) (Chapter 2)
 
 ---
 class: middle
@@ -168,8 +169,9 @@ Challenge the identified claims by introducing doubts
 For each doubt, identify sub-claims that eliminate the doubt
 --
 
-## Step 3: Repeat
-Go to Step 1, repeat process for sub-claims
+## Step 3: Evaluate
+Can sub-claims be directly supported by evidence?
+If not, go to Step 1, repeat process for sub-claims
 ---
 class: middle
 # Step 1: Introducing doubts
@@ -196,7 +198,7 @@ class: middle
 
 ---
 class: middle
-# Step 3: Repeat --> Step 1: Identify doubts
+# Step 3: Evaluate --> STOP or Step 1: Identify doubts
 
 .green[C1.1.1] The room was locked for 5 days  
 * .red[R1.1.1.1] Unless the room vents allow cats to go in and out  
@@ -318,7 +320,7 @@ class: center, middle
 # Assurance Case Logical Structure
 ![structure](images/structure.png)
 .footnote[
-[Arguing Security - Creating Security Assurance Cases](https://www.us-cert.gov/bsi/articles/knowledge/assurance-cases/evidence-assurance-laying-foundation-credible-security-case)
+Figure source: [Arguing Security - Creating Security Assurance Cases](https://www.us-cert.gov/bsi/articles/knowledge/assurance-cases/evidence-assurance-laying-foundation-credible-security-case)
 ]
 
 ---
@@ -606,8 +608,15 @@ class: center, middle
 --
 ![light](images/lightexample.png)
 
+.footnote[
+\*See notes for sources [hit: `p`]
+]
+
 ???
-Image and example provided in slides by John B. Goodenough
+The content in next few slides is based on:
+1. SEI Report: Toward a Theory of Assurance Case Confidence http://www.sei.cmu.edu/reports/12tr002.pdf
+2. Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measuring assurance case confidence using Baconian probabilities. In Proceedings of the 1st International Workshop on Assurance Cases for Software-Intensive Systems (ASSURE '13). IEEE Press, Piscataway, NJ, USA, 7-11.
+3. Explicit permission to use slides provided by John B. Goodenough
 
 ---
 # Introducing Doubts*
@@ -621,63 +630,12 @@ Image and example provided in slides by John B. Goodenough
 
 ### .green[Attack inference] (undercutting defeater) — premise good; conclusion uncertain
 
-.footnote[
-\*See notes for sources [hit: `p`]
-]
-
-???
-The content in next few slides is based on:
-1. SEI Report: Toward a Theory of Assurance Case Confidence http://www.sei.cmu.edu/reports/12tr002.pdf
-2. Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measuring assurance case confidence using Baconian probabilities. In Proceedings of the 1st International Workshop on Assurance Cases for Software-Intensive Systems (ASSURE '13). IEEE Press, Piscataway, NJ, USA, 7-11.
-3. Explicit permission to use slides provided by John B. Goodenough
-
----
-# Assurance Case Logical Structure
-## Notice .green[inference rules]?
-![structure](images/structure.png)
-.footnote[
-[Arguing Security - Creating Security Assurance Cases](https://buildsecurityin.us-cert.gov/daisy/bsi/articles/knowledge/assurance/643-BSI.html)
-]
-
----
-class: middle
-# Inference Rule
-
-## A generalization that in most circumstances is considered to be true
-
-## Example
-- (premise) If X is a bird then (conclusion) X can fly
-
---
-- (Generalization) All birds can fly
-
---
-
-.red[An argument is an instantiation of one or more inference rules with a specific premises and conclusions]
-
 ---
 
 # Example Claim
+
 ![claim](images/tweetyclaim.svg)
 
----
-# Inference Rule
-![inference](images/inference.svg)
-
----
-
-# Undercutting defeater
-## Premise good; conclusion uncertain
-![claim](images/inference.svg)
----
-
-![claim](images/undercut.svg)
-
----
-
-# Rebutting defeater
-## Why claim could be false
-![claim](images/inference.svg)
 ---
 
 # Rebutting defeater
@@ -698,6 +656,22 @@ class: middle
 ![claim](images/undermine-done.svg)
 
 ---
+
+# Assurance Case Logical Structure
+## Notice .green[inference rules]?
+![structure](images/structure.png)
+
+--
+
+.footnote[.red[Inference rule have premises and conclusions. Premises are at the bottom in an assurance case.]]
+
+
+---
+# Undercutting defeater
+Premise good; conclusion uncertain
+![claim](images/undercut.svg)
+---
+
 class: middle
 # Measuring Confidence
 
@@ -724,6 +698,12 @@ Source: Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measur
 ## No further argumentation
 ![stop](images/stopargument-1.svg)
 ![stop](images/stopargument-2.svg)
+
+---
+![preview](images/preview.svg)
+
+???
+Source: This example is partially based on the presentation of this paper given at ICSE conference: J. B. Goodenough, C. B. Weinstock and A. Z. Klein, "Eliminative induction: A basis for arguing system confidence," 2013 35th International Conference on Software Engineering (ICSE), San Francisco, CA, 2013, pp. 1161-1164.
 
 ---
 ![preview](images/preview.svg)
