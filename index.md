@@ -23,12 +23,12 @@ Content will be linked as we progress through the semester. This allows to me to
   * Additional Reference: Translating compliance constraints to requirements. [NIST 800-160 public draft 2, Appendix-J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
   * Hands-on: In-class working session on Misuse Cases
 1. **Assurance Cases for Software Security Engineering**
-  * Reading: [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases.
-  * Reference: [OMG Structured Assurance Case Metamodel](https://www.omg.org/spec/SACM/About-SACM)
-  * Diagramming: Diagramming in [Lucidchart](https://www.lucidchart.com/). You can sign up for a [free student account.](https://www.lucidchart.com/users/education/registerLevel?tP=1&t4=A&t10=A) You may start a new assurance case using this [template](https://www.lucidchart.com/invitations/accept/e8d3aac4-e62b-4fa0-9fd1-c2cf6a6d318d).
-  * Reference: Formal diagramming in [Adelard ASCE](https://www.adelard.com/asce/choosing-asce/index.html)  
-  * Assignment: Assurance Case Exercise (Team Deliverable)
+  * Trustworthiness context: [Assurance cases](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case.html)
+  * Assignment: [Assurance Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case-exercise.html#1)
   * Hands-on: In-class working session on Assurance Cases
+  * Reference: [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases. (See Canvas)
+  * Reference: [OMG Structured Assurance Case Metamodel](https://www.omg.org/spec/SACM/About-SACM)
+  * Reference: Formal diagramming in [Adelard ASCE](https://www.adelard.com/asce/choosing-asce/index/)  
 1. **Maturity Models for Software Security Engineering**
   * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
 1. Midterm Exam
