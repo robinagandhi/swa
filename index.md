@@ -58,7 +58,7 @@ Content will be linked as we progress through the semester. This allows to me to
 
 # Mid-term Exam for Fall 2018
 
-  * In-class exam on **Wednesday, October 10, 2018, 5:30 - 7:30PM**
+  * In-class exam on **Wednesday, October 17, 2018, 5:30 - 7:30PM**
 
 # Final Exam for Fall 2018
 
