@@ -384,7 +384,7 @@ class: middle
 
 ## Example
 - .blue[The system] .green[is acceptably] .orange[secure]
-- .blue[The system] .green[has no unacceptable] .orange[consequences to assets from security threats]
+- .blue[The system] .green[has no] .orange[unacceptable consequences to assets from security threats]
 
 ---
 class: middle
@@ -506,6 +506,7 @@ class: middle
 
 ![context](images/context.svg)
 
+.footnote[.red[Arrow head indicates the direction in which the assurance case must be read]]
 ---
 class: middle
 # Justification Visual Notation
@@ -706,11 +707,6 @@ Source: Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measur
 Source: This example is partially based on the presentation of this paper given at ICSE conference: J. B. Goodenough, C. B. Weinstock and A. Z. Klein, "Eliminative induction: A basis for arguing system confidence," 2013 35th International Conference on Software Engineering (ICSE), San Francisco, CA, 2013, pp. 1161-1164.
 
 ---
-![preview](images/preview.svg)
-
-???
-Source: This example is partially based on the presentation of this paper given at ICSE conference: J. B. Goodenough, C. B. Weinstock and A. Z. Klein, "Eliminative induction: A basis for arguing system confidence," 2013 35th International Conference on Software Engineering (ICSE), San Francisco, CA, 2013, pp. 1161-1164.
----
 
 class: middle
 # Assurance Cases in Practice
@@ -777,6 +773,12 @@ class: middle
 
 ### Interview Protocol Design
 - Gandhi R.A., Germonprez M., Link G., "Open Data Standards for Open Source Software Risk Management Routine: An Examination of SPDX", ACM GROUP 2018 https://github.com/SPDX-CaseStudy/files/blob/master/AssuranceCase.png
+---
+class: middle
+# Other Applications
+
+### Medical Device Software
+- [Safety Assurance Cases Can Improve Your FDA Submissions](https://www.meddeviceonline.com/doc/how-safety-assurance-cases-can-improve-your-fda-submissions-0001)
 
 ---
 class: center, middle

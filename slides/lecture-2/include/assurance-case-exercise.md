@@ -27,7 +27,8 @@ class: middle
 # Step 4
 ## Plan required assurance
 
-- Collect evidence as required from the OSS project.
+- Collect evidence as required from the OSS project.  
+If the evidence collection requires significant effort, a plan for collecting the evidence is OK.
 - Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
 
 ---
