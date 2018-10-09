@@ -54,4 +54,4 @@ class: middle
 ## Submit link to a markdown report
 - Submit the link on Canvas
 - One submission per team
-- Due Date: October 10, 2018 11:59 P.M.
+- Due Date: October 12, 2018 11:59 P.M.
