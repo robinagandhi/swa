@@ -21,8 +21,10 @@ class: middle
 
 ## Start with a Data-flow perspective
 - **Most attacks come through .red[data]**
-- Control flow is less relevant during the design stage
-- A structured, concrete artifact to _discuss_ design:  
+- Control flow: less relevant  
+to analyze security in design and architecture
+- **Data Flow Diagrams (DFD)** provide a structured,   
+concrete artifact to _discuss_ design:  
 Conceptualization, Changes or Re-design
 
 ---
@@ -613,7 +615,7 @@ class: middle
 ---
 
 class: center, middle
-# Threat Modeling Exercise
+# Threat Modeling In-Class Exercise
 
 ---
 class: middle
@@ -629,39 +631,57 @@ class: middle
 ## Build a DFD for the Playsound API in TMT 2016
 - Examine the threats identified
 
-???
-class: middle
-exclude: true
-# Step 2
-## Recall the misuse case assignment
-- You identified several use cases to include misuse cases.
+---
+
+class: center, middle
+# Threat Modeling Assignment
 
 ---
 class: middle
-exclude: true
+
+# Step 1
+## Recall the Security Requirements Assignment
+- You prioritized several _data flows_ for   
+building use/misuse cases
+
+---
+class: middle
+# Step 2
+## Prepare for threat modeling
+- Develop Level 0 DFDs that supports each of your use cases.
+- Consolidate similar DFDs.
+- Document the Level 0 DFDs in your Report
+
+---
+class: middle
 # Step 3
-## Elaborate the Misuse cases using Threat models
-- Develop Level 1 DFDs that supports each of your use cases.
-- Perform analysis on your code base to align the diagram with reality
+## Build Level 1 threat models
+- Expand Level 0 DFDs into Level 1 DFDs.
 - Draw the DFDs in TMT 2016
+- Perform analysis on your code base   
+to align the diagram with reality
 - Identify appropriate trust boundaries on the diagram
 - Validate the diagram for any obvious structural deficiencies
 
 ---
 class: middle
-exclude: true
 # Step 4
 ## Analyze the Level 1 diagram to identify the applicable STRIDE threats
-- Examine each threat automatically identified
+- Examine each automatically identified threat
 - Document mitigation strategies for the identified threats
-- Pay special attention for elements that interact across threat boundaries
+- Pay special attention for elements that   
+interact across threat boundaries
 - Generate a full HTML report using TMT 2016
 - Host the reports on your project github repo.
+
+---
+class: middle
+# Step 5
+## Review OSS design
 - Review OSS project actual software design for security related issues based on your threat models. Summarize your observations.
 
 ---
 class: middle
-exclude: true
 
 # Grading criteria
 
@@ -678,6 +698,5 @@ exclude: true
 
 ---
 class: middle
-exclude: true
 # Due Date
-Wednesday November 8th, 2017
+Wednesday November 7th, 2018
