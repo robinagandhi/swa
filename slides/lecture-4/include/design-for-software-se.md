@@ -204,12 +204,11 @@ class: middle
 
 "_The PlaySound API takes as input a string which represents either a WAV filename or an alias.  If the input is an alias, the PlaySound API retrieves data from the registry under HKCU to convert the alias into a filename.  Once the filename is determined, the PlaySound API opens the WAV file specified and reads the two relevant pieces from the file: the WAVEFORMATEX that defines the type of data in the file and the actual audio data.  It then hands that data to the audio rendering APIs._"
 
-## Build a Threat Model based on this description
+--
 
-???
+## Develop a Level 0 DFD*
 
-![solution](images/playsoundthreatmodel.png)  
-http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
+.footnote[*_[Class exercise](https://docs.google.com/presentation/d/1dYBlbTcs3fBs-hawHgdJjL2xGrOFnrSOVpsB2pTGHNc/edit?usp=sharing)_]
 
 ---
 
@@ -233,8 +232,6 @@ They share the same privileges, rights, identifiers and access
 
 
 - Processes talking across a network may create a secure channel, but .red[they’re still distinct entities.]   
-Encrypting network traffic is an ‘instinctive’ mitigation, but may not address tampering or spoofing
-
 
 ---
 class: middle
@@ -297,10 +294,15 @@ Trust boundaries intersecting these data flows.
 
 - Hierarchical structuring (Levels) allows system analysis at different levels of abstraction
 
+???
+![Example](images/playsoundthreatmodel.png)  
+http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
+
 ---
 class: middle, center
 # Threat Identification
 DFDs allows potential threats to be .red[automatically generated]!
+
 
 ---
 
@@ -376,7 +378,6 @@ class: middle
 ![OWASP](https://www.owasp.org/images/1/16/Data_flow2.jpg)
 ---
 class: middle
-exclude: true
 # Observations and Reflections
 
 ## Expensive (Time)
@@ -388,14 +389,14 @@ exclude: true
 ## How can we make this more efficient?
 ---
 class: middle
-exclude: true
+
 # STRIDE with DFDs (Per .red[Interaction])
 ## Focus on Interactions
 - Interaction:   
 A source and target element connected by a data flow
 ---
 class: middle
-exclude: true
+
 # STRIDE with DFDs (Per .red[Interaction])
 ## Efficiencies and Savings
 - For each interactions apply STRIDE
@@ -407,7 +408,7 @@ don’t worry about T, I, or D
 ## Significant reduction in number of threats to be analyzed
 ---
 class: middle
-exclude: true
+
 # Trust boundaries
 ## Trusted/high code reading from untrusted/low
 - Look for Tampering threats
@@ -416,7 +417,7 @@ exclude: true
 - Errors may result in Information Disclosure
 ---
 class: middle
-exclude: true
+
 # Avoid Distractions
 ## Applications can't do much here:
 - The computer is infected with malware
@@ -429,7 +430,7 @@ exclude: true
 
 ---
 class: middle
-exclude: true
+
 # Practice
 
 ![OWASP](https://www.owasp.org/images/1/16/Data_flow2.jpg)
@@ -439,7 +440,7 @@ exclude: true
 ---
 
 class: middle
-exclude: true
+
 # Practice
 ![example](images/dfd.png)
 
@@ -622,7 +623,6 @@ class: middle
 
 # Step 1
 - Download and install [TMT 2016](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
-- You may also directly access it on your machine at view.unomaha.edu
 
 ---
 
@@ -686,15 +686,16 @@ class: middle
 # Grading criteria
 
 ### Use of proper notations
-- DFD notation
 
 ### Threat Model Quality
-- Threat model focuses on critical components of interest
 - Proper wording of the model elements
 - Clean, coherent and valid DFD diagram
 
 ### Threat Mitigation Quality
 - Quality of analysis to mitigate threats
+
+### Quality of observations
+- Observations from OSS project align with the high-priority threats identified from the DFD diagram analysis
 
 ---
 class: middle
