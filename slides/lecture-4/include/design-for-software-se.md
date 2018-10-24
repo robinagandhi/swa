@@ -59,9 +59,9 @@ class: middle
 
 .left-column[
 ## External Interactor/Entity
-- .red[_Uncontrollable_] by the codebase of interest but is within the [environment of operation](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#14)
-- Generate data (Source)
-- Receive data (Sink)
+- .red[_Uncontrollable_] by the codebase of interest but is within the [environment of operation](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#12)
+- Generates data (Source)
+- Receives data (Sink)
 
 ## Examples    
 People, External systems, External APIs
@@ -169,7 +169,7 @@ Cookie, Form data, Response page, Credentials, etc.
 ]
 
 ---
-## DFD Example
+## DFD Level 1 Example
 
 ![example](images/dfd.png)
 
@@ -268,7 +268,8 @@ class: middle
 - Data always comes from External Interactors.
 
 ### Processes
-- Avoid direct dataflows between two separate processes. Use intermediate data stores such as message queues or domain sockets.
+- Carefully think about direct dataflows between two separate processes on a single machine.   
+Use intermediate data stores such as message queues or domain sockets.
 ---
 # DFD Construction
 ## Step 6
@@ -579,12 +580,11 @@ class: middle
 
 1. Do the threats consider misuse cases?
 1. Does the diagram match final code?
-1. Are threats enumerated? At minimum:
-STRIDE per element that touches a trust boundary
+1. Are enough threats enumerated?
 1. Has Test / QA reviewed the model?
-Testers often finds issues with threat model or details
+Testers often finds issues with threat model or missing details
 1. Is each threat mitigated?
-1. Are mitigations done right?  (Assurance case?)
+1. Are mitigations done right?  (Assurance case, possibly)
 ---
 
 # Making this Fun

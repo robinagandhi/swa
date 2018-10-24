@@ -33,9 +33,9 @@ Content will be linked as we progress through the semester. This allows to me to
 1. **Maturity Models for Software Security Engineering**
   * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))
 1. **Design for Software Security Engineering**
-  * Lecture: Threat Modeling with Diagramming using Microsoft Threat Modeling Tool
-  * Lecture: Design patterns for Design Principles
-  * Lecture: Architectural patterns for security
+  * Lecture: [Threat Modeling](https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html)
+  * Lecture: Design patterns for Design Principles (See Canvas)
+  * Lecture: Architectural patterns for security (See Canvas)
   * Reading: NIST 800-160 Appendix-F: Design Principles for Security (See Canvas)
   * Hands-on: In-class working session on Threat Modeling using Microsoft Threat Modeling Tool.  
 1. **Coding for Software Security Engineering**
