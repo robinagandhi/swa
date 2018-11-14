@@ -39,7 +39,8 @@ Content will be linked as we progress through the semester. This allows to me to
   * Reading: NIST 800-160 Appendix-F: Design Principles for Security (See Canvas)
   * Hands-on: In-class working session on Threat Modeling using Microsoft Threat Modeling Tool.  
 1. **Coding for Software Security Engineering**
-  * Knowledge base: [Common Weakness Enumeration](http://cwe.mitre.org/), [CAPEC](https://capec.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
+  * [Coding for SSE Lecture](https://robinagandhi.github.io/swa/slides/lecture-5/code-for-software-se.html)  
+  Knowledge-bases: [Common Weakness Enumeration](http://cwe.mitre.org/), [CAPEC](https://capec.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
   * [DHS SWAMP](https://www.mir-swamp.org/)
   * Lecture: Code review tools and techniques
 1. Hands-on: In-class working session for code review and automated tool analysis.  

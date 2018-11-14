@@ -192,7 +192,7 @@ class: middle
 # Common Attack Pattern Enumeration and Classification
 
 ## Enumerates .red[attack patterns] used in exploits
-- Total of 550+ attack patterns
+- Total of 500+ attack patterns
 - Abstractions:   
 Meta, Standard, Detailed Patterns and Categories
 
@@ -223,7 +223,7 @@ class: middle
 # [National Vulnerability Database](http://nvd.nist.gov)
 - Maintains a dictionary of CVEs
 - CVEs use Common Platform Enumeration (CPE) to identify affected products and packages. [Search Engine](https://nvd.nist.gov/vuln/search)
-- Total CVEs: 80000+, ~15-20 added every day
+- Total CVEs: [NVD Dashboard](https://nvd.nist.gov/general/nvd-dashboard)
 
 ---
 
@@ -276,7 +276,7 @@ class: middle
 ---
 class: middle
 ## Training Surgeons
-![GA](https://pbs.twimg.com/media/CtPPfC3XEAA_sdq.jpg)
+![GA](https://www.closerweekly.com/wp-content/uploads/2017/10/greys-anatomy.jpg?crop=0px%2C0px%2C594px%2C334px&resize=800%2C450)
 
 ---
 class: middle
@@ -328,7 +328,7 @@ class: middle
 ---
 class: middle
 # Putting the pieces together
-![crash](https://qph.ec.quoracdn.net/main-qimg-08cc5472e55ff2becf09468b9ae6c650-c?convert_to_webp=true)
+![crash](https://www.nydailynews.com/resizer/m96o09B1y-FdXEQIQB1mmglMCRs=/1400x0/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/KSU66ZVVHLMTWRVTJQS7IHJ46A.jpg)
 
 ---
 class: middle
@@ -368,8 +368,8 @@ class: middle
 ### What CWEs do the vulnerabilities in your project typically map to? Have you taken any hands-on training for them?
 
 --
-### Have you looked at the [semantic templates](http://faculty.ist.unomaha.edu/rgandhi/st) by being developed at UNO?
-### Here are some [example vulnerabilities](http://faculty.ist.unomaha.edu/rgandhi/st/CVEsamples.zip), why don’t you fill-up the semantic templates to study them?
+### Have you looked at the [semantic templates](https://robinagandhi.github.io/st) by being developed at UNO?
+### Here are some [example vulnerabilities](https://robinagandhi.github.io/st/CVEsamples.zip), why don’t you fill-up the semantic templates to study them?
 
 ---
 

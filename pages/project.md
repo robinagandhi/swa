@@ -37,8 +37,8 @@ The project will have the following deliverables:
   * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
 1. **Code analysis for Software Security Engineering**: A markdown report that describes the following:
   * Code review strategy
-  * Manual code review of critical security functions identified in misuse cases, assurance cases and threat models.
-  * Automated code scanning (if available). Include links to full reports.
+  * Findings from manual code review of critical security functions identified in misuse cases, assurance cases and threat models.
+  * Findings from automated code scanning (if available). Include links to full reports.
   * Summary of key findings from manual and/or automated scanning. This summary may include categorization, mappings to CWEs, CAPECs, Risk Levels, etc.
   * Links to any pull requests, issues, discussion, etc. from the team to the original project and any follow-up interactions.
   * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
@@ -46,8 +46,8 @@ The project will have the following deliverables:
   * Project description
   * Gaps in security requirements and design of the original project
   * Assurance claims
-  * Findings from code review and automated software scanning
-  * Contributions to the original project (documentation, design changes, code changes, communications)
+  * Findings from manual code review and automated software scanning
+  * Any contributions to the original project (documentation, design changes, code changes, communications)
 
 ## Project Hall of Fame
 * [List of successful contributions to OSS projects from student teams](https://robinagandhi.github.io/swa/pages/halloffame.html)  
@@ -74,8 +74,8 @@ The project will have the following deliverables:
 1. Requirements for Software Security Engineering &ndash; **September 28th, 2018.**
 1. Assurance Cases Software Security Engineering &ndash; **October 12th, 2018.**
 1. Designing for Software Security Engineering &ndash; **November 7th, 2018.**
-1. Code analysis for Software Security Engineering &ndash; **November 21, 2018.**
-1. Class presentations &ndash; **December 9, 2018.**
+1. Code analysis for Software Security Engineering &ndash; **November 30, 2018.**
+1. Class presentations &ndash; **December 5, 2018.**
 
 \* All dates are subject to change as the course progresses
 
