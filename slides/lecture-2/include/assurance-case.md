@@ -22,7 +22,7 @@ class: middle
 Richard P. Feynman
 ]
 .top-right[
-![RF](http://www.hwscience.com/physics/apphysicsc/Feynman-2.gif)
+![RF](https://upload.wikimedia.org/wikipedia/commons/1/1a/RichardFeynman-PaineMansionWoods1984_copyrightTamikoThiel_bw.jpg)
 ]
 ---
 class: middle
@@ -358,15 +358,22 @@ class: middle
 
 --
 
-### Claim should avoid just details about the supporting method/techniques
+### Avoid claims about the supporting method/techniques
 - .red[Bad claim:] The system uses AES encryption
 - Uninteresting
 
 --
 
-### The claim should be a reasonable goal
+### Claim should be a reasonable goal (outcome)
 - .green[Good claim:] “The system is acceptably secure against communication lines related threats”
 
+???
+
+## Good claims
+- These say something about expected outcomes we really wish for by using security technologies or by performing security-related activities
+- Claims about expected outcomes can be argued extensively
+
+- E.g. "AES encryption" (security technology) --> "secure against communication line related threats" (outcome we try wish for)
 ---
 # Claims Matter!
 
@@ -730,7 +737,8 @@ class: middle
 
 ### Makes the security and privacy controls outcome-based
 - Focuses on the security and privacy capabilities
-- Controls are now .orange[critical properties] of interest.
+- Controls are now .orange[critical properties] of interest
+- Control statements are Verb phrases which can be associated with any system entity
 
 ???
 (i.e., what needs to be done to protect the system or information and not which entity carries out the action or where it is carried out);

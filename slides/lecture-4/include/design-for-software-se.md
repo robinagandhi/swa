@@ -43,6 +43,10 @@ class: middle
 - All control flows are abstracted into _processes_  
 that perform data transformations
 
+???
+
+- Data flows provide a significantly simple system/software view when compare to control flow.
+
 ---
 
 class: middle
@@ -216,7 +220,7 @@ class: middle
 # DFD Construction
 ## Step 2
 ### Transition to a Level 1 diagram
-- Breakdown the single Level 0 process into major processes and related data stores
+- Breakdown the single Level 0 process into major processes and related data stores .red[for a single feature / scenario]
 - Check your work
 - Can you tell a story without edits?
 - Does it match reality?
@@ -281,7 +285,7 @@ Use intermediate data stores such as message queues or domain sockets.
 
 
 - Avoid partitioning processes based on control logic.  
-Partition processes that perform multiple functions.
+Partition processes that perform multiple functions and they exist in different process spaces.
 
 
 - DFDs do not typically show time dependencies.   
@@ -526,7 +530,7 @@ class: middle
 
 ### Integrity Checking
 - Digital signatures and message authentication codes
-- ACLs for data at rest
+- Access Control Lists (ACLs) for data at rest
 
 ### Validation of input read from the data source
 - Normalization before neutralization
@@ -608,6 +612,10 @@ class: middle
 ## Practice Diagrams
 - Microsoft [Readings](https://msdn.microsoft.com/en-us/library/aa562036.aspx)
 
+## Threat Modeling in Practice
+- [SAFECode Tactical Threat Modeling](https://safecode.org/safecodepublications/tactical-threat-modeling/)
+
+
 ---
 # Sources
 
@@ -632,11 +640,12 @@ class: middle
 - Examine the threats identified
 
 ---
-
+exclude: true
 class: center, middle
 # Threat Modeling Assignment
 
 ---
+exclude: true
 class: middle
 
 # Step 1
@@ -645,6 +654,7 @@ class: middle
 building use/misuse cases
 
 ---
+exclude: true
 class: middle
 # Step 2
 ## Prepare for threat modeling
@@ -653,6 +663,7 @@ class: middle
 - Document the Level 0 DFDs in your Report
 
 ---
+exclude: true
 class: middle
 # Step 3
 ## Build Level 1 threat models
@@ -664,6 +675,7 @@ to align the diagram with reality
 - Validate the diagram for any obvious structural deficiencies
 
 ---
+exclude: true
 class: middle
 # Step 4
 ## Analyze the Level 1 diagram to identify the applicable STRIDE threats
@@ -675,12 +687,14 @@ interact across threat boundaries
 - Host the reports on your project github repo.
 
 ---
+exclude: true
 class: middle
 # Step 5
 ## Review OSS design
 - Review OSS project actual software design for security related issues based on your threat models. Summarize your observations.
 
 ---
+exclude: true
 class: middle
 
 # Grading criteria
@@ -698,6 +712,12 @@ class: middle
 - Observations from OSS project align with the high-priority threats identified from the DFD diagram analysis
 
 ---
+exclude: true
 class: middle
 # Due Date
 Wednesday November 7th, 2018
+
+---
+class: center, middle
+# Discussion?
+![that-dont-make-no-sense](https://media.giphy.com/media/DO5JobrylWL7i/giphy.gif)
