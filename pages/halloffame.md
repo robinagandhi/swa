@@ -9,6 +9,16 @@ description: CYBR 8420 Hall of Fame
 A collection of Github interactions based on the course project.   
 This list includes successful pull requests, issues and other interactions with upstream project developers.
 
+## Fall 2019 Teams
+
+* << Space available! >>
+
+## Fall 2018 Teams
+
+- No entries but lots of attempts. Here are couple examples:
+> [Mosquitto library](https://github.com/eclipse/mosquitto/issues/1061)   
+[Elastic Search](https://github.com/elastic/elasticsearch/issues/36395#issue-388858623)
+
 ## Fall 2017 Teams
 
 ### Team JAX

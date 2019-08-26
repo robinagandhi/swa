@@ -6,29 +6,29 @@ description: CYBR 8420 Software Assurance Syllabus
 # Syllabus
 
 # Course Description
-* Assurance is a reasoned, audit-able argument created to support claimed beliefs about a particular entity when it is impossible to examine every possible circumstance related to that claim
-* This course is an intersection of knowledge areas necessary to perform activities relevant for promoting assurance in claims developed for `Software Security Engineering`
+* Assurance is a reasoned, audit-able argument created to support claimed beliefs about a particular entity *when it is impossible to examine every possible circumstance related to that claim*.
+* This course is an intersection of knowledge areas necessary to perform activities relevant for promoting assurance through claims argued and supported with evidence from `Software Security Engineering (SSE)` activities. SA entails SSE.
 * This course takes on a software development lifecycle perspective for the prevention of flaws. It is not just secure coding!
 
-# Class Meeting Time and Location for Fall 2018
+# Class Meeting Time and Location for Fall 2019
 * Wednesdays 5:30 to 8:10 p.m. in PKI 260
-  - Lecture session: 5:30 to 6:40 PM
-  - Working session: 7:00 to 8:10 PM
+  - Lecture session will be roughly from 5:30 to 6:40 PM followed by a team working session from 7:00 to 8:10 PM
 
 # Where does the course fit in the degree program?
 * [MS in Cybersecurity Core](https://www.unomaha.edu/college-of-information-science-and-technology/school-of-interdisciplinary-informatics/cybersecurity/ms-cybr-reqs.php)  
 * [Graduate CS concentrations](https://www.unomaha.edu/college-of-information-science-and-technology/computer-science/graduate/graduate-concentrations.php)
 
-# Instruction
-* Course philosophy: *good readings*, *discussions* and *try things out*.
+# Learning Techniques
+* Philosophy: *good readings*, *discussions* and *try things out*.
 * In-class exercises in small groups.
-* In-class quizzes
-* Complete assignments and independent projects as directed
+* In-class quizzes.
+* Assignments and independent projects.
+* Open book exams with access to a network-connected computer.
 
 # Resource Material
 ## Textbooks
 
-Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to log in with you NU-ID and password (you may have to set or reset it) to access these books.
+Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to log in with your NU-ID and password (you may have to set or reset it) to access these books.
 
 * [Secure Coding Principles and Practice, By Mark G. Graff; Kenneth R. van Wyk](https://www.safaribooksonline.com/library/view/secure-coding-principles/0596002424)
 
@@ -54,6 +54,10 @@ Instead of a single textbook, I have identified a series of books available from
 
 * [The Browser Hacker's Handbook, By Wade Alcorn; Christian Frichot; Michele Orru](https://www.safaribooksonline.com/library/view/the-browser-hackers/9781118662090)
 
+* [Hands-on Security in DevOps](https://learning.oreilly.com/library/view/hands-on-security-in/9781788995504/), By Tony Hsu, 2018
+
+* [Bug Bounty Hunting Essentials](https://learning.oreilly.com/library/view/bug-bounty-hunting/9781788626897/), by Shahmeer Amir, Carlos A. Lozano, 2018
+
 ## Other Reference Books
 
 * Problem Frames: Analyzing and Structuring Software Development Problems, By Michael Jackson, Addison-Wesley
@@ -63,8 +67,7 @@ I will post Lecture slides, readings, and supplemental materials in Canvas. Much
 # Additional References
 
 * [Secure Programming for Linux and Unix HOWTO](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html), David Wheeler  
-* [Software Assurance in Education, Training and Certification, Pocketguide](https://robinagandhi.github.io/swa/resources/pocketguide.pdf), Ed. Robin Gandhi
-(This handout provides a comprehensive list of references and book on software assurance and certification options)
+* [Software Assurance in Education, Training and Certification, Pocketguide](https://robinagandhi.github.io/swa/resources/pocketguide.pdf), Ed. Robin Gandhi. Was written in 2010 so some of the links and resources might be dated, but the discussion is just as relevant!
 * [SEI Book Series on Software Assurance](http://resources.sei.cmu.edu/library/asset-view.cfm?assetid=465870)
 
 # Attendance
@@ -92,7 +95,7 @@ Read all about it [here](https://robinagandhi.github.io/swa/pages/project.html).
 40% Assignments, Semester Project and Presentation (Team-based)  
 
 # Course Meeting Schedule
-In this semester there are scheduled ~16 class periods on Wednesdays for 160 minutes each. Accounting for in-class exams, project presentations, inclement weather days, instructor travel to conferences and the like we will have something closer to 10-11 class periods for instruction.
+In this semester there are scheduled ~16 class periods on Wednesdays for 160 minutes each. Accounting for in-class exams, project presentations, inclement weather days, instructor travel to conferences and the like we will have something closer to 12-13 class periods for instruction.
 
 Due to the current and advanced nature of this class, it is under constant revision! So you can expect some experimentation and shuffling of the course topics as we progress through the semester. Constructive feedback on the content is highly encouraged. Fork it on Github!
 
