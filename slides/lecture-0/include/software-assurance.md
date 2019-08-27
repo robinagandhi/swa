@@ -291,7 +291,7 @@ class: center
 ## .red[Internalize]
 security engineering during the software development lifecycle
 ## .green[Assure]
-through evidence-based beliefs
+through arguments that are supported by evidence from engineering activities
 ## .blue[Experience]
 software security engineering by engaging in hand-on activities with Open Source Software
 ???
@@ -367,7 +367,7 @@ class: center, middle
 class: center, middle
 # Are you ready for it?
 .footnote[
-[Rugged manifesto](https://www.ruggedsoftware.org/)
+[Rugged manifesto](https://ruggedsoftware.org)
 ]
 ---
 class: center, middle
