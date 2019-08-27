@@ -85,7 +85,7 @@ https://guides.github.com/activities/hello-world/
 
 At the end of Step 2, you will have created a `remote` repository and will have added a `branch`. It is `remote` because all your files are in the Github cloud. As a developer, you might ask, _"how do I use this to create code if it is just online?"_ It is not convenient to write and test code online, especially when many applications require locally install packages even to work. Using your own `Local` repository would be great. We will do just that in the next step.   
 
-Git is a distributed configuration management system. It helps to `avoid` thinking of a traditional central code repository. Instead, with Git we have multiple independent repositories that could be in different states at any given time and synchronized using specific commits.
+Git is a distributed configuration management system. It helps to `avoid` thinking of a traditional centralized code repository. Instead, with Git we have multiple independent repositories that could be in different states at any given time and synchronized using specific commits.
 
 [Top](#table-of-contents)
 
