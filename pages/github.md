@@ -13,6 +13,7 @@ Good fences make good neighbors.
 - It is good to separate source code from build and runtime environments
 - Version control for source code prevents accidental or unauthorized changes
 - Eliminate dead code
+- Promote code review, collaboration and versioning with least privilege
 
 #### Modularization
 The concept of modularity is like building blocks. Each block (or module) can be put in or taken out from a bigger project. Each module has its separate function that is interchangeable with other modules.
