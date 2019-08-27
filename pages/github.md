@@ -371,7 +371,7 @@ And that is one way you can collaborate using `Github`.
 [Top](#table-of-contents)
 
 # Step 8: Markdown
-To communicate and write effectively on Github, you will need to learn `Markdown`. Examine Markdown here: https://guides.github.com/features/mastering-markdown/
+To communicate and write effectively on Github, you will need to learn `Markdown`. Examine Markdown here: [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 
 You can try out the syntax on directly on Github in any file that ends in the extension `.md`. Files with the `.md` extension signify Markdown files. So head on over to your hello-world repository on Github and edit the README.md file. In the edit mode, you can observe the effect of Markdown syntax by clicking on the Preview tab.
 
@@ -379,9 +379,9 @@ In the figure below, When in the preview mode, notice the formatting effect of `
 
 >![preview](./img/markdownpreview.gif)
 
-I suggest practicing using Markdown in this interactive tutorial: http://www.markdowntutorial.com
+I suggest practicing using Markdown in this interactive tutorial: [http://www.markdowntutorial.com](http://www.markdowntutorial.com)
 
-Explore functional uses of Markdown on Github here: https://help.github.com/categories/writing-on-github/
+Explore functional uses of Markdown on Github here: [https://help.github.com/categories/writing-on-github/](https://help.github.com/categories/writing-on-github/)
 
 You are now ready to explore the wonderful world of open source on Github. Enjoy and make your contributions!
 
