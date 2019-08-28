@@ -28,7 +28,7 @@ description: CYBR 8420 Software Assurance Syllabus
 # Resource Material
 ## Textbooks
 
-Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to log in with your NU-ID and password (you may have to set or reset it) to access these books.
+Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to be on a campus network or VPN and authenticate with your user-id to access these books.
 
 * [Secure Coding Principles and Practice, By Mark G. Graff; Kenneth R. van Wyk](https://www.safaribooksonline.com/library/view/secure-coding-principles/0596002424)
 
@@ -75,7 +75,7 @@ Attendance is highly encouraged. While lectures can be caught up with, there is 
 
 # Policy on Plagiarism
 Any exam or assignment material submitted which looks identical in any fashion to another student's work or external sources will be considered plagiarism. I will adjust the grade to the minimum possible (Zero) for the assignment for all parties involved. Any further offenses will result in an “F” for the course, accompanied by academic dishonesty actions taken by the College Dean. Note carefully the University policy on [academic integrity](http://goo.gl/NVWUBy) and [code of conduct](https://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/code-of-conduct.php).  
-Make yourself familiar with writing techniques such that you can cite external sources without plagiarizing. Here are a few links to writing resources: [1](http://owl.english.purdue.edu/owl/resource/563/01/), [2](https://owl.english.purdue.edu/owl/resource/589/01/)
+Make yourself familiar with writing techniques such that you can cite external sources without plagiarizing. Here are a few links to writing resources: [[1]](https://owl.purdue.edu/owl/research_and_citation/using_research/quoting_paraphrasing_and_summarizing/index.html), [[2]](https://owl.purdue.edu/owl/research_and_citation/using_research/quoting_paraphrasing_and_summarizing/paraphrasing.html)
 
 Many of your deliverables will be on Github in a public repository. As a result, you must be extra careful to avoid plagiarism through responsible and ethical practices.
 
