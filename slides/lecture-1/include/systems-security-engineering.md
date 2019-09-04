@@ -18,7 +18,7 @@ class: center, middle
 Systems security engineering is hard. Particularly, when you have a well-resourced and capable adversary.
 
 ---
-exclude: true
+
 # Agenda
 
 1. Need for Security Engineering  
@@ -219,6 +219,10 @@ For example, developer training in secure coding provides for the construction o
 - Validators
 - ...
 
+???
+
+Question to ask: How strong is the protection mechanism?
+
 ---
 # Protection Examples
 
@@ -235,6 +239,10 @@ For example, developer training in secure coding provides for the construction o
 - Project management
 - Runtime environments
 - ...
+
+???
+
+Question to ask: How strong is the assurance provided?
 
 ---
 # Adequate Security
