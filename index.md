@@ -16,7 +16,7 @@ Content will be linked as we progress through the semester. This allows to me to
   - Get familiar with containers. [Container Primer](https://robinagandhi.github.io/swa/pages/containers.html)
 1. [**Engineering For Assurance**](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html)
   * Systems Security Engineering. Based on Chapter 2 from [NIST SP 800-160](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf).
-1. **Engaging with Open Source Projects**
+1. [**Engaging with Open Source Projects**](https://robinagandhi.github.io/swa/slides/lecture-0-1/EngagingWithOpenSourceProjects.pdf), by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 1. **Requirements for Software Security Engineering**
   * The Meaning of Requirements for Software Security Engineering
   * Elicitation - Misuse Cases
