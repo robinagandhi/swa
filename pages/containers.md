@@ -67,10 +67,11 @@ Process Isolation keeps separate functions from accessing the same memory.
 
 [Deploy, run and publish a container](#deploy--run-and-publish-a-container)  
 [Manage container interactions](#manage-container-interactions)   
-[Setting up a dev environment](#setting-up-a-dev-environment)   
 [Additional Resources](#additional-resources)
 [Acknowledgements](#acknowledgements)   
 [License](#license)  
+
+<!--[Setting up a dev environment](#setting-up-a-dev-environment)-->   
 
 # Deploy, run and publish a container
 ## Your first container
@@ -299,7 +300,7 @@ docker ps -a
 ```
 
 [Top](#table-of-contents)
-
+<!--
 # Setting up a dev environment
 
 ## Container build automation
@@ -581,6 +582,8 @@ Navigate to http://localhost to examine the running app!
 # May the force of containers be with you! 😎
 as you take this quiz…
 https://www.qzzr.com/c/quiz/430097/the-container-quiz
+
+-->
 
 # Additional Resources
 
