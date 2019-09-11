@@ -21,6 +21,8 @@ Content will be linked as we progress through the semester. This allows to me to
   * [The Meaning of Requirements for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html)  
   * [Elicitation - Misuse Cases](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se-misuse.html)
   * [Assignment: Misuse Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se-misuse.html#26)  
+  * Reading: [Chapter 8, Software Security: Building Security In](https://learning.oreilly.com/library/view/software-security-building/0321356705/ch08.html)
+  * Reading: [Misuse Cases](https://ieeexplore.ieee.org/abstract/document/1159030)
   * Additional Reference: Translating compliance constraints to requirements. [NIST 800-160 public draft 2, Appendix-J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
   * Hands-on: In-class working session on Misuse Cases
 1. **Assurance Cases for Software Security Engineering**
