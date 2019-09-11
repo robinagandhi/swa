@@ -170,7 +170,7 @@ class: center, middle
 Freedom from conditions that can cause _loss of assets_ with _unacceptable consequences_
 
 ## .red[Engineering challenge]
-Engineer _protection capabilities_ for:
+Engineer .green[_protection capabilities_] for:
 1. .red[assets] to which security applies and
 1. .red[consequences] against which security is assessed
 

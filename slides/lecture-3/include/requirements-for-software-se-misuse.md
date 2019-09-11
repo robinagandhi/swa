@@ -237,7 +237,7 @@ class: middle
 - Misuse cases reflect reasoning that help derive security requirements
 
 ## Due Date
-.red[Wednesday, September 26th, 2018]
+.red[[See Project Page](https://robinagandhi.github.io/swa/pages/project.html)]
 - Submit a link to a markdown report on Canvas
 
 ---
