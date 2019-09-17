@@ -83,7 +83,7 @@ The project will have the following deliverables:
 \* All dates are subject to change as the course progresses
 
 ## Teams Project for Fall 2019
-TBD
+[Teams 2019](https://robinagandhi.github.io/swa/slides/teams-2019/teams.html)
 
 ## Past Teams
 
