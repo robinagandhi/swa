@@ -148,8 +148,11 @@ Introduce new use cases with the purpose to detect or prevent misuse cases
 class: middle
 # Misuse Case
 ## Construction Steps
-### [Optional] Step 5
+### Step 5
+Iterate on steps 2 through 4 for recursive decomposition of security requirements
+### [Optional] Step 6
 [Document requirements](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.9.8190&rep=rep1&type=pdf)
+
 
 ???
 We will not do this step to keep the process lightweight. But you know how to do it if required.
@@ -237,7 +240,7 @@ class: middle
 - Misuse cases reflect reasoning that help derive security requirements
 
 ## Due Date
-.red[[See Project Page](https://robinagandhi.github.io/swa/pages/project.html)]
+.red[See Canvas]
 - Submit a link to a markdown report on Canvas
 
 ---
@@ -250,4 +253,4 @@ class: middle
 # Resources
 1.	These slides!
 1.	Readings on Canvas
-1.	The [Common Attack Pattern Enumeration and Classification (CAPEC)](http://capec.mitre.org/data/graphs/1000.html) as another reference for common attacks
+1.	The [Common Attack Pattern Enumeration and Classification (CAPEC)](https://capec.mitre.org/data/definitions/1000.html) as another reference for common attacks
