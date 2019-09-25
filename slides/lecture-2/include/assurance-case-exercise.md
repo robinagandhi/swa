@@ -3,7 +3,7 @@ class: center, middle
 
 ---
 class: middle
-# Step 1 (Should already have one!)
+# Step 1
 ## Create an account on [Lucidchart](https://www.lucidchart.com/pages/usecase/education-request) using your `.edu` email
 
 ---
@@ -19,7 +19,7 @@ class: middle
 ## Build Assurance Cases for your class project
 
 - Using security requirements, identify five assurance claims
-- Prepare a convincing argument in support of the claims. Document this argument using an assurance case for each of the claims.
+- Prepare an argument in support of the claims that would be convincing in your assumed/hypothetical operational environment. Document this argument and the needed evidence using an assurance case for each of the claims.
 
 ---
 
@@ -29,6 +29,7 @@ class: middle
 
 - Collect evidence as required from the OSS project.  
 If the evidence collection requires significant effort, a plan for collecting the evidence is OK.
+- Assess the alignment of the planned evidence with that available (or can be made available) from the OSS project. Highlight the gaps.
 - Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
 
 ---
@@ -54,4 +55,4 @@ class: middle
 ## Submit link to a markdown report
 - Submit the link on Canvas
 - One submission per team
-- Due Date: October 12, 2018 11:59 P.M.
+- Due Date: See Canvas

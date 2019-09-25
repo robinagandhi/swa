@@ -254,3 +254,23 @@ class: middle
 1.	These slides!
 1.	Readings on Canvas
 1.	The [Common Attack Pattern Enumeration and Classification (CAPEC)](https://capec.mitre.org/data/definitions/1000.html) as another reference for common attacks
+
+---
+class: middle
+# Guidance
+### Strategy
+1. Focus on how data enters the application from external sources. Examples: file, URL, form data, registry data, etc. .red.bold[*]
+1. Once you have located external data sources, try to think of adversaries in the domain that can influence those inputs to their own advantage.  
+1. Use misuse cases to analyze above scenarios
+
+.footnote[.red.bold[*] Select diverse dataflows in your top 5]
+
+
+---
+class: middle
+# Guidance
+### Representation
+* Use cases and misuse cases should be verb phrases  
+  (verb + object)  
+  The subject is the actor or misactor
+* Recurse (abuse frame - security frame) until specific functional security requirements can be identified that are .red[implemented by the system].

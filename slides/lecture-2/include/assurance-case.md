@@ -16,6 +16,11 @@ Systems and Software Engineering— Systems and Software Assurance— Part 2: As
 ---
 class: middle
 
+![Dilbert Trust and stupidity](https://assets.amuniversal.com/c8253cc0db9a012e2fae00163e41dd5b)
+
+---
+class: middle
+
 ## The first principle is that you must not fool yourself and you are the easiest person to fool... After you've not fooled yourself, it's easy not to fool other scientists.
 
 .footnote[
@@ -68,21 +73,23 @@ Also, we are not sure that the cat is really there!
 
 --
 
-## .blue[
+### .blue[
 What are the Goals/Claims to be proven?
 ]
+- Operational tasks may not focus on outcomes.
+- Assurance is in context of a claim.
 
 ---
 class:middle
 # Possible claims
 
-## .red[Claim 1:] The room has at least one black cat
+### .red[Claim 1:] The room has at least one black cat
 --
 
-## .red[Claim 2:] The room has no black cats
+### .red[Claim 2:] The room has no black cats
 
 --
-## .blue[
+### .blue[
 What is the basis for the belief in these claims?
 ]
 ---
@@ -95,7 +102,8 @@ class: middle
 # Basis for the Belief
 
 ## .blue[Kitty-Kitty-Kitty] Search Process*
-1. Search team puts a bowl of milk in the room and says _kitty-kitty-kitty_ three times
+1. Search team puts a bowl of milk in the room and says  
+.green[_kitty-kitty-kitty_] three times
 1. Four corners and center of room covered
 1. Stop when a cat is discovered
 
@@ -732,6 +740,16 @@ _In pursuit of Trusted Computer System Evaluation Criteria (TCSEC) or CC evaluat
 ]
 ---
 class: middle
+# Software Security Controls
+First to develop and apply assurance case based method for control refinement
+- Software related controls derived from the NIST SP 800-53 control catalog
+- These software assurance controls are enumerated in [NIST SP 800-160 Appendix-J](https://csrc.nist.gov/csrc/media/publications/sp/800-160/archive/2016-05-04/documents/sp800_160_second-draft.pdf)
+
+#### Gandhi, R., Siy, H., Crosby, K., Mandal, S. (Graduate), (2014). Gauging the Impact of FISMA on Software Security, IEEE Computer, vol. 47 (9)
+#### Gandhi, R. A., Crosby, K., Siy, H., Mandal, S. (2016) Driving Secure Software Initiatives Using FISMA: Issues and Opportunities. CrossTalk, Journal of Defense Software Engineering, Jan/Feb 2016 Issue.
+
+---
+class: middle
 # Security Controls
 [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/csrc/media/publications/sp/800-53/rev-5/draft/documents/sp800-53r5-draft.pdf)
 
@@ -754,16 +772,6 @@ IA-2 IDENTIFICATION AND AUTHENTICATION
 
 ### Proposed (Rev 5):
 - Control: Uniquely identify and authenticate organizational users.
-
----
-class: middle
-# Software Security Controls
-First to develop and apply assurance case based method for control refinement
-- Software related controls derived from the NIST SP 800-53 control catalog
-- These software assurance controls are enumerated in [NIST SP 800-160 Appendix-J](https://csrc.nist.gov/csrc/media/publications/sp/800-160/archive/2016-05-04/documents/sp800_160_second-draft.pdf)
-
-#### Gandhi, R., Siy, H., Crosby, K., Mandal, S. (Graduate), (2014). Gauging the Impact of FISMA on Software Security, IEEE Computer, vol. 47 (9)
-#### Gandhi, R. A., Crosby, K., Siy, H., Mandal, S. (2016) Driving Secure Software Initiatives Using FISMA: Issues and Opportunities. CrossTalk, Journal of Defense Software Engineering, Jan/Feb 2016 Issue.
 
 ---
 class: middle
