@@ -32,18 +32,18 @@ The project will have the following deliverables:
   * Using security requirements, identify five assurance claims
   * Prepare an argument in support of the claims that would be convincing in your assumed/hypothetical operational environment. Document this argument and the needed evidence using an assurance case for each of the claims.
   * Assess the alignment of the planned evidence with that available (or can be made available) from the OSS project. Highlight the gaps.
-  * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
+  * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task. Also, include a summary of your team reflection meeting. What issues occurred? What did you plan to change moving forward?
 1. **Designing for Software Security Engineering**: A markdown report that describes the following:
   * Develop threat models for critical data-flows through the software. Misuse and assurance cases will provide starting points for examination. Include threat model diagrams and threat analysis.
   * Using threat model analysis, review OSS project for design related issues. Summarize your observations.
-  * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
+  * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task. Also, include a summary of your team reflection meeting. What issues occurred? What did you plan to change moving forward?
 1. **Code analysis for Software Security Engineering**: A markdown report that describes the following:
   * Code review strategy
   * Findings from manual code review of critical security functions identified in misuse cases, assurance cases and threat models.
   * Findings from automated code scanning (if available). Include links to full reports.
   * Summary of key findings from manual and/or automated scanning. This summary may include categorization, mappings to CWEs, CAPECs, Risk Levels, etc.
   * Links to any pull requests, issues, discussion, etc. from the team to the original project and any follow-up interactions.
-  * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
+  * Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task. Also, include a summary of your team reflection meeting. What issues occurred? What did you plan to change moving forward?
 1. **Class Presentation**: 10-minute class presentation that highlights the following:
   * Project description
   * Gaps in security requirements and design of the original project
