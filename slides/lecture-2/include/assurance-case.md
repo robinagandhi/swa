@@ -153,7 +153,7 @@ Basis for the belief in a claim
 
 --
 
-## .green[Belief] increases when .red[doubts] are removed!   
+.green[Belief] increases when .red[doubts] are removed!   
 
 --
 
@@ -169,7 +169,7 @@ and then progressively eliminated by new evidence
 ---
 # Eliminative Induction
 
-## Step 1: Introducing doubts
+## Step 1: Introduce doubts
 Challenge the identified claims by introducing doubts
 --
 
@@ -177,12 +177,12 @@ Challenge the identified claims by introducing doubts
 For each doubt, identify sub-claims that eliminate the doubt
 --
 
-## Step 3: Evaluate
+## Step 3: Evaluate Argument
 Can sub-claims be directly supported by evidence?
 If not, go to Step 1, repeat process for sub-claims
 ---
 class: middle
-# Step 1: Introducing doubts
+# Step 1: Introduce doubts
 
 .red[C1.1:] Kitty-kitty-kitty search process discovers no cats
 --
@@ -368,7 +368,7 @@ class: middle
 
 ### Avoid claims about the supporting method/techniques
 - .red[Bad claim:] The system uses AES encryption
-- Uninteresting
+- Why? Because it is not interesting
 
 --
 
@@ -411,6 +411,9 @@ class: middle
 ## .orange[&lt;VERB-PHRASE&gt;]  
 - .orange[Verb-Phrase] defines a predicate using the critical property of the subject along with its expected value and related uncertainty
 
+## Consider [diagramming sentences](http://grammar.ccc.commnet.edu/grammar/diagrams2/one_pager1.htm)
+- Avoid compound predicates
+
 ---
 class: middle
 # [Grammatical Guidance](http://www.sei.cmu.edu/dependability/tools/assurancecase/)
@@ -437,21 +440,6 @@ See notes (hit `p`) for class exercise
 # Class exercise:
 # Work with your team to rephrase these appropriately.
 When you are done enter your answers in this [Google Doc](https://docs.google.com/a/unomaha.edu/document/d/11Xr8GHBHfWJGLotiLoe-us1EZ4Qjn2msjfxHAKjs64Q/edit?usp=sharing)
-
----
-
-class: middle
-# Good Examples
-
-## .blue[Canvas] .green[has no] .orange[exploitable XSS weaknesses]
-
---
-
-## .green[All] .blue[Canvas XSS weaknesses] .green[have been sufficiently] .orange[mitigated]
-
---
-
-## .blue[Canvas] .orange[attack surface] .green[is minimized]
 
 ---
 class: middle
@@ -802,3 +790,13 @@ class: center, middle
 .bottom-left[
 ![meme](http://s2.quickmeme.com/img/31/315640bead03adc498079b11707081fbfcfc0d4d97b1e1d69ba1d930dfa286d6.jpg)
 ]
+
+???
+
+# Good Examples
+
+## .blue[Canvas] .green[has no] .orange[exploitable XSS weaknesses]
+
+## .green[All] .blue[Canvas XSS weaknesses] .green[have been sufficiently] .orange[mitigated]
+
+## .blue[Canvas] .orange[attack surface] .green[is minimized]

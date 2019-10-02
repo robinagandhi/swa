@@ -26,8 +26,9 @@ Content will be linked as we progress through the semester. This allows to me to
   * Additional Reference: Translating compliance constraints to requirements. [NIST 800-160 public draft 2, Appendix-J](http://csrc.nist.gov/publications/drafts/800-160/sp800_160_second-draft.pdf)
   * Hands-on: In-class working session on Misuse Cases
 1. **Assurance Cases for Software Security Engineering**
-  * Trustworthiness context: Assurance cases
-  * Assignment: Assurance Case Exercise (Team Deliverable)
+  * Recap: [Security Engineering Framework](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#25)
+  * Trustworthiness context: [Assurance cases](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case.html)
+  * Assignment: [Assurance Case Exercise (Team Deliverable)](https://robinagandhi.github.io/swa/slides/lecture-2/assurance-case-exercise.html)
   * Hands-on: In-class working session on Assurance Cases
   * Reference: [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases. (See Canvas)
   * Reference: [OMG Structured Assurance Case Metamodel](https://www.omg.org/spec/SACM/About-SACM)
