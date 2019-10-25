@@ -21,17 +21,21 @@ class: middle
 
 ## Start with a Data-flow perspective
 - **Most attacks come through .red[data]**
+- **Attacks gravitate towards .red[data]**
+
+--
 - Control flow: less relevant  
 to analyze security in design and architecture
-- **Data Flow Diagrams (DFD)** provide a structured,   
-concrete artifact to _discuss_ design:  
-Conceptualization, Changes or Re-design
 
 ---
 class: middle
-## Practical Applications
-_"Applying a structured approach to threat scenarios during design helps a team more effectively and less expensively identify security vulnerabilities, determine risks from those threats, and establish appropriate mitigations"_   
-[Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx)
+# Data Flow Diagrams (DFD)
+- A structured, concrete artifact to _discuss_ design:  
+Conceptualization, Changes or Re-design
+- Keeps designer focused on design issues
+
+--
+- **Practical Relevance**: _"Applying a structured approach to threat scenarios during design helps a team more effectively and less expensively identify security vulnerabilities, determine risks from those threats, and establish appropriate mitigations"_ [Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx)
 
 ---
 class: middle
@@ -54,7 +58,7 @@ class: middle
 1. External Interactors
 1. Processes
 1. Data Stores
-1. Trust Boundaries
+1. .red[Trust Boundaries]
 1. Data Flows
 
 ---
@@ -198,9 +202,9 @@ class: middle
 
 ## Step 1
 ### Start with a Level 0 diagram for a use case
-- Single process
-- Identify all External Interactors
-- Draw data flows to connect them
+- A single process (represents the system, no data stores)
+- Identify all External Interactors (EI)
+- Draw data flows to connect EI & the process
 ---
 
 class: middle
@@ -261,7 +265,7 @@ class: middle
 - Try to locate data sinks, whenever possible
 
 ### Data Flows
-- Attached to at least one process
+- Attached to at least one process or EI
 
 
 ---
@@ -640,61 +644,52 @@ class: middle
 - Examine the threats identified
 
 ---
-exclude: true
 class: center, middle
 # Threat Modeling Assignment
 
 ---
-exclude: true
 class: middle
 
 # Step 1
-## Recall the Security Requirements Assignment
+## Recall the Security Requirements and Assurance Case Assignments
 - You prioritized several _data flows_ for   
-building use/misuse cases
+building use/misuse cases and identify assurance claims
 
 ---
-exclude: true
 class: middle
 # Step 2
 ## Prepare for threat modeling
 - Develop Level 0 DFDs that supports each of your use cases.
 - Consolidate similar DFDs.
-- Document the Level 0 DFDs in your Report
+- Document the Level 0 DFDs in your Report (Diagrams only, no analysis necessary)
 
 ---
-exclude: true
 class: middle
 # Step 3
 ## Build Level 1 threat models
 - Expand Level 0 DFDs into Level 1 DFDs.
 - Draw the DFDs in TMT 2016
-- Perform analysis on your code base   
-to align the diagram with reality
-- Identify appropriate trust boundaries on the diagram
+- Examine your project codebase to align the diagram with reality
+- Identify appropriate trust boundaries
 - Validate the diagram for any obvious structural deficiencies
 
 ---
-exclude: true
 class: middle
 # Step 4
 ## Analyze the Level 1 diagram to identify the applicable STRIDE threats
 - Examine each automatically identified threat
 - Document mitigation strategies for the identified threats
-- Pay special attention for elements that   
-interact across threat boundaries
+- Pay special attention for elements that interact across threat boundaries
 - Generate a full HTML report using TMT 2016
-- Host the reports on your project github repo.
+- Host the TMT 2016 reports in your project github repo and link from your report.
 
 ---
-exclude: true
 class: middle
 # Step 5
 ## Review OSS design
-- Review OSS project actual software design for security related issues based on your threat models. Summarize your observations.
+- Review OSS project actual software design for security related issues based on your threat models. Summarize your observations regarding missing mitigations.
 
 ---
-exclude: true
 class: middle
 
 # Grading criteria
@@ -710,12 +705,6 @@ class: middle
 
 ### Quality of observations
 - Observations from OSS project align with the high-priority threats identified from the DFD diagram analysis
-
----
-exclude: true
-class: middle
-# Due Date
-Wednesday November 7th, 2018
 
 ---
 class: center, middle
