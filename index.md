@@ -43,7 +43,7 @@ Content will be linked as we progress through the semester. This allows to me to
   * Lecture: Architectural patterns for security (Available only Canvas)
   * Reading: NIST 800-160 Appendix-F: Design Principles for Security (Available on Canvas)
 1. **Coding for Software Security Engineering**
-  * Coding for SSE Lecture  
+  * [Coding for SSE Lecture](https://robinagandhi.github.io/swa/slides/lecture-5/code-for-software-se.html)    
   Knowledge-bases: [Common Weakness Enumeration](http://cwe.mitre.org/), [CAPEC](https://capec.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
   * [DHS SWAMP](https://www.mir-swamp.org/)
   * Lecture: Code review tools and techniques
