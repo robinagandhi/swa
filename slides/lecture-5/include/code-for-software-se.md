@@ -56,8 +56,8 @@ class: middle
 
 --
 
-## More recent efforts...
-- Seven Pernicious Kingdoms, PLOVER, 19 Deadly Sins, OWASP top ten, WASP, etc,.
+## Other [efforts since](https://cwe.mitre.org/about/sources.html)...
+- Seven Pernicious Kingdoms, PLOVER, 19 (Now 24) Deadly Sins, OWASP top ten, WASP etc,.
 
 --
 
@@ -128,9 +128,9 @@ Then navigate to parent, child, peer relationships
 class: middle
 
 # Exercise
-## Map [CVE-2004-0492](https://nvd.nist.gov/vuln/detail/CVE-2004-0492) to CWEs
-- Description:   
-Heap-based buffer overflow in proxy_util.c for mod_proxy in Apache 1.3.25 to 1.3.31 allows remote attackers to cause a denial of service (process crash) and possibly execute arbitrary code via a negative Content-Length HTTP header field, which causes a large amount of data to be copied.  
+## Map [CVE-2019-10097](https://nvd.nist.gov/vuln/detail/CVE-2019-10097) to CWEs
+- Description:  
+In Apache HTTP Server 2.4.32-2.4.39, when mod_remoteip was configured to use a trusted intermediary proxy server using the "PROXY" protocol, a specially crafted PROXY header could trigger a stack buffer overflow or NULL pointer deference. This vulnerability could only be triggered by a trusted proxy and not by untrusted HTTP clients.  
 - Build a list of most relevant CWE IDs. Example: .red[79 35 34]
 
 --
@@ -174,7 +174,7 @@ class: middle
 1. Hide activities  
 
 ## Top CWE lists
-- [CWE/SANS Top 25](https://cwe.mitre.org/top25/index.html)
+- [CWE Top 25](https://cwe.mitre.org/top25/index.html)
 - Scoring mechanisms: [CWSS](https://cwe.mitre.org/cwss/index.html), [CWRAF](https://cwe.mitre.org/cwraf/index.html)
 
 ???
