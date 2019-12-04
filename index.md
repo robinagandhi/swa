@@ -45,7 +45,7 @@ Content will be linked as we progress through the semester. This allows to me to
 1. **Coding for Software Security Engineering**
   * [Coding for SSE Lecture](https://robinagandhi.github.io/swa/slides/lecture-5/code-for-software-se.html)    
   Knowledge-bases: [Common Weakness Enumeration](http://cwe.mitre.org/), [CAPEC](https://capec.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
-  * [DHS SWAMP](https://www.mir-swamp.org/)
+  * [DHS SWAMP](https://www.mir-swamp.org/), [SpotBugs](https://spotbugs.github.io), [SonarQube](https://www.sonarqube.org), [SonarCloud](https://sonarcloud.io/), [Visual Code Grepper](https://github.com/nccgroup/VCG), [AFL security-oriented fuzzer](http://lcamtuf.coredump.cx/afl/), [Clang Static Analyzer](https://clang-analyzer.llvm.org), [Other tools](https://www.mir-swamp.org/#tools/public) and [language specific guidance](https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/language-specific.html).
   * Lecture: Code review tools and techniques
 1. Hands-on: In-class working session for code review and automated tool analysis.  
 1. ~~**Testing for Software Security Engineering**~~  
