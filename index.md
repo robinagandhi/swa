@@ -48,7 +48,7 @@ Content will be linked as we progress through the semester. This allows to me to
   * [DHS SWAMP](https://www.mir-swamp.org/)
   * Lecture: Code review tools and techniques
 1. Hands-on: In-class working session for code review and automated tool analysis.  
-1. **Testing for Software Security Engineering**
+1. ~~**Testing for Software Security Engineering**~~  
 1. **Project Presentations**
 1. **Final Exam**
 1. Other topics
