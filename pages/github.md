@@ -4,6 +4,9 @@ title: Github Primer
 description: Getting started with Git and Github
 ---
 
+
+<!-- Add a unit on [Github Project Boards](https://help.github.com/articles/about-project-boards/)-->
+
 # Github Primer
 
 ### Cybersecurity First Principles in this lesson

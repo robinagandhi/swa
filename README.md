@@ -1,12 +1,11 @@
-# CYBR 8420 Software Assurance @ UNO
+# Software Assurance @ UNO (CYBR/CSCI 8420)
 This repository includes all contents related to CYBR 8420 Software Assurance course at The University of Nebraska Omaha.
 
 # Course Author
 [Robin A. Gandhi](http://faculty.ist.unomaha.edu/rgandhi/)
 
 # Course access
-This is an course uses Github Pages using Jekyll themes and remark.js for publishing instructional content.  
-The Course Github pages are available here: [https://robinagandhi.github.io/swa](https://robinagandhi.github.io/swa)
+This course uses Github Pages using Jekyll themes and remark.js for publishing instructional content.  Course materials can be browsed here: [https://robinagandhi.github.io/swa](https://robinagandhi.github.io/swa)
 
 
 # How to Clone this Repo
@@ -51,7 +50,7 @@ In general, if you are making it a pull request you agree to abide by this CLA: 
 
 # License  
 Software Assurance.  
-Copyright (C) 2016  Dr. Robin A. Gandhi
+Copyright (C) 2020  Dr. Robin A. Gandhi
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

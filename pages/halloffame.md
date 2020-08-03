@@ -9,17 +9,14 @@ description: CYBR 8420 Hall of Fame
 A collection of Github interactions based on the course project.   
 This list includes successful pull requests, issues and other interactions with upstream project developers.
 
-## Fall 2019 Teams
+## Fall 2020 Teams
 
-* << Space available! >>
+* << Space available! Will your team make it? I sure hope so.>>
 
-## Fall 2018 Teams
+## Past team accepted contributions or substantial interactions
 
-- No entries but lots of attempts. Here are couple examples:
 > [Mosquitto library](https://github.com/eclipse/mosquitto/issues/1061)   
-[Elastic Search](https://github.com/elastic/elasticsearch/issues/36395#issue-388858623)
-
-## Fall 2017 Teams
+> [Elastic Search](https://github.com/elastic/elasticsearch/issues/36395#issue-388858623)
 
 ### Team JAX
 - Members: Chad Crowe, James Percival, Daniel Ritter, [Larry Singleton](https://github.com/larrysingleton)
@@ -30,15 +27,11 @@ This list includes successful pull requests, issues and other interactions with 
     - [Pull Request #3161](https://github.com/jenkinsci/jenkins/pull/3161)
     - [Issue](https://issues.jenkins-ci.org/browse/JENKINS-48227)
 
-
 ### Team Mavericks
 - Members: Niluja Biswal, Neeharica Kodali, Durgabhavani Peta, Kasiviswanath Reddy Poreddy
 - Project: [TeamMates](https://github.com/TEAMMATES/teammates)
   - [Issue1](https://github.com/TEAMMATES/teammates/issues/8183)
   - [Issue2](https://github.com/TEAMMATES/teammates/issues/8178)
-
-
-## Fall 2016 Teams
 
 ### Team NODE
 - Members: Tyler Chrisman, Sean Hoefler, Juan Membreno, David Nelson
