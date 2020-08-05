@@ -26,6 +26,7 @@ description: CYBR 8420 Software Assurance Syllabus
 * SA5. Students will be able to apply software assurance standards and tools to analyze code.
 * SA6. Students will be able to examine, synthesize, discuss, and present evidence related to software assurance.
 * SA7. Students will be able to give examples of activities that occur within a software assurance maturity framework.
+* SA8. Students will be able to use modern software engineering tools for code management and collaboration
 
 # Teaching methods
 * Online flipped class format

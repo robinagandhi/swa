@@ -1,13 +1,10 @@
 ---
 layout: default
-title: Github Primer
-description: Getting started with Git and Github
+title: GitHub Primer
+description: Getting started with Git and GitHub
 ---
 
-
-<!-- Add a unit on [Github Project Boards](https://help.github.com/articles/about-project-boards/)-->
-
-# Github Primer
+# GitHub Primer
 
 ### Cybersecurity First Principles in this lesson
 
@@ -21,11 +18,11 @@ Good fences make good neighbors.
 #### Modularization
 The concept of modularity is like building blocks. Each block (or module) can be put in or taken out from a bigger project. Each module has its separate function that is interchangeable with other modules.
 
-### Introduction: Git and Github
+### Introduction: Git and GitHub
 * [Git](https://git-scm.com/) is a popular software development tool.
 * Used by developers to collaborate and version control code.   
 * A collaborative environment to develop written works including code!
-* [Github](www.github.com) is popular for online git repository hosting
+* [GitHub](https://www.github.com) is popular for online git repository hosting
   - Free for open source  
   - [BitBucket](https://bitbucket.org/), is another such a service.
 
@@ -46,20 +43,14 @@ ls  # list files and directories in the current directory
 - Create, clone and manage online repositories
 - Create and manage local repositories
 - Synchronize repositories
-- Collaborate using Github
+- Collaborate using GitHub
 
 # Materials required
-- [git](https://git-scm.com/download/) (Windows Version)
+- Download and install [git](https://git-scm.com/download/)
 
 # Table of Contents    
 <!-- TOC START min:1 max:3 link:true update:true -->
-- [Github Primer](#github-primer)
-    - [Cybersecurity First Principles in this lesson](#cybersecurity-first-principles-in-this-lesson)
-    - [Introduction: Git and Github](#introduction-git-and-github)
-    - [Lesson goals](#lesson-goals)
-    - [Materials required](#materials-required)
-    - [Prerequisite lessons](#prerequisite-lessons)
-    - [Table of Contents](#table-of-contents)
+- [GitHub Primer](#github-primer)
     - [Step 1: Create an Account](#step-1-create-an-account)
     - [Step 2: Hello World](#step-2-hello-world)
     - [Step 3: Clone a Repository](#step-3-clone-a-repository)
@@ -68,27 +59,28 @@ ls  # list files and directories in the current directory
     - [Step 6: Fork Repository](#step-6-fork-repository)
     - [Step 7: Make a Pull Request](#step-7-make-a-pull-request)
     - [Step 8: Markdown](#step-8-markdown)
+    - [Step 9: Project Management](#step-9-project-management)
     - [Fork this course](#fork-this-course)
     - [Cyber security First Principle Reflections](#cyber-security-first-principle-reflections)
-  - [Additional Resources](#additional-resources)
-  - [Acknowledgements](#acknowledgements)
-  - [License](#license)
+- [Additional Resources](#additional-resources)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
 <!-- TOC END -->
 
 # Step 1: Create an Account
-First things first, create a free account on Github. https://github.com/join
+First things first, create a free account on GitHub. [https://github.com/join](https://github.com/join)
 You will also need to verify your email address after registration to use your new GitHub account.
 
 [Top](#table-of-contents)
 
 # Step 2: Hello World
-Complete the following Github tutorial:
-https://guides.github.com/activities/hello-world/
+Complete the following GitHub tutorial:
+[https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/)
 
-At the end of Step 2, you will have created a `remote` repository and will have added a `branch`. It is `remote` because all your files are in the Github cloud. As a developer, you might ask, _"how do I use this to create code if it is just online?"_ It is not convenient to write and test code online, especially when many applications require locally install packages even to work. Using your own `Local` repository would be great. We will do just that in the next step.   
+At the end of Step 2, you will have created a `remote` repository and will have added a `branch`. It is `remote` because all your files are on the GitHub server. As a developer, you might ask, _"how do I use this to manage my local codebase if it is just online?"_ It is not convenient to write and test code online, especially when many applications require locally install packages even to work. Using your own `Local` repository would be great. We will do just that in the next step.   
 
-Git is a distributed configuration management system. It helps to `avoid` thinking of a traditional centralized code repository. Instead, with Git we have multiple independent repositories that could be in different states at any given time and synchronized using specific commits.
+Git is a distributed configuration management system. Unlike a centralized code repository, there is no single authoritative repository. With Git you can have multiple independent repositories that could be in different states at any given time. If needed, these repositories may be synchronized with reference to commits.
 
 [Top](#table-of-contents)
 
@@ -103,27 +95,27 @@ To create a `Local` repository, git has two basic options.
 Let's start by looking at option #1. First, check if Git is installed.
 
 - Git tools do not come pre-installed with all operating systems.
-- To check if they exist on your operating system, open up a command line interface (`Powershell` for Windows) and type:
+- To check if they exist on your operating system, open up a command line interface (`Powershell` for Windows, Terminal for Mac OS or Linux) and type:
 
   ```bash
   git --version
   ```
 
 - If Git is installed, this command will show the version installed. If the command is not recognized, then it means you need to install git on your OS. The information available at [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) can walk you through it for a variety of OSes.
-- We will assume a Windows OS environment with Powershell as shown below:
+- Just for demonstration, I will assume a Windows OS environment with Powershell (similar to a Terminal on Mac OS or Linux) as shown below:
 
 > ![version](./img/gitVersionCheck.png)
 
 To `clone` a remote repository (what we set out to do), we first need a ```reference URL``` to find it.   
-* On `Github.com`, navigate to your hello-world repository and click on the button that says ```Clone or download```.   
+* On `GitHub.com`, navigate to your hello-world repository and click on the button that says ```Clone or download```.   
 * Copy that URL.
 * Now we are ready to clone this remote repository, and create a local repository.
 
   ```bash
-  git clone <replace this, including angled brackets with the clone URL that you copied above>
+  git clone <replace this, including angled brackets copied URL>
   ```
 
-You will start to see some download messages, and upon success, your local repository will be ready for use. You may be asked to authenticate with Github credentials if your repository is not public.
+Once you issue this command, you will start to see some download messages, and upon success, your local repository will be ready for use. You may be asked to authenticate with GitHub credentials if your repository is not public.
 
 >![clone](./img/gitClone.png)
 
@@ -142,7 +134,7 @@ You should see a README.md and possibly some other files.
 
 ## Initialize a new repository
 
-> We do not need to use this option currently, so you may move to [Step 4](#step-4)
+> **NOTE:** We do not need to use this option currently, so you may move to [Step 4](#step-4)
 
 If you need to create a new repository you will navigate to the folder (using the `cd` command) containing the files you wish to version control and then use the init command:
 ```bash
@@ -163,7 +155,7 @@ In this step, we will make changes to the files in our `Local` repository and th
 
 Git is based on a **de-centralized** model of ownership - which means that there is no central authoritative repository. Every repository, Local or Remote, is fully autonomous and fully functional on its own. So changes made in any repository are tracked in that repository only. Two repositories do not communicate unless there is an explicit request to synchronize changes across them. This constraint will make more sense as we work through a scenario.
 
-Let's open the hello-world folder in windows explorer and make changes to the `README.md` file in a text editor.  
+Let's open the hello-world folder in your file explorer and make changes to the `README.md` file in a text editor.  
 
 1. Navigate to the files
 2. Open README.md in Notepad
@@ -184,14 +176,15 @@ A few things to notice here about these status messages:
 2. `Your branch is up-to-date with 'origin/master'`: Your local repository master branch is in sync with your remote repository master branch on GitHub. The default name for the remote repository is **origin**. This name makes sense as you cloned your local repository from it.  
 3. `Changes not staged for commit`: git follows a two-step process to save changes to a repository.
   1. The user indicates which modified/deleted/new files need to be `staged` for a save in the repository.
-  2. The staged files are `committed` to the repository.
+  2. The staged files are `committed` to the repository.   
+    We will see both these steps in action below.
 4. `modified:  README.md`: git knows that you modified README.md file.
 
 Now we `stage` our changes for a commit using this command:
 ```bash
 git add -A
 ```
-The above command `adds` any edited files (including deleted files) in the entire working tree in a staging area called the `index`, which is a temporary holding place before a commit. Other add options are more selective in updating the staging area with your changes than `-A`. Now, recheck the status of the repository using the following command:
+The above command `adds` any edited files (including deleted files) in the entire working tree in a staging area called the `index`, which is a temporary holding place before a commit. Instead of `-A`, with this command you may specify a file name or directory from which to update the staging area. Now, recheck the status of the repository using the following command:
 
 ```bash
 git status
@@ -200,16 +193,14 @@ You should see something like this:
 
 >![gitadd](./img/gitadded.png)
 
-This time the modified files are `staged` for a `commit` and appear in green.
+This time the modified files are `staged` and appear in green. These changes are ready to be committed.
 
-Now before we `commit` these files into our local repository, the git author details need to be set. This constraint is for accountability of commits. Using the commands below, save your information to the git configuration files and set them for all of your local repositories. Make sure to use the same name and email you used to register with Github.
+Before we `commit` these files into our local repository, the author details need to be set. This constraint is for accountability of commits. Using the commands below, save your information to the git configuration files and set them for all of your local repositories. Make sure to use the same name and email you used to register with GitHub.
 
 ```bash
 git config --global user.name "replace this with your name"
 git config --global user.email youremail@example.com
 ```
-You should see something like this (with your name and email):
->![gitconfig](./img/gitconfig.png)
 
 Check your configuration changes by using the following command:
 ```bash
@@ -237,8 +228,12 @@ This command shows a summary of commits in the repository, starting with the mos
 To see a specific commit use the following command with a commit-id, such as: `3503cb621d9a25aae8b3ecea93c09c3f54bb1d4e` or just the first 7 digits `3503cb6`.
 
 ```bash
+# replace commit-id in the command below
+# You can find them using the git log command
 git show commit-id
 ```
+
+> Hit the key `q` to exit
 
 Issue this command to check your repository status once again:
 ```bash
@@ -247,7 +242,7 @@ git status
 
 It should report **no** uncommitted changes. But it indicates that `Your branch is ahead of 'origin/master' by 1 commit`. It means that the local repository master branch has more recent commits than the remote repository master branch.
 
-To push our local commits to the remote repository (Github in this case), we need the git `push` command. With this command, we need to indicate the name of the remote repository followed by the name of the local repository branch that has updates to be pushed. Do you remember the name of our remote repository and the main branch?
+To push our local commits to the remote repository (GitHub in this case), we need the git `push` command. With this command, we need to indicate the name of the remote repository followed by the name of the local repository branch that has updates to be pushed. Do you remember the name of our remote repository and the main branch?
 
 > **Questions**  
 > - What is the default name of the remote repository?  
@@ -259,7 +254,7 @@ To `push` local commits in the current branch to a remote repository (`origin` i
  git push origin master
 ```
 
-> To rename a branch in the remote repository, you'd use the same git push command, but you would add one more argument: the name of the new branch. For example:  
+> While pushing changes from a local branch, you may rename the branch in the remote repository, you would add one more argument to the push command.  
 > `git push  <REMOTENAME> <LOCALBRANCHNAME>:<REMOTEBRANCHNAME>`  
 > This command pushes the LOCALBRANCHNAME to your REMOTENAME but renames it as REMOTEBRANCHNAME.  
 > This option would be useful if you made local commits on the master branch but want to push your changes to a feature branch on origin.
@@ -269,7 +264,7 @@ Now, issue the `status` command to check your repository status once again:
 git status
 ```
 
-Visit your remote repository on `Github.com`. Your changes should appear there. You should also see your commit message there. Clicking on the commit message will show the file differences in that commit.
+Visit your remote repository on `GitHub.com`. Your changes should appear there. You should also see your commit message there. Clicking on the commit message will show the file differences in that commit.
 
 > ![updateremote](./img/remoteupdate.png)
 
@@ -278,11 +273,11 @@ As mentioned before in the introduction, git version control is very efficient f
 [Top](#table-of-contents)
 
 # Step 5: Pull Remote Changes
-What happens if we make some changes to README.md on `Github.com`? Or another collaborator makes changes to it. How do we get these changes back into our local repository? We will learn just that in this step.
+What happens if we make some changes to README.md on `GitHub.com`? Or another collaborator makes changes to it. How do we get these changes back into our local repository? We will learn just that in this step.
 
-So, I realized that I forgot to add a link to UNO's Cybersecurity programs in the README.md file. So I will make these changes and commit those changes on Github.com.
+So, I realized that I forgot to add a link to UNO's Cybersecurity programs in the README.md file. So I will make these changes and commit those changes on GitHub.com.
 
-1. First, click on README.md file on Github and then click the edit option as shown below:
+1. First, click on README.md file on GitHub and then click the edit option as shown below:
 >![githubedit](./img/githubedit.png)
 
 2. Make changes, add a commit message and click `Commit changes`
@@ -296,7 +291,7 @@ Now the remote repository is one `commit` ahead of the local repository. To brin
 ```bash
 git pull
 ```
-This command fetches remote changes (`git fetch`) and merges them (`git merge`) into your local repository.
+The `git pull` command fetches remote changes (`git fetch`) and merges them (`git merge`) into into the current branch.
 
 > `Sidebar`: If a repository has linked sub-modules, add the following recursion flags to clone and pull changes from the sub-modules as well:  
 > `git clone --recursive <<name of the repository with sub-modules>>`  
@@ -318,30 +313,30 @@ If you are interested in learning more about complex team interaction scenarios 
 # Step 6: Fork Repository
 Now we will learn about **forking** a repository.
 
-Here is what Github [says](https://help.github.com/articles/fork-a-repo/):
+Here is what GitHub [says](https://help.github.com/articles/fork-a-repo/):
 > A fork is a copy of a repository. Forking a repository allows you to experiment with changes without affecting the original project.
 
 > Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
 
 > Every public repository can be forked
 
-So head-on over to a hello-world repository developed by one of your peers. You can do this by browsing to the `git URL` of their hello-world repository in your browser.  
+So head-on over to a hello-world repository developed by one of your class mates or mine. You can do this by browsing to the `git URL` of their hello-world repository in your browser. For example, my hello-world repository is located at: [https://github.com/robinagandhi/hello-world.git](https://github.com/robinagandhi/hello-world.git)
 
 You should see something like this on your peer's repository:
 >![githubfork](./img/githubfork.png)
 
 Click the `Fork` button.
 
-After forking, you will have your own copy of your peer's repository. Using [Step 3](#step-3) you can `clone` this repository to your local computer. Make changes to files and `push` it back to this forked remote repository.   
+After forking, you will have your own copy of the repository. Using [Step 3](#step-3) you can `clone` this repository to your local computer. Make changes to files and `push` it back to this forked remote repository.   
 
 Forking a repository is an excellent way to suggest new features to the original repository that you do not own, using a `pull` request. Let's do this in the next step.
 
 [Top](#table-of-contents)
 
 # Step 7: Make a Pull Request
-In this step, make changes to the fork of your peers' repository on `Github.com` and create a `pull request`.
+In this step, make changes to the fork of your peers' repository on `GitHub.com` and create a `pull request`.
 
-Let's assume that a `gencyber` (insert your ID here) user forks `robinagandhi/hello-world` repository (this will be your peer's repository).
+Let's assume that a `gencyber` (insert your ID here) user forks `robinagandhi/hello-world` repository.
 
 The forked repository for the `gencyber` user will look like this:
 >![forkedrepo](./img/forkedrepo.png)
@@ -369,14 +364,14 @@ Your peer's repository should now reflect the updated content. It will be someth
 
 Now return the favor to your peer. Help them `fork` your hello-world repository and make a `pull request` back to you.
 
-And that is one way you can collaborate using `Github`.
+And that is one way you can collaborate using `GitHub`.
 
 [Top](#table-of-contents)
 
 # Step 8: Markdown
-To communicate and write effectively on Github, you will need to learn `Markdown`. Examine Markdown here: [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
+To communicate and write effectively on GitHub, you will need to learn `Markdown`. Examine Markdown here: [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 
-You can try out the syntax on directly on Github in any file that ends in the extension `.md`. Files with the `.md` extension signify Markdown files. So head on over to your hello-world repository on Github and edit the README.md file. In the edit mode, you can observe the effect of Markdown syntax by clicking on the Preview tab.
+You can try out the syntax on directly on GitHub in any file that ends in the extension `.md`. Files with the `.md` extension signify Markdown files. So head on over to your hello-world repository on GitHub and edit the README.md file. In the edit mode, you can observe the effect of Markdown syntax by clicking on the Preview tab.
 
 In the figure below, When in the preview mode, notice the formatting effect of `#` before text related to a heading.
 
@@ -384,38 +379,54 @@ In the figure below, When in the preview mode, notice the formatting effect of `
 
 I suggest practicing using Markdown in this interactive tutorial: [http://www.markdowntutorial.com](http://www.markdowntutorial.com)
 
-Explore functional uses of Markdown on Github here: [https://help.github.com/categories/writing-on-github/](https://help.github.com/categories/writing-on-github/)
+Explore functional uses of Markdown on GitHub here: [https://help.github.com/categories/writing-on-github/](https://help.github.com/categories/writing-on-github/)
 
-You are now ready to explore the wonderful world of open source on Github. Enjoy and make your contributions!
+You are now ready to explore the wonderful world of open source on GitHub. Enjoy and make your contributions!
+
+[Top](#table-of-contents)
+
+# Step 9: Project Management
+GitHub integrates several project management features with code management. Two project management features will be very helpful for planning the deliverables in this class. Issue tracking and Project Boards.
+
+## Issue Tracking
+Project planning requires creating shared expectations about tasks and their assignments. Issues are a way to create and assign tasks with GitHub. Follow this tutorial to make understand how to use Issues: [https://guides.github.com/features/issues/](https://guides.github.com/features/issues/)
+
+## Project Boards
+Project boards are useful planning tools. Work assignments are captured as cards and organized into lists. A basic Kanban-style board works best to sort cards into columns by status like "To Do," "In Progress," and "Done." Please follow this tutorial to create a project board in your hello-world repository: [https://docs.github.com/en/github/managing-your-work-on-github/creating-a-project-board#creating-a-repository-project-board](https://docs.github.com/en/github/managing-your-work-on-github/creating-a-project-board#creating-a-repository-project-board)
+
+## Linking Issues with Cards
+Issues can be linked to cards in Project boards. An easy way is to reference the Issue number in the card description. For example, to reference Issue number 1 you would simple add `#1` to the card. Try this in your hello-world repository: [https://docs.github.com/en/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board](https://docs.github.com/en/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board)
 
 [Top](#table-of-contents)
 
 # Fork This Course
-We practice what we preach. Our whole course has been developed on GitHub using markdown. Now that you are a git guru, you may as well fork all of the course content, work with it offline and make contributions!
+We practice what we preach at UNO. Our whole course has been developed on GitHub. Now that you are a git guru, you may as well fork it, make changes and submit pull requests! I hope this GitHub jargon is starting to make sense.
 
-Go to the top of this page and click fork. Boom, you have our whole course, use responsibly 🤓
+Navigate to the [course repository on GitHub](https://github.com/robinagandhi/swa) and click fork. Boom, you have your own copy of the whole course, use responsibly 🤓
+
+[Top](#table-of-contents)
 
 # Cybersecurity First Principle Reflections
 
-On Github, only the `owner` of a remote repository can push commits to it. All other `Github users` have the limited privilege to make a pull request. The repository owner reviews pull requests and initiate a merge action. The owner may reject pull requests if they do not seem appropriate. A `collaborator` can push commits, but cannot delete a repository or add other collaborators. These constraints show the concept of __least privilege__ with GitHub user roles. Users should have no more privilege than required for their job.
+On GitHub, only the `owner` of a remote repository can push commits to it. All other `GitHub users` have the limited privilege to make a pull request. The repository owner reviews pull requests and initiate a merge action. The owner may reject pull requests if they do not seem appropriate. A `collaborator` can push commits, but cannot delete a repository or add other collaborators. These constraints show the concept of __least privilege__ with GitHub user roles. Users should have no more privilege than required for their job.
 
-Developers often design Github repositories, to be self-contained _modules_. These modules are then put in or taken out of a bigger project. During build time these components are composed to create an integrated system. This strategy facilitates __Modularization__. Following this principle allows globally distributed teams to collaborate and locate faulty components.
+Developers often design GitHub repositories, to be self-contained _modules_. These modules are then put in or taken out of a bigger project. During build time these components are composed to create an integrated system. This strategy facilitates __Modularization__. Following this principle allows globally distributed teams to collaborate and locate faulty components.
 
-Finally, Github repositories separate source code from other resources. This separation allows long-term archival and maintenance of a codebase, separate from its dependencies. __Domain Separation__ enables the management of source code versions that target different products and operating environments.
+Finally, GitHub repositories separate source code from other resources. This separation allows long-term archival and maintenance of a codebase, separate from its dependencies. __Domain Separation__ enables the management of source code versions that target different products and operating environments.
 
 [Top](#table-of-contents)
 
 # Additional Resources
 
-* Interactive tutorial: [tryGit](https://try.github.io/)
-* [Github cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
-* Collection of [Github tutorials](https://help.github.com/articles/git-and-github-learning-resources/)
-* How To: [Ignore files during a check into Github](https://help.github.com/articles/ignoring-files/)
-* [Short Cheat Sheet](http://rogerdudler.github.io/git-guide/)
-* Video: [Collaboration Scenarios on Github](https://www.youtube.com/watch?v=jLWZaFzPS6Q)
-* Github Guide: [Socialize on Github](https://guides.github.com/activities/socialize/)
-* Github Guide: [Documenting your Project on Github](https://guides.github.com/features/wikis/)
-* Github Guide: [Creating webpages on Github](https://guides.github.com/features/pages/)
+* [Quick start guide](http://rogerdudler.github.io/git-guide/)
+* Resources: [tryGit](https://try.github.io/)
+* [GitHub cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+* Collection of [GitHub tutorials](https://help.github.com/articles/git-and-github-learning-resources/)
+* How To: [Ignore files during a check into GitHub](https://help.github.com/articles/ignoring-files/)
+* Video: [Collaboration Scenarios on GitHub](https://www.youtube.com/watch?v=jLWZaFzPS6Q)
+* GitHub Guide: [Socialize on GitHub](https://guides.github.com/activities/socialize/)
+* GitHub Guide: [Documenting your Project on GitHub](https://guides.github.com/features/wikis/)
+* GitHub Guide: [Creating webpages on GitHub](https://guides.github.com/features/pages/)
 
 [Top](#table-of-contents)
 
