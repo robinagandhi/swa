@@ -98,11 +98,11 @@ Many of your deliverables will be on Github in a public repository. As a result,
 # Exams
 There will be a mid-term and a final exam. The exams will consist of essay-type questions which may require design and modeling activities. These exams will allow full access to technology and are intended to help focus on the essential parts of the course material, reinforce learning, and provide timely feedback. The exam questions will typically have multiple parts, be sure you answer all the parts.
 
-# Synchronous Working Sessions
+# Team Working Sessions
 Synchronous working sessions for teams will correspond to the stages of the software development lifecycle. The objective of these sessions is to gain hands-on experience with various techniques and tools for software assurance and apply them to understand the engineering activities necessary for building security in. Details about these sessions will follow as we go further into the semester.
 
 # Team-based Semester Project
-Read all about it [here](https://robinagandhi.github.io/swa/pages/project.html).
+We will examine this aspect of the course in more detail next in this Module.
 
 # Grading
 20% Mid-term  
@@ -111,28 +111,26 @@ Read all about it [here](https://robinagandhi.github.io/swa/pages/project.html).
 40% Assignments, Semester Project and Presentation (Team-based)  
 
 # Course Schedule
-In this semester there are 16 scheduled weeks. These include weeks for exams and project presentations.
+In this semester there are 16 scheduled weeks. These include weeks for exams and project presentations. Later in this module, I have a weekly schedule for the course that will help you plan ahead.
 
 Due to the current and advanced nature of this class, it is under constant revision! Expect shuffling of course topics as we progress through the semester. Constructive feedback on the content is highly encouraged. Fork it on Github!
 
 # Supplies
 * To support class activities a laptop or desktop computer is required.
-* A notebook and pencil. We will be doing a lot of drawing!
+* A notebook, and pencil. We will be doing a lot of drawing!
 
-# Mid-term Exam for Fall 2020
+# Important Dates
+### Mid-term Exam for Fall 2020
 
   * Available starting October 10th
 
-# Final Exam for Fall 2020
+### Final Exam for Fall 2020
 
   * Available starting December 12th
 
-# Final Grade Availability for Fall 2020
+### Final Grade Availability for Fall 2020
 
   * Available by December 29th
 
-# Book Keeping
+# Emails
 All email sent to me regarding the class must have the class descriptor and your name in the subject field, e.g. (8420 - TOPIC). We will be using Canvas for the course.
-
-# Contact Information
-See Canvas.

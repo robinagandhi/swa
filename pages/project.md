@@ -6,10 +6,67 @@ description: CYBR 8420 Software Assurance Project
 
 # Team Semester Project
 
+You might ask why form teams? To that I have to say that today we build and analyze things that are so complex that no one person can fully make or comprehend them —naturally, engineering activities to manage complexity are team-based—for example, open-source software development. Team members could be in different time zones, have competing priorities, and different skill levels. Experiencing such teamwork is essential for a course on software assurance. Thus, we will form five-person teams that will work together on a class project.
+
 This class strives to encourage learning by doing and making a real difference in the practice of building software. To turn this spirit into reality, you will work on a semester-long project with an open-source software project. Five students will select a unique open-source software project and examine opportunities for security-related improvements.
 
-The project will have the following deliverables:
+The project will have the following major deliverables. Not surprisingly, they coincide with the major topics in the course.
 
+1. Project Proposal
+1. Requirements for Software Security Engineering
+1. Assurance Cases Software Security Engineering
+1. Designing for Software Security Engineering
+1. Code analysis for Software Security Engineering
+1. Recorded Presentation
+
+## Project Inspirations
+If you have never worked with open source project communities, your heart is probably racing at this time. Don't worry. They are not that scary. Also, we will have the right preparation in the course that will allow you to have purposeful interactions with these communities. For now, I want you to read through these blogs to understand what it is like to engage with an open source project: [blog 1](http://blog.teamtreehouse.com/getting-involved-open-source-projects), [blog 2](http://www.firsttimersonly.com), [blog 3](https://opensource.guide/how-to-contribute)
+
+These blogs probably helped address some of your anxiety. Another source of anxiety can be related to what open source project to select. As you think about joining a team, use the links below to explore impactful open source projects and have some ideas about the projects you want to engage with.
+
+* [Github Guide for finding an Open Source Project to work on](https://help.github.com/articles/where-can-i-find-open-source-projects-to-work-on/)  
+
+Openhub has a lot of meta-information about open source projects that can help you better explore and understand your selection. Github search and Code Triage are also good resources to find projects.
+
+* [Openhub](https://www.openhub.net) by Synopsys/Black Duck Software
+* Github [search](https://github.com/search) and [trends](https://github.com/trending).
+* [Code Triage](https://www.codetriage.com). Open source projects on GitHub that need your help.
+
+## Projects to **Avoid**
+The software assurance methods in this course apply quite broadly. Codebases based on C, C++ and Java generally have a better support of free tools for security analysis. But just the language used in the codebase should not limit your choices. What you should avoid are projects that fall into the categories below:
+* In-active projects (no recent contributions, no activity on forums, lack of wiki or documentation)
+* Old vulnerable project versions
+* Mobile Apps. We have other classes that do that.
+* Projects with languages that do not have a lot of tool support
+* Project with little or no security requirements. As surprising as it may sound, not all software has security needs!
+* Projects not accepting contributions
+
+As you form your teams, prior familiarity with languages or platforms may play in to your choice. But keep in mind that Software Security Assessors are often called into analyze the security of software that is built using languages that they are not familiar with.
+
+## Project Hall of Fame
+To give you some motivation, here are teams from prior semesters that have engaged with the communities of their selected open source projects. Your team should aspire to get listed in this repo. After all, this course made it to the Arctic Code Vault!
+* [List of successful contributions to OSS projects from student teams](https://robinagandhi.github.io/swa/pages/halloffame.html)  
+
+## Past Teams Project Repositories
+The deliverables from the class project are posted in a public repository. You can find the artifacts from prior semester teams below. While these can act as examples, there is no guarantee that they did it right! They may also be following different assignment instructions.
+
+* [Teams 2019](https://robinagandhi.github.io/swa/slides/teams-2019/teams.html)
+* [Teams 2018](https://robinagandhi.github.io/swa/slides/teams-2018/teams.html)
+* [Teams 2017](https://robinagandhi.github.io/swa/slides/teams-2017/teams.html)
+* [Teams 2016](https://robinagandhi.github.io/swa/slides/teams-2016/teams.html)
+
+## Teams Project for Fall 2020
+TBD
+
+## Grading
+* The project accounts for 40% of the total course grade.
+* 30% of your project grade will be based on Peer feedback throughout the semester and attendance at weekly project meetings.
+* The other 70% of the project grade will be based on overall team performance.
+
+Strive to be an active contributor and volunteer for project tasks in your teams. Avoid being a [social loafer](http://www.businessdictionary.com/definition/social-loafing.html) at all costs!
+
+
+<!--
 1. **Project Proposal**: A markdown report that describes the following:
   * Choose an open-source software project. From here on, I will refer to it as "software."
   * Describe a fictional operational environment (e.g., home, office, enterprise, bank, government, etc.) for your software.
@@ -53,46 +110,4 @@ The project will have the following deliverables:
   * Gaps in security requirements and design of the original project
   * Assurance claims
   * Findings from manual code review and automated software scanning
-  * Any contributions to the original project (documentation, design changes, code changes, communications)
-
-## Project Hall of Fame
-* [List of successful contributions to OSS projects from student teams](https://robinagandhi.github.io/swa/pages/halloffame.html)  
-
-## Project Inspiration
-* [Github guide for contributing to Open Source Projects](https://opensource.guide/how-to-contribute)
-* [Openhub](https://www.openhub.net) by Synopsys/Black Duck Software
-* Github [search](https://github.com/search) and [trends](https://github.com/trending).
-* [Code Triage](https://www.codetriage.com). Open source projects on GitHub that need your help.
-* Some blogs to consider. [blog 1](http://blog.teamtreehouse.com/getting-involved-open-source-projects), [blog 2](https://help.github.com/articles/where-can-i-find-open-source-projects-to-work-on/), [blog 3](http://www.firsttimersonly.com)
-
-## Projects to **Avoid**
-* In-active projects (no recent contributions, no activity on forums, lack of wiki or documentation)
-* Old vulnerable project versions
-* Mobile Apps. We have other classes that do that.
-* Projects with languages that do not have a lot of tool support
-* Project with little or no security requirements. As surprising as it may sound, not all software has security needs!
-* Projects not accepting contributions
-
-## Project Deadlines*
-
-1. Teams formed &ndash; **September 4th**
-1. Project Proposal &ndash; **September 11th**
-1. Requirements for Software Security Engineering &ndash; **September 25th**
-1. Assurance Cases Software Security Engineering &ndash; **October 9th**
-1. Designing for Software Security Engineering &ndash; **November 6th**
-1. Code analysis for Software Security Engineering &ndash; **November 20th**
-1. Class presentations &ndash; **December 4th**
-
-\* Dates subject to changes
-
-## Teams Project for Fall 2020
-TBD
-
-## Past Teams Project Repositories
-
-While these can act as examples, there is no guarantee that they did it right! They may also be following different assignment instructions.
-
-* [Teams 2019](https://robinagandhi.github.io/swa/slides/teams-2019/teams.html)
-* [Teams 2018](https://robinagandhi.github.io/swa/slides/teams-2018/teams.html)
-* [Teams 2017](https://robinagandhi.github.io/swa/slides/teams-2017/teams.html)
-* [Teams 2016](https://robinagandhi.github.io/swa/slides/teams-2016/teams.html)
+  * Any contributions to the original project (documentation, design changes, code changes, communications)-->
