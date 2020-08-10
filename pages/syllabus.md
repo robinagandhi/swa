@@ -29,11 +29,10 @@ description: CYBR 8420 Software Assurance Syllabus
 * SA8. Students will be able to use modern software engineering tools for code management and collaboration
 
 # Teaching methods
-* Online flipped class format
 * A combination of *good readings*, *discussions* and *trying out methods learned*.
-* Working sessions in small groups.
-* Quizzes per module
-* Assignments and team projects.
+* Team-based working sessions and check-ins with the instructor.
+* Quizzes per module.
+* Group assignments.
 * Timed, open book exams with access to a network-connected computer.
 
 # Resource Materials
@@ -42,7 +41,7 @@ Lecture slides, videos, readings, and supplemental materials will be organized u
 
 ## Textbooks
 
-Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to be on a campus network or VPN and authenticate with your user-id to access these books. Alternatively, you could use single sign-on using your `@unomaha.edu` email on safari books online.
+Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to use NU VPN and authenticate with your user-id to access these books. Alternatively, you could use single sign-on using your `@unomaha.edu` email on safari books online.
 
 * [Secure Coding Principles and Practice, By Mark G. Graff; Kenneth R. van Wyk](https://www.safaribooksonline.com/library/view/secure-coding-principles/0596002424)(Commonsense and lightweight approach to software security engineering. Lots of war stories from the authors)
 
@@ -108,7 +107,7 @@ We will examine this aspect of the course in more detail next in this Module.
 20% Mid-term  
 20% Final exam (Comprehensive)  
 20% Quizzes, Discussions, and Class participation  
-40% Assignments, Semester Project and Presentation (Team-based)  
+40% Team-based Semester Project Deliverables
 
 # Course Schedule
 In this semester there are 16 scheduled weeks. These include weeks for exams and project presentations. Later in this module, I have a weekly schedule for the course that will help you plan ahead.
