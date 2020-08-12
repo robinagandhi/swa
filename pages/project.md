@@ -60,7 +60,7 @@ TBD
 
 ## Grading
 * The project accounts for 40% of the total course grade.
-* 30% of your project grade will be based on Peer feedback throughout the semester and attendance at weekly project meetings.
+* 30% of your project grade will be based on peer feedback throughout the semester and attendance at weekly project meetings.
 * The other 70% of the project grade will be based on overall team performance.
 
 Strive to be an active contributor and volunteer for project tasks in your teams. Avoid being a [social loafer](http://www.businessdictionary.com/definition/social-loafing.html) at all costs!
