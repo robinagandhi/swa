@@ -279,18 +279,20 @@ To answer this question meaningfully, we have to introduce the term software wea
 
 # [Software Weakness](https://cwe.mitre.org/documents/glossary/index.html#Weakness)
 
-## A type of .red[mistake] in software that, in proper conditions, could contribute to the introduction of vulnerabilities within that software.
-Weakness are any mistakes in implementation, design, or other phases of the software development lifecycle.
+### A type of .red[mistake] in software that, in proper conditions, could contribute to the introduction of vulnerabilities within that software.
+> Weakness are any mistakes in implementation, design, or other phases of the software development lifecycle.
+
+--
+
+### Assurance increases if evidence from engineering activities is available for _reducing_ weaknesses in software processes and products.
+
 ???
+
 The focus on weaknesses is important to manage risk. That is what engineering does. It manages the risk of unexpected outcomes in the future by implementing effective controls in product design.
 
 Managing Risk related to weaknesses is proactive, and is different than just discovering and patching known vulnerabilities, which is reactive.
---
 
-## .red[Basis for the belief] that software will operate as expected in its threat environment increases if evidence from engineering activities is available for _reducing_ weaknesses in software processes and products.
-
-???
-In terms of software assurance, basis for the belief...
+In terms of software assurance, basis for the belief, i.e. assurance 
 
 If instead you focus on only on vulnerability discovery, you run into the "n+1" vulnerability problem. You will never be able to hire enough blackhat hackers, if the foundational design and engineering effort is missing.
 
