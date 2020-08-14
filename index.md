@@ -37,7 +37,7 @@ Content will be linked as we progress through the semester. This allows to me to
   * Build Security In Maturity Model ([BSIMM](https://www.bsimm.com))<!-- -->
 1. **Midterm Exam**
 1. **Design for Software Security Engineering**
-  * Lecture: [Threat Modeling](https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html)<!-- -->
+  * Lecture: [Threat Modeling]()<!--https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html -->
   * Hands-on: Working session on Threat Modeling using Microsoft Threat Modeling Tool.  
   * Lecture: Design patterns for Design Principles (Available only on Canvas)
   * Lecture: Architectural patterns for security (Available only Canvas)

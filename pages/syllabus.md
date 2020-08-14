@@ -110,7 +110,7 @@ We will examine this aspect of the course in more detail next in this Module.
 40% Team-based Semester Project Deliverables
 
 # Course Schedule
-In this semester there are 16 scheduled weeks. These include weeks for exams and project presentations. Later in this module, I have a weekly schedule for the course that will help you plan ahead.
+On Canvas I have a weekly schedule for the course that will help you plan ahead.
 
 Due to the current and advanced nature of this class, it is under constant revision! Expect shuffling of course topics as we progress through the semester. Constructive feedback on the content is highly encouraged. Fork it on Github!
 
@@ -121,11 +121,11 @@ Due to the current and advanced nature of this class, it is under constant revis
 # Important Dates
 ### Mid-term Exam for Fall 2020
 
-  * Available starting October 10th
+  * Available on Canvas starting October 10th
 
 ### Final Exam for Fall 2020
 
-  * Available starting December 12th
+  * Available on Canvas starting December 12th
 
 ### Final Grade Availability for Fall 2020
 
