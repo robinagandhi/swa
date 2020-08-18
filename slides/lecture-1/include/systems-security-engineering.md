@@ -3,19 +3,26 @@ class: center, middle
 
 .footnote[
 \*Based on Chapter 2 of [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)  
-which expands on [ISO/IEC/IEEE 15288:2015
-Systems and software engineering](http://www.iso.org/iso/catalogue_detail?csnumber=63711)
+
 ]
 
 ???
-[Appendices to NIST SP 800-160](https://csrc.nist.gov/Projects/Systems-Security-Engineering-Project/publications)
+I have based this discussion on the National Institute of Standards and Technology developed Systems Security Engineering publication. It is also referred to as NIST SP 800-160 volume 1.
+
+In our introduction to software assurance, we brought up the need to make trust decisions regarding software that is inherently complex and continually operates in threat environments. The 800-160 publication provides an engineering-driven perspective. From this perspective, it identifies actions in each step of the system lifecycle necessary to develop more defensible and survivable capabilities and services delivered by those systems.
+
+This publication enhances an internationally recognized systems and software engineering standard published by ISO, IEC, and IEEE with security engineering guidance. Its objective is to address security issues from a stakeholder protection needs, concerns, and requirements perspective. The standard uses established engineering processes to address these stakeholder protection needs, concerns, and requirements with appropriate fidelity and rigor, early and sustainably throughout the system's life cycle.
+
+[Appendices to NIST SP 800-160](https://csrc.nist.gov/Projects/Systems-Security-Engineering-Project/publications)  
+[ISO/IEC/IEEE 15288:2015
+Systems and software engineering](http://www.iso.org/iso/catalogue_detail?csnumber=63711)
 
 ---
 
 class: center, middle
 ![Dilbert](http://assets.amuniversal.com/b7797c402f4901348be4005056a9545d)
 ???
-Systems security engineering is hard. Particularly, when you have a well-resourced and capable adversary.
+Make no mistake, security engineering is hard but, necessary. Particularly, when you have a well-resourced and capable adversary.
 
 ---
 
@@ -29,6 +36,10 @@ Systems security engineering is hard. Particularly, when you have a well-resourc
 
 1. Security Engineering Framework
 
+???
+Executive buy-in is necessary to institutionalize engineering processes. As a result, any attempts to gather evidence for assurance must be rationalized. So in the first part of the discussion, I will motivate the need for security engineering, because it represents a cost to be borne by system stakeholders. Next, I will introduce terminology that helps us develop a shared understanding of an engineering-driven perspective. Finally, I will discuss how our course topics fit within a security engineering framework.
+
+Let's start by establishing a business case for security engineering.
 
 ---
 
@@ -38,6 +49,7 @@ Systems security engineering is hard. Particularly, when you have a well-resourc
 ]
 
 ???
+The Defense Science Board is a 
 
 # Report Terminology
 
