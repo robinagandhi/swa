@@ -9,9 +9,9 @@ class: center, middle
 ???
 I have based this discussion on the National Institute of Standards and Technology developed Systems Security Engineering publication. It is also referred to as NIST SP 800-160 volume 1.
 
-In our introduction to software assurance, we brought up the need to make trust decisions regarding software that is inherently complex and continually operates in threat environments. The 800-160 publication provides an engineering-driven perspective. From this perspective, it identifies actions in each step of the system lifecycle necessary to develop more defensible and survivable capabilities and services delivered by those systems.
+In our introduction to software assurance, we brought up the need to make trust decisions. We also discussed that the kind of software that we are concerned with is inherently complex and continually operates in threat environments. It is for this context, the 800-160 publication provides an engineering-driven perspective. From this perspective, it identifies several actions in each step of the system or software lifecycle. These actions, if taken result in defensible and survivable capabilities and services that are resilient to the design basis threats.
 
-This publication enhances an internationally recognized systems and software engineering standard published by ISO, IEC, and IEEE with security engineering guidance. Its objective is to address security issues from a stakeholder protection needs, concerns, and requirements perspective. The standard uses established engineering processes to address these stakeholder protection needs, concerns, and requirements with appropriate fidelity and rigor, early and sustainably throughout the system's life cycle.
+This publication enhances an internationally recognized systems and software engineering standard published by ISO, IEC, and IEEE. Std. 15288 Systems and Software Engineering. NIST SP 800-160 adds security engineering guidance for each step in the system lifecycle. Its objective is to address security issues from a stakeholder protection needs, concerns, and requirements perspective. The standard recommends established engineering processes with appropriate fidelity and rigor, early and sustainably throughout the system's life cycle.
 
 [Appendices to NIST SP 800-160](https://csrc.nist.gov/Projects/Systems-Security-Engineering-Project/publications)  
 [ISO/IEC/IEEE 15288:2015
@@ -25,19 +25,16 @@ class: center, middle
 Make no mistake, security engineering is hard but, necessary. Particularly, when you have a well-resourced and capable adversary.
 
 ---
-
+class: center, middle
 # Agenda
 
-1. Need for Security Engineering  
-
-1. Terminology  
-
-1. Security Engineering Perspective  
-
-1. Security Engineering Framework
+### Need for Security Engineering  
+### Terminology  
+### Security Engineering Perspective  
+### Security Engineering Framework
 
 ???
-Executive buy-in is necessary to institutionalize engineering processes. As a result, any attempts to gather evidence for assurance must be rationalized. So in the first part of the discussion, I will motivate the need for security engineering, because it represents a cost to be borne by system stakeholders. Next, I will introduce terminology that helps us develop a shared understanding of an engineering-driven perspective. Finally, I will discuss how our course topics fit within a security engineering framework.
+Here is are the primary topics for our discussion. First, executive buy-in is necessary to institutionalize engineering processes. As a result, any attempts to gather evidence for assurance must be rationalized. So in the first part of the discussion, I will motivate the need for security engineering, because it represents a cost to be borne by system stakeholders. Next, I will introduce terminology that helps us develop a shared understanding of an engineering-driven perspective which leads to a framework to organize our activities during the system lifecycle. Finally, I will discuss how our course topics fit within a security engineering framework.
 
 Let's start by establishing a business case for security engineering.
 
@@ -45,38 +42,40 @@ Let's start by establishing a business case for security engineering.
 
 ![Tiers](images/dsb-taxonomy.png)
 .footnote[
-\*[Defense Science Board 2013 Report](http://www.acq.osd.mil/dsb/reports/2010s/ResilientMilitarySystemsCyberThreat.pdf)
+\*[Defense Science Board 2013 Report](https://dsb.cto.mil/reports/2010s/ResilientMilitarySystemsCyberThreat.pdf)
 ]
 
 ???
-The Defense Science Board is a 
+The [Defense Science Board](https://dsb.cto.mil) is a well respected DoD organization. The Ware Report, the first comprehensive discussion of the computer security problem, was developed by a task force from the Defense Science Board. More recently, they published a report Resilient Military Systems and the Advanced Cyber Threat.
 
-# Report Terminology
+To motivate the recommendations in this report, the task force uses a threat hierarchy. This hierarchy describes capabilities of potential attackers, organized by level of skills and breadth of available resources
 
-## Cyber
-broadly used to address the components and systems that provide all digital information, including weapons/battle management systems, IT systems, hardware, processors, and software operating systems and applications, both standalone and embedded.
+> Tiers I and II attackers primarily exploit known vulnerabilities. No significant resources required.
 
-## Resilience
-defined as the ability to provide acceptable operations despite disruption: natural or man-made, inadvertent or deliberate.
+> Tiers III and IV attackers are better funded and have a level of expertise and sophistication sufficient to discover new vulnerabilities in systems and to exploit them
 
-## Existential Cyber Attack
-defined as an attack that is capable of causing sufficient wide scale
+> Tiers V and VI attackers can invest large amounts of money (billions) and time (years) to actually create vulnerabilities in systems, including systems that are otherwise strongly protected. Think about this one.
+
+Higher-tier attackers will use all capabilities available to them to attack a system but will usually try lower-tier exploits first before exposing their most advanced capabilities. Thankfully, Tier V and VI level capabilities are today limited to just a few countries such as the *United States, China and Russia*. Knowing this, the dominance of any one country in developing mass-market consumer electronic devices and network devices is perceived as a huge threat to the national security of other nations.
+
+Some Terms on the Graph...
+
+.red[Cyber]
+> broadly used to address the components and systems that provide all digital information, including weapons/battle management systems, IT systems, hardware, processors, and software operating systems and applications, both standalone and embedded.
+
+This definition helps us understand the kinds of software
+
+.red[Existential]
+> defined as an attack that is capable of causing sufficient wide scale
 damage for the government potentially to lose control of the country, including loss or damage to significant portions of military and critical infrastructure: power generation, communications, fuel and transportation, emergency services, financial services, etc.
-
-The Task Force developed a threat hierarchy to describe capabilities of potential attackers, organized by level of skills and breadth of available resources
-- Tiers I and II attackers primarily exploit known vulnerabilities
-- Tiers III and IV attackers are better funded and have a level of expertise and sophistication sufficient to discover new vulnerabilities in systems and to exploit them
-- Tiers V and VI attackers can invest large amounts of money (billions) and time (years) to actually create vulnerabilities in systems, including systems that are otherwise strongly protected.
-
-Higher-tier competitors will use all capabilities available to them to attack a system but will usually try lower-tier exploits first before exposing their most advanced capabilities. Tier V and VI level capabilities are today limited to just a few countries such as the *United States, China and Russia*.
 
 ---
 
 # Need for Security Engineering
 ## Vulnerabilities within organizations
-- Known vulnerabilities
-- .red[Unknown] vulnerabilities
-- .red[Adversary-created] vulnerabilities
+- Tier 1: Known vulnerabilities (Lowest)
+- Tier 2: .red[Unknown] vulnerabilities
+- Tier 3: .red[Adversary-created] vulnerabilities (Highest)
 
 --
 
@@ -92,7 +91,13 @@ Higher-tier competitors will use all capabilities available to them to attack a 
 
 ???
 
-2013 Defense Science Board Task Force described several tiers of vulnerabilities within organizations including known vulnerabilities, unknown vulnerabilities, and adversary-created vulnerabilities. The important and sobering message conveyed by the Defense Science Board is that the top two tiers of vulnerabilities (i.e., the unknown vulnerabilities and adversary-created vulnerabilities) are, for the most part, totally invisible to most organizations. These vulnerabilities can be effectively addressed by sound systems security engineering techniques, methodologies, processes, and practices—in essence, providing the necessary trustworthiness to withstand and survive well-resourced, sophisticated cyber-attacks on the systems supporting critical missions and business operations.
+The DSB report also goes on to describe several tiers of vulnerabilities within organizations. The tiers include known vulnerabilities, unknown vulnerabilities, and adversary-created vulnerabilities. The important and sobering message conveyed by the Defense Science Board is that the top two tiers of vulnerabilities (i.e., the unknown vulnerabilities and adversary-created vulnerabilities) are, for the most part, totally invisible to most organizations!
+
+Tier 1 vulnerabilities can be addressed by Discovery and patching. This is what most security teams in organizations are engaged in.
+
+Tier 2 and Tier 3 vulnerabilities have to be addressed by sound systems security engineering.
+
+Without such an effort, our systems and software that support critical missions and business operations, lack the trustworthiness to survive well-resourced, sophisticated cyber-attacks.
 
 ---
 class: center, middle
@@ -105,9 +110,9 @@ class: center, middle
 
 ???
 
-If we think of an iceberg, the visible vulnerabilities are above the waterline and the invisible ones are the ones below. It is the invisible ones that are difficult to address and can potentially sink the ship!
+If we think of an iceberg, the Tier 1 visible vulnerabilities are above the waterline and the invisible ones from Tier 2 and 3 are the ones below. They pose an existential risk! They are difficult to address and can potentially sink the entire ship!
 
-We will refer to "above the waterline" and "below the waterline" problems
+In the security community these are often referred to as "above the waterline" and "below the waterline" problems
 
 ---
 class: center, middle
@@ -116,23 +121,30 @@ class: center, middle
     ![Abstractions](http://www.espen.com/graphics/math-answer-findx.gif)
 ]
 
+???
+I hope this discussion provides a strong motivation to pursue security engineering activities throughout the system lifecycle. But engineering activities tend to be time and resource intensive. So we need a systems engineering perspective that identifies the cyber components that are relevant for the engineering effort. They help us scope the required engineering effort.
+
 ---
 # Terminology
 
 ## System
-Combination of interacting .red[elements] organized to achieve stated purposes
+Combination of interacting system .red[elements] organized to achieve stated purposes
 
 ## System Element
 Recursively defined as a .red[system]  
 Member of a set of elements that constitute a system  
 
-_Examples: hardware; .red[software]; firmware; data; facilities; materials; humans; processes; and procedures_
+> _Examples: hardware; .red[software]; firmware; data; facilities; materials; humans; processes; and procedures_
 
 ???
-# System and System Element
-* The recursive definition of a system element allows us to support the notion of a system of systems.  
-* The term **system** may apply to a collection of elements or a single element
-* One observer's system may be another observer’s system element.  
+To develop a shared understanding of the systems engineering view, a shared vocabulary is needed. The first two definitions are interesting in the sense that they are have a cyclical dependency. The System is a
+combination of interacting system .red[elements] organized to achieve stated purposes. At the same time the System
+element, while it is a system itself, it is also a member of a set of elements that constitute a larger system.
+
+Why such definitions?
+> The recursive definition of a system element allows us to support the notion of a system of systems.  
+> The term **system** may apply to a collection of elements or a single element
+> One observer's system may be another observer’s system element. This flexibility permits different views that support the needs of various stakeholders.
 
 ---
 # Terminology
@@ -143,11 +155,12 @@ System that is the focus of the .red[engineering] effort
 ## Enabling System
 System that supports a .red[system‐of‐interest] during its life cycle stages but does not necessarily contribute directly to its function during operation  
 
-_Examples: code compilers, assemblers, prototypes, test harness, unit tests_
+> _Examples: code compilers, assemblers, prototypes, test harness, unit tests_
 
 ???
-# System of Interest
-* The term system-of-interest is used to define the set of system elements, system element interconnections, and the environment that it operates in.
+As I said before, the systems engineering view allows us to make scoping decisions. By designating a system-of-interest, we identify the system that is the focus of the engineering effort. It is used to define the set of system elements, system element interconnections, and the environment that it operates in.
+
+For appropriate scoping, it is also necessary to identify enabling-systems that are separate from the system-of-interest. Enabling systems are systems that supports a .red[system‐of‐interest] during its life cycle stages but does not necessarily contribute directly to its function during operation. For example, compilers and IDEs are enabling systems but don't directly contribute to the the software's function during operation.
 
 ---
 # Terminology
@@ -155,7 +168,12 @@ _Examples: code compilers, assemblers, prototypes, test harness, unit tests_
 ## Other Systems
 System that interacts with the .red[system‐of‐interest] in its operational environment
 
-_Examples: a global positioning system space vehicle being an “other system” interacting with a GPS receiver as the “system‐of‐interest.”_
+> _Examples: a global positioning system space vehicle being an “other system” interacting with a GPS receiver as the “system‐of‐interest.”_
+
+???
+Finally, systems-of-interest have to interact with other systems in its operational environment. Naturally, we will call them "other systems"! For example, if the system of interest is a GPS receiver, then the GPS satellite is an "other system" in its operational environment.
+
+It helps to visualize this systems engineering view
 
 ---
 class: center, middle
@@ -163,17 +181,21 @@ class: center, middle
 Systems Engineering View
 
 ???
-# Things to note:
-* The system of interest identification scopes the set of system elements, system element interconnections, and the environment that it operates in
-* All _other systems_ that interact with the system of interest are included in the operational environment
-* Some enabling systems may exist outside the environment of operation, for example, the compiler used at the developer site, open source developer
+Things to note:
+> The system-of-interest identification scopes the set of system elements, system element interconnections, and the operational environment where security engineering efforts are needed.
+> _Other systems_ that interact with the system-of-interest are included in the operational environment.
+> Finally, some enabling systems may exist outside the environment of operation, for example, the compiler used at the developer site, open source developer
 
-# Can you think of _other systems_ that introduce risk?
-# Can you think of _enabling systems_ that introduce risk?
+> Can you think of _other systems_ that introduce risk for your open-source software selection?
+
+> Can you think of _enabling systems_ that introduce risk for your open-source software selection?
 
 ---
 class: center, middle
 # Security Engineering Perspective
+
+???
+With an understanding of the security engineering view, we can now define the goals and objectives from a security engineering perspective.
 
 ---
 # Security Engineering Perspective
@@ -188,12 +210,16 @@ Engineer .green[_protection capabilities_] for:
 
 ???
 
-# Conditions
-These can be adversity in the form of disruptions, hazards, and threats and are considered synonyms for “bad things that happen” that are of interest to systems security engineering
+We now define security .red[Security] as freedom from conditions that can cause _loss of assets_ with _unacceptable consequences_
 
-# Consequence
+> Conditions are “What bad things that can happen” that are of interest to the engineering effort. These include disruptions, hazards and threats.
+
+> Consequence are effects (i.e. change or no-change) associated with the conditions. The conditions are determined to exist in the operational environment of the system-of-interest. Conditions can be predicted based on historical data or attacks observed on similar systems.
+
 [ISO/IEC 15026-1]
 Effect (change or non-change), usually associated with an event or condition or with the system and usually allowed, facilitated, caused, prevented, changed, or contributed to by the event, condition, or system.
+
+Our primary goal is to engineer protection capabilities for the system-of-interest that manage assets. All engineering efforts need metrics to define success. In this case the success of the protection capabilities is determined by their ability to prevent the consequences (i.e. effects associated with conditions in the operational environment) against which security is assessed.
 
 ---
 # Security Engineering Perspective
@@ -208,11 +234,15 @@ Effect (change or non-change), usually associated with an event or condition or 
 
 ???
 
-# Active Protection:
-These mechanisms explicitly satisfy security requirements that address the behavior, interaction and utilization of and among technology/machine, environment, human, and physical system elements.
+Engineering takes a lifecycle perspective. So our goal is to have the protection capabilities built-in! Not bolted on later.
 
-# Passive Protections:
-For example, developer training in secure coding provides for the construction of security mechanisms with a higher level of assurance. Similarly, a fully patched and hardened java runtime environment provides a protection capability to the hosted java applications. A visual studio complier with the appropriate compiler flags is also a passive protection.
+Protection capabilities resulting from security engineering efforts are of two types:
+
+> Active Protection:
+These are mechanisms or system features that explicitly satisfy security requirements. They have functional security properties i.e. we add code to the system-of-interest that is directly relevant to security.
+
+> Passive Protections: Provides the environment for the .red[execution] and .red[construction] of all mechanisms (general purpose and security)
+For example, developer training in secure coding provides for the construction of security mechanisms with a higher level of assurance. Similarly, a fully patched and hardened java runtime environment provides a protection capability to the hosted java applications. A visual studio complier with the appropriate compiler flags is also a passive protection. These are security properties don't typically add any code to the system of interest. Instead, they provide the assurance that the security relevant code added to the system of interest is actually effective against attacks.
 
 ---
 # Protection Examples
@@ -232,14 +262,17 @@ For example, developer training in secure coding provides for the construction o
 - ...
 
 ???
+With these definitions let's look at some examples of active and passive protections.
+Again, active protection, include mechanisms that add code to the system-of-interest that provide capabilities such as access control, single-sign-on, input validators, etc. So the next question we ask from an engineering perspective is: How strong is the protection mechanism? How good is the code? How good is the architecture that organizes the code? How much effort was put in to identifying the right security requirements? How well do we understand the conditions in the operational environment that led to the identification of the security requirements?
 
-Question to ask: How strong is the protection mechanism?
+These questions are typically addressed by passive protections
 
 ---
 # Protection Examples
 
 ## Passive Protections
 
+- Security Requirements
 - Architecture
 - Design
 - Coding guidelines
@@ -253,8 +286,9 @@ Question to ask: How strong is the protection mechanism?
 - ...
 
 ???
+Engineering effort is time and resource intensive. So depending on the criticality and available resources, we have to decide how much assurance is enough assurance? Of course, there is no excuse for not doing engineering activities that are industry best practices. In particular those activities that are supported effectively with easily available tools and trained personnel. How much you go beyond established best practices is determined by the risk-reward that is specific to the organization and the supported business processes.
 
-Question to ask: How strong is the assurance provided?
+So we now introduce the notion of adequate security.
 
 ---
 # Adequate Security
@@ -272,11 +306,16 @@ Between system states and between system execution modes.
 
 ???
 
+Engineering involves making informed trade-offs. So adequate security is a "well-reasoned" sum of both active and passive protections. These protections should apply in all system states to prevent the consequences against which security is assessed.
+
 For Rugged Software, **gradation** is important and hence reflected in our definition of _adequate security_.
 
 ---
 class: middle, center
 # Security Engineering Framework
+
+???
+With the security engineering effort now becoming clear, we organize related activities in a security engineering framework.
 
 ---
 # Framework
@@ -293,7 +332,13 @@ Transforms the security requirements into design requirements for the system
 Evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy
 
 ???
-The framework is independent of system type and engineering or acquisition process model and is not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, each with its own checks and balances
+Security engineering activities that are commonly understood are within the problem context and the solution context. We know that a sufficiently complete understanding of the conditions in the operational environment is needed to understand the required protection capabilities.
+
+We also know that the security requirements need to be transformed into a design that can stop known attacks, tolerate unknown attacks and recover quickly from attacks that it cannot tolerate.
+
+What is often not known or practiced are engineering activities in the trustworthiness context. These activities result in an evidence-based demonstration, through reasoning that the that the system-of-interest is deemed trustworthy. Which means that we have an adequate combination of active and passive protections built-in.
+
+As you can see, the framework is independent of system type. It is independent of the acquisition or process model. It is also not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, (problem, solution and trustworthiness), each with its own checks and balances.
 
 ---
 class: center, middle
@@ -302,22 +347,17 @@ class: center, middle
 
 ???
 Figure source: [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
+The figure establishes the problem, solution, and trustworthiness contexts as key components of a systems security engineering framework. This setup ensures that the security of a system is based on achieving a sufficiently complete understanding of the problem, which translates into effective security solutions that are sufficiently trustworthy.
 
-# Systems Security Engineering Framework
-Establishing problem, solution, and trustworthiness contexts as key components of a systems security engineering framework ensures that the security of a system is based on achieving a sufficiently complete understanding of the problem as defined by a set of stakeholder security objectives, security concerns, protection needs, and security requirements. This understanding is essential in order to develop effective security solutions &mdash; that is, a system that is sufficiently trustworthy and adequately secure to protect stakeholder’s assets in terms of loss and the associated consequences.
+These contexts employ systems security analyses that includes concepts, principles, means, methods, processes, practices, tools, and techniques necessary to provide relevant data and technical interpretations of issues from the security perspective.
 
-# System security analyses
-
-Employ concepts, principles, means, methods, processes, practices, tools, and techniques from the security perspective to provide relevant data and technical interpretations of issues from the security perspective
-
-Support gradation:  
-\* Differentiated to align with the scope and objectives of where they are applied within the systems security engineering framework
-
-\* Performed with a level of fidelity, rigor, and formality to produce data with a level of confidence that matches the assurance required by the stakeholders and engineering team
+These contexts also support gradation, i.e. They can be differentiated to align with the scope and objectives of where they are applied. The are performed with a level of fidelity, rigor, and formality to produce data with a level of confidence that matches the assurance required by the stakeholders and engineering team.
 
 ---
-exclude: true
 # Problem Context (1/2)
+.top-right[
+    ![Problem Context](images/problemcontext.png)
+]
 ## .red[Security objectives]
 What it means to be _adequately_ secure for the assets and the consequences of asset loss against which security will be assessed
 
@@ -325,45 +365,45 @@ What it means to be _adequately_ secure for the assets and the consequences of a
 Strength of protection and level of assurance in the engineered protection capability
 
 ???
+The problem context defines several things:
 
-# Security Objectives
-This is where you start to think of your mission/business processes. What assets are important and the consequences of asset loss against which security will be assessed.
+> First it defines the Security Objectives
+This is where you start to think of your mission/business processes. What assets are important and the consequences against which security will be assessed.
 
-# Security Objectives and Measures of Success
-The security objectives have associated measures of success. The two combine to drive the development of security requirements and the development of assurance claims
+> Second it defines the measures of Success
+The security objectives also need measures of success. The two combine to drive the development of security requirements and the development of claims that need support through evidence collected from engineering activities.
 
 ---
-exclude:true
 # Problem Context (2/2)
-
+.top-right[
+    ![Problem Context](images/problemcontext.png)
+]
 ## .red[Life cycle security concepts]
 Distinct contexts for interpretation of security and the associated processes, methods, and procedures
 
 ???
-# Life cycle security concepts
-- Concept
-- Development
-- Production
-- Utilization
-- Support
-- Retirement
+The problem context also allows the interpretation of security not only in the early stages of concept development but also development, production, utilization, maintenance and support as well as retirement.
 
 --
-exclude:true
 ## .red[Security requirements]
 Specifies the functional, assurance, and strength characteristics for a protection mechanism
 
-???
 
-# Example of Security Requirements:
-- Access Control as a functional requirement  
-- Secure coding standards as an assurance requirement  
-- Rigor in enforcement and granularity of access control is a strength characteristic  
-- Rigor in the coding standard and its security relevance is a strength characteristic  
+???
+Finally, the problem context defines the security requirements in terms of the active protection and passive protections. Let's take an example of an access control protection mechanism to understand its functional, assurance, and strength characteristics
+
+> Access Control itself is as a functional requirement as it requires developing code for the system of interest
+> Secure coding standards followed in the development of that code is an assurance requirement  
+> Rigor in enforcement and granularity of access control is a strength characteristic  
+> Rigor in the coding standard and its security relevance is also a strength characteristic  
+
+In the problem context we also collect evidence that the problem context itself reflects a good understanding of the stakeholder protection needs and concerns.
 
 ---
-exclude:true
 # Solution Context
+.top-right[
+    ![Solution Context](images/solutioncontext.png)
+]
 
 ### .red[Define security aspects of the solution]:
 - The security architecture views and viewpoints
@@ -376,17 +416,26 @@ exclude:true
 ### .red[Evidence for security aspects of the solution]:
 - Analysis, demonstration, inspection, and test
 
----
-exclude:true
-# Trustworthiness Context
+???
+The solution context as expected, defines security aspects necessary for the architecture and design followed by the implementation of the design. In this context we collect evidence that assures that the developed solution meets the security objectives and requirements from the problem context.
 
+
+---
+# Trustworthiness Context
+.top-right[
+    ![Trustworthiness Context](images/trustworthinesscontext.png)
+]
 ### .red[Developing and maintaining the assurance case]
 - Assurance cases are developed for claims based on the security objectives and associated measures of success
 
 ### .red[Demonstrating that the assurance case is satisfied]
-- An assurance case is a well- defined and structured set of arguments and a body of evidence showing that a system satisfies specific claims with respect to a given quality attribute
+- An assurance case is a well-defined and structured set of arguments and a body of evidence showing that a system satisfies specific claims with respect to a given quality attribute
 
 ???
+Activities in the trustworthiness context focus on developing a "well-reasoned" argument for the trustworthiness of the problem and solution contexts.
+
+Specifically we develop assurance cases or claims based on the security objectives and associated measures of success. This assurance case is a a well-defined and structured set of arguments and a body of evidence showing that a system satisfies specific claims with respect to a given quality attribute
+
 Assurance cases also provide reasoned, auditable artifacts that support the contention that a claim or set of claims is satisfied, including systematic argumentation and its underlying evidence and explicit assumptions that support the claims [ISO/IEC 15026-2]
 
 ---
@@ -396,7 +445,20 @@ class: center, middle
 ???
 Figure source: [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
 
+The topic we will discuss in the rest of the class will align with this security engineering framework. We will learn to apply methods from the practice of security requirements engineering in the problem context. We will learn about design patterns, architectural principles, threat modeling and secure coding methods in the solution context. We will also learn how to develop good assurance cases as part of the trustworthiness context.
+
 ---
 ![lifecycle processes](images/systems-engineering-lifecycle-processes.png)
 ???
 Figure source: [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
+
+While the NIST SP 800-160 document is very comprehensive, this rest of the class will focus on the technical processes and the related security engineering enhancements.
+
+---
+class: center, top
+# Questions
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The future of cybersecurity can be summarized in three words--architecture, architecture, architecture. It&#39;s time to check under the hood instead of admiring the exterior of the car. <a href="https://twitter.com/hashtag/NIST800160?src=hash&amp;ref_src=twsrc%5Etfw">#NIST800160</a> <a href="https://twitter.com/hashtag/NIST800207?src=hash&amp;ref_src=twsrc%5Etfw">#NIST800207</a> <a href="https://twitter.com/hashtag/DevSecOps?src=hash&amp;ref_src=twsrc%5Etfw">#DevSecOps</a> <a href="https://twitter.com/hashtag/SystemsSecurityEngineering?src=hash&amp;ref_src=twsrc%5Etfw">#SystemsSecurityEngineering</a> <a href="https://twitter.com/hashtag/CyberResiliency?src=hash&amp;ref_src=twsrc%5Etfw">#CyberResiliency</a> <a href="https://twitter.com/hashtag/BuildSecurityIn?src=hash&amp;ref_src=twsrc%5Etfw">#BuildSecurityIn</a> <a href="https://t.co/tDPRxjIWJK">pic.twitter.com/tDPRxjIWJK</a></p>&mdash; Ron Ross (@ronrossecure) <a href="https://twitter.com/ronrossecure/status/1295168085763272705?ref_src=twsrc%5Etfw">August 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+???
+I look forward to comments and questions regarding this discussion.
