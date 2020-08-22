@@ -3,7 +3,7 @@ class: center, middle
 
 ???
 
-What is Software Assurance? Perhaps the word Assurance is not familiar to you. It is certainly different than Insurance. While one might think that Assurance is similar to Trust, they are related but different. Assurance is the basis for making trust decisions. In this course, we are interested in making trust decisions about software. Which is a bit of a challenge. You see, trust decisions are often made at the system level. Which prompts discussions like this --> next slide
+What is Software Assurance? Perhaps the word Assurance is not familiar to you. It is certainly different than Insurance. While one might think that Assurance is similar to Trust. They are somewhat related but different. Assurance is the basis for making trust decisions. In this course, we are interested in making trust decisions about software. Which is a bit of a challenge. You see, trust decisions are often made at the system level. Which prompts discussions like this --> next slide
 
 ---
 exclude:true
@@ -145,7 +145,7 @@ Let me tell you a story.
 [Source: http://cacm.acm.org/magazines/2009/6/28488-answering-the-wrong-questions-is-no-answer/fulltext]  
 Two buddies leaving a bar find a man on his hands and knees in the parking lot. It looked like he was searching for something. Upon asking they find out that he had dropped his keys. He describes the keys, and says if the two men find them they will receive a reward. They begin to help search. Other people come by and they too are drawn into the search. Soon, there is a crowd combing the parking lot, with an air of competition to see who will be the first to find the keys.
 
-Periodically someone informs the crowd of the discovery of a coin or a particularly interesting piece of rock. After a while, someone in the crowd stands up and asks, “Say, are you sure you lost your keys out here in the parking lot?” To which the man replies, “No. I lost them in the alley.”  Everyone stops to stare at the man. “Well, why the heck are you searching for them here in the parking lot!?” someone exclaimed. To which the man replied, “Well, the light is so much better here. And besides, now I have such good company!”
+Now and then some one from the crowd gets excited about the discovery of a coin or an interesting piece of rock. After a while, someone stands up and asks, hey, are you sure you lost your keys out here in the parking lot?” To which the man replies, “No. I lost them in the alley.”  Everyone stops to stare at the man. “Well, why the heck are you searching for them here in the parking lot!?” someone exclaimed. To which the man replied, “Well, the light is so much better here. And besides, now I have such good company!”
 
 What's the take away message here?
 If we don’t properly define the problem, ask the right questions, and search in the proper places, we may have good company and funding, but we shouldn’t expect to find what is really needed.
@@ -159,15 +159,14 @@ loss and prevention tools, firewalls, and other techniques?
 
 How do I find coding flaws in the system I am using so I can patch them?  
 
-Each of these questions implies it can be answered in a positive, meaningful way.
-That is not necessarily the case.
+Each of these questions seem like they can be answered in a positive, meaningful way. That is not necessarily the case.
 
 ---
 class: center, middle
 [![Tradition](images/tradition.png)](http://security.gloriad.org/blog/2007/10/21/traditional-thinking/)
 
 ???
-To ask meaningful questions, we have to understand that the practice of security is to construct sufficient defenses against the likely threats, not all threats, using demonstrably effective engineering practices. Security solutions are the perimeter often have to deal with the problem of filtering the incoming and outgoing traffic. With very little tolerance for mistakes, these filters can only do so much. Finally, without consideration for security engineering during in software design, and complexity of software behaviors coding flaws are always going to be hard to find.
+To ask meaningful questions, we have to understand that the practice of security is to construct sufficient defenses against the likely threats, not all threats, using demonstrably effective engineering practices. Security solutions are the perimeter often have to deal with the hard problem of allowing all legitimate sharing and blocking all attacks. With very little tolerance for mistakes, security at the perimeter can only do so much. Finally, without consideration for security engineering during software design, and given the complexity of software behaviors, coding flaws are going to be extremely hard to find.
 
 What does this all mean in the context of software assurance? In the next video we will look at the some of the ways in which organizations have attempted to answer questions about software assurance.
 
@@ -215,26 +214,26 @@ This definition introduces some new things. First we see the primary focus on so
 .red[NSA Center for Assured Software]
 ]
 ???
-NSA Center for Assured Software was stood up in 2005. Their definition is similar to CNSS, but refine it to focus on **exploitable** vulnerabilities only.
+Now let's look at the National Security Agency's interpretation of software assurance.NSA Center for Assured Software was stood up in 2005. Their definition is similar to the one by CNSS, but further refined to focus on **exploitable** vulnerabilities.
 
-NSA does not develop software, they only test it. So no emphasis on engineering here as well.
+We know that NSA is not in the business of developing software, they testing it. So the emphasis on engineering is missing here as well.
 ---
-# DHS
+# Dept. of Homeland Security
 ## A planned and systematic set of multidisciplinary activities must be applied to ensure the conformance of both .green[software and processes] to requirements, standards, and procedures
 .red[Trustworthiness]: the absence of .green[exploitable vulnerabilities] whether maliciously or unintentionally inserted  
 
 .red[Predictable execution]: provides .red[justifiable confidence] that the software, when executed, will function as intended
 ???
-Coming much later on the scene, the DHS definition includes elements from prior definitions, but adds a focus on engineering, vulnerabilities and justifiable confidence for a complex software property.
+Coming much later on the scene, the Department of Homeland Security definition includes elements from prior definitions, but adds a focus on engineering, and justifiable confidence for a complex software property.
 
-DHS wants to help its clients in the federal and public/private sector build better software. So their focus on engineering makes sense for their mission.
+This makes sense as DHS wants to help its clients in the federal and public/private sector build better software. So their focus on engineering makes sense for their mission.
 
 ---
 # Academic Circles
 ## Secure software cannot be intentionally .red[subverted or forced to fail]
 The software that remains .red[correct] and predictable in spite of intentional efforts to compromise .red[dependability]
 ???
-Here is another definition from a publication by software engineering practitioners in academia. Secure software...
+When it comes to definitions, academia usually has an upper hand. Here is a definition from a publication by software engineering researchers and practitioners in academia. Secure software...
 
 This definition sets up a pretty high bar for software assurance, which would be very difficult to attain in practical settings.
 
@@ -248,13 +247,13 @@ Application of .green[technologies and processes] to achieve a required level of
 ]
 
 ???
-The software engineering institute at Carnegie Mellon University is a Federally funded research and development center for the US Department of Defense (DoD). They have developed software assurance job competencies and curricula for software assurance for undergraduate and graduate programs.
+The software engineering institute at Carnegie Mellon University is a Federally funded research and development center for the US Department of Defense (DoD). They have developed job competencies as well as curricula for software assurance for undergraduate and graduate programs. So their definition of software assurance is quite widely recognized.
 
-In my review of this definition, I suggested to the authors to further clarify the word confidence in their definition using assurance. While the authors did not change the definition, they did add a footnote.  
+In my review of this definition, I suggested to the authors to further clarify the word confidence and how it relates to assurance. While the authors did not change the definition, they did add a footnote. Which you will see carries over in to the definition that we will ultimately use to guide learning in this course.
 
-In this definition, we see an additional dimensions. One related to security capabilities balanced with respect to the threat environment. The other related to recovery from intrusions and failures.
+In this definition, we see couple of additional dimensions. One related to security capabilities balanced with respect to the threat environment. The other related to recovery from intrusions and failures.
 
-I really liked this definition, but again like the others it did not provide guidance for security engineering activities.
+I really liked this definition, but again like the others it did not set up an engineering challenge.
 
 ---
 # A Definition focused on Software Security Engineering
@@ -269,12 +268,12 @@ I really liked this definition, but again like the others it did not provide gui
 
 So, I decided to outline a definition that focuses on a practical security engineering challenge. The challenge is to develop basis for the belief...
 
-The definition starts with a claim. "Sofware will operate as expected" is a desired outcome that is complex enough that we cannot possibly examine every circumstance related to it. So this claim is made reasonable by adding a qualifier of "within its threat environment". Which means that during software design, we have to carefully understand the threat environment. It also prevents us from making general statements about secure software. This understanding provides the challenges that need to be solved by security engineering activities. The first challenge is to enumerate and plan for known attacks. The second challenge is to expect and address unknown attacks, i.e. attacks that we don't even know about yet. Finally, acknowledge the fact that software will fail in the presence of a threat that it was not designed for. When such failures occur, the challenge is to engineer mechanisms that allow software to recover. This is "resiliency".
+The definition starts with a claim. "Software will operate as expected" is a desired outcome that is complex enough that we cannot possibly examine every circumstance related to it. So this claim is made reasonable by adding a qualifier of "within its threat environment". Which means that during software design, we have to carefully understand the threat environment. It also prevents us from making general statements about secure software. This understanding provides the challenges that need to be solved by security engineering activities. The first challenge is to enumerate and plan for known attacks. The second challenge is to expect and address unknown attacks, i.e. attacks that we don't even know about yet. Finally, acknowledge the fact that software will fail in the presence of a threat that it was not designed for. When such failures occur, the challenge is to engineer mechanisms that allow software to recover. This is "resiliency".
 
 This definition sets up the context for software security engineering activities to take place.
 
-We know that engineering activities focus on processes and products of software. So what should such activities focus on to stop attacks? What makes  attacks on software successful, i.e. turn into a vulnerability?
-To answer this question meaningfully, we have to introduce the term software weakness
+This definition has a primary focus on attacks as opposed to vulnerabilities in prior definitions. So what makes attacks on software successful, i.e. create a vulnerability?
+To answer this question, we have to introduce the term software weakness
 ---
 
 # [Software Weakness](https://cwe.mitre.org/documents/glossary/index.html#Weakness)
@@ -292,7 +291,7 @@ The focus on weaknesses is important to manage risk. That is what engineering do
 
 Managing Risk related to weaknesses is proactive, and is different than just discovering and patching known vulnerabilities, which is reactive.
 
-In terms of software assurance, basis for the belief, i.e. assurance 
+In terms of software assurance, basis for the belief, i.e. assurance
 
 If instead you focus on only on vulnerability discovery, you run into the "n+1" vulnerability problem. You will never be able to hire enough blackhat hackers, if the foundational design and engineering effort is missing.
 
@@ -353,10 +352,10 @@ Methods currently effective in professional [software engineering practice](http
 To internalize security engineering activities, the methods that we choose have to be process agnostic, lightweight and practical. These will be our assessment criteria for all the methods that I introduce in the course.
 ## Process Agnostic
 Analysis applicable in any [lifecycle strategy](https://en.wikipedia.org/wiki/Software_development_process)  
-_Waterfall, Spiral, UML, Agile, etc._
+_Waterfall, Spiral, UML, Agile, DevOps etc._
 ## Lightweight
 Share and [institutionalize](https://www.google.com/search?q=institutionalize) knowledge  
-_Relevant and logically analyzable documentation_
+_Relevant and logically analyzable artifacts that promote assurance_
 ## Practical
 Methods currently used in software engineering practice  
 _e.g., [Microsoft SDL](https://www.microsoft.com/en-us/sdl/), [BSIMM](https://www.bsimm.com/framework/), [SEI Curricula](http://www.cert.org/curricula/software-assurance-curriculum.cfm?)_
