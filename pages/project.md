@@ -41,7 +41,7 @@ The software assurance methods in this course apply quite broadly. Codebases bas
 * Project with little or no security requirements. As surprising as it may sound, not all software has security needs!
 * Projects not accepting contributions
 
-As you form your teams, prior familiarity with languages or platforms may play in to your choice. But keep in mind that Software Security Assessors are often called into analyze the security of software that is built using languages that they are not familiar with.
+As you form your teams, prior familiarity with languages or platforms may play in to your choice. But keep in mind that Software Security Assessors are often called in to analyze the security of software that is built using languages that they are not familiar with.
 
 ## Project Hall of Fame
 To give you some motivation, here are teams from prior semesters that have engaged with the communities of their selected open source projects. Your team should aspire to get listed in this repo. After all, this course made it to the Arctic Code Vault!
