@@ -54,7 +54,7 @@ To motivate the recommendations in this report, the task force uses a threat hie
 
 > Tiers III and IV attackers are better funded and have a level of expertise and sophistication sufficient to discover new vulnerabilities in systems and to exploit them
 
-> Tiers V and VI attackers can invest large amounts of money (billions) and time (years) to actually create vulnerabilities in systems, including systems that are otherwise strongly protected. Think about this one. Most businesses are woefully underprepared to handle such attacks. Also, it would be extremely costly to defend against such well-resourced adversaries.
+> Tiers V and VI attackers can invest large amounts of money (billions) and time (years) to actually create new vulnerabilities in systems, including systems that are otherwise strongly protected. Think about this one. Most businesses are woefully underprepared to handle such attacks. Also, it would be extremely costly to defend against such well-resourced adversaries.
 
 Higher-tier attackers will use all capabilities available to them to attack a system but will usually try lower-tier exploits first before exposing their most advanced capabilities. Thankfully, Tier V and VI level capabilities are today limited to just a few countries such as the *United States, China and Russia*. Knowing this, the dominance of any one country in developing mass-market consumer electronic devices and network devices is perceived as a huge threat to the national security of other nations.
 
@@ -63,7 +63,9 @@ Some Terms on the Graph...
 .red[Cyber]
 > broadly used to address the components and systems that provide all digital information, including weapons/battle management systems, IT systems, hardware, processors, and software operating systems and applications, both standalone and embedded.
 
-This definition helps us understand the kinds of software
+This definition helps us understand the kinds of software to this threat taxonomy.
+
+Next, the attacks by these threats range from just plain nuisances to existential.  
 
 .red[Existential]
 > defined as an attack that is capable of causing sufficient wide scale
@@ -114,6 +116,8 @@ If we think of an iceberg, the Tier 1 visible vulnerabilities are above the wate
 
 In the security community these are often referred to as "above the waterline" and "below the waterline" problems
 
+I hope this discussion provides a strong motivation to pursue security engineering activities throughout the system lifecycle. But engineering activities tend to be time and resource intensive. So we need a systems engineering perspective that identifies the cyber components that are relevant for the engineering effort. They help us scope the required engineering effort.
+
 ---
 class: center, middle
 # Systems Engineering View
@@ -122,7 +126,7 @@ class: center, middle
 ]
 
 ???
-I hope this discussion provides a strong motivation to pursue security engineering activities throughout the system lifecycle. But engineering activities tend to be time and resource intensive. So we need a systems engineering perspective that identifies the cyber components that are relevant for the engineering effort. They help us scope the required engineering effort.
+Now we start to create a shared understanding of the cyber components that will be central to the systems engineering effort.
 
 ---
 # Terminology
@@ -137,14 +141,14 @@ Member of a set of elements that constitute a system
 > _Examples: hardware; .red[software]; firmware; data; facilities; materials; humans; processes; and procedures_
 
 ???
-To develop a shared understanding of the systems engineering view, a shared vocabulary is needed. The first two definitions are interesting in the sense that they are have a cyclical dependency. The System is a
-combination of interacting system .red[elements] organized to achieve stated purposes. At the same time the System
-element, while it is a system itself, it is also a member of a set of elements that constitute a larger system.
+To create such an understanding, a shared vocabulary is needed for the systems engineering view. In this vocabulary, the first two terms are interesting in the sense that they are have a cyclical dependency. The term System means a
+combination of interacting system .red[elements] organized to achieve stated purposes. The term System
+element, means it is a system itself, but it is also a member of a set of elements that constitute a larger system.
 
-Why such definitions?
-> The recursive definition of a system element allows us to support the notion of a system of systems.  
+Why such cyclical definitions?
+> It allows us to support the notion of a system of systems.  
 > The term **system** may apply to a collection of elements or a single element
-> One observer's system may be another observer’s system element. This flexibility permits different views that support the needs of various stakeholders.
+> One observer's system may be another observer’s system element. This flexibility permits different stakeholder views to co-exist.
 
 ---
 # Terminology
@@ -158,7 +162,7 @@ System that supports a .red[system‐of‐interest] during its life cycle stages
 > _Examples: code compilers, assemblers, prototypes, test harness, unit tests_
 
 ???
-As I said before, the systems engineering view allows us to make scoping decisions. By designating a system-of-interest, we identify the system that is the focus of the engineering effort. It is used to define the set of system elements, system element interconnections, and the environment that it operates in.
+The systems engineering view allows us to make scoping decisions. By designating a system-of-interest, we identify the system that is the focus of the engineering effort. It is used to define the set of system elements, system element interconnections, and the environment that it operates in.
 
 For appropriate scoping, it is also necessary to identify enabling-systems that are separate from the system-of-interest. Enabling systems are systems that supports a .red[system‐of‐interest] during its life cycle stages but does not necessarily contribute directly to its function during operation. For example, compilers and IDEs are enabling systems but don't directly contribute to the the software's function during operation.
 
@@ -186,16 +190,15 @@ Things to note:
 > _Other systems_ that interact with the system-of-interest are included in the operational environment.
 > Finally, some enabling systems may exist outside the environment of operation, for example, the compiler used at the developer site, open source developer
 
-> Can you think of _other systems_ that introduce risk for your open-source software selection?
-
-> Can you think of _enabling systems_ that introduce risk for your open-source software selection?
+In the context of your semester project, you will thinking about these concepts to develop a systems engineering view.
+For example, you will have to think about _other systems_ that introduce risk for your selected open-source software in its operational environment. You will also have to identify _enabling systems_ that are critical to your chosen software package but not part of the system-of-interest. This analysis will help you effectively scope your project.
 
 ---
 class: center, middle
 # Security Engineering Perspective
 
 ???
-With an understanding of the security engineering view, we can now define the goals and objectives from a security engineering perspective.
+From a systems engineering view, we can now define the goals and objectives of a security engineering perspective.
 
 ---
 # Security Engineering Perspective
@@ -216,10 +219,7 @@ We now define security .red[Security] as freedom from conditions that can cause 
 
 > Consequence are effects (i.e. change or no-change) associated with the conditions. The conditions are determined to exist in the operational environment of the system-of-interest. Conditions can be predicted based on historical data or attacks observed on similar systems.
 
-[ISO/IEC 15026-1]
-Effect (change or non-change), usually associated with an event or condition or with the system and usually allowed, facilitated, caused, prevented, changed, or contributed to by the event, condition, or system.
-
-Our primary goal is to engineer protection capabilities for the system-of-interest that manage assets. All engineering efforts need metrics to define success. In this case the success of the protection capabilities is determined by their ability to prevent the consequences (i.e. effects associated with conditions in the operational environment) against which security is assessed.
+Our primary goal is to engineer protection capabilities for the system-of-interest. All engineering efforts need metrics to define success. In this case the success of the protection capabilities is determined by their ability to prevent the consequences (i.e. effects associated with conditions in the operational environment) against which security is assessed.
 
 ---
 # Security Engineering Perspective
@@ -265,7 +265,7 @@ For example, developer training in secure coding provides for the construction o
 With these definitions let's look at some examples of active and passive protections.
 Again, active protection, include mechanisms that add code to the system-of-interest that provide capabilities such as access control, single-sign-on, input validators, etc. So the next question we ask from an engineering perspective is: How strong is the protection mechanism? How good is the code? How good is the architecture that organizes the code? How much effort was put in to identifying the right security requirements? How well do we understand the conditions in the operational environment that led to the identification of the security requirements?
 
-These questions are typically addressed by passive protections
+These questions are typically addressed by passive protections that address the strength and assurance questions about active protections.
 
 ---
 # Protection Examples
@@ -286,7 +286,7 @@ These questions are typically addressed by passive protections
 - ...
 
 ???
-Engineering effort is time and resource intensive. So depending on the criticality and available resources, we have to decide how much assurance is enough assurance? Of course, there is no excuse for not doing engineering activities that are industry best practices. In particular those activities that are supported effectively with easily available tools and trained personnel. How much you go beyond established best practices is determined by the risk-reward that is specific to the organization and the supported business processes.
+Engineering effort is time and resource intensive. So depending on the criticality and available resources, we have to decide how much assurance is enough assurance? Of course, there is no excuse for not doing engineering activities that are industry best practices. Today customers and courts have come to expect security engineering activities that are supported effectively with easily available tools and trained personnel. The question then becomes, how much do you go beyond established best practices? The answer to this question is determined by the risk-reward consideration that is specific to the organization and the supported business processes.
 
 So we now introduce the notion of adequate security.
 
@@ -338,7 +338,6 @@ We also know that the security requirements need to be transformed into a design
 
 What is often not known or practiced are engineering activities in the trustworthiness context. These activities result in an evidence-based demonstration, through reasoning that the that the system-of-interest is deemed trustworthy. Which means that we have an adequate combination of active and passive protections built-in.
 
-As you can see, the framework is independent of system type. It is independent of the acquisition or process model. It is also not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, (problem, solution and trustworthiness), each with its own checks and balances.
 
 ---
 class: center, middle
@@ -347,11 +346,14 @@ class: center, middle
 
 ???
 Figure source: [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
+
 The figure establishes the problem, solution, and trustworthiness contexts as key components of a systems security engineering framework. This setup ensures that the security of a system is based on achieving a sufficiently complete understanding of the problem, which translates into effective security solutions that are sufficiently trustworthy.
 
 These contexts employ systems security analyses that includes concepts, principles, means, methods, processes, practices, tools, and techniques necessary to provide relevant data and technical interpretations of issues from the security perspective.
 
 These contexts also support gradation, i.e. They can be differentiated to align with the scope and objectives of where they are applied. The are performed with a level of fidelity, rigor, and formality to produce data with a level of confidence that matches the assurance required by the stakeholders and engineering team.
+
+You can also see that the framework is independent of system type. It is independent of the acquisition or process model. It is also not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, (problem, solution and trustworthiness), each with its own checks and balances.
 
 ---
 # Problem Context (1/2)
