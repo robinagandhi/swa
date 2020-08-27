@@ -2,16 +2,16 @@ class: center, middle
 # Systems Security Engineering*
 
 .footnote[
-\*Based on Chapter 2 of [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)  
+\*Based on Chapter 2 of [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf) which enhances
+[ISO/IEC/IEEE 15288:2015
+Systems and software engineering](http://www.iso.org/iso/catalogue_detail?csnumber=63711) with security engineering activities
 
 ]
 
 ???
-I have based this discussion on the National Institute of Standards and Technology developed Systems Security Engineering publication. It is also referred to as NIST SP 800-160 volume 1.
+In our introduction to software assurance, we brought up the need to make trust decisions. We also discussed that the kind of software that we are concerned with is inherently complex and continually operates in threat environments. To provide an engineering-perspective to this problem, The National Institute of Standards and Technology (NIST) has developed the Systems Security Engineering publication. It is also referred to as NIST SP 800-160.
 
-In our introduction to software assurance, we brought up the need to make trust decisions. We also discussed that the kind of software that we are concerned with is inherently complex and continually operates in threat environments. It is for this context, the 800-160 publication provides an engineering-driven perspective. From this perspective, it identifies several actions in each step of the system or software lifecycle. These actions, if taken result in defensible and survivable capabilities and services that are resilient to the design basis threats.
-
-This publication enhances an internationally recognized systems and software engineering standard published by ISO, IEC, and IEEE. Std. 15288 Systems and Software Engineering. NIST SP 800-160 adds security engineering guidance for each step in the system lifecycle. Its objective is to address security issues from a stakeholder protection needs, concerns, and requirements perspective. The standard recommends established engineering processes with appropriate fidelity and rigor, early and sustainably throughout the system's life cycle.
+This publication enhances an existing internationally recognized ISO standard for systems and software engineering. The NIST special publication enhances this standard by identifying several security relevant actions in each step of the system or software lifecycle.
 
 [Appendices to NIST SP 800-160](https://csrc.nist.gov/Projects/Systems-Security-Engineering-Project/publications)  
 [ISO/IEC/IEEE 15288:2015
@@ -22,7 +22,7 @@ Systems and software engineering](http://www.iso.org/iso/catalogue_detail?csnumb
 class: center, middle
 ![Dilbert](http://assets.amuniversal.com/b7797c402f4901348be4005056a9545d)
 ???
-Make no mistake, security engineering is hard but, necessary. Particularly, when you have a well-resourced and capable adversary.
+Make no mistake, security engineering is hard but necessary. Particularly, when you have a well-resourced and capable adversary.
 
 ---
 class: center, middle
@@ -34,7 +34,7 @@ class: center, middle
 ### Security Engineering Framework
 
 ???
-Here is are the primary topics for our discussion. First, executive buy-in is necessary to institutionalize engineering processes. As a result, any attempts to gather evidence for assurance must be rationalized. So in the first part of the discussion, I will motivate the need for security engineering, because it represents a cost to be borne by system stakeholders. Next, I will introduce terminology that helps us develop a shared understanding of an engineering-driven perspective which leads to a framework to organize our activities during the system lifecycle. Finally, I will discuss how our course topics fit within a security engineering framework.
+Here is are the primary topics for our discussion in this module. First, executive buy-in is necessary to institutionalize engineering processes. As a result, any attempts to gather evidence for assurance must be rationalized. So in the first part of the discussion, I will motivate the need for security engineering, because it represents a cost to be borne by system stakeholders. Next, I will introduce terminology that helps us develop a shared understanding of an engineering-driven perspective which leads to a framework to organize our activities during the system lifecycle. Finally, I will also discuss how our course topics fit within this security engineering framework.
 
 Let's start by establishing a business case for security engineering.
 
@@ -46,7 +46,7 @@ Let's start by establishing a business case for security engineering.
 ]
 
 ???
-The [Defense Science Board](https://dsb.cto.mil) is a well respected DoD organization. The Ware Report, the first comprehensive discussion of the computer security problem, was developed by a task force from the Defense Science Board. More recently, they published a report Resilient Military Systems and the Advanced Cyber Threat.
+The [Defense Science Board](https://dsb.cto.mil) is a well respected DoD organization. The Ware Report, the first comprehensive discussion of the computer security problem, was developed by a task force from the Defense Science Board. More recently, they published a report on Resilient Military Systems and the Advanced Cyber Threat.
 
 To motivate the recommendations in this report, the task force uses a threat hierarchy. This hierarchy describes capabilities of potential attackers, organized by level of skills and breadth of available resources
 
@@ -54,7 +54,7 @@ To motivate the recommendations in this report, the task force uses a threat hie
 
 > Tiers III and IV attackers are better funded and have a level of expertise and sophistication sufficient to discover new vulnerabilities in systems and to exploit them
 
-> Tiers V and VI attackers can invest large amounts of money (billions) and time (years) to actually create vulnerabilities in systems, including systems that are otherwise strongly protected. Think about this one.
+> Tiers V and VI attackers can invest large amounts of money (billions) and time (years) to actually create vulnerabilities in systems, including systems that are otherwise strongly protected. Think about this one. Most businesses are woefully underprepared to handle such attacks. Also, it would be extremely costly to defend against such well-resourced adversaries.
 
 Higher-tier attackers will use all capabilities available to them to attack a system but will usually try lower-tier exploits first before exposing their most advanced capabilities. Thankfully, Tier V and VI level capabilities are today limited to just a few countries such as the *United States, China and Russia*. Knowing this, the dominance of any one country in developing mass-market consumer electronic devices and network devices is perceived as a huge threat to the national security of other nations.
 
