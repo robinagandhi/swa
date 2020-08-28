@@ -360,39 +360,44 @@ You can also see that the framework is independent of system type. It is indepen
 .top-right[
     ![Problem Context](images/problemcontext.png)
 ]
-## .red[Security objectives]
+## .red[Define Security objectives]
 What it means to be _adequately_ secure for the assets and the consequences of asset loss against which security will be assessed
 
-## .red[Measures of success]
+## .red[Define Measures of success]
 Strength of protection and level of assurance in the engineered protection capability
 
 ???
+Let's look at some of the activities within each context
 The problem context defines several things:
 
 > First it defines the Security Objectives
 This is where you start to think of your mission/business processes. What assets are important and the consequences against which security will be assessed.
 
 > Second it defines the measures of Success
-The security objectives also need measures of success. The two combine to drive the development of security requirements and the development of claims that need support through evidence collected from engineering activities.
+The security objectives need measures of success. The two combine to drive the development of specific security-related claims that need support through evidence collected from engineering activities.
 
 ---
 # Problem Context (2/2)
 .top-right[
     ![Problem Context](images/problemcontext.png)
 ]
-## .red[Life cycle security concepts]
-Distinct contexts for interpretation of security and the associated processes, methods, and procedures
+## .red[Define Life cycle security concepts]
+> Distinct contexts for interpretation of security and the associated processes, methods, and procedures
 
 ???
-The problem context also allows the interpretation of security not only in the early stages of concept development but also development, production, utilization, maintenance and support as well as retirement.
+Next, the problem context also defines the lifecycle security concepts. Which means that the problem context not only informs the interpretation of security in the early stages of concept development but also in the rest of the lifecycle stages. This can range from development to   production, maintenance as well as retirement.
 
 --
-## .red[Security requirements]
-Specifies the functional, assurance, and strength characteristics for a protection mechanism
+
+## .red[Define Security requirements]
+> Specifies the functional, assurance, and strength characteristics for a protection mechanism
+
+## .red[Evidence for security aspects of the problem]
+> How well do we understand stakeholder protection needs?
 
 
 ???
-Finally, the problem context defines the security requirements in terms of the active protection and passive protections. Let's take an example of an access control protection mechanism to understand its functional, assurance, and strength characteristics
+Finally, the problem context defines the security requirements in terms of the active and passive protections. Let's take an example of an access control protection mechanism to understand its functional, assurance, and strength characteristics
 
 > Access Control itself is as a functional requirement as it requires developing code for the system of interest
 > Secure coding standards followed in the development of that code is an assurance requirement  
@@ -447,7 +452,7 @@ class: center, middle
 ???
 Figure source: [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
 
-The topic we will discuss in the rest of the class will align with this security engineering framework. We will learn to apply methods from the practice of security requirements engineering in the problem context. We will learn about design patterns, architectural principles, threat modeling and secure coding methods in the solution context. We will also learn how to develop good assurance cases as part of the trustworthiness context.
+The topics we will discuss in the rest of the class will align with this security engineering framework. We will learn to apply methods from the practice of security requirements engineering in the problem context. We will learn about design patterns, architectural principles, threat modeling and secure coding methods in the solution context. We will also learn how to develop good assurance cases as part of the trustworthiness context.
 
 ---
 ![lifecycle processes](images/systems-engineering-lifecycle-processes.png)
@@ -463,4 +468,5 @@ class: center, top
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The future of cybersecurity can be summarized in three words--architecture, architecture, architecture. It&#39;s time to check under the hood instead of admiring the exterior of the car. <a href="https://twitter.com/hashtag/NIST800160?src=hash&amp;ref_src=twsrc%5Etfw">#NIST800160</a> <a href="https://twitter.com/hashtag/NIST800207?src=hash&amp;ref_src=twsrc%5Etfw">#NIST800207</a> <a href="https://twitter.com/hashtag/DevSecOps?src=hash&amp;ref_src=twsrc%5Etfw">#DevSecOps</a> <a href="https://twitter.com/hashtag/SystemsSecurityEngineering?src=hash&amp;ref_src=twsrc%5Etfw">#SystemsSecurityEngineering</a> <a href="https://twitter.com/hashtag/CyberResiliency?src=hash&amp;ref_src=twsrc%5Etfw">#CyberResiliency</a> <a href="https://twitter.com/hashtag/BuildSecurityIn?src=hash&amp;ref_src=twsrc%5Etfw">#BuildSecurityIn</a> <a href="https://t.co/tDPRxjIWJK">pic.twitter.com/tDPRxjIWJK</a></p>&mdash; Ron Ross (@ronrossecure) <a href="https://twitter.com/ronrossecure/status/1295168085763272705?ref_src=twsrc%5Etfw">August 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ???
+In closing, I leave you with this tweet from Dr. Ron Ross, the head of the NIST FISMA project and the lead author of the 800-160 document. 
 I look forward to comments and questions regarding this discussion.
