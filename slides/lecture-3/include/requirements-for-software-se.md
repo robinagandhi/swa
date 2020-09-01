@@ -518,7 +518,7 @@ class: middle
 - Using abuse and security frames we identify the causal chains and .green[security capabilities and assurances necessary in software] to satisfy the .blue[security requirements of the stakeholder.]
 
 .top-right[
-![bridge](http://nagasaki-jp.com/img/oshima_bridge1.jpg)
+![bridge](https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY1MTc3MjE0MzExMDgxNTQ1/topic-golden-gate-bridge-gettyimages-177770941.jpg)
 ]
 
 ---
