@@ -1,6 +1,9 @@
 class: center, middle
 # Requirements for Software Security Engineering
 
+???
+We now start examining phases in the software development lifecycle where security engineering activities are most relevant. We start "early" in the lifecycle with Requirements. This is an important lifecycle phase to develop the problem context for the engineering activities. This phase also requires a lot of interactions with the system stakeholders to make sure that software meets operational intent.
+
 ---
 # Customer Knows Best!\*
 
@@ -9,11 +12,15 @@ class: center, middle
 .footnote[
 \*or do they?
 ]
-
+???
+So it is often said that customer knows best...or do they? I'll pause here to read this comic strip.
 ---
 # Alice must surely know...
 
 ![dilbert-requirements](http://assets.amuniversal.com/3c9aa7b06d5101301d7a001dd8b71c47)
+
+???
+In interactions with real customers, you will quickly realize that requirements are not just out there for the taking. You have to elicit requirements. Which means that a good requirements engineer needs to draw them out from the customer by asking the right questions using a structured method.
 
 ---
 class: middle
@@ -26,7 +33,8 @@ class: middle
 ]
 
 ???
-The purpose is from a security perspective.
+NIST SP 800-160, the systems security engineering guide, identifies two technical processes in the requirements lifecycle phase where security can be integrated. The first process is the Stakeholder Needs and Requirements Definition Process.
+The purpose of this process from a security perspective is to define the stakeholder security requirements] that include [protection capability](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#16), security characteristics, and security-driven constraints for the systems. The goal of this activity is to securely provide the capabilities needed by users and other stakeholders in a defined operational environment. Like the previous sentence in the definition, the we want to identify capabilities including general features and security features.
 
 ---
 class: middle
@@ -38,21 +46,40 @@ class: middle
 \*ISO/IEC/IEEE 15288-2015
 ]
 
+???
+The second technical process in the requirements lifecycle phase is to the System Requirements Definition Process. Now you might be a little surprised here. Did we not just talk about his? Actually, no! The goal of this process is to transform the stakeholder security requirements and needs into the system requirements]. The previous process resulted in requirements that reflect needs in the operational environment. This process results in requirements that reflect a .red[technical security view] of the system. More specifically, the outcomes of this process are a list of active protection capabilities needed in the software to support the stakeholder needs. Depending on the threats perceived in the operational environment we also determine what is the adequate assurance and strength of the protection capability that is needed. This analysis translates into passive protection capabilities for software construction and operation.
+
 ---
 class: middle
-# .red[Stakeholder Needs and Requirements] vs .blue[System Requirements]
+## .red[Stakeholder Needs and   
+Requirements] vs .blue[System Requirements]
 
-## Litmus test
-- Even if you did not build the _software_ the **stakeholder** will still have these needs and requirements!
-- They are located in the [environment of operation for the system-of-interest\*](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#13)
+> Litmus test for requirements:  
+_Would the stakeholders still have the requirement even if we did not build the software?_
+- **Yes:** It is a stakeholder requirement and need. These are located in the [environment of operation for the system-of-interest](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#13)
+- **No:** It is a system/software requirements. These are located at the shared interface between the machine and the environment
+
+.top-right[
+![litmus-test](http://www.simplescience.info/_/rsrc/1469387124646/chemistry/acids-2/Litm%20test.jpg)
+]
+
+???
+As it often turns out, the two processes and the resulting requirements are not distinguished in practice. This leads to a lot of issues, in particular with the early conceptualization of security needs and the corresponding balance of protection capabilities to be engineered for the system. These decisions get pushed until later in the software lifecycle. So how do we tell apart the among the two types of requirements? I have a quick litmus test for you. Here, the question to ask for each requirement is as follows: "Would the stakeholders still have the requirement even if we did not build the software?"
+
+---
+class: middle
+## .red[Stakeholder Needs and   
+Requirements] vs .blue[System Requirements]
+
+![Requirements](images/requirements.png)
 
 .footnote[
 \* Michael Jackson, [The Meaning of Requirements, 1996](http://mcs.open.ac.uk/mj665/aserqts5.pdf)
 ]
 
-.top-right[
-![litmus-test](http://www.simplescience.info/_/rsrc/1469387124646/chemistry/acids-2/Litm%20test.jpg)
-]
+???
+In his seminal paper, the meaning of requirements, Jackson clearly depicted stakeholder requirements to exist in the environment, independent of the machine to be built. The system requirements or machine behavior are at the shared interface with the environment and the given conditions in the environment connect the two.  
+
 ---
 class: middle
 # Need 👉🏼 Fitness for Purpose
@@ -64,22 +91,22 @@ class: middle
 ## Inadequate understanding of the purpose leads to poor quality software
 
 ???
-# When will a designer have inadequate understanding of the purpose?
+This understanding now helps us realize that stakeholder needs determine a given software's fitness for purpose. Software is built for a purpose. This software will fail if we inadequate understanding of the purpose or the software is used for a purpose different that it is originally designed for. Either one of these scenarios can be true for open-source software that you have selected for your semester projects.
 
-## Claim: Designer has full understanding of the system purpose
-1. Unless the software is too complex i.e. designer does not know for sure if software will fulfill it purpose
-1. Unless designer does not have the knowledge or experience
-1. Unless the customer does not clearly know the purpose or express it
-1. Unless the purpose becomes apparent later.
-1. Unless there is a deliberate attempt to make the software not fulfill its purpose
-1. ...
+Inadequate understanding of the purpose can occur due to several reasons.
+1. The software is too complex i.e. designer does not know for sure if software will fulfill it purpose
+1. The designer does not have the knowledge or experience
+1. The the customer does not clearly know the purpose or express it or the purpose becomes apparent later in the system lifecycle
+1. Or there could be a deliberate attempt to make the software not fulfill its purpose
+
+To avoid these problems, software engineers often use structured methods to understand a systems purpose. Let's look at two popular methods.
 
 ---
 class: middle
 # .red[Use cases] -  OOP, UML
 ## .blue[Why] and .green[how] and would .orange[someone] use software?
 - Goal-driven Scenarios
-- They describe system behavior to fulfill user needs
+- User needs (goals) are fulfilled by descriptions of system behavior (Scenarios)
 - Several [templates](http://www.cs.otago.ac.nz/coursework/cosc461/uctempla.htm) available for [use cases](http://www.cs.otago.ac.nz/coursework/cosc461/usecases.htm)  
   .red[Purpose] = build requirements  
   Contents = have consistent prose  
@@ -90,18 +117,36 @@ class: middle
 ![case](http://www.it2051229.com/data_solutions/sysanaldesign/figure1.png)
 ]
 
+???
+Use cases were made popular by UML and its use of object-oriented programming to build complex software systems.
+
+Use cases capture why and how would someone use software? The why question comes before the how. So they follow a goal-driven scenario elicitation technique.
+
+User needs (goals) are fulfilled by descriptions of system behavior (Scenarios)
+
+The purpose of use case is to build system requirements that fulfill user needs. They their structure promotes a consistent prose, motivates the identification of multiple scenarios per use case and the description is often tabular, a semi-formal way to express requirements.
+
 
 ---
 
 class: middle
 # .red[User stories] - Agile, XP, SCRUM
-## .blue[How] and .green[why] and would .orange[someone] use software?
-- Scenarios
-- They are about user needs
+## .blue[How] and .green[why] would .orange[someone] use software?
+- Scenarios about user needs
 - [Informal](https://www.agilealliance.org/glossary/three-cs/), [Card, Conversation and Confirmation](http://ronjeffries.com/xprog/articles/expcardconversationconfirmation/)
 .top-right[
 ![card](http://www.jamieclouting.co.uk/wp-content/uploads/2012/03/card-front-300x225.jpg)
 ]
+
+???
+User stories are more popular in agile processes. They first focus on the how and then the why. So they are scenarios about user needs.
+Notice the reversed order of Why and How compared to User stories. Use cases are goal-driven for scenario elicitation. On the other hand User stories are scenario driven elicitation technique that link scenarios to goals.
+
+Their specification is also informal compared to use cases, but often elaborated using test-driven methodology. i.e. for each scenario a series of tests are specified for the system. The three c's of user stories are cards, conversation and confirmation.
+
+User stories are written on cards.
+The conversation is typically verbal to discuss the expectations around the card.
+Finally, the Confirmation is the acceptance test.
 
 ---
 
@@ -109,7 +154,10 @@ class: middle
 
 
 ???
-Notice the reversed order of Why and How compared to User stories. Use cases are goal-driven for scenario elicitation. On the other hand User stories are scenario driven elicitation technique that link scenarios to goals.
+Here is an example of a user story card. They follow a restricted natural lanaguage pattern that start with the user role, then the wants of that user in terms of system interaction followed by the goal of the interaction.
+
+With these structured techniques, you can start to realize that the problem context needs engineering know how. This engineering know how is pursued by the field of Requirements engineering. In the next video we will discuss more about requirement engineering and understand the primary theory of security requirements elicitation using a special notation called problem frames.
+
 ---
 class: center, middle
 # [What is Requirements Engineering?](http://www.cs.toronto.edu/~sme/RE01/)
@@ -119,11 +167,17 @@ See notes (hit `p`) for definition
 ]
 
 ???
-# Requirements Engineering
-- Requirements Engineering (RE) lies at the heart of software development.
-- RE is concerned with identifying the purpose of a software system, and the contexts in which it will be used.
-- Hence, RE acts as the bridge between the real world needs of users, customers, and other constituencies affected by a software system, and the capabilities and opportunities afforded by software-intensive technologies.
+Requirements engineering has a long standing professional international conference. Many prominent researchers in software engineering helped get it started. So it is worth while to read their description from the very first conference to see what requirements engineering is all about.
+
+According to the website:
+> Requirements Engineering (RE) lies at the heart of software development.  
+
+> RE is concerned with identifying the purpose of a software system, and the contexts in which it will be used.  
+
+> Hence, RE acts as the bridge between the real world needs of users, customers, and other constituencies affected by a software system, and the capabilities and opportunities afforded by software-intensive technologies.
+
 Source: http://www.cs.toronto.edu/~sme/RE01/
+
 
 ---
 class: middle
@@ -133,6 +187,13 @@ class: middle
 - They are not about the software system
 - They are not about the shared interface at the environment of operation and the software system
 - They are effects in the environment of operation that the customer wants the software system to guarantee
+
+.top-right[
+![Requirements](images/requirements.png)
+]
+
+???
+Now we start to put structure around the requirements elicitation activity by identifying the ways in which we express them. We know from before that stakeholder needs and requirements are about relationships in the environment of operation.
 
 ---
 class: middle
