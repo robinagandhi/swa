@@ -156,7 +156,7 @@ Finally, the Confirmation is the acceptance test.
 ???
 Here is an example of a user story card. They follow a restricted natural lanaguage pattern that start with the user role, then the wants of that user in terms of system interaction followed by the goal of the interaction.
 
-With these structured techniques, you can start to realize that the problem context needs engineering know how. This engineering know how is pursued by the field of Requirements engineering. In the next video we will discuss more about requirement engineering and understand the primary theory of security requirements elicitation using a special notation called problem frames.
+With these structured techniques, you can start to realize that the problem context needs engineering know-how. This engineering know-how is pursued by the field of Requirements engineering. In the next video we will discuss more about requirement engineering and understand the primary theory of security requirements elicitation using a special notation called problem frames.
 
 ---
 class: center, middle
@@ -193,7 +193,7 @@ class: middle
 ]
 
 ???
-Now we start to put structure around the requirements elicitation activity by identifying the ways in which we express them. We know from before that stakeholder needs and requirements are about relationships in the environment of operation.
+Now we start to put structure around the requirements elicitation activity by identifying the ways in which we express them. We know from before that stakeholder needs and requirements are about relationships in the environment of operation. They are not about the software system and they are not about the shared interface at the environment of operation and the software system
 
 ---
 class: middle
@@ -205,6 +205,11 @@ Desired condition over the phenomena of the environment
 - .red[Indicative]: expresses things existing in the problem world (D)   
 Given properties of the environment of operation
 
+???
+As a result these needs are requirements are typically expressed as wish over the phenomena of the operational environment. If you remember, the litmus test, then you know that stakeholder requirements exist whether we build the system or not. So this makes sense. In addition, to stakeholder wishes, we also have to collect information about the operational environment. These properties are generally expressed in an indicative mood, i.e. they express things that existing in the problem world.
+
+Let's call the first set of requirements expressed in the optative mood as (R) and the indicative mood as (D)
+
 ---
 class: middle
 # System Requirements
@@ -214,13 +219,18 @@ class: middle
 Desired condition over the shared phenomena at the interface between the system and the environment of operation
 
 ???
-Based on this definition we are never really describing anything in the system beyond the shared phenomena at the interface of the system and the environment of operation.
+Now the system requirements are only expressed in an optative mood. They express a wish which reflects the desired condition over the shared phenomena at the interface between the system and the environment of operation. We call this requirement set (S). The letter S also comes from the fact that these system requirements are often referred to as the Specification.
+
+While brainstorming stakeholder or system requirements, we have to aware of the tendency to start describing the solution context and lose focus of the problem context. So to stay focused on the problem context, and to really understand R, D and S, we need a better notation. One such notation is Problem frames.
 
 ---
 
 class: middle
 # Problem Frames
 Allows focus on `problems` to be solved.
+
+???
+Problem frames is a notation specifically designed for requirements engineers to focus on the problems to be solved. While we will a different notation for our semester project security requirements, the study of problem frames will help us understand the foundational theory behind security requirements.
 
 ---
 class: middle
@@ -237,9 +247,13 @@ class: middle
 ]
 
 ???
-- Problem frames are described by frame diagrams, which basically consist of rectangles and links between these
-- The task is to construct a machine that influences the behavior of the problem domain it is integrated in
+> Problem frames are described by frame diagrams, which basically consist of rectangles and links between these
+> The task is to construct a machine that influences the behavior of the problem domain it is integrated in
+
+The diagraming typically starts with the machine to be developed. This is a rectangle with two stripes. Next, you identify any designed, i.e. man-made artifacts that exist in environment of operation as well as any given things that exist, e.g. people. These are represented as designed domain and given domains. Both are things that exist in the environment of operation. Finally, dashed ovals represent requirements. They are dashed because they are conceptual and not tangible entities like the designed and given domains or the machine.
+
 ---
+class: middle
 # Problem Frames
 ## Frame Diagrams
 .left-column[
@@ -251,15 +265,17 @@ class: middle
 ![legend](images/legend.svg)
 ]
 
+???
+The rectangles and ovals are connected with a solid or dashed line. Dashed lines can also have an arrow. The solid line represents shared phenomena between the domains and the machine. For example any input or output would represent shared phenomena. A requirement relates to a domain with a dashed line to indicate that the requirements pertains to that domain. When a requirements includes an arrow, this means that the requirement constraints the domain to behave in a certain way or its intrinsic properties. Hence it is called a constraining reference.
+
 ---
 class: middle
-# Problem Frames
-
-- The machine solves a problem in the environment of operation
-- The machine and the environment of operation interact at an interface of shared phenomena (events, states)
-- The requirement adds a constraint to the intrinsic properties or behavior of the environment of operation
+# A Basic Problem Frame
 
 ![legend](images/problem-frame.svg)
+???
+So let's put this all together in the most basic form of a problem frame. Here we have a machine that solves a problem in the environment of operation. The machine and the environment of operation interact at an interface of shared phenomena and the requirement adds a constraint to the intrinsic properties or behavior of the environment of operation
+
 ---
 class: middle
 # Problem Frame Example
@@ -277,6 +293,9 @@ and frequency of incoming messages, time taken to reply
 Source: Problem Frames, Addison Wesley, 2001
 ]
 
+???
+What better way to learn problem frames, than to apply it to study a given problem. Pause the video here and try to construct a problem frame diagram based on this description. No really, I mean it.
+
 ---
 class: middle
 # Context Diagram
@@ -286,12 +305,16 @@ class: middle
 Recap: Requirements are about .red[relationships] in the environment of operation
 ]
 
+???
+Here is how I would construct the problem frame diagram. The machine we want to build is the mailbox analyzer. The mailfiles are a given domain. They exist in the environment of operation. The analysis report is what we want to produce as an output artifact, so it is a designed domain. The format of the analysis report is constrained by the requirement of the analysis rules specified in the description. With this diagram it is now easy to see that requirements are about relationships in the environment of operation.
+
+In this diagram you also see annotations for the relationships. Let's look at what they mean.
+
 ---
+class: middle
 # Relationships
 .left-column[
-Annotation .code[c:D!{E3}] means Domain .code[D] initiates the observable phenomena .code[E3] on interface .code[c].
 
-Example:   
 .code[a: MF! {MsgDir, File, Char}]  
 
 Domain .code[MF] initiates observable phenomena .code[MsgDir, File, Char] on interface .code[a]
@@ -299,6 +322,14 @@ Domain .code[MF] initiates observable phenomena .code[MsgDir, File, Char] on int
 .right-column[
 ![example](images/example.svg)
 ]
+
+???
+let's look at annotation a. This specification suggests that on shared interface a, the Mail File or the MF domain initiates an event. This is an observable event that includes the MsgDir, File name and Characters as input to the Machine.
+
+Similarly, for b, the machine initiates an observable event that adds these to the Analysis Report domain.
+
+C and d annotations represent the specific items that are part of the requirements reference with respect to the domains.  
+
 ---
 class: middle
 # Frame Components
@@ -317,12 +348,20 @@ How we want the machine to behave at interface (a, b)
 .right-column[
 ![example](images/example.svg)
 ]
+???
+In this diagram we now distinctly see the Stakeholder requirements, which includes the R and D. R is specified in the optative mood about what the customer wants to be true in terms of the references to the domains.
+Capital D is what we know to be true in the domain. D is specified in the indicative mood. Both R and D combined together form the stakeholder requirements.
+
+S specified the system requirements. It conveys how we want the machine to behave in its interaction with the given and designed domains in the environment of operation. In other words, a and b are the shared phenomena at the interface between the system and the environment of operation.
 ---
 class: middle
 # Correctness argument
 ## S &#x2192; D, R  
 - The argument to make:  
 _(R)equirements_, _(S)pecifications_ and _(D)omain descriptions_ .red[fit] together
+
+???
+So to make sure that the machine will meet the operational intent, i.e. we build the right solution, we have to satisfy the following correctness argument. S entails D, R. i.e. They all fit together.
 
 ---
 # Correctness argument
