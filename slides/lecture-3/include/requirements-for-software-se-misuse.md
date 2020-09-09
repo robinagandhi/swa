@@ -1,45 +1,60 @@
-class: center, middle
-# Requirements for Software Security Engineering (Part - 2)
-
----
 class: middle
 # Abstractions for Security Requirements Elicitation
 .top-right[
 ![business-analyst](https://s-media-cache-ak0.pinimg.com/564x/a6/c1/62/a6c162f649bd64050235f624b0972dce.jpg)
 ]
+
+???
+In this discussion I will demonstrate how suitable abstractions can be used to elicit and communicate security requirements in modern software development processes.
+
 ---
 class: middle
 # Security Requirement Sources
-## Security Policies
-- Stakeholder Security Needs
-- Auditing Needs
-- [Certification Needs](http://static1.1.sqspcdn.com/static/f/702523/26767149/1451886707923/201601-Gandhi.pdf?token=l4NhzGQJsXEqUX7CIOwzoK5au%2BM%3D)
-- Survivability and Maintainability Needs
+## Security Policy
+- Stakeholder interviews
+- Auditing needs
+- [Certification needs](http://static1.1.sqspcdn.com/static/f/702523/26767149/1451886707923/201601-Gandhi.pdf?token=l4NhzGQJsXEqUX7CIOwzoK5au%2BM%3D)
+- [Resiliency needs](https://csrc.nist.gov/publications/detail/sp/800-160/vol-2/final)
 
 ## Risk assessment
 - Data, Software, Human or Organization, and Physical assets
 
-## Assurance Needs
-## Deception Needs
+???
+There are many sources of security requirements. In particular, you want to pay attention to the security policies that stakeholders want to enforce on their information assets. These policy needs can be expressed in interviews, auditing needs, certification needs and resiliency needs.
+I have a few links here to further elaborate on the last two. In 2016, I authored a paper that talks about the use of NIST recommended security controls for the identification of requirements for software security engineering. From a resiliency perspective, NIST has published a companion guide to NIST Special publication 800-160 Volume 2. It about about how to apply security principles to achieve resiliency outcomes.
+
+Security requirements can also be sourced from risk assessment processes applied to various organizational assets.
+
+Abstractions are used in requirements engineering to translate verbose natural language requirements sources into artifacts that facilitate engineering analysis. These artifacts also promote a shared understanding of the required engineering effort and what the system is designed to do and more importantly not do. These abstractions are called requirements elicitation techniques.
+
 ---
 class: middle
-# Primary elicitation techniques
+# Primary abstractions
 
-## 1. Goal-driven approach
+## 1. Attacker Goals
 - Attacker goal is to violate security expectations
 - [Anti-goals](https://www.info.ucl.ac.be/~avl/files/avl-Icse04-AntiGoals.pdf), [Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html), [N-SoftGoals](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.103.2997&rep=rep1&type=pdf)
 
+???
+There are three types of abstractions used primarily in requirements elicitation.
+
+The first abstraction is that of attacker goals. Just like we start with abuse frames, here we start with attacker goals to elicit security requirements. Over the years, researchers have proposed and validated several methods using attacker goals. The attacker goal is to violate security expectations.
+
+
 --
 
-## 2. Scenario-driven approach
+## 2. Attack Scenarios
 - Negative scenarios (desired future experience, story grounded in real world, thread through a model)
 - [Misuse cases](http://www.scenarioplus.org.uk/papers/misuse_cases_ieee_jan_2003.pdf), [Abuse frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), [Keywords/checklists](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx)
 
 --
 
-## 3. Viewpoint-oriented approach
+## 3. Viewpoints
 - [Cross-cutting views](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1048526), [conflicts](http://www.panda.sys.t.u-tokyo.ac.jp/kushiro/ReferencePaper/Requirements%20engineering/00487319.pdf)
 - Attacker views, security properties, tradeoffs
+
+???
+Take note that all three abstractions focus on a future undesirable event to elicit security requirements. We often call this future undesirable event as Risk in Cybersecurity. So in a sense, we are using risk perception to drive the security engineering effort.
 
 ---
 class: middle
@@ -171,7 +186,7 @@ This is the language of risk. Goals, Scenarios and viewpoints are the language o
 
 ---
 class: middle
-# The Design Activity
+# Risk and Security Requirements
 ![risk](images/requirements-risk.png)
 
 ???

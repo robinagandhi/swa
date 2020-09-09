@@ -467,7 +467,8 @@ An instance of the problem world that gives rise to an opportunity for attacks
 class: middle
 # Abuse Frame 1 (mailfile example)
 ![abuse](images/example-af-2.png)
-## .center[MS &#x2192; v(D), AR]
+#### .center[.red[Anti-Requirement (AR): Attacker (AT) can _read the Analysis Report_ (AS - Asset)]]
+<!-- ## .center[MS &#x2192; v(D), AR] -->
 
 ???
 Here we see that the malicious machine domain is assigned to existing domain of the mailfile analyzer machine, but with a weakness in its specification. The weakness is that of not having any authentication. Such a machine allows the analysis report asset to be read, leading to the satisfaction of the anti-requirement of the malicious user in the problem world.
@@ -479,11 +480,10 @@ class: middle
 ![spf](images/security-problem-frame.png)
 
 ## Correctness argument
-- For an attacker (A), the specification of the Security Machine (SM) satisfies the security requirement (SR)  
-SM &#x2192; A, SR
+- For an attacker (AT), the specification of the Security Machine (SM) satisfies the security requirement (SR)  
 
 ???
-Stating the abuse argument, allows a security requirements engineer to specify a security frame. The security frame is also specified from the perspective of an attacker in the environment of operation. But in this frame, a "security machine" domain is specified that prevents harm to the asset by satisfying the security requirement (SR). The Security Machine or SM can be the machine that is being built, or could be another machine that is built specifically stop the attacker (e.g. an authentication module). The security machine represents active protection mechanisms. Which means that this kind of protection mechanism adds code to the software or system being built.
+Establishing an abuse argument, allows a security requirements engineer to specify a security frame. The security frame is also specified from the perspective of an attacker in the environment of operation. But in this frame, a "security machine" domain is specified that prevents harm to the asset by satisfying the security requirement (SR). The Security Machine or SM can be the machine that is being built, or could be another machine that is built specifically stop the attacker (e.g. an authentication module). The security machine represents active protection mechanisms. Which means that this kind of protection mechanism adds code to the software or system being built.
 
 Given this frame, the correctness argument makes the case that for an attacker (AT), the specification of the Security Machine (SM) allows observable effects on the asset domain (AS) to satisfy the security requirement (SR).
 
@@ -493,7 +493,7 @@ class: middle
 ![sfmailfile](images/example-sf.png)
 
 ???
-Applying the security frame pattern to counter the abuse frame for the mailfile example could result in a security frame as shown. Here we have introduced a Customer identifier security machine that satisfies the security requirement to identify and authorize the customer. We have also introduced a designed domain of an authentication database that allows the result domain to reflect the status of the identify of the Customer domain.
+Applying the security frame pattern to counter the abuse frame for the mailfile example could result in a security frame as shown. Here we have introduced a Customer identifier security machine that satisfies the security requirement to identify and authorize the customer. We have also introduced a designed domain of an authentication database that allows the result domain to reflect the status of the identify of the Customer domain. Since it is a designed domain and not a given domain, it has a single stripe in its notation. Machine domains have two stripes.
 
 ---
 class: middle
@@ -514,7 +514,9 @@ Examining the abuse frame and the corresponding security frame next to each othe
 
 This approach aligns well with our definition of software assurance, which took an attack based approach to undertake engineering activities in the system development lifecycle. That is exactly what we did here.
 
-But we are not done. This is just the first step. As security professionals, we should anticipate that attackers will improvise in response to protection mechanisms. So a couple more rounds of analysis should be carried out.
+But we are not done. This is just the first step. As security professionals, we should anticipate a malicious and intelligent attackers will improvise in response to protection mechanisms. So a couple more rounds of analysis should be carried out at this early stage in the requirements lifecycle.
+
+The next round or analysis starts where we left off. It starts with the identification of an abuse frame that would allow the fulfillment of an anti-requirement despite the presence of the protection mechanism.
 
 ---
 class: middle
@@ -523,13 +525,18 @@ class: middle
 ![abuse](images/example-af-3.png)
 
 ???
-For example, the attacker can use a malicious machine  SQL injection weakness
+For the mailbox analyzer example, the attacker can use a SQL injection weakness to bypass the authentication protection mechanism. This attack satisfies the attacker's anti-requirement of allowing fake customer authorization. Here MU is short for Malicious User.
 
 ---
 class: middle
 # Iterative Process
 ## Counter with another Security Frame
 ![secure](images/example-sf-2.png)
+
+???
+Now the security engineer responds with another security frame, that introduces the need for an input validator security machine that satisfies the security requirement of stoping injection attacks that can change the authentication result.
+
+Again, the analysis does not need to stop here. The attacker can improvise again.
 
 ---
 
@@ -538,38 +545,61 @@ class: middle
 ## Yet another Abuse Frame!
 ![abuse](images/example-af.png)
 
+???
+In this abuse frame, an assumption is made about the presence of a Trojan backdoor in the Mail Analyzer machine.
+
+At this point, the security engineer can make a decision that this abuse frame is out of scope for the engineering effort. If it is not out of scope, then the engineer can ask for passive protection mechanisms such as configuration management and code review in the construction of the mailbox analyzer. These passive protection mechanisms do not add code to the mailbox analyzer, but provides a reliable environment for the construction of the mailbox analyzer. These protection mechanisms can be implemented as constraints on the problem domain (D).
+
+Here we can observe that a security frame can suggest both active and passive protection mechanisms through successive refinement of security requirements driven by abuse frames.
+
 ---
 # The Design Problem
 
-## What security functions/capabilities exist in the software, i.e. Specification (S), such that given (D), (R) is satisfiable?  
+## What security functions/capabilities are needed in the software, i.e. Specification (S), such that given (D), (R) is satisfiable?  
 - Security functions  
   Security Functional Requirements - Active Protections
+
+## What weaknesses should be avoided in the software, i.e. Specification (S), such that given (D), (R) is satisfiable?  
 - No exploitable weaknesses  
   Assurance and Strength requirements - Passive Protections
 
----
-# The Design Problem
-## S &#x2192; D, R   
-S is resilient to attacks, when D includes an Attacker (A) trying to implement (AR)
+???
+The iterative analysis should demonstrate to you that providing _adequate security_ in a system is a design problem. Stated more formally using the concepts that we learned from problem frames, the design problem is two fold: First, what security function or capabilities exist in software, that is the specification (S), such that given the presence of a malicious user in the operational environment (D), the requirements, including security requirements are satisfied.
+Second, what weakness should be avoided in software, that is the specification (S), and given conditions in the operational environment (D), the requirements, are satisfied.
 
 ---
 class: middle
-# Active Protection Security Requirements
+# The Design Problem
+## S &#x2192; D, R   
+S is resilient to attacks, when D includes an Attacker (A) trying to implement (AR)
+???
+With adequate security determined in terms of active and passive protection mechanisms, S can be said to be resilient to attacks from the kind of attackers for which the system was designed.
+
+---
+class: middle
+# .red[Active] Protection Security Requirements
 
 ## Security functions in the specification (S)   
 E.g. Encryption module, access control
 ## Security constraints on the problem world (D)  
 E.g. Controlled physical access, access logs, cleared user base, authorization db
 
+???
+As additional examples of this design work, we can see that active protection mechanisms can be implemented as part of the software specification or as additional mechanisms in the operational world, as part of (D).
+
+For example, encryption is typically part of the software specification, but phyical access mechanism such as cared entry can be implemented outside the software and in the problem world.
+
 ---
 class: middle
-# Passive Protection Security Requirements  
+# .green[Passive] Protection Security Requirements  
 
 ## Weaknesses avoided in security functions of the specification (S)     
 E.g. Injection, memory issues, weak crypto algorithms or implementation  
-E.g. _For openSSL_: Encryption module minimizes exploitable buffer overflow weaknesses to an acceptable level  
 ## Weaknesses avoided in the problem world (D)  
 E.g. password sticky notes, guessable passwords, ad-hoc authorizations, poor clearance processes
+
+???
+Similarly, passive protection mechanisms can be applied to develop a system that minimizes weaknesses, or enforce constraints in the problem domain that minimize weaknesses in the problem domain. For example, coding standards and language frameworks can eliminate several weaknesses in the software, and at the same time enforcement of policies and user training can avoid weaknesses in the problem world where the software will be used.
 
 ---
 # More Examples
@@ -596,6 +626,9 @@ E.g. password sticky notes, guessable passwords, ad-hoc authorizations, poor cle
 - Social Engineering thwarted
 ]
 
+???
+Here are typical examples of both active and passive protections that can be used to facilitate iterative analysis using abuse and security frames.
+
 ---
 class: middle
 # Reflection
@@ -608,7 +641,13 @@ class: middle
 ![bridge](https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY1MTc3MjE0MzExMDgxNTQ1/topic-golden-gate-bridge-gettyimages-177770941.jpg)
 ]
 
+???
+In summary, the discussion on problem frames created the right abstractions for an engineering approach to be applied. We built a bridge from the stakeholder requirements to system requirements by introducing an attacker in the problem world. In particular, we demonstrated the use of abuse and security frames to reveal the causal chains necessary for security requirements to be satisfied.
+
 ---
 class: middle, center
 # Questions?
 ![questions](https://media.giphy.com/media/ccRdPf8zWkivm/giphy.gif)
+
+???
+Now I realize that software developers today do not use problem frames. In the next video, we will talk about requirement engineering methods that will allow us to apply what we learned here in modern software development processes. The fundamental philosophy of using an attackers perspective to refine security requirements remains the same regardless of the specific notation or method being used.
