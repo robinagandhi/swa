@@ -178,13 +178,13 @@ class: middle
 class: middle
 # Misuse Case Diagram
 ### Step 5 (1)
-Iterate on steps 2 through 4 for recursive elicitation of security requirements
+Iterate on steps 1 through 4 for recursive elicitation of security requirements
 ![misusecase](images/misuse-5.svg)
 ---
 class: middle
 # Misuse Case Diagram
 ### Step 5 (2)
-Iterate on steps 2 through 4 for recursive elicitation of security requirements
+Iterate on steps 1 through 4 for recursive elicitation of security requirements
 ![misusecase](images/misuse-6.svg)
 
 ---
@@ -252,12 +252,13 @@ class: middle, center
 ![questions](https://media.giphy.com/media/ccRdPf8zWkivm/giphy.gif)
 
 ---
-
+exclude: true
 class: center, middle
 # Misuse Case Exercise
 
 ---
 class: middle
+exclude: true
 
 ### _Skip this step if you already have a Lucidchart account._
 
@@ -267,13 +268,14 @@ class: middle
 - Link: https://www.lucidchart.com/pages/usecase/education-request
 
 ---
-
+exclude: true
 class: middle
 # Step 2
 ## Data flows to identify Use-cases
 - Identify five essential data flows through the software and describe them using use-cases diagrams.
 
 ---
+exclude: true
 class: middle
 # Step 3
 ## Develop Mis-use cases
@@ -283,6 +285,7 @@ class: middle
 ## Click on this [template](https://www.lucidchart.com/invitations/accept/59a6e092-49bd-4af3-80be-a1f0862923e5) to start a new misuse case
 
 ---
+exclude: true
 class: middle
 # Step 4
 ## Reflection
@@ -290,6 +293,7 @@ class: middle
 - Review OSS project documentation and codebase to support your observations.
 
 ---
+exclude: true
 class: middle
 # Step 5
 ## OSS Project Documentation Review
@@ -299,6 +303,7 @@ class: middle
 - Link to your team GitHub repository that shows your internal project task assignments and collaborations to finish this task.
 
 ---
+exclude: true
 # Misuse case grading criteria
 
 ## Use of proper notations
@@ -312,11 +317,13 @@ class: middle
 - Submit a link to a markdown report on Canvas
 
 ---
+exclude: true
 # Generating shareable links on Lucidchart
 
 ![sharing](images/sharing.png)
 
 ---
+exclude: true
 class: middle
 # Resources
 1.	These slides!
@@ -324,6 +331,7 @@ class: middle
 1.	The [Common Attack Pattern Enumeration and Classification (CAPEC)](https://capec.mitre.org/data/definitions/1000.html) as another reference for common attacks
 
 ---
+exclude: true
 class: middle
 # Guidance
 ## Strategy
@@ -335,6 +343,7 @@ class: middle
 
 
 ---
+exclude: true
 class: middle
 # Guidance
 ## Representation
