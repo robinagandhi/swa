@@ -31,7 +31,7 @@ Abstractions are used in requirements engineering to translate verbose natural l
 class: middle
 # Primary abstractions
 
-## 1. Attacker Goals
+### 1. Attacker Goals
 - Attacker goal is to violate security expectations
 - [Anti-goals](https://www.info.ucl.ac.be/~avl/files/avl-Icse04-AntiGoals.pdf), [Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html), [N-SoftGoals](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.103.2997&rep=rep1&type=pdf)
 
@@ -39,21 +39,27 @@ class: middle
 There are three types of abstractions used primarily in requirements elicitation.
 
 The first abstraction is that of attacker goals. Just like we start with abuse frames, here we start with attacker goals to elicit security requirements. Over the years, researchers have proposed and validated several methods using attacker goals. The attacker goal is to violate security expectations.
-
+I have linked these methods with the research papers or blogs where they are discussed in more details if you want to explore further. For example, N-softgoals uses negative goals of an attacker to come up with ways to address them.
 
 --
 
-## 2. Attack Scenarios
-- Negative scenarios (desired future experience, story grounded in real world, thread through a model)
+### 2. Attack Scenarios
+- Negative scenarios (desired future experience of an attacker)
 - [Misuse cases](http://www.scenarioplus.org.uk/papers/misuse_cases_ieee_jan_2003.pdf), [Abuse frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), [Keywords/checklists](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx)
 
+???
+The next abstraction for requirements elicitation is attack scenarios or negative scenarios. These scenarios outline a story about a future desired experience of an attacker. We already saw and example of this technique with Abuse cases, where we depicted specific attack scenarios. We will look at misuse cases next and the keyword/checklists later during the design stage.
+
 --
 
-## 3. Viewpoints
+### 3. Viewpoints
 - [Cross-cutting views](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1048526), [conflicts](http://www.panda.sys.t.u-tokyo.ac.jp/kushiro/ReferencePaper/Requirements%20engineering/00487319.pdf)
 - Attacker views, security properties, tradeoffs
 
 ???
+The third primary abstraction is that of a viewpoint. Here the philosophy is to encapsulate different perspectives of the system and then reason about their conflicts and agreements explicitly. For security requirements, researchers have observed the use of attacker view and cross-cutting security properties that apply to a whole range of system components. With viewpoints, the tradeoff of security with other system properties such as safety can also be carried out.
+
+
 Take note that all three abstractions focus on a future undesirable event to elicit security requirements. We often call this future undesirable event as Risk in Cybersecurity. So in a sense, we are using risk perception to drive the security engineering effort.
 
 ---
@@ -71,28 +77,33 @@ class: middle
 .top-right[
 ![case](http://www.it2051229.com/data_solutions/sysanaldesign/figure1.png)
 ]
+???
+We talked about use cases before. It is a scenario based abstraction that is widely used for describing requirements and made popular by the Unified Modeling Language standard. The UML standard  introduced them to software developers using a visual notation that is quite intuitive and easy to understand.
+
+Let's see how the Use case visual notation is used to depict system requirements.
 
 ---
 class: middle
-# Scenarios: UML Use Cases
-## Examine concrete scenarios of system use
-- Actors and Use Cases
-- [Associate](https://www.uml-diagrams.org/use-case-actor-association.html) actors/users to the use cases
-- Relate actors using .red[generalization] and .red[realization]
-- Relate use cases using .red[dependencies]
-- Use cases have verbs or noun-verb pairs in it
-- Focus on essential data-flows from actors
+# Use Case Notation
+- Actors (stick figures) and Use Cases (ovals)
+- [Association](https://www.uml-diagrams.org/use-case-actor-association.html) relates actors to use cases (Solid line)
+- Dependencies (include, extend) relate use cases (dotted arrow)  
 
----
-class: middle
-# Use Case Diagram
 ![usecase](images/usecase-legend.svg)
+
+
+???
+The Use case notation that two basic entities. Actors and Use Cases. Actors are shown as a stick figure. The actor is also given a name. This has to be a noun-phrase. Best to give a name that personifies the Actor in the environment of operation. The Actor does not have to be a person, it can also be an external system, such as an "other system" from the systems engineering view.
+
+Use cases are drawn as ovals. A use case is NOT an activity carried out by the Actor but it is a feature of the system of interest that the Actor will interact with. Use cases are best worded as a verb or a noun-verb pair. This grammatical guidance will ensure that the use case depicts an action supported by the system of interest.
+
+The interaction between the Actor and use case is shown with an association relationship. It has to be a solid line with no arrows. Example: ![Association relationship](https://www.uml-diagrams.org/use-case-diagrams/use-case-association-actor.png). The association relationship depicts a shared interface between the Actor and the system for essential data-flows to take place.
+
+Two use cases can be related with an includes or extends dependency. Includes represents a non optional inclusion of the referenced usecases in the base use case. So here transfer funds use case includes both deposit and withdraw funds use cases for money transfer to take place. In contrast, extends represents an optional extension of the referenced use case. Here the get help on registration use case is an optional extension of the register user use case.
+
 ---
 class: middle
-# Use Case Diagram
-
-#  
-
+# Use Case Notation
 
 .left-column[
 ![association](images/association.svg)
@@ -100,13 +111,21 @@ class: middle
 .right-column[
 ![specialization](images/specialization.svg)
 ]
+
+???
+In this example I illustrate the use of proper wording for actors and use cases. Here we also see that two actors can be related to each other using a generalization relationship. In the example, it means that the Actor librarian can do everything the Assistant librarian can do. This relationship can prevent duplication and reduce clutter in the diagram.
+
 ---
 class: middle
 # Use Case Diagram
 
-.left-column[
 ![usecase](images/usecase.svg)
-]
+
+???
+Using this simple notation, it is now time to look one particular use case diagram that describes a banking scenario where a customer can withdraw or deposit money.
+
+Now you are probably wondering, how to use this notation to depict security requirements. Herein lies the biggest drawback of UML. In its base format, it has no support for conceptualizing and including security requirements. The fundamental philosophy of using an attackers perspective to refine security requirements remains the same regardless of the specific notation or method being used. As a result, this notation needed to be extended. This extended notation allows us to model a mis-use case diagram. Let's examine this extended notation.
+
 ---
 class: middle
 # Mis Use Case Diagram
@@ -128,49 +147,83 @@ class: middle
 ---
 class: middle
 # Misuse Case Diagram
+### Step 1
+- Introduce the major mis-actors. Name should give a clear understanding of motivation
+
 ![misusecase](images/misuse-1.svg)
 ---
 class: middle
 # Misuse Case Diagram
+### Step 2
+- Introduce misuse cases
+
 ![misusecase](images/misuse-2.svg)
 ---
 class: middle
 # Misuse Case Diagram
+### Step 3
+- Investigate potential relations between misuse and use cases
+
 ![misusecase](images/misuse-3.svg)
+
+???
+Investigate potential relations between misuse cases and use cases, especially in terms of potential `<<includes>>`-dependency. Many threats can realized by a system’s normal functionality. E.g. denial of service, covert channels, sql injection
 ---
 class: middle
 # Misuse Case Diagram
+### Step 4
+- Introduce new use cases with the purpose to detect or prevent misuse cases
+![misusecase](images/misuse-4.svg)
+---
+class: middle
+# Misuse Case Diagram
+### Step 5 (1)
+Iterate on steps 2 through 4 for recursive elicitation of security requirements
 ![misusecase](images/misuse-5.svg)
 ---
 class: middle
-# Misuse Case
-## Construction Steps
-### Step 1
-Include normal actors and the required use cases regardless of any security considerations
-### Step 2
-Introduce the major mis-actors and misuse cases, i.e., threats that are reasonably likely. Name should give a clear understanding of motivation
+# Misuse Case Diagram
+### Step 5 (2)
+Iterate on steps 2 through 4 for recursive elicitation of security requirements
+![misusecase](images/misuse-6.svg)
 
 ---
-class: middle
-# Misuse Case
-## Construction Steps
-### Step 3
-Investigate the potential relations between misuse cases and use cases, especially in terms of potential “includes”-relations. Many threats can realized by a system’s normal functionality. E.g. denial of service, covert channels, sql injection
-### Step 4
-Introduce new use cases with the purpose to detect or prevent misuse cases
 
+class: middle
+# Misuse Case Diagram
+### Another example
+
+![misusecase](images/misuse-8.svg)
 ---
 class: middle
-# Misuse Case
-## Construction Steps
-### Step 5
-Iterate on steps 2 through 4 for recursive decomposition of security requirements
-### [Optional] Step 6
-[Document requirements](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.9.8190&rep=rep1&type=pdf)
+# Misuse Case Diagram
+### Another example
 
+![misusecase](images/misuse-9.svg)
+---
+class: middle
+# Misuse Case Diagram
+### Another example
 
-???
-We will not do this step to keep the process lightweight. But you know how to do it if required.
+![misusecase](images/misuse-10.svg)
+---
+class: middle
+# Misuse Case Diagram
+### Another example
+
+![misusecase](images/misuse-11.svg)
+---
+class: middle
+# Misuse Case Diagram
+### Another example
+
+![misusecase](images/misuse-12.svg)
+---
+class: middle
+# Misuse Case Diagram
+### Another example
+
+![misusecase](images/misuse-13.svg)
 
 ---
 
