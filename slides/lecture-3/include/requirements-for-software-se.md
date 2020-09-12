@@ -91,15 +91,15 @@ class: middle
 ## Inadequate understanding of the purpose leads to poor quality software
 
 ???
-This understanding now helps us realize that stakeholder needs determine a given software's fitness for purpose. Software is built for a purpose. This software will fail if we inadequate understanding of the purpose or the software is used for a purpose different that it is originally designed for. Either one of these scenarios can be true for open-source software that you have selected for your semester projects.
+This understanding now helps us realize that stakeholder needs determine a given software's fitness for purpose. Software is built for a purpose. So, software will fail if we have an inadequate understanding of it purpose, or the software is used for a purpose different that it is originally designed for. Now, either one of these scenarios can be true for open-source software that you have selected for your semester projects.
 
 Inadequate understanding of the purpose can occur due to several reasons.
 1. The software is too complex i.e. designer does not know for sure if software will fulfill it purpose
 1. The designer does not have the knowledge or experience
-1. The the customer does not clearly know the purpose or express it or the purpose becomes apparent later in the system lifecycle
+1. The customer does not clearly know the purpose or express it or the purpose becomes apparent later in the system lifecycle
 1. Or there could be a deliberate attempt to make the software not fulfill its purpose
 
-To avoid these problems, software engineers often use structured methods to understand a systems purpose. Let's look at two popular methods.
+To avoid these problems, software engineers often use structured methods to understand a systems purpose. Let's look at two popular methods. I will point out that developers often use these methods incorrectly. They focus primarily on the system requirements and much less to understand the purpose of system, i.e the stakeholder requirements and needs.
 
 ---
 class: middle
@@ -131,20 +131,21 @@ The purpose of use case is to build system requirements that fulfill user needs.
 
 class: middle
 # .red[User stories] - Agile, XP, SCRUM
-## .blue[How] and .green[why] would .orange[someone] use software?
-- Scenarios about user needs
+## .blue[Why] and .green[how] and would .orange[someone] use software?
+- Goal-driven scenarios
 - [Informal](https://www.agilealliance.org/glossary/three-cs/), [Card, Conversation and Confirmation](http://ronjeffries.com/xprog/articles/expcardconversationconfirmation/)
 .top-right[
-![card](http://www.jamieclouting.co.uk/wp-content/uploads/2012/03/card-front-300x225.jpg)
+![card](https://www.scrumwithstyle.com/wp-content/uploads/2018/02/User-Story-Card.png)
 ]
 
 ???
-User stories are more popular in agile processes. They first focus on the how and then the why. So they are scenarios about user needs.
-Notice the reversed order of Why and How compared to User stories. Use cases are goal-driven for scenario elicitation. On the other hand User stories are scenario driven elicitation technique that link scenarios to goals.
+User stories are more popular with agile processes. But we can see that they are also goal-driven scenario elicitation techniques.
 
-Their specification is also informal compared to use cases, but often elaborated using test-driven methodology. i.e. for each scenario a series of tests are specified for the system. The three c's of user stories are cards, conversation and confirmation.
+User stories are started on 2 x 4 index cards. So their specification is a bit informal compared to use cases, but often elaborated using test-driven methodology. i.e. for each scenario a series of tests are specified for the system.
 
-User stories are written on cards.
+The three c's of user stories are cards, conversation and confirmation.
+
+
 The conversation is typically verbal to discuss the expectations around the card.
 Finally, the Confirmation is the acceptance test.
 
@@ -154,9 +155,9 @@ Finally, the Confirmation is the acceptance test.
 
 
 ???
-Here is an example of a user story card. They follow a restricted natural lanaguage pattern that start with the user role, then the wants of that user in terms of system interaction followed by the goal of the interaction.
+Here is an example of a user story card. It follows a restricted natural language pattern that starts with the user role, then the wants of that user in terms of system interaction, followed by the reason for the interaction.
 
-With these structured techniques, you can start to realize that the problem context needs engineering know-how. This engineering know-how is pursued by the field of Requirements engineering. In the next video we will discuss more about requirement engineering and understand the primary theory of security requirements elicitation using a special notation called problem frames.
+With these structured techniques, you can start to realize that understanding the problem context needs engineering know-how. This engineering know-how is pursued by the field of Requirements engineering. In the next video we will discuss more about requirement engineering and understand the primary theory of security requirements elicitation using a special notation called problem frames.
 
 ---
 class: center, middle
@@ -178,6 +179,8 @@ According to the website:
 
 Source: http://www.cs.toronto.edu/~sme/RE01/
 
+In short, its purpose is to build a bridge between the two types of requirements we discussed in the last video.
+
 
 ---
 class: middle
@@ -193,7 +196,7 @@ class: middle
 ]
 
 ???
-Now we start to put structure around the requirements elicitation activity by identifying the ways in which we express them. We know from before that stakeholder needs and requirements are about relationships in the environment of operation. They are not about the software system and they are not about the shared interface at the environment of operation and the software system
+In this video we start to put structure around the requirements elicitation activity by identifying the ways in which we express them. We know from before that stakeholder needs and requirements are about relationships in the environment of operation. They are not about the software system and they are also not about the shared interface at the environment of operation and the software system. They are effects in the environment of operation that the customer wants the software system to guarantee.
 
 ---
 class: middle
@@ -206,7 +209,7 @@ Desired condition over the phenomena of the environment
 Given properties of the environment of operation
 
 ???
-As a result these needs are requirements are typically expressed as wish over the phenomena of the operational environment. If you remember, the litmus test, then you know that stakeholder requirements exist whether we build the system or not. So this makes sense. In addition, to stakeholder wishes, we also have to collect information about the operational environment. These properties are generally expressed in an indicative mood, i.e. they express things that existing in the problem world.
+As a result these requirements are typically expressed as wish over the phenomena of the operational environment. If you remember, the litmus test, then you know that stakeholder requirements exist whether we build the system or not. So this makes sense. In addition to stakeholder wishes, we also have to collect information about the operational environment. These properties are generally expressed in an indicative mood, i.e. they express things that existing in the problem world.
 
 Let's call the first set of requirements expressed in the optative mood as (R) and the indicative mood as (D)
 
@@ -219,9 +222,9 @@ class: middle
 Desired condition over the shared phenomena at the interface between the system and the environment of operation
 
 ???
-Now the system requirements are only expressed in an optative mood. They express a wish which reflects the desired condition over the shared phenomena at the interface between the system and the environment of operation. We call this requirement set (S). The letter S also comes from the fact that these system requirements are often referred to as the Specification.
+Compared to the stakeholder needs and requirements, the system requirements are only expressed in an optative mood. They express a wish which reflects the desired condition over the shared phenomena at the interface between the system and the environment of operation. We call this set of requirement as (S). The letter S also comes from the fact that these system requirements are often referred to as the Specification.
 
-While brainstorming stakeholder or system requirements, we have to aware of the tendency to start describing the solution context and lose focus of the problem context. So to stay focused on the problem context, and to really understand R, D and S, we need a better notation. One such notation is Problem frames.
+While brainstorming stakeholder or system requirements, we have to be aware of the tendency to start describing the solution context and lose focus of the problem context. So to stay focused on the problem context, and to really understand R, D and S, we need a better notation. One such notation is Problem frames.
 
 ---
 
@@ -230,7 +233,7 @@ class: middle
 Allows focus on `problems` to be solved.
 
 ???
-Problem frames is a notation specifically designed for requirements engineers to focus on the problems to be solved. While we will a different notation for our semester project security requirements, the study of problem frames will help us understand the foundational theory behind security requirements.
+Problem frames is a notation specifically designed for requirements engineers to focus on the problems to be solved. While we will use a different notation for our semester project security requirements, the study of problem frames will help us understand the foundational theory behind security requirements.
 
 ---
 class: middle
@@ -247,10 +250,11 @@ class: middle
 ]
 
 ???
-> Problem frames are described by frame diagrams, which basically consist of rectangles and links between these
-> The task is to construct a machine that influences the behavior of the problem domain it is integrated in
+The diagraming typically starts with the machine to be developed. This is a rectangle with two stripes.
 
-The diagraming typically starts with the machine to be developed. This is a rectangle with two stripes. Next, you identify any designed, i.e. man-made artifacts that exist in environment of operation as well as any given things that exist, e.g. people. These are represented as designed domain and given domains. Both are things that exist in the environment of operation. Finally, dashed ovals represent requirements. They are dashed because they are conceptual and not tangible entities like the designed and given domains or the machine.
+Next, you identify any designed domains, i.e. man-made artifacts that will need to exist in environment of operation. These are represented using rectangles with a single stripe. Finally, things that already exist in the environment are called given domains. They are represented as a rectangle with no stripes.  
+
+Finally, dashed ovals represent requirements. They are dashed because they are conceptual and not tangible entities like the designed and given domains or the machine.
 
 ---
 class: middle
@@ -266,7 +270,13 @@ class: middle
 ]
 
 ???
-The rectangles and ovals are connected with a solid or dashed line. Dashed lines can also have an arrow. The solid line represents shared phenomena between the domains and the machine. For example any input or output would represent shared phenomena. A requirement relates to a domain with a dashed line to indicate that the requirements pertains to that domain. When a requirements includes an arrow, this means that the requirement constraints the domain to behave in a certain way or its intrinsic properties. Hence it is called a constraining reference.
+The rectangles and ovals are connected with a solid or dashed line. Dashed lines can also have an arrow.
+
+The solid line represents shared phenomena or an interface between the domains and the machine. For example, an input or output would take place through an interface.
+
+A dashed line relates a domain to a requirement to indicate a requirement reference.
+
+When this reference include an arrow, it means that the requirement constraints the domain to behave in a certain way or constraints its intrinsic properties. Hence it is called a constraining reference.
 
 ---
 class: middle
@@ -274,7 +284,7 @@ class: middle
 
 ![legend](images/problem-frame.svg)
 ???
-So let's put this all together in the most basic form of a problem frame. Here we have a machine that solves a problem in the environment of operation. The machine and the environment of operation interact at an interface of shared phenomena and the requirement adds a constraint to the intrinsic properties or behavior of the environment of operation
+So let's put this all together in the most basic form of a problem frame diagram. Here we have a machine that interacts with a given domain in the environment of operation. The requirement adds a constraint to the intrinsic properties or behavior of the given domain.
 
 ---
 class: middle
@@ -298,7 +308,7 @@ What better way to learn problem frames, than to apply it to study a given probl
 
 Here we have a PC user who want to analyze messages in the mail client's mailbox. There seems to a certain structure to the mail files and they are all in a single directory. The report expected by the user also has some available guidance.
 
-Pause the video here and try to construct a problem frame diagram based on this description. No really, I mean it.
+Pause the video here and try to construct a problem frame diagram based on this description. Go ahead and pause, I really mean it!
 
 ---
 class: middle
@@ -353,8 +363,9 @@ How we want the machine to behave at interface (a, b)
 ![example](images/example.svg)
 ]
 ???
+So what makes this frame diagram special? Let me elaborate.
 In this diagram we now distinctly see the Stakeholder requirements, which includes the R and D. R is specified in the optative mood about what the customer wants to be true in terms of the references to the domains.
-Capital D is what we know to be true in the domain. D is specified in the indicative mood. Both R and D combined together form the stakeholder requirements.
+D is what we know to be true in the domain. D is specified in the indicative mood. Both R and D combined together form the stakeholder needs and requirements.
 
 S specifies the system requirements. It conveys how we want the machine to behave in its interaction with the given and designed domains in the environment of operation. In other words, a and b are the shared phenomena at the interface between the system and the environment of operation.
 ---
@@ -401,8 +412,7 @@ E.g.: Buffer overflows, Unauthorized physical/network access
 E.g: 8 char password only, No access allowed
 
 ???
-Therefore to make an argument that a machine is fit for purpose, the engineering effort needs to show that machine or the domain descriptions are under specified which allow unwanted behaviors.
-We also don't want to have the situation where S and D are over specified such that required behaviors cannot be achieved.
+Therefore to make an argument that a machine is fit for purpose, the engineering effort needs to show that machine or the domain descriptions are not under or over specified which result in unwanted behaviors.
 
 ---
 class: middle
@@ -424,7 +434,7 @@ Technical Report No: 2003/10, [Analysing Security Threats and Vulnerabilities Us
 ???
 Now that we are comfortable reading Frame diagrams, let's use them to understand the fundamental approach to identifying and refining security requirements. This approach leads to a systematic elicitation of security requirements initiated by domain descriptions of malicious (or in some cases clumsy) agents in the environment of operation.
 
-This approach is described in a 2003 technical report, which calls these problem frame diagrams for security requirements elaboration as Abuse Frames.
+This approach is described in a 2003 technical report, which calls these problem frame diagrams for security requirements elaboration as Abuse Frames. 
 ---
 class: middle
 # Abuse Frame

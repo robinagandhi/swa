@@ -39,7 +39,7 @@ class: middle
 There are three types of abstractions used primarily in requirements elicitation.
 
 The first abstraction is that of attacker goals. Just like we start with abuse frames, here we start with attacker goals to elicit security requirements. Over the years, researchers have proposed and validated several methods using attacker goals. The attacker goal is to violate security expectations.
-I have linked these methods with the research papers or blogs where they are discussed in more details if you want to explore further. For example, N-softgoals uses negative goals of an attacker to come up with ways to address them.
+I have linked these methods with the research papers or blogs where they are discussed in more details if you want to explore further. For example, N-softgoals uses negative goals of an attacker to come up with security measures to address them.
 
 --
 
@@ -48,7 +48,7 @@ I have linked these methods with the research papers or blogs where they are dis
 - [Misuse cases](http://www.scenarioplus.org.uk/papers/misuse_cases_ieee_jan_2003.pdf), [Abuse frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), [Keywords/checklists](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx)
 
 ???
-The next abstraction for requirements elicitation is attack scenarios or negative scenarios. These scenarios outline a story about a future desired experience of an attacker. We already saw and example of this technique with Abuse cases, where we depicted specific attack scenarios. We will look at misuse cases next and the keyword/checklists later during the design stage.
+The next abstraction for requirements elicitation is attack scenarios or negative scenarios. These scenarios outline a story about a future desired experience of an attacker. We already saw an example of this technique with Abuse cases, where we depicted specific attack scenarios. We will look at misuse cases next and the keyword/checklists based method later during the design stage.
 
 --
 
@@ -93,13 +93,13 @@ class: middle
 
 
 ???
-The Use case notation that two basic entities. Actors and Use Cases. Actors are shown as a stick figure. The actor is also given a name. This has to be a noun-phrase. Best to give a name that personifies the Actor in the environment of operation. The Actor does not have to be a person, it can also be an external system, such as an "other system" from the systems engineering view.
+The Use case notation has two basic entities. Actors and Use Cases. Actors are shown as a stick figure. The actor is also given a name. This has to be a noun-phrase. Best to give a name that personifies the Actor in the environment of operation. The Actor does not have to be a person, it can also be an external system, such as an "other system" from the systems engineering view.
 
 Use cases are drawn as ovals. A use case is NOT an activity carried out by the Actor but it is a feature of the system of interest that the Actor will interact with. Use cases are best worded as a verb or a noun-verb pair. This grammatical guidance will ensure that the use case depicts an action supported by the system of interest.
 
 The interaction between the Actor and use case is shown with an association relationship. It has to be a solid line with no arrows. Example: ![Association relationship](https://www.uml-diagrams.org/use-case-diagrams/use-case-association-actor.png). The association relationship depicts a shared interface between the Actor and the system for essential data-flows to take place.
 
-Two use cases can be related with an includes or extends dependency. Includes represents a non optional inclusion of the referenced usecases in the base use case. So here transfer funds use case includes both deposit and withdraw funds use cases for money transfer to take place. In contrast, extends represents an optional extension of the referenced use case. Here the get help on registration use case is an optional extension of the register user use case.
+Two use cases can be related with an includes or extends dependency. Includes represents a non optional inclusion of the referenced usecases in the base use case. So, here transfer funds use case includes both deposit and withdraw funds use cases for money transfer to take place. In contrast, extends represents an optional extension of the referenced use case. Here the get help on registration use case is an optional extension of the register user use case.
 
 ---
 class: middle
@@ -133,16 +133,34 @@ class: middle
 ## Misuser
 An actor that initiates misuse cases, either intentionally or inadvertently.
 
+???
+For analyzing security requirements, we introduce the mis user and mis use case notations to a use case diagram. A mis user is an actor that initiates mis use cases, either intentionally or inadvertantly. This definition allows a mis user to be a threat agent or even a clumsy user that accidentally causes an issue.
+
 --
 
 ## Misuse Case
 A sequence of actions, including variants, that a system or other entity can perform, interacting with misusers of the entity and causing harm to some stakeholder if the sequence is allowed to complete
 
-Extension to the UML use cases modeling language
+???
+Mis use cases are features of the system or the a malicious machine that the mis user can use to cause harm to system assets. Just like use cases, also try to use verb or noun-verb pairs in their specification.
+
 ---
 class: middle
 # Misuse Case Diagram
 ![misusecase](images/misuse-legend.svg)
+
+???
+The mis use case notation is as shown here. Notice that the mis user is still a stick figure, but the head is completely filled. This can be any color of your choice. Similarly, mis use cases are also completely filled. This visual feature, clearly distinguishes them from regular users and use cases.
+
+Mis use cases can have dependencies with each other as well as other use cases. The dependencies between mis use cases and use cases are more interesting.
+
+First a misuse case can threaten a use case. This means that it can harm the fulfillment or the assets related to the use case.
+
+Next, a misuse case can include a usecase for its fulfillment. A first this may appear to be strange, but if you think about a denial of service example then a DOS attack includes accessing the normal features of a system at an excessively high rate. This would be depicted with an includes relationship.
+
+Additional use cases can be introduced in a system to prevent, detect or mitigate misuse cases. This would be similar to introducing a security frame to address an abuse frame.
+
+With these extensions to the use case diagram, let's see the steps to construct a misuse case diagram.
 
 ---
 class: middle
@@ -151,6 +169,10 @@ class: middle
 - Introduce the major mis-actors. Name should give a clear understanding of motivation
 
 ![misusecase](images/misuse-1.svg)
+
+???
+First we start with a usecase diagram and introduce major mis-actors.
+Here you can see that we have a threat agent mr. robot introduced for the banking usecase.
 ---
 class: middle
 # Misuse Case Diagram
@@ -158,6 +180,9 @@ class: middle
 - Introduce misuse cases
 
 ![misusecase](images/misuse-2.svg)
+
+???
+In the second step we introduce a misuse case. Here we see that a "network evesdrop" misuse case is introduced.
 ---
 class: middle
 # Misuse Case Diagram
@@ -168,24 +193,37 @@ class: middle
 
 ???
 Investigate potential relations between misuse cases and use cases, especially in terms of potential `<<includes>>`-dependency. Many threats can realized by a system’s normal functionality. E.g. denial of service, covert channels, sql injection
+
+In this case, the network evesdrop misuse case threatens the withdraw and transfer funds usecases.
+
 ---
 class: middle
 # Misuse Case Diagram
 ### Step 4
 - Introduce new use cases with the purpose to detect or prevent misuse cases
 ![misusecase](images/misuse-4.svg)
+
+???
+With the misuse case established, a security engineer now introduces a usecase to address the misuse case. Here we see that encryp communication use case is introduced with a prevents dependency towards the network evesdrop misuse case.
 ---
 class: middle
 # Misuse Case Diagram
 ### Step 5 (1)
 Iterate on steps 1 through 4 for recursive elicitation of security requirements
 ![misusecase](images/misuse-5.svg)
+
+???
+Now we continue to iterate between misuse and security usecases until adequate security is established.
+
 ---
 class: middle
 # Misuse Case Diagram
 ### Step 5 (2)
 Iterate on steps 1 through 4 for recursive elicitation of security requirements
 ![misusecase](images/misuse-6.svg)
+
+???
+Now we continue to iterate between misuse and security usecases until adequate security is established. This approach is similar to the fundamental approach to security elaboration that we saw with abuse and security frames.
 
 ---
 
@@ -194,48 +232,74 @@ class: middle
 ### Another example
 
 ![misusecase](images/misuse-8.svg)
+
+???
+Let's look at another example. Here a teller actor can invoke the open and close account use cases.
+
 ---
 class: middle
 # Misuse Case Diagram
-### Another example
+### Step 1
 
 ![misusecase](images/misuse-9.svg)
+
+???
+We introduce a mis-actor here who is an insider. Tyrell Wellic- who is a rouge teller.
+
 ---
 class: middle
 # Misuse Case Diagram
-### Another example
+### Step 2 and Step 3
 
 ![misusecase](images/misuse-10.svg)
+
+???
+This actor initiates a money Laundering misuse case, which includes both open and close accounts. This is a good example of an includes relationship between misuse and usecases.
+
 ---
 class: middle
 # Misuse Case Diagram
-### Another example
+### Step 4
 
 ![misusecase](images/misuse-11.svg)
+
+???
+Now we introduce a security usecase to address the misuse case. In this case, Scott the Admin can use a system feature of "Log review" to detect the misuse case.
+
 ---
 class: middle
 # Misuse Case Diagram
-### Another example
+### Step 5
 
 ![misusecase](images/misuse-12.svg)
+???
+Now we iterate again and show improvisation by the attacker.
+
 ---
 class: middle
 # Misuse Case Diagram
-### Another example
+### Step 5
 
 ![misusecase](images/misuse-13.svg)
+
+???
+And then introduce new security usecases to defeat the attacker. Here again we see how iterating over abuse and security frames elaborates security requirements.
 
 ---
 
 class: middle
 # Requirements and Risk
 
+???
+Using this method we have systematically used perceptions of risk to drive the elicitation of security requirements.
+
 ---
 class: middle
 # Risk
 ![risk](images/risk.png)
 ???
-This is the language of risk. Goals, Scenarios and viewpoints are the language of requirements. However our understanding always lacks an explicit traceability from the security requirements to the risk components. By building abuse and misuse models we make this relationship explicit.
+
+So conceptually, assets, threat, vulnerability and countermeasures concepts form the language of risk.
 
 ---
 class: middle
@@ -243,7 +307,10 @@ class: middle
 ![risk](images/requirements-risk.png)
 
 ???
-A model that helps to understanding security requirements in terms of related risk components is absolutely necessary. It can establish the necessity and sufficiency of security requirements in the given context.
+With misuse cases, we build an explicit traceability from the security requirements to these risk components. This traceability is necessary to establish the adequacy of security requirements in a given environment of operation.
+
+
+This is what you will be doing for your open source project in the security requirements assignment.
 
 ---
 
