@@ -95,7 +95,7 @@ class: middle
 ???
 The Use case notation has two basic entities. Actors and Use Cases. Actors are shown as a stick figure. The actor is also given a name. This has to be a noun-phrase. Best to give a name that personifies the Actor in the environment of operation. The Actor does not have to be a person, it can also be an external system, such as an "other system" from the systems engineering view.
 
-Use cases are drawn as ovals. A use case is NOT an activity carried out by the Actor but it is a feature of the system of interest that the Actor will interact with. Use cases are best worded as a verb or a noun-verb pair. This grammatical guidance will ensure that the use case depicts an action supported by the system of interest.
+Use cases are drawn as ovals. A use case is NOT an activity carried out by the Actor but it is a feature of the system of interest that the Actor will interact with. Use cases are best worded as a verb or a noun phrase + verb phrase pair. This grammatical guidance will ensure that the use case depicts an action supported by the system of interest.
 
 The interaction between the Actor and use case is shown with an association relationship. It has to be a solid line with no arrows. Example: ![Association relationship](https://www.uml-diagrams.org/use-case-diagrams/use-case-association-actor.png). The association relationship depicts a shared interface between the Actor and the system for essential data-flows to take place.
 

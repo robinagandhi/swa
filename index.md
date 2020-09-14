@@ -18,8 +18,8 @@ Content will be linked as we progress through the semester. This allows to me to
   * Systems Security Engineering. Based on Chapter 2 from [NIST SP 800-160](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf).
 1. [**Engaging with Open Source Projects**](https://robinagandhi.github.io/swa/slides/lecture-0-1/EngagingWithOpenSourceProjects.pdf), by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 1. **Requirements for Software Security Engineering**
-  * [The Meaning of Requirements for Software Security Engineering]() <!--https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html-->
-  * [Elicitation - Misuse Cases]()<!--https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se-misuse.html-->
+  * [The Meaning of Requirements for Software Security Engineering](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se.html)
+  * [Elicitation - Misuse Cases](https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se-misuse.html)
   * [Assignment: Misuse Case Exercise (Team Deliverable)]() <!--https://robinagandhi.github.io/swa/slides/lecture-3/requirements-for-software-se-misuse.html#26-->
   * Reading: [Chapter 8, Software Security: Building Security In](https://learning.oreilly.com/library/view/software-security-building/0321356705/ch08.html)
   * Reading: [Misuse Cases](https://ieeexplore.ieee.org/abstract/document/1159030)
