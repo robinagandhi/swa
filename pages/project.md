@@ -56,7 +56,7 @@ The deliverables from the class project are posted in a public repository. You c
 * [Teams 2016](https://robinagandhi.github.io/swa/slides/teams-2016/teams.html)
 
 ## Teams Project for Fall 2020
-TBD
+[Teams 2020](https://robinagandhi.github.io/swa/slides/teams-2020/teams.html)
 
 ## Grading
 * The project accounts for 40% of the total course grade.
