@@ -53,25 +53,7 @@ Roger Schell
 ![Roger](http://www.ieee-security.org/TC/SP2010/photos/.xvpics/0054_IMG-thumb.jpg)
 ]
 ---
-# Systems Security Engineering
-
-### .orange[Problem] Context
-A sufficiently complete understanding of the problem
---
-
-### .green[Solution] Context
-Transforms the security requirements into design requirements for the system
---
-
-### .red[Trustworthiness] Context
-Evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy
-
-???
-The framework is independent of system type and engineering or acquisition process model and is not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, each with its own checks and balances
-
----
-
-background-image: url(https://live.staticflickr.com/2834/8818803884_1306f9c8aa_b.jpg)
+background-image: url(http://wallpapercraze.com/images/wallpapers/uwp6%20%282%29-110045.jpeg)
 ???
 Scenario: Our goal is to find a black cat in a dark room.
 ---
@@ -199,40 +181,40 @@ For each doubt, identify sub-claims that eliminate the doubt
 Can sub-claims be directly supported by evidence?
 If not, go to Step 1, repeat process for sub-claims
 ---
-
 class: middle
 # Step 1: Introduce doubts
-The room has .red[no] black cats
+
+.red[C1.1:] Kitty-kitty-kitty search process discovers no cats
 --
 
-* .red[R1.1.1] _Unless_ the room is not locked  
-* .red[R1.1.2] _Unless_ search process does not cover the entire room
+* .red[R1.1.1] _Unless_ the cats were not hungry  
+* .red[R1.1.2] _Unless_ milk is not put in enough places
 * .red[R1.1.3] _Unless_ the people searching are not competent
 * .red[R1.1.4] _Unless_ the baby panthers found are indeed cats
----
 
+---
 class: middle
 # Step 2: Eliminate doubts
 
-.red[R1.1.1] _Unless_ the room is not locked   
-* .green[C1.1.1] All room entrances are guarded  
+.red[R1.1.1] Unless the cats were not hungry   
+* .green[C1.1.1] The room was locked for 5 days  
 
 --
 
-.red[R1.1.2] _Unless_ search process does not cover the entire room  
-* .green[C1.1.2] Kitty-Kitty-Kitty search process covers the entire room
+.red[R1.1.2] Unless milk is not put in enough places  
+* .green[C1.1.2] The room is simultaneously searched in 10 equal non-overlapping squares  
 
 ---
 class: middle
-# Step 3: Evaluate --> STOP or Step 1: Introduce doubts
+# Step 3: Evaluate --> STOP or Step 1: Identify doubts
 
-.green[C1.1.1] All room entrances are guarded  
+.green[C1.1.1] The room was locked for 5 days  
 * .red[R1.1.1.1] Unless the room vents allow cats to go in and out  
 
 --
 
-.green[C1.1.2] Kitty-Kitty-Kitty search process covers the entire room  
-* .red[R1.1.1.2] Unless there is an alternate food supply (mice)
+.green[C1.1.2] The room is simultaneously searched in 10 equal non-overlapping squares  
+* .red[R1.1.1.2] Unless the cats have an alternate food supply (mice in the room)
 
 ---
 class: middle
@@ -243,7 +225,7 @@ class: middle
 
 --
 
-.red[R1.1.1.2] Unless there is an alternate food supply (mice)
+.red[R1.1.1.2] Unless the cats have an alternate food supply (mice in the room)
 * .green[C1.1.1.1.2] There are no mice in the room
 
 ---
@@ -260,14 +242,10 @@ class: middle
 .red[R1.1.1.1] Unless the room vents allow cats to go in and out  
 * .green[C1.1.1.1.1] All room vents have nets installed
 * .blue[E1.1.1.1.1 Vent inspection report]
-* .blue[E1.1.1.1.2 Search coverage report]
-* .blue[E1.1.1.1.3 Entrance log]
 
 .red[Unless] the cats have an alternate food supply (mice in the room)
 * .green[C1.1.1.1.2] There are no mice in the room
-* .blue[E1.1.1.1.4 Month old exterminator report for rodents]
-* .blue[E1.1.1.1.5 Search process Activity Log]
-* .blue[E1.1.1.1.6 Milk placement map]
+* .blue[E1.1.1.1.2 Month old exterminator report for rodents]
 
 ---
 class: middle
@@ -314,7 +292,7 @@ To eliminate these doubts, .green[continuous] efforts are required.
 ---
 # A very catty summary
 
-## Equate Cats to .red[System Weaknesses]
+## Equate Cats to .red[Weaknesses]
 
 ### Claim 1 (Point Solution)  
 * Produces knowledge about what you found  
@@ -390,7 +368,7 @@ class: middle
 
 ### Avoid claims about the supporting method/techniques
 - .red[Bad claim:] The system uses AES encryption
-- Why? Because it is not interesting; Means to an end
+- Why? Because it is not interesting
 
 --
 
@@ -400,7 +378,7 @@ class: middle
 ???
 
 ## Good claims
-- These say something about expected **outcomes** we really wish for by using security technologies or by performing security-related activities
+- These say something about expected outcomes we really wish for by using security technologies or by performing security-related activities
 - Claims about expected outcomes can be argued extensively
 
 - E.g. "AES encryption" (security technology) --> "secure against communication line related threats" (outcome we try wish for)
@@ -413,7 +391,7 @@ class: middle
 --
 
 ## Good Claim Checklist
-- .blue[An entity] relevant to the argument
+- .blue[An entity]
 - .orange[A critical property of the entity]
 - .green[A value for the property and related uncertainty]
 
@@ -464,7 +442,6 @@ See notes (hit `p`) for class exercise
 When you are done enter your answers in this [Google Doc](https://docs.google.com/a/unomaha.edu/document/d/11Xr8GHBHfWJGLotiLoe-us1EZ4Qjn2msjfxHAKjs64Q/edit?usp=sharing)
 
 ---
-exclude: true
 class: middle
 # Scenario
 
@@ -473,12 +450,11 @@ class: middle
 - There is a credible threat. Software bought by OPPD for business functions is being targeted for sabotage with malicious code.
 
 --
-exclude: true
+
 ## Top Level Claim
 - .blue[OPPD NE supply chain processes] .green[minimize ] .orange[the possibility of sabotage by malicious code in software applications]
 
 ---
-exclude: true
 class: middle
 # Claim Visual Notation
 ## Based on Goal Structuring Notation (GSN)
@@ -492,6 +468,7 @@ class: middle
 ## .green[Additional information] that is excluded from the claim or evidence
 - Context (understanding)
 - Justification (rationale)
+- Assumptions (validity)
 
 ---
 class: middle
@@ -515,7 +492,6 @@ class: middle
 - Intelligence reports of malicious code in nuclear energy software
 
 ---
-exclude: true
 class: middle
 # Assumption
 
@@ -541,7 +517,6 @@ class: middle
 ![justification](images/justification.svg)
 
 ---
-exclude: true
 class: middle
 # Strategy
 
@@ -552,21 +527,18 @@ class: middle
 
 ## A strategy is elaborated by providing a series of sub-claims
 ---
-exclude: true
 class: middle
 # Strategy Visual Notation
 
 ![strategy](images/strategy.svg)
 
 ---
-
 class: middle
 # Argument
 
-- Conveys why we believe the top-level claim has been met
-- Develop and refine sub claims, until the sub-claims can be directly supported by evidence
-- .red[Avoid drift in the entity of the sub-claim.] It should be related to the entity in the top-level claim or a related entity.
-- Bridge the gap between top-level claim and evidence
+- Conveys why we believe a claim has been met
+- Refine claims into sub claims, until the sub-claim can be directly supported by the actual evidence
+- Bridges the gap between claims and evidence
 
 --
 
@@ -580,18 +552,18 @@ class: middle
 ## Sub-claim
 
 Develop a sub-claim
-#### .blue[Aquisition processeses] are a part .blue[Supply chain processes]
-![argument](images/sub-claim1.svg)
-.top-right[.red[
-Note:] Different arrows mean different things!
-]
+![argument](images/strategy.svg)
+
+---
+## Sub-claim
+![sub-claim](images/sub-claim.svg)
 
 ---
 class: middle
 # Evidence
 
 - Every branch must be terminated in evidence
-- Something tangible and measurable
+- Something tangible and measureable
 
 ## Grammatical Guidance
 - Must be a .blue[noun phrase] only (NO verb phrase)
@@ -610,12 +582,10 @@ class: middle
 - .red[E5:] Reports for assessing compiler settings with security implications
 
 ---
-
 class: middle
-![Evidence](images/evidence-1.svg)
+![Evidence](images/evidence.svg)
 
 ---
-exclude: true
 ![arrow](images/arrows.svg)
 .topnote[
 What do the arrows mean?
@@ -624,11 +594,6 @@ What do the arrows mean?
 ---
 class: center, middle
 # Coming up with a good Argument is .large[Hard!]
-
---
-### Do we have all relevant sub-claims?
-### Is the evidence sufficient/robust?
-### Is the argument strong?
 
 ---
 
@@ -647,8 +612,8 @@ class: center, middle
 --
 ![light](images/lightexample.png)
 
-.top-right[
-\*Example source: [hit: `p`]
+.footnote[
+\*See notes for sources [hit: `p`]
 ]
 
 ???
@@ -774,7 +739,7 @@ First to develop and apply assurance case based method for control refinement
 ---
 class: middle
 # Security Controls
-[NIST SP 800-53 Rev. 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/draft)
+[NIST SP 800-53 Rev. 5](https://csrc.nist.gov/csrc/media/publications/sp/800-53/rev-5/draft/documents/sp800-53r5-draft.pdf)
 
 ### Makes the security and privacy controls outcome-based
 - Focuses on the security and privacy capabilities
@@ -787,14 +752,14 @@ class: middle
 ---
 class: middle
 # Security Controls
-[Changes from Rev.4 to Rev. 5](https://csrc.nist.gov/CSRC/media/Publications/sp/800-53/rev-5/draft/documents/sp800-53r5-draft-fpd-summary-of-significant-changes.pdf)
+[NIST SP 800-53 Rev. 5](https://csrc.nist.gov/csrc/media/publications/sp/800-53/rev-5/draft/documents/sp800-53r5-draft.pdf)
 
 IA-2 IDENTIFICATION AND AUTHENTICATION
 ### Current (Rev 4):
 - Control: The information system uniquely identifies and authenticates organizational users.
 
 ### Proposed (Rev 5):
-- Control: Uniquely identify and authenticate organizational users and associate that unique identification with processes acting on behalf of those users.
+- Control: Uniquely identify and authenticate organizational users.
 
 ---
 class: middle
