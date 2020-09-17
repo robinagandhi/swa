@@ -1,23 +1,29 @@
 class: center, middle
 # Assurance Case*
 .footnote[
-\* See notes for sources
+\* See notes for sources, hit `p`
 ]
 ???
+
+This discussion is about a new topic that many in cybersecurity may not have thought about before or have experience with. We will learn a new analytical and modeling technique that will help us plan the evidence that needs to be collected throughout the software lifecycle to support claims about security. The goal is build an argument, akin to a legal case, but instead of defending a person or an organization, our job is to defend the claims we seek to make about security properties of the system of interest.
+
+
 This slide deck is based several sources as follows:
 
-1. Goal Structuring Notation
-2. [IEEE Standard— Adoption of ISO/IEC 15026-2:2011](https://www.iso.org/standard/52926.html)
+> Goal Structuring Notation  
+> [IEEE Standard— Adoption of ISO/IEC 15026-2:2011](https://www.iso.org/standard/52926.html)
 Systems and Software Engineering— Systems and Software Assurance— Part 2: Assurance Case
-3. Research papers on Eliminative Induction use in Assurance Cases
-4. [SEI publications on Assurance case use in Safety Cases](https://insights.sei.cmu.edu/sei_blog/2013/08/assurance-cases-and-confidence.html)
-5. [System Assurance: beyond Detecting Vulnerabilities, By Mansourov, Nikolai, and Djenana Campara](https://www.safaribooksonline.com/library/view/system-assurance/9780123814142) (Chapter 2)
+> Research papers on Eliminative Induction use in Assurance Cases
+> [SEI publications on Assurance case use in Safety Cases](https://insights.sei.cmu.edu/sei_blog/2013/08/assurance-cases-and-confidence.html)
+> [System Assurance: beyond Detecting Vulnerabilities, By Mansourov, Nikolai, and Djenana Campara](https://www.safaribooksonline.com/library/view/system-assurance/9780123814142) (Chapter 2)
 
 ---
 class: middle
 
 ![Dilbert Trust and stupidity](https://assets.amuniversal.com/c8253cc0db9a012e2fae00163e41dd5b)
 
+???
+As usual, a bit of humor to kick-off the discussion. Trustworthiness, if evaluated properly, is asserted based on an investigative process. For example, clearing an individual for access to national security related projects. The investigation produces evidence, which is then used by an authority to make a trust decision.
 ---
 class: middle
 
@@ -29,6 +35,12 @@ Richard P. Feynman
 .top-right[
 ![RF](https://upload.wikimedia.org/wikipedia/commons/1/1a/RichardFeynman-PaineMansionWoods1984_copyrightTamikoThiel_bw.jpg)
 ]
+
+???
+Trust decisions should not be taken lightly. This is particularly, important for scientific inquiries. Richard Feynman, a renowned physicist, had a knack for questioning claims based on research findings and this approach also helped him explore complex concepts using simple questions. So when making scientific inquires, he says the first principle is that you must not fool yourself and you are the easiest person to fool... After you've not fooled yourself, it's easy not to fool other scientists.
+
+Which means that we should question our own security design work before making claims about its function and strength.
+
 ---
 class: middle
 
@@ -41,6 +53,8 @@ Bruce Schneier
 .top-right[
 ![Bruce](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Bruce_Schneier_at_CoPS2013-IMG_9174.jpg/220px-Bruce_Schneier_at_CoPS2013-IMG_9174.jpg)
 ]
+???
+This sentiment about checking our own design work seems to be popular in the security community too. This is Bruce Schneier, the author of many popular novels and textbooks in Cybersecurity. He warns us about the pitfalls of getting too attached to our own clever security solutions that we fail to see reasons for not trusting it.
 ---
 class: middle
 
@@ -52,6 +66,9 @@ Roger Schell
 .top-right[
 ![Roger](http://www.ieee-security.org/TC/SP2010/photos/.xvpics/0054_IMG-thumb.jpg)
 ]
+???
+Rightfully so, Roger Schell, the founding director of National Computer Security Center, part of NSA's and responsible for all DoD security in the late 1980s and early 1990, says that false assurance is a danger that is avoidable by only trusting technology that is demonstrably trustworthy. So how do we get started on demonstrably trustworthy technology?
+
 ---
 # Systems Security Engineering
 
@@ -67,17 +84,23 @@ Transforms the security requirements into design requirements for the system
 Evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy
 
 ???
-The framework is independent of system type and engineering or acquisition process model and is not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, each with its own checks and balances
+Hopefully, you can recall that the Trustworthiness Context as part of our Systems Security Engineering framework is setup to develop an evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy.
+
+We looked at the problem context using requirements engineering techniques. Now we switch gears and talk about assurance cases as part of the trustworthiness context.
 
 ---
 
 background-image: url(https://live.staticflickr.com/2834/8818803884_1306f9c8aa_b.jpg)
 ???
+To understand concepts in the trustworthiness context, we will start with a simple intellectual exercise.
+
 Scenario: Our goal is to find a black cat in a dark room.
 ---
 background-image: url(images/black.png)
 
 ???
+
+
 We also not sure if there is a cat there to begin with!
 ## Source:   
 The cat example is adapted from the example provided in System Assurance: Beyond Detecting Vulnerabilities (The MK/OMG Press) 1st Edition, by Nikolai Mansourov  and Djenana Campara https://amzn.com/0123814146
