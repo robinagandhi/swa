@@ -5,7 +5,7 @@ class: center, middle
 ]
 ???
 
-This discussion is about a new topic that many in cybersecurity may not have thought about before or have experience with. We will learn a new analytical and modeling technique that will help us plan the evidence that needs to be collected throughout the software lifecycle to support claims about security. The goal is build an argument, akin to a legal case, but instead of defending a person or an organization, our job is to defend the claims we seek to make about security properties of the system of interest.
+This discussion is about a new topic that many in cybersecurity may not have thought about or have experience with. I will introduce a new analytical and modeling technique to plan the evidence that needs to be collected throughout the software lifecycle to support claims about security. The goal is build an argument, akin to a legal case, but instead of defending a person or an organization, our job is to defend the claims we seek to make about security properties of the system-of-interest.
 
 
 This slide deck is based several sources as follows:
@@ -23,7 +23,8 @@ class: middle
 ![Dilbert Trust and stupidity](https://assets.amuniversal.com/c8253cc0db9a012e2fae00163e41dd5b)
 
 ???
-As usual, a bit of humor to kick-off the discussion. Trustworthiness, if evaluated properly, is asserted based on an investigative process. For example, clearing an individual for access to national security related projects. The investigation produces evidence, which is then used by an authority to make a trust decision.
+As usual, a bit of humor to kick-off the discussion. Trustworthiness, if evaluated properly, is asserted based on an investigative process. For example, clearing an individual for access to national security related projects involves collecting lot of background information and interviewing close relative and business associates. The investigation produces lots of evidence, which is then used by an authority to make a trust decision.
+
 ---
 class: middle
 
@@ -37,9 +38,9 @@ Richard P. Feynman
 ]
 
 ???
-Trust decisions should not be taken lightly. This is particularly, important for scientific inquiries. Richard Feynman, a renowned physicist, had a knack for questioning claims based on research findings and this approach also helped him explore complex concepts using simple questions. So when making scientific inquires, he says the first principle is that you must not fool yourself and you are the easiest person to fool... After you've not fooled yourself, it's easy not to fool other scientists.
+Trust decisions should not be taken lightly. This is particularly, important for scientific inquiries. Richard Feynman, a renowned physicist, had a knack for questioning claims based on research findings. This approach also helped him explore complex concepts using simple questions. So when making scientific inquires, he says the first principle is that you must not fool yourself and you are the easiest person to fool... After you've not fooled yourself, it's easy not to fool other scientists.
 
-Which means that we should question our own security design work before making claims about its function and strength.
+Which means that we should question our own security design work before making claims about its effectiveness.
 
 ---
 class: middle
@@ -54,7 +55,7 @@ Bruce Schneier
 ![Bruce](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Bruce_Schneier_at_CoPS2013-IMG_9174.jpg/220px-Bruce_Schneier_at_CoPS2013-IMG_9174.jpg)
 ]
 ???
-This sentiment about checking our own design work seems to be popular in the security community too. This is Bruce Schneier, the author of many popular novels and textbooks in Cybersecurity. He warns us about the pitfalls of getting too attached to our own clever security solutions that we fail to see reasons for not trusting it.
+This sentiment about checking our own design work seems to be popular in the security community too. This is Bruce Schneier, the author of many popular novels and textbooks in Cybersecurity. Here he warns us about the pitfalls of getting too attached to our own clever security solutions, that we fail to see reasons for not trusting it.
 ---
 class: middle
 
@@ -67,7 +68,9 @@ Roger Schell
 ![Roger](http://www.ieee-security.org/TC/SP2010/photos/.xvpics/0054_IMG-thumb.jpg)
 ]
 ???
-Rightfully so, Roger Schell, the founding director of National Computer Security Center, part of NSA's and responsible for all DoD security in the late 1980s and early 1990, says that false assurance is a danger that is avoidable by only trusting technology that is demonstrably trustworthy. So how do we get started on demonstrably trustworthy technology?
+Rightfully so, Roger Schell, the founding director of National Computer Security Center, part of NSA's and responsible for all DoD security in the late 1980s and early 1990, said in one of his publications that false assurance is a danger that is avoidable by only trusting technology that is demonstrably trustworthy.
+
+So how do we get started on "demonstrably trustworthy technology"?
 
 ---
 # Systems Security Engineering
@@ -84,9 +87,9 @@ Transforms the security requirements into design requirements for the system
 Evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy
 
 ???
-Hopefully, you can recall that the Trustworthiness Context as part of our Systems Security Engineering framework is setup to develop an evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy.
+We have some guidance in the systems security engineering framework to develop demonstrably trustworthy technology. If you recall, the Trustworthiness Context our engineering framework is setup to develop an evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy.
 
-We looked at the problem context using requirements engineering techniques. Now we switch gears and talk about assurance cases as part of the trustworthiness context.
+We looked at the problem context using requirements engineering techniques. Now we switch gears and talk about **assurance cases** as part of the trustworthiness context.
 
 ---
 
@@ -94,23 +97,29 @@ background-image: url(https://live.staticflickr.com/2834/8818803884_1306f9c8aa_b
 ???
 To understand concepts in the trustworthiness context, we will start with a simple intellectual exercise.
 
-Scenario: Our goal is to find a black cat in a dark room.
+Our goal in the next five minutes is to find a black cat...
 ---
 background-image: url(images/black.png)
 
 ???
+in a dark room!
 
-
-We also not sure if there is a cat there to begin with!
 ## Source:   
 The cat example is adapted from the example provided in System Assurance: Beyond Detecting Vulnerabilities (The MK/OMG Press) 1st Edition, by Nikolai Mansourov  and Djenana Campara https://amzn.com/0123814146
+
 ---
 class:middle
 # Task at hand
-Find a **black cat** in a **dark room**  
+Find a **black cat** in a **dark room**
+
+
 --
 
 Also, we are not sure that the cat is really there!
+
+???
+So the task seems simple...  
+...but you see we are not sure that the cat is really there!
 
 --
 
@@ -119,6 +128,9 @@ What are the Goals/Claims to be proven?
 ]
 - Operational tasks may not focus on outcomes.
 - Assurance is in context of a claim.
+
+???
+To approach any complex situation, it makes sense to first write down the outcomes that we are interested in. This is the first assurance concept that I want you to become familiar with. To focus on outcomes, you may ask the question: What are the claims that need to proven given a complex situation? Once you know the claims, then you can think of ways to operationalize the solution, i.e. how to argue about the claims.
 
 ---
 class:middle
@@ -129,10 +141,19 @@ class:middle
 
 ### .red[Claim 2:] The room has no black cats
 
+???
+So given the cat situation, here are potential claims of interest. First, The room has at least one black cat. Another claim could be, the room has no black cats. The first claim is about a tangible property of the room, i.e. something you can see, the second claim is about an intangible property of the room, i.e. something you cannot see but only experience, lack of cats.
+
 --
 ### .blue[
 What is the basis for the belief in these claims?
 ]
+
+???
+Claims are proposition, i.e. the are true or false. But the degree to which we believe that the claim is true or the claim is false depends on the strength of the argument and available evidence to support the argument. So from an assurance perspective we are interested in knowing what is basis for the belief in these claims. Belief in a claim depends on how convincing and easy to understand is the presented argument and its supporting evidence.
+
+Let's start to argue the first claim.
+
 ---
 class: middle
 # .red[Claim 1]
