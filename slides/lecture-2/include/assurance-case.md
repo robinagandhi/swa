@@ -130,7 +130,7 @@ What are the Goals/Claims to be proven?
 - Assurance is in context of a claim.
 
 ???
-To approach any complex situation, it makes sense to first write down the outcomes that we are interested in. This is the first assurance concept that I want you to become familiar with. To focus on outcomes, you may ask the question: What are the claims that need to proven given a complex situation? Once you know the claims, then you can think of ways to operationalize the solution, i.e. how to argue about the claims.
+To approach any complex situation, it makes sense to first write down the outcomes that we are interested in demonstrating. This is the first assurance concept that I want you to become familiar with. To focus on outcomes, you may ask the question: What are the claims that need to proven given a complex situation? Once you know the claims, then you can think of ways to demonstrate the belief associate with the claim by collecting evidence from the complex situation, i.e. we plan how to argue about the claims.
 
 ---
 class:middle
@@ -142,7 +142,7 @@ class:middle
 ### .red[Claim 2:] The room has no black cats
 
 ???
-So given the cat situation, here are potential claims of interest. First, The room has at least one black cat. Another claim could be, the room has no black cats. The first claim is about a tangible property of the room, i.e. something you can see, the second claim is about an intangible property of the room, i.e. something you cannot see but only experience, lack of cats.
+So given the cat situation, here are potential claims of interest. First, The room has at least one black cat. Another claim could be, the room has no black cats. The first claim is about a tangible property of the room, i.e. something you can see, the second claim is about an intangible property of the room, i.e. something you cannot see but only experience, which in this case is lack of cats. People with varying levels of paranoia about cats may experience this property differently.
 
 --
 ### .blue[
@@ -150,7 +150,7 @@ What is the basis for the belief in these claims?
 ]
 
 ???
-Claims are proposition, i.e. the are true or false. But the degree to which we believe that the claim is true or the claim is false depends on the strength of the argument and available evidence to support the argument. So from an assurance perspective we are interested in knowing what is basis for the belief in these claims. Belief in a claim depends on how convincing and easy to understand is the presented argument and its supporting evidence.
+Grammatically stated, the claims are proposition, i.e. they can be either true or false. But the degree to which we believe that the claim is true or the claim is false depends on the strength of the argument and available evidence to support the argument. So from an assurance perspective we are interested in knowing what is basis for the belief in these claims. Belief in a claim depends on how convincing and easy to understand is the presented argument and its supporting evidence.
 
 Let's start to argue the first claim.
 
@@ -171,6 +171,10 @@ class: middle
 
 .footnote[\* Patent Pending]
 
+???
+In order to demonstrate our belief in the claim, we figure out that we need a search process. The more structured the search process, more reliable are the results. Let's assume we have the ability to execute this very structured Kitty-Kitty-Kitty search process shown here. The search team puts a bowl of milk in the room and says .green[_kitty-kitty-kitty_] three times. You have to say it three times. The search covers the four corners and center of room. The search stops when a cat is discovered.
+
+
 ---
 # Structured Argument
 ### .red[Claim]
@@ -185,6 +189,12 @@ class: middle
 ### .red[Evidence]
 
 .red[E1.1.1:] Pictures of cats found
+
+???
+
+We think the Kitty-Kitty-Kitty search process is effective to demonstrate claim 1. So logically, we can state a new claim that if true can support claim 1. Continuing this reasoning, the search process can also lead us to evidence that can increase our belief in claim 1. In this case, the evidence is pictures of cats found by executing the search process. Take note that the evidence is stated as a noun phrase, i.e. it refers to tangible things which can be examined or measured about the situation.
+
+Given claim C1, this argument is pretty convincing. But would it be convincing if we used this same argument for claim C2?
 
 ---
 class: middle
@@ -201,25 +211,40 @@ The room has .red[no] black cats
 
 .red[E1.1.1:] Empty findings report
 
+???
+Claim C2 is the room has no black cats. A sub-claim could be the kitty-kitty-kitty search process discovers no cats and the evidence could be an empty findings report!
+
+Now depending on the paranoia level of the reader of this argument, it is natural to start doubting the effectiveness of the search process.
 
 ---
 class: middle
 # Is this argument enough?
 Can you ever be 100% sure for a large and complex room?  
 
+???
+In particular, if you are dealing with a large and complex room, the search process cannot provide 100% guarantee that there are no cats in the room.
 
 ---
 class: middle
 # .red[Assurance]
 Basis for the belief in a claim
 
+
 --
 
 .green[Belief] increases when .red[doubts] are removed!   
 
+???
+So when complexity is involved, which is often the case, the basis for the belief in a claim increases when doubts are removed.
+
 --
 
 A good argument eliminates identified doubts
+
+???
+In other words, a good argument eliminates identified doubts!
+
+Now this is a different way of argumentation than what we are used to. By default we are biased to using enumerative induction, i.e. we start to believe things that we see over and over or over a long period of time. But when it comes to demonstrably trustworthiness in claims about a complex situation that no one can fully comprehend, we have to rely on eliminative induction.
 
 ---
 
@@ -228,20 +253,36 @@ class: middle
 A series of doubts are introduced for some state of affairs,  
 and then progressively eliminated by new evidence
 
+???
+With eliminative induction, a series of doubts are introduced for some state of affairs and then progressively eliminated by new evidence.
+
 ---
 # Eliminative Induction
 
 ## Step 1: Introduce doubts
 Challenge the identified claims by introducing doubts
+???
+Here is a structured process to perform eliminative induction. Step 1: Introduce doubts. Here we challenge the claims about the complex situation by introducing doubts.
+
 --
 
 ## Step 2: Eliminate doubts
 For each doubt, identify sub-claims that eliminate the doubt
+???
+Next for each doubt identified in step 1, we identify sub-claims that eliminate or address the doubt.
+
 --
 
 ## Step 3: Evaluate Argument
-Can sub-claims be directly supported by evidence?
-If not, go to Step 1, repeat process for sub-claims
+Can sub-claims be directly supported by evidence?  
+Yes: Reasoning stops. Associate evidence with the sub-claim.  
+No: Go to Step 1, repeat process for the sub-claim
+
+???
+With sub-claims developed, we ask ourselves: Can sub-claims be directly supported by observable and tangible evidence collected from the complex situation? If the yes, then describe that evidence and associate it with the sub-claim. The reasoning stops here. If the answer is no, then you go back to step 1 and identify more doubts for the sub-claim.
+
+Let's examine with process with claim 2 in our cat related situation.  
+
 ---
 
 class: middle
@@ -253,6 +294,12 @@ The room has .red[no] black cats
 * .red[R1.1.2] _Unless_ search process does not cover the entire room
 * .red[R1.1.3] _Unless_ the people searching are not competent
 * .red[R1.1.4] _Unless_ the baby panthers found are indeed cats
+
+???
+In step 1 we introduce a series of doubts for the claim that the room has no black cats. The doubts are expressed in a manner that the provokes the introduction of a doubt. They start with the word .red[**unless.**]. Here are some doubts that I came up with. Unless the room is not locked, unless the search process does not cover the entire room, unless the people searching are not competent, unless the paper panthers found are indeed cats. This last doubt captures a false negative situation.
+
+
+
 ---
 
 class: middle
@@ -261,10 +308,15 @@ class: middle
 .red[R1.1.1] _Unless_ the room is not locked   
 * .green[C1.1.1] All room entrances are guarded  
 
+???
+Now in step 2, we eliminate the doubts by introducing new claims about the situation that will need to be true. For example, all room entrances are guarded claim eliminates the first doubt.
 --
 
 .red[R1.1.2] _Unless_ search process does not cover the entire room  
 * .green[C1.1.2] Kitty-Kitty-Kitty search process covers the entire room
+
+???
+This next claim if true address the second doubt, so on and so forth.
 
 ---
 class: middle
@@ -273,10 +325,15 @@ class: middle
 .green[C1.1.1] All room entrances are guarded  
 * .red[R1.1.1.1] Unless the room vents allow cats to go in and out  
 
+???
+Now in step 3, we evaluate if the sub-claims be directly supported by observable and tangible evidence collected from the complex situation? In this case, rather than stop the argument with evidence, I decided to go back to step 1 and identify additional doubts for the sub-claims. For example, while the entrances are guarded, the room vents could allow cats to go in and out.  
+
 --
 
 .green[C1.1.2] Kitty-Kitty-Kitty search process covers the entire room  
 * .red[R1.1.1.2] Unless there is an alternate food supply (mice)
+???
+For the second sub-claim, I also introduce a doubt that the cats could have an alternate food supply and hence not care about the milk placed by the kitty-kitty-kitty search process.
 
 ---
 class: middle
