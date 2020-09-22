@@ -342,10 +342,16 @@ class: middle
 .red[R1.1.1.1] Unless the room vents allow cats to go in and out  
 * .green[C1.1.1.1.1] All room vents have nets installed
 
+???
+Following a similar process as before, we eliminate the doubts by introducing new claims about the situation that will need to be true.  
+
 --
 
 .red[R1.1.1.2] Unless there is an alternate food supply (mice)
 * .green[C1.1.1.1.2] There are no mice in the room
+
+???
+At this point, I am pretty convinced that I can collect directly observable and tangible evidence to support these sub-claims without any further argumentation.
 
 ---
 class: middle
@@ -353,6 +359,9 @@ class: middle
 
 ## Evidence
 When the argument is convincing enough to the reader, it should end in the presentation of .blue[_facts_] that support the .green[_claims_]
+
+???
+So when you think the argument will be convincing enough to the reader, it should end in the presentation of .blue[_facts_] that support the .green[_claims_]. So depending on your audience and the level of assurance needed, you will have to decide where you stop the argument and present the facts or evidence.
 
 ---
 class: middle
@@ -370,11 +379,24 @@ class: middle
 * .blue[E1.1.1.1.5 Search process Activity Log]
 * .blue[E1.1.1.1.6 Milk placement map]
 
+???
+So what does evidence look like in the cat situation? It a collection of facts available at the end of a branch of argumentation, should be relevant and sufficient to address all claims in that branch. Fact is a piece of information generally known to be true, an objective measurement or a measurement or observation made by a qualified expert.
+
+So here we see that the last sub-claim in an argumentation branch is associated with several pieces of evidence. The Vent inspect report, search coverage report and the entrance log. Collectively these facts support the argument made earlier.
+
+Similarly, for the other branch we can see that evidence strengthens the argument about cat food supply. Note that without the argument, the evidence of rodent extermination report may see very irrelevant.
+
+
 ---
 class: middle
 # Argument and Evidence
 * Without argument, evidence is irrelevant.
 * Without evidence the argument is not substantiated.
+
+???
+So we realize now that Argument and Evidence both are necessary to increase our belief in claims about a complex situation that no one person or entity fully understands.
+
+So without argument, evidence is irrelevant and without evidence the argument is not substantiated.
 
 ---
 
@@ -385,22 +407,37 @@ As more reasons for doubt are eliminated, assurance in the top-level claim incre
 
 If many doubts remain, assurance is diminished
 
+???
+With claim 2 example, we see how eliminative induction works quantitatively. As more reasons for doubt are eliminated, assurance in the top-level claim increases. If many doubts remain, assurance is diminished
+
 --
 
 A rigorous argumentation structure assists .red[*trust decisions*] for the presented claims
+
+???
+With a structured and rigorous argumentation, we can make informed trust decisions about the dark room having no black cats.
+
 ---
 
 class: middle
 # .red[Claim 3]
 The room will have .red[no] black cats for the .red[next 12 months]
 
+???
+But wait! what about forward looking claims? What about a claim about risk? i.e. A claim not about the current state of affairs but about avoiding a future undesired event?
+
+In the cat situation we could be interested in the following claim. The room will have .red[no] black cats for the .red[next 12 months]
+
 --
 
 Does it make sense to justify this claim by a single search at a moment in time?
 
+???
+Does it make sense to justify this claim by a single search at a moment in time?
+
 ---
 class: middle
-# Risk: A future adverse event
+# Risk: A future, adverse event
 
 We can introduce even more doubts!
 * .red[R1.1.5] Unless the cats hibernate when search is conducted  
@@ -408,9 +445,15 @@ We can introduce even more doubts!
 * .red[R1.1.7] Unless the vents are not being inspected periodically
 * .red[R1.1.8] Unless the exterminator skips visits
 
+???
+Now we can introduce even more doubts compared to claim 2.
+
 --
 
 To eliminate these doubts, .green[continuous] efforts are required.
+
+???
+You will also notice that in order to eliminate these doubts, continuous efforts are required to be demonstrated.
 
 ---
 # A very catty summary
@@ -424,6 +467,9 @@ To eliminate these doubts, .green[continuous] efforts are required.
 ![catfunny](http://vignette2.wikia.nocookie.net/animal-jam-clans-1/images/6/6b/Funny-Cat-Meme-Work-16.jpg/revision/latest?cb=20160716231247)
 ]
 
+???
+Now what is the point of this example? The room and the cat are just placeholders. Let's replace "room" with "software", and "cats" with "weaknesses" in Claim 1. Most software is complex enough to be a dark room. So the claim becomes: The software has at least one weakness. This claim seems quite trivial and most bug discovery processes should be effective at proving it correct. But this is just a point solution. It produces knowledge about the weakness you just found. It says nothing about the rest of the software. Unfortunately, most efforts of finding bugs in software are doing just this!
+
 --
 
 ### Claim 2 (Snapshot)  
@@ -432,6 +478,9 @@ To eliminate these doubts, .green[continuous] efforts are required.
 .top-right[
 ![catfunny](http://i0.kym-cdn.com/entries/icons/original/000/002/232/bullet_cat.jpg)
 ]
+
+???
+Claim 2 becomes: The software has no weaknesses. Now this claim produces useful knowledge about software, at a certain point in time. This is often called a snapshot. Engineering know-how is required to provide assurance in the design work. This claim takes a lot of effort during the software development lifecycle to make a convincing argument and collect supporting evidence.
 
 --
 
@@ -443,9 +492,17 @@ a future undesirable event
 ![catfunny](http://i0.kym-cdn.com/photos/images/newsfeed/000/115/642/non-stop-nyan-cat.jpg?1303327212)
 ]
 
+???
+Finally claim 3 becomes: The software will have no weaknesses for the next 12 months. Now this claim is what most customers, businesses and organizations are interested in, but they don't know how to asking for such assurance. A corresponding argument and supporting evidence produces knowledge about minimizing a future undesirable event, i.e. Risk. Of course, this will require continuous security engineering efforts.
+
+In the next video we will talk about a standard notation to represent and reason about assurance cases for systems security engineering.
+
 ---
 class: center, middle
 # Developing Assurance Cases
+
+???
+In the last video we motivated the need for structured argumentation. Now we will jump right into a standard notation to develop assurance cases.
 
 ---
 # Assurance Case Logical Structure
@@ -454,15 +511,30 @@ class: center, middle
 Figure source: [Arguing Security - Creating Security Assurance Cases](https://www.us-cert.gov/bsi/articles/knowledge/assurance-cases/evidence-assurance-laying-foundation-credible-security-case)
 ]
 
----
-# Assurance Case Contents
+???
+Assurance Case Contents
 
-## A Top-level Claim
+> "The Claim"  
 The claim is regarding .red[a critical property] of a system or product
-## Argumentation
+
+> "The Argument"  
 Arguing through .red[multiple levels of subordinate claims] connects the top-level claim to the evidence and assumptions
-## Evidence and Assumptions
+
+> "The Evidence"
 .red[Explicit information] that underlies the argumentation
+
+Interpretation of the tree structure is based on a series of if-then statements. These are called inference rules. Inference rules have a premise and a conclusion. If the premise is true then the conclusion must be true. Since assurance cases are based on induction, the rules are read bottom up rather than top-down, i.e. the premise is below the conclusion is the tree structure. For example, if the premise that "Evidence A" then "Sub-Claim 1". Similarly, if "Evidence B" then "Sub-claim 2". As we continue this reasoning, if "Sub-claim 1" and "Sub-claim 2", then "Top-level claim". Ultimately, the logical argument connects the evidence to the top-level claim.
+
+---
+
+# [ISO/IEC 15026-2:2011](http://www.iso.org/iso/catalogue_detail.htm?csnumber=52926)
+![iso](images/iso-standard.png)
+
+???
+Assurance Cases are not just an intellectual exercise. Actually, they are specified in a companion international standard to the software and systems engineering, upon which the NIST SP 800-160 Systems Security Engineering publication is built. So this is all very relevant to the systems security engineering perspective that we have been considering from the very beginning of the class.
+
+This standard is available from the UNO library and is made available in Canvas as an additional reference.
+
 ---
 
 class: middle
@@ -473,19 +545,28 @@ class: middle
 .footnote[
 [ISO/IEC 15026-2:2011](http://www.iso.org/iso/catalogue_detail.htm?csnumber=52926)
 ]
----
 
-# [ISO/IEC 15026-2:2011](http://www.iso.org/iso/catalogue_detail.htm?csnumber=52926)
-![iso](images/iso-standard.png)
+???
+Per this standard, while an assurance case is useful for decision-making by knowledgeable stakeholders (e.g., developers and service providers),   
+
+often the primary motivation for an assurance case is to support crucial decisions by stakeholders without this background, such as those involved in certification, regulation, acquisition, or audit of the system.
+
+So here we see that an assurance case is positioned as an aid to make trust decisions. Consequently, the way we author claims in an assurance case matters a lot to the stakeholders that are going to base their crucial decisions on it! In fact, 90% or more of an assurance case is just claims! So, let's learn how to author claims.
 
 ---
 # Claims Matter!
 ### Claims concern critical properties
 
+???
+Always remember that assurance is only needed when we don't fully understand the entity that we are analyzing. So coming up with top-level claims about trivial things is just plain useless. Top-level claims have to be about critical properties about non-trivial system artifacts. In the context of this course, they also have to be relevant to security.
+
 --
 
-### A claim is always worded as a predicate
-- i.e. it can only be true or false
+### A claim is always worded with a predicate
+- It can be labeled as a true or false statement
+
+???
+Next, grammatically, a claim should be worded with a predicate, i.e. there is a clear subject or noun phrase followed by a particular descriptive property about the subject. With this sentence structure, we can label the sentence as true of false upon investigation.
 
 --
 
@@ -493,23 +574,27 @@ class: middle
 - .red[Bad claim:] The system uses AES encryption
 - Why? Because it is not interesting; Means to an end
 
+???
+We know that claims have be about critical and important system properties. So these properties can be trivial things that can just be determined to be true or false just based on a simple examination of the system. For example, The system uses AES encryption. This is a well-formed claim. It has a subject, "the system" and a predicate "uses AES encryption". However, the predicate can be determined to be true or false based on a simple examination of the system. As a result, such claims are not worth arguing. So how can we make it something worth arguing?
+
 --
 
 ### Claim should be a reasonable goal (outcome)
-- .green[Good claim:] “The system is acceptably secure against communication lines related threats”
+- .green[Good claim:] “The system minimizes information disclosure during communication”
 
 ???
 
-## Good claims
-- These say something about expected **outcomes** we really wish for by using security technologies or by performing security-related activities
-- Claims about expected outcomes can be argued extensively
+Claims that are worth arguing, are about the expected outcomes that we really wish for by using security technologies or by performing security-related activities.
+These claims can be argued extensively. For example, "AES encryption" security technology is only relevant because we want to "minimizes information disclosure during communication". So the claim "The system minimizes information disclosure during communication" now can lead to a much richer argument beyond just an encryption feature, such as sub-claims related to the encryption feature being implemented correctly, or the keys being managed properly, or the selection of algorithms that matches perceived threat capabilities.
 
-- E.g. "AES encryption" (security technology) --> "secure against communication line related threats" (outcome we try wish for)
 ---
 # Claims Matter!
 
 ## Claim properties are risk-related
 - High confidence is needed in their realization
+
+???
+Another aspect about good claims is that they need to be risk related. Depending on how important it is to address the risk, appropriate strength is needed in the corresponding argument. With risk comes also comes uncertainty. We can never reduce risk to zero. There is always residual risk. Residual risk leads to uncertainty. A good claim acknowledges this uncertainty. For example on the previous slide we used the word "minimize" instead of "eliminate". We know that communication threats can never be totally eliminated. But we can certainly take steps to minimize them to an acceptable level.
 
 --
 
@@ -518,11 +603,17 @@ class: middle
 - .orange[A critical property of the entity]
 - .green[A value for the property and related uncertainty]
 
+???
+So here is a full good claim checklist. First, we need a subject in the claim. This is an entity-of-interest which we want to be demonstrably trustworthy. Second, we need a critical property of the entity-of-interest that is non-trivial and worth arguing. Typically this is related to the important outcomes that system stakeholders are interested in. The last part provides a value expected for the property and related uncertainty. For example, in the claim the room has no black cats. Black cats is the property of the room. The room is the entity-of-interest. The value of the black cat property that we are interested in demonstrating is zero, with no uncertainty. When we use the word minimize, then we suggest that the value needs to be as low as acceptable to the stakeholders. Minimize is appropriate for qualitative risk assessments, whereas concrete values are appropriate when we are dealing with situations where quantitative risk measures are being used.
+
 --
 
-## Example
+## Examples
 - .blue[The system] .green[is acceptably] .orange[secure]
-- .blue[The system] .green[has no] .orange[unacceptable consequences to assets from security threats]
+- .blue[The login page] .green[has no] .orange[exploitable SQL injection weakness]
+
+???
+Here are examples of claims with qualitative and quantitative values and related uncertainty, associated with a critical property.
 
 ---
 class: middle
@@ -537,6 +628,11 @@ class: middle
 ## Consider [diagramming sentences](http://grammar.ccc.commnet.edu/grammar/diagrams2/one_pager1.htm)
 - Avoid compound predicates
 
+???
+It is best for a claim to start with a noun phrase followed by a verb-phrase. The noun phrase identifies the subject, and the verb phrase associates a value with a critical property about the subject.
+
+In the verb phrase, avoid compound statements. For example writing claims such as the room has no black cats and brown cats is not recommended. This claim conceals logical structure within the its specification rather than making it explicit in the argument.
+
 ---
 class: middle
 # [Grammatical Guidance](http://www.sei.cmu.edu/dependability/tools/assurancecase/)
@@ -547,6 +643,9 @@ class: middle
 - A question: ~~.red[How many XSS weaknesses does Canvas have?]~~
 - Fact, no argument needed: .red[~~Canvas uses AES encryption~~]
 
+???
+Now that we know how to write good claims, we can also look at some poor claim constructions that should be avoided. The first bad example is "XSS results for Canvas". This claim has a noun-phrase but no verb phrase. It is just describing an entity. The second claim is a bad example as it is describing an action to be taken, and not a system property. The third claim is a question. Finally, the last claim can be examined by direct observation and no argument is needed. So it is not appropriate as a top-level claim. Although, it may be OK if it appears towards the end of an argument, and is directly supported with evidence.
+
 ---
 class: middle
 # .red[Actual] bad examples
@@ -556,13 +655,14 @@ class: middle
 --
 
 ## .red[C18: The System uses a Static Analysis tool]
-.footnote[
-See notes (hit `p`) for class exercise
-]
+
 ???
-# Class exercise:
-# Work with your team to rephrase these appropriately.
-When you are done enter your answers in this [Google Doc](https://docs.google.com/a/unomaha.edu/document/d/11Xr8GHBHfWJGLotiLoe-us1EZ4Qjn2msjfxHAKjs64Q/edit?usp=sharing)
+Here are some actual bad examples of claims that students in this class authored, when they were just starting to learn about assurance cases. Please pause the video here and try to re-phrase them such that they can meet all the necessary qualities of a good claim.
+
+
+Optional exercise:  
+> Work with your team to rephrase these appropriately.
+When you are done enter your answers in this [Google Doc](https://docs.google.com/a/unomaha.edu/document/d/11Xr8GHBHfWJGLotiLoe-us1EZ4Qjn2msjfxHAKjs64Q/edit?usp=sharing).
 
 ---
 exclude: true
@@ -590,9 +690,12 @@ class: middle
 class: middle
 # Elaborating the Claim
 
-## .green[Additional information] that is excluded from the claim or evidence
+## .green[Additional information] that is excluded from the claim
 - Context (understanding)
 - Justification (rationale)
+
+???
+Now that we know how to draw and write a claim, let's see some ways in which we can add more information to it. The first is a context element and then we look at the justification element.
 
 ---
 class: middle
@@ -601,32 +704,10 @@ class: middle
 ## Information necessary for a claim to be understood or amplified
 - Includes a statement that defines the .red[scope] of the claim
 - Provides means to check .red[satisfaction] of the claim
+- External references or Definitions
 
-## Examples
-- External references, Definitions, Clarification of myths
-- Security considerations for supply chain processes per NIST SP 800-160
-
----
-class: middle
-# Justification
-
-## Provides .red[rationale] for the use/selection of a claim or strategy
-
-## Example
-- Intelligence reports of malicious code in nuclear energy software
-
----
-exclude: true
-class: middle
-# Assumption
-
-## A statement whose validity has to be relied upon in order to make an argument
-- .red[Restricted context]
-- .red[Exceptions] or situations the claim does not cover
-
-## Example
-- Nuclear energy safety mechanisms do not include software
-
+???
+The context element is used to provide information necessary for a claim to be understood. There are no restriction on its wording, but generally it includes statements that help to understand the scope of a claim, or its satisfaction using external references and definitions.
 
 ---
 class: middle
@@ -635,29 +716,30 @@ class: middle
 ![context](images/context.svg)
 
 .footnote[.red[Arrow head indicates the direction in which the assurance case must be read]]
+
+???
+
+In this example, the claim that OPPD Nebraska supply chain processes minimize the possibility of sabotage by malicious code in software applications. is elaborated using the Context that the supply chain process referred to in the claim is enhanced with security considerations per the NIST SP 800-160 document.
+
+Note the arrow starts from the claim, which is to read first, and then points towards the context, which is to be read after the claim.
+
+---
+class: middle
+# Justification
+
+## Provide .red[rationale] for a claim
+
+???
+A justification element is used to express rationale as to why a claim was developed. So in the previous claim it was not clear why we wanted to look at supply clain processes. So let's fix that by adding a justification element.
+
 ---
 class: middle
 # Justification Visual Notation
 
 ![justification](images/justification.svg)
 
----
-exclude: true
-class: middle
-# Strategy
-
-## Provides direction for an argument
-
-## Phrased with respect to the argument
-- .green[Argument by appeal to] software acquisition practices
-
-## A strategy is elaborated by providing a series of sub-claims
----
-exclude: true
-class: middle
-# Strategy Visual Notation
-
-![strategy](images/strategy.svg)
+???
+Now we realize that the claim is necessary due to _Intelligence reports of malicious code in nuclear energy software_
 
 ---
 
@@ -669,12 +751,12 @@ class: middle
 - .red[Avoid drift in the entity of the sub-claim.] It should be related to the entity in the top-level claim or a related entity.
 - Bridge the gap between top-level claim and evidence
 
---
+???
+Now that we understand the top-level claim, the next comes the argument. These are refinements of the top-level claim using sub-claims.
 
-## Stopping condition?
-- The rigor is acceptable
-- Resources are unavailable
-- Further expenditure is not justified
+To maintain the flow of the argument, care should be taken to avoid drift in the entity used by the sub-claim and that of the top-level claim.
+
+Remember that the purpose of the argument is to bridge the gap between the claim and the evidence.
 
 ---
 
@@ -686,6 +768,9 @@ Develop a sub-claim
 .top-right[.red[
 Note:] Different arrows mean different things!
 ]
+
+???
+In our previous example, you can see that I have a specific sub-claim related to acquisition practices that are generally part of a supply chain process. Note that the shape used to represent a sub-claim is the same as a claim. However, the sub-claim is connected to the top-level claim with an arrow. Note that the arrows coming out of the top-claim mean different things, based on what they are connected to.
 
 ---
 class: middle
@@ -699,6 +784,12 @@ class: middle
 - Should .red[not] be stated as a claim
 - Describes an entity to be used as evidence
 
+???
+Now, every branch of an argument must end in evidence. Evidence is something directly observable. So it has to be tangible and measure-able.
+
+Evidence is different from claims and sub-claims. So care must be taken not to phrase Evidence as a claim. To avoid this issue, the evidence must always be a noun phrase that describes an entity.
+
+
 ---
 class: middle
 # Evidence
@@ -710,40 +801,74 @@ class: middle
 - .red[E4:] Parameter validation assurance case
 - .red[E5:] Reports for assessing compiler settings with security implications
 
+???
+Here are several examples of Evidence.
+
+.red[E1:] Test results from penetration tools  
+.red[E2:] Warnings from static analysis tool  
+.red[E3:] Hardware design review results  
+.red[E4:] Parameter validation assurance case  
+.red[E5:] Reports for assessing compiler settings with security implications  
+
+In each case we are describing an entity using a noun-phrase.
+
 ---
 
 class: middle
 ![Evidence](images/evidence-1.svg)
 
----
-exclude: true
-![arrow](images/arrows.svg)
-.topnote[
-What do the arrows mean?
-]
+???
+For our running example, let's make the argument really simple and terminate the it with Evidence. The evidence is a Report on software weakness trends in acquired software.
+
+Now on thing you will notice right away using this visual notation is that the argument is not very convincing. It lacks breadth and depth. For example, a multi-legged argument would be more convincing than a single-legged one.
+
+You are also probably thinking that coming up with an argument is hard. And it is. In the next video we will see how to systematically come up with a good argument.
 
 ---
 class: center, middle
 # Coming up with a good Argument is .large[Hard!]
 
+???
+Now that we understand all the elements of an assurance case, the task that remains is to actually come up with a good argument! We also want to avoid subjectivity and at the same time improve repeatability in the argumentation process. In short, to do this well, we need some guidance for the following questions:
+
+> Do we have all relevant sub-claims identified?  (Missing Claims?)
+> Is the evidence sufficient/robust?  (holes in the evidence?)
+> Is the argument strong/logical?  (conclusion follows from the premise? Do the sub-claims mean the higher level claim?)
+
 --
-### Do we have all relevant sub-claims?
+### Do we have all relevant sub-claims identified?
 ### Is the evidence sufficient/robust?
-### Is the argument strong?
+### Is the argument strong/logical?
+
+???
+While there is no closed answer to these questions, what we do know is that we want to increase  assurance in the claims being made...
 
 ---
 
 # Eliminative Induction
 ## Support/assurance increases as reasons for doubt are eliminated
 
+???
+... and we know, from the cat example, that assurance increases as reasons for doubt are eliminated.
+
 --
 
 ## Claim: .blue[The bulb] .green[will] .orange[glow when switched on]
+
+???
+Let's take and example to discuss this. If I want to increase assurance in the following claim The bulb will glow when switched on, then I have two options. First, I could just turn the switch on and see if the bulb turn on. I could also repeat this operation several times. This is external observation and the process is called enumerative induction.
+
+Note that process tells us nothing about the quality of the setup.
+
+The second option, is eliminative induction, which works by introducing doubts. So we now have to think what can go wrong that would prevent the bulb from glowing when switched on. So I start to identify doubts. We start statements which identify doubts using _unless_.
 
 --
 - .red[Unless] switch not connected to light
 - .red[Unless] no power
 - .red[Unless] dead light bulb  
+
+???
+Here are some doubts for this claim.
 
 --
 ![light](images/lightexample.png)
@@ -753,22 +878,36 @@ class: center, middle
 ]
 
 ???
+Now if we go ahead remove these doubts by proper investigation and produce evidence, my assurance in the claim increases. In fact this argument is much stronger than making a few external observations.
+
 The content in next few slides is based on:
-1. SEI Report: Toward a Theory of Assurance Case Confidence http://www.sei.cmu.edu/reports/12tr002.pdf
-2. Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measuring assurance case confidence using Baconian probabilities. In Proceedings of the 1st International Workshop on Assurance Cases for Software-Intensive Systems (ASSURE '13). IEEE Press, Piscataway, NJ, USA, 7-11.
-3. Explicit permission to use slides provided by John B. Goodenough
+> SEI Report: Toward a Theory of Assurance Case Confidence http://www.sei.cmu.edu/reports/12tr002.pdf  
+> Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measuring assurance case confidence using Baconian probabilities. In Proceedings of the 1st International Workshop on Assurance Cases for Software-Intensive Systems (ASSURE '13). IEEE Press, Piscataway, NJ, USA, 7-11.  
+> Explicit permission to use slides provided by John B. Goodenough
 
 ---
 # Introducing Doubts*
 
 ## Making doubts explicit
 ### Attack claim (rebutting defeater) — why claim could be false
+
+???
+Turns out by making doubts explicit we can come up a pretty good argument. First, to make sure that we don't have any missing sub-claims, we attack a claim by introducing defeaters. We call them defeaters as their purpose is to defeat a claim. Specifically, we called them rebutting defeaters, as in a rebuttal to a claim. These defeaters identify why a claim could be false.
+
+
 --
 
 ### Attack evidence (undermining defeater) — why evidence could be irrelevant
+???
+Similarly, we can attack the evidence, by introducing an undermining defeater. These introduce doubt in the evidence. They identify why the evidence could be irrelevant or in some cases insufficient for the argument that it terminates.
+
 --
 
 ### .green[Attack inference] (undercutting defeater) — premise good; conclusion uncertain
+???
+Finally, we can also attack the logic of the argument using an undercutting defeater. At every level of refinement in the assurance case, the assumption is that if all sub-claims then the higher claim. This is an implicit inference rule, that can be made explicit and then attacked using the undermining defeater.
+
+Let's examine all of these defeaters and see how they lead to a strong argument.
 
 ---
 
@@ -776,15 +915,24 @@ The content in next few slides is based on:
 
 ![claim](images/tweetyclaim.svg)
 
+???
+So we have a top level claim C1 that Tweety can fly. Tweety is the subject, fly is the property and the value is can do this without any uncertainty. From the context we also know that tweety is an animal.
+
 ---
 
 # Rebutting defeater
 ## Why claim could be false
 ![claim](images/rebutting.svg)
 
+???
+Now using rebutting defeaters, we can introduce doubts in this claim. Here we have R1 which introduces a doubt in C1: Unless Tweety does not have wings.
+
 ---
 # Address Rebutting defeater
 ![claim](images/rebuttclaim.svg)
+
+???
+To address defeater R1, we introduce the claim C2 which says that Tweety is a winged bird. No we can also attack this claim with two additional defeaters R2 and R3. Which leads to claims C3 and C4. 
 
 ---
 # Undermining defeater
