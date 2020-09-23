@@ -5,7 +5,7 @@ class: center, middle
 ]
 ???
 
-This discussion is about a new topic that many in cybersecurity may not have thought about or have experience with. I will introduce a new analytical and modeling technique to plan the evidence that needs to be collected throughout the software lifecycle to support claims about security. The goal is build an argument, akin to a legal case, but instead of defending a person or an organization, our job is to defend the claims we seek to make about security properties of the system-of-interest.
+This discussion is about a new topic that many in cybersecurity may not have thought about or have experience. I will introduce a new analytical and modeling technique to plan the evidence that needs to be collected throughout the software lifecycle to support security claims. The goal is to build an argument, akin to a legal case. Instead of defending a person or an organization, our job is to defend the claims we seek to make about the system-of-interest security properties.
 
 
 This slide deck is based several sources as follows:
@@ -23,7 +23,7 @@ class: middle
 ![Dilbert Trust and stupidity](https://assets.amuniversal.com/c8253cc0db9a012e2fae00163e41dd5b)
 
 ???
-As usual, a bit of humor to kick-off the discussion. Trustworthiness, if evaluated properly, is asserted based on an investigative process. For example, clearing an individual for access to national security related projects involves collecting lot of background information and interviewing close relative and business associates. The investigation produces lots of evidence, which is then used by an authority to make a trust decision.
+As usual, a bit of humor to kick-off the discussion. Trustworthiness, if evaluated properly, is asserted based on an investigative process. For example, clearing an individual for access to national security-related projects involves collecting a lot of background information and interviewing close relative and business associates. The investigation produces lots of evidence, which is then used by an authority to make a trust decision.
 
 ---
 class: middle
@@ -916,7 +916,7 @@ Let's examine all of these defeaters and see how they lead to a strong argument.
 ![claim](images/tweetyclaim.svg)
 
 ???
-So we have a top level claim C1 that Tweety can fly. Tweety is the subject, fly is the property and the value is can do this without any uncertainty. From the context we also know that tweety is an animal.
+So we have a top level claim C1 that Tweety can fly. Tweety is the subject, fly is the property and the value is it "can" fly without any uncertainty. From the context CT1 we also know that tweety is an animal.
 
 ---
 
@@ -925,23 +925,33 @@ So we have a top level claim C1 that Tweety can fly. Tweety is the subject, fly 
 ![claim](images/rebutting.svg)
 
 ???
-Now using rebutting defeaters, we can introduce doubts in this claim. Here we have R1 which introduces a doubt in C1: Unless Tweety does not have wings.
+Now using rebutting defeaters, we can introduce doubts in this claim. Here we have R1 which introduces a doubt: Unless Tweety is not a bird.
 
 ---
 # Address Rebutting defeater
 ![claim](images/rebuttclaim.svg)
 
 ???
-To address defeater R1, we introduce the claim C2 which says that Tweety is a winged bird. No we can also attack this claim with two additional defeaters R2 and R3. Which leads to claims C3 and C4. 
+To address defeater R1, we introduce the sub-claim C2 which says that Tweety is a winged bird. Continuing the argument, we can also attack sub-claim C2 with two additional defeaters R2 and R3. R2 says Unless Tweety is handicaped and R3 says Unless Tweety is a Penguin. Both are good defeaters for the argument at this point. We address R2 with sub-claim C3: Tweety is physically able, and R3 is addressed by sub-Claim C4, which is Tweety is a member of the flying bird species. So it is not a penguin.  
 
 ---
 # Undermining defeater
-## Why evidence could be irrelevant
+## Why could evidence be irrelevant or insufficient?
 ![claim](images/undermine.svg)
 
+???
+Now, C3 and C4 sub-claims are specific enough to support them with directly observable evidence.  Here we have three pieces of evidence. E1 and E2 are relevant for sub-claim C3, and E3 is appropriate for C4. E1 is a physical test report, E2 documents sightings of Tweety flying, and E3 is Tweety's DNA test results.
+
+At this point in the argument, you can explicitly choose to introduce doubts in your evidence. Why could it be irrelevant or insufficient?
 ---
 # Undermining defeater
 ![claim](images/undermine-done.svg)
+
+???
+For example, we can undermine evidence E3 with a defeater: Unless the DNA test was contaminated. The contamination can happen if the lab does not handle the samples properly. So we address this with a sub-claim C5: The DNA sample has no cross-contamination. Eventually, we support this claim using the evidence E4, which is Lab Procedures document.
+
+Notice that in this diagram we explicitly show that argumentation in each branch is using a grey filled circle.
+
 
 ---
 
@@ -949,32 +959,23 @@ To address defeater R1, we introduce the claim C2 which says that Tweety is a wi
 ## Notice .green[inference rules]?
 ![structure](images/structure.png)
 
+???
+Let's move on to the final type of defeaters, the undercutting defeater. To deploy an undercutting defeater, we first need to locate an inference rule. But they are left implicit in the assurance case logical structure. So the first step is to make them explicit.
+
 --
 
 .footnote[.red[Inference rule have premises and conclusions. Premises are at the bottom in an assurance case.]]
 
+???
+Now, remember that inference rules have premises and conclusions. Premises are at the bottom in an assurance case. If the premise is sub-claims 1 and 2, then the conclusion is the top-level claim. Similarly, if the premise is Evidence C, then the conclusion is Sub-claim 4. So on and so forth. So let's make this inference rule explicit. I will illustrate that using our Tweety example.
 
 ---
 # Undercutting defeater
 Premise good; conclusion uncertain
 ![claim](images/undercut.svg)
----
-
-class: middle
-# Measuring Confidence
-
-## Baconinan Probability
-- 0|n (no confidence) — no doubts eliminated
-- 2|3 (partial confidence) — residual doubt
-- n|n (complete confidence) — no doubts remain
-
---
-
-## Use for relative improvements, not comparison
 
 ???
-Source: Slides by John B. Goodenough
-Source: Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measuring assurance case confidence using Baconian probabilities. In Proceedings of the 1st International Workshop on Assurance Cases for Software-Intensive Systems (ASSURE '13). IEEE Press, Piscataway, NJ, USA, 7-11.
+In this diagram the inference rule IR1 is made explicit. The premise of the inference rule is Sub-claim C2, which is tweety is a winged bird, and the conclusion is the top claim C1 which is tweety can fly. So IR1 states that If tweety is a bird then it can fly. By making it explicit, we can now attack it using the Undercutting defeater UC1. The doubt we introduce is that Unless Tweety is a juvenile bird. It is a baby bird that cannot fly. To address this defeater, we introduce a sub-claim C6, which states that Tweety is an adult.
 
 ---
 # Few more notations
@@ -985,13 +986,42 @@ Source: Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measur
 # Few more notations
 ## No further argumentation
 ![stop](images/stopargument-1.svg)
-![stop](images/stopargument-2.svg)
 
 ---
 ![preview](images/preview.svg)
 
 ???
 Source: This example is partially based on the presentation of this paper given at ICSE conference: J. B. Goodenough, C. B. Weinstock and A. Z. Klein, "Eliminative induction: A basis for arguing system confidence," 2013 35th International Conference on Software Engineering (ICSE), San Francisco, CA, 2013, pp. 1161-1164.
+
+---
+# Compare and Contrast
+![preview](images/preview-cat.svg)
+
+---
+
+class: middle
+# Measuring Confidence
+
+## Baconinan Probability
+- 0|n (no confidence) — no doubts eliminated
+- 2|3 (partial confidence) — residual doubt
+- n|n (complete confidence) — no doubts remain
+
+???
+Assurance cases use defeasible logic, which means that the truth value of the statements made in this logic can be revised with the introduction of new information.
+
+Assurance cases are examples of defeasible reasoning. The logic is non-monotonic, which means that we draw tentative conclusions about some state of affairs based on available evidence.  As more evidence becomes available, we can retract those conclusions. In other words, the truth value of the statements made in this logic can be revised with the introduction of new information. So, it makes sense to use the number of doubts removed, as a metric to provide a quantitative measure of the level of assurance in a claim.
+
+Assurance cases built using defeaters, use a Baconian probability computed as the ratio of the number of doubts removed and the total number of doubts. This ratio gives stakeholders a spectrum to choose from. It ranges from no doubts removed to all doubts removed, depending on the availability of resources and the possibility of collecting evidence.  
+
+--
+
+## Use for relative improvements, not comparison
+
+???
+Since the Baconian probability is based counts, it does not account for the doubt's quality or importance. So this metric should only be used for relative improvement in the assurance of a claim, rather than comparing two different claims.
+
+For example, you can use this probability to track how many doubts you can remove through analysis and the artifacts available from your projects' open-source software repository for addressing your assurance needs in the hypothetical environment of operation.
 
 ---
 
@@ -1002,6 +1032,9 @@ class: middle
 - Argue how protection profile needs are satisfied by a Security Target
 - Assurance cases are recommended for the highest levels of Evaluation Assurance Levels (EAL)
 
+???
+You are probably wondering why have you not seen many assurance cases? Turns out, Assurance cases have found many uses in high assurance software projects. For example, Common Critiera (CC) recommends using them to argue how requirements in a protection profile are satisfied by the security target. Common Criteria (CC) requires them for Evaluation Assurance Levels (EAL) 6 and above. So, unfortunately they have not been put in to wide use at lower levels of assurance.
+
 ---
 
 class: middle
@@ -1010,6 +1043,9 @@ _In pursuit of Trusted Computer System Evaluation Criteria (TCSEC) or CC evaluat
 .footnote[
 \* [Software Security Assurance State-of-the-Art Report (SOAR)](https://cwe.mitre.org/documents/iatac_swa_soar.pdf), 2007, DoD Information Assurance Technology Analysis Center (IATAC) Data and Analysis Center for Software (DACS)
 ]
+???
+They are also selectively used in certain certification processes. Vendors of security products undergoing Federal Information Processing Standards FIPS 140-1 and 140-2 certification for cryptography need to submit assurance claims and even complete assurance cases in some projects to independent evaluators.
+
 ---
 class: middle
 # Software Security Controls
@@ -1019,6 +1055,9 @@ First to develop and apply assurance case based method for control refinement
 
 #### Gandhi, R., Siy, H., Crosby, K., Mandal, S. (Graduate), (2014). Gauging the Impact of FISMA on Software Security, IEEE Computer, vol. 47 (9)
 #### Gandhi, R. A., Crosby, K., Siy, H., Mandal, S. (2016) Driving Secure Software Initiatives Using FISMA: Issues and Opportunities. CrossTalk, Journal of Defense Software Engineering, Jan/Feb 2016 Issue.
+
+???
+In my research, we applied assurance cases to derive software security-related requirements from system level regulations. This novel method resulted in the first-ever subset of controls identified specifically for software assurance. Not only that, this work informed the update of the NIST SP 800-53 FISMA control catalog in its fifth version. As a result of this work, NIST acknowledged my team's contributions in both the NIST SP 800-53 rev. 5, and NIST SP 800-160 Systems security engineering documents. You can find our names in the acknowledgment section.
 
 ---
 class: middle
@@ -1052,6 +1091,9 @@ class: middle
 ### Forensics
 - Jones, C. (2014). __Evaluating the use of assurance cases for digital forensics.__ Dissertations & Theses @ University of Nebraska - Omaha; ProQuest https://search.proquest.com/docview/1528534691?accountid=14692
 
+???
+I also advised a Masters thesis that looked at the effectiveness of assurance cases in organizing evidence from a digital forensics investigation.
+
 ---
 class: middle
 # Other Applications
@@ -1061,12 +1103,18 @@ class: middle
 
 ### Interview Protocol Design
 - Gandhi R.A., Germonprez M., Link G., "Open Data Standards for Open Source Software Risk Management Routine: An Examination of SPDX", ACM GROUP 2018 https://github.com/SPDX-CaseStudy/files/blob/master/AssuranceCase.png
+
+???
+I have also used assurance cases to design research studies and organize evidence collected from research studies.
 ---
 class: middle
 # Other Applications
 
 ### Medical Device Software
 - [Safety Assurance Cases Can Improve Your FDA Submissions](https://www.meddeviceonline.com/doc/how-safety-assurance-cases-can-improve-your-fda-submissions-0001)
+
+???
+Assurance cases were first made popular in the safety industry and find a prominent place in safety certifications of medical devices by the FDA.
 
 ---
 class: center, middle
@@ -1077,10 +1125,9 @@ class: center, middle
 
 ???
 
-# Good Examples
+In summary, assurance cases provide a much needed structure and logic for activities in the Trustworthiness context of the Systems Security Engineering framework.
 
-## .blue[Canvas] .green[has no] .orange[exploitable XSS weaknesses]
-
-## .green[All] .blue[Canvas XSS weaknesses] .green[have been sufficiently] .orange[mitigated]
-
-## .blue[Canvas] .orange[attack surface] .green[is minimized]
+> Good Examples of Claims  
+> Canvas has no exploitable XSS weaknesses.  
+> All Canvas XSS weaknesses have been sufficiently mitigated.  
+> Canvas attack surface is minimized.  
