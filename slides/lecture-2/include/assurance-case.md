@@ -5,7 +5,7 @@ class: center, middle
 ]
 ???
 
-This discussion is about a new topic that many in cybersecurity may not have thought about or have experience. I will introduce a new analytical and modeling technique to plan the evidence that needs to be collected throughout the software lifecycle to support security claims. The goal is to build an argument, akin to a legal case. Instead of defending a person or an organization, our job is to defend the claims we seek to make about the system-of-interest security properties.
+This discussion is about a new topic that many in cybersecurity may not have experience with or even thought about. I will introduce a new analytical and modeling technique to plan the evidence that needs to be collected throughout the software lifecycle to support security claims. The goal is to build an argument, similar to a legal case. Instead of defending a person or an organization, our job is to defend the claims we seek to make about the system-of-interest security properties.
 
 
 This slide deck is based several sources as follows:
@@ -68,7 +68,7 @@ Roger Schell
 ![Roger](http://www.ieee-security.org/TC/SP2010/photos/.xvpics/0054_IMG-thumb.jpg)
 ]
 ???
-Rightfully so, Roger Schell, the founding director of National Computer Security Center, part of NSA's and responsible for all DoD security in the late 1980s and early 1990, said in one of his publications that false assurance is a danger that is avoidable by only trusting technology that is demonstrably trustworthy.
+Roger Schell, is the founding director of National Computer Security Center, which later became part of NSA and responsible for all DoD security in the late 1980s and early 1990. He rightfully said in one of his publications that false assurance is a danger that is avoidable by only trusting technology that is demonstrably trustworthy.
 
 So how do we get started on "demonstrably trustworthy technology"?
 
@@ -296,7 +296,7 @@ The room has .red[no] black cats
 * .red[R1.1.4] _Unless_ the baby panthers found are indeed cats
 
 ???
-In step 1 we introduce a series of doubts for the claim that the room has no black cats. The doubts are expressed in a manner that the provokes the introduction of a doubt. They start with the word .red[**unless.**]. Here are some doubts that I came up with. Unless the room is not locked, unless the search process does not cover the entire room, unless the people searching are not competent, unless the paper panthers found are indeed cats. This last doubt captures a false negative situation.
+In step 1 we introduce a series of doubts for the claim that the room has no black cats. The doubts are expressed in a manner that the provokes the introduction of a doubt. They start with the word unless. Here are some doubts that I came up with. Unless the room is not locked, unless the search process does not cover the entire room, unless the people searching are not competent, unless the baby panthers found are indeed cats. This last doubt captures a false negative situation.
 
 
 
@@ -384,7 +384,7 @@ So what does evidence look like in the cat situation? It a collection of facts a
 
 So here we see that the last sub-claim in an argumentation branch is associated with several pieces of evidence. The Vent inspect report, search coverage report and the entrance log. Collectively these facts support the argument made earlier.
 
-Similarly, for the other branch we can see that evidence strengthens the argument about cat food supply. Note that without the argument, the evidence of rodent extermination report may see very irrelevant.
+Similarly, for the other branch we can see that evidence strengthens the argument about cat food supply. Note that without the argument, the evidence of rodent extermination report may be seen as very irrelevant.
 
 
 ---
@@ -512,18 +512,9 @@ Figure source: [Arguing Security - Creating Security Assurance Cases](https://ww
 ]
 
 ???
-Assurance Case Contents
+Here is what an assurance case can look like. Let's look at some of the major components. First we have a top-level claim. The claim is regarding a critical property of a system or product. Next, multiple levels of subordinate claims connect the top-level claim to the evidence. This evidence is the explicit information that underlies the argumentation.
 
-> "The Claim"  
-The claim is regarding .red[a critical property] of a system or product
-
-> "The Argument"  
-Arguing through .red[multiple levels of subordinate claims] connects the top-level claim to the evidence and assumptions
-
-> "The Evidence"
-.red[Explicit information] that underlies the argumentation
-
-Interpretation of the tree structure is based on a series of if-then statements. These are called inference rules. Inference rules have a premise and a conclusion. If the premise is true then the conclusion must be true. Since assurance cases are based on induction, the rules are read bottom up rather than top-down, i.e. the premise is below the conclusion is the tree structure. For example, if the premise that "Evidence A" then "Sub-Claim 1". Similarly, if "Evidence B" then "Sub-claim 2". As we continue this reasoning, if "Sub-claim 1" and "Sub-claim 2", then "Top-level claim". Ultimately, the logical argument connects the evidence to the top-level claim.
+Interpretation of the tree structure is based on a series of if-then statements. These are called inference rules. Inference rules have a premise and a conclusion. If the premise is true then the conclusion must be true. Since assurance cases are based on induction, the rules are read bottom up rather than top-down, i.e. the premise is below the conclusion is the tree structure. For example, if the premise is "Evidence A" then the conclusion is "Sub-Claim 1". Similarly, if the premise is "Evidence B" then conclusion is "Sub-claim 2". As we continue this reasoning, if "Sub-claim 1" and "Sub-claim 2", then "Top-level claim". Ultimately, the logical argument connects the evidence to the top-level claim.
 
 ---
 
@@ -575,7 +566,7 @@ Next, grammatically, a claim should be worded with a predicate, i.e. there is a 
 - Why? Because it is not interesting; Means to an end
 
 ???
-We know that claims have be about critical and important system properties. So these properties can be trivial things that can just be determined to be true or false just based on a simple examination of the system. For example, The system uses AES encryption. This is a well-formed claim. It has a subject, "the system" and a predicate "uses AES encryption". However, the predicate can be determined to be true or false based on a simple examination of the system. As a result, such claims are not worth arguing. So how can we make it something worth arguing?
+We know that claims have be about critical and important system properties. So these properties cannot be trivial things that can  be determined to be true or false based on just a simple examination of the system. For example, The system uses AES encryption. This is a well-formed claim. It has a subject, "the system" and a predicate "uses AES encryption". However, the predicate can be determined to be true or false based on a simple examination of the system. As a result, such claims are not worth arguing. So how can we make it something worth arguing?
 
 --
 
@@ -982,20 +973,34 @@ In this diagram the inference rule IR1 is made explicit. The premise of the infe
 ## Claim to be further developed
 ![developclaim](images/developclaim.svg)
 
+???
+In the last diagram you saw a diamond shape underneath claim c6. This shape indicates that the argument is incomplete and needs to be further developed.
+
 ---
 # Few more notations
 ## No further argumentation
 ![stop](images/stopargument-1.svg)
 
+???
+Note that the filled diamond is different than the filled grey circle. The grey circle indicates that no further argumentation is needed.
+
 ---
 ![preview](images/preview.svg)
 
 ???
+Here is the entire assurance case for the top level-claim tweety can fly. I think you would agree if I said that it is pretty convincing given supporting evidence is available.
+
+
 Source: This example is partially based on the presentation of this paper given at ICSE conference: J. B. Goodenough, C. B. Weinstock and A. Z. Klein, "Eliminative induction: A basis for arguing system confidence," 2013 35th International Conference on Software Engineering (ICSE), San Francisco, CA, 2013, pp. 1161-1164.
 
 ---
 # Compare and Contrast
 ![preview](images/preview-cat.svg)
+
+???
+Now compare and contrast this structure to the very first claim in the cat example, which is The room has at least one black cat. This structure is not as deep or broad as the tweety example. So even visually, a richer argument is immediately apparent from the overall structure of an assurance case.
+
+
 
 ---
 
@@ -1008,9 +1013,9 @@ class: middle
 - n|n (complete confidence) — no doubts remain
 
 ???
-Assurance cases use defeasible logic, which means that the truth value of the statements made in this logic can be revised with the introduction of new information.
+Assurance cases can also produce certain quantitative metrics about the amount of assurance available. Let's see how.  Assurance cases use defeasible logic, which means that the truth value of the statements made in this logic can be revised with the introduction of new information.
 
-Assurance cases are examples of defeasible reasoning. The logic is non-monotonic, which means that we draw tentative conclusions about some state of affairs based on available evidence.  As more evidence becomes available, we can retract those conclusions. In other words, the truth value of the statements made in this logic can be revised with the introduction of new information. So, it makes sense to use the number of doubts removed, as a metric to provide a quantitative measure of the level of assurance in a claim.
+So as more evidence becomes available, we can retract the conclusions made. So, it makes sense to use the number of doubts removed, as a metric to provide a quantitative measure of the level of assurance in a claim.
 
 Assurance cases built using defeaters, use a Baconian probability computed as the ratio of the number of doubts removed and the total number of doubts. This ratio gives stakeholders a spectrum to choose from. It ranges from no doubts removed to all doubts removed, depending on the availability of resources and the possibility of collecting evidence.  
 
@@ -1021,7 +1026,6 @@ Assurance cases built using defeaters, use a Baconian probability computed as th
 ???
 Since the Baconian probability is based counts, it does not account for the doubt's quality or importance. So this metric should only be used for relative improvement in the assurance of a claim, rather than comparing two different claims.
 
-For example, you can use this probability to track how many doubts you can remove through analysis and the artifacts available from your projects' open-source software repository for addressing your assurance needs in the hypothetical environment of operation.
 
 ---
 
@@ -1070,7 +1074,7 @@ class: middle
 - Control statements are Verb phrases which can be associated with any system entity
 
 ???
-(i.e., what needs to be done to protect the system or information and not which entity carries out the action or where it is carried out);
+In the NIST control catalog version 5, the controls statements are now outcome based. Which means that they are critical properties of interest which can be associated with entities at the system or software level.
 
 ---
 class: middle
@@ -1083,6 +1087,9 @@ IA-2 IDENTIFICATION AND AUTHENTICATION
 
 ### Proposed (Rev 5):
 - Control: Uniquely identify and authenticate organizational users and associate that unique identification with processes acting on behalf of those users.
+
+???
+In this example you can see how the control specification changed from version 4 to version 5. In version 4, the control was limited to just information systems. In version 5, the control statement is just a verb phrase that can be associated with any appropriate entity including software.
 
 ---
 class: middle
