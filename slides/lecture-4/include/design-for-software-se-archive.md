@@ -12,21 +12,9 @@ class: center, middle
 ]
 
 ---
-
-# Systems Security Engineering
-
-### .orange[Problem] Context
-A sufficiently complete understanding of the problem
-
-### .green[Solution] Context
-<u>Transforms the security requirements into design requirements for the system</u>
-
-### .red[Trustworthiness] Context
-Evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy
-
+![recap](https://robinagandhi.github.io/swa/slides/lecture-1/images/framework-course-topics.png)
 ???
-The framework is independent of system type and engineering or acquisition process model and is not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, each with its own checks and balances
-
+# Quick recap
 ---
 class: middle
 # Security Analysis during Design
@@ -34,7 +22,9 @@ class: middle
 ## Start with a Data-flow perspective
 - **Most attacks come through .red[data]**
 - **Attacks gravitate towards .red[data]**
-- .blue[**Control flow**]: less relevant  
+
+--
+- Control flow: less relevant  
 to analyze security in design and architecture
 
 ---
@@ -44,9 +34,8 @@ class: middle
 Conceptualization, Changes or Re-design
 - Keeps designer focused on design issues
 
----
-class: middle
-- **Practical Relevance**: _"Applying a structured approach to threat scenarios during design helps a team .red[more effectively and less expensively] identify security vulnerabilities, determine risks from those threats, and establish appropriate mitigations"_ [Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx), [Threat Modeling](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling)
+--
+- **Practical Relevance**: _"Applying a structured approach to threat scenarios during design helps a team more effectively and less expensively identify security vulnerabilities, determine risks from those threats, and establish appropriate mitigations"_ [Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx)
 
 ---
 class: middle
@@ -78,7 +67,7 @@ class: middle
 
 .left-column[
 ## External Interactor/Entity
-- .red[_Uncontrollable_] by the codebase of interest but can interact with it
+- .red[_Uncontrollable_] by the codebase of interest but is within the [environment of operation](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#12)
 - Generates data (Source)
 - Receives data (Sink)
 
@@ -101,7 +90,7 @@ People, External systems, External APIs
 # DFD Elements
 
 .left-column[
-## Process (Code)
+## Process
 - A collection of .red[code]
 - Codebase of interest that is being threat modeled
 - Transforms input data into output data
@@ -114,9 +103,9 @@ People, External systems, External APIs
 
 .right-column[
 ## Representation
-![example](images/process.svg)  
+![example](images/process.svg)
 ## Naming
-- .red[Noun phrase] used to refer to the codebase
+- .red[Verb phrase] that describes the data transformation
 - .red[Include process number]
 ]
 
@@ -188,42 +177,28 @@ Cookie, Form data, Response page, Credentials, etc.
 ]
 
 ---
-class: middle
+## DFD Level 1 Example
+
+![example](images/dfd.png)
+
+---
 # DFD Levels
 
 ## Levels are hierarchically related
-- Based on the granularity of the processes
-- Levels 0, 1, 2...
-
----
-class: middle
-## DFD Level 0 Example
+### Based on the granularity of the processes
 - .red[**Level 0:**] Single process represents the whole system  
 Very high-level; entire component / product / system.  
 Show how the system interacts with the outside world.
-
-![Example of DFD Level 0](images/dfd0.svg)
-
----
-class: middle
-## DFD Level 1 Example
 - .red[**Level 1:**] Major processes and data stores identified   
-High level; **single** feature / scenario
-
-![Example of DFD Level 1](images/dfd1.svg)
-
----
-class: middle
-## DFD Level 2 Example
+High level; single feature / scenario
 - .red[**Level 2:**] Detailed subcomponents of processes  
-Low level; detailed features of a **single** feature / scenario
-
-![Example of DFD Level 2](images/dfd2.svg)
+Low level; detailed features of a single feature / scenario
+- ...
 
 ---
 class: middle
 
-# How to start DFD Construction?
+# DFD Construction
 
 ## Step 1
 ### Start with a Level 0 diagram for a use case
@@ -290,7 +265,7 @@ class: middle
 - Try to locate data sinks, whenever possible
 
 ### Data Flows
-- Attached to at least one Process or External Interactor
+- Attached to at least one process or EI
 
 
 ---
@@ -300,9 +275,9 @@ class: middle
 - Avoid data flows between External Interactors. They cannot be observed by the system.
 - Data always comes from External Interactors.
 
-### Processes in Level 2 and beyond
+### Processes
 - Carefully think about direct dataflows between two separate processes on a single machine.   
-- Use intermediate data stores such as message queues or domain sockets.
+Use intermediate data stores such as message queues or domain sockets.
 ---
 # DFD Construction
 ## Step 6
@@ -379,25 +354,65 @@ class: middle
 
 ## Elevation of Privilege
 * A user can increase capability or privilege by taking advantage of an implementation bug
+---
 
+# STRIDE with DFDs (Per Element)
+
+Threats that a DFD element can cause to its connected elements or is subject to itself.
+
+.left-column[
+## External Interactor
+- SR
+
+## Process
+- STRIDE
+]
+
+--
+
+.right-column[
+## Data Store
+- TID, R (logs only)
+
+## Data Flow
+- TID
+]
+---
+class: middle
+# Practice
+![OWASP](https://www.owasp.org/images/0/00/Data_flow1.jpg)
+---
+class: middle
+# Practice (2)
+![OWASP](https://www.owasp.org/images/1/16/Data_flow2.jpg)
+---
+class: middle
+# Observations and Reflections
+
+## Expensive (Time)
+- Too many threats to analyze! (even for small diagrams)
+
+## Redundancy
+- Redundant threats when analyzed individually
+
+## How can we make this more efficient?
 ---
 class: middle
 
-# STRIDE Per .red[Interaction]
+# STRIDE with DFDs (Per .red[Interaction])
 ## Focus on Interactions
 - Interaction:   
 A source and target element connected by a data flow
-![Example of DFD Level 1 Interaction](images/interactiondfd1.svg)
-
 ---
 class: middle
 
-# STRIDE Per .red[Interaction]
-## For each interaction apply STRIDE
+# STRIDE with DFDs (Per .red[Interaction])
+## Efficiencies and Savings
+- For each interactions apply STRIDE
 - For each STRIDE threat identify the attacker controlled element and the attacked element
-- For data flows inside a single process space,   
+- For data flows inside a .red[single] process space,   
 don’t worry about T, I, or D
-- Prioritize interactions that _cross trust boundaries_
+- Prioritize interactions that cross trust boundaries
 ???
 ## Significant reduction in number of threats to be analyzed
 ---
@@ -439,21 +454,8 @@ class: middle
 ![example](images/dfd.png)
 
 #### How many interactions? How many are high priority?
-
 ---
 class: middle
-# Validate the Threat Model
-
-1. Do the threats consider misuse cases?
-1. Does the diagram match final code?
-1. Are enough threats enumerated?
-1. Has Test / QA reviewed the model?
-Testers often finds issues with threat model or missing details
-1. Is each threat mitigated?
-1. Are mitigations done right?  (Assurance case, possibly)
-
----
-class: top
 # Tool Support
 
 --
@@ -468,7 +470,7 @@ class: top
 
 ---
 class: middle
-## [Microsoft Threat Modeling Tool (TMT)](https://aka.ms/tmt)
+# [Microsoft TMT 2016](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
 ![toolsupport](images/toolsupport.png)
 ---
 class: middle
@@ -510,7 +512,6 @@ class: middle
 - Availability
 - Authorization
 ]
-
 ---
 
 class: middle
@@ -581,26 +582,35 @@ class: middle
 
 ## Not applicable
 - &lt;&lt;STRIDE&gt;&gt; threat does not apply to this &lt;&lt;element&gt;&gt;
+---
+class: middle
+# Validate the Threat Model
 
+1. Do the threats consider misuse cases?
+1. Does the diagram match final code?
+1. Are enough threats enumerated?
+1. Has Test / QA reviewed the model?
+Testers often finds issues with threat model or missing details
+1. Is each threat mitigated?
+1. Are mitigations done right?  (Assurance case, possibly)
 ---
 
 # Making this Fun
 
 ## Elevation of Privilege Card Game
 - Ease developers into doing threat modeling
+- [Card Game Introduction](https://www.microsoft.com/en-us/sdl/adopt/eop.aspx)
 - [How to play](http://social.technet.microsoft.com/wiki/contents/articles/285.elevation-of-privilege-the-game.aspx)
 - [Card Images](https://robinagandhi.github.io/swa/slides/lecture-4/images/eopcardcameimages.pdf)
-- [Other SDL developer resources](https://www.microsoft.com/en-us/securityengineering/sdl/resources)
 
 ![EOP](https://c.s-microsoft.com/en-us/CMSImages/EoP_game_screen_shot.jpg?version=4a082487-9fb4-7dd9-ed9f-e79c888c2df4)
-
 
 ---
 class: middle
 # More about threat modeling
 
 ## Blogs
-- Threat Modeling Tool [User Guide](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+- Microsoft Tutorial on [TMT 2014](http://blogs.microsoft.com/cybertrust/2014/04/15/introducing-microsoft-threat-modeling-tool-2014/  )
 - Bruce Schneier on [threat modeling](http://www.schneier.com/blog/archives/2007/10/threat_modeling.html)
 
 ## Practice Diagrams
@@ -609,29 +619,92 @@ class: middle
 ## Threat Modeling in Practice
 - [SAFECode Tactical Threat Modeling](https://safecode.org/safecodepublications/tactical-threat-modeling/)
 
+
 ---
 # Sources
 
 - This presentation is borrows a lot from Microsoft training materials on threat modeling
 - Many sources for Data flow diagrams
-
 ---
 
 class: center, middle
-# Threat Modeling In-Class Demonstration
+# Threat Modeling In-Class Exercise
 
 ---
 class: middle
 
 # Step 1
-- Download and install [Microsoft TMT](https://aka.ms/threatmodelingtool)
+- Download and install [TMT 2016](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
 
 ---
 
 class: middle
 # Step 2
-- Build a DFD for the Playsound API in TMT
+## Build a DFD for the Playsound API in TMT 2016
 - Examine the threats identified
+
+---
+class: center, middle
+# Threat Modeling Assignment
+
+---
+class: middle
+
+# Step 1
+## Recall the Security Requirements and Assurance Case Assignments
+- You prioritized several _data flows_ for   
+building use/misuse cases and identify assurance claims
+
+---
+class: middle
+# Step 2
+## Prepare for threat modeling
+- Develop Level 0 DFDs that supports each of your use cases.
+- Consolidate similar DFDs.
+- Document the Level 0 DFDs in your Report (Diagrams only, no analysis necessary)
+
+---
+class: middle
+# Step 3
+## Build Level 1 threat models
+- Expand Level 0 DFDs into Level 1 DFDs.
+- Draw the DFDs in TMT 2016
+- Examine your project codebase to align the diagram with reality
+- Identify appropriate trust boundaries
+- Validate the diagram for any obvious structural deficiencies
+
+---
+class: middle
+# Step 4
+## Analyze the Level 1 diagram to identify the applicable STRIDE threats
+- Examine each automatically identified threat
+- Document mitigation strategies for the identified threats
+- Pay special attention for elements that interact across threat boundaries
+- Generate a full HTML report using TMT 2016
+- Host the TMT 2016 reports in your project github repo and link from your report.
+
+---
+class: middle
+# Step 5
+## Review OSS design
+- Review OSS project actual software design for security related issues based on your threat models. Summarize your observations regarding missing mitigations.
+
+---
+class: middle
+
+# Grading criteria
+
+### Use of proper notations
+
+### Threat Model Quality
+- Proper wording of the model elements
+- Clean, coherent and valid DFD diagram
+
+### Threat Mitigation Quality
+- Quality of analysis to mitigate threats
+
+### Quality of observations
+- Observations from OSS project align with the high-priority threats identified from the DFD diagram analysis
 
 ---
 class: center, middle
