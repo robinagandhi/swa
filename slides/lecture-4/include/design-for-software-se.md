@@ -11,6 +11,10 @@ class: center, middle
 \* Recommended by a Prior Student and [Bruce S.](https://www.schneier.com/blog/archives/2013/04/xkcd_on_a_bad_t.html)
 ]
 
+???
+
+Turns out that threat analysis is often misplaced or the actual threat adapts to changes in the system or the environment.
+
 ---
 
 # Systems Security Engineering
@@ -25,7 +29,11 @@ A sufficiently complete understanding of the problem
 Evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy
 
 ???
-The framework is independent of system type and engineering or acquisition process model and is not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, each with its own checks and balances
+The framework is independent of system type and engineering or acquisition process model and is not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, each with its own checks and balances.
+
+We have some guidance in the systems security engineering framework to develop demonstrably trustworthy technology. If you recall, the Trustworthiness Context our engineering framework is setup to develop an evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy.
+
+We looked at the problem context using requirements engineering techniques. Now we switch gears and talk about **assurance cases** as part of the trustworthiness context.
 
 ---
 class: middle
@@ -34,6 +42,8 @@ class: middle
 ## Start with a Data-flow perspective
 - **Most attacks come through .red[data]**
 - **Attacks gravitate towards .red[data]**
+--
+
 - .blue[**Control flow**]: less relevant  
 to analyze security in design and architecture
 
@@ -41,21 +51,33 @@ to analyze security in design and architecture
 class: middle
 # Data Flow Diagrams (DFD)
 - A structured, concrete artifact to _discuss_ design:  
-Conceptualization, Changes or Re-design
-- Keeps designer focused on design issues
+Conceptualization, _Changes_ or **Re-design**
+- Goal: Keep the designer focused on .red[design] issues
 
 ---
 class: middle
-- **Practical Relevance**: _"Applying a structured approach to threat scenarios during design helps a team .red[more effectively and less expensively] identify security vulnerabilities, determine risks from those threats, and establish appropriate mitigations"_ [Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx), [Threat Modeling](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling)
+
+# Practical Relevance
+
+>_"Applying a structured approach to threat scenarios during design helps a team .red[more effectively and less expensively] identify security vulnerabilities, determine risks from those threats, and establish appropriate mitigations"_  
+
+> [Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx), [Threat Modeling](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling)
 
 ---
 class: middle
 # Data Flow Diagrams (DFD)
 
-## DFDs are visual representations of .red[**data flows**] through components of a software program
+## DFDs are visual representations of .red[**data flows**] through .green[components of a software program.]
 - Components of a software program:  
-.green[Data Source] &#8594; .orange[Data Transformations] &#8594; .red[Data Sink]
-- All control flows are abstracted into _processes_  
+Data Source &#8594; .red[Data Transformations] &#8594; Data Sink  
+
+--
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8595;
+
+> All .blue[control flows] are abstracted into .red[_processes_]  
 that perform data transformations
 
 ???
@@ -71,6 +93,16 @@ class: middle
 1. Data Stores
 1. .red[Trust Boundaries]
 1. Data Flows
+
+---
+
+class: middle
+# DFD Elements
+1. External Interactors (Data Sources or Sinks)
+1. Processes (Data Transformations)
+1. Data Stores (Data Sinks or Sources)
+1. .red[Trust Boundaries] (Imaginary)
+1. Data Flows (Data)
 
 ---
 
@@ -195,28 +227,53 @@ class: middle
 - Based on the granularity of the processes
 - Levels 0, 1, 2...
 
+???
+As we know, in software engineering, design diagram can be expressed at different levels of abstraction. Similarly DFDs can also be expressed at different levels of abstraction.
+
+---
+class: middle
+## DFD Level 0
+- .red[_Single process_] represents the whole system
+
+> Very high-level; entire component / product / system
+
+- **Purpose:** Show system interactions in the   
+environment of operation
+
 ---
 class: middle
 ## DFD Level 0 Example
-- .red[**Level 0:**] Single process represents the whole system  
-Very high-level; entire component / product / system.  
-Show how the system interacts with the outside world.
-
 ![Example of DFD Level 0](images/dfd0.svg)
 
 ---
 class: middle
+## DFD Level 1
+- Major .red[processes and data stores] identified
+
+> High level; .orange[**single** feature / scenario]
+
+- **Purpose:** Analyze critical data flows for a   
+single scenario of interest
+
+---
+class: middle
 ## DFD Level 1 Example
-- .red[**Level 1:**] Major processes and data stores identified   
-High level; **single** feature / scenario
 
 ![Example of DFD Level 1](images/dfd1.svg)
 
 ---
 class: middle
+## DFD Level 2
+- Detailed .red[subcomponents of processes]  
+(if they exist during system run-time execution)  
+
+> Low level; detailed features of a .orange[**single** feature / scenario]
+
+- **Purpose:** Analyze critical data flows deep in the system design for a single scenario of interest
+
+---
+class: middle
 ## DFD Level 2 Example
-- .red[**Level 2:**] Detailed subcomponents of processes  
-Low level; detailed features of a **single** feature / scenario
 
 ![Example of DFD Level 2](images/dfd2.svg)
 
@@ -226,10 +283,12 @@ class: middle
 # How to start DFD Construction?
 
 ## Step 1
-### Start with a Level 0 diagram for a use case
-- A single process (represents the system, no data stores)
-- Identify all External Interactors (EI)
-- Draw data flows to connect EI & the process
+### Start with a Level 0 diagram for a .red[use/misuse case]
+- Draw a .red[single process] that represents the system;  
+NO data stores
+- Identify and draw all identified External Interactors (EI);  
+Human or Other Systems
+- Draw data flows to connect External Interactors & the Process
 ---
 
 class: middle
@@ -237,11 +296,21 @@ class: middle
 
 "_The PlaySound API takes as input a string which represents either a WAV filename or an alias.  If the input is an alias, the PlaySound API retrieves data from the registry under HKCU to convert the alias into a filename.  Once the filename is determined, the PlaySound API opens the WAV file specified and reads the two relevant pieces from the file: the WAVEFORMATEX that defines the type of data in the file and the actual audio data.  It then hands that data to the audio rendering APIs._"
 
---
+???
+
+Pause the video here and create a Level 0 diagram.
 
 ## Develop a Level 0 DFD*
 
 .footnote[*_[Class exercise](https://docs.google.com/presentation/d/1dYBlbTcs3fBs-hawHgdJjL2xGrOFnrSOVpsB2pTGHNc/edit?usp=sharing)_]
+
+---
+
+## Level 0
+![example](images/Playsound-level0.svg)
+
+
+???
 
 ---
 
@@ -255,6 +324,14 @@ class: middle
 - Does it match reality?
 
 ---
+
+## Level 1
+![example](images/Playsound-level1-nb.svg)
+
+
+???
+
+---
 class: middle
 # DFD Construction
 ## Step 3
@@ -266,6 +343,16 @@ They share the same privileges, rights, identifiers and access
 
 - Processes talking across a network may create a secure channel, but .red[they’re still distinct entities.]   
 
+
+---
+
+## Level 1 Trust Boundaries
+![example](images/Playsound-level1.svg)
+
+
+???
+![Example](images/playsoundthreatmodel.png)  
+http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
 ---
 class: middle
 # DFD Construction
@@ -284,25 +371,46 @@ class: middle
 # DFD Construction
 ## Step 5: Check the diagram for sanity (1)
 ### Data stores
-- Two data stores should not be connected with data flows directly. They are static entities.
-- External interactors should not directly interact with data stores. Their data representation formats are different.
+- Two data stores should not be connected directly
+- EIs should not directly interact with data stores
 - Data stores should have an input flow
 - Try to locate data sinks, whenever possible
 
-### Data Flows
-- Attached to at least one Process or External Interactor
+### External Interactors
+- Avoid data flows between External Interactors
+- Data always comes from External Interactors
+
+???
+- Two data stores should not be connected with data flows directly. They are static entities.
+- External interactors should not directly interact with data stores. Their data representation formats are different.
+
+- Avoid data flows between External Interactors. They cannot be observed by the system.
+- Data always comes from External Interactors.
+
+---
+
+## Things to Avoid in a DFD
+![example](images/avoid.svg)
+
+
+???
 
 
 ---
 # DFD Construction
 ## Step 5: Check the diagram for sanity (2)
-### External Interactors
-- Avoid data flows between External Interactors. They cannot be observed by the system.
-- Data always comes from External Interactors.
+
+### Data Flows
+- Attached to at least one Process or External Interactor
 
 ### Processes in Level 2 and beyond
-- Carefully think about direct dataflows between two separate processes on a single machine.   
-- Use intermediate data stores such as message queues or domain sockets.
+- Carefully think about direct dataflows between two separate processes on a single machine  
+Use intermediate data stores such as message queues or domain sockets in a level 2 diagram
+
+???
+
+
+
 ---
 # DFD Construction
 ## Step 6
@@ -328,9 +436,7 @@ Trust boundaries intersecting these data flows.
 
 - Hierarchical structuring (Levels) allows system analysis at different levels of abstraction
 
-???
-![Example](images/playsoundthreatmodel.png)  
-http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
+
 
 ---
 class: middle, center
@@ -404,59 +510,17 @@ don’t worry about T, I, or D
 class: middle
 
 # Trust boundaries
-## Trusted/high code reading from untrusted/low
-- Look for Tampering threats
+- As an optimization, **STRIDE per Interaction** is only applied for interactions that cross a trust boundary
 
-## High code writing to low
-- Errors may result in Information Disclosure
----
-class: middle
+> .red[Trusted/high code reading from untrusted/low]  
+Look for Tampering threats
 
-# Avoid Distractions
-## Applications can't do much here:
-- The computer is infected with malware
-- Someone removed the hard drive and tampers
-- Admin is attacking user
-- A user is attacking himself
-
-## Applications can’t address any of these   
-(unless you’re the OS)
-
----
-class: middle
-
-# Practice
-
-![OWASP](https://www.owasp.org/images/1/16/Data_flow2.jpg)
-
-#### How many interactions? How many are high priority?
-
----
-
-class: middle
-
-# Practice
-![example](images/dfd.png)
-
-#### How many interactions? How many are high priority?
-
----
-class: middle
-# Validate the Threat Model
-
-1. Do the threats consider misuse cases?
-1. Does the diagram match final code?
-1. Are enough threats enumerated?
-1. Has Test / QA reviewed the model?
-Testers often finds issues with threat model or missing details
-1. Is each threat mitigated?
-1. Are mitigations done right?  (Assurance case, possibly)
+> .red[High code writing to low]  
+Errors may result in Information Disclosure
 
 ---
 class: top
 # Tool Support
-
---
 
 ## Automation
 - Much of this analysis can be automated using simple rules based on the diagram structure
@@ -580,7 +644,31 @@ class: middle
 - This threat does not exist, so we don't care about &lt;&lt;STRIDE&gt;&gt; threat to the &lt;&lt;element&gt;&gt;
 
 ## Not applicable
-- &lt;&lt;STRIDE&gt;&gt; threat does not apply to this &lt;&lt;element&gt;&gt;
+- &lt;&lt;STRIDE&gt;&gt; generated threat does not apply to this &lt;&lt;element&gt;&gt;
+
+---
+class: middle
+
+# Avoid Distractions
+## Applications can't address these threats:  
+
+> The computer is infected with malware  
+
+> Someone removed the hard drive and tampers  
+
+> Admin is attacking user  
+
+---
+class: middle
+# Validate the Threat Model
+
+1. Do the threats consider misuse cases?
+1. Does the diagram match final code?
+1. Are enough threats enumerated?
+1. Has Test / QA reviewed the model?
+Testers often finds issues with threat model or missing details
+1. Is each threat mitigated?
+1. Are mitigations done right?  (Assurance case, possibly)
 
 ---
 
@@ -616,17 +704,19 @@ class: middle
 - Many sources for Data flow diagrams
 
 ---
-
+exclude: true
 class: center, middle
 # Threat Modeling In-Class Demonstration
 
 ---
+exclude: true
 class: middle
 
 # Step 1
 - Download and install [Microsoft TMT](https://aka.ms/threatmodelingtool)
 
 ---
+exclude: true
 
 class: middle
 # Step 2
