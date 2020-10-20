@@ -80,8 +80,14 @@ class: middle
 # Data Flow Diagrams (DFD)
 
 ## DFDs are visual representations of .red[**data flows**] through .green[components of a software program.]
-- Components of a software program:  
+- A programs execution can be abstracted as:  
 Data Source &#8594; .red[Data Transformations] &#8594; Data Sink  
+
+???
+
+One reason for the popularity of DFDs for security design analysis is that they provide a  simple view of the system. They are visual representation of data flows through a software program, where data comes from, and where it ends up.
+
+So at a programs execution on a machine can be abstracted by simply identifying the data source, data transformations and data sink. A data flow is a trace of how data moves from the source to the sink through various transformations.
 
 --
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -89,12 +95,12 @@ Data Source &#8594; .red[Data Transformations] &#8594; Data Sink
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8595;
 
-> All .blue[control flows] are abstracted into .red[_processes_]  
-that perform data transformations
+> All .blue[control flows] that perform data transformations  
+are abstracted into .red[_processes_]  
 
 ???
 
-One reason for the popularity of DFDs for security design analysis is that they provide a  simple view of the system. They are visual representation of data flows through a software program. 
+In this view, all control flows that perform data transformations are abstracted to processes executing on a machine.
 
 ---
 
@@ -103,18 +109,15 @@ class: middle
 1. External Interactors
 1. Processes
 1. Data Stores
-1. .red[Trust Boundaries]
 1. Data Flows
+1. .red[Trust Boundaries]
 
----
+???
+This concise list of elements further reflects the simplicity of a DFD diagram.
 
-class: middle
-# DFD Elements
-1. External Interactors (Data Sources or Sinks)
-1. Processes (Data Transformations)
-1. Data Stores (Data Sinks or Sources)
-1. .red[Trust Boundaries] (Imaginary)
-1. Data Flows (Data)
+The names of the elements also suggest what role they might play in a data flow. For example Data Stores, like a file, would primarily serve as Data sink.
+
+Let's look at teach one of these and their visual notations next.
 
 ---
 
@@ -130,6 +133,11 @@ class: middle
 People, External systems, External APIs
 ]
 
+???
+The external interactor is typically a human or other system in your environment of operation. This external interactor is uncontrollable by the system of interest but can interact with it. Good examples of it are people, external systems, external APIs. These entities typically initiate a dataflow using a request that includes some input data or at the end of a dataflow receive the result of a computation, i.e. output. So they can act as a data source or sink.
+
+From a security perspective, it is best to treat any data received from an external interactors as untrustworthy. Also, any data shared with an external interactor should be checked for appropriate authorization.
+
 --
 
 .right-column[
@@ -140,7 +148,10 @@ People, External systems, External APIs
 ]
 
 ???
-## NOT the focus of threat modeling
+An External Interactor is visually represented as a rectangle. As a general grammatical guideline, phrase all elements in a DFD, including the external interactor as a noun phrase. In this case the noun phrase describes the external entity.
+
+When naming an external interactor, remember that anything that is an external interactor is not a part of your system of interest.
+
 ---
 # DFD Elements
 
@@ -154,6 +165,11 @@ People, External systems, External APIs
 - Code, Native code, Executables, Libraries, Process execution scope
 ]
 
+???
+In contrast, any code that is in our system of interest, should be modeled as a process. A process represents the codebase of interest that is being threat modeled. Its purpose is to transform any input data into output data. A process abstraction in a DFD maps to a program executing on a computer. For example, the Chrome browser spawns a new program for each one of its tabs. Each such program running in its own process space, should be modeled as a process in a DFD diagram.
+
+Examples of processes include code, executables, libraries, or collection of thread that run within the same process execution scope.
+
 --
 
 .right-column[
@@ -163,6 +179,10 @@ People, External systems, External APIs
 - .red[Noun phrase] used to refer to the codebase
 - .red[Include process number]
 ]
+
+???
+
+A process is visually depicted as a circle. It is also described using a noun phrase that typically refers to the codebase that is being threat modeled. It is best to add a process number, as it will help with traceability and ease of reference as we will see later in this discussion.
 
 ---
 
@@ -177,6 +197,9 @@ People, External systems, External APIs
 Files, Registry keys, Databases, Shared memory, Message Queue
 ]
 
+???
+A data store is simply any location used to hold data. This data holding area can serve a single process, or in the case of domain sockets could act as a temporary storage area to transfer data back and forth between processes executing in two different memory regions of the computer. Common example of data stores are files, registry keys, Databases, Shared memory when dealing with two processes or Message Queues often used in service-oriented architectures.
+
 --
 
 .right-column[
@@ -185,6 +208,9 @@ Files, Registry keys, Databases, Shared memory, Message Queue
 ## Naming
 - .red[Noun phrase], but plural
 ]
+
+???
+Its visual notation is just two parallel lines with the name in the middle. Its description is also a noun phrase, that is usually plural as in Data vs. datum which is singular.
 
 ---
 
@@ -199,6 +225,9 @@ Files, Registry keys, Databases, Shared memory, Message Queue
 Cookie, Form data, Response page, Credentials, etc.
 ]
 
+???
+Now that we have DFD elements to show data sources, transformations and sinks, we need a way to show the traces between them to visually depict data flow. In a sense, data flows that connect two DFD elements depict a contract. That is the input provided the DFD element on one end of the data flow is understood by the DFD element on the other end.
+
 --
 
 .right-column[
@@ -207,6 +236,9 @@ Cookie, Form data, Response page, Credentials, etc.
 ## Naming
 - .red[Noun phrase] that describes the application data being transferred
 ]
+
+???
+Data flows are represented as arrows that connect two DFD elements. The data flow is named after the application data that is being transferred. So examples of Data flows include cookies, form data, a result set from a database or credentials for a login page. Notice that in all these examples, the data is abstracted so that we understand its criticality during threat modeling. We are generally not too concerned about the details of this data.
 
 ---
 
@@ -222,6 +254,11 @@ Cookie, Form data, Response page, Credentials, etc.
 - External entities and processes with different trust levels
 ]
 
+???
+Finally, this last DFD element is only relevant for security design analysis. Trust boundaries are drawn such they cut across data flows. This depicts that a component on one side of the trust boundary should not trust the one on the other side.
+
+In a system where different programs are different privilege levels, trust boundaries direct the analysts attention to be extra careful while accepting or transferring any data from the other side of the trust boundary.
+
 --
 
 .right-column[
@@ -230,6 +267,9 @@ Cookie, Form data, Response page, Credentials, etc.
 ## Naming
 - Describes the boundary placement
 ]
+
+???
+Since the trust boundary is imaginary, it is visually represented as a dotted line. It is also typically colored in red to serve as a warning. The name of the boundary usually describes its relative placement in the system.
 
 ---
 class: middle
@@ -240,7 +280,7 @@ class: middle
 - Levels 0, 1, 2...
 
 ???
-As we know, in software engineering, design diagram can be expressed at different levels of abstraction. Similarly DFDs can also be expressed at different levels of abstraction.
+Now, software engineering activities often express the design of a system or software at different abstraction levels. Similarly, based on the abstraction level of the codebase that is being threat modeled, we can create different DFDs. The most abstract DFD is level 0. Levels beyond 0 successively add more details to the diagram.  
 
 ---
 class: middle
@@ -252,10 +292,18 @@ class: middle
 - **Purpose:** Show system interactions in the   
 environment of operation
 
+???
+A level 0 DFD uses a single process to represent the whole system. As I said before, this is the most abstract DFD. It gives a very high level view of the entire system of interest. But what do we get from doing so? If we abstract away the system, we can focus on its interactions in the environment of operation, i.e. identify the external interactors.
+
+Let's look at an example with a system a learning management system, Canvas.
+
 ---
 class: middle
 ## DFD Level 0 Example
 ![Example of DFD Level 0](images/dfd0.svg)
+
+???
+Here Canvas is my system of interest that is being threat modeled. Now to focus on its interactions in the environment of operation, the entire system is modeled as a single process, and nothing else. No data stores are included in a level 0 diagram. Since the focus is on external interactions, we have now identify the major external interactors for this system and the primary data flows. This diagram gives a quick snapshot of potential attack surfaces for the system of interest. Remember, most threats comes through data!
 
 ---
 class: middle
@@ -267,11 +315,17 @@ class: middle
 - **Purpose:** Analyze critical data flows for a   
 single scenario of interest
 
+???
+In a level 1 DFD, we start to add more details to the entire system's single process from level 0, in the context of a single scenario. While this diagram is still high-level, it aims to identify and analyze the critical data flows for a single scenario of interest.
+
 ---
 class: middle
 ## DFD Level 1 Example
 
 ![Example of DFD Level 1](images/dfd1.svg)
+
+???
+For example, we want to analyze a student use case to check grades using Canvas. In this use case, the model identifies relevant DFD elements, including data stores and threat boundaries. Note that a DFD does not need to show all details of this use case but only highlight its major components and what data flows between the components. We also see that the model places a trust boundary between the external interactor and the process. This boundary serves as a warning that the process should not trust anything received from the other side and ensure that any data shared is authorized for that external interactor.
 
 ---
 class: middle
@@ -283,11 +337,17 @@ class: middle
 
 - **Purpose:** Analyze critical data flows deep in the system design for a single scenario of interest
 
+???
+While there is no upper limit on the levels, the details in a level 1 or level 2 DFD should be sufficient in most practical cases. A Level 2 diagram adds more information to a Level 1 diagram to surface security issues embedded deep within the system. In some cases, the Level 2 diagram might be a more faithful representation of the system runtime environment.
+
 ---
 class: middle
 ## DFD Level 2 Example
 
 ![Example of DFD Level 2](images/dfd2.svg)
+
+???
+Here we see that a Level 2 DFD adds more information to the Canvas web app process. This diagram makes it clear that there is a front-end HTTP server process that communicates using HTTP with a backend application server. While these processes may exist on the same machine, they are in separate memory spaces at runtime during system execution, justifying their separation in the DFD.
 
 ---
 class: middle
@@ -298,9 +358,13 @@ class: middle
 ### Start with a Level 0 diagram for a .red[use/misuse case]
 - Draw a .red[single process] that represents the system;  
 NO data stores
-- Identify and draw all identified External Interactors (EI);  
+- Identify and draw all External Interactors (EI);  
 Human or Other Systems
 - Draw data flows to connect External Interactors & the Process
+
+???
+Turns out that DFD levels, starting with Level 0, are a natural progression of how you want to build them. To get started, the first step is to develop a level 0 diagram. This includes drawing a single process that represents the entire system. Remember that there are no data stores in a level 0 diagram. Next identify External interactors and then connect them to the process using dataflows. Name all elements appropriately.  
+
 ---
 
 class: middle
@@ -309,12 +373,7 @@ class: middle
 "_The PlaySound API takes as input a string which represents either a WAV filename or an alias.  If the input is an alias, the PlaySound API retrieves data from the registry under HKCU to convert the alias into a filename.  Once the filename is determined, the PlaySound API opens the WAV file specified and reads the two relevant pieces from the file: the WAVEFORMATEX that defines the type of data in the file and the actual audio data.  It then hands that data to the audio rendering APIs._"
 
 ???
-
-Pause the video here and create a Level 0 diagram.
-
-## Develop a Level 0 DFD*
-
-.footnote[*_[Class exercise](https://docs.google.com/presentation/d/1dYBlbTcs3fBs-hawHgdJjL2xGrOFnrSOVpsB2pTGHNc/edit?usp=sharing)_]
+Here is design narrative for you to practice building a DFD. Pause the video here and create a Level 0 diagram. Here the Playsound API is our codebase of interest.
 
 ---
 
@@ -323,6 +382,7 @@ Pause the video here and create a Level 0 diagram.
 
 
 ???
+Compare your work with my solution. In this diagram, you will notice right away that it abstracts away a lot of details in the narrative and focuses only on the major external interactors. In this view, it is easy to see where data enters and exits the system.
 
 ---
 
@@ -335,6 +395,11 @@ class: middle
 - Can you tell a story without edits?
 - Does it match reality?
 
+???
+To proceed further in DFD construction, we need a particular scenario. This scenario can can come from our Playsound API narrative or a use case. In the context of a scenario, we add more information to the single level 0 process, such that you can tell a story without making changes to the DFD.
+
+Now pause the video here and try to come up with a level 1 diagram based on the Playsound API narrative.
+
 ---
 
 ## Level 1
@@ -342,6 +407,8 @@ class: middle
 
 
 ???
+
+In my solution, I added two data stores to faithfully capture the given narrative and the associated data flows. I can describe the narrative using this diagram, i.e. I can tell a story without any edits to the diagram.
 
 ---
 class: middle
@@ -355,6 +422,10 @@ They share the same privileges, rights, identifiers and access
 
 - Processes talking across a network may create a secure channel, but .red[they’re still distinct entities.]   
 
+???
+Now it is time to add trust boundaries to the level 1 diagram. While it may be tempting to add trust boundaries in many places, it also places a greater burden for the analyst.
+
+For example, different threads within a single process space would share the same rights and privileges. So there is little value in adding a trust boundary between them. However, in certain cases trust boundaries must be added. For example, you may have two processes talking across a network. Now they may have an encrypted channel for communication, but they are still different. If the network is exposed to malicious actors, adding a trust boundary is justified.
 
 ---
 
@@ -363,6 +434,10 @@ They share the same privileges, rights, identifiers and access
 
 
 ???
+In our example, I placed three trust boundaries. While the App boundary is easy to justify, I also added the registry boundary and filesystem boundary. The latter two boundaries reflect a design decision to not trust data that is received from the registry or the filesystem.
+
+The example is based on this blog by Larry Osterman at Microsoft.
+
 ![Example](images/playsoundthreatmodel.png)  
 http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
 ---
@@ -377,6 +452,9 @@ class: middle
 
 
 - Break them down if you use words like “sometimes” and “also” in your story
+
+???
+At this point, you have a decision to make. Does the DFD need more details to surface additional security issues? Is the DFD missing important aspects of the runtime environment? If the answer to both these questions is no then you stop here. If the answer is yes, then you proceed to develop a level 2 diagram. In the case of the Playsound API narrative, I did not think a level 2 diagram is necessary.
 
 ---
 class: middle
@@ -393,20 +471,14 @@ class: middle
 - Data always comes from External Interactors
 
 ???
-- Two data stores should not be connected with data flows directly. They are static entities.
+Now before we finalize the diagram, it is prudent to check the diagram for sanity.
+Here is a list of things to avoid organized by DFD elements, starting with Data Stores.
+
+First, two data stores should not be connected with data flows directly. They are static entities.
 - External interactors should not directly interact with data stores. Their data representation formats are different.
 
 - Avoid data flows between External Interactors. They cannot be observed by the system.
 - Data always comes from External Interactors.
-
----
-
-## Things to Avoid in a DFD
-![example](images/avoid.svg)
-
-
-???
-
 
 ---
 # DFD Construction
@@ -422,6 +494,13 @@ Use intermediate data stores such as message queues or domain sockets in a level
 ???
 
 
+---
+
+## Things to Avoid in a DFD
+![example](images/avoid.svg)
+
+
+???
 
 ---
 # DFD Construction
@@ -439,6 +518,7 @@ Partition processes that perform multiple functions and they exist in different 
 
 - DFDs do not typically show time dependencies.   
 If processes can communicate directly they are assumed to be synchronous!
+
 ---
 class: middle
 # DFD Modeling Summary
