@@ -1,6 +1,9 @@
 class: center, middle
 # .red[Design] for Software Security Engineering
 
+???
+Design for software security engineering is a set of activities to examine a given software design for incompleteness from a security perspective. In other words, inadvertent loopholes exist in your software's protective barriers that have not been foreseen by the designers, and your job is to discover them using structured activities.
+
 ---
 class: center, middle
 # Threat and Design\*
@@ -12,9 +15,7 @@ class: center, middle
 ]
 
 ???
-
-Turns out that threat analysis is often misplaced or the actual threat adapts to changes in the system or the environment.
-
+This comic illustrates the point of inadvertent loopholes. Design analysis often reveals misplaced trust assumptions and user behavior contradictory to established policies.
 ---
 
 # Systems Security Engineering
@@ -29,11 +30,9 @@ A sufficiently complete understanding of the problem
 Evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy
 
 ???
-The framework is independent of system type and engineering or acquisition process model and is not to be interpreted as a sequence of flows or process steps but rather as a set of interacting contexts, each with its own checks and balances.
+Now, remember that Software security engineering activities exist within three interacting contexts.
 
-We have some guidance in the systems security engineering framework to develop demonstrably trustworthy technology. If you recall, the Trustworthiness Context our engineering framework is setup to develop an evidence-based demonstration, through reasoning, that the system-of-interest is deemed trustworthy.
-
-We looked at the problem context using requirements engineering techniques. Now we switch gears and talk about **assurance cases** as part of the trustworthiness context.
+We looked at the problem context using requirements engineering activities and techniques. Then we used misuse cases to develop claims, and then argued them using **assurance cases** as part of the trustworthiness context. Now we will see how the solution context transforms the security requirements derived using misuse cases into the system's design requirements.
 
 ---
 class: middle
@@ -42,10 +41,16 @@ class: middle
 ## Start with a Data-flow perspective
 - **Most attacks come through .red[data]**
 - **Attacks gravitate towards .red[data]**
+???
+Here is a master tip for design analysis for security engineering. Always remember this. Most attacks come through data, and these attacks are interested in going after data in the system. So design analysis for security is most effective when done from a data-flow perspective.
+
 --
 
-- .blue[**Control flow**]: less relevant  
-to analyze security in design and architecture
+- .blue[**Control flow**] is less relevant for analyzing  
+security in design and architecture
+
+???
+It turns out control-flow is less relevant when performing design analysis for security. In our techniques, we will abstract it away so it does not get in the way. When starting to do data-flow analysis, it is easy to get confused with the control flow. Control flow is the algorithm that transforms data. For example, bubble sort is an algorithm that sorts a list of unordered numbers. We are not interested in the algorithm, but data goes in as string input to an executing process on the machine, and then a string is written to the file system.  
 
 ---
 class: middle
@@ -53,6 +58,9 @@ class: middle
 - A structured, concrete artifact to _discuss_ design:  
 Conceptualization, _Changes_ or **Re-design**
 - Goal: Keep the designer focused on .red[design] issues
+
+???
+Staying focused on data flow during our design analysis is essential. So we will use a modeling technique designed to do just that. Data Flow Diagrams, or DFD for short, conceptualizes a system model for security design analysis. Once the model is available, we can systematically reason about the security impact of any initial design decisions, changes to the design, or the need for re-design.
 
 ---
 class: middle
@@ -62,6 +70,10 @@ class: middle
 >_"Applying a structured approach to threat scenarios during design helps a team .red[more effectively and less expensively] identify security vulnerabilities, determine risks from those threats, and establish appropriate mitigations"_  
 
 > [Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx), [Threat Modeling](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling)
+
+???
+Things we learn in this course are firmly grounded in industry best practices for software security engineering. Using DFDs to conduct a structured analysis of threat scenarios is part of the Microsoft Secure Development Lifecycle which is adopted throughout the organization and is also observed in many other organizations through BSIMM assessments. This approach is also recommended by OWASP for web applications, with its own ecosystem of guidelines and tools (https://owasp.org/www-project-threat-dragon/).
+
 
 ---
 class: middle
@@ -82,7 +94,7 @@ that perform data transformations
 
 ???
 
-- Data flows provide a significantly simple system/software view when compare to control flow.
+One reason for the popularity of DFDs for security design analysis is that they provide a  simple view of the system. They are visual representation of data flows through a software program. 
 
 ---
 
