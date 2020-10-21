@@ -446,11 +446,7 @@ class: middle
 ## Step 4
 ### Iterate over processes and data stores
 - Break them down if more detail needed to explain .red[_security impact of the design_]
-
-
 - Break them down if an object crosses a trust boundary. For example, a remote procedural call (RPC)
-
-
 - Break them down if you use words like “sometimes” and “also” in your story
 
 ???
@@ -532,19 +528,25 @@ If processes can communicate directly they are assumed to be synchronous!
 ???
 The final step in DFD construction is to look for opportunities to simplify! Here are some pointers to do so.
 
-First, Consolidate data flows that always flow together
+First, consolidate data flows that always flow together. In a given direction, two DFD elements should only be connected with a single dataflow. Lable the dataflow with the most critical data exchanged between the DFD elements in a given scenario. This simplification will result in better automated threat generation using a DFD. We will look at threat generation shortly.
+
+Second, there is a natural tendency to want to partition processes based on functions or classes. Avoid the urge to do this. From a threat analysis perspective, if different program modules reside within the same shared memory area at execution time, splitting them into separate processes is useless. Processes in your DFD diagram should correspond to the runtime processes that would appear in your task manager, when software is executing.
+
+Finally, DFDs are not appropriate to show time dependencies or sequence of messages. UML sequence diagrams or swimlane diagrams would be more appropriate in that case. So avoid creating a sequence of messages using dataflows. Remember that Dataflows are labeled with just the data that is transferred.
 
 
 ---
 class: middle
 # DFD Modeling Summary
-- DFDs depict data flows from sources to sinks with transformations along the way.   
-Trust boundaries intersecting these data flows.
+- DFDs depict dataflows from sources to sinks with transformations along the way.   
+Trust boundaries intersect data flows.
+- Hierarchical structuring (Levels) allows system analysis at different levels of abstraction   
+It also helps in DFD construction through successive refinement.
 
+???
+In summary, we discussed why we want to construct DFDs, how to construct DFDs and how to refine and simplify DFDs.   
 
-- Hierarchical structuring (Levels) allows system analysis at different levels of abstraction
-
-
+In the next video we will look at how we can use DFDs to identify threats.
 
 ---
 class: middle, center
