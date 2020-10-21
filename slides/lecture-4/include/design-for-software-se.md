@@ -474,25 +474,15 @@ class: middle
 Now before we finalize the diagram, it is prudent to check the diagram for sanity.
 Here is a list of things to avoid organized by DFD elements, starting with Data Stores.
 
-First, two data stores should not be connected with data flows directly. They are static entities.
-- External interactors should not directly interact with data stores. Their data representation formats are different.
+First, two data stores should not be connected with data flows directly. They are static entities they cannot actively transfer data over dataflows.
+Second, external interactors should not directly interact with data stores. As a general convention, data stores are encapsulated or mediated by processes.
+Third, data stores should have an input flow to respond with some output. They are passive entities so cannot initiate data transfer on their own.
+Finally, while telling your story using a DFD, make sure that the data eventually finds a sink.
 
-- Avoid data flows between External Interactors. They cannot be observed by the system.
-- Data always comes from External Interactors.
+We will look at example of these shortly. Meanwhile let's look at sanity checks for external interactors.
 
----
-# DFD Construction
-## Step 5: Check the diagram for sanity (2)
-
-### Data Flows
-- Attached to at least one Process or External Interactor
-
-### Processes in Level 2 and beyond
-- Carefully think about direct dataflows between two separate processes on a single machine  
-Use intermediate data stores such as message queues or domain sockets in a level 2 diagram
-
-???
-
+First sanity check, avoid data flows between External Interactors. They cannot be observed by the system so why include them in our diagram.
+Second, your story should begin with data starting from External Interactors. This sanity check will keep you focused on high priority threat scenarios.
 
 ---
 
@@ -501,23 +491,49 @@ Use intermediate data stores such as message queues or domain sockets in a level
 
 
 ???
+Let's look at how these issues can appear in a DFD diagram.
+In the top left diagram, we don't ever want an external interactor to interact directly with a data store. We need a process element to mediate this interaction.
+The top right diagram, depicts dataflows between two external interactors. You don't want this as the system cannot see or control these, so why include them in the diagram and waste our costly time for analyzing them.
+The leftmost diagram in the second row shows that two data stores are connected directly. Again, we need a process element between them as data stores are static entites. They cannot actively initiate dataflows. They only react to external stimilus.
+The rightmost diagram in the second row illustrates a diagraming issue where the input to the data store is missing, which generates the ouput. Again, data stores are not active entities.
+
+We will come back to the bottom figure after the discussion on the next slide.
+
+---
+# DFD Construction
+## Step 5: Check the diagram for sanity (2)
+
+### Data Flows
+- Attached to at least one Process or External Interactor
+
+### Processes
+- All processes need appropriate _inputs_ to generate _outputs_
+- Carefully think about direct dataflows between two separate processes on a single machine  
+Use intermediate data stores such as message queues or domain sockets in a level 2 diagram
+
+
+???
+Checks for dataflows and processes are a bit simpler. First both ends of a dataflow should be attached to another DFD element. No dangling dataflows. This check is so easy tools can automatically check for it and report issues. This condition is illustrated in the bottom figure on the previous slide.
+
+For processes, the first sanity check is to make sure that all processes have appropriate input to generate outputs. Remember, no output without inputs!
+
+The last sanity check pertains to two processes communicating with each other. Processes that exist in different memory areas cannot talk to each other. So, in a level 2 diagram it would be more accurate to depict intermediate data stores such as message queues, temporary files, or domain sockets for two processes to exchange messages.
 
 ---
 # DFD Construction
 ## Step 6
 ### Simplify
 - Consolidate data flows that always flow together
-
-
-- All processes need appropriate _inputs_ to generate _outputs_. No outputs without inputs!
-
-
 - Avoid partitioning processes based on control logic.  
-Partition processes that perform multiple functions and they exist in different process spaces.
-
-
+Only partition processes that exist in different memory spaces. Different functions of a single program are still in the same memory region.
 - DFDs do not typically show time dependencies.   
 If processes can communicate directly they are assumed to be synchronous!
+
+???
+The final step in DFD construction is to look for opportunities to simplify! Here are some pointers to do so.
+
+First, Consolidate data flows that always flow together
+
 
 ---
 class: middle
