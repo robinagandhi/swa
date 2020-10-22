@@ -455,7 +455,7 @@ At this point, you have a decision to make. Does the DFD need more details to su
 ---
 class: middle
 # DFD Construction
-## Step 5: Check the diagram for sanity (1)
+## Step 5: Sanity Check (1)
 ### Data stores
 - Two data stores should not be connected directly
 - EIs should not directly interact with data stores
@@ -467,13 +467,13 @@ class: middle
 - Data always comes from External Interactors
 
 ???
-Now before we finalize the diagram, it is prudent to check the diagram for sanity.
-Here is a list of things to avoid organized by DFD elements, starting with Data Stores.
+Now before we finalize a DFD, it is prudent do a sanity check.
+Here is a list of things to avoid. I have it organized by DFD elements, starting with Data Stores.
 
 First, two data stores should not be connected with data flows directly. They are static entities they cannot actively transfer data over dataflows.
 Second, external interactors should not directly interact with data stores. As a general convention, data stores are encapsulated or mediated by processes.
 Third, data stores should have an input flow to respond with some output. They are passive entities so cannot initiate data transfer on their own.
-Finally, while telling your story using a DFD, make sure that the data eventually finds a sink.
+Finally, while telling your story using a DFD, make sure that the data eventually finds a sink. These are typically data stores.
 
 We will look at example of these shortly. Meanwhile let's look at sanity checks for external interactors.
 
@@ -487,20 +487,20 @@ Second, your story should begin with data starting from External Interactors. Th
 
 
 ???
-Let's look at how these issues can appear in a DFD diagram.
+Let's look at how some of these issues can appear in a DFD diagram.
 In the top left diagram, we don't ever want an external interactor to interact directly with a data store. We need a process element to mediate this interaction.
-The top right diagram, depicts dataflows between two external interactors. You don't want this as the system cannot see or control these, so why include them in the diagram and waste our costly time for analyzing them.
-The leftmost diagram in the second row shows that two data stores are connected directly. Again, we need a process element between them as data stores are static entites. They cannot actively initiate dataflows. They only react to external stimilus.
-The rightmost diagram in the second row illustrates a diagraming issue where the input to the data store is missing, which generates the ouput. Again, data stores are not active entities.
-
-We will come back to the bottom figure after the discussion on the next slide.
+The top right diagram, depicts dataflows between two external interactors. You don't want this as the system cannot see or control these, so why include them in the diagram and waste our time analyzing them.
+The leftmost diagram in the bottom row shows that two data stores are connected directly. We need a process element between them as data stores are static entites. They cannot actively initiate dataflows. They only react to external stimilus.
+The rightmost diagram in the bottom row illustrates a diagraming issue where the input to the data store is missing, which generates the ouput. Again, data stores are not active entities.
 
 ---
 # DFD Construction
-## Step 5: Check the diagram for sanity (2)
+## Step 5: Sanity Check (2)
 
 ### Data Flows
 - Attached to at least one Process or External Interactor
+
+.top-right[![example](images/avoid-dangling.svg)]
 
 ### Processes
 - All processes need appropriate _inputs_ to generate _outputs_
@@ -509,28 +509,53 @@ Use intermediate data stores such as message queues or domain sockets in a level
 
 
 ???
-Checks for dataflows and processes are a bit simpler. First both ends of a dataflow should be attached to another DFD element. No dangling dataflows. This check is so easy tools can automatically check for it and report issues. This condition is illustrated in the bottom figure on the previous slide.
+Checks for dataflows and processes are a bit simpler. First both ends of a dataflow should be attached to another DFD element. No dangling dataflows. This check is so easy, tools could automatically check for it and report issues. This condition is illustrated in the figure on the top right side.
 
 For processes, the first sanity check is to make sure that all processes have appropriate input to generate outputs. Remember, no output without inputs!
 
-The last sanity check pertains to two processes communicating with each other. Processes that exist in different memory areas cannot talk to each other. So, in a level 2 diagram it would be more accurate to depict intermediate data stores such as message queues, temporary files, or domain sockets for two processes to exchange messages.
+The last sanity check pertains to two processes communicating with each other. Processes that exist in different memory areas cannot exchange messages with each other. Memory isolation at the CPU level would prevent this. So, in a level 2 diagram it would be more accurate to depict intermediate data stores such as message queues, temporary files, or domain sockets for two processes to exchange messages.
 
 ---
 # DFD Construction
 ## Step 6
-### Simplify
+### Simplify (1)
 - Consolidate data flows that always flow together
-- Avoid partitioning processes based on control logic.  
-Only partition processes that exist in different memory spaces. Different functions of a single program are still in the same memory region.
-- DFDs do not typically show time dependencies.   
-If processes can communicate directly they are assumed to be synchronous!
+![example](images/avoid-flows.svg)
+
 
 ???
 The final step in DFD construction is to look for opportunities to simplify! Here are some pointers to do so.
 
-First, consolidate data flows that always flow together. In a given direction, two DFD elements should only be connected with a single dataflow. Lable the dataflow with the most critical data exchanged between the DFD elements in a given scenario. This simplification will result in better automated threat generation using a DFD. We will look at threat generation shortly.
+First, consolidate data flows that always flow together. In a given direction, two DFD elements should only be connected with a single dataflow. If you have multiple flows identified, consolidate them into a single data flow and label the it with the most critical data exchanged between the DFD elements in a given scenario. This simplification will result in better automated threat generation using a DFD. We will look at threat generation shortly.
+
+In the example, I illustrate how two separate dataflows are consolidate into a single dataflow, with a label that is abstract enough to include both data items.
+
+---
+# DFD Construction
+## Step 6
+### Simplify (2)
+- Avoid partitioning processes based on control logic.  
+Only partition processes that exist in different memory spaces. Different functions of a single program are still in the same memory region.
+![example](images/avoid-split.svg)
+
+???
 
 Second, there is a natural tendency to want to partition processes based on functions or classes. Avoid the urge to do this. From a threat analysis perspective, if different program modules reside within the same shared memory area at execution time, splitting them into separate processes is useless. Processes in your DFD diagram should correspond to the runtime processes that would appear in your task manager, when software is executing.
+
+In the example, I illustrate two processes that are two functions that are part of the same program. They both run in the same virtual memory space at runtime. In this case it is better to simplify the diagram by consolidating them into a single sorter process. For security analysis this is more efficient.
+
+
+---
+# DFD Construction
+## Step 6
+### Simplify (3)
+
+- DFDs do not typically show time dependencies.   
+If processes can communicate, they are assumed to be synchronous.  
+
+![example](images/avoid-time.svg)
+
+???
 
 Finally, DFDs are not appropriate to show time dependencies or sequence of messages. UML sequence diagrams or swimlane diagrams would be more appropriate in that case. So avoid creating a sequence of messages using dataflows. Remember that Dataflows are labeled with just the data that is transferred.
 
@@ -546,7 +571,9 @@ It also helps in DFD construction through successive refinement.
 ???
 In summary, we discussed why we want to construct DFDs, how to construct DFDs and how to refine and simplify DFDs.   
 
-In the next video we will look at how we can use DFDs to identify threats.
+Here is the big takeaway, and I said it before: Most attacks come through data, and these attacks are interested in going after data in the system. So design analysis for security is most effective when done from a data-flow perspective.
+
+In the next video we will look at how we can use DFDs to automatically identify threats.
 
 ---
 class: middle, center
