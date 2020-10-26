@@ -580,6 +580,9 @@ class: middle, center
 # Threat Identification
 DFDs allows potential threats to be .red[automatically generated]!
 
+???
+Constructing Data Flow Diagrams is a necessary first step in applying a structured approach to threat scenarios during design. Once a DFD is available, a developer can automatically enumerate potential threats using a simple checklist. To do this, a developer needs no special security training or background. As a result, many companies have found it valuable to perform threat modeling without burdening the security team.
+
 
 ---
 
@@ -595,6 +598,9 @@ class: middle
 - .red[D]enial of Service
 - .red[E]levation of Privilege
 ]
+???
+
+To analyze potential issues at design time, Microsoft has identified six threat categories. Fortunately, these six categories are easy to remember based on an acronym generated using each threat category name's first letter. The acronym is STRIDE, which helps us remember Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service and Elevation of Privilege threat categories.
 
 ---
 
@@ -602,13 +608,21 @@ class: middle
 # Microsoft STRIDE Threats
 
 ## Spoofing
-* A process or entity is something other than the claimed identity
+* A DFD element claims a fake identity
 
 ## Tampering
 * Act of altering bits
 
 ## Repudiation
 * Deny that something happened or an action was taken
+
+???
+Here are some simple definitions to make sure we have a shared understanding of STRIDE threats.   
+> Spoofing means the DFD element, such as a process or an external interactor, claims to be someone they are not.
+
+> Tampering means violating the integrity of data or code.
+
+> Repudiation means a DFD element can deny that something happened, i.e., challenge the result of an action. For example, in an e-commerce scenario, a customer can deny placing an order.
 
 ---
 class: middle
@@ -623,6 +637,16 @@ class: middle
 ## Elevation of Privilege
 * A user can increase capability or privilege by taking advantage of an implementation bug
 
+???
+
+Continuing the list...
+
+> Information disclosure means that an unauthorized user can read data, violating confidentiality
+
+> Denial of service is like what it sounds. In the context of a DFD, the elements that provide services are processes and data stores. So when these elements cannot process incoming requests due to an overload of requests or component failure, availability is impacted.
+
+> Elevation of Privilege is often a pre-cursor to other threats. Here a malicious user can exploit an implementation bug to increase their capability or privilege. So it essential to contain and limit the damage that can be caused by exploiting user-facing components.
+
 ---
 class: middle
 
@@ -632,50 +656,87 @@ class: middle
 A source and target element connected by a data flow
 ![Example of DFD Level 1 Interaction](images/interactiondfd1.svg)
 
+???
+A basic strategy is to instantiate STRIDE threats for each DFD element. This strategy is called STRIDE per element. However, as you can imagine, this would generate many threats for any non-trivial DFD diagram. Instead, we can do something better.  
+
+In a DFD diagram, an interaction refers to a data flow with a source and target. In the example on the slide, we see that the Form Request Data dataflow has a source: the Student external interactor and a target called the Canvas Web App. STRIDE threats make a lot more sense in the context of this interaction. For example, what if the Student spoofs their identify as a Teaching Assistant when interacting with the Canvas Web App? Similarly we can instantiate the rest of STRIDE threats in the context of this interaction. This strategy is very effective and saves time. It is called STRIDE per Interaction.
+
 ---
 class: middle
 
 # STRIDE Per .red[Interaction]
 ## For each interaction apply STRIDE
 - For each STRIDE threat identify the attacker controlled element and the attacked element
+
+## Optimizations
 - For data flows inside a single process space,   
 don’t worry about T, I, or D
 - Prioritize interactions that _cross trust boundaries_
 ???
+As the name suggests, with STRIDE per interaction strategy, we identify the attacker-controlled element and the attacked element connected by a dataflow for each instantiated STRIDE threat.
+
+There are a couple more optimizations that can save us time by reducing the number of threats generated.
+
+First, if you are analyzing data flows within a single process space, i.e., the source and target processes are within the same virtual memory region managed by the operating system, don't worry about Tampering,  Information Disclosure, or Denial of Service threats for those interactions. Why? Well... if the source and target are in the same virtual memory space, a process cannot address concerns related to confidentiality, integrity, and availability. But, spoofing and elevation of privilege are both threats that can have cascading effects that can carry over beyond the limited context. So we cannot ignore them even within a single process space.
+
+The second optimization suggests that we prioritize interactions that cross trust boundaries, which means that we should spend more time analyzing the threats related to interactions that cross a threat boundary. So on the previous slide, we would spend more time studying the interactions that cross the Internet Boundary.
+
+
 ## Significant reduction in number of threats to be analyzed
 ---
 class: middle
 
-# Trust boundaries
-- As an optimization, **STRIDE per Interaction** is only applied for interactions that cross a trust boundary
+# Another Optimization
+- **STRIDE per Interaction** is only applied for interactions that cross a trust boundary
 
 > .red[Trusted/high code reading from untrusted/low]  
-Look for Tampering threats
 
 > .red[High code writing to low]  
-Errors may result in Information Disclosure
+
+
+???
+As an additional optimization, you can apply STRIDE per Interaction strategy only to interactions that cross a trust boundary.
+
+In particular, the following scenarios are critical. When a more trusted code reads from untrusted sources across a trust boundary, the data can be tampered with or come from a spoofed identity.
+
+In contrast, when a trusted code outputs data to untrusted sources across a trust boundary, it is critical to assure that the data being shared is authorized for the recipient. For example, an error message may result in unauthorized Information Disclosure through inference.
+
+In short, interactions crossing a trust boundary deserve intense scrutiny.
 
 ---
 class: top
 # Tool Support
 
 ## Automation
-- Much of this analysis can be automated using simple rules based on the diagram structure
-- Tool support
+- Tool support for threat generation
 
 ## Traceability
 - Would be nice to link all analysis along with the diagram
 - A bit more than a PPT, Visio or Lucidchart!
 
+???
+
+Turns out, much threat generation can be automated using simple rules based on the diagram structure. Also, it would be nice to associate the analysis for each generated threat with the diagram itself. While the DFD is simple enough to be drawn anywhere, the automation and traceability of analysis would require something more than PowerPoint, Visio or Lucid-chart.
+
+So Microsoft has developed a special tool for threat modeling. OWASP is also following in the steps of Microsoft and developing additional cross-platform tool options. But the Microsoft tool is more mature at this point and hence we will use that for our class.
+
 ---
 class: middle
 ## [Microsoft Threat Modeling Tool (TMT)](https://aka.ms/tmt)
 ![toolsupport](images/toolsupport.png)
+
+???
+The tool that we will use for this class is simply called Microsoft threat modeling tool (TMT). This tool only installs on a Windows Operating system. If you are using a MacOS then I recommend you install windows in a virtual machine and then install the tool.
+
+For practice, I recommend that you build a DFD for the Playsound API on Slide [34](http://localhost:8000/slides/lecture-4/design-for-software-se.html#p34) in TMT and then examine the threats identified
+
 ---
 class: middle
 # .center[Threat Mitigation]
 
-.footnote[Why bother if you create a great model, identify lots of threats, and .red[stop!]]
+???
+Now why bother to create a DFD model, identify lots of threats, and then stop!
+So it is important to think about mitigating the identified threats.
 
 ---
 class: middle
@@ -687,6 +748,11 @@ What have similar software packages done and how has that worked out for them?
 1. Invent new mitigations (.red[risky!])
 1. Accept vulnerability in design  
 Risk acceptable, but must be verified and approved
+
+???
+For each threat, we need to make a decision. The first instinct should be to redesign — redesign such that it eliminates the threat. If that is not possible, then apply standard mitigations. In most cases, a standard mitigation library should be maintained, informed by past performance. For example, what have similar software packages done for mitigating the threat? How has that worked out for them and their users? It is better to use a standard library for security services such as cryptography and access control.
+
+If standard mitigations don't exist, then you may have to invent or implement new mitigations. Be very careful in selecting this option, as it may have loopholes that are yet to be discovered. The final option is to do nothing and accept the vulnerability in the design. This option means that the risk from the threat is acceptable, but the designated risk authority should approve such a decision.
 
 ---
 class: middle
@@ -712,19 +778,27 @@ class: middle
 - Authorization
 ]
 
+???
+In many cases, the option to implement a mitigation is the most straightforward. Each STRIDE Threat category also has a corresponding control category that addresses it. For example, an authentication control addresses a threat in the Spoofing category.
+
+With these mappings, the next few slides identifies a few standard mitigations that can be applied in each threat category.
+
 ---
 
 class: middle
 # Standard Mitigations
 
 ## Spoofing
-### Require authentication
-- Data source
-- Code integrity
+### Authentication
+- Data or Code
 
-### Validation of input read from the data source
+### Validation
 - Normalization before neutralization
-- Avoid recursion bombs
+
+???
+Addressing spoofing threats requires a validated identity of the source from which data or code is received. Identify checks are crucial for code downloaded from a remote location.
+
+Authentication controls are often the target of injection attacks. Therefore, when performing authentication checks, normalize the authentication data to a standard representation before any filtering procedures are applied to neutralize special characters used in an attack.
 
 ---
 class: middle
@@ -736,9 +810,13 @@ class: middle
 - Digital signatures and message authentication codes
 - Access Control Lists (ACLs) for data at rest
 
-### Validation of input read from the data source
+### Validation
 - Normalization before neutralization
-- Avoid recursion bombs
+
+???
+Tampering threats require integrity checks to be implemented. Stronger integrity checks are based on digital signatures and cryptographic message authentication codes. Tampering can also be prevented using appropriate permissions for data at rest.
+
+Again, as with spoofing, ensure that the integrity data such as digital signatures and message auth codes are validated before checking.
 
 ---
 class: middle
@@ -746,11 +824,17 @@ class: middle
 
 ## Repudiation
 - One-way log and audit generation mechanism
-- Strong authentication for logging
 
 ## Information Disclosure
 - ACLs
 - Encryption with good key management and protocols
+
+???
+
+Addressing Repudiation requires strong logging and audit controls. It is essential to make sure that logs are forensically sound using appropriate authentication and access control mechanisms.
+
+Information disclosure threats can be addressed appropriate authentication and access control mechanisms. While encryption is likely mitigation, care must be taken to use strong algorithms and have good key management protocols.
+
 ---
 class: middle
 # Standard Mitigations
@@ -760,28 +844,22 @@ class: middle
 - Firewall rules to protect against some network based attacks
 - Use disk and processor quotas to prevent excess disk or CPU consumption
 
+???
+Denial of service threats are addressed by either throttling or rejecting unauthenticated requests. Here are some examples, but other mitigations are undoubtedly possible. In some cases, the mitigations may be implemented outside the system of interest, for example, in a load balancer or firewall.
+
 ---
 class: middle
 # Standard Mitigations
 
 ## Elevation of Privilege
 - Input validation
-- Input validation
-- Input validation
 - ACLs, Roles, Groups
 - Privilege dropping
 - Least privilege
+- Compartmentalization
 
----
-# How to ignore threats?
-## No requirement
-- There are no requirements that the &lt;&lt;element&gt;&gt; protect against &lt;&lt;STRIDE&gt;&gt; threat
-
-## Irrelevant
-- This threat does not exist, so we don't care about &lt;&lt;STRIDE&gt;&gt; threat to the &lt;&lt;element&gt;&gt;
-
-## Not applicable
-- &lt;&lt;STRIDE&gt;&gt; generated threat does not apply to this &lt;&lt;element&gt;&gt;
+???
+Finally, elevation of privilege threats are addressed by containing the damage that can be done. As with spoofing and tampering threats, input validation is a must. In addition, authorization controls can be implemented using permissions or role-based access controls. When using permissions, it is prudent to drop the permissions as soon as the high privilege task is done. Also a process must run with the least privilege necessary to do its task. Finally, the memory region a process can access should be limited. This can help contain the damage from a previously unknown implementation error.
 
 ---
 class: middle
@@ -795,6 +873,35 @@ class: middle
 
 > Admin is attacking user  
 
+???
+When thinking about threats and mitigations, it is best to avoid some distractions. If you are threat modeling an application, which will often be the case, ignore threats that cannot be addressed at the application layer. For example,
+> The computer is infected with malware  
+
+> Someone removed the hard drive and tampers, or
+
+> Admin is attacking user
+
+---
+# How to ignore threats?
+## No requirement
+- There are no requirements that the &lt;&lt;element&gt;&gt; protect against &lt;&lt;STRIDE&gt;&gt; threat
+
+## Irrelevant
+- This threat does not exist, so we don't care about &lt;&lt;STRIDE&gt;&gt; threat to the &lt;&lt;element&gt;&gt;
+
+## Not applicable
+- &lt;&lt;STRIDE&gt;&gt; generated threat does not apply to this &lt;&lt;element&gt;&gt;
+
+???
+Now it may happen that some of the automatically generated threats are not appropriate. In that case, use standard terminology to document the reason for ignoring a generated threat.
+
+The phrase "No requirement" is used to indicate that there is no user requirement that the DFD &lt;&lt;element&gt;&gt; protect against &lt;&lt;STRIDE&gt;&gt; threat
+
+The phrase "Irrelevant" is used to express that the threat does not exist, so we don't care about &lt;&lt;STRIDE&gt;&gt; threat to the DFD &lt;&lt;element&gt;&gt;
+
+Finally, use the "Not applicable" phrase to indicate that the &lt;&lt;STRIDE&gt;&gt; generated threat does not apply to the DFD &lt;&lt;element&gt;&gt;
+
+
 ---
 class: middle
 # Validate the Threat Model
@@ -806,6 +913,19 @@ class: middle
 Testers often finds issues with threat model or missing details
 1. Is each threat mitigated?
 1. Are mitigations done right?  (Assurance case, possibly)
+
+???
+When all threats are addressed, it is time to step back and think about validating the threat model.
+during Validation, we ask questions like:
+
+> Do the threats consider misuse cases?  
+> Does the diagram match code/implementation?   
+> Are enough threats enumerated?  
+> Has Test / QA reviewed the model?  
+Testers often finds issues with threat model or missing details  
+> Is each threat mitigated?  
+> Are mitigations done right?  (Assurance case, possibly)  
+
 
 ---
 
@@ -819,26 +939,24 @@ Testers often finds issues with threat model or missing details
 
 ![EOP](https://c.s-microsoft.com/en-us/CMSImages/EoP_game_screen_shot.jpg?version=4a082487-9fb4-7dd9-ed9f-e79c888c2df4)
 
+???
+To encourage threat modeling in development teams, Microsoft has come up with a card game. The objective of the game is to come of threats for a given DFD to earn points. The player with the most points at the end of the game wins.
 
 ---
 class: middle
-# More about threat modeling
-
-## Blogs
-- Threat Modeling Tool [User Guide](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
-- Bruce Schneier on [threat modeling](http://www.schneier.com/blog/archives/2007/10/threat_modeling.html)
-
-## Practice Diagrams
-- Microsoft [Readings](https://msdn.microsoft.com/en-us/library/aa562036.aspx)
+# Sources and Additional Readings
+- This presentation is borrows a lot from Microsoft training materials on threat modeling and many sources for DFDs  
 
 ## Threat Modeling in Practice
-- [SAFECode Tactical Threat Modeling](https://safecode.org/safecodepublications/tactical-threat-modeling/)
+- Threat Modeling Tool [User Guide](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)  
+- Bruce Schneier on [threat modeling](http://www.schneier.com/blog/archives/2007/10/threat_modeling.html)  
+- [SAFECode Tactical Threat Modeling](https://safecode.org/safecodepublications/tactical-threat-modeling/)  
+- Microsoft [Docs](https://msdn.microsoft.com/en-us/library/aa562036.aspx)
 
----
-# Sources
+???
+This presentation borrows and adapts a lot from Microsoft training materials for threat modeling and many other sources for DFD diagraming techniques.
 
-- This presentation is borrows a lot from Microsoft training materials on threat modeling
-- Many sources for Data flow diagrams
+There are some additional readings on the topic which I link here. These include blogs and white papers that talk about the use of threat modeling in practice at some of the leading companies in software development such as Google, Adobe and Microsoft.
 
 ---
 exclude: true
@@ -864,3 +982,5 @@ class: middle
 class: center, middle
 # Discussion?
 ![that-dont-make-no-sense](https://media.giphy.com/media/DO5JobrylWL7i/giphy.gif)
+???
+In the next video we will talk about structural-design patterns that help to redesign for for security.
