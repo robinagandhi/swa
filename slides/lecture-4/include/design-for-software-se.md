@@ -15,7 +15,7 @@ class: center, middle
 ]
 
 ???
-This comic illustrates the point of inadvertent loopholes. Design analysis often reveals misplaced trust assumptions and user behavior contradictory to established policies.
+This comic illustrates the point of inadvertent loopholes. Our goal with design analysis is to reveal such loopholes that happen due to misplaced trust assumptions or actual user behaviors that might be contradictory to established policies.
 ---
 
 # Systems Security Engineering
@@ -32,7 +32,7 @@ Evidence-based demonstration, through reasoning, that the system-of-interest is 
 ???
 Now, remember that Software security engineering activities exist within three interacting contexts.
 
-We looked at the problem context using requirements engineering activities and techniques. Then we used misuse cases to develop claims, and then argued them using **assurance cases** as part of the trustworthiness context. Now we will see how the solution context transforms the security requirements derived using misuse cases into the system's design requirements.
+We looked at the problem context using requirements engineering activities and techniques. Then we developed assurance claims, and then argued them using **assurance cases** as part of the trustworthiness context. Now we will see how the solution context transforms the security requirements derived using misuse cases into the system's design requirements.
 
 ---
 class: middle
@@ -42,7 +42,7 @@ class: middle
 - **Most attacks come through .red[data]**
 - **Attacks gravitate towards .red[data]**
 ???
-Here is a master tip for design analysis for security engineering. Always remember this. Most attacks come through data, and these attacks are interested in going after data in the system. So design analysis for security is most effective when done from a data-flow perspective.
+Here is a master tip for design analysis for security engineering. Always remember this. Most attacks come through data, and these attacks are interested in going after data in the system. So any design analysis for security is most effective when done from a data-flow perspective.
 
 --
 
@@ -85,9 +85,9 @@ Data Source &#8594; .red[Data Transformations] &#8594; Data Sink
 
 ???
 
-One reason for the popularity of DFDs for security design analysis is that they provide a  simple view of the system. They are visual representation of data flows through a software program, where data comes from, and where it ends up.
+One reason for the popularity of DFDs for security design analysis is that they provide a simple view of the system. They are visual representation of data flows through a software program, including where data comes from, and where it ends up.
 
-So at a programs execution on a machine can be abstracted by simply identifying the data source, data transformations and data sink. A data flow is a trace of how data moves from the source to the sink through various transformations.
+So a program's execution on a machine can be abstracted by simply identifying the data source, data transformations and data sink. A data flow is a trace of how data moves from the source to the sink through various transformations.
 
 --
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -226,7 +226,7 @@ Cookie, Form data, Response page, Credentials, etc.
 ]
 
 ???
-Now that we have DFD elements to show data sources, transformations and sinks, we need a way to show the traces between them to visually depict data flow. In a sense, data flows that connect two DFD elements depict a contract. That is the input provided the DFD element on one end of the data flow is understood by the DFD element on the other end.
+Now that we have DFD elements to show data sources, transformations and sinks, we need a way to show the traces between them to visually depict data flow. A data flow between two DFD elements signifies a contract. That is the input provided the DFD element on one end of the data flow is understood by the DFD element on the other end.
 
 --
 
@@ -363,7 +363,7 @@ Human or Other Systems
 - Draw data flows to connect External Interactors & the Process
 
 ???
-Turns out that DFD levels, starting with Level 0, are a natural progression of how you want to build them. To get started, the first step is to develop a level 0 diagram. This includes drawing a single process that represents the entire system. Remember that there are no data stores in a level 0 diagram. Next identify External interactors and then connect them to the process using dataflows. Name all elements appropriately.  
+DFD levels, starting with Level 0, offer a natural progression to start building a DFD diagram for a given scenario. To get started, the first step is to develop a level 0 diagram. This includes drawing a single process that represents the entire system. Remember that there are no data stores in a level 0 diagram. Next identify External interactors and then connect them to the process using dataflows. Name all elements appropriately.  
 
 ---
 
@@ -382,7 +382,7 @@ Here is design narrative for you to practice building a DFD. Pause the video her
 
 
 ???
-Compare your work with my solution. In this diagram, you will notice right away that it abstracts away a lot of details in the narrative and focuses only on the major external interactors. In this view, it is easy to see where data enters and exits the system.
+Compare your work with my solution. In this Level 0 diagram, you will notice right away that it abstracts away a lot of details in the narrative and focuses only on the major external interactors in the given scenario. In this view, it is easy to see where data enters and exits the system.
 
 ---
 
@@ -396,7 +396,7 @@ class: middle
 - Does it match reality?
 
 ???
-To proceed further in DFD construction, we need a particular scenario. This scenario can can come from our Playsound API narrative or a use case. In the context of a scenario, we add more information to the single level 0 process, such that you can tell a story without making changes to the DFD.
+To proceed further in DFD construction, we try to develop a level 1 DFD for the given Playsound API narrative. Such narratives may also come from a use case diagram. Using the details of the scenario, we add more information to the single level 0 process, such that you can tell a story without making changes to the DFD.
 
 Now pause the video here and try to come up with a level 1 diagram based on the Playsound API narrative.
 
@@ -408,7 +408,7 @@ Now pause the video here and try to come up with a level 1 diagram based on the 
 
 ???
 
-In my solution, I added two data stores to faithfully capture the given narrative and the associated data flows. I can describe the narrative using this diagram, i.e. I can tell a story without any edits to the diagram.
+In my solution, I added two data stores to faithfully capture the given narrative and the associated data flows. I can describe the narrative using this diagram, i.e. I can tell a story without any edits.
 
 ---
 class: middle
@@ -526,7 +526,7 @@ The last sanity check pertains to two processes communicating with each other. P
 ???
 The final step in DFD construction is to look for opportunities to simplify! Here are some pointers to do so.
 
-First, consolidate data flows that always flow together. In a given direction, two DFD elements should only be connected with a single dataflow. If you have multiple flows identified, consolidate them into a single data flow and label the it with the most critical data exchanged between the DFD elements in a given scenario. This simplification will result in better automated threat generation using a DFD. We will look at threat generation shortly.
+First, consolidate data flows that always flow together. In a given direction, two DFD elements should only be connected with a single dataflow. If you have multiple flows identified, consolidate them into a single data flow and label  it with the most critical data exchanged between the DFD elements in a given scenario. This simplification will result in better automated threat generation using a DFD. We will look at threat generation shortly.
 
 In the example, I illustrate how two separate dataflows are consolidate into a single dataflow, with a label that is abstract enough to include both data items.
 
