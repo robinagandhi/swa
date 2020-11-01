@@ -600,7 +600,7 @@ class: middle
 ]
 ???
 
-To analyze potential issues at design time, Microsoft has identified six threat categories. Fortunately, these six categories are easy to remember based on an acronym generated using each threat category name's first letter. The acronym is STRIDE, which helps us remember Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service and Elevation of Privilege threat categories.
+To analyze potential issues at design time, Microsoft has identified six threat categories. Fortunately, these six categories are easy to remember based on an acronym. The acronym is STRIDE, which helps us remember Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service and Elevation of Privilege threat categories.
 
 ---
 
@@ -677,9 +677,13 @@ As the name suggests, with STRIDE per interaction strategy, we identify the atta
 
 There are a couple more optimizations that can save us time by reducing the number of threats generated.
 
-First, if you are analyzing data flows within a single process space, i.e., the source and target processes are within the same virtual memory region managed by the operating system, don't worry about Tampering,  Information Disclosure, or Denial of Service threats for those interactions. Why? Well... if the source and target are in the same virtual memory space, a process cannot address concerns related to confidentiality, integrity, and availability. But, spoofing and elevation of privilege are both threats that can have cascading effects that can carry over beyond the limited context. So we cannot ignore them even within a single process space.
+First, if you are analyzing data flows within a single process space, i.e., the source and target processes are within the same virtual memory region, don't worry about Tampering,  Information Disclosure, or Denial of Service threats. Why? Well... if the source and target processes are in the same virtual memory space, they cannot address concerns related to confidentiality, integrity, and availability from each other.
 
-The second optimization suggests that we prioritize interactions that cross trust boundaries, which means that we should spend more time analyzing the threats related to interactions that cross a threat boundary. So on the previous slide, we would spend more time studying the interactions that cross the Internet Boundary.
+But, spoofing and elevation of privilege are both threats that can have cascading effects that can carry over beyond the limited context. So we cannot ignore them even for processes within a single process space.
+
+The second optimization suggests that we prioritize interactions that cross trust boundaries, which means that we should spend more time analyzing the threats related to interactions that cross a trust boundary.
+
+So on the previous slide, we would spend more time studying the interactions that cross the Internet Boundary.
 
 
 ## Significant reduction in number of threats to be analyzed
@@ -699,7 +703,7 @@ As an additional optimization, you can apply STRIDE per Interaction strategy onl
 
 In particular, the following scenarios are critical. When a more trusted code reads from untrusted sources across a trust boundary, the data can be tampered with or come from a spoofed identity.
 
-In contrast, when a trusted code outputs data to untrusted sources across a trust boundary, it is critical to assure that the data being shared is authorized for the recipient. For example, an error message may result in unauthorized Information Disclosure through inference.
+In contrast, when a trusted code outputs data to untrusted targets across a trust boundary, it is critical to assure that the data being shared is authorized for the recipient. For example, an error message may result in unauthorized Information Disclosure through inference.
 
 In short, interactions crossing a trust boundary deserve intense scrutiny.
 
