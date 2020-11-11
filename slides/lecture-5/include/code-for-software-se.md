@@ -73,13 +73,13 @@ class: middle
 class: middle
 # CWE purpose
 ## Measurement
-- Unified, .red[measurable] set of software weaknesses
+- Unified, .red[measurable] set of weaknesses
 
 ## Communication
-- Effective .red[sharing], description, selection, and use of software security tools and services
+- Effective .red[sharing], description, selection, and use of security tools and services
 
 ## Prioritization
-- .red[Ranking] of software weaknesses related to design and code
+- .red[Ranking] of weaknesses (e.g. [CWE Top 25](https://cwe.mitre.org/top25/archive/2020/2020_cwe_top25.html))
 
 ???
 
@@ -90,10 +90,20 @@ _Typically, we try to write CWE descriptions that describe <behaviors> that oper
 
 class: middle
 # CWE organization
+- Pillar
+- Class
+- Base
+- Variant
+
+???
+
 ![cwe](images/cwe-organization.png)
 
 ---
 # CWE Types
+### Weakness Pillar: e.g. [CWE-20](https://cwe.mitre.org/data/definitions/20.html)
+- Abstract, independent of any specific language or technology
+
 ### Weakness Class: e.g. [CWE-20](https://cwe.mitre.org/data/definitions/20.html)
 - Abstract, independent of any specific language or technology
 
