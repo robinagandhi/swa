@@ -274,6 +274,7 @@ Pause the video here. Use some of the links on the previous slide to conduct you
 
 --
 
+
 - The [NVD Database](https://nvd.nist.gov/vuln/detail/CVE-2019-10097) maps this Vulnerability to   
 [CWE 476](https://cwe.mitre.org/data/definitions/476.html) and [CWE 787](https://cwe.mitre.org/data/definitions/787.html)
 
@@ -302,29 +303,39 @@ class: middle
 - [CWE-22](https://cwe.mitre.org/data/definitions/22.html):  Path traversal
 - [CWE-759](https://cwe.mitre.org/data/definitions/759.html): Use of one-way hash without a salt
 
-## CWE Compatibility
-- [CWE Compatibility and Effectiveness Program](http://cwe.mitre.org/compatible/index.html)
+# CWE Prioritization
+## [Technical Impacts](https://cwe.mitre.org/cwss/cwss_v1.0.1.html#2.3.1) of [Weaknesses](https://cwe.mitre.org/cwraf/ti_scorecard.html)
+
+
+
+???
+Having a short identifier makes CWEs very convenient to refer among developers, in training materials and in tool reports. Here are a few CWEs ID to get familiar with. You can see a range of weakness from buffer overflow to file uploads to path traversal.
+
+The CWE webpage also offers easy tools to filter CWE listings based on the mode of introduction, technology platforms and the consequences of the weakness such as read and modify memory or files or many consequences related to availability and reliability of the software or hardware.
+
+For example you can view CWEs related to requirements and design, separate from implementation issues in the research concepts view.
+
+The technical impacts help focus on the set of weaknesses that contribute to the negative technical impact of relevance in a given context. This helps to filter and prioritize a set of weaknesses.
 
 ---
 
 class: middle
 # CWE Prioritization
-## [Technical Impacts](https://cwe.mitre.org/cwss/cwss_v1.0.1.html#2.3.1) of [Weaknesses](https://cwe.mitre.org/cwraf/ti_scorecard.html)
-1. Read data  
-1. Modify data  
-1. Denial-of-Service: unreliable execution  
-1. Denial-of-Service: resource consumption  
-1. Execute unauthorized code or commands  
-1. Gain privileges / assume identity  
-1. Bypass protection mechanism  
-1. Hide activities  
-
 ## Top CWE lists
-- [CWE Top 25](https://cwe.mitre.org/top25/index.html)
 - Scoring mechanisms: [CWSS](https://cwe.mitre.org/cwss/index.html), [CWRAF](https://cwe.mitre.org/cwraf/index.html)
+- [CWE Top 25](https://cwe.mitre.org/top25/index.html)
+
+## CWE Compatibility
+- [CWE Compatibility and Effectiveness Program](http://cwe.mitre.org/compatible/index.html)
 
 ???
-The technical impacts help focus on the set of weaknesses that contribute to the negative technical impact of relevance in a given context. This helps to filter and prioritize a set of weaknesses.
+Based on stakeholder ratings for technical impacts, the CWEs can be prioritized using the Common Weakness Risk Analysis Framework, which uses the Common Weakness Scoring System.
+
+In addition, using data from the National Vulnerability Database, the CWE also publishes a list of top 25 CWEs that results in the most frequent and severe vulnerabilities.
+
+Finally, the CWE Compatibility and Effectiveness Program allows security tools to be reviewed and registered as officially "CWE-Compatible" and "CWE-Effective," The goal is to help organizations select and evaluate tools and/or services to discover weaknesses in their software.
+
+This is also a good place to look for various mature products that provide security services free or for a fee.
 
 ---
 
@@ -332,13 +343,16 @@ class: middle
 
 # Attack Patterns
 
+???
+While CWEs are useful for developer training and development tools, they are not as useful for testing and pentesting efforts. To support testing efforts, the attack patterns are more useful.
+
 ---
 
 class: middle
 # Common Attack Pattern Enumeration and Classification
 
 ## Enumerates .red[attack patterns] used in exploits
-- Total of 500+ attack patterns
+- Over 500 attack patterns
 - Abstractions:   
 Meta, Standard, Detailed Patterns and Categories
 
@@ -348,10 +362,22 @@ Meta, Standard, Detailed Patterns and Categories
 - Views:    
 [CAPEC 1000](https://capec.mitre.org/data/definitions/1000.html), [CAPEC-3000](https://capec.mitre.org/data/definitions/3000.html)
 
+???
+The Common Attack Pattern Enumeration and Classification (CAPEC™) is a catalog of attack patterns that helps users understand how adversaries exploit weaknesses in software and hardware.
+
+The organization of CAPEC is similar to CWEs using abstractions, views and categories, except the names are a bit different. Attack patterns are classified as Meta, which is the most abstract, then standard and the most specific ones are called Detailed patterns.
+
+Depending on the level of abstraction, the amount of details describing the exploit vary. For example CAPEC 242 is a Meta Pattern that talks about Code Injection. A related CAPEC 63 is a standard pattern that describes how to explore, experiment and exploit a cross-site scripting weakness, which is CWE -79. CAPEC 86 is a detailed attack pattern that describes how to exploit cross-site scripting through HTTP headers. It exploits weakness CWE-80, Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)
+
+So you can now start to understand how the Attack Patterns are linked with the Weaknesses. If you were to visit CWE-80, you can can also see related Attack Patterns.
+
 ---
 class: middle
 
 # Vulnerabilities
+
+???
+While we started the discussion with abstractions for weaknesses and attack patterns, the place where these show up together is vulnerabilities. It is important to keep track of publicly reported vulnerabilities for discovery and patching processes.
 
 ---
 
@@ -363,6 +389,9 @@ class: middle
 
 ![cve](http://cve.mitre.org/about/images/cve_example.gif)
 
+???
+The common vulnerabilities and exposures is a large dictionary of publicly reported and confirmed vulnerabilities. A short CVE ID is similar to a hashtag on social media sites. Just as a hashtag allows a quick aggregation of posts related to a topic, the unique CVE ID, allows different vulnerability databases to sync their information about a vulnerability with others.
+
 ---
 class: middle
 
@@ -371,14 +400,31 @@ class: middle
 - CVEs use Common Platform Enumeration (CPE) to identify affected products and packages. [Search Engine](https://nvd.nist.gov/vuln/search)
 - Total CVEs: [NVD Dashboard](https://nvd.nist.gov/general/nvd-dashboard)
 
+???
+In addition to private vulnerability databases maintained by organizations and tool vendors, the National Institute of Standards and Technologies or NIST also maintains an authoritative database of CVEs. This is called the National Vulnerability Database.
+
+The NVD offered advanced search features and download formats for vulnerability information. It has has a nice dashboard to see the dynamic status of the number of vulnerabilities being reported and their severity.
+
+Vulnerabilities also use a Common Platform Enumeration Scheme to quickly search vulnerabilities in specific vendor products. For example you can use a CPE URL to uniquely reference a particular software product and its version.
+
+Starting in 2019, the NVD database started to consistently link vulnerabilities to related common weaknesses using CWE IDs.
+
 ---
 
 # Visual Recap
 ![relationships](images/CVE-CWE-CAPEC.png)
 
+???
+Here is a summary of the state-of-the-art knowledge bases today that make the "badness of code" measure-able. Weaknesses are attacked by Attack Patterns, which in turn confirm the presence of vulnerabilities. Vulnerabilities are realizations of Weaknesses that are exploitable.
+
+In your semester projects or any software assurance project that involves reviewing code, it is important to translate your findings into corresponding weakness and attack pattern definitions. This mapping will help you measure the "badness" of your codebase that can be discovered using manual or automated code review. The amount of "badness" that can be discovered is directly proportional to the quality of the manual or automated tools for code review.
+
 ---
 class: middle
 # Secure Coding Guidelines
+
+???
+We saw many efforts to make the "badness" of code measureable. What about measuring "goodness"? Secure coding guidelines provide recommendations for defensive coding practices that minimize security side-effects.
 
 ---
 class: middle
@@ -392,8 +438,41 @@ class: middle
 ## Rules
 - [DCL30-C](https://www.securecoding.cert.org/confluence/display/c/DCL30-C.+Declare+objects+with+appropriate+storage+durations), [MEM30-C](https://www.securecoding.cert.org/confluence/display/c/MEM30-C.+Do+not+access+freed+memory)
 
-## Other resources
+???
+The SEI CERT Secure Coding Guidelines are developed through a broad-based community effort for commonly used programming languages such as C, C++, Java, and Perl, and the Android™ platform.
+
+Similar to the CWE, the secure coding guidelines also have a short identifier. For example DCL30-C, indicates that is a guideline about declaration and initialization (DCL) for the C language. More specifically, it recommends that objects must be declared with appropriate storage durations. Its specification provides examples of both non-compliant and compliant code.
+
+In addition both the CWE and the secure coding guidelines cross reference each other. This mapping makes a great teaching tool for secure coding.  
+
+---
+class: middle
+# Other resources
 - [Secure Programs HowTo](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO.html#LANGUAGE-SPECIFIC)
+
+???
+The knowledge bases we have discussed have a good coverage of issues in commonly used languages. For your projects, I would like to point you to an open book that talks about language specific issues in a number of other languages include python and shell scripting. It also talks about issues related to authenticating on the web and cryptography. This might be useful for your projects.
+
+---
+class: middle
+# Discussion?
+## Rejoicing Project Managers!
+### Johnny, avoid these weaknesses! : CWE
+### Johnny...these are the ways of the bad guys: CAPEC
+### Johnny...learn from your mistakes: CVE
+### Johnny...follow secure coding guidelines: SEI CERT
+
+## Why Johnny Still Can't Write Secure Code?
+.top-right[
+![dr.evil](https://upload.wikimedia.org/wikipedia/en/1/16/Drevil_million_dollars.jpg)
+]
+
+???
+In summary, we examined several knowledge bases that make security measurable for implementation and coding artifacts.
+
+It is worth pointing out that just because these knowledge bases exist, does not mean that developers can write secure code! The details to consider for avoiding weaknesses are enormous during the coding phases. Not to mention, the developer's primary focus is to make the application work!
+
+In the next video we will talk about how code review strategies and automated tools can assist efforts to analyze code more practical and trustworthy.  
 
 ---
 exclude: true
