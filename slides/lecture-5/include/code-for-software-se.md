@@ -251,7 +251,7 @@ Expand all, Turn on .blue[_Show Details_] option
 Then navigate to parent, child, peer relationships
 
 ???
-You can probably realize that 
+From a large CWE collection, it is important that we find the right CWE to describe a mistake in software. Let's look at the mapping guidance from the CWE maintainers. 
 
 
 ---
