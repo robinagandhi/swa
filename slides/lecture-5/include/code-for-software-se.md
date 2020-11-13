@@ -244,14 +244,17 @@ Finally, we see that all these weaknesses are part of the CWE 1000 Research Conc
 
 ## Search resources
 - [Full text search](https://cwe.mitre.org/find/index.html)
-- [Full listing](https://cwe.mitre.org/data/definitions/2000.html)
 - Navigating views: [CWE-1000](https://cwe.mitre.org/data/definitions/1000.html), [CWE-699](https://cwe.mitre.org/data/definitions/699.html), [CWE-888](https://cwe.mitre.org/data/definitions/888.html)  
 Expand all, Turn on .blue[_Show Details_] option
 - For a CWE page, turn on .blue[_Mapping-Friendly_] option.  
 Then navigate to parent, child, peer relationships
 
 ???
-From a large CWE collection, it is important that we find the right CWE to describe a mistake in software. Let's look at the mapping guidance from the CWE maintainers. 
+From a large CWE collection, it is important that we find the right CWE to describe a mistake in software. Let's look at the mapping guidance from the CWE. First, map to a weakness only. This includes Pillar, Class, Base and Variant Weakness types. Do not map to Categories or View, even though they have a CWE-ID. This is important. Finally, when mapping, pick the lowest level of abstraction among pillar, class, base and variant weaknesses. So, a cross-site scripting weakness that allows doubled character manipulations, would be best mapped to CWE-85 as it is the most specific among CWE listed on the previous slide. Also, it is not a view or a category.
+
+The CWE website, provides several convenient features to find the right CWE. In addition to searching by CWE-ID, it also supports full text search. Another option is to navigate to the views and expand the entire hierarchy. In addition, you can also turn on the show details option to show the CWE description. Now a simple webpage search can be used to look for relevant keywords.
+
+Once you find a relevant CWE, you can also examine its taxonomic and non-taxonomic relationships to find the best fit for your search.
 
 
 ---
@@ -259,16 +262,28 @@ From a large CWE collection, it is important that we find the right CWE to descr
 class: middle
 
 # Exercise
-## Map [CVE-2019-10097](https://nvd.nist.gov/vuln/detail/CVE-2019-10097) to a CWE
+## Which CWE best describes the mistake that led to vulnerability [CVE-2019-10097](https://nvd.nist.gov/vuln/detail/CVE-2019-10097)?
 
-- Use this Vulnerability Description:  
+- Vulnerability Description:  
 In Apache HTTP Server 2.4.32-2.4.39, when mod_remoteip was configured to use a trusted intermediary proxy server using the "PROXY" protocol, a specially crafted PROXY header could trigger a stack buffer overflow or NULL pointer deference. This vulnerability could only be triggered by a trusted proxy and not by untrusted HTTP clients.  
+
+???
+Let's try this out. Consider this Vulnerability description in Apache HTTP Webserver. Which CWE do you think best describes the mistake that led to this vulnerability?
+
+Pause the video here. Use some of the links on the previous slide to conduct your own independent investigation. Make a list of one of more CWEs that you find best captures the mistake that led to this vulnerability. Remember, a good mapping finds the most specific CWE.
 
 --
 
-
 - The [NVD Database](https://nvd.nist.gov/vuln/detail/CVE-2019-10097) maps this Vulnerability to   
 [CWE 476](https://cwe.mitre.org/data/definitions/476.html) and [CWE 787](https://cwe.mitre.org/data/definitions/787.html)
+
+???
+
+Now that you performed your own search, let's compare your results to what the National Vulnerability Database database lists as relevant CWEs.
+
+Your CWEs could be more abstract or more specific than these. But as long as they are in the neighborhood, your search succeeded.  
+
+You can practice your search skills on any recent vulnerability descriptions in the NVD database.
 
 ---
 exclude: true
