@@ -2,7 +2,7 @@ class: center, middle
 # .red[Coding] for Software Security Engineering
 
 ???
-Security engineering activities learned previously in the class clearly establish what security means for a solution that satisfies stakeholder security requirements. This analysis will help you identify code that implements active protection mechanisms and perform rigorous code reviews, tests, or even formal verification to assure that it is correct.
+Previously learned security engineering activities in the class establish what security means for a solution that satisfies stakeholder security requirements. This prior analysis will now help us identify code where we need to devote efforts such as rigorous code reviews, and automated tests to assure that it is correct.
 
 
 ---
@@ -203,7 +203,7 @@ class: middle
 e.g. [CWE-1000: Research Concepts](https://cwe.mitre.org/data/definitions/1000.html)
 
 ???
-Views help to organize into convenient subsets. CWE-1000, the research concepts view is a rich hierarchy of weaknesses. Another useful view from a development lifecycle perspective is CWE-699, Software Development View, but the hierarchy is not as deep as CWE-1000.
+Views help to organize CWEs into convenient subsets. CWE-1000, the research concepts view is a rich hierarchy of weaknesses. Another useful view from a development lifecycle perspective is CWE-699, Software Development View, but the hierarchy is not as deep as CWE-1000.
 
 --
 
@@ -216,7 +216,7 @@ Another organizing unit in the CWE is a Category. It groups a set of CWEs with a
 
 ---
 # CWE Organization Example
-### Pillar: [CWE-707: Improper Neutralization](https://cwe.mitre.org/data/definitions/20.html)
+### Pillar: [CWE-707: Improper Neutralization](https://cwe.mitre.org/data/definitions/707.html)
 
 ### Class: [CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)
 
@@ -229,7 +229,9 @@ Another organizing unit in the CWE is a Category. It groups a set of CWEs with a
 ### Category:[CWE-990: Tainted Input to Command](https://cwe.mitre.org/data/definitions/990.html)
 
 ???
-Here is a collection of CWEs related to Cross-site scripting, which is a common mistake found in web applications. With cross-site scripting, an attacker can inject malicious scripts into the website's page structure, which is then delivered to other unsuspecting users. This weakness is clearly described in CWE-79. According to the CWE, its level of abstraction is a Base Weakness. We see that there are Class and Pillar weaknessess that are more abstract ways to describe this issue. CWE-20 Improper Input validation is a class weakness and CWE-707–Improper Neutralization is a Pillar weakness. We can also examine a more specific version of cross-site scripting with is CWE 85, Doubled Character XSS. Here the attacker inject two sets of malicious characters. Input validation if done incorrectly, may filter the first character but leave the second one in.
+Here is a collection of CWEs related to Cross-site scripting, which is a common mistake found in web applications. This weakness is clearly described in CWE-79. With cross-site scripting, an attacker can inject malicious scripts into the website's page structure, which is then delivered to other unsuspecting users. This CWE is a Base Weakness.
+
+We see that there are Class and Pillar weaknessess that are more abstract ways to describe this issue. CWE-20 Improper Input validation is a class weakness and CWE-707–Improper Neutralization is a Pillar weakness. We can also examine a more specific version of cross-site scripting with is CWE 85, Doubled Character XSS. Here the attacker inject two sets of malicious characters. Input validation if done incorrectly, may filter the first character but leave the second one in.
 
 Finally, we see that all these weaknesses are part of the CWE 1000 Research Concepts view. Many of these weaknesses are also share a common characteristic of Tainted input to Command. So you will also find them as members of CWE 990 category.
 
@@ -268,7 +270,7 @@ class: middle
 In Apache HTTP Server 2.4.32-2.4.39, when mod_remoteip was configured to use a trusted intermediary proxy server using the "PROXY" protocol, a specially crafted PROXY header could trigger a stack buffer overflow or NULL pointer deference. This vulnerability could only be triggered by a trusted proxy and not by untrusted HTTP clients.  
 
 ???
-Let's try this out. Consider this Vulnerability description in Apache HTTP Webserver. Which CWE do you think best describes the mistake that led to this vulnerability?
+Let's try out some of these features. Consider this Vulnerability description in Apache HTTP Webserver. Which CWE do you think best describes the mistake that led to this vulnerability?
 
 Pause the video here. Use some of the links on the previous slide to conduct your own independent investigation. Make a list of one of more CWEs that you find best captures the mistake that led to this vulnerability. Remember, a good mapping finds the most specific CWE.
 
@@ -303,8 +305,8 @@ class: middle
 - [CWE-22](https://cwe.mitre.org/data/definitions/22.html):  Path traversal
 - [CWE-759](https://cwe.mitre.org/data/definitions/759.html): Use of one-way hash without a salt
 
-# CWE Prioritization
-## [Technical Impacts](https://cwe.mitre.org/cwss/cwss_v1.0.1.html#2.3.1) of [Weaknesses](https://cwe.mitre.org/cwraf/ti_scorecard.html)
+# CWE Filters
+-  Filters for Views, Technical Impacts: [CWE-1000](https://cwe.mitre.org/data/definitions/1000.html)
 
 
 
@@ -316,6 +318,8 @@ The CWE webpage also offers easy tools to filter CWE listings based on the mode 
 For example you can view CWEs related to requirements and design, separate from implementation issues in the research concepts view.
 
 The technical impacts help focus on the set of weaknesses that contribute to the negative technical impact of relevance in a given context. This helps to filter and prioritize a set of weaknesses.
+
+Additional Reading [Optional]: [Technical Impacts](https://cwe.mitre.org/cwss/cwss_v1.0.1.html#2.3.1) of [Weaknesses](https://cwe.mitre.org/cwraf/ti_scorecard.html)
 
 ---
 
@@ -367,9 +371,11 @@ The Common Attack Pattern Enumeration and Classification (CAPEC™) is a catalog
 
 The organization of CAPEC is similar to CWEs using abstractions, views and categories, except the names are a bit different. Attack patterns are classified as Meta, which is the most abstract, then standard and the most specific ones are called Detailed patterns.
 
-Depending on the level of abstraction, the amount of details describing the exploit vary. For example CAPEC 242 is a Meta Pattern that talks about Code Injection. A related CAPEC 63 is a standard pattern that describes how to explore, experiment and exploit a cross-site scripting weakness, which is CWE -79. CAPEC 86 is a detailed attack pattern that describes how to exploit cross-site scripting through HTTP headers. It exploits weakness CWE-80, Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)
+Depending on the level of abstraction, the amount of details describing the exploit vary. For example CAPEC 242 is a Meta Pattern that talks about Code Injection. A related CAPEC 63 is a standard pattern that describes how to explore, experiment and exploit a cross-site scripting weakness. CAPEC 86 is a detailed attack pattern that describes how to exploit cross-site scripting through HTTP headers. It exploits weakness CWE-80, Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)
 
 So you can now start to understand how the Attack Patterns are linked with the Weaknesses. If you were to visit CWE-80, you can can also see related Attack Patterns.
+
+CAPEC Views 1000 and 3000 are good places to start a search for attack patterns.
 
 ---
 class: middle
@@ -407,7 +413,7 @@ The NVD offered advanced search features and download formats for vulnerability 
 
 Vulnerabilities also use a Common Platform Enumeration Scheme to quickly search vulnerabilities in specific vendor products. For example you can use a CPE URL to uniquely reference a particular software product and its version.
 
-Starting in 2019, the NVD database started to consistently link vulnerabilities to related common weaknesses using CWE IDs.
+More recently, the NVD database started to consistently link vulnerabilities to related common weaknesses using CWE IDs.
 
 ---
 
@@ -472,7 +478,7 @@ In summary, we examined several knowledge bases that make security measurable fo
 
 It is worth pointing out that just because these knowledge bases exist, does not mean that developers can write secure code! The details to consider for avoiding weaknesses are enormous during the coding phases. Not to mention, the developer's primary focus is to make the application work!
 
-In the next video we will talk about how code review strategies and automated tools can assist efforts to analyze code more practical and trustworthy.  
+In the next video we will talk about how code review strategies and automated tools can make efforts to analyze code, more practical and trustworthy.  
 
 ---
 exclude: true
