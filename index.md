@@ -41,9 +41,9 @@ Content will be linked as we progress through the semester. This allows to me to
 <!-- * Lecture: Architectural patterns for security (Available only Canvas) -->
   * Reading: NIST 800-160 Appendix-F: Design Principles for Security (Available on Canvas)
 1. **Coding for Software Security Engineering**
-  * Lecture: [Coding for SSE Lecture]()    <!-- https://robinagandhi.github.io/swa/slides/lecture-5/code-for-software-se.html-->  
+  * Lecture: [Coding for SSE Lecture](https://robinagandhi.github.io/swa/slides/lecture-5/code-for-software-se.html)
   * Knowledge-bases: [Common Weakness Enumeration](http://cwe.mitre.org/), [CAPEC](https://capec.mitre.org/), [CERT Secure Coding Guidelines](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
-  * Portals and tools: [DHS SWAMP](https://www.mir-swamp.org/), [SpotBugs](https://spotbugs.github.io), [SonarQube](https://www.sonarqube.org), [SonarCloud](https://sonarcloud.io/), [Visual Code Grepper](https://github.com/nccgroup/VCG), [AFL security-oriented fuzzer](http://lcamtuf.coredump.cx/afl/), [Clang Static Analyzer](https://clang-analyzer.llvm.org), [Other tools](https://www.mir-swamp.org/#tools/public) and [language specific guidance](https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/language-specific.html).
+  * Tools: [SpotBugs](https://spotbugs.github.io), [SonarQube](https://www.sonarqube.org), [SonarCloud](https://sonarcloud.io/), [Visual Code Grepper](https://github.com/nccgroup/VCG), [AFL security-oriented fuzzer](http://lcamtuf.coredump.cx/afl/), [Clang Static Analyzer](https://clang-analyzer.llvm.org), [Flawfinder](https://dwheeler.com/flawfinder/), [Other tools (free or paid)](https://cwe.mitre.org/compatible/category.html), [a few more tools curated by SAMATE-NIST](https://samate.nist.gov/index.php/Source_Code_Security_Analyzers.html), [Bytecode sanners](https://samate.nist.gov/index.php/Byte_Code_Scanners.html), [binary scanners](https://samate.nist.gov/index.php/Binary_Code_Scanners.html) and [language specific guidance](https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/language-specific.html).
   * Lecture: Code review tools and techniques
   * Hands-on: Working session for code review and automated tool analysis.  
 1. **Testing for Software Security Engineering**
