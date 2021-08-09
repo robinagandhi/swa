@@ -3,11 +3,11 @@ layout: default
 title: 8420 Syllabus
 description: CYBR 8420 Software Assurance Syllabus
 ---
-# Syllabus
+# Syllabus - Fall 2021
 
 # Course Description
-* Assurance is a reasoned, audit-able argument created to support claimed beliefs about a particular entity *when it is not possible (i.e. time, technology, or resources are constrained) to examine every possible circumstance related to that claim*.
-* This course is an intersection of knowledge areas necessary to perform activities relevant for promoting assurance through claims argued and supported with evidence from `Software Security Engineering (SSE)` activities. SA entails SSE.
+* Assurance is a reasoned, audit-able argument created to support claimed beliefs about an entity – Generally, the entity is so complex that it is not possible (i.e. time, technology, or resources are constrained) to examine every possible circumstance related to the claimed beliefs.
+* This course is an intersection of knowledge areas necessary to perform activities relevant for promoting assurance through claims argued and supported with evidence from `Software Security Engineering (SSE)` activities. Software Assurance entails SSE.
 * This course takes on a software development lifecycle perspective for the prevention of flaws. It is not just secure coding!
 
 # Class Format
