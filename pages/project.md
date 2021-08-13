@@ -6,9 +6,9 @@ description: CYBR 8420 Software Assurance Project
 
 # Team Semester Project
 
-You might ask why form teams? To that I have to say that today we build and analyze things that are so complex that no one person can fully make or comprehend them —naturally, engineering activities to manage complexity are team-based—for example, open-source software development. Team members could be in different time zones, have competing priorities, and different skill levels. Experiencing such teamwork is essential for a course on software assurance. Thus, we will form five-person teams that will work together on a class project.
+You might ask why have a team project? To that I have to say that today we build and analyze things that are so complex that no one person can fully make or comprehend them —naturally, engineering activities to manage complexity are team-based—for example, open-source software development. Team members could be in different time zones, have competing priorities, and different skill levels. Experiencing such teamwork is essential for a course on software assurance. So, we will form five-person teams that will work together on a class project.
 
-This class strives to encourage learning by doing and making a real difference in the practice of building software. To turn this spirit into reality, you will work on a semester-long project with an open-source software project. Five students will select a unique open-source software project and examine opportunities for security-related improvements.
+This class strives to encourage learning by doing and making a real difference in the practice of building software. To turn this spirit into reality, you will work on a semester-long project with an open-source software project. Each team will select a unique open-source software project and examine opportunities for security-related improvements.
 
 The project will have the following major deliverables. Not surprisingly, they coincide with the major topics in the course.
 
@@ -19,8 +19,8 @@ The project will have the following major deliverables. Not surprisingly, they c
 1. Code analysis for Software Security Engineering
 1. Recorded Presentation
 
-## Project Inspirations
-If you have never worked with open source project communities, your heart is probably racing at this time. Don't worry. They are not that scary. Also, we will have the right preparation in the course that will allow you to have purposeful interactions with these communities. For now, I want you to read through these blogs to understand what it is like to engage with an open source project: [blog 1](http://blog.teamtreehouse.com/getting-involved-open-source-projects), [blog 2](http://www.firsttimersonly.com), [blog 3](https://opensource.guide/how-to-contribute)
+## Project Inspiration
+If you have never worked with open source project communities, your heart is probably racing at this time. Don't worry. They are not that scary. Also, we will have the right preparation in the course that will allow you to have purposeful interactions with these communities. For now, I want you to read through these blogs to understand what it is like to engage with an open source project: [blog 1](https://opensource.guide/how-to-contribute), [blog 2](http://blog.teamtreehouse.com/getting-involved-open-source-projects), [blog 3](http://www.firsttimersonly.com).
 
 These blogs probably helped address some of your anxiety. Another source of anxiety can be related to what open source project to select. As you think about joining a team, use the links below to explore impactful open source projects and have some ideas about the projects you want to engage with.
 
@@ -29,7 +29,7 @@ These blogs probably helped address some of your anxiety. Another source of anxi
 Openhub has a lot of meta-information about open source projects that can help you better explore and understand your selection. Github search and Code Triage are also good resources to find projects.
 
 * [Openhub](https://www.openhub.net) by Synopsys/Black Duck Software
-* Github [search](https://github.com/search) and [trends](https://github.com/trending).
+* Github [trends](https://github.com/trending).
 * [Code Triage](https://www.codetriage.com). Open source projects on GitHub that need your help.
 
 ## Projects to **Avoid**
@@ -37,7 +37,7 @@ The software assurance methods in this course apply quite broadly. Codebases bas
 * In-active projects (no recent contributions, no activity on forums, lack of wiki or documentation)
 * Old vulnerable project versions
 * Mobile Apps. We have other classes that do that.
-* Projects with languages that do not have a lot of tool support
+* Projects with less-widely used languages that lack tool support for automated analysis
 * Project with little or no security requirements. As surprising as it may sound, not all software has security needs!
 * Projects not accepting contributions
 
@@ -50,20 +50,22 @@ To give you some motivation, here are teams from prior semesters that have engag
 ## Past Teams Project Repositories
 The deliverables from the class project are posted in a public repository. You can find the artifacts from prior semester teams below. While these can act as examples, there is no guarantee that they did it right! They may also be following different assignment instructions.
 
+* [Teams 2020](https://robinagandhi.github.io/swa/slides/teams-2020/teams.html)
 * [Teams 2019](https://robinagandhi.github.io/swa/slides/teams-2019/teams.html)
 * [Teams 2018](https://robinagandhi.github.io/swa/slides/teams-2018/teams.html)
 * [Teams 2017](https://robinagandhi.github.io/swa/slides/teams-2017/teams.html)
 * [Teams 2016](https://robinagandhi.github.io/swa/slides/teams-2016/teams.html)
 
-## Teams Project for Fall 2020
-[Teams 2020](https://robinagandhi.github.io/swa/slides/teams-2020/teams.html)
+## Teams Project for Fall 2021
+
+* Coming soon!
 
 ## Grading
 * The project accounts for 40% of the total course grade.
 * 30% of your project grade will be based on peer feedback throughout the semester and attendance at weekly project meetings.
 * The other 70% of the project grade will be based on overall team performance.
 
-Strive to be an active contributor and volunteer for project tasks in your teams. Avoid being a [social loafer](http://www.businessdictionary.com/definition/social-loafing.html) at all costs!
+Strive to be an active contributor and volunteer for project tasks in your teams. Avoid being a [social loafer](https://www.verywellmind.com/what-is-social-loafing-2795883) at all costs!
 
 
 <!--

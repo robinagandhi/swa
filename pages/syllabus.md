@@ -18,7 +18,7 @@ description: CYBR 8420 Software Assurance Syllabus
 * [MS in Cybersecurity Core](https://www.unomaha.edu/college-of-information-science-and-technology/school-of-interdisciplinary-informatics/cybersecurity/ms-cybr-reqs.php)  
 * [Graduate CS concentrations](https://www.unomaha.edu/college-of-information-science-and-technology/computer-science/graduate/graduate-concentrations.php)
 
-# Learning Objectives
+# Course Learning Objectives
 * SA1. Students will be able to explain the basic concepts and principles of software assurance.
 * SA2. Students will be able to evaluate arguments for assurance claims.
 * SA3. Students will be able to generate security requirements for a given threat environment.
@@ -29,17 +29,17 @@ description: CYBR 8420 Software Assurance Syllabus
 * SA8. Students will be able to use modern software engineering tools for code management and collaboration
 
 # Teaching methods
-* A combination of *good readings*, *discussions* and *trying out methods learned*.
+* A combination of *readings*, *discussions* and *trying out methods learned*.
 * Team-based working sessions and check-ins with the instructor.
-* Quizzes per module.
-* Group assignments.
-* Timed, open book exams with access to a network-connected computer.
+* Quiz for every module.
+* Team-based assignments.
+* Timed, open book exams with access to a network-connected computer. Exams are to be completed individually.
 
 # Resource Materials
 
 Lecture slides, videos, readings, and supplemental materials will be organized using modules in Canvas.
 
-## Textbooks
+## Textbooks/References
 
 Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to use NU VPN and authenticate with your user-id to access these books. Alternatively, you could use single sign-on using your `@unomaha.edu` email on safari books online.
 
@@ -53,7 +53,7 @@ Instead of a single textbook, I have identified a series of books available from
 
 * [Software Security: Building Security In, By Gary McGraw](https://www.safaribooksonline.com/library/view/software-security-building/0321356705) (Software security engineering with lifecycle touchpoints)
 
-* [High Assurance Design: Architecting Secure and Reliable Enterprise Applications, By Clifford J. Berg](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0321375777) [Old App e-book, requires vpn and access through library. Good collection of design patterns for Java Enterprise Applications]
+* [Cyber Security Engineering: A Practical Approach for Systems and Software Assurance](https://learning.oreilly.com/library/view/cyber-security-engineering/9780134189857), By Nancy R. Mead, Carol C. Woody
 
 * [Secure Programming with Static Analysis, By Brian Chess and Jacob West](https://www.safaribooksonline.com/library/view/secure-programming-with/9780321424778) (Excellent book for understanding the ins and outs of static analysis)
 
@@ -61,13 +61,12 @@ Instead of a single textbook, I have identified a series of books available from
 
 * [Design Patterns: Elements of Reusable Object-Oriented Software, By Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides](https://www.safaribooksonline.com/library/view/design-patterns-elements/0201633612) (Seminal book on design patterns. We will look at several of them for relevance to designing for SSE)
 
-* [Learning Python Design Patterns, By Gennadiy Zlobin ](https://www.safaribooksonline.com/library/view/learning-python-design/9781783283378)(Noteworthy patterns in this book: Facade, Singleton, MVC, Observer, Command, Factory)
-
-* [Exploiting Software: How to Break Code, By Greg Hoglund, Gary McGraw](http://proquest.safaribooksonline.com.leo.lib.unomaha.edu/0201786958) [Old App e-book, requires vpn and access through library. Good collection of attack strategies for software components)
+* [Mastering Python Design Patterns - Second Edition](https://learning.oreilly.com/library/view/mastering-python-design/9781788837484/)
+By Kamon Ayeva, Sakis Kasampalis (Noteworthy patterns in this book: Facade, Singleton, MVC, Observer, Command, Factory)
 
 * [The Browser Hacker's Handbook, By Wade Alcorn; Christian Frichot; Michele Orru](https://www.safaribooksonline.com/library/view/the-browser-hackers/9781118662090) (This book will help you think about attacks if you are working with Web-apps)
 
-* [Hands-on Security in DevOps](https://learning.oreilly.com/library/view/hands-on-security-in/9781788995504/), By Tony Hsu, 2018 (Integration of security into DevOps)
+* [Hands-on Security in DevOps](https://learning.oreilly.com/library/view/hands-on-security-in/9781788995504/), By Tony Hsu (Integration of security into DevOps)
 
 * [Bug Bounty Hunting Essentials](https://learning.oreilly.com/library/view/bug-bounty-hunting/9781788626897/), by Shahmeer Amir, Carlos A. Lozano, 2018 (How White-hat hacking can be a full-time job)
 
@@ -75,9 +74,11 @@ Instead of a single textbook, I have identified a series of books available from
 
 * Problem Frames: Analyzing and Structuring Software Development Problems, By Michael Jackson, Addison-Wesley (A seminal work in Requirements Engineering)
 
+* [Exploiting Software: How to Break Code](https://www.amazon.com/Exploiting-Software-How-Break-Code/dp/0201786958), By Greg Hoglund, Gary McGraw. (Not available as a e-book but it has a good collection of attack strategies for software components. I have a copy, which I can lend to interested students)
+
 ## Additional Resources
 
-* [Secure Programming for Linux and Unix HOWTO](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html), David Wheeler  
+* [Secure Programming for Linux and Unix HOWTO](https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html), David Wheeler  
 * [Software Assurance in Education, Training and Certification, Pocketguide](https://robinagandhi.github.io/swa/resources/pocketguide.pdf), Ed. Robin Gandhi. Was written in 2010 so some of the links and resources might be dated, but the discussion is just as relevant!
 * [SEI Book Series on Software Assurance](http://resources.sei.cmu.edu/library/asset-view.cfm?assetid=465870) (Good collection of relevant books on the topic)
 
@@ -92,7 +93,7 @@ While course content can be passively consumed, active participation in various 
 Any exam or assignment material submitted which looks identical in any fashion to another student's work or external sources will be considered plagiarism. I will adjust the grade to the minimum possible (Zero) for the assignment for all parties involved. Any further offenses will result in an “F” for the course, accompanied by academic dishonesty actions taken by the College Dean. Note carefully the University policy on [academic integrity](http://goo.gl/NVWUBy) and [code of conduct](https://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/code-of-conduct.php).  
 Make yourself familiar with writing techniques such that you can cite external sources without plagiarizing. Here are a few links to writing resources: [[1]](https://owl.purdue.edu/owl/research_and_citation/using_research/quoting_paraphrasing_and_summarizing/index.html), [[2]](https://owl.purdue.edu/owl/research_and_citation/using_research/quoting_paraphrasing_and_summarizing/paraphrasing.html)
 
-Many of your deliverables will be on Github in a public repository. As a result, you must be extra careful to avoid plagiarism through responsible and ethical practices.
+Many of your class deliverables will be on Github in a public repository. As a result, you must be extra careful to avoid plagiarism through responsible and ethical practices.
 
 # Exams
 There will be a mid-term and a final exam. The exams will consist of essay-type questions which may require design and modeling activities. These exams will allow full access to technology and are intended to help focus on the essential parts of the course material, reinforce learning, and provide timely feedback. The exam questions will typically have multiple parts, be sure you answer all the parts.
@@ -101,7 +102,7 @@ There will be a mid-term and a final exam. The exams will consist of essay-type 
 Synchronous working sessions for teams will correspond to the stages of the software development lifecycle. The objective of these sessions is to gain hands-on experience with various techniques and tools for software assurance and apply them to understand the engineering activities necessary for building security in. Details about these sessions will follow as we go further into the semester.
 
 # Team-based Semester Project
-We will examine this aspect of the course in more detail next in this Module.
+We will examine this aspect of the course in more detail on the [Team Project Page](https://robinagandhi.github.io/swa/pages/project.html).
 
 # Grading
 20% Mid-term  
@@ -115,21 +116,17 @@ On Canvas I have a weekly schedule for the course that will help you plan ahead.
 Due to the current and advanced nature of this class, it is under constant revision! Expect shuffling of course topics as we progress through the semester. Constructive feedback on the content is highly encouraged. Fork it on Github!
 
 # Supplies
-* To support class activities a laptop or desktop computer is required.
+* To support class activities and access course materials, a laptop or desktop computer with a webcam and mic is required.
 * A notebook, and pencil. We will be doing a lot of drawing!
 
 # Important Dates
-### Mid-term Exam for Fall 2020
+### Mid-term Exam for Fall 2021
 
-  * Available on Canvas starting October 10th
+  * Available on Canvas starting October 9th
 
-### Final Exam for Fall 2020
+### Final Exam for Fall 2021
 
-  * Available on Canvas starting December 12th
-
-### Final Grade Availability for Fall 2020
-
-  * Available by December 29th
+  * Available on Canvas starting December 11th. Final Grade Available by December 31st
 
 # Emails
 All email sent to me regarding the class must have the class descriptor and your name in the subject field, e.g. (8420 - TOPIC). We will be using Canvas for the course.
