@@ -9,14 +9,13 @@ Content will be linked as we progress through the semester. This allows to me to
 
 1. **The Demand for Software Assurance**
   * [Competencies](http://resources.sei.cmu.edu/library/asset-view.cfm?assetid=47953) and Sample [Job](https://robinagandhi.github.io/swa/resources/swa-positions-1.pdf) [Descriptions](https://robinagandhi.github.io/swa/resources/swa-positions-2.pdf)
-1. [**What is Software Assurance?**](https://robinagandhi.github.io/swa/slides/lecture-0/software-assurance.html)
+1. What is Software Assurance?
   * Reading: [Why hackers know more about our systems?](https://learning.oreilly.com/library/view/system-assurance/9780123814142/B9780123814142000014.xhtml)
 1. **Collaborating when working on Software**
-  - Self-paced module: Get familiar with version control. [Github Primer](https://robinagandhi.github.io/swa/pages/github.html)
-  <!-- - Self-paced module: Get familiar with containers. [Container Primer](https://robinagandhi.github.io/swa/pages/containers.html) -->
+  - Self-paced module: Get familiar with version control.
 1. **Engineering For Assurance**
   * Systems Security Engineering. Based on Chapter 2 from [NIST SP 800-160](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf).
-1. [**Engaging with Open Source Projects**](https://robinagandhi.github.io/swa/slides/lecture-0-1/EngagingWithOpenSourceProjects.pdf), by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
+1. Engaging with Open Source Projects, by [Matt Germonprez](http://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/matt-germonprez.php)
 1. **Requirements for Software Security Engineering**
   * The Meaning of Requirements for Software Security Engineering
   * Elicitation - Misuse Cases
