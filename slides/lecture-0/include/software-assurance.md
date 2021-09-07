@@ -216,7 +216,7 @@ This definition introduces some new things. First we see the primary focus on so
 ???
 Now let's look at the National Security Agency's interpretation of software assurance.NSA Center for Assured Software was stood up in 2005. Their definition is similar to the one by CNSS, but further refined to focus on **exploitable** vulnerabilities.
 
-We know that NSA is not in the business of developing software, they testing it. So the emphasis on engineering is missing here as well.
+We know that NSA is not in the business of developing software, they are only interested in (pen-)testing it. So the emphasis on engineering is missing here as well.
 ---
 # Dept. of Homeland Security
 ## A planned and systematic set of multidisciplinary activities must be applied to ensure the conformance of both .green[software and processes] to requirements, standards, and procedures
