@@ -66,5 +66,3 @@ class: center, middle
 
 ## Project Repo
 - [Repo](https://github.com/mkolakow/CSCI-8420-Software-Assurance)
-
----

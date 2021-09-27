@@ -50,6 +50,8 @@ To give you some motivation, here are teams from prior semesters that have engag
 ## Past Teams Project Repositories
 The deliverables from the class project are posted in a public repository. You can find the artifacts from prior semester teams below. While these can act as examples, there is no guarantee that they did it right! They may also be following different assignment instructions.
 
+
+* [Teams 2021](https://robinagandhi.github.io/swa/slides/teams-2021/teams.html)
 * [Teams 2020](https://robinagandhi.github.io/swa/slides/teams-2020/teams.html)
 * [Teams 2019](https://robinagandhi.github.io/swa/slides/teams-2019/teams.html)
 * [Teams 2018](https://robinagandhi.github.io/swa/slides/teams-2018/teams.html)
