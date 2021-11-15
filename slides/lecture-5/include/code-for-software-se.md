@@ -133,7 +133,7 @@ class: middle
 - Effective .red[sharing], description, selection, and use of security tools and services
 
 ## Prioritization
-- .red[Ranking] of weaknesses (e.g. [CWE Top 25](https://cwe.mitre.org/top25/archive/2020/2020_cwe_top25.html))
+- .red[Ranking] of weaknesses (e.g. [CWE Top 25](https://cwe.mitre.org/top25))
 
 ???
 By providing a unique, short identifier to a weakness description, the purpose of the CWE is to make weaknesses measureable. This also aids in effective sharing of knowledge and consistent reporting of issues by different security tools. Measurability is desirable, so that weaknesses can be prioritized based on criteria such as frequency of occurrence and observed severity of their impact. For example, data from publicly reported vulnerabilities is now used to identify the mistakes that lead to them. This produces the CWE top 25 list (Visit website and observe).
@@ -454,10 +454,11 @@ In addition both the CWE and the secure coding guidelines cross reference each o
 ---
 class: middle
 # Other resources
-- [Secure Programs HowTo](http://www.dwheeler.com/secure-programs/Secure-Programs-HOWTO.html#LANGUAGE-SPECIFIC)
+- [Secure Programs HowTo](https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/language-specific.html)
 
 ???
 The knowledge bases we have discussed have a good coverage of issues in commonly used languages. For your projects, I would like to point you to an open book that talks about language specific issues in a number of other languages include python and shell scripting. It also talks about issues related to authenticating on the web and cryptography. This might be useful for your projects.
+Link to the full book [https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html](https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html)
 
 ---
 class: middle
