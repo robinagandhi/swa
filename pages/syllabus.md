@@ -3,7 +3,7 @@ layout: default
 title: 8420 Syllabus
 description: CYBR 8420 Software Assurance Syllabus
 ---
-# Syllabus - Fall 2021
+# Syllabus - Fall 2022
 
 # Course Description
 * Assurance is a reasoned, audit-able argument created to support claimed beliefs about an entity – Generally, the entity is so complex that it is not possible (i.e. time, technology, or resources are constrained) to examine every possible circumstance related to the claimed beliefs.
@@ -42,6 +42,10 @@ Lecture slides, videos, readings, and supplemental materials will be organized u
 ## Textbooks/References
 
 Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to use NU VPN and authenticate with your user-id to access these books. Alternatively, you could use single sign-on using your `@unomaha.edu` email on safari books online.
+
+* NIST SP 800-160 Vol. 1, [Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems](https://csrc.nist.gov/publications/detail/sp/800-160/vol-1/final), National Institute of Standards and Technology.
+
+* SP 800-160 Vol. 2 Rev. 1, [Developing Cyber-Resilient Systems: A Systems Security Engineering Approach](https://csrc.nist.gov/publications/detail/sp/800-160/vol-2-rev-1/final), National Institute of Standards and Technology.
 
 * [Secure Coding Principles and Practice, By Mark G. Graff; Kenneth R. van Wyk](https://www.safaribooksonline.com/library/view/secure-coding-principles/0596002424)(Commonsense and lightweight approach to software security engineering. Lots of war stories from the authors)
 
@@ -120,13 +124,7 @@ Due to the current and advanced nature of this class, it is under constant revis
 * A notebook, and pencil. We will be doing a lot of drawing!
 
 # Important Dates
-### Mid-term Exam for Fall 2021
-
-  * Available on Canvas starting October 9th
-
-### Final Exam for Fall 2021
-
-  * Available on Canvas starting December 11th. Final Grade Available by December 31st
+[See Canvas](https://unomaha.instructure.com/login)
 
 # Emails
-All email sent to me regarding the class must have the class descriptor and your name in the subject field, e.g. (8420 - TOPIC). We will be using Canvas for the course.
+All email sent to me regarding the class must have the class descriptor and your name in the subject field, e.g. (8420 - TOPIC). We will be using Canvas for all course assignment submissions and exams.

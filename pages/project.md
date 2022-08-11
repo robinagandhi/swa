@@ -58,16 +58,13 @@ The deliverables from the class project are posted in a public repository. You c
 * [Teams 2017](https://robinagandhi.github.io/swa/slides/teams-2017/teams.html)
 * [Teams 2016](https://robinagandhi.github.io/swa/slides/teams-2016/teams.html)
 
-## Teams Project for Fall 2021
+## Teams Project for Fall 2022
 
 * Coming soon!
 
-## Grading
+## Project Grading
 * The project accounts for 40% of the total course grade.
-* 30% of your project grade will be based on peer feedback throughout the semester and attendance at weekly project meetings.
-* The other 70% of the project grade will be based on overall team performance.
-
-Strive to be an active contributor and volunteer for project tasks in your teams. Avoid being a [social loafer](https://www.verywellmind.com/what-is-social-loafing-2795883) at all costs!
+* 20% of your project grade will be based on peer feedback throughout the semester and attendance at weekly project meetings. So strive to be an active contributor and volunteer for project tasks in your teams. Avoid being a [social loafer](https://www.verywellmind.com/what-is-social-loafing-2795883) at all costs!
 
 
 <!--
