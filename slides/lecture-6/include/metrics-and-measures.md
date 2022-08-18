@@ -23,13 +23,19 @@ We now live in a world where wearable sensors provide many measurements, but is 
 class: middle
 # Why define .red[Metrics]?
 Context: The engineered artifacts are too complex to be fully understood, but there is a desire to reduce risk
-- Understand the performance or diagnose issues
-- Quantify a problem/solution/trustworthiness attribute
-- Support discussion, simulation or inquiry
+- Understand performance or diagnose issues
+- Quantify an attribute
+- Support inquiry or simulation
 - Focus on claims/goals/outcomes
 
 ???
+To start our discussion, let's establish the context. Typically we need to think about metrics when the artifacts that we are building or engineering are so complex that their behaviors cannot be fully understood or enumerated. Yet, there is a desire to reduce risk of a security compromise that could lead to various tangible and intangible asset losses. 
 
+In this context, we seek to define metrics to understand the performance of our engineering activities in reducing security flaws or diagnosing issues using metrics to test a hypothesis and collecting measures to generalize findings.
+
+Metrics can also help quantify some attribute of the problem, solution or the trustworthiness context of the software being developed. Easily undersood metrics can be benchmarked to understand deviations from expected norms. 
+
+Finally, defining metrics early in the software lifecycle allows a manager to focus on on desired outcomes agnostic of the technologies that support those outcomes. More often than not, technologies often dominate the conversation about security contraints necessary for a software project, instead of the outcomes necessary for the threat enviornment in which the software project will operate.
 
 ---
 class: middle
@@ -43,31 +49,29 @@ class: middle
 
 
 ???
-Jaquith posits that a good metric has three characteristics [Jaquith 2007]:
+In her book, Security metrics, Jaquith suggests that a good metric has the following characteristics. First, the metric should be simple to explain and straightforward to determine so that its meaning can be widely understood. Next, we should strive to minimize subjectivity in its measurement, i.e. it should be consistently measured, regardless of who or what tool is used to collect measurements. Frequently collected metrics should also be cheap to gather, ideally using automation. If a metric is not cheap to gather, then it will likely not be collected frequently to inform decisions. 
 
-• Simple to explain and straightforward to determine so the meaning can be widely understood
+Good metrics should be based on at least one countable unit of measure. For example, the metric “number of application security defects” counts defects. By using a countable unit of measure, any measurement process, manual or tool-supported, can consistently express the results in terms of the number of defects found. Multiple units of measure can also be combined in one metric, for example "number of application security defects per 1,000 lines of code,” which provides two units of measure. By incorporating a second dimension (dividing by 1,000 lines of code), we have constructed a metric that can be used for benchmarking. This allows us to compare code quality to within and accross projects.
 
-• Expressible in time, money, or something that can be converted into these readily accepted parameters
-
-• Readily structured for benchmarking so that change can be quickly identified and evaluated
-
-Further, a good metric must be consistently measurable, able to be gathered at a low cost (preferably automated), preferably quantitative (expressed as a number or percentage), and contextually specific to be relevant for decision makers to take action.
-
-Frequently Computed Metrics Should Be Cheap to Gather
-
-Good metrics should evaluate to a number. They should also contain at least one associated unit of measure that characterizes the things being counted. For example, the metric “number of application security defects” expresses one unit of measure—namely, defects. By using a unit of measure, the analyst knows how to consistently express results of a measurement process that looks for defects.
-
-Expressible as a cardinal number or percentage with at least one unit of measure (time, money, counts, etc.)
-
-But if one unit of measure is good, two are better. For example, a better metric might be “number of application security defects per 1,000 lines of code,” which provides two units of measure. By incorporating a second dimension (dividing by 1,000 lines of code), we have constructed a metric that can be used for benchmarking.
-
-“Contextually specific” is a shorthand way of saying that a good metric ought to pass the “smell test.” You do not want managers wrinkling their noses and asking belligerent questions like “And this helps me how?”
+Finally, the metric must be contextually specific, which means it use for supporting decisions or taking meaningful actions is not a mystery. As, Jaquith puts it, a good metric ought to pass the “smell test.” You do not want managers wrinkling their noses and asking questions like “And this helps me how?”
 
 ---
+class: middle
 
-# Application security Metrics
+# Security .green[measures] come from...
+* Software 
+* Engineering steps
+* Engineers or vendor capabilities
+* Software trust relationships
+* Operational environment
 
 ???
+
+While many metrics can be developed, measures relevant to security can be collected from the software itself, the engineering steps used to create and maintain that software, the capabilities of the software engineers developing the software or vendors from whom we acquire the software, the trust relationships from the software to other systems and the controls on those connections, and finally, the threats in the operational environment in which the software executes.
+
+Organizations should establish a broad software measurement program in place and add assurance considerations to it rather than just consider security measures in a vacuum. Software measurement assesses two related but distinctly different attributes: functional correctness and structural correctness. Functional correctness measures how the software performs in its environment. Structural correctness assesses the actual product and process implementation.
+
+---
 
 APPLICATION SECURITY
 
