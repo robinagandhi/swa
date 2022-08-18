@@ -21,19 +21,19 @@ We now live in a world where wearable sensors provide many measurements, but is 
 
 ---
 class: middle
-# Why define Metrics?
+# Why define .red[Metrics]?
 Context: The engineered artifacts are too complex to be fully understood, but there is a desire to reduce risk
-- Understand the performance of an engineering activity or diagnose issues
+- Understand the performance or diagnose issues
 - Quantify a problem/solution/trustworthiness attribute
-- Support discussion making, simulation and inquiry
-- Put the focus on claims/goals/outcomes, 
+- Support discussion, simulation or inquiry
+- Focus on claims/goals/outcomes
 
 ???
 
 
 ---
 class: middle
-# Characteristics of a good Metric?
+# Characteristics of a good .red[Metric]?
 - Easy to explain 
 - Consistently measured
 - Cheap to gather
@@ -65,4 +65,12 @@ But if one unit of measure is good, two are better. For example, a better metric
 
 ---
 
+# Application security Metrics
 
+???
+
+APPLICATION SECURITY
+
+Applications are the electronic engines that drive most businesses. Microsoft Office, web servers, order-management software, supply chain management, and ERP systems are all applications that businesses rely on every day. Applications automate firms’ workforce
+
+https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9780321349989/files/graphics/f74tab01.jpg
