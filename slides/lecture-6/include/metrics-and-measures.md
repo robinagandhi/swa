@@ -83,7 +83,32 @@ While many metrics can be developed, measures relevant to security can be collec
 Organizations should establish a broad software measurement program in place and add assurance considerations to it rather than just consider security measures in a vacuum. Software measurement assesses two related but distinctly different attributes: functional correctness and structural correctness. Functional correctness measures how the software performs in its environment. Structural correctness assesses the actual product and process implementation.
 
 ---
+class: middle
 
+.left-column[ ## Measuring
+- Emperical Data
+- Cross-sectional/time-series
+- Correlation
+- Before and after
+]
+
+.right-column[ ## Modeling
+- Risk Equations
+- Annualized Loss Expectancy (ALE)
+- Linear Algebra
+- Why things happen?
+]
+
+???
+Much of the measurement in security might actually refer to modeling, but they are different. It is quite natural to think about  “security metrics” from the point of view of modeling threats, residual risk and potential losses. On the other hand, empirical measurements show the state of the world, but don't provide any explations as to why some projects are better than the other. While modeling is necessary to operationalize theories and validate through measurements, it is a much more involved and difficult process. Good models supply us with rationales for measurement.
+
+A good example of emperical measurements is the Build Security In Maturity Model or BSIMM. As a descriptive model, the only goal of the BSIMM is to observe and report real-world software security initiatives. We simply report observations, which in turn can be used as benchmarks to compare similar initiaties in an industy vertical.
+
+On the other hand, NIST 800-53 Control Catalog and related baselines are a model to provide recommendations regarding what minimum security controls should be implemented based on the perceived criticality level of an information system. 
+
+---
+
+???
 APPLICATION SECURITY
 
 Applications are the electronic engines that drive most businesses. Microsoft Office, web servers, order-management software, supply chain management, and ERP systems are all applications that businesses rely on every day. Applications automate firms’ workforce
