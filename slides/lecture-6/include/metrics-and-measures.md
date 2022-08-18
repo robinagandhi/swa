@@ -41,29 +41,40 @@ Finally, defining metrics early in the software lifecycle allows a manager to fo
 class: middle
 # Characteristics of a good .red[Metric]?
 - Easy to explain 
-- Consistently measured
-- Cheap to gather
-- Expressible (time, money, counts, etc.)
-- Can be benchmarked
-- Contextually-specific
-
 
 ???
-In her book, Security metrics, Jaquith suggests that a good metric has the following characteristics. First, the metric should be simple to explain and straightforward to determine so that its meaning can be widely understood. Next, we should strive to minimize subjectivity in its measurement, i.e. it should be consistently measured, regardless of who or what tool is used to collect measurements. Frequently collected metrics should also be cheap to gather, ideally using automation. If a metric is not cheap to gather, then it will likely not be collected frequently to inform decisions. 
+In her book, Security metrics, Jaquith suggests that a good metric has the following characteristics. First, the metric should be simple to explain and straightforward to determine so that its meaning can be widely understood. Next, we should strive to minimize subjectivity in its measurement, i.e. it should be consistently measured, regardless of who or what tool is used to collect measurements. 
+--
+- Consistently measured
 
+--
+- Cheap to gather
+
+???
+Frequently collected metrics should also be cheap to gather, ideally using automation. If a metric is not cheap to gather, then it will likely not be collected frequently to inform decisions. 
+--
+- Expressible (time, money, counts, etc.)
+
+???
 Good metrics should be based on at least one countable unit of measure. For example, the metric “number of application security defects” counts defects. By using a countable unit of measure, any measurement process, manual or tool-supported, can consistently express the results in terms of the number of defects found. Multiple units of measure can also be combined in one metric, for example "number of application security defects per 1,000 lines of code,” which provides two units of measure. By incorporating a second dimension (dividing by 1,000 lines of code), we have constructed a metric that can be used for benchmarking. This allows us to compare code quality to within and accross projects.
 
 Finally, the metric must be contextually specific, which means it use for supporting decisions or taking meaningful actions is not a mystery. As, Jaquith puts it, a good metric ought to pass the “smell test.” You do not want managers wrinkling their noses and asking questions like “And this helps me how?”
+
+--
+- Can be benchmarked
+
+--
+- Contextually-specific
 
 ---
 class: middle
 
 # Security .green[measures] come from...
-* Software 
-* Engineering steps
-* Engineers or vendor capabilities
-* Software trust relationships
-* Operational environment
+- Software 
+- Engineering steps
+- Engineers or vendor capabilities
+- Software trust relationships
+- Operational environment
 
 ???
 
