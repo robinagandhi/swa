@@ -130,7 +130,7 @@ What are the Goals/Claims to be proven?
 - Assurance is in context of a claim.
 
 ???
-To approach any complex situation, it makes sense to first write down the outcomes that we are interested in demonstrating. This is the first assurance concept that I want you to become familiar with. To focus on outcomes, you may ask the question: What are the claims that need to proven given a complex situation? Once you know the claims, then you can think of ways to demonstrate the belief associate with the claim by collecting evidence from the complex situation, i.e. we plan how to argue about the claims.
+To approach any complex situation, it makes sense to first write down the outcomes that we are interested in demonstrating. This is the first assurance concept that I want you to become familiar with. To focus on outcomes, you may ask the question: What are the claims that need to proven given a complex situation? Once you know the claims, then you can think of ways to demonstrate the belief associated with the claim by collecting evidence from the complex situation, i.e. we plan how to argue about the claims.
 
 ---
 class:middle
@@ -616,7 +616,7 @@ class: middle
 ## .orange[&lt;VERB-PHRASE&gt;]  
 - .orange[Verb-Phrase] defines a predicate using the critical property of the subject along with its expected value and related uncertainty
 
-## Consider [diagramming sentences](http://grammar.ccc.commnet.edu/grammar/diagrams2/one_pager1.htm)
+## Consider [diagramming sentences](https://www.grammarly.com/blog/sentence-diagramming/)
 - Avoid compound predicates
 
 ???
