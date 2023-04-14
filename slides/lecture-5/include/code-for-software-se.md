@@ -272,7 +272,7 @@ In Apache HTTP Server 2.4.32-2.4.39, when mod_remoteip was configured to use a t
 ???
 Let's try out some of these features. Consider this Vulnerability description in Apache HTTP Webserver. Which CWE do you think best describes the mistake that led to this vulnerability?
 
-Pause the video here. Use some of the links on the previous slide to conduct your own independent investigation. Make a list of one of more CWEs that you find best captures the mistake that led to this vulnerability. Remember, a good mapping finds the most specific CWE.
+Pause here. Use some of the links on the previous slide to conduct your own independent investigation. Make a list of one of more CWEs that you find best captures the mistake that led to this vulnerability. Remember, a good mapping finds the most specific CWE.
 
 --
 
@@ -479,7 +479,7 @@ In summary, we examined several knowledge bases that make security measurable fo
 
 It is worth pointing out that just because these knowledge bases exist, does not mean that developers can write secure code! The details to consider for avoiding weaknesses are enormous during the coding phases. Not to mention, the developer's primary focus is to make the application work!
 
-In the next video we will talk about how code review strategies and automated tools can make efforts to analyze code, more practical and trustworthy.  
+In the next discussion we will talk about how code review strategies and automated tools can make efforts to analyze code, more practical and trustworthy.  
 
 ---
 exclude: true
