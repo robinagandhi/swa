@@ -1138,3 +1138,7 @@ In summary, assurance cases provide a much needed structure and logic for activi
 > Canvas has no exploitable XSS weaknesses.  
 > All Canvas XSS weaknesses have been sufficiently mitigated.  
 > Canvas attack surface is minimized.  
+
+More recent analysis of Security Assuance Cases
+Mohamad, M., Steghöfer, JP. & Scandariato, R. Security assurance cases—state of the art of an emerging approach. Empir Software Eng 26, 70 (2021). https://doi.org/10.1007/s10664-021-09971-7
+
