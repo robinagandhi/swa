@@ -479,7 +479,7 @@ In summary, we examined several knowledge bases that make security measurable fo
 
 It is worth pointing out that just because these knowledge bases exist, does not mean that developers can write secure code! The details to consider for avoiding weaknesses are enormous during the coding phases. Not to mention, the developer's primary focus is to make the application work!
 
-In the next discussion we will talk about how code review strategies and automated tools can make efforts to analyze code, more practical and trustworthy.  
+Additional reading and discussion for the future can include code review strategies and automated tools can make efforts to analyze code, more practical and trustworthy.  
 
 ---
 exclude: true
