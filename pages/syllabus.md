@@ -3,7 +3,7 @@ layout: default
 title: 8420 Syllabus
 description: CYBR 8420 Software Assurance Syllabus
 ---
-# Syllabus - Fall 2022
+# Syllabus - Fall 2023
 
 # Course Description
 * Assurance is a reasoned, audit-able argument created to support claimed beliefs about an entity – Generally, the entity is so complex that it is not possible (i.e. time, technology, or resources are constrained) to examine every possible circumstance related to the claimed beliefs.
@@ -43,11 +43,13 @@ Lecture slides, videos, readings, and supplemental materials will be organized u
 
 Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to use NU VPN and authenticate with your user-id to access these books. Alternatively, you could use single sign-on using your `@unomaha.edu` email on safari books online.
 
-* NIST SP 800-160 Vol. 1, [Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems](https://csrc.nist.gov/publications/detail/sp/800-160/vol-1/final), National Institute of Standards and Technology.
+* NIST SP 800-160 Vol. 1 Rev. 1, [Engineering Trustworthy Secure Systems](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1r1.pdf), National Institute of Standards and Technology.
 
-* SP 800-160 Vol. 2 Rev. 1, [Developing Cyber-Resilient Systems: A Systems Security Engineering Approach](https://csrc.nist.gov/publications/detail/sp/800-160/vol-2-rev-1/final), National Institute of Standards and Technology.
+* NIST SP 800-160 Vol. 2 Rev. 1, [Developing Cyber-Resilient Systems: A Systems Security Engineering Approach](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v2r1.pdf), National Institute of Standards and Technology.
 
-* [Secure Coding Principles and Practice, By Mark G. Graff; Kenneth R. van Wyk](https://www.safaribooksonline.com/library/view/secure-coding-principles/0596002424)(Commonsense and lightweight approach to software security engineering. Lots of war stories from the authors)
+* [Cyber Security Engineering: A Practical Approach for Systems and Software Assurance](https://learning.oreilly.com/library/view/cyber-security-engineering/9780134189857), By Nancy R. Mead, Carol C. Woody
+
+* [Secure Coding Principles and Practice, By Mark G. Graff; Kenneth R. van Wyk](https://www.safaribooksonline.com/library/view/secure-coding-principles/0596002424)(Commonsense and lightweight approach to software security engineering. Lots of war stories from the authors. While the book may appear dated, principles still remain relevant)
 
 * [System Assurance: beyond Detecting Vulnerabilities, By Mansourov, Nikolai, and Djenana Campara](https://www.safaribooksonline.com/library/view/system-assurance/9780123814142) (Standards-based definition and assessment of software weaknesses, creating an assurance argument)
 
@@ -56,8 +58,6 @@ Instead of a single textbook, I have identified a series of books available from
 * [Enterprise Software Security, By Kenneth R. van Wyk; Mark G. Graff; Dan S. Peters; Diana L. Burley](https://www.safaribooksonline.com/library/view/enterprise-software-security/9780321604378) (How to ease into a software assurance mindset in an organization)
 
 * [Software Security: Building Security In, By Gary McGraw](https://www.safaribooksonline.com/library/view/software-security-building/0321356705) (Software security engineering with lifecycle touchpoints)
-
-* [Cyber Security Engineering: A Practical Approach for Systems and Software Assurance](https://learning.oreilly.com/library/view/cyber-security-engineering/9780134189857), By Nancy R. Mead, Carol C. Woody
 
 * [Secure Programming with Static Analysis, By Brian Chess and Jacob West](https://www.safaribooksonline.com/library/view/secure-programming-with/9780321424778) (Excellent book for understanding the ins and outs of static analysis)
 
@@ -78,8 +78,6 @@ By Kamon Ayeva, Sakis Kasampalis (Noteworthy patterns in this book: Facade, Sing
 
 * Problem Frames: Analyzing and Structuring Software Development Problems, By Michael Jackson, Addison-Wesley (A seminal work in Requirements Engineering)
 
-* [Exploiting Software: How to Break Code](https://www.amazon.com/Exploiting-Software-How-Break-Code/dp/0201786958), By Greg Hoglund, Gary McGraw. (Not available as a e-book but it has a good collection of attack strategies for software components. I have a copy, which I can lend to interested students)
-
 ## Additional Resources
 
 * [Secure Programming for Linux and Unix HOWTO](https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html), David Wheeler  
@@ -94,7 +92,9 @@ While course content can be passively consumed, active participation in various 
 2. **Emotional engagement**: comfortable talking to peers; engage in group learning where appropriate; ask questions about course material; interested, inquisitive and curious about academic content.
 
 # Policy on Plagiarism
-Any exam or assignment material submitted which looks identical in any fashion to another student's work or external sources will be considered plagiarism. I will adjust the grade to the minimum possible (Zero) for the assignment for all parties involved. Any further offenses will result in an “F” for the course, accompanied by academic dishonesty actions taken by the College Dean. Note carefully the University policy on [academic integrity](http://goo.gl/NVWUBy) and [code of conduct](https://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/code-of-conduct.php).  
+Any exam or assignment material submitted which looks identical in any fashion to another student's work or external sources will be considered plagiarism. Use of generative AI technology for exams and assignments instead of your original work will be considered a violation of academic integrity. Class assignments and exams aim to assess your understanding of the subject material, not AI. Someone else's work can be used in support of your arguments using appropriate citations; however, it is strongly discouraged to copy and paste entire paragraphs from external sources without proper synthesis and integration into your writing.
+
+Upon discovery of academic disonesty, I will adjust the grade to the minimum possible (Zero) for the assignment for all parties involved. Any further offenses will result in an “F” for the course, accompanied by academic dishonesty actions taken by the College Dean. Note carefully the University policy on [academic integrity](http://goo.gl/NVWUBy) and [code of conduct](https://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/code-of-conduct.php).  
 Make yourself familiar with writing techniques such that you can cite external sources without plagiarizing. Here are a few links to writing resources: [[1]](https://owl.purdue.edu/owl/research_and_citation/using_research/quoting_paraphrasing_and_summarizing/index.html), [[2]](https://owl.purdue.edu/owl/research_and_citation/using_research/quoting_paraphrasing_and_summarizing/paraphrasing.html)
 
 Many of your class deliverables will be on Github in a public repository. As a result, you must be extra careful to avoid plagiarism through responsible and ethical practices.
