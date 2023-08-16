@@ -121,7 +121,7 @@ Due to the current and advanced nature of this class, it is under constant revis
 
 # Supplies
 * To support class activities and access course materials, a laptop or desktop computer with a webcam and mic is required.
-* A notebook, and pencil. We will be doing a lot of drawing!
+* A notebook, and pencil. It helps to first scribble your ideas on paper and then tranfer them into an electronic medium for sharing. We will be doing a lot of drawing!
 
 # Important Dates
 [See Canvas](https://unomaha.instructure.com/login)
