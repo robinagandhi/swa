@@ -9,7 +9,7 @@ description: CYBR 8420 Hall of Fame
 A collection of Github interactions based on the course project.   
 This list includes successful pull requests, issues and other interactions with upstream project developers.
 
-## Fall 2022 Teams
+## Fall 2023 Teams
 
 * << Space available! Will your team make it? I sure hope so.>>
 
