@@ -396,7 +396,7 @@ A project also has automated workflows to add items automatically from issues in
 [https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically)
 
 ## Building Tasklists
-For your projects, planning task and subtasks can be usefule. Try adding tasklists in your hello-world repository: [https://docs.github.com/en/issues/managing-your-tasks-with-tasklists/quickstart-for-tasklists](https://docs.github.com/en/issues/managing-your-tasks-with-tasklists/quickstart-for-tasklists)
+For your projects, planning task and subtasks can be useful. Try adding tasklists in your hello-world repository: [https://docs.github.com/en/issues/managing-your-tasks-with-tasklists/quickstart-for-tasklists](https://docs.github.com/en/issues/managing-your-tasks-with-tasklists/quickstart-for-tasklists)
 
 [Top](#table-of-contents)
 
