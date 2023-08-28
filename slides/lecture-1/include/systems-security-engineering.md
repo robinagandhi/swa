@@ -2,9 +2,9 @@ class: center, middle
 # Systems Security Engineering*
 
 .footnote[
-\*Based on Chapter 2 of [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf) which enhances
-[ISO/IEC/IEEE 15288:2015
-Systems and software engineering](http://www.iso.org/iso/catalogue_detail?csnumber=63711) with security engineering activities
+\*Based on Chapter 2 through 4 of [NIST SP 800-160v1r1](https://doi.org/10.6028/NIST.SP.800-160v1r1) which enhances
+[ISO/IEC/IEEE 15288:2023
+Systems and software engineering](https://www.iso.org/standard/81702.html) with security engineering activities
 
 ]
 
@@ -14,8 +14,8 @@ In our introduction to software assurance, we brought up the need to make trust 
 This publication enhances an existing internationally recognized ISO standard for systems and software engineering. The NIST special publication enhances this standard by identifying several security relevant actions in each step of the system or software lifecycle.
 
 [Appendices to NIST SP 800-160](https://csrc.nist.gov/Projects/Systems-Security-Engineering-Project/publications)  
-[ISO/IEC/IEEE 15288:2015
-Systems and software engineering](http://www.iso.org/iso/catalogue_detail?csnumber=63711)
+[ISO/IEC/IEEE 15288:2023
+Systems and software engineering](https://www.iso.org/standard/81702.html)
 
 ---
 
@@ -181,7 +181,7 @@ It helps to visualize this systems engineering view
 
 ---
 class: center, middle
-![NIST SP 800-160 Public Draft 2](images/view.png)  
+![NIST SP 800-160v1](images/view.png)  
 Systems Engineering View
 
 ???
@@ -457,7 +457,7 @@ The topics we will discuss in the rest of the class will align with this securit
 ---
 ![lifecycle processes](images/systems-engineering-lifecycle-processes.png)
 ???
-Figure source: [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
+Figure source: [NIST SP 800-160](https://doi.org/10.6028/NIST.SP.800-160v1r1)
 
 While the NIST SP 800-160 document is very comprehensive, this rest of the class will focus on the technical processes and the related security engineering enhancements.
 
