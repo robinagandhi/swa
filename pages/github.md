@@ -107,12 +107,12 @@ Let's start by looking at option #1. First, check if Git is installed.
 > ![version](./img/gitVersionCheck.png)
 
 To `clone` a remote repository (what we set out to do), we first need a ```reference URL``` to find it.   
-* On `GitHub.com`, navigate to your hello-world repository and click on the button that says ```Clone or download```.   
-* Copy that URL.
+* On `GitHub.com`, navigate to your hello-world repository and click on the green button that says ```<> Code```.   
+* Copy the URL under Clone that starts with HTTPS.  
 * Now we are ready to clone this remote repository, and create a local repository.
 
   ```bash
-  git clone <replace this, including angled brackets copied URL>
+  git clone <<replace this, including the angled brackets, with the copied URL>>
   ```
 
 Once you issue this command, you will start to see some download messages, and upon success, your local repository will be ready for use. You may be asked to authenticate with GitHub credentials if your repository is not public.
@@ -379,9 +379,7 @@ In the figure below, When in the preview mode, notice the formatting effect of `
 
 I suggest practicing using Markdown in this interactive tutorial: [http://www.markdowntutorial.com](http://www.markdowntutorial.com)
 
-Explore functional uses of Markdown on GitHub here: [https://help.github.com/categories/writing-on-github/](https://help.github.com/categories/writing-on-github/)
-
-You are now ready to explore the wonderful world of open source on GitHub. Enjoy and make your contributions!
+More advanced markdown formatting like [organizing data](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables) with tables and creating [code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks) is also possible. 
 
 [Top](#table-of-contents)
 
@@ -392,10 +390,13 @@ GitHub integrates several project management features with code management. Two 
 Project planning requires creating shared expectations about tasks and their assignments. Issues are a way to create and assign tasks with GitHub. Follow this tutorial to make understand how to use Issues: [https://guides.github.com/features/issues/](https://guides.github.com/features/issues/)
 
 ## Project Boards
-Project boards are useful planning tools. Work assignments are captured as cards and organized into lists. A basic Kanban-style board works best to sort cards into columns by status like "To Do," "In Progress," and "Done." Please follow this tutorial to create a project board in your hello-world repository: [https://docs.github.com/en/github/managing-your-work-on-github/creating-a-project-board#creating-a-repository-project-board](https://docs.github.com/en/github/managing-your-work-on-github/creating-a-project-board#creating-a-repository-project-board)
+Project boards are useful planning tools. Work assignments are captured as cards and organized into lists. A table view or a Kanban-style board works best to sort cards into columns by status like "To Do," "In Progress," and "Done." Please follow this tutorial to create a project [https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects)
 
-## Linking Issues with Cards
-Issues can be linked to cards in Project boards. An easy way is to reference the Issue number in the card description. For example, to reference Issue number 1 you would simple add `#1` to the card. Try this in your hello-world repository: [https://docs.github.com/en/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board](https://docs.github.com/en/github/managing-your-work-on-github/adding-issues-and-pull-requests-to-a-project-board)
+A project also has automated workflows to add items automatically from issues in a repository. 
+[https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically)
+
+## Building Tasklists
+For your projects, planning task and subtasks can be useful. Try adding tasklists in your hello-world repository: [https://docs.github.com/en/issues/managing-your-tasks-with-tasklists/quickstart-for-tasklists](https://docs.github.com/en/issues/managing-your-tasks-with-tasklists/quickstart-for-tasklists)
 
 [Top](#table-of-contents)
 
@@ -403,6 +404,8 @@ Issues can be linked to cards in Project boards. An easy way is to reference the
 We practice what we preach at UNO. Our whole course has been developed on GitHub. Now that you are a git guru, you may as well fork it, make changes and submit pull requests! I hope this GitHub jargon is starting to make sense.
 
 Navigate to the [course repository on GitHub](https://github.com/robinagandhi/swa) and click fork. Boom, you have your own copy of the whole course, use responsibly 🤓
+
+You are now ready to explore the wonderful world of open source on GitHub. Enjoy and make your contributions!
 
 [Top](#table-of-contents)
 
