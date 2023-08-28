@@ -450,7 +450,7 @@ Assurance cases also provide reasoned, auditable artifacts that support the cont
 class: center, middle
 ![NIST SP 800-160](images/framework-course-topics.png)  
 ???
-Figure source: [NIST SP 800-160 Systems Security Engineering](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
+Figure source: [NIST SP 800-160](https://doi.org/10.6028/NIST.SP.800-160v1r1)
 
 The topics we will discuss in the rest of the class will align with this security engineering framework. We will learn to apply methods from the practice of security requirements engineering in the problem context. We will learn about design patterns, architectural principles, threat modeling and secure coding methods in the solution context. We will also learn how to develop good assurance cases as part of the trustworthiness context.
 
