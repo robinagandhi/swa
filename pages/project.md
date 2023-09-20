@@ -60,7 +60,7 @@ The deliverables from the class project are posted in a public repository. You c
 
 ## Teams Project for Fall 2023
 
-* Coming Soon!
+* [Teams 2023](https://robinagandhi.github.io/swa/slides/teams-2023/teams.html)
 
 ## Project Grading
 * The project accounts for 40% of the total course grade.
