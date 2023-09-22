@@ -10,12 +10,11 @@ This discussion is about a new topic that many in cybersecurity may not have exp
 
 This slide deck is based several sources as follows:
 
-> Goal Structuring Notation  
-> [IEEE Standard— Adoption of ISO/IEC 15026-2:2011](https://www.iso.org/standard/52926.html)
-Systems and Software Engineering— Systems and Software Assurance— Part 2: Assurance Case
-> Research papers on Eliminative Induction use in Assurance Cases
-> [SEI publications on Assurance case use in Safety Cases](https://insights.sei.cmu.edu/sei_blog/2013/08/assurance-cases-and-confidence.html)
-> [System Assurance: beyond Detecting Vulnerabilities, By Mansourov, Nikolai, and Djenana Campara](https://www.safaribooksonline.com/library/view/system-assurance/9780123814142) (Chapter 2)
+- Goal Structuring Notation  
+- [ISO/IEC/IEEE 15026-2:2022 ](https://www.iso.org/standard/80625.html) Systems and software engineering — Systems and software assurance — Part 2: Assurance case
+- Research papers on Eliminative Induction use in Assurance Cases
+- [SEI publications on Assurance case use in Safety Cases](https://insights.sei.cmu.edu/sei_blog/2013/08/assurance-cases-and-confidence.html)  
+- [System Assurance: beyond Detecting Vulnerabilities, By Mansourov, Nikolai, and Djenana Campara](https://www.safaribooksonline.com/library/view/system-assurance/9780123814142) (Chapter 2)
 
 ---
 class: middle
@@ -105,7 +104,7 @@ background-image: url(images/black.png)
 in a dark room!
 
 ## Source:   
-The cat example is adapted from the example provided in System Assurance: Beyond Detecting Vulnerabilities (The MK/OMG Press) 1st Edition, by Nikolai Mansourov  and Djenana Campara https://amzn.com/0123814146
+The cat example is adapted from the example provided in [System Assurance: beyond Detecting Vulnerabilities, By Mansourov, Nikolai, and Djenana Campara](https://www.safaribooksonline.com/library/view/system-assurance/9780123814142) (Chapter 2)
 
 ---
 class:middle
@@ -518,7 +517,7 @@ Interpretation of the tree structure is based on a series of if-then statements.
 
 ---
 
-# [ISO/IEC 15026-2:2011](http://www.iso.org/iso/catalogue_detail.htm?csnumber=52926)
+# [ISO/IEC/IEEE 15026-2:2022 ](https://www.iso.org/standard/80625.html)
 ![iso](images/iso-standard.png)
 
 ???
@@ -534,7 +533,7 @@ class: middle
 ### _While an assurance case is useful for decision-making by knowledgeable stakeholders (e.g., developers and service providers), often the primary motivation for an assurance case is to support crucial decisions by stakeholders without this background, such as those involved in certification, regulation, acquisition, or audit of the system._
 
 .footnote[
-[ISO/IEC 15026-2:2011](http://www.iso.org/iso/catalogue_detail.htm?csnumber=52926)
+[ISO/IEC/IEEE 15026-2:2022 ](https://www.iso.org/standard/80625.html)
 ]
 
 ???
@@ -652,8 +651,8 @@ Here are some actual bad examples of claims that students in this class authored
 
 
 Optional exercise:  
-> Work with your team to rephrase these appropriately.
-When you are done enter your answers in this [Google Doc](https://docs.google.com/a/unomaha.edu/document/d/11Xr8GHBHfWJGLotiLoe-us1EZ4Qjn2msjfxHAKjs64Q/edit?usp=sharing).
+> Work with your team or individually to rephrase these appropriately.
+When you are done enter your answers in this [Online Word Doc](https://unomail-my.sharepoint.com/:w:/g/personal/rgandhi_unomaha_edu/EQAXIuhgQOdJnnIQyBw5_RYBVn9DtCclwTuSqs9BZ4iavA?e=YBxLlj).
 
 ---
 exclude: true
