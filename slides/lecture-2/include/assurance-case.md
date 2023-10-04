@@ -954,7 +954,7 @@ Let's move on to the final type of defeaters, the undercutting defeater. To depl
 
 --
 
-.footnote[.red[Inference rule have premises and conclusions. Premises are at the bottom in an assurance case.]]
+.footnote[.red[Inference rules have a premise and a conclusion. In an assurance case, the premise is at the bottom.]]
 
 ???
 Now, remember that inference rules have premises and conclusions. Premises are at the bottom in an assurance case. If the premise is sub-claims 1 and 2, then the conclusion is the top-level claim. Similarly, if the premise is Evidence C, then the conclusion is Sub-claim 4. So on and so forth. So let's make this inference rule explicit. I will illustrate that using our Tweety example.
