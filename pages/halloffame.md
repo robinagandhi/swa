@@ -17,8 +17,8 @@ This list includes successful pull requests, issues and other interactions with 
 
 ### Team Channel Four News
 - Members: Ryan Thompson, Joseph Diedrichsen, Kendra Herrmann, Corey Mekelburg, Adam Mcalpine, Brevin Wagner
-- [Project repo](https://github.com/Deeds101/CYBR8420-project/)
-[ITflow](https://github.com/itflow-org/itflow) project followed their course deliverables repository.    
+- [Project repo](https://github.com/Deeds101/CYBR8420-project/)  
+- [ITflow](https://github.com/itflow-org/itflow) project followed their course deliverables repository.    
 
 ### Discussions
 > [Mosquitto library](https://github.com/eclipse/mosquitto/issues/1061)   
