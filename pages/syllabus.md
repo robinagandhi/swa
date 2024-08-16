@@ -3,7 +3,7 @@ layout: default
 title: 8420 Syllabus
 description: CYBR 8420 Software Assurance Syllabus
 ---
-# Syllabus - Fall 2023
+# Syllabus - Fall 2024
 
 # Course Description
 * Assurance is a reasoned, audit-able argument created to support claimed beliefs about an entity – Generally, the entity is so complex that it is not possible (i.e. time, technology, or resources are constrained) to examine every possible circumstance related to the claimed beliefs.
@@ -12,7 +12,7 @@ description: CYBR 8420 Software Assurance Syllabus
 
 # Class Format
 * Asynchronous fully-online lectures, assignments, and exams
-* Synchronous weekly team meetings at team determined times. Instructor check-ins will be required before the submission of major assignments. Multiple time-slots will be available to teams for flexibility in scheduling instructor check-ins.
+* Synchronous bi-weekly team meetings at team determined times. Instructor check-ins will be required before the submission of major assignments. Multiple time-slots will be available to teams for flexibility in scheduling instructor check-ins.
 
 # Where does the course fit in the degree program?
 * [MS in Cybersecurity Core](https://www.unomaha.edu/college-of-information-science-and-technology/school-of-interdisciplinary-informatics/cybersecurity/ms-cybr-reqs.php)  
@@ -41,11 +41,13 @@ Lecture slides, videos, readings, and supplemental materials will be organized u
 
 ## Textbooks/References
 
-Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to use NU VPN and authenticate with your user-id to access these books. Alternatively, you could use single sign-on using your `@unomaha.edu` email on safari books online.
+Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to use NU VPN and authenticate with your user-id to access these books. Alternatively, you could use single sign-on using your `@unomaha.edu` email on [O'Reilly Books Website](https://www.oreilly.com/member/login/).
 
 * NIST SP 800-160 Vol. 1 Rev. 1, [Engineering Trustworthy Secure Systems](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1r1.pdf), National Institute of Standards and Technology.
 
 * NIST SP 800-160 Vol. 2 Rev. 1, [Developing Cyber-Resilient Systems: A Systems Security Engineering Approach](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v2r1.pdf), National Institute of Standards and Technology.
+
+* [AI-Assisted Programming. Better Planning, Coding, Testing, and Deployment](https://learning.oreilly.com/library/view/ai-assisted-programming/9781098164553/), By Tom Taulli, O'Reilly Media Inc., April 2024
 
 * [Cyber Security Engineering: A Practical Approach for Systems and Software Assurance](https://learning.oreilly.com/library/view/cyber-security-engineering/9780134189857), By Nancy R. Mead, Carol C. Woody
 
@@ -92,10 +94,21 @@ While course content can be passively consumed, active participation in various 
 2. **Emotional engagement**: comfortable talking to peers; engage in group learning where appropriate; ask questions about course material; interested, inquisitive and curious about academic content.
 
 # Policy on Plagiarism
-Any exam or assignment material submitted which looks identical in any fashion to another student's work or external sources will be considered plagiarism. Use of generative AI technology for exams and assignments instead of your original work will be considered a violation of academic integrity. Class assignments and exams aim to assess your understanding of the subject material, not AI. Someone else's work can be used in support of your arguments using appropriate citations; however, it is strongly discouraged to copy and paste entire paragraphs from external sources without proper synthesis and integration into your writing.
 
-Upon discovery of academic disonesty, I will adjust the grade to the minimum possible (Zero) for the assignment for all parties involved. Any further offenses will result in an “F” for the course, accompanied by academic dishonesty actions taken by the College Dean. Note carefully the University policy on [academic integrity](http://goo.gl/NVWUBy) and [code of conduct](https://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/code-of-conduct.php).  
-Make yourself familiar with writing techniques such that you can cite external sources without plagiarizing. Here are a few links to writing resources: [[1]](https://owl.purdue.edu/owl/research_and_citation/using_research/quoting_paraphrasing_and_summarizing/index.html), [[2]](https://owl.purdue.edu/owl/research_and_citation/using_research/quoting_paraphrasing_and_summarizing/paraphrasing.html)
+It is a violation of the academic integrity policy to misrepresent work that you submit or exchange with your instructor by characterizing it as your own. Submitting responses to assignments that do not acknowledge the use of entities like generative AI tools, another person’s work or your own work in another course without proper acknowledgment of the source will be considered plagiarism.
+
+You will have the opportunity to defend yourself if you are suspected of submitting a plagiarized assignment. Cheating, fabrication and falsification, plagiarism or complicity in academic dishonesty will not be tolerated in this class. Copying text from public sources (websites, blogs, and books) or have someone else write for you (including Generative AI) will be considered plagiarism if such sentences are not adequately acknowledged or referenced. Please feel free to contact me with any questions about using generative AI tools before submitting any content that has been substantially informed by these tools. Students shall give credit to AI tools whenever used, even if only to generate ideas rather than usable text, diagrams or illustrations.
+
+A full listing of violations of the academic integrity policy can be found here:
+[http://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/academic-integrity.php](http://www.unomaha.edu/student-life/student-conduct-and-community-standards/policies/academic-integrity.php)
+
+Any incidents of academic dishonesty will be handled according to the UNO academic integrity procedures. Make yourself familiar with writing techniques such that you can cite external sources or summarize them without plagiarizing. Here are some resources to get you started:
+
+- Guidance for Quoting, Paraphrasing and Summarizing:
+[https://owl.purdue.edu/owl/research_and_citation/using_research/quoting_paraphrasing_and_summarizing/index.html](https://owl.purdue.edu/owl/research_and_citation/using_research/quoting_paraphrasing_and_summarizing/index.html)
+
+- How to cite Chat-GPT
+[https://apastyle.apa.org/blog/how-to-cite-chatgpt](https://apastyle.apa.org/blog/how-to-cite-chatgpt)
 
 Many of your class deliverables will be on Github in a public repository. As a result, you must be extra careful to avoid plagiarism through responsible and ethical practices.
 
