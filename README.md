@@ -67,4 +67,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## What does GPLv3 mean?
 
-[tl;dr Legal summary](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
+[tl;dr Legal summary](https://www.tldrlegal.com/license/gnu-general-public-license-v3-gpl-3)

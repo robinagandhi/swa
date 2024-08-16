@@ -172,7 +172,7 @@ You should see something like this:
 >![gitstatus](./img/editedFileStatus.png)
 
 A few things to notice here about these status messages:  
-1. `On branch master`: You are on the master branch in your `local` repository.  
+1. `On branch master`: You are on the master branch in your `local` repository. More recently, many git tools use the name `main` instead of `master` for more inclusive terminology. 
 2. `Your branch is up-to-date with 'origin/master'`: Your local repository master branch is in sync with your remote repository master branch on GitHub. The default name for the remote repository is **origin**. This name makes sense as you cloned your local repository from it.  
 3. `Changes not staged for commit`: git follows a two-step process to save changes to a repository.
   1. The user indicates which modified/deleted/new files need to be `staged` for a save in the repository.
@@ -248,7 +248,7 @@ To push our local commits to the remote repository (GitHub in this case), we nee
 > - What is the default name of the remote repository?  
 > - What is the name of the main branch in a repository?
 
-To `push` local commits in the current branch to a remote repository (`origin` in our case) and its remote branch (`master` in our case), use the following command:
+To `push` local commits in the current branch to a remote repository (`origin` in our case) and its remote branch (`master` or sometimes `main`), use the following command:
 
 ```bash
  git push origin master
@@ -395,9 +395,6 @@ Project boards are useful planning tools. Work assignments are captured as cards
 A project also has automated workflows to add items automatically from issues in a repository. 
 [https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically)
 
-## Building Tasklists
-For your projects, planning task and subtasks can be useful. Try adding tasklists in your hello-world repository: [https://docs.github.com/en/issues/managing-your-tasks-with-tasklists/quickstart-for-tasklists](https://docs.github.com/en/issues/managing-your-tasks-with-tasklists/quickstart-for-tasklists)
-
 [Top](#table-of-contents)
 
 # Fork This Course
@@ -426,10 +423,10 @@ Finally, GitHub repositories separate source code from other resources. This sep
 * [GitHub cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 * Collection of [GitHub tutorials](https://help.github.com/articles/git-and-github-learning-resources/)
 * How To: [Ignore files during a check into GitHub](https://help.github.com/articles/ignoring-files/)
-* Video: [Collaboration Scenarios on GitHub](https://www.youtube.com/watch?v=jLWZaFzPS6Q)
 * GitHub Guide: [Socialize on GitHub](https://guides.github.com/activities/socialize/)
 * GitHub Guide: [Documenting your Project on GitHub](https://guides.github.com/features/wikis/)
 * GitHub Guide: [Creating webpages on GitHub](https://guides.github.com/features/pages/)
+* GitHub Copilot: [Quickstart](https://docs.github.com/en/copilot/quickstart)
 
 [Top](#table-of-contents)
 
