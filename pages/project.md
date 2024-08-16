@@ -6,7 +6,7 @@ description: CYBR 8420 Software Assurance Project
 
 # Team Semester Project
 
-You might ask why have a team project? To that I have to say that today we build and analyze things that are so complex that no one person can fully make or comprehend them —naturally, engineering activities to manage complexity are team-based—for example, open-source software development. Team members could be in different time zones, have competing priorities, and different skill levels. Experiencing such teamwork is essential for a course on software assurance. So, we will form five-person teams that will work together on a class project.
+You might ask why have a team project? That too in an online class! To that I have to say that today we build and analyze things that are so complex that no one person can fully make or comprehend them —naturally, engineering activities to manage complexity are team-based—for example, open-source software development. Team members could be in different time zones, have competing priorities, and different skill levels. Experiencing such teamwork is essential for a course on software assurance. So, we will form five-person teams that will work together on a class project.
 
 This class strives to encourage learning by doing and making a real difference in the practice of building software. To turn this spirit into reality, you will work on a semester-long project with an open-source software project. Each team will select a unique open-source software project and examine opportunities for security-related improvements.
 
@@ -33,7 +33,7 @@ Openhub has a lot of meta-information about open source projects that can help y
 * [Code Triage](https://www.codetriage.com). Open source projects on GitHub that need your help.
 
 ## Projects to **Avoid**
-The software assurance methods in this course apply quite broadly. Codebases based on C, C++, Python and Java generally have a better support of free tools for security analysis. But just the language used in the codebase should not limit your choices. What you should avoid are projects that fall into the categories below:
+The software assurance methods in this course apply quite broadly. Codebases based on C, C++, Python and Java generally have a better support of free tools for security analysis. But just the language used in the codebase should not limit your choices. Also, Generative AI is great a explaining and documenting code. This is particularly helpful with open source project. So what you should avoid are projects that fall into the categories below:
 * In-active projects (no recent contributions, no activity on forums, lack of wiki or documentation)
 * Old vulnerable project versions
 * Mobile Apps. We have other classes that do that.
@@ -41,7 +41,7 @@ The software assurance methods in this course apply quite broadly. Codebases bas
 * Project with little or no security requirements. As surprising as it may sound, not all software has security needs!
 * Projects not accepting contributions
 
-As you form your teams, prior familiarity with languages or platforms may play in to your choice. But keep in mind that Software Security Assessors are often called in to analyze the security of software that is built using languages that they are not familiar with. ChatGPT can also explain code or syntax that you are unfamilar with.
+As you form your teams, prior familiarity with languages or platforms may play in to your choice. But keep in mind that Software Security Assessors are often called in to analyze the security of software that is built using languages that they are not familiar with. ChatGPT and other platforms can also explain code or syntax that you are unfamilar with.
 
 ## Project Hall of Fame
 To give you some motivation, here are teams from prior semesters that have engaged with the communities of their selected open source projects. Your team should aspire to get listed in this repo. After all, this course made it to the Arctic Code Vault!
@@ -50,6 +50,7 @@ To give you some motivation, here are teams from prior semesters that have engag
 ## Past Teams Project Repositories
 The deliverables from the class project are posted in a public repository. You can find the artifacts from prior semester teams below. While these can act as examples, there is no guarantee that they did it right! They may also be following different assignment instructions.
 
+* [Teams 2023](https://robinagandhi.github.io/swa/slides/teams-2023/teams.html)
 * [Teams 2022](https://robinagandhi.github.io/swa/slides/teams-2022/teams.html)
 * [Teams 2021](https://robinagandhi.github.io/swa/slides/teams-2021/teams.html)
 * [Teams 2020](https://robinagandhi.github.io/swa/slides/teams-2020/teams.html)
@@ -60,7 +61,7 @@ The deliverables from the class project are posted in a public repository. You c
 
 ## Teams Project for Fall 2023
 
-* [Teams 2023](https://robinagandhi.github.io/swa/slides/teams-2023/teams.html)
+* TBD
 
 ## Project Grading
 * The project accounts for 40% of the total course grade.
