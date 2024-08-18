@@ -65,4 +65,16 @@ The deliverables from the class project are posted in a public repository. You c
 
 ## Project Grading
 * The project accounts for 40% of the total course grade.
-* 20% of your project grade will be based on peer feedback throughout the semester and attendance at weekly project meetings. So strive to be an active contributor and volunteer for project tasks in your teams. Avoid being a [social loafer](https://www.verywellmind.com/what-is-social-loafing-2795883) at all costs!
+* 20% of your project grade (which is 8% of the course grade) will be based on peer feedback throughout the semester and attendance at weekly project meetings. So strive to be an active contributor and volunteer for project tasks in your teams. Avoid being a [social loafer](https://www.verywellmind.com/what-is-social-loafing-2795883) at all costs!
+
+For each group assignment, there will be an accompanying peer feedback task. In this task, each student will submit a summary of their individual contributions to the group project. This summary will then be peer-reviewed by three other team members. The feedback from these reviews, along with my own observations, will be used to determine the final scores.
+
+The peer review feedback will be based on a simple Likert scale (1-5) rating across the following dimensions:
+
+	•	Participation
+	•	Task completion
+	•	Quality of work
+	•	Communication
+	•	Collaboration and teamwork
+
+A score of 5 indicates the highest level of performance, while a score of 1 indicates the lowest. If you assign a score below 3, please provide a clear explanation to help the recipient understand where improvement is needed. All comments should be constructive and respectful.
