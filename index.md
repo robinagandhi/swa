@@ -27,7 +27,7 @@ Content will be linked as we progress through the semester. This allows to me to
 1. **Assurance Cases for Software Security Engineering**
   * Trustworthiness context: Assurance cases
   * Assignment: Assurance Case Exercise (Team Deliverable)
-  * Reference: [ISO Standard](https://unomaha.on.worldcat.org/oclc/772089071?databaseList=638) for Assurance cases. (See Canvas for full-text)
+  * Reference: [ISO Standard](https://www.iso.org/standard/80625.html) for Assurance cases.
   * Reference: [OMG Structured Assurance Case Metamodel](https://www.omg.org/spec/SACM/About-SACM)
   * Reference: Formal diagramming in [Adelard ASCE](https://www.adelard.com/asce/)
 1. **Maturity Models for Software Security Engineering**
