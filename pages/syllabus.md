@@ -12,7 +12,7 @@ description: CYBR 8420 Software Assurance Syllabus
 
 # Class Format
 * Asynchronous fully-online lectures, assignments, and exams
-* Synchronous bi-weekly team meetings at team determined times. Instructor check-ins will be required before the submission of major assignments. Multiple time-slots will be available to teams for flexibility in scheduling instructor check-ins.
+* Synchronous weekly team meetings at team determined times. Instructor check-ins will be required before the submission of major assignments. Multiple time-slots will be available to teams for flexibility in scheduling instructor check-ins.
 
 # Where does the course fit in the degree program?
 * [MS in Cybersecurity Core](https://www.unomaha.edu/college-of-information-science-and-technology/school-of-interdisciplinary-informatics/cybersecurity/ms-cybr-reqs.php)  
