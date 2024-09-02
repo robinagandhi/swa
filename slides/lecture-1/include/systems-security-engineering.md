@@ -104,7 +104,7 @@ Without such an effort, our systems and software that support critical missions 
 ---
 class: center, middle
 
-![iceberg](http://www.titanicuniverse.com/wp-content/uploads/2014/12/iceberg.jpg)
+![iceberg](images/iceberg.jpg)
 
 .footnote[
 \*.red[above the waterline] and .red[below the waterline] problems
