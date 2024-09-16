@@ -13,8 +13,8 @@ class: middle
 ## Security Policy
 - Stakeholder interviews
 - Auditing needs
-- [Certification needs](http://static1.1.sqspcdn.com/static/f/702523/26767149/1451886707923/201601-Gandhi.pdf?token=l4NhzGQJsXEqUX7CIOwzoK5au%2BM%3D)
-- [Resiliency needs](https://csrc.nist.gov/publications/detail/sp/800-160/vol-2/final)
+- [Certification needs](https://apps.dtic.mil/sti/tr/pdf/AD1056406.pdf)
+- [Resiliency needs](https://csrc.nist.gov/pubs/sp/800/160/v2/r1/final)
 
 ## Risk assessment
 - Data, Software, Human or Organization, and Physical assets
@@ -33,7 +33,7 @@ class: middle
 
 ### 1. Attacker Goals
 - Attacker goal is to violate security expectations
-- [Anti-goals](https://www.info.ucl.ac.be/~avl/files/avl-Icse04-AntiGoals.pdf), [Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html), [N-SoftGoals](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.103.2997&rep=rep1&type=pdf)
+- [Anti-goals](https://www.info.ucl.ac.be/~avl/files/avl-Icse04-AntiGoals.pdf), [Attack Trees](https://www.schneier.com/academic/archives/1999/12/attack_trees.html), [N-SoftGoals](https://dl.acm.org/doi/pdf/10.1145/291469.293165)
 
 ???
 There are three types of abstractions used primarily in requirements elicitation.
@@ -45,7 +45,7 @@ I have linked these methods with the research papers or blogs where they are dis
 
 ### 2. Attack Scenarios
 - Negative scenarios (desired future experience of an attacker)
-- [Misuse cases](http://www.scenarioplus.org.uk/papers/misuse_cases_ieee_jan_2003.pdf), [Abuse frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), [Keywords/checklists](https://msdn.microsoft.com/en-us/library/ee823878%28v=cs.20%29.aspx)
+- [Misuse cases](http://www.scenarioplus.org.uk/papers/misuse_cases_ieee_jan_2003.pdf), [Abuse frames](https://ieeexplore.ieee.org/document/1232791/similar#similar), [Keywords/checklists](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats#stride-model)
 
 ???
 The next abstraction for requirements elicitation is attack scenarios or negative scenarios. These scenarios outline a story about a future desired experience of an attacker. We already saw an example of this technique with Abuse cases, where we depicted specific attack scenarios. We will look at misuse cases next and the keyword/checklists based method later during the design stage.
@@ -68,7 +68,7 @@ class: middle
 ## .green[Why] and .blue[how] would .orange[someone] use software?
 - Goal-driven Scenarios
 - They describe system behavior to fulfill user needs
-- Several [templates](http://alistair.cockburn.us/Basic+use+case+template) available for [use cases](http://alistair.cockburn.us/Structuring+use+cases+with+goals)  
+- Several [templates available for use cases](https://www.cs.cmu.edu/~jhm/Readings/Cockburn%20Ch%201%20Scan.pdf)  
   .red[Purpose] = build requirements  
   Contents = have consistent prose  
   Plurality = include multiple scenarios per use case  

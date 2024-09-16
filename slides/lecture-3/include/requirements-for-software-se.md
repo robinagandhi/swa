@@ -428,7 +428,7 @@ class: middle
 - Solution: Abuse frames
 
 .footnote[
-Technical Report No: 2003/10, [Analysing Security Threats and Vulnerabilities Using Abuse Frames](http://mcs.open.ac.uk/mj665/Abuse00.pdf), L.Lin, B.A.Nuseibeh, D.C.Ince, M.Jackson, J.D.Moffett, October 2003
+Technical Report No: 2003/10, [Analysing Security Threats and Vulnerabilities Using Abuse Frames](https://oro.open.ac.uk/90120/1/2003_10.pdf), L.Lin, B.A.Nuseibeh, D.C.Ince, M.Jackson, J.D.Moffett, October 2003
 ]
 
 ???
