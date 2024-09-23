@@ -61,10 +61,10 @@ class: center, middle
 - Conner Braley, Tobias Lathrop, Patrick Nikiema, Kwanz Skinner
 
 ## Project Focus
-- 
+- BitWarden
 
 ## Deliverables
-- 
+- https://github.com/PatrickBN/CYBR8420_Team5/tree/main
 
 ---
 
