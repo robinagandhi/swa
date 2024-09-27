@@ -1126,7 +1126,7 @@ Assurance cases were first made popular in the safety industry and find a promin
 class: center, middle
 # .large[Got Assurance?]
 .bottom-left[
-![meme](http://s2.quickmeme.com/img/31/315640bead03adc498079b11707081fbfcfc0d4d97b1e1d69ba1d930dfa286d6.jpg)
+![meme](../images/meme.jpeg)
 ]
 
 ???
