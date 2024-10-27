@@ -165,13 +165,12 @@ class:middle
 
 
 .left-column[ ### [BSIMM](https://www.bsimm.com) 
-> ![BSIMM](https://www.bsimm.com/content/dam/bsimm/bsimm-assessment.jpg.imgw.850.x.jpg)
+> ![BSIMM](https://community.blackduck.com/servlet/rtaImage?eid=ka12H000000TP61&feoid=00N2H000004orQs&refid=0EM340000002Gmq)
 ]
 
-.right-column[ ### [SMI](https://openssf.org/blog/2021/05/03/introducing-the-security-metrics-project/) 
-![SMI](https://openssf.org/wp-content/uploads/sites/132/2021/04/unnamed.png)
+.right-column[ ### [SMI](https://github.com/ossf/scorecard) 
+![SMI](images/openssf_security_compressed.png)
 ]
-
 
 ???
 
