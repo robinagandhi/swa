@@ -69,10 +69,12 @@ class: middle
 
 >_"Applying a structured approach to threat scenarios during design helps a team .red[more effectively and less expensively] identify security vulnerabilities, determine risks from those threats, and establish appropriate mitigations"_  
 
-> [Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx), [Threat Modeling](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling)
+> [Microsoft SDL](https://www.microsoft.com/en-us/SDL/process/design.aspx), [SDL practice #3. Perform secure​ design review and ​threat modeling](https://www.microsoft.com/en-us/securityengineering/sdl/practices/secure-by-design)
 
 ???
 Things we learn in this course are firmly grounded in industry best practices for software security engineering. Using DFDs to conduct a structured analysis of threat scenarios is part of the Microsoft Secure Development Lifecycle which is adopted throughout the organization and is also observed in many other organizations through BSIMM assessments. This approach is also recommended by OWASP for web applications, with its own ecosystem of guidelines and tools (https://owasp.org/www-project-threat-dragon/).
+
+
 
 
 ---
@@ -726,7 +728,7 @@ So Microsoft has developed a special tool for threat modeling. OWASP is also fol
 
 ---
 class: middle
-## [Microsoft Threat Modeling Tool (TMT)](https://aka.ms/tmt)
+## [Microsoft Threat Modeling Tool (TMT)](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
 ![toolsupport](images/toolsupport.png)
 
 ???
@@ -938,8 +940,9 @@ Testers often finds issues with threat model or missing details
 ## Elevation of Privilege Card Game
 - Ease developers into doing threat modeling
 - [How to play](http://social.technet.microsoft.com/wiki/contents/articles/285.elevation-of-privilege-the-game.aspx)
-- [Card Images](https://robinagandhi.github.io/swa/slides/lecture-4/images/eopcardcameimages.pdf)
-- [Other SDL developer resources](https://www.microsoft.com/en-us/securityengineering/sdl/resources)
+- [Card Images](https://github.com/adamshostack/eop)
+- [Other SDL developer resources](https://www.microsoft.com/en-us/download/details.aspx?id=20303)
+- [More information](https://shostack.org/games/elevation-of-privilege)
 
 ![EOP](https://c.s-microsoft.com/en-us/CMSImages/EoP_game_screen_shot.jpg?version=4a082487-9fb4-7dd9-ed9f-e79c888c2df4)
 
@@ -952,10 +955,12 @@ class: middle
 - This presentation is borrows a lot from Microsoft training materials on threat modeling and many sources for DFDs  
 
 ## Threat Modeling in Practice
-- Threat Modeling Tool [User Guide](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)  
+- Threat Modeling Security Fundamentals [User Guide](https://learn.microsoft.com/en-us/training/paths/tm-threat-modeling-fundamentals/)  
 - Bruce Schneier on [threat modeling](http://www.schneier.com/blog/archives/2007/10/threat_modeling.html)  
 - [SAFECode Tactical Threat Modeling](https://safecode.org/safecodepublications/tactical-threat-modeling/)  
-- Microsoft [Docs](https://msdn.microsoft.com/en-us/library/aa562036.aspx)
+- Microsoft [Docs](https://www.microsoft.com/en-us/securityengineering/sdl/practices/secure-by-design)
+- [Integrating threat modeling with DevOps](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-with-dev-ops)
+- [Threat modeling AIML](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml)
 
 ???
 This presentation borrows and adapts a lot from Microsoft training materials for threat modeling and many other sources for DFD diagraming techniques.
@@ -972,7 +977,7 @@ exclude: true
 class: middle
 
 # Step 1
-- Download and install [Microsoft TMT](https://aka.ms/threatmodelingtool)
+- Download and install [Microsoft TMT](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
 
 ---
 exclude: true
