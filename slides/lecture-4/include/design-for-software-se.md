@@ -728,13 +728,13 @@ So Microsoft has developed a special tool for threat modeling. OWASP is also fol
 
 ---
 class: middle
-## [Microsoft Threat Modeling Tool (TMT)](https://www.microsoft.com/en-us/download/details.aspx?id=49168)
+## [Microsoft Threat Modeling Tool (TMT)](https://aka.ms/threatmodelingtool)
 ![toolsupport](images/toolsupport.png)
 
 ???
 The tool that we will use for this class is simply called Microsoft threat modeling tool (TMT). This tool only installs on a Windows Operating system. If you are using a MacOS then I recommend you install windows in a virtual machine and then install the tool.
 
-For practice, I recommend that you build a DFD for the Playsound API on Slide [34](http://localhost:8000/slides/lecture-4/design-for-software-se.html#p34) in TMT and then examine the threats identified
+For practice, I recommend that you build a DFD for the Playsound API on Slide [34](https://robinagandhi.github.io/swa/slides/lecture-4/design-for-software-se.html#34) in TMT and then examine the threats identified
 
 ---
 class: middle
