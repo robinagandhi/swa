@@ -60,6 +60,7 @@ ls  # list files and directories in the current directory
     - [Step 7: Make a Pull Request](#step-7-make-a-pull-request)
     - [Step 8: Markdown](#step-8-markdown)
     - [Step 9: Project Management](#step-9-project-management)
+    - [Step 10: AI-Powered Development](#step-10-ai-powered-development)
     - [Fork this course](#fork-this-course)
     - [Cyber security First Principle Reflections](#cyber-security-first-principle-reflections)
 - [Additional Resources](#additional-resources)
@@ -395,7 +396,81 @@ Project boards are useful planning tools. Work assignments are captured as cards
 A project also has automated workflows to add items automatically from issues in a repository. 
 [https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically)
 
+[T
+op](#table-of-contents)
+
+# Step 10: AI-Powered Development
+AI tools like **GitHub Copilot** are changing how developers write code, debug, and learn.
+
+GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code. It can suggest code, complete functions, help write tests, and even explain code snippets.
+
+### Enabling GitHub Copilot with Educational Access
+As a student, you can often get free access to GitHub Copilot through the GitHub Student Developer Pack.
+
+1.  Navigate to the [GitHub Education](https://education.github.com/pack) website.
+2.  Click on "Sign up for Student Developer Pack" and follow the prompts to verify your student status. This typically requires a school-issued email or other proof of enrollment.
+3.  Once approved, access to GitHub Copilot should be enabled on your GitHub account.
+
+### Installing in [Visual Studio Code](https://code.visualstudio.com)
+Github Copilot works as an extension in popular code editors like Visual Studio Code. By analyzing the context of the file you are editing, along with related files, it provides relevant suggestions.
+
+To install the extension in VS Code:
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking the icon in the sidebar or pressing `Cmd+Shift+X`.
+3. Search for `GitHub Copilot` in the marketplace.
+4. Click "Install" on the extension provided by GitHub.
+5. You will be prompted to sign in with your GitHub account to authorize the extension.
+
+For example, you could write a comment describing a function, and Copilot will suggest the code to implement it:
+
+```python
+# function to read a csv file and return a list of dictionaries
+```
+
+GitHub Copilot would then suggest the Python code to accomplish this task. This can significantly speed up development and help you learn new languages and libraries.
+
+### Using Copilot Beyond Code Generation
+
+GitHub Copilot is not just for writing new code. Its chat features can assist throughout the software development lifecycle.
+
+#### Requirements and Design
+You can use Copilot Chat to refine requirements and brainstorm designs. For example, you can provide a high-level feature idea and ask Copilot to break it down into user stories or suggest a technical design.
+
+**Example Prompt in Copilot Chat:**
+> "I'm building a blog feature. Can you create user stories for an author who wants to write, publish, and delete a post? Include acceptance criteria for each."
+
+You can also ask it to generate diagrams using syntax like Mermaid.js right in your Markdown files to visualize system architecture.
+
+**Example Prompt for Mermaid Diagram:**
+> "Generate a Mermaid sequence diagram for a user login flow involving a browser, a web server, and a database."
+
+Copilot can then generate the Mermaid code block for you, which will render as a diagram on GitHub:
+
+````mermaid
+sequenceDiagram
+    participant User
+    participant Browser
+    participant Web Server
+    participant Database
+
+    User->>Browser: Enters credentials
+    Browser->>Web Server: POST /login
+    Web Server->>Database: Verify credentials
+    Database-->>Web Server: Authentication status
+    Web Server-->>Browser: Redirect to dashboard
+    Browser-->>User: Show dashboard
+````
+
+#### Code Review and Explanation
+When reviewing a pull request or trying to understand an existing codebase, Copilot is invaluable.
+-   **Explain Code:** Select a block of code and ask Copilot Chat `/explain` to get a natural language description of what it does.
+-   **Suggest Improvements:** Ask Copilot to review a piece of code for potential bugs, performance issues, or ways to make it more readable.
+-   **Generate Tests:** Select a function and ask Copilot to generate unit tests using the `/tests` command, helping you verify its behavior and improve test coverage.
+
+To get started, you can install the GitHub Copilot extension in your editor and follow the [Quickstart guide](https://docs.github.com/en/copilot/quickstart).
+
 [Top](#table-of-contents)
+
 
 # Fork This Course
 We practice what we preach at UNO. Our whole course has been developed on GitHub. Now that you are a git guru, you may as well fork it, make changes and submit pull requests! I hope this GitHub jargon is starting to make sense.
