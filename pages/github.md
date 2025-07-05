@@ -135,24 +135,6 @@ Suppose you want to work on the `hello-world` repository you created on GitHub. 
 
 [Top](#table-of-contents)
 
-## Initialize a new repository
-
-> **NOTE:** We do not need to use this option currently, so you may move to [Step 4](#step-4)
-
-If you need to create a new repository you will navigate to the folder (using the `cd` command) containing the files you wish to version control and then use the init command:
-```bash
-# Create a new directory
-mkdir test
-# Switch to that directory
-cd test
-# Initialize a new git repository
-git init
-```
-
-That's it! This option is useful if you are **creating new files from scratch**. Using GitHub, you can also push newly tracked files such as these to a remote repository. The steps are the same as you will see for cloned repositories below.
-
-[Top](#table-of-contents)
-
 # Step 4: Push Changes
 
 Pushing changes allows you to update the remote repository (on GitHub) with your latest work from your local repository. This is a key part of collaborating and keeping your code backed up.
@@ -557,7 +539,7 @@ jobs:
 
 **Example 3: Deploy Automatically (CD)**
 
-You can also set up workflows to deploy your application after tests pass. For example, you might deploy a static website to GitHub Pages or another service. (See GitHub documentation for deployment examples.)
+You can also set up workflows to deploy your application after tests pass. For example, you might deploy a static website to [GitHub Pages](https://pages.github.com/) or another service. (See GitHub documentation for deployment examples.)
 
 > **CI/CD in Practice:**  
 > - CI helps you catch errors early by running tests on every change.
