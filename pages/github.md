@@ -114,7 +114,7 @@ git clone <<replace this, including the angled brackets, with the copied URL>>
 
 ```
 
-For example, if my repository URL is `https://github.com/robinagandhi/hello-world.git` so the command to clone it will be:
+For example, my hello-world repository URL is `https://github.com/robinagandhi/hello-world.git` so the command to clone it will be:
 
 ```bash
 git clone https://github.com/robinagandhi/hello-world.git
