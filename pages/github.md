@@ -79,75 +79,61 @@ Git is a distributed configuration management system. Unlike a centralized code 
 [Top](#table-of-contents)
 
 # Step 3: Clone a Repository
-To create a `Local` repository, git has two basic options.
-1. `Clone` a remote repository on your computer, or
-2. `Initialize` a new git repository from scratch on your computer.
+
+Cloning a repository allows you to create a local copy of a remote project from GitHub onto your computer. This is the most common way to start working with an existing project, contribute to open source, or collaborate with others.
+
+## Why Clone a Repository?
+- To work on a project locally, with full access to all files and history.
+- To contribute changes, experiment, or customize code.
+- To keep your local copy in sync with the remote repository.
+
+## Example Scenario
+Suppose you want to work on the `hello-world` repository you created on GitHub. Cloning it will let you edit files, run code, and track changes on your own computer.
+
+## Step-by-Step Instructions
+
+1. **Check if Git is Installed**
+   - Open your terminal (PowerShell on Windows, Terminal on Mac/Linux).
+   - Run:
+     ```bash
+     git --version
+     ```
+   - If you see a version number, Git is installed. If not, [install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+2. **Get the Repository URL**
+   - On GitHub.com, navigate to your repository (e.g., `hello-world`).
+   - Click the green `<> Code` button and copy the HTTPS URL.
+
+3. **Clone the Repository**
+   - In your terminal, run:
+     ```bash
+     git clone https://github.com/<your-username>/hello-world.git
+     ```
+   - Replace the URL with your repository’s URL.
+
+4. **Navigate to the Cloned Directory**
+   - Change into the new directory:
+     ```bash
+     cd hello-world
+     ```
+   - List the files to confirm:
+     ```bash
+     ls
+     ```
+   - You should see `README.md` and other files.
+
+5. **Open the Project in Your Editor**
+   - Open the folder in VS Code or your preferred editor for a better experience.
+
+## Best Practices
+- **Clone only trusted repositories** to avoid security risks.
+- **Keep your local repository up to date** by regularly pulling changes.
+- **Use descriptive folder names** if cloning multiple repositories.
+
+## Additional Resources
+- [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 [Top](#table-of-contents)
-
-## Clone a remote repository
-Let's start by looking at option #1. First, check if Git is installed.
-
-- Git tools are not pre-installed on all operating systems.
-- To check if they exist on your operating system, open up a command line interface (`PowerShell` for Windows, `Terminal` for Mac OS or Linux) and type:
-
-```bash
-git --version
-```
-
-- If Git is installed, this command will show the version installed. If the command is not recognized, then it means you need to install git on your OS. The information available at [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) can walk you through it for a variety of OSes.
-- Just for demonstration, I will assume a Windows OS environment with Powershell (similar to a Terminal on Mac OS or Linux) as shown below:
-
-You should see output similar to the following, indicating the installed version:
-
-```
-git version 2.39.5 (Apple Git-154)
-```
-
-To `clone` a remote repository (what we set out to do), we first need a ```reference URL``` to find it.   
-* On `GitHub.com`, navigate to your hello-world repository and click on the green button that says ```<> Code```.   
-* Copy the URL under Clone that starts with HTTPS.  
-* Now we are ready to clone this remote repository, and create a local repository.
-
-```bash
-git clone <<replace this, including the angled brackets, with the copied URL>>
-
-```
-
-For example, my hello-world repository URL is `https://github.com/robinagandhi/hello-world.git` so the command to clone it will be:
-
-```bash
-git clone https://github.com/robinagandhi/hello-world.git
-
-```
-
-Once you issue this command, you will start to see some download messages, and upon success, your local repository will be ready for use. You may be asked to authenticate with GitHub credentials if your repository is not public.
-
-```
-Cloning into 'hello-world'...
-remote: Enumerating objects: 85, done.
-remote: Counting objects: 100% (3/3), done.
-remote: Compressing objects: 100% (3/3), done.
-remote: Total 85 (delta 0), reused 1 (delta 0), pack-reused 82 (from 1)
-Receiving objects: 100% (85/85), 25.98 KiB | 5.19 MiB/s, done.
-Resolving deltas: 100% (22/22), done.
-
-```
-
-Now, in PowerShell, switch to the hello-world directory that has all the files from the repository that you just cloned.
-
-> **Tip:** Open the `hello-world` folder in VS Code or your preferred editor for a more hands-on experience.
-
-```bash
-cd hello-world/
-```
-
-To list the files in this directory, use this command.
-
-```bash
-ls
-```
-You should see a README.md and possibly some other files.
 
 ## Initialize a new repository
 
@@ -168,209 +154,172 @@ That's it! This option is useful if you are **creating new files from scratch**.
 [Top](#table-of-contents)
 
 # Step 4: Push Changes
-In this step, we will make changes to the files in our `Local` repository and then `push` changes back to the `remote` repository.
 
-Git is based on a **de-centralized** model of ownership - which means that there is no central authoritative repository. Every repository, Local or Remote, is fully autonomous and fully functional on its own. So changes made in any repository are tracked in that repository only. Two repositories do not communicate unless there is an explicit request to synchronize changes across them. This constraint will make more sense as we work through a scenario.
+Pushing changes allows you to update the remote repository (on GitHub) with your latest work from your local repository. This is a key part of collaborating and keeping your code backed up.
 
-Let's open the hello-world folder in your file explorer and make changes to the `README.md` file in a text editor.  
+## Why Push Changes?
+- To share your work with others or back it up to GitHub.
+- To keep the remote repository up to date with your local changes.
+- To collaborate and synchronize with teammates.
 
-For example, you could add the following lines to your `README.md` file:
+## Example Scenario
+Suppose you have made changes to your local `README.md` file and want to update the remote repository on GitHub.
 
-```markdown
-# hello-world
-A repository for the Software Assurance course at the University of Nebraska at Omaha.
-```
+### Steps to Push Changes
 
-Once you save the edited README.md, check the status of the local repository using the following command. Return to Powershell:
+1. **Make Changes Locally**
+   - Open the `hello-world` folder in your file explorer and edit the `README.md` file in a text editor.
+   - For example, add the following lines:
+     ```markdown
+     # hello-world
+     A repository for the Software Assurance course at the University of Nebraska at Omaha.
+     ```
 
-```bash
-git status
-```
-You should see something like this:
+2. **Check the Status of Your Repository**
+   - In your terminal, run:
+     ```bash
+     git status
+     ```
+   - You should see which files have been modified.
 
-```
-On branch master
-Your branch is up to date with 'origin/master'.
+3. **Stage Your Changes**
+   - Add your changes to the staging area:
+     ```bash
+     git add -A
+     ```
+   - This command stages all modified, deleted, and new files.
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	modified:   README.md
+4. **Commit Your Changes**
+   - Commit the staged changes with a descriptive message:
+     ```bash
+     git commit -m "added UNO description"
+     ```
+   - This creates a checkpoint in your local repository.
 
-no changes added to commit (use "git add" and/or "git commit -a")
-```
+5. **Check Your Commit History (Optional)**
+   - To see your commits:
+     ```bash
+     git log
+     ```
+   - Press `q` to exit the log view.
 
-A few things to notice here about these status messages:  
-1. `On branch master`: You are on the master branch in your `local` repository. More recently, many git tools use the name `main` instead of `master` for more inclusive terminology. 
-2. `Your branch is up-to-date with 'origin/master'`: Your local repository master branch is in sync with your remote repository master branch on GitHub. The default name for the remote repository is **origin**. This name makes sense as you cloned your local repository from it.  
-3. `Changes not staged for commit`: git follows a two-step process to save changes to a repository.
-  1. The user indicates which modified/deleted/new files need to be `staged` for a save in the repository.
-  2. The staged files are `committed` to the repository.   
-    We will see both these steps in action below.
-4. `modified:  README.md`: git knows that you modified README.md file.
+6. **Push Your Changes to the Remote Repository**
+   - Push your local commits to GitHub:
+     ```bash
+     git push origin master
+     ```
+   - Replace `master` with your branch name if different, and `origin` with your remote name if different.
+   - You may be prompted to authenticate with GitHub if you haven't already.
 
-Now we `stage` our changes for a commit using this command:
-```bash
-git add -A
-```
-The above command `adds` any edited files (including deleted files) in the entire working tree in a staging area called the `index`, which is a temporary holding place before a commit. Instead of `-A`, with this command you may specify a file name or directory from which to update the staging area. Now, recheck the status of the repository using the following command:
+7. **Verify the Push**
+   - Go to your repository on GitHub.com and confirm that your changes appear.
 
-```bash
-git status
-```
-You should see something like this:
+## Best Practices
+- **Write clear commit messages** to describe your changes.
+- **Push frequently** to keep your work backed up and in sync.
+- **Pull before you push** if you suspect others have made changes to avoid conflicts.
+- Use feature branches for new features or experiments, and merge them into the main branch when ready.
 
-```
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-	modified:   README.md
-```
-
-This time the modified files are `staged` and appear in green. These changes are ready to be committed.
-
-Before we `commit` these files into our local repository, the author details need to be set. This constraint is for accountability of commits. Using the commands below, save your information to the git configuration files and set them for all of your local repositories. Make sure to use the **same name and email** you used to register with GitHub.
-
-```bash
-git config --global user.name "replace this with your name"
-git config --global user.email youremail@example.com
-```
-
-The `--global` flag indicates that these settings will apply to all repositories on your computer. If you want to set these parameters for a specific repository only, you can run the same commands without the `--global` flag while in that repository directory.
-
-Check your configuration changes by using the following command:
-```bash
-git config --list
-```
-You should see your name and email in the output. 
-
-Now let's commit the changes that we staged before. Here we use the `commit` option with `-m` to provide a short commit message. The message helps us semantically annotate various checkpoints in our editing process. These messages are beneficial when rolling back changes to an earlier commit.
-
-```bash
-git commit -m "added UNO description"
-```
-
-Use this command to see all your commits:
-
-```bash
-git log
-```
-
-This command shows a summary of commits in the repository, starting with the most recent. Observe the hash code, user details and commit message. These attributes provide attribution of all changes in the code repository, promoting code integrity.
-
-> Hit the key `q` to exit the log of commit messages.
-
-To see a specific commit use the following command with a commit-id, such as: `585db21052a558e7ca917db7d04e684c229e37e3` or just the first 7 digits `585db21`.
-
-```bash
-# replace commit-id in the command below
-# You can find them using the git log command
-git show commit-id
-```
-
-> Hit the key `q` to exit
-
-Issue this command to check your repository status once again:
-```bash
-git status
-```
-
-It should report **no** uncommitted changes. But it indicates that `Your branch is ahead of 'origin/master' by 1 commit`. It means that the local repository master branch has more recent commits than the **remote** repository master branch.
-
-To push our local commits to the remote repository (GitHub in this case), we need the git `push` command. However, this command will not work until we authenticate with GitHub. I recommend that you use `GitHub CLI` to authenticate with GitHub. It is a command line tool that allows you to interact with GitHub from the terminal. You could also use Github Desktop or other GUI tools, but the CLI is more versatile and powerful.
-
-- Install [GitHub CLI](https://github.com/cli/cli#installation) on macOS, Windows, or Linux.
-- Once installed, open the command line and enter `gh auth login`, then follow the prompts.
-- When prompted for your preferred protocol for Git operations, select HTTPS.
-- When asked if you would like to authenticate to Git with your GitHub credentials, enter `Y`.
-
-After a successful authentication, to issue the `push` command, we need to indicate the name of the remote repository followed by the name of the local repository branch that has updates to be pushed. Do you remember the name of our remote repository and the main branch?
-
-> **Questions**  
-> - What is the default name of the remote repository?  
-> - What is the name of the main branch in a repository?
-
-To `push` local commits in the current branch to a remote repository (`origin` in our case) and its remote branch (`master` or sometimes `main`), use the following command:
-
-```bash
- git push origin master
-```
-
-> While pushing changes from a local branch, you may rename the branch in the remote repository, you would add one more argument to the push command.  
-> `git push  <REMOTENAME> <LOCALBRANCHNAME>:<REMOTEBRANCHNAME>`  
-> This command pushes the LOCALBRANCHNAME to your REMOTENAME but renames it as REMOTEBRANCHNAME.  
-> This option would be useful if you made local commits on the master branch but want to push your changes to a feature branch on origin.
-> If you are using a different branch name, replace `master` with your branch name in the above command.
-> If you are using a different remote repository name, replace `origin` with your remote repository name in the above command.
-
-Now, issue the `status` command to check your repository status once again:
-
-```bash
-git status
-```
-You should see a message indicating that your branch is up to date with 'origin/master' and no changes to be committed. This means that your local repository is now synchronized with the remote repository on GitHub. If you navigate to your repository on GitHub.com, you will see your commit message and the changes reflected in the `README.md` file.
-
-As mentioned before in the introduction, git version control is very efficient for text files. It does not store entire files for old versions but only the differences. **So it is prudent to make frequent commits** and then push these changes to the remote repository - so that you have as many checkpoints as possible should you need to roll back. 
-
-To keep the master branch commits clean, you should do feature development and testing in a feature branch and then merge with master.
+## Additional Resources
+- [Pushing commits to a remote repository](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository)
 
 [Top](#table-of-contents)
 
 # Step 5: Pull Remote Changes
-What happens if we make some changes to README.md on `GitHub.com`? Or another collaborator makes changes to it. How do we get these changes back into our local repository? We will learn just that in this step.
 
-Navigate to your hello-world repository on `GitHub.com` and edit the `README.md` file. You can do this by clicking on the file name in the repository view, then clicking the pencil icon to edit it. 
+Keeping your local repository up to date with changes from the remote repository is essential, especially when collaborating with others. This step will show you how to fetch and merge changes made on GitHub.com (or by other collaborators) into your local repository.
 
-Add a link to your favorite website, for example, [https://www.unomaha.edu](https://www.unomaha.edu) and save the changes.
+## Why Pull Remote Changes?
+- To get updates made by others or yourself on GitHub.com.
+- To avoid and resolve conflicts before making your own changes.
+- To keep your local and remote repositories synchronized.
 
-After making your changes, add a commit message and click the `Commit changes` button.
+## Example Scenario
+Suppose you or a collaborator edits the `README.md` file directly on GitHub.com (for example, by adding a link to your favorite website).
 
-Your `README.md` file will now be updated with the new link.
+### Steps to Pull Remote Changes
 
-Now the remote repository is one `commit` ahead of the local repository. You can verify this by going back to your local repository in a terminal and using the `git status` command. 
+1. **Edit the File on GitHub.com**
+   - Navigate to your hello-world repository on GitHub.com.
+   - Edit the `README.md` file (click the file, then the pencil icon).
+   - Add a change (e.g., a link), write a commit message, and click "Commit changes".
 
-To bring the _local_ repository up to speed, we use the following command in a terminal.
+2. **Check Local Repository Status**
+   - In your terminal, run:
+     ```bash
+     git status
+     ```
+   - You may see that your local repository is behind the remote repository.
 
-```bash
-git pull
-```
-The `git pull` command fetches remote changes (`git fetch`) and merges them (`git merge`) into the current local branch.
+3. **Pull the Latest Changes**
+   - Run:
+     ```bash
+     git pull
+     ```
+   - This command fetches changes from the remote repository and merges them into your current local branch.
 
-After pulling the changes, your local `README.md` file will be updated with the new link.
+4. **Verify the Update**
+   - Check that your local `README.md` file now includes the changes made on GitHub.com.
 
-At this point, you know enough to keep both the local and remote repositories synchronized.    
+## Best Practices
+- **Always pull before you start working** to minimize merge conflicts.
+- If you have local changes, commit or stash them before pulling to avoid conflicts.
+- If a merge conflict occurs, Git will prompt you to resolve it before completing the pull.
 
-As long as you always `pull` before making changes and keep `pushing` any new changes - you will avoid most merge conflicts that can occur.  
-
-By default, git attempts to auto-merge changes. But in a collaborative project, conflicts will happen. In that case, git will provide guidance regarding the conflicts and where you will need to make changes before attempting a merge.
-
-If you are interested in learning more about complex team interaction scenarios - you may want to explore a concept called `branching`; for more information about merge conflicts see: [https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/).
+## Additional Resources
+- [Resolving a merge conflict from the command line](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/)
 
 [Top](#table-of-contents)
 
 # Step 6: Fork a Repository
 
-Now we will learn about **forking** a repository.
+Forking a repository allows you to create your own copy of someone else's project. This is a common way to experiment, make changes, and contribute to open source projects without affecting the original codebase.
 
-A fork is a copy of a repository. Forking allows you to experiment with changes without affecting the original project. You can use forks to propose changes to someone else's project (via pull requests) or to use their project as a starting point for your own ideas.
+## Why Fork a Repository?
+- To propose changes to someone else's project (via pull requests).
+- To use an existing project as a starting point for your own work.
+- To experiment safely without affecting the original repository.
 
-**How to Fork and Contribute:**
+## Example Scenario
+Suppose you want to contribute improvements to a public project, or you want to customize a project for your own use.
 
-1. Go to my hello-world repository [https://github.com/robinagandhi/hello-world.git](https://github.com/robinagandhi/hello-world.git).
-2. Click the `Fork` button in the top right corner, just above the green `<> Code` button.
-3. This creates a copy of my repository under your own GitHub account. You can verify this by checking your repositories list on your GitHub profile.
-4. In your forked repository, you can make changes directly on GitHub. For example, edit the `README.md` file by clicking it, then clicking the pencil icon to edit. Add a link to your favorite website (e.g., [https://www.unomaha.edu](https://www.unomaha.edu)), then save your changes with a commit message.
-5. **Clone your fork locally** to make more extensive changes. To do this, use the `git clone` command with your fork's URL.
-6. Make changes locally, commit, and push to your fork on GitHub.
-7. To propose your changes to my hello-world repository, click the `Pull requests` tab in your forked repository, then click `New pull request`. This will compare your changes with my repository. Add a description explaining your changes and submit the pull request.
+### Steps to Fork and Contribute
 
-As the owner of my hello-world repository, I will be notified of your pull request. Now I can review your suggestions, request additional changes, or merge your contribution as is. If merged, your changes become part of my hello-world repository.
+1. **Fork the Repository on GitHub**
+   - Go to the repository you want to fork (e.g., [https://github.com/robinagandhi/hello-world.git](https://github.com/robinagandhi/hello-world.git)).
+   - Click the `Fork` button in the top right corner.
+   - This creates a copy of the repository under your own GitHub account.
 
-To summarize this step, **forking and pull requests** are essential for open source collaboration. They allow you to experiment safely, propose improvements, and contribute to projects you do not own.
+2. **Make Changes in Your Fork**
+   - You can edit files directly on GitHub (e.g., edit `README.md` and add a link or note).
+   - Or, clone your fork to your local machine for more extensive changes:
+     ```bash
+     git clone https://github.com/<your-username>/hello-world.git
+     cd hello-world
+     ```
+   - Make your changes locally, then stage and commit them as usual.
 
-And that is one way you can collaborate using GitHub. 
+3. **Push Changes to Your Fork**
+   - After committing, push your changes to your fork on GitHub:
+     ```bash
+     git push origin master
+     ```
+   - Replace `master` with your branch name if different.
+
+4. **Propose Changes to the Original Repository (Pull Request)**
+   - On GitHub, go to your forked repository.
+   - Click the `Pull requests` tab, then `New pull request`.
+   - Compare your changes with the original repository, add a description, and submit the pull request.
+   - The owner of the original repository will review your suggestions and may merge them.
+
+## Best Practices
+- **Describe your changes clearly** in your pull request.
+- **Sync your fork** with the original repository regularly to avoid conflicts.
+- Use feature branches for new features or fixes, and submit pull requests from those branches.
+
+## Additional Resources
+- [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+- [About pull requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 
 [Top](#table-of-contents)
 
@@ -526,21 +475,28 @@ For more, see the [GitHub Copilot Quickstart](https://docs.github.com/en/copilot
 
 GitHub Actions is a powerful feature that lets you automate tasks in your software development workflow. With Actions, you can automatically build, test, and deploy your code whenever you push changes to your repository.
 
+**What is CI/CD?**
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment/Delivery**. These are modern software development practices that help teams deliver code changes more frequently, reliably, and efficiently.
+
+- **Continuous Integration (CI):** Automatically builds and tests your code every time you push changes. This helps catch errors early and ensures that your codebase is always in a working state.
+- **Continuous Deployment/Delivery (CD):** Automatically deploys your application to a production or staging environment after passing all tests. This reduces manual work and speeds up the release process.
+
 **What can you do with GitHub Actions?**
-- Run tests automatically when you push code to your repository on GitHub.
-- Build and deploy your project to production or staging environments.
+- Run tests automatically when you push code (CI).
+- Build and deploy your project to production or staging environments (CD).
 - Lint code (check for syntax and style issues) and check for formatting issues.
 - Automate repetitive tasks like labeling issues or sending notifications.
 
 **How to get started:**
 1. Go to the "Actions" tab in your GitHub repository (for example, your `hello-world` repository).
 2. We will select `set up a workflow yourself`, but you can choose a workflow template (e.g., Node.js, Python, etc.) if it fits your project.
-4. You will be prompted to create a YAML file that defines your workflow. YAML is a human-readable data format used to define workflows in GitHub Actions.
-5. Let's start with a simple workflow that runs on every push to your repository.
+3. You will be prompted to create a YAML file that defines your workflow. YAML is a human-readable data format used to define workflows in GitHub Actions.
+4. Let's start with a simple workflow that runs on every push to your repository.
 
-**Example 1: Lint Markdown Files in Your Hello World Repository**
+**Example 1: Lint Markdown Files in Your Hello World Repository (CI)**
 
-Keeping your documentation clean is important! You can use a GitHub Action to automatically check your Markdown files for style issues every time you push changes:
+Keeping your documentation clean is important! You can use a GitHub Action to automatically check your Markdown files for style issues every time you push changes (an example of CI):
 
 ```yaml
 name: Lint Markdown
@@ -572,13 +528,49 @@ jobs:
 
 This workflow will run the `markdown-lint` tool on all Markdown files in your repository whenever you push changes or open a pull request. It will check for common formatting issues and report them in the Actions tab.
 
+**Example 2: Run Tests Automatically (CI)**
+
+Suppose you have a Python project with tests. You can use GitHub Actions to automatically run your tests every time you push code:
+
+```yaml
+name: Python application
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run tests
+        run: |
+          pytest
+```
+
+**Example 3: Deploy Automatically (CD)**
+
+You can also set up workflows to deploy your application after tests pass. For example, you might deploy a static website to GitHub Pages or another service. (See GitHub documentation for deployment examples.)
+
+> **CI/CD in Practice:**  
+> - CI helps you catch errors early by running tests on every change.
+> - CD helps you deliver new features and fixes to users quickly and reliably.
+
 > **Troubleshooting:** If your workflow does not run, check that your YAML file is in `.github/workflows/` and that the syntax is correct (use a YAML linter if needed).
 
 **Learn more:**
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Awesome Actions (community examples), including code scanning](https://github.com/sdras/awesome-actions)
+- [What is CI/CD?](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 
-Automating your workflow with GitHub Actions can save time, reduce errors, and help your repository stay organized.
+Automating your workflow with GitHub Actions and adopting CI/CD practices can save time, reduce errors, and help your repository stay organized and up to date.
 
 [Top](#table-of-contents)
 
