@@ -5,18 +5,9 @@ description: Getting started with Git and GitHub
 ---
 
 # GitHub Primer
+This primer is designed to help you get started with Git and GitHub, two essential tools for software development and collaboration. By the end of this lesson, you will be able to create, clone, and manage repositories, synchronize changes, and collaborate effectively using GitHub. We will also explore how to use GitHub Actions for automation and AI-powered development tools like GitHub Copilot.
 
-### Cybersecurity First Principles in this lesson
-
-#### Domain Separation
-Good fences make good neighbors.  
-- It is good to separate source code from build and runtime environments
-- Version control for source code prevents accidental or unauthorized changes
-- Eliminate dead code
-- Promote code review, collaboration and versioning with least privilege
-
-#### Modularization
-The concept of modularity is like building blocks. Each block (or module) can be put in or taken out from a bigger project. Each module has its separate function that is interchangeable with other modules.
+> **Note:** Throughout this guide, you may see references to both `main` and `master` as the default branch name. New repositories on GitHub use `main` by default, but some older repositories use `master`. You can check your branch name with `git branch` command.
 
 ### Introduction: Git and GitHub
 * [Git](https://git-scm.com/) is a popular software development tool.
@@ -47,6 +38,7 @@ ls  # list files and directories in the current directory
 
 # Materials required
 - Download and install [git](https://git-scm.com/download/)
+- Download and install [Visual Studio Code (VS Code)](https://code.visualstudio.com/)
 
 # Table of Contents    
 <!-- TOC START min:1 max:3 link:true update:true -->
@@ -56,17 +48,16 @@ ls  # list files and directories in the current directory
     - [Step 3: Clone a Repository](#step-3-clone-a-repository)
     - [Step 4: Push Changes](#step-4-push-changes)
     - [Step 5: Pull Remote Changes](#step-5-pull-remote-changes)
-    - [Step 6: Fork Repository](#step-6-fork-repository)
-    - [Step 7: Make a Pull Request](#step-7-make-a-pull-request)
-    - [Step 8: Markdown](#step-8-markdown)
-    - [Step 9: Project Management](#step-9-project-management)
-    - [Step 10: AI-Powered Development](#step-10-ai-powered-development)
-    - [Fork this course](#fork-this-course)
-    - [Cyber security First Principle Reflections](#cyber-security-first-principle-reflections)
+    - [Step 6: Fork a Repository](#step-6-fork-a-repository)
+    - [Step 7: Markdown](#step-7-markdown)
+    - [Step 8: Project Management](#step-8-project-management)
+    - [Step 9: AI-Powered Development](#step-9-ai-powered-development)
+    - [Step 10: Automate Your Workflow with GitHub Actions](#step-10-automate-your-workflow-with-github-actions)
+    - [Fork This Course](#fork-this-course)
+    - [Cybersecurity Reflections](#cybersecurity-reflections)
 - [Additional Resources](#additional-resources)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
-
 <!-- TOC END -->
 
 # Step 1: Create an Account
@@ -79,7 +70,9 @@ You will also need to verify your email address after registration to use your n
 Complete the following GitHub tutorial:
 [https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/)
 
-At the end of Step 2, you will have created a `remote` repository and will have added a `branch`. It is `remote` because all your files are on the GitHub server. As a developer, you might ask, _"how do I use this to manage my local codebase if it is just online?"_ It is not convenient to write and test code online, especially when many applications require locally install packages even to work. Using your own `Local` repository would be great. We will do just that in the next step.   
+> **Tip:** The `hello-world` repository you create in this step will be used throughout the rest of this guide for hands-on practice.
+
+At the end of Step 2, you will have created a `remote` repository and will have added a `branch`. It is `remote` because all your files are on the GitHub server. As a developer, you might ask, _"how do I use this to manage my local codebase if it is just online?"_ It is not convenient to write and test code online, especially when many applications require locally installed packages to work. Using your own `Local` repository would be great. We will do just that in the next step.   
 
 Git is a distributed configuration management system. Unlike a centralized code repository, there is no single authoritative repository. With Git you can have multiple independent repositories that could be in different states at any given time. If needed, these repositories may be synchronized with reference to commits.
 
@@ -95,32 +88,55 @@ To create a `Local` repository, git has two basic options.
 ## Clone a remote repository
 Let's start by looking at option #1. First, check if Git is installed.
 
-- Git tools do not come pre-installed with all operating systems.
-- To check if they exist on your operating system, open up a command line interface (`Powershell` for Windows, Terminal for Mac OS or Linux) and type:
+- Git tools are not pre-installed on all operating systems.
+- To check if they exist on your operating system, open up a command line interface (`PowerShell` for Windows, `Terminal` for Mac OS or Linux) and type:
 
-  ```bash
-  git --version
-  ```
+```bash
+git --version
+```
 
 - If Git is installed, this command will show the version installed. If the command is not recognized, then it means you need to install git on your OS. The information available at [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) can walk you through it for a variety of OSes.
 - Just for demonstration, I will assume a Windows OS environment with Powershell (similar to a Terminal on Mac OS or Linux) as shown below:
 
-> ![version](./img/gitVersionCheck.png)
+You should see output similar to the following, indicating the installed version:
+
+```
+git version 2.39.5 (Apple Git-154)
+```
 
 To `clone` a remote repository (what we set out to do), we first need a ```reference URL``` to find it.   
 * On `GitHub.com`, navigate to your hello-world repository and click on the green button that says ```<> Code```.   
 * Copy the URL under Clone that starts with HTTPS.  
 * Now we are ready to clone this remote repository, and create a local repository.
 
-  ```bash
-  git clone <<replace this, including the angled brackets, with the copied URL>>
-  ```
+```bash
+git clone <<replace this, including the angled brackets, with the copied URL>>
+
+```
+
+For example, if my repository URL is `https://github.com/robinagandhi/hello-world.git` so the command to clone it will be:
+
+```bash
+git clone https://github.com/robinagandhi/hello-world.git
+
+```
 
 Once you issue this command, you will start to see some download messages, and upon success, your local repository will be ready for use. You may be asked to authenticate with GitHub credentials if your repository is not public.
 
->![clone](./img/gitClone.png)
+```
+Cloning into 'hello-world'...
+remote: Enumerating objects: 85, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 85 (delta 0), reused 1 (delta 0), pack-reused 82 (from 1)
+Receiving objects: 100% (85/85), 25.98 KiB | 5.19 MiB/s, done.
+Resolving deltas: 100% (22/22), done.
 
-Now, in Powershell, switch to the hello-world directory that has all the files from the repository that you just cloned.
+```
+
+Now, in PowerShell, switch to the hello-world directory that has all the files from the repository that you just cloned.
+
+> **Tip:** Open the `hello-world` folder in VS Code or your preferred editor for a more hands-on experience.
 
 ```bash
 cd hello-world/
@@ -158,10 +174,12 @@ Git is based on a **de-centralized** model of ownership - which means that there
 
 Let's open the hello-world folder in your file explorer and make changes to the `README.md` file in a text editor.  
 
-1. Navigate to the files
-2. Open README.md in Notepad
-3. Edit README.md to add a message. Like the one below.
->![readme](./img/editreadme.png)
+For example, you could add the following lines to your `README.md` file:
+
+```markdown
+# hello-world
+A repository for the Software Assurance course at the University of Nebraska at Omaha.
+```
 
 Once you save the edited README.md, check the status of the local repository using the following command. Return to Powershell:
 
@@ -170,7 +188,17 @@ git status
 ```
 You should see something like this:
 
->![gitstatus](./img/editedFileStatus.png)
+```
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
 
 A few things to notice here about these status messages:  
 1. `On branch master`: You are on the master branch in your `local` repository. More recently, many git tools use the name `main` instead of `master` for more inclusive terminology. 
@@ -192,23 +220,31 @@ git status
 ```
 You should see something like this:
 
->![gitadd](./img/gitadded.png)
+```
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+```
 
 This time the modified files are `staged` and appear in green. These changes are ready to be committed.
 
-Before we `commit` these files into our local repository, the author details need to be set. This constraint is for accountability of commits. Using the commands below, save your information to the git configuration files and set them for all of your local repositories. Make sure to use the same name and email you used to register with GitHub.
+Before we `commit` these files into our local repository, the author details need to be set. This constraint is for accountability of commits. Using the commands below, save your information to the git configuration files and set them for all of your local repositories. Make sure to use the **same name and email** you used to register with GitHub.
 
 ```bash
 git config --global user.name "replace this with your name"
 git config --global user.email youremail@example.com
 ```
 
+The `--global` flag indicates that these settings will apply to all repositories on your computer. If you want to set these parameters for a specific repository only, you can run the same commands without the `--global` flag while in that repository directory.
+
 Check your configuration changes by using the following command:
 ```bash
 git config --list
 ```
-
-You only have to set the config parameters once. git will keep reusing them when making commits or merging your changes with other repositories. To check your global config parameters, `--global` flag can be added to the previous command. With the `--global` command, you can review the configuration irrespective of a specific repository.
+You should see your name and email in the output. 
 
 Now let's commit the changes that we staged before. Here we use the `commit` option with `-m` to provide a short commit message. The message helps us semantically annotate various checkpoints in our editing process. These messages are beneficial when rolling back changes to an earlier commit.
 
@@ -226,7 +262,7 @@ This command shows a summary of commits in the repository, starting with the mos
 
 > Hit the key `q` to exit the log of commit messages.
 
-To see a specific commit use the following command with a commit-id, such as: `3503cb621d9a25aae8b3ecea93c09c3f54bb1d4e` or just the first 7 digits `3503cb6`.
+To see a specific commit use the following command with a commit-id, such as: `585db21052a558e7ca917db7d04e684c229e37e3` or just the first 7 digits `585db21`.
 
 ```bash
 # replace commit-id in the command below
@@ -241,9 +277,16 @@ Issue this command to check your repository status once again:
 git status
 ```
 
-It should report **no** uncommitted changes. But it indicates that `Your branch is ahead of 'origin/master' by 1 commit`. It means that the local repository master branch has more recent commits than the remote repository master branch.
+It should report **no** uncommitted changes. But it indicates that `Your branch is ahead of 'origin/master' by 1 commit`. It means that the local repository master branch has more recent commits than the **remote** repository master branch.
 
-To push our local commits to the remote repository (GitHub in this case), we need the git `push` command. With this command, we need to indicate the name of the remote repository followed by the name of the local repository branch that has updates to be pushed. Do you remember the name of our remote repository and the main branch?
+To push our local commits to the remote repository (GitHub in this case), we need the git `push` command. However, this command will not work until we authenticate with GitHub. I recommend that you use `GitHub CLI` to authenticate with GitHub. It is a command line tool that allows you to interact with GitHub from the terminal. You could also use Github Desktop or other GUI tools, but the CLI is more versatile and powerful.
+
+- Install [GitHub CLI](https://github.com/cli/cli#installation) on macOS, Windows, or Linux.
+- Once installed, open the command line and enter `gh auth login`, then follow the prompts.
+- When prompted for your preferred protocol for Git operations, select HTTPS.
+- When asked if you would like to authenticate to Git with your GitHub credentials, enter `Y`.
+
+After a successful authentication, to issue the `push` command, we need to indicate the name of the remote repository followed by the name of the local repository branch that has updates to be pushed. Do you remember the name of our remote repository and the main branch?
 
 > **Questions**  
 > - What is the default name of the remote repository?  
@@ -259,47 +302,43 @@ To `push` local commits in the current branch to a remote repository (`origin` i
 > `git push  <REMOTENAME> <LOCALBRANCHNAME>:<REMOTEBRANCHNAME>`  
 > This command pushes the LOCALBRANCHNAME to your REMOTENAME but renames it as REMOTEBRANCHNAME.  
 > This option would be useful if you made local commits on the master branch but want to push your changes to a feature branch on origin.
+> If you are using a different branch name, replace `master` with your branch name in the above command.
+> If you are using a different remote repository name, replace `origin` with your remote repository name in the above command.
 
 Now, issue the `status` command to check your repository status once again:
+
 ```bash
 git status
 ```
+You should see a message indicating that your branch is up to date with 'origin/master' and no changes to be committed. This means that your local repository is now synchronized with the remote repository on GitHub. If you navigate to your repository on GitHub.com, you will see your commit message and the changes reflected in the `README.md` file.
 
-Visit your remote repository on `GitHub.com`. Your changes should appear there. You should also see your commit message there. Clicking on the commit message will show the file differences in that commit.
+As mentioned before in the introduction, git version control is very efficient for text files. It does not store entire files for old versions but only the differences. **So it is prudent to make frequent commits** and then push these changes to the remote repository - so that you have as many checkpoints as possible should you need to roll back. 
 
-> ![updateremote](./img/remoteupdate.png)
-
-As mentioned before in the introduction, git version control is very efficient for text files. It does not store entire files for old versions but only the differences. So it is prudent to make frequent commits and then push these changes to the remote repository - so that you have as many checkpoints as possible should you need to roll back. To keep the master branch commits clean, you should do feature development and testing in a feature branch and then merge with master.
+To keep the master branch commits clean, you should do feature development and testing in a feature branch and then merge with master.
 
 [Top](#table-of-contents)
 
 # Step 5: Pull Remote Changes
 What happens if we make some changes to README.md on `GitHub.com`? Or another collaborator makes changes to it. How do we get these changes back into our local repository? We will learn just that in this step.
 
-So, I realized that I forgot to add a link to UNO's Cybersecurity programs in the README.md file. So I will make these changes and commit those changes on GitHub.com.
+Navigate to your hello-world repository on `GitHub.com` and edit the `README.md` file. You can do this by clicking on the file name in the repository view, then clicking the pencil icon to edit it. 
 
-1. First, click on README.md file on GitHub and then click the edit option as shown below:
->![githubedit](./img/githubedit.png)
+Add a link to your favorite website, for example, [https://www.unomaha.edu](https://www.unomaha.edu) and save the changes.
 
-2. Make changes, add a commit message and click `Commit changes`
->![githubcommit](./img/githubcommit.png)
+After making your changes, add a commit message and click the `Commit changes` button.
 
-3. See changes in your README.md file
->![githubupdated](./img/githubupdated.png)
+Your `README.md` file will now be updated with the new link.
 
-Now the remote repository is one `commit` ahead of the local repository. To bring the _local_ repository up to speed, we use the following command in a terminal.
+Now the remote repository is one `commit` ahead of the local repository. You can verify this by going back to your local repository in a terminal and using the `git status` command. 
+
+To bring the _local_ repository up to speed, we use the following command in a terminal.
 
 ```bash
 git pull
 ```
-The `git pull` command fetches remote changes (`git fetch`) and merges them (`git merge`) into into the current branch.
+The `git pull` command fetches remote changes (`git fetch`) and merges them (`git merge`) into the current local branch.
 
-> `Sidebar`: If a repository has linked sub-modules, add the following recursion flags to clone and pull changes from the sub-modules as well:  
-> `git clone --recursive <<name of the repository with sub-modules>>`  
-> `git pull --recurse-submodules`
-
-Continuing with the lesson, if we look at our local README.MD file in windows explorer, it should have the updated link.
->![localpullupdate](./img/openreadme.png)
+After pulling the changes, your local `README.md` file will be updated with the new link.
 
 At this point, you know enough to keep both the local and remote repositories synchronized.    
 
@@ -311,202 +350,296 @@ If you are interested in learning more about complex team interaction scenarios 
 
 [Top](#table-of-contents)
 
-# Step 6: Fork Repository
+# Step 6: Fork a Repository
+
 Now we will learn about **forking** a repository.
 
-Here is what GitHub [says](https://help.github.com/articles/fork-a-repo/):
-> A fork is a copy of a repository. Forking a repository allows you to experiment with changes without affecting the original project.
+A fork is a copy of a repository. Forking allows you to experiment with changes without affecting the original project. You can use forks to propose changes to someone else's project (via pull requests) or to use their project as a starting point for your own ideas.
 
-> Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+**How to Fork and Contribute:**
 
-> Every public repository can be forked
+1. Go to my hello-world repository [https://github.com/robinagandhi/hello-world.git](https://github.com/robinagandhi/hello-world.git).
+2. Click the `Fork` button in the top right corner, just above the green `<> Code` button.
+3. This creates a copy of my repository under your own GitHub account. You can verify this by checking your repositories list on your GitHub profile.
+4. In your forked repository, you can make changes directly on GitHub. For example, edit the `README.md` file by clicking it, then clicking the pencil icon to edit. Add a link to your favorite website (e.g., [https://www.unomaha.edu](https://www.unomaha.edu)), then save your changes with a commit message.
+5. **Clone your fork locally** to make more extensive changes. To do this, use the `git clone` command with your fork's URL.
+6. Make changes locally, commit, and push to your fork on GitHub.
+7. To propose your changes to my hello-world repository, click the `Pull requests` tab in your forked repository, then click `New pull request`. This will compare your changes with my repository. Add a description explaining your changes and submit the pull request.
 
-So head-on over to a hello-world repository developed by one of your class mates or mine. You can do this by browsing to the `git URL` of their hello-world repository in your browser. For example, my hello-world repository is located at: [https://github.com/robinagandhi/hello-world.git](https://github.com/robinagandhi/hello-world.git)
+As the owner of my hello-world repository, I will be notified of your pull request. Now I can review your suggestions, request additional changes, or merge your contribution as is. If merged, your changes become part of my hello-world repository.
 
-You should see something like this on your peer's repository:
->![githubfork](./img/githubfork.png)
+To summarize this step, **forking and pull requests** are essential for open source collaboration. They allow you to experiment safely, propose improvements, and contribute to projects you do not own.
 
-Click the `Fork` button.
-
-After forking, you will have your own copy of the repository. Using [Step 3](#step-3) you can `clone` this repository to your local computer. Make changes to files and `push` it back to this forked remote repository.   
-
-Forking a repository is an excellent way to suggest new features to the original repository that you do not own, using a `pull` request. Let's do this in the next step.
-
-[Top](#table-of-contents)
-
-# Step 7: Make a Pull Request
-In this step, make changes to the fork of your peers' repository on `GitHub.com` and create a `pull request`.
-
-Let's assume that a `gencyber` (insert your ID here) user forks `robinagandhi/hello-world` repository.
-
-The forked repository for the `gencyber` user will look like this:
->![forkedrepo](./img/forkedrepo.png)
-
-The `gencyber` user now makes changes to the README.md file in this forked repository. She is also the owner of this new `forked` repository.
->![forkupdate](./img/forkupdate.png)
-
-Now to suggest these changes to the `robinagandhi` user; the `gencyber` user needs to create a `pull request`. So the `gencyber` user switches over to the `Pull Request` tab on the forked repository and clicks the **new pull request** button. It will look something like this:
->![forkpulltab](./img/forkpulltab.png)
-
-Here is an open pull request that compares the master branches across the two repositories.
->![forkpullopen](./img/forkpullopen.png)
-
-The `robinagandhi` user is now notified of a `pull request` on his hello-world repository. He examines the suggested changes, and in this case, the files can be automatically merged.
->![forkmerge](./img/forkmerge.png)
-
-In cases where files cannot be merged automatically, discussions around the pull request can help to resolve the conflicts manually. In this case that won't be necessary. With a few more simple clicks the changes are `merged`. Your peer will see something like this to confirm the merge:
->![mergeconfirm](./img/mergeconfirm.png)
-
-Here is a confirmation message after a successful `merge`:
->![mergemsg](./img/mergemsg.png)
-
-Your peer's repository should now reflect the updated content. It will be something like this:
->![finalupdate](./img/forkupdatefinal.png)
-
-Now return the favor to your peer. Help them `fork` your hello-world repository and make a `pull request` back to you.
-
-And that is one way you can collaborate using `GitHub`.
+And that is one way you can collaborate using GitHub. 
 
 [Top](#table-of-contents)
 
-# Step 8: Markdown
-To communicate and write effectively on GitHub, you will need to learn `Markdown`. Examine Markdown here: [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
+# Step 7: Markdown
 
-You can try out the syntax on directly on GitHub in any file that ends in the extension `.md`. Files with the `.md` extension signify Markdown files. So head on over to your hello-world repository on GitHub and edit the README.md file. In the edit mode, you can observe the effect of Markdown syntax by clicking on the Preview tab.
+To communicate and write effectively on GitHub, you will need to learn `Markdown`. Markdown is a lightweight markup language that allows you to format text using simple syntax. It is widely used for README files, documentation, and comments on GitHub.
 
-In the figure below, When in the preview mode, notice the formatting effect of `#` before text related to a heading.
+**Why use Markdown?**
+- It makes your documentation readable and visually appealing.
+- It is easy to learn and quick to write.
+- It works directly in GitHub and many other platforms.
 
->![preview](./img/markdownpreview.gif)
+**Getting Started:**
+1. Explore the basics here: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+2. Try out Markdown syntax directly on GitHub in any file ending with `.md` (Markdown file). Edit your `README.md` file in your hello-world repository and use the Preview tab to see the formatting. Optionally practice using this interactive tutorial: [markdowntutorial.com](http://www.markdowntutorial.com)
+3. **Tip:** Use the built-in Markdown preview in VS Code (`Cmd+Shift+V` on Mac, `Ctrl+Shift+V` on Windows/Linux) to see your formatting live.
 
-I suggest practicing using Markdown in this interactive tutorial: [http://www.markdowntutorial.com](http://www.markdowntutorial.com)
+**Common Markdown Syntax:**
+- `# Heading 1`, `## Heading 2`, ... for headings
+- `*italic*` or `_italic_` for italic text
+- `**bold**` or `__bold__` for bold text
+- Lists: `- item` or `1. item`
+- Links: `[text](url)`
+- Images: `![alt text](image_url)`
+- Code blocks: Use triple backticks (```) before and after your code
 
-More advanced markdown formatting like [organizing data](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables) with tables and creating [code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks) is also possible. 
+**Example:**
+```markdown
+# My Project
+
+This is a **bold** statement and this is *italic* text.
+
+- Item 1
+- Item 2
+
+[Visit UNO](https://www.unomaha.edu)
+```
+
+For more advanced formatting, see:
+- [Organizing data with tables](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
+- [Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
+
+Learning Markdown will help you communicate more clearly and professionally on GitHub. We will use Markdown extensively in this course for documentation, assignments, and project descriptions.
 
 [Top](#table-of-contents)
 
-# Step 9: Project Management
-GitHub integrates several project management features with code management. Two project management features will be very helpful for planning the deliverables in this class. Issue tracking and Project Boards.
+# Step 8: Project Management
+
+Effective project management is essential for planning, tracking, and delivering software projects. GitHub provides built-in tools – Issues and Project Boards – to help you organize your work and collaborate with others.
 
 ## Issue Tracking
-Project planning requires creating shared expectations about tasks and their assignments. Issues are a way to create and assign tasks with GitHub. Follow this tutorial to make understand how to use Issues: [https://guides.github.com/features/issues/](https://guides.github.com/features/issues/)
+
+Issues are used to track tasks, bugs, feature requests, and questions. They help you and your team stay organized and ensure nothing falls through the cracks.
+
+**How to create and manage Issues:**
+1. Go to the "Issues" tab in your hello-world repository on GitHub.com.
+2. Click "New Issue".
+3. **Example:** Create an issue titled "Add new updates to README.md" and describe what needs to be added.
+4. Assign the issue to yourself or a team member, add labels (e.g., bug, enhancement), and set a milestone if applicable.
+5. Click "Submit new issue".
+6. Once the issue is resolved, you can close it by clicking the "Close issue" button.
+7. You can also comment on issues to discuss details, ask questions, or provide updates.
+
+For more, see: [GitHub Issues Guide](https://guides.github.com/features/issues/)
 
 ## Project Boards
-Project boards are useful planning tools. Work assignments are captured as cards and organized into lists. A table view or a Kanban-style board works best to sort cards into columns by status like "To Do," "In Progress," and "Done." Please follow this tutorial to create a project [https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects)
 
-A project also has automated workflows to add items automatically from issues in a repository. 
-[https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically)
+Project Boards help you visualize and manage your work using Kanban-style columns (e.g., To Do, In Progress, Done) or a table view. You can also add issues and notes as cards to the board, making it easy to track progress and collaborate with your team.
 
-[T
-op](#table-of-contents)
+**How to create and use a Project Board:**
+1. Go to the "Projects" tab in your repository.
+2. Click "New Project" green button and choose a template (e.g., Team planning or Kanban).
+3. Name your project and add columns as needed.
+4. Add issues or notes as cards to the board.
+5. Move cards between columns to track progress.
 
-# Step 10: AI-Powered Development
-AI tools like **GitHub Copilot** are changing how developers write code, debug, and learn.
+You can automate workflows, such as automatically adding new issues to a board or moving cards when issues are closed. See [Project Automation](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically).
 
-GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code. It can suggest code, complete functions, help write tests, and even explain code snippets.
+**Tips:**
+- Create project boards to visualize and manage your issues.
+- Project boards can be used for personal organization, not just team projects.
 
-### Enabling GitHub Copilot with Educational Access
+For more, see: [GitHub Projects Quickstart](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects)
+
+[Top](#table-of-contents)
+
+# Step 9: AI-Powered Development
+
+Artificial Intelligence (AI) is transforming how software is developed. Tools like **GitHub Copilot** can help you write code faster, learn new concepts, and improve your productivity. It can even assist with documentation and testing.
+
+## What is GitHub Copilot?
+
+GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code. It can:
+- Suggest code completions and entire functions.
+- Help write tests and documentation.
+- Explain code snippets and suggest improvements.
+- Support many programming languages and frameworks.
+
+Copilot is a powerful assistant, but it is **not** a substitute for understanding your code. Understanding is a combination of knowledge, experience, and critical thinking. Copilot can help you learn and improve your coding skills, but it is essential to review and understand its suggestions.
+Always review, test, and adapt its suggestions to your needs.
+
+> **Responsible Use:** Do not use Copilot to submit graded assignments that you do not understand or that violates academic integrity policies. You can and should use Copilot to learn and enhance your skills.
+
+## Getting Access as a Student
+
 As a student, you can often get free access to GitHub Copilot through the GitHub Student Developer Pack.
 
-1.  Navigate to the [GitHub Education](https://education.github.com/pack) website.
-2.  Click on "Sign up for Student Developer Pack" and follow the prompts to verify your student status. This typically requires a school-issued email or other proof of enrollment.
-3.  Once approved, access to GitHub Copilot should be enabled on your GitHub account.
+1. Go to the [GitHub Education](https://education.github.com/pack) website.
+2. Click "Sign up for Student Developer Pack" and follow the prompts to verify your student status.
+3. Once approved, Copilot should be enabled on your GitHub account.
 
-### Installing in [Visual Studio Code](https://code.visualstudio.com)
-Github Copilot works as an extension in popular code editors like Visual Studio Code. By analyzing the context of the file you are editing, along with related files, it provides relevant suggestions.
+## Installing Copilot in Visual Studio Code
 
-To install the extension in VS Code:
-1. Open Visual Studio Code.
-2. Go to the Extensions view by clicking the icon in the sidebar or pressing `Cmd+Shift+X`.
-3. Search for `GitHub Copilot` in the marketplace.
-4. Click "Install" on the extension provided by GitHub.
-5. You will be prompted to sign in with your GitHub account to authorize the extension.
+1. Open Visual Studio Code. If you do not have it installed, download and install it from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+2. Go to the Extensions view (`Cmd+Shift+X` on Mac or `Ctrl+Shift+X` on Windows).
+3. Search for `GitHub Copilot` and install the extension.
+4. Sign in with your GitHub account to authorize the extension.
 
-For example, you could write a comment describing a function, and Copilot will suggest the code to implement it:
+## Using Copilot
 
+- Start typing code or write a comment describing what you want to do. Copilot will suggest code completions.
+- To accept a suggestion, press `Tab`.
+- You can cycle through alternative suggestions with `Alt` + `[` or `Alt` + `]` on Windows/Linux, or `Option` + `[` or `Option` + `]` on Mac.
+- You can also ask Copilot to generate entire functions or classes by writing a comment describing what you want.
+- For example, you can write a comment like this in your code editor:
+
+**Example:**
 ```python
 # function to read a csv file and return a list of dictionaries
 ```
+Copilot will suggest the code for this function. Try this in your own `hello-world` repository for practice by creating a new Python file and writing the comment.
 
-GitHub Copilot would then suggest the Python code to accomplish this task. This can significantly speed up development and help you learn new languages and libraries.
+## Copilot Chat
 
-### Using Copilot Beyond Code Generation
+Copilot Chat is an interactive tool that lets you ask questions, get code explanations, and brainstorm ideas directly in your editor.
 
-GitHub Copilot is not just for writing new code. Its chat features can assist throughout the software development lifecycle.
+**Example Prompts:**
+- "Explain what this function does."
+- "Suggest test cases for this function."
+- "Refactor this code for readability."
+- "Generate a draw.io diagram outline for a login system."
 
-#### Requirements and Design
-You can use Copilot Chat to refine requirements and brainstorm designs. For example, you can provide a high-level feature idea and ask Copilot to break it down into user stories or suggest a technical design.
+**Tips**
+- Write clear comments and descriptive function names to get better suggestions.
+- Always review and test Copilot’s output for correctness and security.
+- Use Copilot to learn, not to bypass understanding or academic integrity policies.
 
-**Example Prompt in Copilot Chat:**
-> "I'm building a blog feature. Can you create user stories for an author who wants to write, publish, and delete a post? Include acceptance criteria for each."
-
-You can also ask it to generate diagrams using syntax like Mermaid.js right in your Markdown files to visualize system architecture.
-
-**Example Prompt for Mermaid Diagram:**
-> "Generate a Mermaid sequence diagram for a user login flow involving a browser, a web server, and a database."
-
-Copilot can then generate the Mermaid code block for you, which will render as a diagram on GitHub:
-
-````mermaid
-sequenceDiagram
-    participant User
-    participant Browser
-    participant Web Server
-    participant Database
-
-    User->>Browser: Enters credentials
-    Browser->>Web Server: POST /login
-    Web Server->>Database: Verify credentials
-    Database-->>Web Server: Authentication status
-    Web Server-->>Browser: Redirect to dashboard
-    Browser-->>User: Show dashboard
-````
-
-#### Code Review and Explanation
-When reviewing a pull request or trying to understand an existing codebase, Copilot is invaluable.
--   **Explain Code:** Select a block of code and ask Copilot Chat `/explain` to get a natural language description of what it does.
--   **Suggest Improvements:** Ask Copilot to review a piece of code for potential bugs, performance issues, or ways to make it more readable.
--   **Generate Tests:** Select a function and ask Copilot to generate unit tests using the `/tests` command, helping you verify its behavior and improve test coverage.
-
-To get started, you can install the GitHub Copilot extension in your editor and follow the [Quickstart guide](https://docs.github.com/en/copilot/quickstart).
+For more, see the [GitHub Copilot Quickstart](https://docs.github.com/en/copilot/quickstart).
 
 [Top](#table-of-contents)
 
+# Step 10: Automate Your Workflow with GitHub Actions
+
+GitHub Actions is a powerful feature that lets you automate tasks in your software development workflow. With Actions, you can automatically build, test, and deploy your code whenever you push changes to your repository.
+
+**What can you do with GitHub Actions?**
+- Run tests automatically when you push code to your repository on GitHub.
+- Build and deploy your project to production or staging environments.
+- Lint code (check for syntax and style issues) and check for formatting issues.
+- Automate repetitive tasks like labeling issues or sending notifications.
+
+**How to get started:**
+1. Go to the "Actions" tab in your GitHub repository (for example, your `hello-world` repository).
+2. We will select `set up a workflow yourself`, but you can choose a workflow template (e.g., Node.js, Python, etc.) if it fits your project.
+4. You will be prompted to create a YAML file that defines your workflow. YAML is a human-readable data format used to define workflows in GitHub Actions.
+5. Let's start with a simple workflow that runs on every push to your repository.
+
+**Example 1: Lint Markdown Files in Your Hello World Repository**
+
+Keeping your documentation clean is important! You can use a GitHub Action to automatically check your Markdown files for style issues every time you push changes:
+
+```yaml
+name: Lint Markdown
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+  pull_request:
+    paths:
+      - '**/*.md'
+
+jobs:
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint Markdown files
+        uses: DavidAnson/markdownlint-cli2-action@v15
+        with:
+          globs: '**/*.md'
+```
+
+6. Commit and push your changes to GitHub. Your file will be saved as `.github/workflows/main.yml`.
+   - You can also name the file something more descriptive, like `markdown-lint.yml`.
+   - The `on` section specifies when the workflow should run (on push or pull request).
+   - The `jobs` section defines the steps to run, including checking out the code and running the `markdown-lint` tool.
+7. Go to the "Actions" tab in your repository to see your workflow run! You may see several error messages if there are issues with your Markdown files. Review the output to see what needs fixing.
+
+This workflow will run the `markdown-lint` tool on all Markdown files in your repository whenever you push changes or open a pull request. It will check for common formatting issues and report them in the Actions tab.
+
+> **Troubleshooting:** If your workflow does not run, check that your YAML file is in `.github/workflows/` and that the syntax is correct (use a YAML linter if needed).
+
+**Learn more:**
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [Awesome Actions (community examples), including code scanning](https://github.com/sdras/awesome-actions)
+
+Automating your workflow with GitHub Actions can save time, reduce errors, and help your repository stay organized.
+
+[Top](#table-of-contents)
 
 # Fork This Course
-We practice what we preach at UNO. Our whole course has been developed on GitHub. Now that you are a git guru, you may as well fork it, make changes and submit pull requests! I hope this GitHub jargon is starting to make sense.
 
-Navigate to the [course repository on GitHub](https://github.com/robinagandhi/swa) and click fork. Boom, you have your own copy of the whole course, use responsibly 🤓
+This course has been developed on GitHub to encourage open collaboration and learning. Now that you are familiar with Git, you can fork this course repository to:
 
-You are now ready to explore the wonderful world of open source on GitHub. Enjoy and make your contributions!
+- Customize materials for your own study.
+- Experiment with changes and new content.
+- Propose improvements or corrections by submitting pull requests.
+
+**How to fork and contribute:**
+1. Navigate to the [course repository on GitHub](https://github.com/robinagandhi/swa).
+2. Click the "Fork" button to create your own copy of the repository.
+3. Make changes in your forked repository—add notes, fix typos, or suggest new content.
+4. To share your improvements, submit a pull request back to the original course repository.
+5. Your contributions will be reviewed by me, and if accepted, merged into the main course materials.
 
 [Top](#table-of-contents)
 
-# Cybersecurity First Principle Reflections
+# Cybersecurity Reflections
 
-On GitHub, only the `owner` of a remote repository can push commits to it. All other `GitHub users` have the limited privilege to make a pull request. The repository owner reviews pull requests and initiate a merge action. The owner may reject pull requests if they do not seem appropriate. A `collaborator` can push commits, but cannot delete a repository or add other collaborators. These constraints show the concept of __least privilege__ with GitHub user roles. Users should have no more privilege than required for their job.
+GitHub's collaboration model is designed with cybersecurity principles in mind. Understanding these principles helps you contribute safely and responsibly to open source projects.
 
-Developers often design GitHub repositories, to be self-contained _modules_. These modules are then put in or taken out of a bigger project. During build time these components are composed to create an integrated system. This strategy facilitates __Modularization__. Following this principle allows globally distributed teams to collaborate and locate faulty components.
+- **Least Privilege:** Only the `owner` of a remote repository can push commits directly. Other users must submit pull requests, which the owner reviews and merges if appropriate. Collaborators can push commits but cannot delete the repository or add other collaborators. This enforces the principle of least privilege—users have only the access necessary for their role.
+- **Modularization:** Repositories are often designed as self-contained modules. These modules can be integrated into larger projects, making it easier to manage, update, and locate faulty components. Modularization supports collaboration among distributed teams.
+- **Domain Separation:** Source code is separated from other resources, allowing for long-term maintenance and versioning. This separation enables teams to manage different product versions and operating environments securely.
+- **Security Tip:** Never commit secrets or passwords to your repository. Use environment variables or GitHub Secrets for sensitive data.
+- **Enable Two-Factor Authentication:** For added security, enable two-factor authentication (2FA) on your GitHub account. This helps protect your account from unauthorized access. [Learn more about 2FA](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
-Finally, GitHub repositories separate source code from other resources. This separation allows long-term archival and maintenance of a codebase, separate from its dependencies. __Domain Separation__ enables the management of source code versions that target different products and operating environments.
+By following these principles, you help ensure the security, integrity, and maintainability of your code and the projects you contribute to.
 
 [Top](#table-of-contents)
 
 # Additional Resources
 
-* [Quick start guide](http://rogerdudler.github.io/git-guide/)
-* Resources: [tryGit](https://try.github.io/)
-* [GitHub cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
-* Collection of [GitHub tutorials](https://help.github.com/articles/git-and-github-learning-resources/)
-* How To: [Ignore files during a check into GitHub](https://help.github.com/articles/ignoring-files/)
-* GitHub Guide: [Socialize on GitHub](https://guides.github.com/activities/socialize/)
-* GitHub Guide: [Documenting your Project on GitHub](https://guides.github.com/features/wikis/)
-* GitHub Guide: [Creating webpages on GitHub](https://guides.github.com/features/pages/)
-* GitHub Copilot: [Quickstart](https://docs.github.com/en/copilot/quickstart)
+**Git and GitHub Basics**
+* [Quick start guide](http://rogerdudler.github.io/git-guide/) — A concise, visual introduction to Git.
+* [GitHub cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) — Handy reference for common Git commands.
+* [Official Git Documentation](https://git-scm.com/doc) — Comprehensive documentation for Git.
+* [GitHub Learning Lab](https://github.com/apps/github-learning-lab) — Interactive GitHub tutorials.
+
+**GitHub Features and Best Practices**
+* [GitHub tutorials collection](https://help.github.com/articles/git-and-github-learning-resources/) — Curated list of GitHub learning resources.
+* [How To: Ignore files during a check into GitHub](https://help.github.com/articles/ignoring-files/) — Guide to using .gitignore.
+* [Socialize on GitHub](https://guides.github.com/activities/socialize/) — Tips for collaborating and networking.
+* [Documenting your Project on GitHub](https://guides.github.com/features/wikis/) — Using wikis for project documentation.
+* [Creating webpages on GitHub](https://guides.github.com/features/pages/) — Introduction to GitHub Pages for hosting websites.
+
+**AI and Automation**
+* [GitHub Copilot: Quickstart](https://docs.github.com/en/copilot/quickstart) — Get started with Copilot, GitHub’s AI coding assistant.
+* [GitHub Actions Documentation](https://docs.github.com/en/actions) — Automate workflows with GitHub Actions.
 
 [Top](#table-of-contents)
 
 # Acknowledgements
 
-* A special thanks to Matt Hale, Aaron Vigal and Cade Wollcot for reviews of this module and thoughtful discussions.
+* A special thanks to Matt Hale, Aaron Vigal and Cade Wollcot for reviews on early drafts of this module and thoughtful discussions.
 
 [Top](#table-of-contents)
+
+# License
+
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
