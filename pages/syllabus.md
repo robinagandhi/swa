@@ -3,16 +3,16 @@ layout: default
 title: 8420 Syllabus
 description: CYBR 8420 Software Assurance Syllabus
 ---
-# Syllabus - Fall 2024
+# Syllabus - Fall 2025
 
 # Course Description
 * Assurance is a reasoned, audit-able argument created to support claimed beliefs about an entity – Generally, the entity is so complex that it is not possible (i.e. time, technology, or resources are constrained) to examine every possible circumstance related to the claimed beliefs.
-* This course is an intersection of knowledge areas necessary to perform activities relevant for promoting assurance through claims argued and supported with evidence from `Software Security Engineering (SSE)` activities. Software Assurance entails SSE.
+* This course is an intersection of knowledge areas necessary to perform activities relevant for promoting assurance through claims argued and supported with evidence from `Software Security Engineering (SSE)` activities. Software Assurance entails SSE. We will practice with tools and techniques that guide human reasoning and trust decisions, which, while being process agnostic, can be integrated into various software development lifecycle approaches, including vibe coding, DevOps, DevSecOps, and more traditional waterfall and spiral models. 
 * This course takes on a software development lifecycle perspective for the prevention of flaws. It is not just secure coding!
 
 # Class Format
-* Asynchronous fully-online lectures, assignments, and exams
-* Synchronous weekly team meetings at team determined times. Instructor check-ins will be required before the submission of major assignments. Multiple time-slots will be available to teams for flexibility in scheduling instructor check-ins.
+* **Asynchronous** fully-online lectures, assignments, and exams
+* **Synchronous** weekly team meetings at team determined times. Bi-weekly instructor check-ins will be required before the submission of major assignments. Multiple time-slots will be available to teams for flexibility in scheduling instructor check-ins.
 
 # Where does the course fit in the degree program?
 * [MS in Cybersecurity Core](https://www.unomaha.edu/college-of-information-science-and-technology/school-of-interdisciplinary-informatics/cybersecurity/ms-cybr-reqs.php)  
@@ -39,7 +39,7 @@ description: CYBR 8420 Software Assurance Syllabus
 
 Lecture slides, videos, readings, and supplemental materials will be organized using modules in Canvas.
 
-## Textbooks/References
+## Books
 
 Instead of a single textbook, I have identified a series of books available from the library as e-books. You will need to use NU VPN and authenticate with your user-id to access these books. Alternatively, you could use single sign-on using your `@unomaha.edu` email on [O'Reilly Books Website](https://www.oreilly.com/member/login/).
 
@@ -47,9 +47,15 @@ Instead of a single textbook, I have identified a series of books available from
 
 * NIST SP 800-160 Vol. 2 Rev. 1, [Developing Cyber-Resilient Systems: A Systems Security Engineering Approach](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v2r1.pdf), National Institute of Standards and Technology.
 
+* [Beyond vibe coding: Leverage your experience in the age of AI (Early release)](https://learning.oreilly.com/library/view/beyond-vibe-coding/9798341634749/), by Osmani, A. August 2025. O’Reilly Media, Inc.
+
 * [AI-Assisted Programming. Better Planning, Coding, Testing, and Deployment](https://learning.oreilly.com/library/view/ai-assisted-programming/9781098164553/), By Tom Taulli, O'Reilly Media Inc., April 2024
 
-* [Cyber Security Engineering: A Practical Approach for Systems and Software Assurance](https://learning.oreilly.com/library/view/cyber-security-engineering/9780134189857), By Nancy R. Mead, Carol C. Woody
+* [Hands-on Security in DevOps](https://learning.oreilly.com/library/view/hands-on-security-in/9781788995504/), By Tony Hsu (Integration of security into DevOps)
+
+* [Bug Bounty Hunting Essentials](https://learning.oreilly.com/library/view/bug-bounty-hunting/9781788626897/), by Shahmeer Amir, Carlos A. Lozano, 2018 (How White-hat hacking can be a full-time job)
+
+* [Cyber Security Engineering: A Practical Approach for Systems and Software Assurance](https://learning.oreilly.com/library/view/cyber-security-engineering/9780134189857), By Nancy R. Mead, Carol C. Woody, 2016, Addison-Wesley Professional
 
 * [Secure Coding Principles and Practice, By Mark G. Graff; Kenneth R. van Wyk](https://www.safaribooksonline.com/library/view/secure-coding-principles/0596002424)(Commonsense and lightweight approach to software security engineering. Lots of war stories from the authors. While the book may appear dated, principles still remain relevant)
 
@@ -72,18 +78,13 @@ By Kamon Ayeva, Sakis Kasampalis (Noteworthy patterns in this book: Facade, Sing
 
 * [The Browser Hacker's Handbook, By Wade Alcorn; Christian Frichot; Michele Orru](https://www.safaribooksonline.com/library/view/the-browser-hackers/9781118662090) (This book will help you think about attacks if you are working with Web-apps)
 
-* [Hands-on Security in DevOps](https://learning.oreilly.com/library/view/hands-on-security-in/9781788995504/), By Tony Hsu (Integration of security into DevOps)
-
-* [Bug Bounty Hunting Essentials](https://learning.oreilly.com/library/view/bug-bounty-hunting/9781788626897/), by Shahmeer Amir, Carlos A. Lozano, 2018 (How White-hat hacking can be a full-time job)
-
-## Other Reference Books
+## Other Reference Books Used in the Course Design
 
 * Problem Frames: Analyzing and Structuring Software Development Problems, By Michael Jackson, Addison-Wesley (A seminal work in Requirements Engineering)
 
 ## Additional Resources
 
 * [Secure Programming for Linux and Unix HOWTO](https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html), David Wheeler  
-* [Software Assurance in Education, Training and Certification, Pocketguide](https://robinagandhi.github.io/swa/resources/pocketguide.pdf), Ed. Robin Gandhi. Was written in 2010 so some of the links and resources might be dated, but the discussion is just as relevant!
 * [SEI Book Series on Software Assurance](http://resources.sei.cmu.edu/library/asset-view.cfm?assetid=465870) (Good collection of relevant books on the topic)
 
 # Engagement
