@@ -8,9 +8,9 @@ description: CYBR 8420 Software Assurance Modules
 Content will be linked as we progress through the semester. This allows to me to update/create/re-design content throughout the semester.
 
 1. **The Demand for Software Assurance**
-  * [Competencies](http://resources.sei.cmu.edu/library/asset-view.cfm?assetid=47953) and Sample Job Descriptions: [1](https://www.cisa.gov/careers/work-rolessecure-software-assessor), [2](https://robinagandhi.github.io/swa/resources/swa-positions-1.pdf), [3](https://robinagandhi.github.io/swa/resources/swa-positions-2.pdf)
-1. What is Software Assurance?
-  * Reading: [Why hackers know more about our systems?](https://learning.oreilly.com/library/view/system-assurance/9780123814142/B9780123814142000014.xhtml)
+  * [Competencies](http://resources.sei.cmu.edu/library/asset-view.cfm?assetid=47953) and Sample Job Description: [1](https://www.cisa.gov/careers/work-rolessecure-software-assessor), [2](https://robinagandhi.github.io/swa/resources/swa-positions-1.pdf), [3](https://robinagandhi.github.io/swa/resources/swa-positions-2.pdf)
+1. What is Secure Software Development, Security and Operations (DevSecOps) Practices?
+  * Reading: [NIST SP 1800-44A](https://www.nccoe.nist.gov/sites/default/files/2025-07/nist-sp-1800-44a-ipd.pdf), Companion [website](https://www.nccoe.nist.gov/projects/secure-software-development-security-and-operations-devsecops-practices)
 1. **Collaborating when working on Software**
   - Self-paced module: Get familiar with version control.
 1. **Engineering For Assurance**

@@ -6,7 +6,7 @@ description: CYBR 8420 Software Assurance Project
 
 # Team Semester Project
 
-You might ask why have a team project? That too in an online class! To that I have to say that today we build and analyze things that are so complex that no one person can fully make or comprehend them —naturally, engineering activities to manage complexity are team-based—for example, open-source software development. Team members could be in different time zones, have competing priorities, and different skill levels. Experiencing such teamwork is essential for a course on software assurance. So, we will form five-person teams that will work together on a class project.
+You might ask why have a team project? That too in an online class! To that I have to say that today we build and analyze things that are so complex that no one person can fully make or comprehend them. Naturally, engineering activities to manage complexity are team-based, for example, open-source software development. Team members could be in different time zones, have competing priorities, and different skill levels. Experiencing such teamwork is essential for a course on software assurance. So, we will form **five-person** teams that will work together on a class project.
 
 This class strives to encourage learning by doing and making a real difference in the practice of building software. To turn this spirit into reality, you will work on a semester-long project with an open-source software project. Each team will select a unique open-source software project and examine opportunities for security-related improvements.
 
