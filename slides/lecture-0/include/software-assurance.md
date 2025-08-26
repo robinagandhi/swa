@@ -166,7 +166,7 @@ class: center, middle
 [![Tradition](images/tradition.png)](http://security.gloriad.org/blog/2007/10/21/traditional-thinking/)
 
 ???
-To ask meaningful questions, we have to understand that the practice of security is to construct sufficient defenses against the likely threats, not all threats, using demonstrably effective engineering practices. Security solutions are the perimeter often have to deal with the hard problem of allowing all legitimate sharing and blocking all attacks. With very little tolerance for mistakes, security at the perimeter can only do so much. Finally, without consideration for security engineering during software design, and given the complexity of software behaviors, coding flaws are going to be extremely hard to find.
+To ask meaningful questions, we have to understand that the practice of security is to construct sufficient defenses against the likely threats, not all threats, using demonstrably effective engineering practices. Security solutions at the perimeter often have to deal with the hard problem of allowing all legitimate sharing and blocking all attacks. With very little tolerance for mistakes, security at the perimeter can only do so much. Finally, without consideration for security engineering during software design, and given the complexity of software behaviors, coding flaws are going to be extremely hard to find.
 
 What does this all mean in the context of software assurance? In the next video we will look at the some of the ways in which organizations have attempted to answer questions about software assurance.
 
@@ -358,7 +358,7 @@ Share and [institutionalize](https://www.google.com/search?q=institutionalize) k
 _Relevant and logically analyzable artifacts that promote assurance_
 ## Practical
 Methods currently used in software engineering practice  
-_e.g., [Microsoft SDL](https://www.microsoft.com/en-us/sdl/), [BSIMM](https://www.bsimm.com/framework/), [SEI Curricula](http://www.cert.org/curricula/software-assurance-curriculum.cfm?)_
+_e.g., [Microsoft SDL](https://www.microsoft.com/en-us/securityengineering/sdl/practices), [BSIMM](https://www.bsimm.com/framework/), [SEI Curricula](http://www.cert.org/curricula/software-assurance-curriculum.cfm?)_
 ---
 
 # Security .red[vs.] Safety, Reliability and Quality
@@ -380,7 +380,7 @@ What is different for security is the nature of the anomaly. The anomaly in the 
 class: center, middle
 # A Winning Strategy
 ???
-To address this threat, we have to do a number of things from an engineering perspective. It is best explained by the next set of illustrations which I borrowed from Dr. Ron Ross, head of the FISMA program at the National Institute of Standards and Technology (NIST).
+To address this threat, we have to do a number of things from an engineering perspective. It is best explained by the next set of illustrations which I borrowed from Dr. Ron Ross, prior head of the FISMA program at the National Institute of Standards and Technology (NIST).
 
 ---
 class: center, middle

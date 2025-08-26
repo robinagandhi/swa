@@ -109,7 +109,7 @@ Suppose you want to work on the `hello-world` repository you created on GitHub. 
      ```bash
      git clone https://github.com/<your-username>/hello-world.git
      ```
-   - Replace the URL with your repository’s URL.
+   - Replace the URL with your `hello-world` repository’s URL.
 
 4. **Navigate to the Cloned Directory**
    - Change into the new directory:
@@ -177,6 +177,7 @@ Suppose you have made changes to your local `README.md` file and want to update 
      git commit -m "added UNO description"
      ```
    - This creates a checkpoint in your local repository.
+   - To run this command you may be prompted to set your username in Git. Learn more about [configuring Git](https://docs.github.com/en/get-started/git-basics/setting-your-username-in-git) for your environment.
 
 5. **Check Your Commit History (Optional)**
    - To see your commits:
@@ -191,7 +192,7 @@ Suppose you have made changes to your local `README.md` file and want to update 
      git push origin master
      ```
    - Replace `master` with your branch name if different, and `origin` with your remote name if different.
-   - You may be prompted to authenticate with GitHub if you haven't already.
+   - You may be prompted to [authenticate with GitHub](https://docs.github.com/en/get-started/git-basics/set-up-git#authenticating-with-github-from-git) if you haven't already. [Github CLI](https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git#github-cli) can help you cache your credentials.
 
 7. **Verify the Push**
    - Go to your repository on GitHub.com and confirm that your changes appear.
@@ -580,7 +581,7 @@ GitHub's collaboration model is designed with cybersecurity principles in mind. 
 - **Least Privilege:** Only the `owner` of a remote repository can push commits directly. Other users must submit pull requests, which the owner reviews and merges if appropriate. Collaborators can push commits but cannot delete the repository or add other collaborators. This enforces the principle of least privilege—users have only the access necessary for their role.
 - **Modularization:** Repositories are often designed as self-contained modules. These modules can be integrated into larger projects, making it easier to manage, update, and locate faulty components. Modularization supports collaboration among distributed teams.
 - **Domain Separation:** Source code is separated from other resources, allowing for long-term maintenance and versioning. This separation enables teams to manage different product versions and operating environments securely.
-- **Security Tip:** Never commit secrets or passwords to your repository. Use environment variables or GitHub Secrets for sensitive data.
+- **Secrets Management:** Never commit secrets or passwords to your repository. Use environment variables or GitHub Secrets for sensitive data.
 - **Enable Two-Factor Authentication:** For added security, enable two-factor authentication (2FA) on your GitHub account. This helps protect your account from unauthorized access. [Learn more about 2FA](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
 By following these principles, you help ensure the security, integrity, and maintainability of your code and the projects you contribute to.
