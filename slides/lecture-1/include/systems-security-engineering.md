@@ -16,6 +16,7 @@ This publication enhances an existing internationally recognized ISO standard fo
 [Appendices to NIST SP 800-160](https://csrc.nist.gov/Projects/Systems-Security-Engineering-Project/publications)  
 [ISO/IEC/IEEE 15288:2023
 Systems and software engineering](https://www.iso.org/standard/81702.html)
+[The PDF version is available from our library.](https://ieeexplore.ieee.org/document/10123367)
 
 ---
 
