@@ -346,7 +346,7 @@ Analysis applicable in any [lifecycle](https://en.wikipedia.org/wiki/Software_de
 ## Lightweight
 Share and [institutionalize](https://www.google.com/search?q=intitutaionalize) knowledge  
 ## Practical
-Methods currently effective in professional [software engineering practice](https://www.bsimm.com/framework/)
+Methods currently effective in professional [software engineering practice](https://www.bsimm.com)
 
 ???
 To internalize security engineering activities, the methods that we choose have to be process agnostic, lightweight and practical. These will be our assessment criteria for all the methods that I introduce in the course.
@@ -358,7 +358,7 @@ Share and [institutionalize](https://www.google.com/search?q=institutionalize) k
 _Relevant and logically analyzable artifacts that promote assurance_
 ## Practical
 Methods currently used in software engineering practice  
-_e.g., [Microsoft SDL](https://www.microsoft.com/en-us/securityengineering/sdl/practices), [BSIMM](https://www.bsimm.com/framework/), [SEI Curricula](http://www.cert.org/curricula/software-assurance-curriculum.cfm?)_
+_e.g., [Microsoft SDL](https://www.microsoft.com/en-us/securityengineering/sdl/practices), [BSIMM](https://www.bsimm.com), [SEI Curricula](http://www.cert.org/curricula/software-assurance-curriculum.cfm?)_
 ---
 
 # Security .red[vs.] Safety, Reliability and Quality
