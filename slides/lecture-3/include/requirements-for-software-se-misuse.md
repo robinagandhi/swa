@@ -21,7 +21,7 @@ class: middle
 
 ???
 There are many sources of security requirements. In particular, you want to pay attention to the security policies that stakeholders want to enforce on their information assets. These policy needs can be expressed in interviews, auditing needs, certification needs and resiliency needs.
-I have a few links here to further elaborate on the last two. In 2016, I authored a paper that talks about the use of NIST recommended security controls for the identification of requirements for software security engineering. From a resiliency perspective, NIST has published a companion guide to NIST Special publication 800-160 Volume 2. It about about how to apply security principles to achieve resiliency outcomes.
+I have a few links here to further elaborate on the last two. In 2016, I authored a paper that talks about the use of NIST recommended security controls for the identification of requirements for software security engineering (See table of contents in the PDF linked from certification needs). From a resiliency perspective, NIST has published a companion guide to NIST Special publication 800-160 Volume 2. It about about how to apply security principles to achieve resiliency outcomes.
 
 Security requirements can also be sourced from risk assessment processes applied to various organizational assets.
 

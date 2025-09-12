@@ -24,12 +24,12 @@ In interactions with real customers, you will quickly realize that requirements 
 
 ---
 class: middle
-# [NIST SP 800-160 SSE](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
+# [NIST SP 800-160 SSE](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1r1.pdf)
 ## .green[Stakeholder Needs and Requirements] Definition Process\*
 - **Purpose (Security Perspective):** _.red[Define the stakeholder security requirements] that include [protection capability](https://robinagandhi.github.io/swa/slides/lecture-1/systems-security-engineering.html#16), security characteristics, and security-driven constraints for the systems, so as to securely provide the capabilities needed by users and other stakeholders in a defined environment._
 
 .footnote[
-\*ISO/IEC/IEEE 15288-2015
+\*ISO/IEC/IEEE 15288-2023
 ]
 
 ???
@@ -38,12 +38,12 @@ The purpose of this process from a security perspective is to define the stakeho
 
 ---
 class: middle
-# [NIST SP 800-160 SSE](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1.pdf)
+# [NIST SP 800-160 SSE](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-160v1r1.pdf)
 ## .green[System Requirements] Definition Process\*
 - **Purpose (Security Perspective):** _.red[transform the stakeholder security requirements into the system requirements] that reflect a .red[technical security view] of the system._
 
 .footnote[
-\*ISO/IEC/IEEE 15288-2015
+\*ISO/IEC/IEEE 15288-2023
 ]
 
 ???
@@ -60,7 +60,7 @@ _Would the stakeholders still have the requirement even if we did not build the 
 - **No:** It is a system/software requirements. These are located at the shared interface between the machine and the environment
 
 .top-right[
-![litmus-test](http://www.simplescience.info/_/rsrc/1469387124646/chemistry/acids-2/Litm%20test.jpg)
+![litmus-test](https://sciencenotes.org/wp-content/uploads/2021/01/Litmus-Test.png)
 ]
 
 ???
@@ -74,7 +74,7 @@ Requirements] vs .blue[System Requirements]
 ![Requirements](images/requirements.png)
 
 .footnote[
-\* Michael Jackson, [The Meaning of Requirements, 1996](http://mcs.open.ac.uk/mj665/aserqts5.pdf)
+\* Michael Jackson, [The Meaning of Requirements, 1996](https://www.researchgate.net/publication/220300633_The_Meaning_of_Requirements)
 ]
 
 ???
