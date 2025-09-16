@@ -75,7 +75,7 @@ class: middle
   Structure = be semi-formal  
 
 .top-right[
-![case](http://www.it2051229.com/data_solutions/sysanaldesign/figure1.png)
+![case](https://www.researchgate.net/profile/Jeremie-Guiochet/publication/290219988/figure/fig2/AS:634066718191623@1528184694868/Use-case-textual-description-template.png)
 ]
 ???
 We talked about use cases before. It is a scenario based abstraction that is widely used for describing requirements and made popular by the Unified Modeling Language standard. The UML standard  introduced them to software developers using a visual notation that is quite intuitive and easy to understand.

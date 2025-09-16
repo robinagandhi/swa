@@ -114,7 +114,7 @@ class: middle
   Structure = be semi-formal  
 
 .top-right[
-![case](http://www.it2051229.com/data_solutions/sysanaldesign/figure1.png)
+![case](https://www.researchgate.net/profile/Jeremie-Guiochet/publication/290219988/figure/fig2/AS:634066718191623@1528184694868/Use-case-textual-description-template.png)
 ]
 
 ???
@@ -648,7 +648,7 @@ class: middle
 - Using abuse and security frames we identify the causal chains and .green[security capabilities and assurances necessary in software] to satisfy the .blue[security requirements of the stakeholder.]
 
 .top-right[
-![bridge](https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY1MTc3MjE0MzExMDgxNTQ1/topic-golden-gate-bridge-gettyimages-177770941.jpg)
+![bridge](https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/topic-golden-gate-bridge-gettyimages-177770941?_a=BAVAZGID0)
 ]
 
 ???
