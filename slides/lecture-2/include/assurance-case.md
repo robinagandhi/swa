@@ -652,7 +652,7 @@ Here are some actual bad examples of claims that students in this class authored
 
 Optional exercise:  
 > Work with your team or individually to rephrase these appropriately.
-When you are done enter your answers in this [Online Word Doc](https://unomail-my.sharepoint.com/:w:/g/personal/rgandhi_unomaha_edu/EQAXIuhgQOdJnnIQyBw5_RYBVn9DtCclwTuSqs9BZ4iavA?e=YBxLlj).
+When you are done enter your answers in this [Online Word Doc](https://uofnebraska-my.sharepoint.com/:w:/g/personal/20882301_nebraska_edu/EaHTB-WXStJKph9m1n-6o9gBibyQV9tERHHvve2A3uUcbA?e=vkOhq6).
 
 ---
 exclude: true
@@ -871,7 +871,7 @@ Here are some doubts for this claim.
 Now if we go ahead remove these doubts by proper investigation and produce evidence, my assurance in the claim increases. In fact this argument is much stronger than making a few external observations.
 
 The content in next few slides is based on:
-> SEI Report: Toward a Theory of Assurance Case Confidence http://www.sei.cmu.edu/reports/12tr002.pdf  
+> SEI Report: Toward a Theory of Assurance Case Confidence https://www.sei.cmu.edu/library/toward-a-theory-of-assurance-case-confidence/     
 > Charles B. Weinstock, John B. Goodenough, and Ari Z. Klein. 2013. Measuring assurance case confidence using Baconian probabilities. In Proceedings of the 1st International Workshop on Assurance Cases for Software-Intensive Systems (ASSURE '13). IEEE Press, Piscataway, NJ, USA, 7-11.  
 > Explicit permission to use slides provided by John B. Goodenough
 
