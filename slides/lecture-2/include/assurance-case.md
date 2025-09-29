@@ -1141,3 +1141,6 @@ In summary, assurance cases provide a much needed structure and logic for activi
 More recent analysis of Security Assuance Cases
 Mohamad, M., Steghöfer, JP. & Scandariato, R. Security assurance cases—state of the art of an emerging approach. Empir Software Eng 26, 70 (2021). https://doi.org/10.1007/s10664-021-09971-7
 
+Department of Defense (DoD), (2024) Secure Cyber Resilient Engineering (SCRE), White Paper Series, [Overarching Properties for Determining Assurance Claims](https://circle.cloudsecurityalliance.org/discussion/dod-secure-cyber-resilient-engineering-scre-overarching-properties-for-determining-assurance-claims)
+This white paper discusses overarching properties of a secure and resilient system, with the intent for those properties to inform the expression of assurance claims for an assured trustworthy secure and resilient system.
+
