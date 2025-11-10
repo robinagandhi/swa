@@ -393,7 +393,10 @@ class: middle
 ## One name for a vulnerability
 - Akin to a .red[\#hashtag] to track all discussions and reports related to a [vulnerability in different databases](http://cve.mitre.org/about/)
 
-![cve](http://cve.mitre.org/about/images/cve_example.gif)
+.bottom-left[
+![cve](images/cvePartnershipGraphic.png)
+]
+
 
 ???
 The common vulnerabilities and exposures is a large dictionary of publicly reported and confirmed vulnerabilities. A short CVE ID is similar to a hashtag on social media sites. Just as a hashtag allows a quick aggregation of posts related to a topic, the unique CVE ID, allows different vulnerability databases to sync their information about a vulnerability with others.
