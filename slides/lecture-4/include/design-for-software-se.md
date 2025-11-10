@@ -441,7 +441,7 @@ In our example, I placed three trust boundaries. While the App boundary is easy 
 The example is based on this blog by Larry Osterman at Microsoft.
 
 ![Example](images/playsoundthreatmodel.png)  
-http://blogs.msdn.com/b/larryosterman/archive/2007/09/13/threat-modeling-again-analyzing-the-threats-to-playsound.aspx
+[https://learn.microsoft.com/en-us/archive/blogs/larryosterman/threat-modeling-again-drawing-the-diagram](https://learn.microsoft.com/en-us/archive/blogs/larryosterman/threat-modeling-again-drawing-the-diagram)
 ---
 class: middle
 # DFD Construction
@@ -944,7 +944,7 @@ Testers often finds issues with threat model or missing details
 - [Other SDL developer resources](https://www.microsoft.com/en-us/download/details.aspx?id=20303)
 - [More information](https://shostack.org/games/elevation-of-privilege)
 
-![EOP](https://c.s-microsoft.com/en-us/CMSImages/EoP_game_screen_shot.jpg?version=4a082487-9fb4-7dd9-ed9f-e79c888c2df4)
+![EOP](https://learn.microsoft.com/en-us/archive/technet-wiki/e/resources/3107.wikieop.jpg)
 
 ???
 To encourage threat modeling in development teams, Microsoft has come up with a card game. The objective of the game is to come of threats for a given DFD to earn points. The player with the most points at the end of the game wins.
@@ -965,7 +965,7 @@ class: middle
 ???
 This presentation borrows and adapts a lot from Microsoft training materials for threat modeling and many other sources for DFD diagraming techniques.
 
-There are some additional readings on the topic which I link here. These include blogs and white papers that talk about the use of threat modeling in practice at some of the leading companies in software development such as Google, Adobe and Microsoft.
+There are some additional readings on the topic that I’ve linked here. These include blogs and white papers that discuss the practical application of threat modeling in leading software development companies like Google, Adobe, and Microsoft. The link to threat modeling for AI/ML is an excellent resource to familiarize yourself with the broad classes of attacks possible in such technologies and some crucial questions to consider before any widespread deployment.  
 
 ---
 exclude: true
