@@ -187,11 +187,11 @@ Suppose you have made changes to your local `README.md` file and want to update 
    - Press `q` to exit the log view.
 
 6. **Push Your Changes to the Remote Repository**
-   - Push your local commits to GitHub:
+   - Push your local commits to GitHub's default branch (usually `main`):
      ```bash
-     git push origin master
+     git push origin main
      ```
-   - Replace `master` with your branch name if different, and `origin` with your remote name if different.
+   - For older repositories that still use `master`, replace `main` with your branch name as needed. Use `origin` unless you have renamed your remote.
    - You may be prompted to [authenticate with GitHub](https://docs.github.com/en/get-started/git-basics/set-up-git#authenticating-with-github-from-git) if you haven't already. [Github CLI](https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git#github-cli) can help you cache your credentials.
 
 7. **Verify the Push**
