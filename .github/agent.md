@@ -5,6 +5,7 @@ This file contains concise, actionable guidance so an AI coding assistant can be
 
 - **Project type:** Static course site published via GitHub Pages (Jekyll + remark.js).
 - **Primary content locations:** [pages](pages), [slides](slides), [assets](assets), [javascripts](javascripts), `_layouts`.
+- **Supporting content:** Team rosters under `slides/teams-*/`, archives in [archive](archive), PDFs in [resources](resources) and [guest-lectures](guest-lectures).
 
 **Big picture**
 - The repo hosts lecture content and course pages as a static site. Presentation pages live under `slides/<lecture>/` and include Markdown fragments from `slides/<lecture>/include/`.
@@ -15,10 +16,13 @@ This file contains concise, actionable guidance so an AI coding assistant can be
 - Update lecture notes: edit files under [slides/<lecture>/include](slides) (for example, [slides/lecture-3/include/requirements-for-software-se.md](slides/lecture-3/include/requirements-for-software-se.md)).
 - Update page content: edit files under [pages](pages) (for example, [pages/syllabus.md](pages/syllabus.md)).
 - Update layout or HTML wrappers: edit [_layouts/default.html](_layouts/default.html).
+- Update team lists: edit [slides/teams-*/include/teams.md](slides) for the relevant year (for example, [slides/teams-2025/include/teams.md](slides/teams-2025/include/teams.md)).
+- Update resource handouts/slides: drop PDFs in [resources](resources) or [guest-lectures](guest-lectures) and link them from the relevant page.
 
 **Project-specific patterns & conventions**
 - Slides are generated as HTML pages that reference markdown include fragments in `slides/*/include/`. Do not replace the HTML shells unless you know how the includes are used.
 - Static assets are expected under `assets/` (stylesheets) and `javascripts/` (client-side scripts). Prefer changing `assets/stylesheets/stylesheet.css` for site-wide style tweaks.
+- Minified JS such as `javascripts/remark-latest.min.js` should generally be left untouched; adjust slide behavior via the HTML shells or `javascripts/main.js`.
 - Images for slides are colocated under each lecture's `images/` directory.
 
 **Developer workflows (what works here)**
